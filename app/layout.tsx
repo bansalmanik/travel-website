@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,27 +28,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-black`}
       >
         <div className="flex min-h-screen flex-col">
-          <header className="border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-black/80">
-            <nav className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
-              <div className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                Travel Explorer
-              </div>
-              <div className="flex items-center gap-6 text-sm font-medium">
-                <Link
-                  href="/"
-                  className="text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/blogs"
-                  className="text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
-                >
-                  Blogs
-                </Link>
-              </div>
-            </nav>
-          </header>
           <main className="flex-1">{children}</main>
         </div>
       </body>
