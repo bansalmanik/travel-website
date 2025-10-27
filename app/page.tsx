@@ -100,9 +100,9 @@ export default function Home() {
         <nav className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-white">
           <span className="text-xl font-semibold tracking-wide">Away With Ana</span>
           <div className="hidden gap-8 text-sm uppercase tracking-[0.2em] md:flex">
-            <a className="transition-opacity hover:opacity-80" href="#stories">
+            <Link className="transition-opacity hover:opacity-80" href="/blogs">
               Stories
-            </a>
+            </Link>
             <a className="transition-opacity hover:opacity-80" href="#moods">
               Travel Moods
             </a>
