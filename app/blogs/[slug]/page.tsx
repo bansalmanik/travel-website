@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getAllBlogSummaries, getBlogBySlug } from "../data";
 
 type BlogPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -12,7 +12,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BlogPageProps) {
-  const post = await getBlogBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getBlogBySlug(slug);
 
   if (!post) {
     return { title: "Blog not found" };
@@ -25,7 +26,8 @@ export async function generateMetadata({ params }: BlogPageProps) {
 }
 
 export default async function BlogDetailPage({ params }: BlogPageProps) {
-  const post = await getBlogBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getBlogBySlug(slug);
 
   if (!post) {
     notFound();
