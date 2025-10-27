@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { blogPosts } from "./data";
+import { getAllBlogSummaries } from "./data";
 
 export const metadata = {
   title: "Travel Explorer | Blogs",
   description: "Discover travel inspiration, itineraries, and stories from around the globe.",
 };
 
-export default function BlogsPage() {
+export default async function BlogsPage() {
+  const blogPosts = await getAllBlogSummaries();
+
   return (
     <div className="bg-gradient-to-b from-white via-slate-50 to-slate-100 py-20 text-zinc-900 dark:from-black dark:via-zinc-950 dark:to-black dark:text-zinc-100">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-6">
