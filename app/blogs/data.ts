@@ -1,3 +1,4 @@
+import path from "path";
 import { promises as fs } from "fs";
 
 export type BlogSummary = {
@@ -16,10 +17,11 @@ export type BlogPost = BlogSummary & {
   highlights: string[];
 };
 
-const blogListPath = new URL("./blogs.json", import.meta.url);
-const blogPostsDirectory = new URL("./posts/", import.meta.url);
+const dataDirectory = path.join(process.cwd(), "app", "blogs");
+const blogListPath = path.join(dataDirectory, "blogs.json");
+const blogPostsDirectory = path.join(dataDirectory, "posts");
 
-async function readJsonFile<T>(filePath: URL): Promise<T> {
+async function readJsonFile<T>(filePath: string): Promise<T> {
   const fileContents = await fs.readFile(filePath, "utf-8");
   return JSON.parse(fileContents) as T;
 }
@@ -29,7 +31,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
 }
 
 export async function getBlogBySlug(slug: string): Promise<BlogPost | null> {
-  const filePath = new URL(`./${slug}.json`, blogPostsDirectory);
+  const filePath = path.join(blogPostsDirectory, `${slug}.json`);
 
   try {
     return await readJsonFile<BlogPost>(filePath);
