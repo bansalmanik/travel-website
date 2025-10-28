@@ -10,7 +10,7 @@
       "displayDate": "June 28, 2024",
       "readTime": "8 minute read",
       "heroImage": {
-        "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/content/photo-1526778548025--49ad9214d7be.svg",
         "alt": "Traveler working on a laptop overlooking a mountain valley"
       },
       "sections": [
@@ -21,7 +21,7 @@
             "I bucket each destination into \"deep work weeks\" or \"exploration sprints\" so I’m never hunting for Wi-Fi when clients expect deliverables."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1489515217757--911f53afa31a.svg",
             "alt": "Laptop, notebook, and passport arranged on a table",
             "caption": "Batch-planning itineraries around known delivery dates."
           }
@@ -33,7 +33,7 @@
             "The ritual keeps jet lag in check and signals to my brain that it’s time to create before the day's wanderings."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1441974231531--18aee14e14f9.svg",
             "alt": "Person stretching beside a sunrise mountain lake",
             "caption": "Sunrise stretches before settling into a writing sprint."
           }
@@ -45,7 +45,7 @@
             "Noise-canceling headphones, a lapel mic, and an e-ink tablet make it easy to capture stories even when trains are crowded."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1500530855697--970378c505dc.svg",
             "alt": "Backpacker organizing gear beside a tent",
             "caption": "Everything has a home so packing takes less than ten minutes."
           }
@@ -62,7 +62,7 @@
       "displayDate": "June 11, 2024",
       "readTime": "6 minute read",
       "heroImage": {
-        "src": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/content/photo-1500534314209--8629a0f52424.svg",
         "alt": "Open suitcase neatly packed with travel essentials"
       },
       "sections": [
@@ -73,7 +73,7 @@
             "Instead of bulky coats, I rely on compressible vests and scarves picked up from local artisans along the way."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1460353581641--d1918c00cef3.svg",
             "alt": "Traveler holding layered clothing on a hanger",
             "caption": "Mix-and-match neutrals form the base of every outfit."
           }
@@ -85,7 +85,7 @@
             "The combo slips into a sling, so I never hesitate to document unexpected magic."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1468413253725-0d5181091126?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1468413253725--fff7ef9433f6.svg",
             "alt": "Camera gear arranged on a wooden desk",
             "caption": "Lean gear keeps me agile while filming or writing on the road."
           }
@@ -97,7 +97,7 @@
             "They double as conversation starters when fellow travelers notice the rituals."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1524594154903-edd0c04adf46?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1524594154903--47e8d54b066d.svg",
             "alt": "Traveler brewing tea next to a packed backpack",
             "caption": "Tiny rituals offer comfort no matter the continent."
           }
@@ -114,7 +114,7 @@
       "displayDate": "May 30, 2024",
       "readTime": "7 minute read",
       "heroImage": {
-        "src": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=1600&q=80",
+        "src": "/images/content/photo-1528909514045--ef98d6c7b657.svg",
         "alt": "Friends sharing dinner in a cozy hostel common room"
       },
       "sections": [
@@ -125,7 +125,7 @@
             "A simple question like ‘What brought you here?’ often unlocks the evening’s best stories."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1527169402691-feff5539e52c?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1527169402691--6d31811e54c5.svg",
             "alt": "People cooking together in a shared kitchen",
             "caption": "Shared meals are the heart of every hostel community."
           }
@@ -137,7 +137,7 @@
             "I always leave a handwritten note with local tips to pay forward the hospitality."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1489515217757--911f53afa31a.svg",
             "alt": "Journal and Polaroid photos on a coffee table",
             "caption": "Documenting shared rituals keeps the memories alive."
           }
@@ -149,7 +149,7 @@
             "Boundaries can be gentle: I’ll invite new friends for a sunrise coffee instead of a late-night bar crawl."
           ],
           "image": {
-            "src": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80",
+            "src": "/images/content/photo-1511497584788--4ee03e4cc93d.svg",
             "alt": "Traveler journaling alone at sunrise",
             "caption": "Solitude between gatherings keeps burnout at bay."
           }
