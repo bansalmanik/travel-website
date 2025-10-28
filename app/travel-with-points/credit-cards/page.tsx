@@ -1,5 +1,20 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import cardData from "@/data/credit-cards.json";
+
+type Card = {
+  slug: string;
+  name: string;
+  issuer: string;
+  annualFee: string;
+  summary: string;
+  seoDescription: string;
+  welcomeOffer: string;
+  bestFor: string;
+  earnRates: string[];
+  topFeatures: string[];
+  transferPartners: string[];
+};
 
 type CardStrategy = {
   title: string;
@@ -12,7 +27,8 @@ type FavoriteCombo = {
   note: string;
 };
 
-const { cardStrategies, favoriteCombos } = cardData as {
+const { cards, cardStrategies, favoriteCombos } = cardData as {
+  cards: Card[];
   cardStrategies: CardStrategy[];
   favoriteCombos: FavoriteCombo[];
 };
@@ -45,6 +61,58 @@ export default function CreditCardsPage() {
             The goal is to earn intentionally—not chase every shiny metal rectangle.
           </p>
         </header>
+
+        <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+          <h2 className="text-2xl font-semibold text-white">Featured travel credit cards</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {cards.map((card) => (
+              <article
+                key={card.slug}
+                className="group flex flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-amber-300/60 hover:bg-slate-900/80"
+              >
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">{card.issuer}</p>
+                    <h3 className="mt-2 text-xl font-semibold text-white">
+                      <Link href={`/travel-with-points/credit-cards/${card.slug}`} className="hover:underline">
+                        {card.name}
+                      </Link>
+                    </h3>
+                    <p className="mt-1 text-sm text-slate-200/80">{card.summary}</p>
+                  </div>
+                  <dl className="grid gap-3 text-sm text-slate-100/80">
+                    <div>
+                      <dt className="font-semibold text-white">Annual fee</dt>
+                      <dd>{card.annualFee}</dd>
+                    </div>
+                  </dl>
+                  <p className="text-sm text-slate-100/70">
+                    <span className="font-semibold text-white">Standout feature:</span> {card.topFeatures[0]}
+                  </p>
+                </div>
+                <Link
+                  href={`/travel-with-points/credit-cards/${card.slug}`}
+                  className="mt-6 inline-flex items-center text-sm font-semibold text-amber-300"
+                >
+                  View full details
+                  <svg
+                    aria-hidden
+                    className="ml-2 h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+              </article>
+            ))}
+          </div>
+        </section>
 
         <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
           <h2 className="text-2xl font-semibold text-white">Core principles</h2>

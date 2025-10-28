@@ -1,4 +1,99 @@
 {
+  "programs": [
+    {
+      "slug": "singapore-krisflyer",
+      "name": "Singapore Airlines KrisFlyer",
+      "alliance": "Star Alliance",
+      "hub": "Singapore (SIN)",
+      "summary": "Unlock Singapore Airlines' world-class cabins and a deep partner network with region-based award charts and reasonable surcharges.",
+      "seoDescription": "Master the Singapore KrisFlyer program with transfer partners, saver award strategies, and elite tier shortcuts for premium cabin travel.",
+      "eliteLevels": [
+        "Elite Silver begins at 25,000 elite miles and grants priority waitlisting and complimentary seat selection",
+        "Elite Gold at 50,000 miles unlocks Star Alliance Gold status with lounge access worldwide"
+      ],
+      "sweetSpots": [
+        "Book Singapore Suites from New York to Frankfurt for 97,000 miles with saver availability",
+        "Intra-Asia business class flights start at just 21,500 miles one-way",
+        "Spontaneous Escapes promotions discount select routes by 30% every month"
+      ],
+      "transferPartners": [
+        "American Express Membership Rewards",
+        "Chase Ultimate Rewards",
+        "Capital One Miles",
+        "Citi ThankYou Points"
+      ]
+    },
+    {
+      "slug": "avios",
+      "name": "Avios (British Airways, Qatar Airways, Iberia)",
+      "alliance": "oneworld",
+      "hub": "Multiple hubs including London-Heathrow and Doha",
+      "summary": "Distance-based pricing makes Avios perfect for short-haul flights and for leveraging Qatar’s premium cabins when booked through partner portals.",
+      "seoDescription": "Learn how to pool, transfer, and redeem Avios across partner airlines for incredible short-haul and Qsuite awards.",
+      "eliteLevels": [
+        "Tier Points earned on cash tickets unlock Bronze, Silver, and Gold status within the British Airways Executive Club",
+        "Qatar Airways Privilege Club members enjoy Qsuite award availability releases for elite members"
+      ],
+      "sweetSpots": [
+        "4,000 Avios + low fees for economy flights under 650 miles in Europe",
+        "Use 70,000 Avios for Qatar Qsuite from the U.S. to the Middle East",
+        "Transfer Avios between British Airways, Iberia, Aer Lingus, and Qatar to access different award charts"
+      ],
+      "transferPartners": [
+        "American Express Membership Rewards",
+        "Chase Ultimate Rewards",
+        "Capital One Miles",
+        "Citi ThankYou Points",
+        "Bilt Rewards"
+      ]
+    },
+    {
+      "slug": "air-india-flying-returns",
+      "name": "Air India Flying Returns (Maharajah Club)",
+      "alliance": "Star Alliance",
+      "hub": "Delhi (DEL) and Mumbai (BOM)",
+      "summary": "India’s flag carrier program offers competitive redemption rates on Air India metal and Star Alliance partners with generous stopover rules.",
+      "seoDescription": "See why Air India Flying Returns—also known as the Maharajah Club—deserves attention for Star Alliance awards to and from the Indian subcontinent.",
+      "eliteLevels": [
+        "Silver Edge Club at 25,000 status points grants 15% bonus miles and priority services",
+        "Golden Edge Club at 50,000 points delivers Star Alliance Gold benefits including lounge access",
+        "The Maharajah Club at 75,000 points unlocks upgrade vouchers and dedicated support"
+      ],
+      "sweetSpots": [
+        "Round-trip business class between India and Europe for 90,000 miles",
+        "Stopover permitted on international itineraries without extra miles",
+        "Attractive surcharges compared to booking via other Star Alliance partners"
+      ],
+      "transferPartners": [
+        "American Express Membership Rewards India",
+        "Axis Bank EDGE Rewards",
+        "HSBC India Reward Points"
+      ]
+    },
+    {
+      "slug": "air-canada-aeroplan",
+      "name": "Air Canada Aeroplan",
+      "alliance": "Star Alliance",
+      "hub": "Toronto (YYZ)",
+      "summary": "Aeroplan’s hybrid award chart and dozens of non-alliance partners create outsized value with low surcharges and generous routing rules.",
+      "seoDescription": "Dive into Air Canada Aeroplan sweet spots, stopover policies, and partner list to stretch your transferable points further.",
+      "eliteLevels": [
+        "25K status includes two Maple Leaf Lounge passes and eUpgrades",
+        "Super Elite 100K offers priority awards, concierge service, and unlimited Maple Leaf Lounge access"
+      ],
+      "sweetSpots": [
+        "Add a stopover on a one-way award for just 5,000 extra points",
+        "Fly ANA first class from the U.S. to Tokyo for 110,000 points",
+        "Use Family Sharing to combine points across household accounts"
+      ],
+      "transferPartners": [
+        "American Express Membership Rewards",
+        "Chase Ultimate Rewards",
+        "Capital One Miles",
+        "Bilt Rewards"
+      ]
+    }
+  ],
   "awardPlaybook": [
     {
       "title": "Search partners, not airlines",

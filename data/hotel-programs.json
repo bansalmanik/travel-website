@@ -1,4 +1,86 @@
 {
+  "programs": [
+    {
+      "slug": "marriott-bonvoy",
+      "name": "Marriott Bonvoy",
+      "footprint": "8,000+ hotels across 139 countries",
+      "summary": "Massive global reach with 30 brands and 5th Night Free awards that stretch certificates and points.",
+      "seoDescription": "Explore Marriott Bonvoy elite tiers, certificates, and redemption strategies to maximize the world’s largest hotel program.",
+      "eliteLevels": [
+        "Platinum Elite at 50 nights adds guaranteed 4pm late checkout and suite night awards",
+        "Titanium Elite at 75 nights unlocks annual Choice Benefits including 40K free night certificates"
+      ],
+      "redemptionTips": [
+        "Use 35K and 50K certificates at properties just above their cap by adding points with Top Off",
+        "Take advantage of PointSavers rates for popular city hotels during shoulder season",
+        "Book homes and villas with Bonvoy points when traditional hotels are sold out"
+      ],
+      "coBrandedCards": [
+        "Marriott Bonvoy Boundless® Credit Card",
+        "Marriott Bonvoy Brilliant® American Express® Card"
+      ]
+    },
+    {
+      "slug": "world-of-hyatt",
+      "name": "World of Hyatt",
+      "footprint": "1,300+ hotels with outsized luxury and all-inclusive partners",
+      "summary": "Low award rates, milestone rewards, and partnerships like Small Luxury Hotels make Hyatt points incredibly valuable.",
+      "seoDescription": "Learn how World of Hyatt milestones, suite upgrades, and transfer partners deliver unmatched value for award stays.",
+      "eliteLevels": [
+        "Explorist at 30 nights offers suite upgrade priority and 2 club lounge access awards",
+        "Globalist at 60 nights provides free breakfast, waived resort fees, and Guest of Honor privileges"
+      ],
+      "redemptionTips": [
+        "Redeem 35,000 points for Category 7 luxury resorts like Park Hyatt Maldives during off-peak dates",
+        "Use Guest of Honor bookings to share Globalist benefits with friends and family",
+        "Transfer Chase Ultimate Rewards at a 1:1 ratio when you find premium suite availability"
+      ],
+      "coBrandedCards": [
+        "World of Hyatt Credit Card",
+        "World of Hyatt Business Credit Card"
+      ]
+    },
+    {
+      "slug": "hilton-honors",
+      "name": "Hilton Honors",
+      "footprint": "7,000+ hotels and resorts worldwide",
+      "summary": "Dynamic pricing paired with automatic elite status from credit cards makes Hilton easy to engage with.",
+      "seoDescription": "Find out how Hilton Honors elite perks, free breakfast benefits, and 5th Night Free awards make points easy to spend.",
+      "eliteLevels": [
+        "Gold status grants complimentary breakfast or food & beverage credit at most brands",
+        "Diamond status earns executive lounge access and premium Wi-Fi"
+      ],
+      "redemptionTips": [
+        "Take advantage of 5th Night Free on award bookings to drop the nightly cost",
+        "Stack Hilton Honors promotions with Amex Offers for paid stays",
+        "Use Points & Money awards when cash rates are modest but you want to save points"
+      ],
+      "coBrandedCards": [
+        "Hilton Honors American Express Aspire Card",
+        "Hilton Honors American Express Surpass® Card"
+      ]
+    },
+    {
+      "slug": "ihg-one-rewards",
+      "name": "IHG One Rewards",
+      "footprint": "6,000+ hotels with luxury brands like Regent and Six Senses",
+      "summary": "Revamped elite program with milestone choice awards, lounge access for top tiers, and a healthy pipeline of new luxury properties.",
+      "seoDescription": "Get up to speed on IHG One Rewards benefits, milestone choices, and sweet spots for the program's flexible award pricing.",
+      "eliteLevels": [
+        "Platinum Elite grants Reward Night Discounts and welcome amenities",
+        "Diamond Elite unlocks free breakfast choice benefit and 100% bonus points"
+      ],
+      "redemptionTips": [
+        "Redeem free night certificates worth up to 40,000 points at InterContinental properties on weekends",
+        "Combine points with cash through the Points & Cash slider to stretch balances",
+        "Look for 15% discount promos on award stays when using an IHG credit card"
+      ],
+      "coBrandedCards": [
+        "IHG One Rewards Premier Credit Card",
+        "IHG One Rewards Traveler Credit Card"
+      ]
+    }
+  ],
   "elitePaths": [
     {
       "tier": "Marriott Bonvoy",
