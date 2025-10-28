@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import journalsData from "@/data/journals.json";
+
 const featuredStories = [
   {
     title: "Chasing Midnight Sun in Lofoten",
@@ -46,23 +48,19 @@ const travelMoods = [
   },
 ];
 
-const journalHighlights = [
-  {
-    title: "How I plan months-long journeys while working remotely",
-    date: "June 28, 2024",
-    url: "/blogs/remote-travel-routine",
-  },
-  {
-    title: "A packing list for curious light travelers",
-    date: "June 11, 2024",
-    url: "/blogs/packing-list",
-  },
-  {
-    title: "Finding community in hostel common rooms",
-    date: "May 30, 2024",
-    url: "/blogs/hostel-community",
-  },
-];
+type JournalHighlight = {
+  slug: string;
+  title: string;
+  displayDate: string;
+};
+
+const journals = (journalsData as { journals: JournalHighlight[] }).journals;
+
+const journalHighlights = journals.slice(0, 3).map((entry) => ({
+  title: entry.title,
+  date: entry.displayDate,
+  url: `/journals/${entry.slug}`,
+}));
 
 const travelWithPointsHighlights = [
   {

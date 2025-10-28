@@ -15,14 +15,24 @@
           "Pairs nicely with Freedom cards to boost portal redemptions and unlock transfer partners.",
           "Balances premium-style protections with a manageable annual fee."
         ],
-        "paragraph": "Consider it the natural upgrade when you're ready to turn everyday spending into meaningful travel experiences."
+        "paragraph": "Consider it the natural upgrade when you're ready to turn everyday spending into meaningful travel experiences.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Traveler planning a trip with a credit card and map on a table",
+          "caption": "Mapping out transfer partner sweet spots before the next trip."
+        }
       },
       "overview": {
         "headers": ["Reward rate", "Best for", "USP"],
         "rows": [
           ["1x–5x Ultimate Rewards", "Flexible travel redemptions", "1:1 transfer partners with built-in travel protections"]
         ],
-        "paragraph": "The card fits travelers seeking optionality—earn in strong bonus categories and redeem through portals or partners."
+        "paragraph": "The card fits travelers seeking optionality—earn in strong bonus categories and redeem through portals or partners.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Traveler using a laptop to compare reward charts",
+          "caption": "Comparing flexible redemption paths before booking."
+        }
       },
       "annualFeeDetails": {
         "headers": ["Fee component", "Details"],
@@ -43,7 +53,12 @@
           ["Other travel", "2x points", "~4% back", "~5% with partners"],
           ["All other spending", "1x point", "~2% back", "~2.5% with partners"]
         ],
-        "paragraph": "Ultimate Rewards shine when paired with premium partners like Hyatt or Air Canada for high-value award travel."
+        "paragraph": "Ultimate Rewards shine when paired with premium partners like Hyatt or Air Canada for high-value award travel.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Airplane wing over a sunset sky",
+          "caption": "Redeeming points for bucket-list award flights."
+        }
       },
       "milestoneBenefits": {
         "headers": ["Spend requirement", "Milestone benefit", "Benefit type"],
@@ -60,7 +75,12 @@
           "Combine points with no-fee Freedom cards for additional earning power before transferring.",
           "Cash back or statement credits yield 1¢ per point—best reserved for when travel plans change."
         ],
-        "paragraph": "Portal bookings are simple, but partner transfers unlock aspirational itineraries and higher cents-per-point value."
+        "paragraph": "Portal bookings are simple, but partner transfers unlock aspirational itineraries and higher cents-per-point value.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Traveler photographing mountain scenery",
+          "caption": "Points-funded adventures that deserve a spot in the album."
+        }
       },
       "loungeAccess": {
         "headers": ["Access type", "Access via", "Access limit"],
@@ -68,7 +88,12 @@
           ["Domestic lounges", "Not included", "N/A"],
           ["International lounges", "Not included", "N/A"]
         ],
-        "paragraph": "Pair the card with Priority Pass access from a premium sibling if lounge time matters to you."
+        "paragraph": "Pair the card with Priority Pass access from a premium sibling if lounge time matters to you.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Empty airport lounge with panoramic runway views",
+          "caption": "Dreaming of lounges unlocked by pairing with a premium card."
+        }
       },
       "forexMarkup": {
         "bullets": [
@@ -76,7 +101,12 @@
           "Rewards on international purchases mirror domestic earn rates.",
           "Net return hinges on transfer strategy; portal redemptions average ~2% back on unbonused spend."
         ],
-        "paragraph": "No forex fees mean it's safe to swipe abroad, especially when you value flexible transfer partners."
+        "paragraph": "No forex fees mean it's safe to swipe abroad, especially when you value flexible transfer partners.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1521292270410-a8c44e00edd1?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Passport and travel wallet on a world map",
+          "caption": "Ready to tap abroad without worrying about foreign fees."
+        }
       }
     },
     {
