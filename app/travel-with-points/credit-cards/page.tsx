@@ -66,7 +66,10 @@ export default function CreditCardsPage() {
           <h2 className="text-2xl font-semibold text-white">Featured travel credit cards</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {cards.map((card) => (
-              <article key={card.slug} className="group flex flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-amber-300/60 hover:bg-slate-900/80">
+              <article
+                key={card.slug}
+                className="group flex flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-amber-300/60 hover:bg-slate-900/80"
+              >
                 <div className="space-y-4">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">{card.issuer}</p>
@@ -82,24 +85,11 @@ export default function CreditCardsPage() {
                       <dt className="font-semibold text-white">Annual fee</dt>
                       <dd>{card.annualFee}</dd>
                     </div>
-                    <div>
-                      <dt className="font-semibold text-white">Best for</dt>
-                      <dd>{card.bestFor}</dd>
-                    </div>
-                    <div>
-                      <dt className="font-semibold text-white">Welcome offer</dt>
-                      <dd>{card.welcomeOffer}</dd>
-                    </div>
                   </dl>
+                  <p className="text-sm text-slate-100/70">
+                    <span className="font-semibold text-white">Standout feature:</span> {card.topFeatures[0]}
+                  </p>
                 </div>
-                <ul className="mt-6 space-y-2 text-sm text-slate-100/70">
-                  {card.topFeatures.slice(0, 3).map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
                 <Link
                   href={`/travel-with-points/credit-cards/${card.slug}`}
                   className="mt-6 inline-flex items-center text-sm font-semibold text-amber-300"

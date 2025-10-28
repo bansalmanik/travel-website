@@ -58,7 +58,10 @@ export default function HotelProgramsPage() {
           <h2 className="text-2xl font-semibold text-white">Featured hotel programs</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {programs.map((program) => (
-              <article key={program.slug} className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-sky-300/60 hover:bg-slate-900/80">
+              <article
+                key={program.slug}
+                className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-sky-300/60 hover:bg-slate-900/80"
+              >
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">{program.footprint}</p>
@@ -69,18 +72,9 @@ export default function HotelProgramsPage() {
                     </h3>
                     <p className="text-sm text-slate-200/80">{program.summary}</p>
                   </div>
-                  <ul className="space-y-2 text-sm text-slate-100/70">
-                    {program.eliteLevels.slice(0, 2).map((level) => (
-                      <li key={level} className="flex items-start gap-3">
-                        <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
-                        <span>{level}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-6 space-y-2 text-sm text-slate-100/80">
-                  <p className="font-semibold text-white">Co-branded cards</p>
-                  <p>{program.coBrandedCards.join(", ")}</p>
+                  <p className="text-sm text-slate-100/70">
+                    <span className="font-semibold text-white">Key elite perk:</span> {program.eliteLevels[0]}
+                  </p>
                 </div>
                 <Link
                   href={`/travel-with-points/hotel-programs/${program.slug}`}
