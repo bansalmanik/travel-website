@@ -19,16 +19,17 @@ type FlightProgram = {
 const programs = (flightData as { programs: FlightProgram[] }).programs;
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
   return programs.map((program) => ({ slug: program.slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const slug = decodeURIComponent(params.slug);
-  const program = programs.find((item) => item.slug === slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
+  const program = programs.find((item) => item.slug === decodedSlug);
 
   if (!program) {
     return {
@@ -63,9 +64,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function FlightProgramDetailPage({ params }: PageProps) {
-  const slug = decodeURIComponent(params.slug);
-  const program = programs.find((item) => item.slug === slug);
+export default async function FlightProgramDetailPage({ params }: PageProps) {
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
+  const program = programs.find((item) => item.slug === decodedSlug);
 
   if (!program) {
     notFound();
