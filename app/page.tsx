@@ -30,24 +30,6 @@ const featuredStories = [
   },
 ];
 
-const travelMoods = [
-  {
-    title: "Mountain Solitude",
-    description: "Where the thin air clears the mind and mornings begin above the clouds.",
-    icon: "⛰️",
-  },
-  {
-    title: "Culinary Curiosity",
-    description: "Markets, family kitchens, and recipes collected in well-loved notebooks.",
-    icon: "🍲",
-  },
-  {
-    title: "City Daydreams",
-    description: "Art walks, vinyl shops, and hidden courtyards in cities that never stop reinventing themselves.",
-    icon: "🌆",
-  },
-];
-
 type JournalHighlight = {
   slug: string;
   title: string;
@@ -250,33 +232,6 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section id="moods" className="space-y-12">
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-500">Travel Moods</p>
-              <h2 className="mt-4 text-3xl font-semibold text-slate-900 sm:text-4xl">
-                Pick a vibe and follow along
-              </h2>
-            </div>
-            <p className="max-w-xl text-base text-slate-600">
-              Curated collections from past trips—perfect for sparking daydreams or planning your own escapes.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {travelMoods.map((mood) => (
-              <div
-                key={mood.title}
-                className="rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                <span className="text-4xl">{mood.icon}</span>
-                <h3 className="mt-6 text-xl font-semibold text-slate-900">{mood.title}</h3>
-                <p className="mt-4 text-sm leading-6 text-slate-600">{mood.description}</p>
-              </div>
-            ))}
           </div>
         </section>
 
