@@ -26,7 +26,8 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const program = programs.find((item) => item.slug === params.slug);
+  const slug = decodeURIComponent(params.slug);
+  const program = programs.find((item) => item.slug === slug);
 
   if (!program) {
     return {
@@ -62,7 +63,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default function HotelProgramDetailPage({ params }: PageProps) {
-  const program = programs.find((item) => item.slug === params.slug);
+  const slug = decodeURIComponent(params.slug);
+  const program = programs.find((item) => item.slug === slug);
 
   if (!program) {
     notFound();

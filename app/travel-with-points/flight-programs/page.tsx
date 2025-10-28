@@ -63,7 +63,10 @@ export default function FlightProgramsPage() {
           <h2 className="text-2xl font-semibold text-white">Featured airline loyalty programs</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {programs.map((program) => (
-              <article key={program.slug} className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-emerald-300/60 hover:bg-slate-900/80">
+              <article
+                key={program.slug}
+                className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-emerald-300/60 hover:bg-slate-900/80"
+              >
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-300">{program.alliance}</p>
@@ -79,20 +82,11 @@ export default function FlightProgramsPage() {
                       <dt className="font-semibold text-white">Primary hubs</dt>
                       <dd>{program.hub}</dd>
                     </div>
-                    <div>
-                      <dt className="font-semibold text-white">Transfer partners</dt>
-                      <dd>{program.transferPartners.join(", ")}</dd>
-                    </div>
                   </dl>
+                  <p className="text-sm text-slate-100/70">
+                    <span className="font-semibold text-white">Signature sweet spot:</span> {program.sweetSpots[0]}
+                  </p>
                 </div>
-                <ul className="mt-6 space-y-2 text-sm text-slate-100/70">
-                  {program.sweetSpots.slice(0, 2).map((sweetSpot) => (
-                    <li key={sweetSpot} className="flex items-start gap-3">
-                      <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-300" aria-hidden />
-                      <span>{sweetSpot}</span>
-                    </li>
-                  ))}
-                </ul>
                 <Link
                   href={`/travel-with-points/flight-programs/${program.slug}`}
                   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300"

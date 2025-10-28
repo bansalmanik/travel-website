@@ -29,7 +29,8 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const card = cards.find((item) => item.slug === params.slug);
+  const slug = decodeURIComponent(params.slug);
+  const card = cards.find((item) => item.slug === slug);
 
   if (!card) {
     return {
@@ -65,7 +66,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default function CreditCardDetailPage({ params }: PageProps) {
-  const card = cards.find((item) => item.slug === params.slug);
+  const slug = decodeURIComponent(params.slug);
+  const card = cards.find((item) => item.slug === slug);
 
   if (!card) {
     notFound();
