@@ -118,29 +118,6 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-sky-900/40" />
         </div>
-        <nav className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-white">
-          <span className="text-xl font-semibold tracking-wide">Away With Ana</span>
-          <div className="hidden gap-8 text-sm uppercase tracking-[0.2em] md:flex">
-            <Link className="transition-opacity hover:opacity-80" href="/blogs">
-              Stories
-            </Link>
-            <a className="transition-opacity hover:opacity-80" href="#moods">
-              Travel Moods
-            </a>
-            <a className="transition-opacity hover:opacity-80" href="#journal">
-              Journal
-            </a>
-            <a className="transition-opacity hover:opacity-80" href="#connect">
-              Connect
-            </a>
-          </div>
-          <a
-            className="rounded-full bg-white/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/20"
-            href="#journal"
-          >
-            Read the Blog
-          </a>
-        </nav>
         <div className="mx-auto max-w-3xl px-6 pb-24 pt-12 text-white sm:pb-32 sm:pt-20">
           <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-200">Travel journal & visual stories</p>
           <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl sm:leading-tight">
