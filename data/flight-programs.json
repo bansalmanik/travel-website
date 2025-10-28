@@ -42,7 +42,11 @@
           ],
           "table": {
             "caption": "KrisFlyer elite tiers at a glance",
-            "columns": ["Tier", "Qualification", "Signature perks"],
+            "columns": [
+              "Tier",
+              "Qualification",
+              "Signature perks"
+            ],
             "rows": [
               {
                 "cells": [
@@ -186,7 +190,11 @@
           ],
           "table": {
             "caption": "British Airways Executive Club status requirements",
-            "columns": ["Tier", "Tier Points", "Key benefits"],
+            "columns": [
+              "Tier",
+              "Tier Points",
+              "Key benefits"
+            ],
             "rows": [
               {
                 "cells": [
@@ -330,7 +338,11 @@
           ],
           "table": {
             "caption": "Air India Flying Returns elite requirements",
-            "columns": ["Tier", "Status Points", "Top perks"],
+            "columns": [
+              "Tier",
+              "Status Points",
+              "Top perks"
+            ],
             "rows": [
               {
                 "cells": [
@@ -474,7 +486,11 @@
           ],
           "table": {
             "caption": "Core Aeroplan status requirements",
-            "columns": ["Tier", "Qualification", "Benefits"],
+            "columns": [
+              "Tier",
+              "Qualification",
+              "Benefits"
+            ],
             "rows": [
               {
                 "cells": [

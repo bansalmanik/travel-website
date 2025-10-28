@@ -10,17 +10,17 @@
     "city": "Maasai Mara",
     "country": "Kenya",
     "coverImage": {
-      "src": "https://images.unsplash.com/photo-1526481280695-3c469bda4f8b?auto=format&fit=crop&w=1400&q=80",
+      "src": "/images/content/photo-1526481280695--e2928a46df37.svg",
       "alt": "Safari jeep driving through the Maasai Mara at sunset"
     },
     "gallery": [
       {
-        "src": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1200&q=80",
+        "src": "/images/content/photo-1508672019048--d4fb7955603b.svg",
         "alt": "Elephants walking across the savannah during golden hour",
         "caption": "Gentle giants crossing the savannah as dusk paints the horizon."
       },
       {
-        "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+        "src": "/images/content/photo-1469474968028--cab6e117256e.svg",
         "alt": "Lioness perched on a rock looking over the plains",
         "caption": "A curious lioness keeping watch over her pride from a kopje."
       }
@@ -47,17 +47,17 @@
     "city": "Akureyri",
     "country": "Iceland",
     "coverImage": {
-      "src": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80",
+      "src": "/images/content/photo-1512453979798--17437297a7d2.svg",
       "alt": "Icelandic waterfall cascading into a misty canyon"
     },
     "gallery": [
       {
-        "src": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1200&q=80",
+        "src": "/images/content/photo-1476610182048--b3c8a3656880.svg",
         "alt": "Snow-capped mountains reflecting in a glacial lagoon",
         "caption": "Dawn light over the glassy waters of a northern lagoon."
       },
       {
-        "src": "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80",
+        "src": "/images/content/photo-1426604966848--e37abe0c5c06.svg",
         "alt": "Person standing near a geothermal spring in Iceland",
         "caption": "Steam vents rising from the earth near Lake Mývatn."
       }
@@ -84,17 +84,17 @@
     "city": "Tokyo",
     "country": "Japan",
     "coverImage": {
-      "src": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1400&q=80",
+      "src": "/images/content/photo-1549693578-d68-30a7fc77244a.svg",
       "alt": "Neon-lit street in Tokyo at night"
     },
     "gallery": [
       {
-        "src": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+        "src": "/images/content/photo-1478720568477--9280e47f0c88.svg",
         "alt": "Lantern-lined alleyway in Tokyo",
         "caption": "Lanterns glow along an izakaya-filled alley in Shinjuku."
       },
       {
-        "src": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80",
+        "src": "/images/content/photo-1497436072909--c443dbe74f0f.svg",
         "alt": "Rooftop bar overlooking Tokyo skyline at night",
         "caption": "Skyline views from a rooftop garden bar in Roppongi."
       }
