@@ -1,19 +1,28 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import cardData from "@/data/credit-cards.json";
 
+type SectionImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
 type TableSection = {
   headers: string[];
   rows: string[][];
   paragraph?: string;
+  image?: SectionImage;
 };
 
 type BulletSection = {
   bullets: string[];
   paragraph?: string;
+  image?: SectionImage;
 };
 
 type Card = {
@@ -40,15 +49,34 @@ const cards = (cardData as { cards: Card[] }).cards;
 type SectionWrapperProps = {
   title: string;
   paragraph?: string;
+  image?: SectionImage;
   children: ReactNode;
 };
 
-function SectionWrapper({ title, paragraph, children }: SectionWrapperProps) {
+function SectionWrapper({ title, paragraph, image, children }: SectionWrapperProps) {
   return (
     <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
       <h2 className="text-xl font-semibold text-white">{title}</h2>
       {children}
       {paragraph ? <p className="text-sm text-slate-100/80">{paragraph}</p> : null}
+      {image ? (
+        <figure className="space-y-3">
+          <div className="relative h-48 w-full overflow-hidden rounded-2xl bg-slate-800/40">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 40vw, (min-width: 640px) 60vw, 90vw"
+            />
+          </div>
+          {image.caption ? (
+            <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-200/70">
+              {image.caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      ) : null}
     </section>
   );
 }
@@ -60,7 +88,7 @@ type BulletSectionBlockProps = {
 
 function BulletSectionBlock({ title, section }: BulletSectionBlockProps) {
   return (
-    <SectionWrapper title={title} paragraph={section.paragraph}>
+    <SectionWrapper title={title} paragraph={section.paragraph} image={section.image}>
       <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
         {section.bullets.map((bullet) => (
           <li key={bullet} className="flex items-start gap-3">
@@ -80,7 +108,7 @@ type TableSectionBlockProps = {
 
 function TableSectionBlock({ title, section }: TableSectionBlockProps) {
   return (
-    <SectionWrapper title={title} paragraph={section.paragraph}>
+    <SectionWrapper title={title} paragraph={section.paragraph} image={section.image}>
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-white/10 text-sm text-slate-100/80">
           <thead>
