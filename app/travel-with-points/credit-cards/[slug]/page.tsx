@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import cardData from "@/data/credit-cards.json";
+
+type TableSection = {
+  headers: string[];
+  rows: string[][];
+  paragraph?: string;
+};
+
+type BulletSection = {
+  bullets: string[];
+  paragraph?: string;
+};
 
 type Card = {
   slug: string;
@@ -13,12 +25,125 @@ type Card = {
   seoDescription: string;
   welcomeOffer: string;
   bestFor: string;
-  earnRates: string[];
-  topFeatures: string[];
-  transferPartners: string[];
+  introduction?: BulletSection;
+  overview?: TableSection;
+  annualFeeDetails?: TableSection;
+  rewards?: TableSection;
+  milestoneBenefits?: TableSection;
+  redemption?: BulletSection;
+  loungeAccess?: TableSection;
+  forexMarkup?: BulletSection;
 };
 
 const cards = (cardData as { cards: Card[] }).cards;
+
+type SectionWrapperProps = {
+  title: string;
+  paragraph?: string;
+  children: ReactNode;
+};
+
+function SectionWrapper({ title, paragraph, children }: SectionWrapperProps) {
+  return (
+    <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+      <h2 className="text-xl font-semibold text-white">{title}</h2>
+      {children}
+      {paragraph ? <p className="text-sm text-slate-100/80">{paragraph}</p> : null}
+    </section>
+  );
+}
+
+type BulletSectionBlockProps = {
+  title: string;
+  section: BulletSection;
+};
+
+function BulletSectionBlock({ title, section }: BulletSectionBlockProps) {
+  return (
+    <SectionWrapper title={title} paragraph={section.paragraph}>
+      <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
+        {section.bullets.map((bullet) => (
+          <li key={bullet} className="flex items-start gap-3">
+            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+            <span>{bullet}</span>
+          </li>
+        ))}
+      </ul>
+    </SectionWrapper>
+  );
+}
+
+type TableSectionBlockProps = {
+  title: string;
+  section: TableSection;
+};
+
+function TableSectionBlock({ title, section }: TableSectionBlockProps) {
+  return (
+    <SectionWrapper title={title} paragraph={section.paragraph}>
+      <div className="overflow-x-auto">
+        <table className="min-w-full divide-y divide-white/10 text-sm text-slate-100/80">
+          <thead>
+            <tr>
+              {section.headers.map((header) => (
+                <th
+                  key={header}
+                  scope="col"
+                  className="px-4 py-3 text-left font-semibold uppercase tracking-wide text-slate-200"
+                >
+                  {header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white/10">
+            {section.rows.map((row, rowIndex) => (
+              <tr key={rowIndex} className="align-top">
+                {row.map((cell, cellIndex) => (
+                  <td key={`${rowIndex}-${cellIndex}`} className="px-4 py-3">
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type SectionIntroProps = {
+  issuer: string;
+  annualFee: string;
+  bestFor: string;
+  welcomeOffer: string;
+};
+
+function SectionIntro({ issuer, annualFee, bestFor, welcomeOffer }: SectionIntroProps) {
+  return (
+    <SectionWrapper title="Card snapshot">
+      <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
+        <div>
+          <dt className="font-semibold text-white">Issuer</dt>
+          <dd>{issuer}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Annual fee</dt>
+          <dd>{annualFee}</dd>
+        </div>
+        <div className="sm:col-span-2">
+          <dt className="font-semibold text-white">Best for</dt>
+          <dd>{bestFor}</dd>
+        </div>
+        <div className="sm:col-span-2">
+          <dt className="font-semibold text-white">Welcome offer</dt>
+          <dd>{welcomeOffer}</dd>
+        </div>
+      </dl>
+    </SectionWrapper>
+  );
+}
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -126,66 +251,42 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
           <p className="text-base text-slate-200/80">{card.summary}</p>
         </header>
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Card snapshot</h2>
-          <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
-            <div>
-              <dt className="font-semibold text-white">Issuer</dt>
-              <dd>{card.issuer}</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-white">Annual fee</dt>
-              <dd>{card.annualFee}</dd>
-            </div>
-            <div className="sm:col-span-2">
-              <dt className="font-semibold text-white">Best for</dt>
-              <dd>{card.bestFor}</dd>
-            </div>
-            <div className="sm:col-span-2">
-              <dt className="font-semibold text-white">Welcome offer</dt>
-              <dd>{card.welcomeOffer}</dd>
-            </div>
-          </dl>
-        </section>
+        <SectionIntro
+          issuer={card.issuer}
+          annualFee={card.annualFee}
+          bestFor={card.bestFor}
+          welcomeOffer={card.welcomeOffer}
+        />
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">How it earns</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {card.earnRates.map((rate) => (
-              <li key={rate} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
-                <span>{rate}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {card.introduction ? (
+          <BulletSectionBlock title="Introduction" section={card.introduction} />
+        ) : null}
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Standout benefits</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {card.topFeatures.map((feature) => (
-              <li key={feature} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {card.overview ? (
+          <TableSectionBlock title="Overview" section={card.overview} />
+        ) : null}
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Transfer partners</h2>
-          <p className="text-sm text-slate-100/80">
-            Move your rewards where they matter most. Transfer partners include:
-          </p>
-          <ul className="grid gap-3 text-sm text-slate-100/80 sm:grid-cols-2">
-            {card.transferPartners.map((partner) => (
-              <li key={partner} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
-                <span>{partner}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {card.annualFeeDetails ? (
+          <TableSectionBlock title="Annual fee / Joining fee" section={card.annualFeeDetails} />
+        ) : null}
+
+        {card.rewards ? <TableSectionBlock title="Rewards" section={card.rewards} /> : null}
+
+        {card.milestoneBenefits ? (
+          <TableSectionBlock title="Milestone benefits" section={card.milestoneBenefits} />
+        ) : null}
+
+        {card.redemption ? (
+          <BulletSectionBlock title="Redemption" section={card.redemption} />
+        ) : null}
+
+        {card.loungeAccess ? (
+          <TableSectionBlock title="Lounge access" section={card.loungeAccess} />
+        ) : null}
+
+        {card.forexMarkup ? (
+          <BulletSectionBlock title="Forex markup" section={card.forexMarkup} />
+        ) : null}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Ready for more cards?</p>
