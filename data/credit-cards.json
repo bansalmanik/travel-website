@@ -1,4 +1,120 @@
 {
+  "cards": [
+    {
+      "slug": "chase-sapphire-preferred",
+      "name": "Chase Sapphire Preferred®",
+      "issuer": "Chase",
+      "annualFee": "$95",
+      "summary": "Flexible workhorse card with strong transfer partners, built-in travel protections, and easy-to-use redemption options.",
+      "seoDescription": "Review the Chase Sapphire Preferred benefits, transfer partners, and earning structure to see why it remains the go-to starter travel card.",
+      "welcomeOffer": "Earn 60,000 bonus points after you spend $4,000 on purchases in the first 3 months from account opening.",
+      "bestFor": "Travelers who want premium-style perks without a premium fee and value flexible redemption options.",
+      "earnRates": [
+        "5x points on travel purchased through Chase Ultimate Rewards®",
+        "3x points on dining, including eligible delivery services",
+        "2x points on all other travel purchases",
+        "1x point per dollar on everything else"
+      ],
+      "topFeatures": [
+        "Primary rental car collision damage waiver coverage",
+        "Transfer points 1:1 to partners like Hyatt, United, and Air Canada",
+        "$50 annual Ultimate Rewards hotel credit",
+        "25% more value when you redeem through the Chase travel portal"
+      ],
+      "transferPartners": [
+        "World of Hyatt",
+        "United MileagePlus",
+        "Air Canada Aeroplan",
+        "Singapore Airlines KrisFlyer",
+        "British Airways Executive Club"
+      ]
+    },
+    {
+      "slug": "american-express-platinum",
+      "name": "The Platinum Card® from American Express",
+      "issuer": "American Express",
+      "annualFee": "$695",
+      "summary": "Flagship premium card with worldwide lounge access, airline fee credits, and unrivaled luxury travel partnerships.",
+      "seoDescription": "See how the Amex Platinum unlocks airport lounges, airline credits, and elite hotel perks to elevate every trip.",
+      "welcomeOffer": "Earn 80,000 Membership Rewards® points after spending $6,000 on purchases in the first 6 months of card membership.",
+      "bestFor": "Frequent travelers who can maximize statement credits and want lounge access nearly everywhere they fly.",
+      "earnRates": [
+        "5x Membership Rewards points on flights booked directly with airlines or through Amex Travel (up to $500,000 per calendar year)",
+        "5x points on prepaid hotels booked on AmexTravel.com",
+        "1x point on other eligible purchases"
+      ],
+      "topFeatures": [
+        "$200 airline incidental fee credit and $200 in Uber Cash each year",
+        "Access to Amex Centurion Lounges, Delta Sky Clubs, and Priority Pass lounges",
+        "Automatic Hilton Honors Gold and Marriott Bonvoy Gold Elite status",
+        "Fine Hotels + Resorts® perks like breakfast for two and guaranteed late checkout"
+      ],
+      "transferPartners": [
+        "Air France-KLM Flying Blue",
+        "ANA Mileage Club",
+        "Virgin Atlantic Flying Club",
+        "Singapore Airlines KrisFlyer",
+        "Qatar Airways Privilege Club"
+      ]
+    },
+    {
+      "slug": "capital-one-venture-x",
+      "name": "Capital One Venture X Rewards Credit Card",
+      "issuer": "Capital One",
+      "annualFee": "$395",
+      "summary": "Premium yet approachable card with flat-rate earning, lounge access, and annual credits that offset the fee.",
+      "seoDescription": "Learn how the Capital One Venture X combines simple 2x earning with luxe travel perks and transfer flexibility.",
+      "welcomeOffer": "Earn 75,000 bonus miles when you spend $4,000 on purchases within the first 3 months from account opening.",
+      "bestFor": "Travelers who prefer straightforward earning but still want lounge access and transferable miles.",
+      "earnRates": [
+        "10x miles on hotels and rental cars booked through Capital One Travel",
+        "5x miles on flights booked through Capital One Travel",
+        "2x miles on every other purchase"
+      ],
+      "topFeatures": [
+        "$300 annual credit for bookings through Capital One Travel",
+        "10,000 anniversary bonus miles each cardmember year",
+        "Access to Capital One Lounges and Priority Pass Select",
+        "Add up to 4 authorized users for no additional fee"
+      ],
+      "transferPartners": [
+        "Air Canada Aeroplan",
+        "Avianca LifeMiles",
+        "British Airways Executive Club",
+        "Qantas Frequent Flyer",
+        "Wyndham Rewards"
+      ]
+    },
+    {
+      "slug": "amex-gold",
+      "name": "American Express® Gold Card",
+      "issuer": "American Express",
+      "annualFee": "$250",
+      "summary": "Dining and grocery powerhouse that feeds you Membership Rewards points fast with easy statement credits.",
+      "seoDescription": "Understand how the Amex Gold card's bonus categories and monthly dining credits make it a staple in points strategies.",
+      "welcomeOffer": "Earn 60,000 Membership Rewards® points after you spend $4,000 on eligible purchases within the first 6 months.",
+      "bestFor": "Foodies and home cooks who can maximize dining rewards and flexible transfer partners.",
+      "earnRates": [
+        "4x Membership Rewards points at restaurants, including takeout and delivery",
+        "4x points at U.S. supermarkets (on up to $25,000 per calendar year)",
+        "3x points on flights booked directly with airlines or on AmexTravel.com",
+        "1x point on other eligible purchases"
+      ],
+      "topFeatures": [
+        "$10 monthly dining credit at partners like Grubhub, Shake Shack, and Cheesecake Factory",
+        "$10 in Uber Cash each month for U.S. rides and eats",
+        "No foreign transaction fees",
+        "Access to the same 1:1 airline transfer partners as the Platinum Card"
+      ],
+      "transferPartners": [
+        "British Airways Executive Club",
+        "Emirates Skywards",
+        "Iberia Plus",
+        "Air Canada Aeroplan",
+        "Virgin Atlantic Flying Club"
+      ]
+    }
+  ],
   "cardStrategies": [
     {
       "title": "Start with a flexible currency",
