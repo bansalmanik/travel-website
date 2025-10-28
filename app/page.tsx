@@ -65,24 +65,6 @@ const travelWithPointsHighlights = [
   },
 ];
 
-const photoDiary = [
-  {
-    caption: "Golden hour over alpine lakes in the Dolomites.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    caption: "Collecting spices in Marrakech’s buzzing souks.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1505744386214-fa16e387eec8?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    caption: "Cycling sunrise streets in Hoi An.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
-  },
-];
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
@@ -232,36 +214,6 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className="grid gap-12 rounded-3xl bg-slate-900 px-8 py-12 text-white md:grid-cols-2">
-          <div className="space-y-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-300">Photo Diary</p>
-            <h2 className="text-3xl font-semibold sm:text-4xl">Postcards from the archives</h2>
-            <p className="text-base text-slate-200">
-              Small scenes that stuck with me long after the flights home—the laughter of new friends, the quiet between storms,
-              the colors that never leave.
-            </p>
-          </div>
-          <div className="grid gap-6">
-            {photoDiary.map((photo, index) => (
-              <figure
-                key={photo.caption}
-                className={`overflow-hidden rounded-3xl border border-white/10 bg-white/10 shadow-xl backdrop-blur ${index === 1 ? "md:ml-12" : ""}`}
-              >
-                <div className="relative h-52 w-full">
-                  <Image
-                    src={photo.imageUrl}
-                    alt={photo.caption}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 768px) 40vw, 100vw"
-                  />
-                </div>
-                <figcaption className="px-6 py-4 text-sm text-slate-100">{photo.caption}</figcaption>
-              </figure>
-            ))}
           </div>
         </section>
 
