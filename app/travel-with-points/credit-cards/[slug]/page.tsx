@@ -21,16 +21,17 @@ type Card = {
 const cards = (cardData as { cards: Card[] }).cards;
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
   return cards.map((card) => ({ slug: card.slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const slug = decodeURIComponent(params.slug);
-  const card = cards.find((item) => item.slug === slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
+  const card = cards.find((item) => item.slug === decodedSlug);
 
   if (!card) {
     return {
@@ -65,9 +66,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function CreditCardDetailPage({ params }: PageProps) {
-  const slug = decodeURIComponent(params.slug);
-  const card = cards.find((item) => item.slug === slug);
+export default async function CreditCardDetailPage({ params }: PageProps) {
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
+  const card = cards.find((item) => item.slug === decodedSlug);
 
   if (!card) {
     notFound();
