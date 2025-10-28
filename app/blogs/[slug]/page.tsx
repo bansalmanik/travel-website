@@ -1,18 +1,19 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts } from "../data";
+import { getAllBlogSummaries, getBlogBySlug } from "../data";
 
 type BlogPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
+export async function generateStaticParams() {
+  const posts = await getAllBlogSummaries();
+  return posts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: BlogPageProps) {
   const { slug } = await params;
-  const post = blogPosts.find((item) => item.slug === slug);
+  const post = await getBlogBySlug(slug);
 
   if (!post) {
     return { title: "Blog not found" };
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: BlogPageProps) {
 
 export default async function BlogDetailPage({ params }: BlogPageProps) {
   const { slug } = await params;
-  const post = blogPosts.find((item) => item.slug === slug);
+  const post = await getBlogBySlug(slug);
 
   if (!post) {
     notFound();
