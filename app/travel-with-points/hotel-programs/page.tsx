@@ -1,27 +1,36 @@
-const elitePaths = [
-  {
-    tier: "Marriott Bonvoy",
-    highlight: "Fifth night free on award stays and 35k/50k free night certificates from co-branded cards.",
-  },
-  {
-    tier: "Hyatt World of Hyatt",
-    highlight: "Milestone rewards every 10 nights with suite upgrade awards at 50 and 60 nights.",
-  },
-  {
-    tier: "Hilton Honors",
-    highlight: "Automatic Gold status with select credit cards, unlocking free breakfast worldwide.",
-  },
-];
+import type { Metadata } from "next";
+import hotelData from "@/data/hotel-programs.json";
 
-const bookingTips = [
-  "Compare cash rates versus points with a simple cents-per-point formula.",
-  "Stack portal rebates, Amex Offers, or Mastercard promos for paid stays when points value is low.",
-  "Keep a spreadsheet of upcoming certificate expirations so you can plan weekend getaways in advance.",
-];
+type ElitePath = {
+  tier: string;
+  highlight: string;
+};
+
+type BookingTips = string[];
+
+const { elitePaths, bookingTips } = hotelData as {
+  elitePaths: ElitePath[];
+  bookingTips: BookingTips;
+};
+
+export const metadata: Metadata = {
+  title: "Hotel loyalty programs guide | Travel with Points",
+  description:
+    "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points.",
+  keywords: [
+    "hotel loyalty programs",
+    "elite status tips",
+    "travel rewards hotels",
+    "hotel points strategy"
+  ],
+  alternates: {
+    canonical: "/travel-with-points/hotel-programs"
+  }
+};
 
 export default function HotelProgramsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-300">Travel with Points</p>
@@ -36,10 +45,10 @@ export default function HotelProgramsPage() {
           <h2 className="text-2xl font-semibold text-white">Paths to elite status</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {elitePaths.map((path) => (
-              <div key={path.tier} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+              <article key={path.tier} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
                 <h3 className="text-lg font-semibold text-white">{path.tier}</h3>
                 <p className="text-sm leading-6 text-slate-100/80">{path.highlight}</p>
-              </div>
+              </article>
             ))}
           </div>
         </section>
@@ -56,6 +65,6 @@ export default function HotelProgramsPage() {
           </ul>
         </section>
       </div>
-    </div>
+    </main>
   );
 }
