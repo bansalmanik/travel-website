@@ -355,10 +355,12 @@ export default function Home() {
                 required
                 placeholder="hello@you.com"
                 className="w-full rounded-full border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:border-slate-400 focus:outline-none"
+                suppressHydrationWarning
               />
               <button
                 className="flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-slate-800"
                 type="submit"
+                suppressHydrationWarning
               >
                 Join the list
               </button>
