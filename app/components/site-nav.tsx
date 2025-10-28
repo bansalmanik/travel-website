@@ -14,7 +14,7 @@ export function SiteNav() {
         <Link href="/" className="text-xl font-semibold tracking-wide transition-opacity hover:opacity-80">
           Away With Ana
         </Link>
-        <div className="hidden gap-8 text-sm uppercase tracking-[0.2em] md:flex">
+        <div className="flex w-full flex-col items-start gap-4 text-sm uppercase tracking-[0.2em] md:w-auto md:flex-row md:items-center md:gap-8">
           {navigationLinks.map((link) => (
             <Link key={link.label} className="transition-opacity hover:opacity-80" href={link.href}>
               {link.label}
