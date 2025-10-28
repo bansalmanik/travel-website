@@ -36,10 +36,14 @@ type ElitePath = {
 
 type BookingTips = string[];
 
-const { programs, elitePaths, bookingTips } = hotelData as {
-  programs: HotelProgram[];
-  elitePaths: ElitePath[];
-  bookingTips: BookingTips;
+const {
+  programs = [],
+  elitePaths = [],
+  bookingTips = []
+} = hotelData as {
+  programs?: HotelProgram[];
+  elitePaths?: ElitePath[];
+  bookingTips?: BookingTips;
 };
 
 export const metadata: Metadata = {
