@@ -1,0 +1,33 @@
+{
+  "awardPlaybook": [
+    {
+      "title": "Search partners, not airlines",
+      "detail": "Use Air Canada Aeroplan, Avianca LifeMiles, or Virgin Atlantic to book seats on Star Alliance and SkyTeam partners with fewer surcharges."
+    },
+    {
+      "title": "Leverage stopovers",
+      "detail": "Programs like Aeroplan and Alaska Mileage Plan allow stopovers on one-way awards—turn a connection into a mini vacation."
+    },
+    {
+      "title": "Watch transfer bonuses",
+      "detail": "Amex, Chase, and Capital One regularly offer 15–30% bonuses. Transfer only when a specific award is available."
+    }
+  ],
+  "favoriteRoutes": [
+    {
+      "route": "US ➜ Europe",
+      "program": "Virgin Atlantic Flying Club",
+      "highlight": "Redeem 50k points for one-way Delta One to Europe during off-peak dates."
+    },
+    {
+      "route": "US ➜ Asia",
+      "program": "Alaska Mileage Plan",
+      "highlight": "Fly Japan Airlines business class for 60k miles with a free stopover in Tokyo."
+    },
+    {
+      "route": "Intra-Europe",
+      "program": "Avios (British Airways / Iberia)",
+      "highlight": "Short-haul flights start at 4k points and avoid high fuel surcharges when booked through Iberia."
+    }
+  ]
+}

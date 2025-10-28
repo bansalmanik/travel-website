@@ -1,39 +1,40 @@
-const awardPlaybook = [
-  {
-    title: "Search partners, not airlines",
-    detail: "Use Air Canada Aeroplan, Avianca LifeMiles, or Virgin Atlantic to book seats on Star Alliance and SkyTeam partners with fewer surcharges.",
-  },
-  {
-    title: "Leverage stopovers",
-    detail: "Programs like Aeroplan and Alaska Mileage Plan allow stopovers on one-way awards—turn a connection into a mini vacation.",
-  },
-  {
-    title: "Watch transfer bonuses",
-    detail: "Amex, Chase, and Capital One regularly offer 15–30% bonuses. Transfer only when a specific award is available.",
-  },
-];
+import type { Metadata } from "next";
+import flightData from "@/data/flight-programs.json";
 
-const favoriteRoutes = [
-  {
-    route: "US ➜ Europe",
-    program: "Virgin Atlantic Flying Club",
-    highlight: "Redeem 50k points for one-way Delta One to Europe during off-peak dates.",
-  },
-  {
-    route: "US ➜ Asia",
-    program: "Alaska Mileage Plan",
-    highlight: "Fly Japan Airlines business class for 60k miles with a free stopover in Tokyo.",
-  },
-  {
-    route: "Intra-Europe",
-    program: "Avios (British Airways / Iberia)",
-    highlight: "Short-haul flights start at 4k points and avoid high fuel surcharges when booked through Iberia.",
-  },
-];
+type AwardPlaybookItem = {
+  title: string;
+  detail: string;
+};
+
+type FavoriteRoute = {
+  route: string;
+  program: string;
+  highlight: string;
+};
+
+const { awardPlaybook, favoriteRoutes } = flightData as {
+  awardPlaybook: AwardPlaybookItem[];
+  favoriteRoutes: FavoriteRoute[];
+};
+
+export const metadata: Metadata = {
+  title: "Flight loyalty program sweet spots | Travel with Points",
+  description:
+    "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles.",
+  keywords: [
+    "flight loyalty programs",
+    "airline miles sweet spots",
+    "award travel tips",
+    "alliance partners"
+  ],
+  alternates: {
+    canonical: "/travel-with-points/flight-programs"
+  }
+};
 
 export default function FlightProgramsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-300">Travel with Points</p>
@@ -48,10 +49,10 @@ export default function FlightProgramsPage() {
           <h2 className="text-2xl font-semibold text-white">Award booking playbook</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {awardPlaybook.map((item) => (
-              <div key={item.title} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+              <article key={item.title} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
                 <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                 <p className="text-sm leading-6 text-slate-100/80">{item.detail}</p>
-              </div>
+              </article>
             ))}
           </div>
         </section>
@@ -60,17 +61,17 @@ export default function FlightProgramsPage() {
           <h2 className="text-2xl font-semibold text-white">Favorite sweet spots</h2>
           <div className="space-y-6">
             {favoriteRoutes.map((route) => (
-              <div key={route.route} className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+              <article key={route.route} className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <h3 className="text-lg font-semibold text-white">{route.route}</h3>
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-300">{route.program}</p>
                 </div>
                 <p className="text-sm leading-6 text-slate-100/80">{route.highlight}</p>
-              </div>
+              </article>
             ))}
           </div>
         </section>
       </div>
-    </div>
+    </main>
   );
 }

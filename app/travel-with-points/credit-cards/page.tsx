@@ -1,42 +1,41 @@
-const cardStrategies = [
-  {
-    title: "Start with a flexible currency",
-    description:
-      "Chase Ultimate Rewards, American Express Membership Rewards, and Capital One Miles give you multiple airline and hotel partners to work with.",
-  },
-  {
-    title: "Pair premium with no-fee",
-    description:
-      "A premium card unlocks lounge access and travel credits, while a no-fee card keeps points alive when you want to downgrade.",
-  },
-  {
-    title: "Stack category bonuses",
-    description:
-      "Use dining, grocery, and travel multipliers to earn faster—then move those points into the program offering the best redemption.",
-  },
-];
+import type { Metadata } from "next";
+import cardData from "@/data/credit-cards.json";
 
-const favoriteCombos = [
-  {
-    name: "Everyday Essentials",
-    cards: ["Chase Sapphire Preferred", "Chase Freedom Flex"],
-    note: "A low annual fee starter duo that earns 3x travel/dining and rotating 5x categories while sharing one points pool.",
-  },
-  {
-    name: "Premium Globetrotter",
-    cards: ["Amex Platinum", "Amex Gold"],
-    note: "Stack $200 in airline incidental credits with 4x grocery/dining to rack up transferable points quickly.",
-  },
-  {
-    name: "Cashback Safety Net",
-    cards: ["Capital One Venture", "Citi Double Cash"],
-    note: "Earn 2x everywhere, then transfer to Capital One partners or fall back on simple statement credits when award space is scarce.",
-  },
-];
+type CardStrategy = {
+  title: string;
+  description: string;
+};
+
+type FavoriteCombo = {
+  name: string;
+  cards: string[];
+  note: string;
+};
+
+const { cardStrategies, favoriteCombos } = cardData as {
+  cardStrategies: CardStrategy[];
+  favoriteCombos: FavoriteCombo[];
+};
+
+export const metadata: Metadata = {
+  title: "Travel credit card strategy | Travel with Points",
+  description:
+    "Discover flexible currencies, card pairings, and smart earning tactics to maximize travel rewards with every swipe.",
+  keywords: [
+    "travel credit cards",
+    "points strategy",
+    "loyalty rewards",
+    "credit card combinations",
+    "transferable points"
+  ],
+  alternates: {
+    canonical: "/travel-with-points/credit-cards"
+  }
+};
 
 export default function CreditCardsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel with Points</p>
@@ -51,10 +50,10 @@ export default function CreditCardsPage() {
           <h2 className="text-2xl font-semibold text-white">Core principles</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {cardStrategies.map((strategy) => (
-              <div key={strategy.title} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+              <article key={strategy.title} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
                 <h3 className="text-lg font-semibold text-white">{strategy.title}</h3>
                 <p className="text-sm leading-6 text-slate-100/80">{strategy.description}</p>
-              </div>
+              </article>
             ))}
           </div>
         </section>
@@ -63,17 +62,17 @@ export default function CreditCardsPage() {
           <h2 className="text-2xl font-semibold text-white">Starter card pairings</h2>
           <div className="space-y-6">
             {favoriteCombos.map((combo) => (
-              <div key={combo.name} className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+              <article key={combo.name} className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
                 <h3 className="text-lg font-semibold text-white">{combo.name}</h3>
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">
                   {combo.cards.join(" + ")}
                 </p>
                 <p className="text-sm leading-6 text-slate-100/80">{combo.note}</p>
-              </div>
+              </article>
             ))}
           </div>
         </section>
       </div>
-    </div>
+    </main>
   );
 }
