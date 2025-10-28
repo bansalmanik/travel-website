@@ -12,7 +12,7 @@ type Card = {
   welcomeOffer: string;
   bestFor: string;
   earnRates: string[];
-  topFeatures: string[];
+  topFeatures?: string[];
   transferPartners: string[];
 };
 
@@ -86,9 +86,11 @@ export default function CreditCardsPage() {
                       <dd>{card.annualFee}</dd>
                     </div>
                   </dl>
-                  <p className="text-sm text-slate-100/70">
-                    <span className="font-semibold text-white">Standout feature:</span> {card.topFeatures[0]}
-                  </p>
+                  {card.topFeatures?.length ? (
+                    <p className="text-sm text-slate-100/70">
+                      <span className="font-semibold text-white">Standout feature:</span> {card.topFeatures[0]}
+                    </p>
+                  ) : null}
                 </div>
                 <Link
                   href={`/travel-with-points/credit-cards/${card.slug}`}
