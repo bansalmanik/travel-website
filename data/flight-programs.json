@@ -7,20 +7,141 @@
       "hub": "Singapore (SIN)",
       "summary": "Unlock Singapore Airlines' world-class cabins and a deep partner network with region-based award charts and reasonable surcharges.",
       "seoDescription": "Master the Singapore KrisFlyer program with transfer partners, saver award strategies, and elite tier shortcuts for premium cabin travel.",
-      "eliteLevels": [
-        "Elite Silver begins at 25,000 elite miles and grants priority waitlisting and complimentary seat selection",
-        "Elite Gold at 50,000 miles unlocks Star Alliance Gold status with lounge access worldwide"
-      ],
-      "sweetSpots": [
-        "Book Singapore Suites from New York to Frankfurt for 97,000 miles with saver availability",
-        "Intra-Asia business class flights start at just 21,500 miles one-way",
-        "Spontaneous Escapes promotions discount select routes by 30% every month"
-      ],
-      "transferPartners": [
-        "American Express Membership Rewards",
-        "Chase Ultimate Rewards",
-        "Capital One Miles",
-        "Citi ThankYou Points"
+      "sections": [
+        {
+          "id": "overview",
+          "title": "Program overview",
+          "style": "bullets",
+          "intro": "KrisFlyer remains one of the most versatile Star Alliance programs thanks to flexible transfer partners and exclusive Singapore Airlines premium cabin access.",
+          "paragraphs": [
+            "Saver and Advantage award levels provide built-in pricing transparency while regular Spontaneous Escapes promotions slash rates on select routes.",
+            "Mileage pooling across family accounts and seamless integration with Scoot make the program useful for both aspirational and everyday travel."
+          ],
+          "bullets": [
+            "Region-based award charts with incremental add-on pricing for mixed-cabin itineraries.",
+            "Access to Singapore Airlines premium cabins that partners rarely release.",
+            "Ability to hold awards for up to 3 days when booked through the call center.",
+            "Nominate up to five redemption nominees for easier household bookings."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/cabin-experience.svg",
+              "alt": "Singapore Airlines Suites cabin",
+              "caption": "Saver awards unlock Singapore's flagship Suites experience."
+            }
+          ]
+        },
+        {
+          "id": "status-levels",
+          "title": "Status levels & benefits",
+          "style": "table",
+          "intro": "Qualify for KrisFlyer elite status by earning Elite miles on paid flights within a 12-month period.",
+          "paragraphs": [
+            "Progress resets every 12 months, so plan major trips within the same membership year to climb faster.",
+            "Holding a co-branded credit card in Singapore can grant shortcuts such as double elite miles offers."
+          ],
+          "table": {
+            "caption": "KrisFlyer elite tiers at a glance",
+            "columns": ["Tier", "Qualification", "Signature perks"],
+            "rows": [
+              {
+                "cells": [
+                  "KrisFlyer Elite Silver",
+                  "25,000 Elite miles",
+                  "25% bonus miles on Singapore Airlines, priority waitlisting, complimentary standard seat selection"
+                ]
+              },
+              {
+                "cells": [
+                  "KrisFlyer Elite Gold",
+                  "50,000 Elite miles",
+                  "Star Alliance Gold lounge access, extra baggage, priority check-in and boarding"
+                ]
+              },
+              {
+                "cells": [
+                  "PPS Club",
+                  "S$25,000 in PPS Value",
+                  "Access to The Private Room, priority award waitlist, dedicated PPS phone support"
+                ]
+              }
+            ]
+          },
+          "images": [
+            {
+              "src": "/flight-programs/status-lounge.svg",
+              "alt": "Traveler relaxing in a lounge",
+              "caption": "Star Alliance Gold unlocks premium lounge spaces worldwide."
+            }
+          ]
+        },
+        {
+          "id": "earn-rate",
+          "title": "How to earn KrisFlyer miles",
+          "style": "bullets",
+          "intro": "Build balances quickly through a mix of flights, bank transfers, and partners across Asia-Pacific.",
+          "paragraphs": [
+            "Most major transferable bank currencies move into KrisFlyer at a 1:1 ratio, usually within 12 to 24 hours.",
+            "Monitor transfer bonus promotions during seasonal sales to supercharge your balance."
+          ],
+          "bullets": [
+            "Earn 100% of miles flown on Singapore Airlines economy fare classes Y, B, and E—with bonuses for premium cabins.",
+            "Transfer points from American Express, Chase, Citi, Capital One, and Bilt in the U.S. (plus regional partners in Asia).",
+            "Credit hotel stays with partners like Marriott Bonvoy and Shangri-La Circle at 3,000-mile conversion blocks.",
+            "Use co-branded KrisFlyer UOB or American Express cards in Singapore for everyday spending multipliers."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/points-transfer.svg",
+              "alt": "Illustration of points flowing between loyalty programs",
+              "caption": "Instant bank transfers keep saver award seats within reach."
+            }
+          ]
+        },
+        {
+          "id": "sweet-spots",
+          "title": "Award sweet spots",
+          "style": "bullets",
+          "intro": "Redeem KrisFlyer miles strategically to unlock outsized cabin experiences.",
+          "paragraphs": [
+            "Saver availability ebbs and flows—set alerts with partner search engines and be ready to transfer when seats appear."
+          ],
+          "bullets": [
+            "Book Singapore Suites from New York to Frankfurt for 97,000 miles with saver availability.",
+            "Intra-Asia business class flights start at just 21,500 miles one-way.",
+            "Spontaneous Escapes promotions discount select routes by 30% every month.",
+            "Add a stopover on a round-trip award for only 15,000 extra miles."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/route-map.svg",
+              "alt": "Stylized route map from New York to Singapore",
+              "caption": "Premium cabin bargains center on long-haul routes via Singapore."
+            }
+          ]
+        },
+        {
+          "id": "usp",
+          "title": "Why travelers love KrisFlyer",
+          "style": "bullets",
+          "intro": "Beyond aspirational redemptions, KrisFlyer delivers daily-life utility for loyal flyers.",
+          "paragraphs": [
+            "Elite tiers integrate seamlessly with Scoot Insider, providing consistent benefits across the Singapore Airlines Group."
+          ],
+          "bullets": [
+            "Star Alliance Gold recognition ensures priority services on dozens of partners.",
+            "Miles never expire if you hold PPS Club status and continue qualifying annually.",
+            "Waitlist confirmations often clear within two weeks thanks to capacity management.",
+            "A robust stopover policy enables creative round-the-world itineraries."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/globetrotter.svg",
+              "alt": "Traveler planning an around-the-world trip",
+              "caption": "Plan multi-stop adventures with generous routing rules."
+            }
+          ]
+        }
       ]
     },
     {
@@ -30,21 +151,141 @@
       "hub": "Multiple hubs including London-Heathrow and Doha",
       "summary": "Distance-based pricing makes Avios perfect for short-haul flights and for leveraging Qatar’s premium cabins when booked through partner portals.",
       "seoDescription": "Learn how to pool, transfer, and redeem Avios across partner airlines for incredible short-haul and Qsuite awards.",
-      "eliteLevels": [
-        "Tier Points earned on cash tickets unlock Bronze, Silver, and Gold status within the British Airways Executive Club",
-        "Qatar Airways Privilege Club members enjoy Qsuite award availability releases for elite members"
-      ],
-      "sweetSpots": [
-        "4,000 Avios + low fees for economy flights under 650 miles in Europe",
-        "Use 70,000 Avios for Qatar Qsuite from the U.S. to the Middle East",
-        "Transfer Avios between British Airways, Iberia, Aer Lingus, and Qatar to access different award charts"
-      ],
-      "transferPartners": [
-        "American Express Membership Rewards",
-        "Chase Ultimate Rewards",
-        "Capital One Miles",
-        "Citi ThankYou Points",
-        "Bilt Rewards"
+      "sections": [
+        {
+          "id": "overview",
+          "title": "Program overview",
+          "style": "bullets",
+          "intro": "Avios acts as a shared currency across several airlines, letting you move balances to the partner with the best chart.",
+          "paragraphs": [
+            "Household accounts make family travel easier while Reward Flight Saver pricing keeps taxes low on select routes.",
+            "Use the Qatar Airways portal for long-haul premium cabin space while keeping the Iberia chart for cheap off-peak business awards to Europe."
+          ],
+          "bullets": [
+            "Distance-based award charts mean short hops can be under 6,000 Avios round-trip.",
+            "Combine Avios between British Airways, Iberia, Aer Lingus, and Qatar with no fee.",
+            "Household accounts allow up to seven members to share balances.",
+            "Reward Flight Saver pricing caps carrier surcharges on many British Airways routes."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/city-hop.svg",
+              "alt": "Airplane connecting European cities",
+              "caption": "Avios excel on short-haul hops across Europe and Asia."
+            }
+          ]
+        },
+        {
+          "id": "status-levels",
+          "title": "Executive Club status tiers",
+          "style": "table",
+          "intro": "Earn Tier Points on cash tickets to unlock elite privileges across the oneworld alliance.",
+          "paragraphs": [
+            "Tier Points reset every membership year; plan positioning flights and partner itineraries to cross thresholds.",
+            "Qatar Airways Privilege Club uses the same Avios currency but retains its own elite charts with lounge-heavy perks."
+          ],
+          "table": {
+            "caption": "British Airways Executive Club status requirements",
+            "columns": ["Tier", "Tier Points", "Key benefits"],
+            "rows": [
+              {
+                "cells": [
+                  "Bronze",
+                  "300 Tier Points",
+                  "Priority check-in, business-class seat selection, 25% Avios bonus"
+                ]
+              },
+              {
+                "cells": [
+                  "Silver",
+                  "600 Tier Points",
+                  "oneworld Sapphire status, lounge access, 50% Avios bonus"
+                ]
+              },
+              {
+                "cells": [
+                  "Gold",
+                  "1,500 Tier Points",
+                  "oneworld Emerald status, First Wing access, 100% Avios bonus"
+                ]
+              }
+            ]
+          },
+          "images": [
+            {
+              "src": "/flight-programs/status-lounge.svg",
+              "alt": "Frequent flyer enjoying a lounge",
+              "caption": "oneworld elite status smooths every stage of travel."
+            }
+          ]
+        },
+        {
+          "id": "earn-rate",
+          "title": "How to earn Avios",
+          "style": "bullets",
+          "intro": "Accumulate Avios quickly with credit card partners, dining programs, and limited-time transfer bonuses.",
+          "paragraphs": [
+            "U.S., U.K., and EU banking partners frequently offer 30% transfer bonuses into Avios programs.",
+            "Earn on-ground through British Airways eStore shopping offers and Iberia Plus hotel partners."
+          ],
+          "bullets": [
+            "Collect Avios via Chase, Amex, Capital One, Bilt, and Citi transfers to British Airways or Iberia.",
+            "Credit oneworld flights to the program with the highest Tier Point earning.",
+            "Use Qatar Airways Avios cards in select markets for boosted earnings on travel and dining.",
+            "Participate in British Airways dining and shopping portals for stackable bonuses."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/points-transfer.svg",
+              "alt": "Avios flowing from credit cards to airlines",
+              "caption": "Transfer bonuses can supercharge Avios balances."
+            }
+          ]
+        },
+        {
+          "id": "sweet-spots",
+          "title": "Avios sweet spots",
+          "style": "bullets",
+          "intro": "Use the right partner portal to minimize surcharges and maximize distance-based value.",
+          "paragraphs": [
+            "Remember that each program prices awards separately—compare British Airways, Iberia, and Qatar before booking."
+          ],
+          "bullets": [
+            "4,000 Avios + low fees for economy flights under 650 miles in Europe.",
+            "Use 70,000 Avios for Qatar Qsuite from the U.S. to the Middle East.",
+            "Transfer Avios between programs to access off-peak Iberia business class for 34,000 Avios each way.",
+            "Redeem Aer Lingus-operated flights via Avios.com to avoid London surcharges."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/route-map.svg",
+              "alt": "Map showing Doha and London connections",
+              "caption": "Qsuite awards shine when booked through Qatar Privilege Club."
+            }
+          ]
+        },
+        {
+          "id": "usp",
+          "title": "What makes Avios unique",
+          "style": "bullets",
+          "intro": "Flexible transfers and regional portals put you in control of pricing and surcharges.",
+          "paragraphs": [
+            "Linking your British Airways and Qatar accounts takes minutes and opens premium cabin access that rarely appears elsewhere."
+          ],
+          "bullets": [
+            "Combine Avios balances freely across partner programs with no loss of value.",
+            "Reward Flight Saver caps taxes on many European itineraries.",
+            "Household accounts support pooled redemptions without transfer delays.",
+            "Qatar Privilege Club regularly releases additional Qsuite seats to its own elites."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/globetrotter.svg",
+              "alt": "Traveler moving loyalty points between programs",
+              "caption": "Shift Avios where award space and surcharges are most favorable."
+            }
+          ]
+        }
       ]
     },
     {
@@ -54,20 +295,141 @@
       "hub": "Delhi (DEL) and Mumbai (BOM)",
       "summary": "India’s flag carrier program offers competitive redemption rates on Air India metal and Star Alliance partners with generous stopover rules.",
       "seoDescription": "See why Air India Flying Returns—also known as the Maharajah Club—deserves attention for Star Alliance awards to and from the Indian subcontinent.",
-      "eliteLevels": [
-        "Silver Edge Club at 25,000 status points grants 15% bonus miles and priority services",
-        "Golden Edge Club at 50,000 points delivers Star Alliance Gold benefits including lounge access",
-        "The Maharajah Club at 75,000 points unlocks upgrade vouchers and dedicated support"
-      ],
-      "sweetSpots": [
-        "Round-trip business class between India and Europe for 90,000 miles",
-        "Stopover permitted on international itineraries without extra miles",
-        "Attractive surcharges compared to booking via other Star Alliance partners"
-      ],
-      "transferPartners": [
-        "American Express Membership Rewards India",
-        "Axis Bank EDGE Rewards",
-        "HSBC India Reward Points"
+      "sections": [
+        {
+          "id": "overview",
+          "title": "Program overview",
+          "style": "bullets",
+          "intro": "Flying Returns is built for travelers who split time between India and global Star Alliance hubs.",
+          "paragraphs": [
+            "Recent IT upgrades modernized the booking engine, enabling online partner awards and dynamic account management.",
+            "Status holders receive reciprocal recognition on Vistara and Alliance Air, extending benefits to domestic networks."
+          ],
+          "bullets": [
+            "Mileage earning is distance-based with cabin bonuses up to 200%.",
+            "Family Pooling lets up to nine members combine their points.",
+            "One complimentary stopover allowed on international round-trips.",
+            "Upgrade awards available on both Air India and select Star Alliance partners."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/india-gateway.svg",
+              "alt": "Gateway of India monument with aircraft",
+              "caption": "Flying Returns centers travelers connecting through Delhi and Mumbai."
+            }
+          ]
+        },
+        {
+          "id": "status-levels",
+          "title": "Maharajah Club status tiers",
+          "style": "table",
+          "intro": "Status Points earned on eligible flights determine your tier within Flying Returns.",
+          "paragraphs": [
+            "Status runs on a rolling 12-month window—track balances quarterly to avoid downgrades.",
+            "Higher tiers unlock upgrade vouchers that can be used on long-haul Boeing 777 and 787 routes."
+          ],
+          "table": {
+            "caption": "Air India Flying Returns elite requirements",
+            "columns": ["Tier", "Status Points", "Top perks"],
+            "rows": [
+              {
+                "cells": [
+                  "Silver Edge Club",
+                  "25,000 points",
+                  "15% bonus miles, priority check-in, preference on upgrade waitlists"
+                ]
+              },
+              {
+                "cells": [
+                  "Golden Edge Club",
+                  "50,000 points",
+                  "Star Alliance Gold benefits, complimentary lounge access across India"
+                ]
+              },
+              {
+                "cells": [
+                  "The Maharajah Club",
+                  "75,000 points",
+                  "Dedicated relationship manager, four upgrade vouchers, priority boarding"
+                ]
+              }
+            ]
+          },
+          "images": [
+            {
+              "src": "/flight-programs/status-lounge.svg",
+              "alt": "Passenger enjoying premium airport services",
+              "caption": "Top-tier elites enjoy expedited handling throughout India."
+            }
+          ]
+        },
+        {
+          "id": "earn-rate",
+          "title": "How to earn Flying Returns miles",
+          "style": "bullets",
+          "intro": "Bolster your Maharajah Club balance with co-branded cards and partner conversions.",
+          "paragraphs": [
+            "India-based credit cards from Axis Bank and SBI offer milestone bonuses tied to annual spend.",
+            "Hotel partners including ITC Hotels and Taj Hotels convert loyalty points into Flying Returns miles."
+          ],
+          "bullets": [
+            "Earn 2 to 5 miles per INR 100 on Air India co-branded credit cards.",
+            "Transfer Axis Bank EDGE Rewards and HSBC Reward Points at 1:1 ratios.",
+            "Credit Star Alliance flights to Flying Returns for Status Points and Redeemable Miles.",
+            "Take advantage of seasonal promotions with Vistara for bonus accrual on domestic segments."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/points-transfer.svg",
+              "alt": "Illustration of loyalty points moving from banks to airlines",
+              "caption": "Local bank partners make it easy to top up Flying Returns miles."
+            }
+          ]
+        },
+        {
+          "id": "sweet-spots",
+          "title": "Flying Returns sweet spots",
+          "style": "bullets",
+          "intro": "Take advantage of region-based pricing with favorable surcharges versus other Star Alliance programs.",
+          "paragraphs": [
+            "Fuel surcharges remain modest on Air India metal, making cash co-pays reasonable even in premium cabins."
+          ],
+          "bullets": [
+            "Round-trip business class between India and Europe for 90,000 miles.",
+            "Stopover permitted on international itineraries without extra miles.",
+            "Attractive surcharges compared to booking via other Star Alliance partners.",
+            "Upgrade to business on long-haul flights for as low as 30,000 miles each way."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/route-map.svg",
+              "alt": "Map highlighting routes from India to Europe",
+              "caption": "Key long-haul routes price aggressively through Flying Returns."
+            }
+          ]
+        },
+        {
+          "id": "usp",
+          "title": "Why Flying Returns stands out",
+          "style": "bullets",
+          "intro": "A refreshed fleet and new alliance partnerships make Flying Returns more compelling than ever.",
+          "paragraphs": [
+            "Air India's growth plan includes new A350 aircraft with premium-heavy cabins, giving elites more upgrade opportunities."
+          ],
+          "bullets": [
+            "Complimentary domestic upgrades for Golden Edge and Maharajah Club when space permits.",
+            "Family Pooling accelerates redemptions for multigenerational trips.",
+            "Access to the expansive Star Alliance partner network out of India.",
+            "Dedicated call center for top-tier members handles complex itineraries quickly."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/globetrotter.svg",
+              "alt": "Traveler planning an Indian subcontinent journey",
+              "caption": "Elite benefits extend across India’s growing route map."
+            }
+          ]
+        }
       ]
     },
     {
@@ -77,20 +439,141 @@
       "hub": "Toronto (YYZ)",
       "summary": "Aeroplan’s hybrid award chart and dozens of non-alliance partners create outsized value with low surcharges and generous routing rules.",
       "seoDescription": "Dive into Air Canada Aeroplan sweet spots, stopover policies, and partner list to stretch your transferable points further.",
-      "eliteLevels": [
-        "25K status includes two Maple Leaf Lounge passes and eUpgrades",
-        "Super Elite 100K offers priority awards, concierge service, and unlimited Maple Leaf Lounge access"
-      ],
-      "sweetSpots": [
-        "Add a stopover on a one-way award for just 5,000 extra points",
-        "Fly ANA first class from the U.S. to Tokyo for 110,000 points",
-        "Use Family Sharing to combine points across household accounts"
-      ],
-      "transferPartners": [
-        "American Express Membership Rewards",
-        "Chase Ultimate Rewards",
-        "Capital One Miles",
-        "Bilt Rewards"
+      "sections": [
+        {
+          "id": "overview",
+          "title": "Program overview",
+          "style": "bullets",
+          "intro": "Aeroplan blends dynamic pricing on Air Canada flights with fixed partner charts, offering predictable value.",
+          "paragraphs": [
+            "Family Sharing pools points among up to eight members, while cash + points options keep award seats within reach.",
+            "More than 45 airline partners, including Emirates and Etihad, extend far beyond the Star Alliance network."
+          ],
+          "bullets": [
+            "Hybrid award chart with distance-based partner pricing.",
+            "Stopovers permitted on one-way awards for 5,000 points.",
+            "Extensive partner list covers all six inhabited continents.",
+            "No fuel surcharges on partner awards, even for carriers that normally add them."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/cabin-experience.svg",
+              "alt": "Premium cabin seat with ambient lighting",
+              "caption": "Aeroplan unlocks aspirational cabins on partners like ANA and Emirates."
+            }
+          ]
+        },
+        {
+          "id": "status-levels",
+          "title": "Aeroplan elite status tiers",
+          "style": "table",
+          "intro": "Aeroplan Elite Status (formerly Altitude) relies on Status Qualifying Miles (SQM), Segments (SQS), and Dollars (SQD).",
+          "paragraphs": [
+            "Select Benefits at each tier let you choose between eUpgrade credits, bonus points, or lounge passes.",
+            "Fly Premium Economy or Business on paid tickets to boost SQD quickly."
+          ],
+          "table": {
+            "caption": "Core Aeroplan status requirements",
+            "columns": ["Tier", "Qualification", "Benefits"],
+            "rows": [
+              {
+                "cells": [
+                  "25K",
+                  "25,000 SQM or 25 SQS + $3,000 SQD",
+                  "Two Maple Leaf Lounge passes, 25% bonus points"
+                ]
+              },
+              {
+                "cells": [
+                  "50K",
+                  "50,000 SQM or 50 SQS + $6,000 SQD",
+                  "Star Alliance Gold, eUpgrade credits, preferred pricing"
+                ]
+              },
+              {
+                "cells": [
+                  "Super Elite 100K",
+                  "100,000 SQM or 100 SQS + $20,000 SQD",
+                  "Concierge service, unlimited lounge access, highest upgrade priority"
+                ]
+              }
+            ]
+          },
+          "images": [
+            {
+              "src": "/flight-programs/status-lounge.svg",
+              "alt": "Traveler reviewing benefits at an airport lounge",
+              "caption": "Higher tiers unlock concierge-style service and upgrades."
+            }
+          ]
+        },
+        {
+          "id": "earn-rate",
+          "title": "How to earn Aeroplan points",
+          "style": "bullets",
+          "intro": "Aeroplan is one of the easiest programs to top up thanks to bank transfers and co-branded cards in multiple countries.",
+          "paragraphs": [
+            "Amex, Chase, Capital One, Bilt, and Wells Fargo all transfer to Aeroplan at 1:1 ratios in North America.",
+            "Aeroplan Visa cards provide elevated earn on Air Canada purchases plus annual Status Qualifying boosts."
+          ],
+          "bullets": [
+            "Earn up to 3 points per CA$1 on Air Canada co-branded credit cards.",
+            "Transfer Marriott Bonvoy points at 3:1 with a 5,000-point bonus per 60,000 transferred.",
+            "Credit flights on more than 45 partners to Aeroplan for both SQM and redeemable points.",
+            "Shop through the Aeroplan eStore to collect bonus points on everyday purchases."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/points-transfer.svg",
+              "alt": "Aeroplan points flowing from various partners",
+              "caption": "Multiple transferable currencies keep Aeroplan balances flush."
+            }
+          ]
+        },
+        {
+          "id": "sweet-spots",
+          "title": "Aeroplan sweet spots",
+          "style": "bullets",
+          "intro": "Leveraging the hybrid chart unlocks incredible value on aspirational cabins and multi-stop journeys.",
+          "paragraphs": [
+            "Partner awards price by total distance; use the stopover rule to string together two long segments for minimal extra points."
+          ],
+          "bullets": [
+            "Add a stopover on a one-way award for just 5,000 extra points.",
+            "Fly ANA first class from the U.S. to Tokyo for 110,000 points.",
+            "Use Family Sharing to combine points across household accounts.",
+            "Redeem for Emirates business class via Aeroplan at competitive rates with no fuel surcharges."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/route-map.svg",
+              "alt": "Map of Aeroplan partner routes",
+              "caption": "Stopovers turn one-way redemptions into globe-spanning itineraries."
+            }
+          ]
+        },
+        {
+          "id": "usp",
+          "title": "Why Aeroplan is a favorite",
+          "style": "bullets",
+          "intro": "From elite benefits to ease of earning, Aeroplan provides exceptional day-to-day value.",
+          "paragraphs": [
+            "Aeroplan’s Points + Cash slider lets you conserve balances when award availability is scarce."
+          ],
+          "bullets": [
+            "No close-in booking fees or fuel surcharges on partner awards.",
+            "Family Sharing allows pooled balances without transfer fees.",
+            "eUpgrade credits convert paid economy fares into lie-flat seats when paired with Latitude Attitude fares.",
+            "Aeroplan credit cards offer rollover SQM and eUpgrades for Elite members."
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/globetrotter.svg",
+              "alt": "Traveler planning an Aeroplan redemption",
+              "caption": "Aeroplan balances stretch further thanks to flexible redemption tools."
+            }
+          ]
+        }
       ]
     }
   ],
