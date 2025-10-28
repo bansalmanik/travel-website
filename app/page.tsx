@@ -64,6 +64,27 @@ const journalHighlights = [
   },
 ];
 
+const travelWithPointsHighlights = [
+  {
+    title: "Credit Cards",
+    description: "Compare welcome bonuses, annual fees, and sweet spots for travel statement credits.",
+    href: "/travel-with-points/credit-cards",
+    accent: "bg-amber-100 text-amber-900",
+  },
+  {
+    title: "Hotel Programs",
+    description: "Understand elite tiers, free night certificates, and when to transfer points for maximum value.",
+    href: "/travel-with-points/hotel-programs",
+    accent: "bg-sky-100 text-sky-900",
+  },
+  {
+    title: "Flight Programs",
+    description: "Decode award charts, routing rules, and how to stack alliances for long-haul redemptions.",
+    href: "/travel-with-points/flight-programs",
+    accent: "bg-emerald-100 text-emerald-900",
+  },
+];
+
 const photoDiary = [
   {
     caption: "Golden hour over alpine lakes in the Dolomites.",
@@ -198,6 +219,62 @@ export default function Home() {
                 </div>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="travel-with-points-heading"
+          className="overflow-hidden rounded-3xl bg-slate-900/95 px-8 py-12 text-white shadow-xl"
+        >
+          <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
+            <div className="space-y-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-300">New Resource Hub</p>
+              <h2 id="travel-with-points-heading" className="text-3xl font-semibold sm:text-4xl">
+                Travel with points and turn loyalty into long weekends
+              </h2>
+              <p className="text-base text-slate-100/80">
+                Learn the playbook I use to stretch miles and points for boutique hotels, business-class upgrades, and family visits.
+                Start with an overview or jump straight to the guides below.
+              </p>
+              <Link
+                className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-300"
+                href="/travel-with-points"
+              >
+                Explore the hub
+              </Link>
+            </div>
+            <div className="space-y-4">
+              {travelWithPointsHighlights.map((item) => (
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="group block overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10"
+                >
+                  <span
+                    className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] ${item.accent}`}
+                  >
+                    {item.title}
+                  </span>
+                  <p className="mt-4 text-sm leading-6 text-slate-100/90">{item.description}</p>
+                  <span className="mt-4 inline-flex items-center text-sm font-semibold text-amber-300">
+                    Read more
+                    <svg
+                      aria-hidden
+                      className="ml-2 h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
