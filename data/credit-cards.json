@@ -9,25 +9,75 @@
       "seoDescription": "Review the Chase Sapphire Preferred benefits, transfer partners, and earning structure to see why it remains the go-to starter travel card.",
       "welcomeOffer": "Earn 60,000 bonus points after you spend $4,000 on purchases in the first 3 months from account opening.",
       "bestFor": "Travelers who want premium-style perks without a premium fee and value flexible redemption options.",
-      "earnRates": [
-        "5x points on travel purchased through Chase Ultimate Rewards®",
-        "3x points on dining, including eligible delivery services",
-        "2x points on all other travel purchases",
-        "1x point per dollar on everything else"
-      ],
-      "topFeatures": [
-        "Primary rental car collision damage waiver coverage",
-        "Transfer points 1:1 to partners like Hyatt, United, and Air Canada",
-        "$50 annual Ultimate Rewards hotel credit",
-        "25% more value when you redeem through the Chase travel portal"
-      ],
-      "transferPartners": [
-        "World of Hyatt",
-        "United MileagePlus",
-        "Air Canada Aeroplan",
-        "Singapore Airlines KrisFlyer",
-        "British Airways Executive Club"
-      ]
+      "introduction": {
+        "bullets": [
+          "Positioned above entry-level no-fee cards, the Sapphire Preferred anchors the Chase Ultimate Rewards ecosystem.",
+          "Pairs nicely with Freedom cards to boost portal redemptions and unlock transfer partners.",
+          "Balances premium-style protections with a manageable annual fee."
+        ],
+        "paragraph": "Consider it the natural upgrade when you're ready to turn everyday spending into meaningful travel experiences."
+      },
+      "overview": {
+        "headers": ["Reward rate", "Best for", "USP"],
+        "rows": [
+          ["1x–5x Ultimate Rewards", "Flexible travel redemptions", "1:1 transfer partners with built-in travel protections"]
+        ],
+        "paragraph": "The card fits travelers seeking optionality—earn in strong bonus categories and redeem through portals or partners."
+      },
+      "annualFeeDetails": {
+        "headers": ["Fee component", "Details"],
+        "rows": [
+          ["Joining fee", "$95 (often offset by welcome offer)"],
+          ["Welcome benefit", "60,000-point bonus after $4,000 spend in 3 months"],
+          ["Renewal / annual fee", "$95"],
+          ["Renewal benefit", "10% anniversary points bonus"],
+          ["Renewal fee waiver", "Occasionally targeted retention or product-change offers"]
+        ],
+        "paragraph": "Even without a waiver, the mix of credits and travel protections can justify the ongoing cost."
+      },
+      "rewards": {
+        "headers": ["Spend type", "Reward points", "Estimated value (portal)", "Estimated value (transfer)"] ,
+        "rows": [
+          ["Chase travel portal bookings", "5x points", "~10% back", "~12.5% when transferring smartly"],
+          ["Dining purchases", "3x points", "~6% back", "~7.5% with partners"],
+          ["Other travel", "2x points", "~4% back", "~5% with partners"],
+          ["All other spending", "1x point", "~2% back", "~2.5% with partners"]
+        ],
+        "paragraph": "Ultimate Rewards shine when paired with premium partners like Hyatt or Air Canada for high-value award travel."
+      },
+      "milestoneBenefits": {
+        "headers": ["Spend requirement", "Milestone benefit", "Benefit type"],
+        "rows": [
+          ["Account anniversary", "10% bonus points based on prior-year spending", "Automatic bonus"],
+          ["$50 annual hotel booking", "$50 statement credit via Chase travel portal", "Travel credit"]
+        ],
+        "paragraph": "Stack the hotel credit with a portal promotion to squeeze even more value out of the annual fee."
+      },
+      "redemption": {
+        "bullets": [
+          "Use the Chase Ultimate Rewards portal for 1.25¢ per point on flights, hotels, and experiences.",
+          "Transfer 1:1 to partners like World of Hyatt, United MileagePlus, and Air Canada Aeroplan.",
+          "Combine points with no-fee Freedom cards for additional earning power before transferring.",
+          "Cash back or statement credits yield 1¢ per point—best reserved for when travel plans change."
+        ],
+        "paragraph": "Portal bookings are simple, but partner transfers unlock aspirational itineraries and higher cents-per-point value."
+      },
+      "loungeAccess": {
+        "headers": ["Access type", "Access via", "Access limit"],
+        "rows": [
+          ["Domestic lounges", "Not included", "N/A"],
+          ["International lounges", "Not included", "N/A"]
+        ],
+        "paragraph": "Pair the card with Priority Pass access from a premium sibling if lounge time matters to you."
+      },
+      "forexMarkup": {
+        "bullets": [
+          "Foreign transaction fees: None.",
+          "Rewards on international purchases mirror domestic earn rates.",
+          "Net return hinges on transfer strategy; portal redemptions average ~2% back on unbonused spend."
+        ],
+        "paragraph": "No forex fees mean it's safe to swipe abroad, especially when you value flexible transfer partners."
+      }
     },
     {
       "slug": "american-express-platinum",
@@ -38,24 +88,75 @@
       "seoDescription": "See how the Amex Platinum unlocks airport lounges, airline credits, and elite hotel perks to elevate every trip.",
       "welcomeOffer": "Earn 80,000 Membership Rewards® points after spending $6,000 on purchases in the first 6 months of card membership.",
       "bestFor": "Frequent travelers who can maximize statement credits and want lounge access nearly everywhere they fly.",
-      "earnRates": [
-        "5x Membership Rewards points on flights booked directly with airlines or through Amex Travel (up to $500,000 per calendar year)",
-        "5x points on prepaid hotels booked on AmexTravel.com",
-        "1x point on other eligible purchases"
-      ],
-      "topFeatures": [
-        "$200 airline incidental fee credit and $200 in Uber Cash each year",
-        "Access to Amex Centurion Lounges, Delta Sky Clubs, and Priority Pass lounges",
-        "Automatic Hilton Honors Gold and Marriott Bonvoy Gold Elite status",
-        "Fine Hotels + Resorts® perks like breakfast for two and guaranteed late checkout"
-      ],
-      "transferPartners": [
-        "Air France-KLM Flying Blue",
-        "ANA Mileage Club",
-        "Virgin Atlantic Flying Club",
-        "Singapore Airlines KrisFlyer",
-        "Qatar Airways Privilege Club"
-      ]
+      "introduction": {
+        "bullets": [
+          "Sits at the top of the Membership Rewards ecosystem with luxury travel perks.",
+          "Pairs endless lounge access with easy-to-use monthly statement credits.",
+          "Best leveraged by frequent flyers who can plan around enrollment-based offers."
+        ],
+        "paragraph": "Treat it as your lifestyle membership card, not just a payment tool, and the value multiplies quickly."
+      },
+      "overview": {
+        "headers": ["Reward rate", "Best for", "USP"],
+        "rows": [
+          ["1x–5x Membership Rewards", "Premium frequent travelers", "Global lounge access plus statement credits"]
+        ],
+        "paragraph": "The Platinum Card rewards travel-booking behavior while layering on elite-style comforts."
+      },
+      "annualFeeDetails": {
+        "headers": ["Fee component", "Details"],
+        "rows": [
+          ["Joining fee", "$695"],
+          ["Welcome benefit", "80,000-point bonus after $6,000 spend in 6 months"],
+          ["Renewal / annual fee", "$695"],
+          ["Renewal benefit", "$200 airline fee, $200 Uber Cash, $240 digital entertainment, and more"],
+          ["Renewal fee waiver", "Rare—watch for retention offers via chat or phone"]
+        ],
+        "paragraph": "Stacking the numerous credits easily offsets the fee if you integrate them into everyday routines."
+      },
+      "rewards": {
+        "headers": ["Spend type", "Reward points", "Estimated value (cash)", "Estimated value (transfer)"] ,
+        "rows": [
+          ["Flights booked directly or via Amex Travel", "5x points", "~7.5% back", "~10% with premium partners"],
+          ["Prepaid hotels on AmexTravel.com", "5x points", "~7.5% back", "~10% with premium partners"],
+          ["Other eligible purchases", "1x point", "~1.5% back", "~2% with partners"]
+        ],
+        "paragraph": "Membership Rewards excel when moved to airline partners like ANA, Virgin Atlantic, or Air France-KLM."
+      },
+      "milestoneBenefits": {
+        "headers": ["Spend requirement", "Milestone benefit", "Benefit type"],
+        "rows": [
+          ["$75,000 annual spend", "Earn 50% more points on travel booked via Amex Travel", "Premium Booking Bonus"],
+          ["Card anniversary", "$200 prepaid Fine Hotels + Resorts credit", "Travel statement credit"]
+        ],
+        "paragraph": "Lean on high-spend travel years to unlock the incremental earning multipliers."
+      },
+      "redemption": {
+        "bullets": [
+          "Transfer 1:1 to over 20 airline partners including ANA, Delta (via variable ratio), and Singapore Airlines.",
+          "Redeem via Amex Travel at 1¢ per point for flights or 0.7¢ for other travel—boosted to 1.54¢ with Business Platinum Pay With Points rebate.",
+          "Use the luxury-centric Amex Experiences for curated event tickets and dining.",
+          "Statement credits are possible at 0.6¢ per point but are rarely optimal."
+        ],
+        "paragraph": "Aim for premium cabin awards through airline partners to realize outsized value from Membership Rewards."
+      },
+      "loungeAccess": {
+        "headers": ["Access type", "Access via", "Access limit"],
+        "rows": [
+          ["Domestic lounges", "Centurion Lounge, Delta Sky Club (when flying Delta)", "Unlimited for primary cardholder"],
+          ["International lounges", "Priority Pass Select, Plaza Premium, Lufthansa", "Varies by network; generally unlimited"],
+          ["Authorized users", "Additional Platinum or Gold cards", "Up to 3 add-ons share access"]
+        ],
+        "paragraph": "Register for Priority Pass and book Delta flights on the same day to access the full lounge network."
+      },
+      "forexMarkup": {
+        "bullets": [
+          "Foreign transaction fees: None.",
+          "Earning rate abroad matches domestic categories—focus on flights and prepaid hotels.",
+          "Net return typically 5%–10% when transferring to high-value airline partners."
+        ],
+        "paragraph": "The metal build and worldwide acceptance make it a reliable international travel companion."
+      }
     },
     {
       "slug": "capital-one-venture-x",
@@ -66,24 +167,76 @@
       "seoDescription": "Learn how the Capital One Venture X combines simple 2x earning with luxe travel perks and transfer flexibility.",
       "welcomeOffer": "Earn 75,000 bonus miles when you spend $4,000 on purchases within the first 3 months from account opening.",
       "bestFor": "Travelers who prefer straightforward earning but still want lounge access and transferable miles.",
-      "earnRates": [
-        "10x miles on hotels and rental cars booked through Capital One Travel",
-        "5x miles on flights booked through Capital One Travel",
-        "2x miles on every other purchase"
-      ],
-      "topFeatures": [
-        "$300 annual credit for bookings through Capital One Travel",
-        "10,000 anniversary bonus miles each cardmember year",
-        "Access to Capital One Lounges and Priority Pass Select",
-        "Add up to 4 authorized users for no additional fee"
-      ],
-      "transferPartners": [
-        "Air Canada Aeroplan",
-        "Avianca LifeMiles",
-        "British Airways Executive Club",
-        "Qantas Frequent Flyer",
-        "Wyndham Rewards"
-      ]
+      "introduction": {
+        "bullets": [
+          "Capital One's answer to premium travel cards with an approachable annual fee.",
+          "Earns a flat 2x on everything plus massive multipliers through Capital One Travel.",
+          "Includes lounge access for you and up to four authorized users at no additional cost."
+        ],
+        "paragraph": "Think of it as a premium starter card that rewards both simplicity seekers and points enthusiasts alike."
+      },
+      "overview": {
+        "headers": ["Reward rate", "Best for", "USP"],
+        "rows": [
+          ["2x–10x Capital One Miles", "Travelers who value simplicity", "$300 travel credit + 10K anniversary miles"]
+        ],
+        "paragraph": "The Venture X offsets its fee almost automatically, making it easy to justify even for casual travelers."
+      },
+      "annualFeeDetails": {
+        "headers": ["Fee component", "Details"],
+        "rows": [
+          ["Joining fee", "$395"],
+          ["Welcome benefit", "75,000-mile bonus after $4,000 spend in 3 months"],
+          ["Renewal / annual fee", "$395"],
+          ["Renewal benefit", "$300 Capital One Travel credit + 10,000 anniversary miles"],
+          ["Renewal fee waiver", "Not standard—retention offers possible"]
+        ],
+        "paragraph": "The annual travel credit and anniversary miles alone can outweigh the annual fee when redeemed well."
+      },
+      "rewards": {
+        "headers": ["Spend type", "Reward points", "Estimated value (portal)", "Estimated value (transfer)"] ,
+        "rows": [
+          ["Hotels & rental cars via Capital One Travel", "10x miles", "~15% back", "~20% with high-value partners"],
+          ["Flights via Capital One Travel", "5x miles", "~7.5% back", "~10% with high-value partners"],
+          ["All other purchases", "2x miles", "~3% back", "~4% with partners"],
+          ["Capital One Dining", "Earn up to 10x", "Varies", "Varies"]
+        ],
+        "paragraph": "Miles transfer to partners like Air Canada Aeroplan, Avianca LifeMiles, and British Airways for outsized value."
+      },
+      "milestoneBenefits": {
+        "headers": ["Spend requirement", "Milestone benefit", "Benefit type"],
+        "rows": [
+          ["Card anniversary", "10,000 bonus miles", "Automatic anniversary bonus"],
+          ["Annual Capital One Travel booking", "$300 statement credit", "Travel credit"]
+        ],
+        "paragraph": "Book at least $300 through Capital One Travel yearly to keep the effective net fee near zero."
+      },
+      "redemption": {
+        "bullets": [
+          "Redeem miles for travel purchases at a fixed 1¢ per mile through Purchase Eraser.",
+          "Transfer to 15+ airline and hotel partners, often at a 1:1 ratio.",
+          "Book flights, hotels, and rental cars directly in the Capital One Travel portal for simplicity.",
+          "Use miles for gift cards or cash back if needed—typically at reduced value."
+        ],
+        "paragraph": "Transfers to programs like Turkish Airlines Miles&Smiles and Wyndham Rewards create excellent sweet spots."
+      },
+      "loungeAccess": {
+        "headers": ["Access type", "Access via", "Access limit"],
+        "rows": [
+          ["Domestic lounges", "Capital One Lounges + Priority Pass", "Unlimited for cardholder and 2 guests"],
+          ["International lounges", "Priority Pass Select", "Unlimited visits for cardholder"],
+          ["Authorized users", "Complimentary (up to 4)", "Share the same access"]
+        ],
+        "paragraph": "Register each authorized user for Priority Pass to maximize the lounge benefit."
+      },
+      "forexMarkup": {
+        "bullets": [
+          "Foreign transaction fees: None.",
+          "2x everywhere ensures consistent rewards abroad.",
+          "Expect 1%–2% net gain after accounting for transfer partner redemptions."
+        ],
+        "paragraph": "Swipe it internationally without worry thanks to network-wide acceptance and no forex fee."
+      }
     },
     {
       "slug": "amex-gold",
@@ -94,25 +247,76 @@
       "seoDescription": "Understand how the Amex Gold card's bonus categories and monthly dining credits make it a staple in points strategies.",
       "welcomeOffer": "Earn 60,000 Membership Rewards® points after you spend $4,000 on eligible purchases within the first 6 months.",
       "bestFor": "Foodies and home cooks who can maximize dining rewards and flexible transfer partners.",
-      "earnRates": [
-        "4x Membership Rewards points at restaurants, including takeout and delivery",
-        "4x points at U.S. supermarkets (on up to $25,000 per calendar year)",
-        "3x points on flights booked directly with airlines or on AmexTravel.com",
-        "1x point on other eligible purchases"
-      ],
-      "topFeatures": [
-        "$10 monthly dining credit at partners like Grubhub, Shake Shack, and Cheesecake Factory",
-        "$10 in Uber Cash each month for U.S. rides and eats",
-        "No foreign transaction fees",
-        "Access to the same 1:1 airline transfer partners as the Platinum Card"
-      ],
-      "transferPartners": [
-        "British Airways Executive Club",
-        "Emirates Skywards",
-        "Iberia Plus",
-        "Air Canada Aeroplan",
-        "Virgin Atlantic Flying Club"
-      ]
+      "introduction": {
+        "bullets": [
+          "Targets everyday dining and grocery runs with rich multipliers.",
+          "Pairs well with the Amex Platinum or Green to cover more travel categories.",
+          "Monthly credits offset much of the annual fee when used consistently."
+        ],
+        "paragraph": "If your budget leans heavily toward food, this card turns every meal into Membership Rewards momentum."
+      },
+      "overview": {
+        "headers": ["Reward rate", "Best for", "USP"],
+        "rows": [
+          ["1x–4x Membership Rewards", "Dining and grocery enthusiasts", "$10 dining + $10 Uber Cash monthly credits"]
+        ],
+        "paragraph": "High multipliers on staple categories make it easy to rack up transferable points quickly."
+      },
+      "annualFeeDetails": {
+        "headers": ["Fee component", "Details"],
+        "rows": [
+          ["Joining fee", "$250"],
+          ["Welcome benefit", "60,000-point bonus after $4,000 spend in 6 months"],
+          ["Renewal / annual fee", "$250"],
+          ["Renewal benefit", "$120 dining credit + $120 Uber Cash (monthly enrollment required)"],
+          ["Renewal fee waiver", "Retention offers possible with history"]
+        ],
+        "paragraph": "Use both monthly credits and the fee becomes far easier to justify year after year."
+      },
+      "rewards": {
+        "headers": ["Spend type", "Reward points", "Estimated value (cash)", "Estimated value (transfer)"] ,
+        "rows": [
+          ["Worldwide dining", "4x points", "~6% back", "~8% with partners"],
+          ["U.S. supermarkets (up to $25K)", "4x points", "~6% back", "~8% with partners"],
+          ["Flights booked directly or via Amex Travel", "3x points", "~4.5% back", "~6% with partners"],
+          ["Other eligible purchases", "1x point", "~1.5% back", "~2% with partners"]
+        ],
+        "paragraph": "Pair with Rakuten or dining portals to stack additional rewards on top of the generous multipliers."
+      },
+      "milestoneBenefits": {
+        "headers": ["Spend requirement", "Milestone benefit", "Benefit type"],
+        "rows": [
+          ["$25,000 annual supermarket spend", "4x points cap maintained", "Category accelerator"],
+          ["Card anniversary", "Access to Amex Offers refresh", "Targeted statement credits"]
+        ],
+        "paragraph": "Monitor category caps to ensure you're maximizing bonus spend before moving overflow to another card."
+      },
+      "redemption": {
+        "bullets": [
+          "Transfer to airline partners like Air Canada, British Airways, Iberia, and Virgin Atlantic for premium cabin deals.",
+          "Redeem via Amex Travel for flights at 1¢ per point or hotels at 0.7¢.",
+          "Use the exclusive Amex Gold Collection for high-end merchandise at ~0.65¢ per point.",
+          "Statement credits redeem at 0.6¢ and should be a last resort."
+        ],
+        "paragraph": "Leverage transfer partners for aspirational redemptions—think Iberia business class or Virgin Atlantic Upper Class."
+      },
+      "loungeAccess": {
+        "headers": ["Access type", "Access via", "Access limit"],
+        "rows": [
+          ["Domestic lounges", "Not included", "N/A"],
+          ["International lounges", "Not included", "N/A"],
+          ["Partner experiences", "Enroll in Priority Pass (restaurant credits only)", "Subject to program limits"]
+        ],
+        "paragraph": "Add an Amex Platinum or enroll in premium lounge memberships if airport time is important to you."
+      },
+      "forexMarkup": {
+        "bullets": [
+          "Foreign transaction fees: None.",
+          "4x dining multiplier applies globally when the merchant codes as restaurant.",
+          "Expect 1.5%–2% net value on uncapped international spending when transferring points."
+        ],
+        "paragraph": "While it's chip-and-signature in some regions, acceptance remains strong in major cities worldwide."
+      }
     }
   ],
   "cardStrategies": [
