@@ -1,8 +1,33 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import hotelData from "@/data/hotel-programs.json";
+
+type SectionImage = {
+  src: string;
+  alt: string;
+};
+
+type ListSection = {
+  items?: string[];
+  note?: string;
+  image?: SectionImage;
+};
+
+type StatusRow = {
+  label: string;
+  description?: string;
+  values: string[];
+};
+
+type StatusLevelsSection = {
+  tiers: string[];
+  rows: StatusRow[];
+  note?: string;
+  image?: SectionImage;
+};
 
 type HotelProgram = {
   slug: string;
@@ -10,9 +35,13 @@ type HotelProgram = {
   footprint: string;
   summary: string;
   seoDescription: string;
-  eliteLevels: string[];
-  redemptionTips: string[];
-  coBrandedCards: string[];
+  overview?: ListSection;
+  statusLevels?: StatusLevelsSection;
+  coBrandedCards?: ListSection;
+  pointsEarn?: ListSection;
+  pointsBurn?: ListSection;
+  paidMemberships?: ListSection;
+  otherBenefits?: ListSection;
 };
 
 const programs = (hotelData as { programs: HotelProgram[] }).programs;
@@ -72,6 +101,118 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  const renderSectionImage = (image?: SectionImage) => {
+    if (!image) {
+      return null;
+    }
+
+    return (
+      <div className="overflow-hidden rounded-2xl border border-white/5 bg-black/20">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={1200}
+          height={800}
+          className="h-60 w-full object-cover object-center sm:h-72"
+        />
+      </div>
+    );
+  };
+
+  const renderListSection = (title: string, section?: ListSection) => {
+    if (!section?.items || section.items.length === 0) {
+      return null;
+    }
+
+    return (
+      <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-white">{title}</h2>
+          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
+            {section.items.map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          {section.note ? (
+            <p className="text-sm text-slate-200/80">{section.note}</p>
+          ) : null}
+        </div>
+        {renderSectionImage(section.image)}
+      </section>
+    );
+  };
+
+  const renderStatusSection = (section?: StatusLevelsSection) => {
+    if (!section || section.tiers.length === 0 || section.rows.length === 0) {
+      return null;
+    }
+
+    return (
+      <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <div className="space-y-6">
+          <div className="space-y-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <h2 className="text-xl font-semibold text-white">Status levels</h2>
+              <p className="text-xs font-medium uppercase tracking-[0.35em] text-sky-300">
+                Elite benefits by tier
+              </p>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-white/10 text-left text-sm text-slate-100/80">
+                <caption className="sr-only">Elite benefits comparison across loyalty tiers</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" className="whitespace-nowrap px-4 py-3 font-semibold text-slate-100">
+                      Benefit
+                    </th>
+                    {section.tiers.map((tier) => (
+                      <th
+                        key={tier}
+                        scope="col"
+                        className="whitespace-nowrap px-4 py-3 font-semibold text-slate-100"
+                      >
+                        {tier}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5">
+                  {section.rows.map((row) => (
+                    <tr key={row.label} className="align-top">
+                      <th scope="row" className="whitespace-nowrap px-4 py-4 text-left font-semibold text-slate-100">
+                        <div className="space-y-2">
+                          <span>{row.label}</span>
+                          {row.description ? (
+                            <p className="max-w-xs text-xs font-normal text-slate-300/80">{row.description}</p>
+                          ) : null}
+                        </div>
+                      </th>
+                      {section.tiers.map((_, index) => (
+                        <td key={`${row.label}-${index}`} className="whitespace-pre-wrap px-4 py-4 text-slate-100/80">
+                          {row.values[index] && row.values[index].length > 0 ? row.values[index] : "—"}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {section.note ? <p className="text-sm text-slate-200/80">{section.note}</p> : null}
+        </div>
+        {renderSectionImage(section.image)}
+      </section>
+    );
+  };
+
+  const topTierLabel =
+    program.statusLevels && program.statusLevels.tiers.length > 0
+      ? program.statusLevels.tiers[program.statusLevels.tiers.length - 1]
+      : undefined;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -87,7 +228,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20 lg:py-28">
+      <div className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-20 lg:py-28">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
           <ol className="flex items-center gap-2">
             <li>
@@ -112,46 +253,34 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
           <p className="text-base text-slate-200/80">{program.summary}</p>
         </header>
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Program footprint</h2>
-          <p className="text-sm text-slate-100/80">{program.footprint}</p>
+        <section className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="space-y-2">
+              <h2 className="text-xl font-semibold text-white">Program footprint</h2>
+              <p className="text-sm text-slate-100/80">{program.footprint}</p>
+            </div>
+            <div className="rounded-full border border-sky-300/40 px-4 py-2 text-xs uppercase tracking-[0.3em] text-sky-200">
+              {topTierLabel ?? "Loyalty"}
+            </div>
+          </div>
+          <p className="text-sm text-slate-200/80">
+            Plan your stays to layer elite benefits, smart points earning, and co-branded card perks for outsized travel value.
+          </p>
         </section>
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Elite level highlights</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {program.eliteLevels.map((highlight) => (
-              <li key={highlight} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
-                <span>{highlight}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {renderListSection("Overview", program.overview)}
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Redemption tactics</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {program.redemptionTips.map((tip) => (
-              <li key={tip} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
-                <span>{tip}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {renderStatusSection(program.statusLevels)}
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Co-branded credit cards</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {program.coBrandedCards.map((card) => (
-              <li key={card} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
-                <span>{card}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {renderListSection("Co-branded cards", program.coBrandedCards)}
+
+        {renderListSection("Points earn rate", program.pointsEarn)}
+
+        {renderListSection("Points burn rate", program.pointsBurn)}
+
+        {renderListSection("Paid memberships", program.paidMemberships)}
+
+        {renderListSection("Other benefits", program.otherBenefits)}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Research more hotel brands</p>
