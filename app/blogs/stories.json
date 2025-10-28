@@ -1,0 +1,113 @@
+[
+  {
+    "slug": "sunset-safari-in-kenya",
+    "title": "Chasing Sunsets on a Kenyan Savannah",
+    "excerpt": "Witness the magic of the Maasai Mara with a golden-hour safari adventure that captures the heart of Africa.",
+    "author": "Amina Patel",
+    "date": "May 18, 2024",
+    "readTime": "7 min read",
+    "category": "Africa",
+    "city": "Maasai Mara",
+    "country": "Kenya",
+    "coverImage": {
+      "src": "https://images.unsplash.com/photo-1526481280695-3c469bda4f8b?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Safari jeep driving through the Maasai Mara at sunset"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Elephants walking across the savannah during golden hour",
+        "caption": "Gentle giants crossing the savannah as dusk paints the horizon."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Lioness perched on a rock looking over the plains",
+        "caption": "A curious lioness keeping watch over her pride from a kopje."
+      }
+    ],
+    "content": [
+      "The Maasai Mara is a place where light and landscape perform a nightly duet. As the sun began to dip, our guide eased the Land Cruiser to a stop and we watched the savannah shift from dusty amber to molten gold.",
+      "We spent the afternoon following a coalition of cheetahs that moved with effortless grace. Their hunts are lessons in patience, and even when they rested in the shade, their gaze never left the horizon.",
+      "As twilight arrived, we shared stories with Maasai elders around a campfire. Their songs carried across the plains, weaving a soundtrack of belonging that I will always associate with this corner of Kenya."
+    ],
+    "highlights": [
+      "Golden hour drives offer the best wildlife photography",
+      "Pack layers—the plains get surprisingly chilly after sunset",
+      "Support conservancies that collaborate with local Maasai communities"
+    ]
+  },
+  {
+    "slug": "iceland-ring-road-itinerary",
+    "title": "A Dreamy 7-Day Road Trip Around Iceland",
+    "excerpt": "An unforgettable loop around the Land of Fire and Ice filled with waterfalls, black sand beaches, and steaming lagoons.",
+    "author": "Lars Gunnarson",
+    "date": "April 2, 2024",
+    "readTime": "9 min read",
+    "category": "Europe",
+    "city": "Akureyri",
+    "country": "Iceland",
+    "coverImage": {
+      "src": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Icelandic waterfall cascading into a misty canyon"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Snow-capped mountains reflecting in a glacial lagoon",
+        "caption": "Dawn light over the glassy waters of a northern lagoon."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Person standing near a geothermal spring in Iceland",
+        "caption": "Steam vents rising from the earth near Lake Mývatn."
+      }
+    ],
+    "content": [
+      "The Ring Road is a ribbon of asphalt that links Iceland’s wildest extremes. Our journey began in Reykjavík, but the real magic unfolded as we veered north toward Akureyri, where snow-dusted peaks frame a colorful harbor town.",
+      "Each day brought new wonders—thundering waterfalls at Goðafoss, basalt columns at Reynisfjara, and the surreal blues of the Jökulsárlón glacier lagoon. It felt like traveling between different planets.",
+      "Driving the Ring Road rewards the slow traveler. We lingered at roadside farm cafés, soaked in geothermally heated pools, and never missed a chance to pull over when the light turned dramatic, which in Iceland happens hourly."
+    ],
+    "highlights": [
+      "Rent a 4x4 to navigate changing weather with confidence",
+      "Book geothermal spa tickets ahead of time during peak season",
+      "Always have a charged camera—the scenery demands it"
+    ]
+  },
+  {
+    "slug": "tokyo-nightlife-guide",
+    "title": "Neon Nights: Exploring Tokyo After Dark",
+    "excerpt": "Discover hidden izakayas, rooftop gardens, and the electric energy that turns Tokyo into a playground after sunset.",
+    "author": "Hana Watanabe",
+    "date": "March 14, 2024",
+    "readTime": "6 min read",
+    "category": "Asia",
+    "city": "Tokyo",
+    "country": "Japan",
+    "coverImage": {
+      "src": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Neon-lit street in Tokyo at night"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Lantern-lined alleyway in Tokyo",
+        "caption": "Lanterns glow along an izakaya-filled alley in Shinjuku."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Rooftop bar overlooking Tokyo skyline at night",
+        "caption": "Skyline views from a rooftop garden bar in Roppongi."
+      }
+    ],
+    "content": [
+      "Tokyo’s nightlife is a kaleidoscope of neon lights, cozy alleyways, and futuristic lounges. Start in Shinjuku’s Omoide Yokocho where smoky yakitori stalls serve skewers late into the night.",
+      "For a change of pace, ride the elevator up to a rooftop garden bar in Roppongi. The skyline views are jaw-dropping, and the cocktails are works of art.",
+      "End your night in Shimokitazawa, a neighborhood that hums with live music and secondhand vinyl shops that stay open past midnight."
+    ],
+    "highlights": [
+      "Reserve speakeasy tables in advance",
+      "Carry cash for smaller izakayas",
+      "Last trains run shortly after midnight"
+    ]
+  }
+]
