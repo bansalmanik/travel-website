@@ -21,7 +21,7 @@ type JournalEntry = {
 
 const journals = (journalsData as { journals: JournalEntry[] }).journals;
 
-const pageTitle = "Travel Journal Library | Away With Ana";
+const pageTitle = "Travel Journal Library | Miles Go Round";
 const pageDescription =
   "Browse Ana's reflective travel journals to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
 
