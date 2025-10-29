@@ -1401,5 +1401,62 @@
         ]
       }
     ]
+  },
+  {
+    "program": "American Express",
+    "from": "American Express Membership Rewards Credit Cards",
+    "rates": [
+      {
+        "rate": "2 Membership Rewards Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Asia Miles",
+            "insight": "Transfers from American Express Membership Rewards convert at 2:1."
+          },
+          {
+            "to": "British Airways Executive Club",
+            "insight": "Transfers from American Express Membership Rewards convert at 2:1."
+          },
+          {
+            "to": "Emirates Skywards",
+            "insight": "Transfers from American Express Membership Rewards convert at 2:1."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "Transfers from American Express Membership Rewards convert at 2:1."
+          },
+          {
+            "to": "Qatar Airways Privilege Club",
+            "insight": "Transfers from American Express Membership Rewards convert at 2:1."
+          },
+          {
+            "to": "Virgin Atlantic Flying Club",
+            "insight": "Transfers from American Express Membership Rewards convert at 2:1."
+          },
+          {
+            "to": "Singapore Airlines KrisFlyer",
+            "insight": "Transfers from American Express Membership Rewards convert at 2:1."
+          }
+        ]
+      },
+      {
+        "rate": "1 Membership Rewards Point : 0.9 Hilton Honors Points",
+        "partners": [
+          {
+            "to": "Hilton Honors",
+            "insight": "Hilton Honors transfers convert from American Express Membership Rewards at 1:0.9."
+          }
+        ]
+      },
+      {
+        "rate": "1 Membership Rewards Point : 1 Marriott Bonvoy Point",
+        "partners": [
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "Marriott Bonvoy transfers convert from American Express Membership Rewards at 1:1."
+          }
+        ]
+      }
+    ]
   }
 ]
