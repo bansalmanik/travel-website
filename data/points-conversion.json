@@ -1706,5 +1706,169 @@
         ]
       }
     ]
+  },
+  {
+    "program": "Marriott Bonvoy",
+    "from": "Marriott Bonvoy Points",
+    "rates": [
+      {
+        "rate": "3 Marriott Bonvoy Points : 1 Airline Mile",
+        "partners": [
+          {
+            "to": "AEGEAN Miles+Bonus",
+            "insight": "Convert Marriott Bonvoy points to AEGEAN Miles+Bonus miles at a 3:1 ratio."
+          },
+          {
+            "to": "Aer Lingus AerClub",
+            "insight": "Convert Marriott Bonvoy points to Aer Lingus AerClub Avios at a 3:1 ratio."
+          },
+          {
+            "to": "Aeromexico Rewards",
+            "insight": "Convert Marriott Bonvoy points to Aeromexico Rewards kilometers at a 3:1 ratio."
+          },
+          {
+            "to": "Air Canada Aeroplan",
+            "insight": "Convert Marriott Bonvoy points to Air Canada Aeroplan points at a 3:1 ratio."
+          },
+          {
+            "to": "Air China PhoenixMiles",
+            "insight": "Convert Marriott Bonvoy points to Air China PhoenixMiles at a 3:1 ratio."
+          },
+          {
+            "to": "Air France-KLM Flying Blue",
+            "insight": "Convert Marriott Bonvoy points to Flying Blue miles at a 3:1 ratio."
+          },
+          {
+            "to": "Atmos™ Rewards",
+            "insight": "Convert Marriott Bonvoy points to Atmos Rewards miles at a 3:1 ratio."
+          },
+          {
+            "to": "American Airlines AAdvantage®",
+            "insight": "Convert Marriott Bonvoy points to American Airlines AAdvantage miles at a 3:1 ratio."
+          },
+          {
+            "to": "ANA Mileage Club",
+            "insight": "Convert Marriott Bonvoy points to ANA Mileage Club miles at a 3:1 ratio."
+          },
+          {
+            "to": "Avianca LifeMiles",
+            "insight": "Convert Marriott Bonvoy points to Avianca LifeMiles at a 3:1 ratio."
+          },
+          {
+            "to": "The British Airways Club",
+            "insight": "Convert Marriott Bonvoy points to The British Airways Club Avios at a 3:1 ratio."
+          },
+          {
+            "to": "Cathay Pacific Cathay",
+            "insight": "Convert Marriott Bonvoy points to Cathay Pacific Cathay miles at a 3:1 ratio."
+          },
+          {
+            "to": "China Southern Airlines Sky Pearl Club",
+            "insight": "Convert Marriott Bonvoy points to China Southern Airlines Sky Pearl Club kilometers at a 3:1 ratio."
+          },
+          {
+            "to": "Copa Airlines ConnectMiles",
+            "insight": "Convert Marriott Bonvoy points to Copa Airlines ConnectMiles at a 3:1 ratio."
+          },
+          {
+            "to": "Delta SkyMiles®",
+            "insight": "Convert Marriott Bonvoy points to Delta SkyMiles at a 3:1 ratio."
+          },
+          {
+            "to": "Emirates Skywards®",
+            "insight": "Convert Marriott Bonvoy points to Emirates Skywards miles at a 3:1 ratio."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "Convert Marriott Bonvoy points to Etihad Guest miles at a 3:1 ratio."
+          },
+          {
+            "to": "FRONTIER Miles",
+            "insight": "Convert Marriott Bonvoy points to FRONTIER Miles at a 3:1 ratio."
+          },
+          {
+            "to": "Hainan Airlines Fortune Wings Club",
+            "insight": "Convert Marriott Bonvoy points to Hainan Airlines Fortune Wings Club miles at a 3:1 ratio."
+          },
+          {
+            "to": "Iberia Plus",
+            "insight": "Convert Marriott Bonvoy points to Iberia Plus Avios at a 3:1 ratio."
+          },
+          {
+            "to": "InterMiles",
+            "insight": "Convert Marriott Bonvoy points to InterMiles at a 3:1 ratio."
+          },
+          {
+            "to": "Japan Airlines JAL Mileage Bank",
+            "insight": "Convert Marriott Bonvoy points to Japan Airlines JAL Mileage Bank miles at a 3:1 ratio."
+          },
+          {
+            "to": "LATAM Airlines LATAM Pass",
+            "insight": "Convert Marriott Bonvoy points to LATAM Pass kilometers at a 3:1 ratio."
+          },
+          {
+            "to": "LATAM Pass Brazil",
+            "insight": "Convert Marriott Bonvoy points to LATAM Pass Brazil points at a 3:1 ratio."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "Convert Marriott Bonvoy points to Qantas Frequent Flyer points at a 3:1 ratio."
+          },
+          {
+            "to": "Qatar Airways Privilege Club",
+            "insight": "Convert Marriott Bonvoy points to Qatar Airways Privilege Club Avios at a 3:1 ratio."
+          },
+          {
+            "to": "Saudia Alfursan",
+            "insight": "Convert Marriott Bonvoy points to Saudia Alfursan miles at a 3:1 ratio."
+          },
+          {
+            "to": "Singapore Airlines KrisFlyer®",
+            "insight": "Convert Marriott Bonvoy points to Singapore Airlines KrisFlyer miles at a 3:1 ratio."
+          },
+          {
+            "to": "Southwest Rapid Rewards®",
+            "insight": "Convert Marriott Bonvoy points to Southwest Rapid Rewards points at a 3:1 ratio."
+          },
+          {
+            "to": "TAP Air Portugal Miles&Go",
+            "insight": "Convert Marriott Bonvoy points to TAP Air Portugal Miles&Go miles at a 3:1 ratio."
+          },
+          {
+            "to": "Thai Airways Royal Orchid Plus",
+            "insight": "Convert Marriott Bonvoy points to Thai Airways Royal Orchid Plus miles at a 3:1 ratio."
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "Convert Marriott Bonvoy points to Turkish Airlines Miles&Smiles miles at a 3:1 ratio."
+          },
+          {
+            "to": "United MileagePlus®",
+            "insight": "Convert Marriott Bonvoy points to United MileagePlus miles at a 3:1 ratio."
+          },
+          {
+            "to": "Virgin Atlantic Flying Club",
+            "insight": "Convert Marriott Bonvoy points to Virgin Atlantic Flying Club miles at a 3:1 ratio."
+          },
+          {
+            "to": "Virgin Australia Velocity Frequent Flyer",
+            "insight": "Convert Marriott Bonvoy points to Virgin Australia Velocity Frequent Flyer points at a 3:1 ratio."
+          },
+          {
+            "to": "Vueling Club",
+            "insight": "Convert Marriott Bonvoy points to Vueling Club Avios at a 3:1 ratio."
+          }
+        ]
+      },
+      {
+        "rate": "200 Marriott Bonvoy Points : 1 Airpoints Dollar",
+        "partners": [
+          {
+            "to": "Air New Zealand Airpoints",
+            "insight": "Convert Marriott Bonvoy points to Air New Zealand Airpoints at a 200:1 ratio."
+          }
+        ]
+      }
+    ]
   }
 ]
