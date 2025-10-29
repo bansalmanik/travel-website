@@ -95,6 +95,23 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           ))}
         </div>
 
+        {currentPost.videoUrl ? (
+          <section className="space-y-4">
+            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">Travel Moments</h2>
+            <div className="aspect-video w-full overflow-hidden rounded-2xl bg-zinc-900">
+              <iframe
+                src={currentPost.videoUrl}
+                title={`${currentPost.title} travel video`}
+                className="h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
+          </section>
+        ) : null}
+
         {currentPost.gallery?.length ? (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">Photo Highlights</h2>
