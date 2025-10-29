@@ -1,0 +1,80 @@
+[
+  {
+    "from": "American Express Membership Rewards",
+    "fromType": "Flexible Points Currency",
+    "to": "Air Canada Aeroplan",
+    "toType": "Airline Loyalty Program",
+    "rate": "1 : 1",
+    "insight": "Transfers are usually instant. Bonus promotions can occasionally increase the ratio.",
+    "terms": [
+      "All transfers are final and cannot be reversed.",
+      "The name on both loyalty accounts must match exactly to complete the transfer.",
+      "Aeroplan miles expire after 18 months of inactivity unless you earn, redeem, or transfer in more miles."
+    ]
+  },
+  {
+    "from": "American Express Membership Rewards",
+    "fromType": "Flexible Points Currency",
+    "to": "Marriott Bonvoy",
+    "toType": "Hotel Loyalty Program",
+    "rate": "1 : 1",
+    "insight": "Allow up to 48 hours. A 5,000-point bonus is added for every 60,000 points transferred.",
+    "terms": [
+      "Transfers typically post within two days but can take longer during promotions.",
+      "You must transfer in increments of 1,000 Membership Rewards points.",
+      "Once points reach Marriott Bonvoy they follow the program's 24-month activity expiration policy."
+    ]
+  },
+  {
+    "from": "Chase Ultimate Rewards",
+    "fromType": "Flexible Points Currency",
+    "to": "World of Hyatt",
+    "toType": "Hotel Loyalty Program",
+    "rate": "1 : 1",
+    "insight": "Transfers are instant. Redemptions start at 3,500 points for off-peak Category 1 hotels.",
+    "terms": [
+      "Only primary cardholders can initiate transfers to World of Hyatt.",
+      "Hyatt accounts must be open and in good standing prior to the transfer.",
+      "Hyatt points do not expire with at least one earning or redeeming activity every 24 months."
+    ]
+  },
+  {
+    "from": "Chase Ultimate Rewards",
+    "fromType": "Flexible Points Currency",
+    "to": "United MileagePlus",
+    "toType": "Airline Loyalty Program",
+    "rate": "1 : 1",
+    "insight": "Transfers are instant, but you cannot transfer United miles back to Chase once complete.",
+    "terms": [
+      "MileagePlus accounts must belong to you or an authorized user on the credit card.",
+      "United miles never expire, but award space is subject to capacity controls.",
+      "Changes and cancellations follow United's award ticket fee structure."
+    ]
+  },
+  {
+    "from": "Citi ThankYou Points",
+    "fromType": "Flexible Points Currency",
+    "to": "Avianca LifeMiles",
+    "toType": "Airline Loyalty Program",
+    "rate": "1 : 1",
+    "insight": "Transfers post within 24 hours. LifeMiles regularly discounts award bookings by 10–15%.",
+    "terms": [
+      "LifeMiles transfers must be made in 1,000-point increments.",
+      "Purchased, pooled, or transferred-in LifeMiles follow the program's standard expiration rules.",
+      "Award tickets booked with LifeMiles are subject to partner carrier taxes and surcharges."
+    ]
+  },
+  {
+    "from": "Citi ThankYou Points",
+    "fromType": "Flexible Points Currency",
+    "to": "Choice Privileges",
+    "toType": "Hotel Loyalty Program",
+    "rate": "1 : 2",
+    "insight": "Expect 1–2 day processing. Watch for seasonal promotions on all-inclusive partner resorts.",
+    "terms": [
+      "Choice Privileges requires a minimum transfer of 1,000 ThankYou points.",
+      "Transferred points expire according to Choice's standard terms, typically two years from the deposit date.",
+      "Award availability varies by property and can be capacity-controlled during peak periods."
+    ]
+  }
+]
