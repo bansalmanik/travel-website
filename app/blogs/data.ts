@@ -24,6 +24,7 @@ export type BlogPost = BlogSummary & {
   content: string[];
   highlights: string[];
   gallery?: StoryImage[];
+  videoUrl?: string;
 };
 
 const storiesPath = path.join(process.cwd(), "app", "blogs", "stories.json");
