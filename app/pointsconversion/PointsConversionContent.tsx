@@ -13,7 +13,6 @@ type PartnerOption = {
   to: string;
   rate: string;
   insight: string;
-  terms: string[];
 };
 
 const conversionsByFrom: ConversionByFrom = conversions.reduce((acc, conversion) => {
@@ -50,7 +49,6 @@ export default function PointsConversionContent() {
         to: partner.to,
         rate: rate.rate,
         insight: partner.insight,
-        terms: partner.terms,
       }))
     );
   }, [selectedProgram]);
@@ -99,8 +97,8 @@ export default function PointsConversionContent() {
           </h1>
           <p className="mx-auto max-w-2xl text-base text-slate-200/80">
             Compare flexible currencies with airline and hotel partners without mixing in unrelated loyalty offers.
-            Choose your source points, browse the available partners, and review the fine print before you move a single
-            point.
+            Choose your source points, browse the available partners, and understand the insights that matter before you
+            move a single point.
           </p>
         </header>
 
@@ -177,27 +175,6 @@ export default function PointsConversionContent() {
               </div>
             )}
           </div>
-        </section>
-
-        <section className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <div className="space-y-2">
-            <h2 className="text-2xl font-semibold text-white">Terms &amp; Conditions</h2>
-            <p className="text-sm leading-6 text-slate-100/70">
-              Review the partner-specific rules before you transfer points. These details help ensure your rewards do not get stranded in the wrong account.
-            </p>
-          </div>
-
-          {selectedPartner ? (
-            <ul className="list-disc space-y-3 pl-5 text-sm leading-6 text-slate-100/80">
-              {selectedPartner.terms.map((term) => (
-                <li key={term}>{term}</li>
-              ))}
-            </ul>
-          ) : (
-            <div className="rounded-2xl border border-dashed border-white/20 bg-slate-900/40 p-6 text-sm leading-6 text-slate-100/70">
-              Select a transfer partner above to see the exact conditions that apply to that conversion.
-            </div>
-          )}
         </section>
       </div>
     </div>
