@@ -1060,5 +1060,216 @@
         ]
       }
     ]
-  }  
+  },
+  {
+    "program": "HSBC",
+    "from": "HSBC Credit Cards",
+    "rates": [
+      {
+        "rate": "1 Point : 1 Partner Point (HSBC Privé, Premier, TravelOne)",
+        "partners": [
+          {
+            "to": "Air India",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Air France–KLM Flying Blue",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "British Airways Executive Club",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "EVA Air Infinity MileageLands",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Japan Airlines Mileage Bank",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Singapore Airlines KrisFlyer",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Qatar Airways Privilege Club",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Thai Airways Royal Orchid Plus",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Vietnam Airlines Lotusmiles",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Accor Live Limitless",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:1."
+          }
+        ]
+      },
+      {
+        "rate": "1 Point : 3 Partner Points (HSBC Privé, Premier, TravelOne)",
+        "partners": [
+          {
+            "to": "AirAsia Rewards",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 1:3."
+          }
+        ]
+      },
+      {
+        "rate": "2 Points : 1 Partner Point (HSBC Privé, Premier, TravelOne)",
+        "partners": [
+          {
+            "to": "Hainan Airlines Fortune Wings Club",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 2:1."
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 2:1."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 2:1."
+          }
+        ]
+      },
+      {
+        "rate": "5 Points : 1 Partner Point (HSBC Privé, Premier, TravelOne)",
+        "partners": [
+          {
+            "to": "Shangri-La Circle",
+            "insight": "HSBC Privé, Premier, and TravelOne transfer at 5:1."
+          }
+        ]
+      },
+      {
+        "rate": "2 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "partners": [
+          {
+            "to": "Air India",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Air France–KLM Flying Blue",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "British Airways Executive Club",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "EVA Air Infinity MileageLands",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Japan Airlines Mileage Bank",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Singapore Airlines KrisFlyer",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Qatar Airways Privilege Club",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Thai Airways Royal Orchid Plus",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Vietnam Airlines Lotusmiles",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Accor Live Limitless",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 2:1."
+          }
+        ]
+      },
+      {
+        "rate": "1 Point : 2 Partner Points (HSBC Visa Platinum / RuPay Platinum)",
+        "partners": [
+          {
+            "to": "AirAsia Rewards",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 1:2."
+          }
+        ]
+      },
+      {
+        "rate": "4 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "partners": [
+          {
+            "to": "Hainan Airlines Fortune Wings Club",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 4:1."
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 4:1."
+          }
+        ]
+      },
+      {
+        "rate": "3 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "partners": [
+          {
+            "to": "United MileagePlus",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 3:1."
+          }
+        ]
+      },
+      {
+        "rate": "10 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "partners": [
+          {
+            "to": "Shangri-La Circle",
+            "insight": "HSBC Visa Platinum and RuPay Platinum transfer at 10:1."
+          }
+        ]
+      }
+    ]
+  }
 ]
