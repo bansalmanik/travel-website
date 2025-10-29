@@ -1458,5 +1458,121 @@
         ]
       }
     ]
+  },
+  {
+    "program": "SBI",
+    "from": "SBI Miles Credit Card",
+    "rates": [
+      {
+        "rate": "1 Point : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Air Canada Aeroplan",
+            "insight": "Transfers from SBI Miles convert to Aeroplan at 1:1."
+          },
+          {
+            "to": "AirAsia Rewards",
+            "insight": "Transfers from SBI Miles convert to AirAsia Rewards at 1:1."
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "Transfers from SBI Miles convert to Flying Blue at 1:1."
+          },
+          {
+            "to": "Air India",
+            "insight": "Transfers from SBI Miles convert to Maharaja Club at 1:1."
+          },
+          {
+            "to": "British Airways Executive Club",
+            "insight": "Transfers from SBI Miles convert to British Airways Executive Club at 1:1."
+          },
+          {
+            "to": "Cathay",
+            "insight": "Transfers from SBI Miles convert to Cathay at 1:1."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "Transfers from SBI Miles convert to Etihad Guest at 1:1."
+          },
+          {
+            "to": "SpiceJet SpiceClub",
+            "insight": "Transfers from SBI Miles convert to SpiceClub at 1:1."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "Transfers from SBI Miles convert to Royal Orchid Plus at 1:1."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "Transfers from SBI Miles convert to Qantas Frequent Flyer at 1:1."
+          }
+        ]
+      },
+      {
+        "rate": "2 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Air Arabia AA Rewards",
+            "insight": "Transfers from SBI Miles convert to AA Rewards at 2:1."
+          },
+          {
+            "to": "Emirates Skywards",
+            "insight": "Transfers from SBI Miles convert to Emirates Skywards at 2:1."
+          },
+          {
+            "to": "Ethiopian Airlines ShebaMiles",
+            "insight": "Transfers from SBI Miles convert to ShebaMiles at 2:1."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "Transfers from SBI Miles convert to JAL Mileage Bank at 2:1."
+          },
+          {
+            "to": "Saudia Alfursan",
+            "insight": "Transfers from SBI Miles convert to Alfursan at 2:1."
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "Transfers from SBI Miles convert to Miles&Smiles at 2:1."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "Transfers from SBI Miles convert to MileagePlus at 2:1."
+          },
+          {
+            "to": "Qatar Airways Privilege Club",
+            "insight": "Transfers from SBI Miles convert to Privilege Club at 2:1."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "SBI",
+    "from": "SBI Aurum Credit Card",
+    "rates": [
+      {
+        "rate": "4 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "AirAsia Rewards",
+            "insight": "Transfers from SBI Aurum convert to AirAsia Rewards at 4:1."
+          }
+        ]
+      },
+      {
+        "rate": "5 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Air India",
+            "insight": "Transfers from SBI Aurum convert to Maharaja Club at 5:1."
+          },
+          {
+            "to": "Qatar Airways Privilege Club",
+            "insight": "Transfers from SBI Aurum convert to Privilege Club at 5:1."
+          }
+        ]
+      }
+    ]
   }
 ]
