@@ -8,6 +8,11 @@ type Conversion = (typeof conversions)[number];
 
 type ConversionByFrom = Record<string, Conversion>;
 
+const ALL_PROGRAMS_OPTION = "All Programs";
+
+const getProgramName = (conversion: Conversion) =>
+  conversion.program ?? "Other";
+
 type PartnerOption = {
   id: string;
   to: string;
@@ -22,28 +27,67 @@ const conversionsByFrom: ConversionByFrom = conversions.reduce((acc, conversion)
 }, {} as ConversionByFrom);
 
 export default function PointsConversionContent() {
+  const [selectedProgramName, setSelectedProgramName] = useState<string>(
+    ALL_PROGRAMS_OPTION
+  );
   const [selectedFrom, setSelectedFrom] = useState(conversions[0]?.from ?? "");
   const [selectedPartnerId, setSelectedPartnerId] = useState("");
 
+  const programOptions = useMemo(() => {
+    const uniquePrograms = Array.from(
+      new Set(conversions.map((conversion) => getProgramName(conversion)))
+    ).sort((a, b) => a.localeCompare(b));
+
+    return [ALL_PROGRAMS_OPTION, ...uniquePrograms];
+  }, []);
+
+  const filteredConversions = useMemo(() => {
+    if (
+      !selectedProgramName ||
+      selectedProgramName === ALL_PROGRAMS_OPTION
+    ) {
+      return conversions;
+    }
+
+    return conversions.filter(
+      (conversion) => getProgramName(conversion) === selectedProgramName
+    );
+  }, [selectedProgramName]);
+
   const fromOptions = useMemo(
-    () => Object.keys(conversionsByFrom).sort((a, b) => a.localeCompare(b)),
-    []
+    () =>
+      filteredConversions
+        .map((conversion) => conversion.from)
+        .sort((a, b) => a.localeCompare(b)),
+    [filteredConversions]
   );
 
-  const selectedProgram = useMemo(() => {
-    if (!selectedFrom) {
+  const normalizedSelectedFrom = useMemo(() => {
+    if (fromOptions.length === 0) {
+      return "";
+    }
+
+    if (selectedFrom && fromOptions.includes(selectedFrom)) {
+      return selectedFrom;
+    }
+
+    return fromOptions[0];
+  }, [fromOptions, selectedFrom]);
+
+  const selectedConversion = useMemo(() => {
+    if (!normalizedSelectedFrom) {
       return null;
     }
 
-    return conversionsByFrom[selectedFrom] ?? null;
-  }, [selectedFrom]);
+    return conversionsByFrom[normalizedSelectedFrom] ?? null;
+  }, [normalizedSelectedFrom]);
 
   const partnerOptions = useMemo(() => {
-    if (!selectedProgram) {
+    if (!selectedConversion) {
       return [] as PartnerOption[];
     }
 
-    return selectedProgram.rates.flatMap((rate) =>
+    return selectedConversion.rates.flatMap((rate) =>
       rate.partners.map((partner) => ({
         id: `${rate.rate}__${partner.to}`,
         to: partner.to,
@@ -51,7 +95,7 @@ export default function PointsConversionContent() {
         insight: partner.insight,
       }))
     );
-  }, [selectedProgram]);
+  }, [selectedConversion]);
 
   const normalizedSelectedPartnerId = useMemo(() => {
     if (partnerOptions.length === 0) {
@@ -80,6 +124,25 @@ export default function PointsConversionContent() {
     );
   }, [normalizedSelectedPartnerId, partnerOptions]);
 
+  const handleProgramChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const newProgram = event.target.value;
+    setSelectedProgramName(newProgram);
+
+    const nextConversions =
+      !newProgram || newProgram === ALL_PROGRAMS_OPTION
+        ? conversions
+        : conversions.filter(
+            (conversion) => getProgramName(conversion) === newProgram
+          );
+
+    const nextFromOption = nextConversions
+      .map((conversion) => conversion.from)
+      .sort((a, b) => a.localeCompare(b))[0];
+
+    setSelectedFrom(nextFromOption ?? "");
+    setSelectedPartnerId("");
+  };
+
   const handleFromChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setSelectedFrom(event.target.value);
     setSelectedPartnerId("");
@@ -103,22 +166,46 @@ export default function PointsConversionContent() {
         </header>
 
         <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <div className="grid gap-6 lg:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-3">
+            <label className="space-y-2">
+              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
+                Program
+              </span>
+              <select
+                value={selectedProgramName}
+                onChange={handleProgramChange}
+                className="w-full rounded-2xl border border-white/20 bg-slate-900/80 px-4 py-3 text-base text-slate-100 shadow focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                aria-label="Select the card program"
+              >
+                {programOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </label>
             <label className="space-y-2">
               <span className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
                 Transfer from
               </span>
               <select
-                value={selectedFrom}
+                value={normalizedSelectedFrom}
                 onChange={handleFromChange}
                 className="w-full rounded-2xl border border-white/20 bg-slate-900/80 px-4 py-3 text-base text-slate-100 shadow focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
                 aria-label="Select the points program you are transferring from"
+                disabled={fromOptions.length === 0}
               >
-                {fromOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
+                {fromOptions.length === 0 ? (
+                  <option value="" disabled>
+                    No cards available
                   </option>
-                ))}
+                ) : (
+                  fromOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))
+                )}
               </select>
             </label>
             <label className="space-y-2">
@@ -156,7 +243,7 @@ export default function PointsConversionContent() {
                 <p className="text-5xl font-semibold text-white">{selectedPartner.rate}</p>
                 <div className="flex flex-wrap justify-center gap-3 text-xs uppercase tracking-[0.25em] text-amber-200">
                   <span className="rounded-full border border-amber-200/40 px-3 py-1 text-amber-200/90">
-                    {selectedFrom}
+                    {normalizedSelectedFrom}
                   </span>
                   <span className="rounded-full border border-amber-200/40 px-3 py-1 text-amber-200/90">
                     {selectedPartner.to}

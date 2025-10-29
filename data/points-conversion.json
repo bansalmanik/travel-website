@@ -1,5 +1,6 @@
 [
   {
+    "program": "Axis",
     "from": "Axis Burgundy Private Credit Cards",
     "rates": [
       {
@@ -85,7 +86,8 @@
       }
     ]
   },
-    {
+  {
+    "program": "Axis",
     "from": "Axis Magnus (Burgundy) Credit Cards",
     "rates": [
       {
@@ -172,6 +174,7 @@
     ]
   },
   {
+    "program": "Axis",
     "from": "Axis Magnus(plain) Credit Cards",
     "rates": [
       {
@@ -257,7 +260,8 @@
       }
     ]
   },
-    {
+  {
+    "program": "Axis",
     "from": "Axis Reserve Credit Card",
     "rates": [
       {
@@ -344,6 +348,7 @@
     ]
   },
   {
+    "program": "Axis",
     "from": "Axis Horizon Credit Card",
     "rates": [
       {
@@ -430,6 +435,7 @@
     ]
   },
   {
+    "program": "Axis",
     "from": "IndianOil Axis Premium Credit Card",
     "rates": [
       {
@@ -525,6 +531,7 @@
     ]
   },
   {
+    "program": "Axis",
     "from": "Axis Olympus Credit Card",
     "rates": [
       {
@@ -611,6 +618,7 @@
     ]
   },
   {
+    "program": "Axis",
     "from": "Axis Atlas Credit Card",
     "rates": [
       {
@@ -702,6 +710,7 @@
     ]
   },
   {
+    "program": "Axis",
     "from": "Axis Select, Privilege & Rewards Credit Cards",
     "rates": [
       {
@@ -793,6 +802,7 @@
     ]
   },
   {
+    "program": "Axis",
     "from": "Axis Other Eligible Credit/Debit Cards",
     "rates": [
       {
@@ -884,6 +894,7 @@
     ]
   },
   {
+    "program": "HDFC",
     "from": "HDFC Regalia Gold Cards",
     "rates": [
       {
@@ -967,6 +978,7 @@
     ]
   },
   {
+    "program": "HDFC",
     "from": "HDFC Infinia Credit Cards",
     "rates": [
       {
