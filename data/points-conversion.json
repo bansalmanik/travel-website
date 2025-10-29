@@ -1870,5 +1870,164 @@
         ]
       }
     ]
+  },
+  {
+    "program": "IHG One Rewards",
+    "from": "IHG One Rewards Points",
+    "rates": [
+      {
+        "rate": "5 IHG One Rewards Points : 1 Partner Point (10,000 point minimum)",
+        "partners": [
+          {
+            "to": "Aeromexico – Club Premier",
+            "insight": "Transfer IHG One Rewards points to Aeromexico Club Premier at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Air Canada – Aeroplan",
+            "insight": "Transfer IHG One Rewards points to Air Canada Aeroplan at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Air China – PhoenixMiles",
+            "insight": "Transfer IHG One Rewards points to Air China PhoenixMiles at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Air France KLM – Flying Blue",
+            "insight": "Transfer IHG One Rewards points to Flying Blue at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Air New Zealand – Airpoints",
+            "insight": "Transfer IHG One Rewards points to Air New Zealand Airpoints at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Air Portugal – TAP Miles&Go",
+            "insight": "Transfer IHG One Rewards points to TAP Miles&Go at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Alaska Airlines – Mileage Plan",
+            "insight": "Transfer IHG One Rewards points to Alaska Airlines Mileage Plan at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "ANA – ANA Mileage Club",
+            "insight": "Transfer IHG One Rewards points to ANA Mileage Club at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "American Airlines – AAdvantage",
+            "insight": "Transfer IHG One Rewards points to American Airlines AAdvantage at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Asia Miles (Cathay Pacific)",
+            "insight": "Transfer IHG One Rewards points to Cathay Pacific Asia Miles at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Avianca Airlines – LifeMiles",
+            "insight": "Transfer IHG One Rewards points to Avianca LifeMiles at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "British Airways – Executive Club",
+            "insight": "Transfer IHG One Rewards points to British Airways Executive Club at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "China Eastern – Eastern Miles",
+            "insight": "Transfer IHG One Rewards points to China Eastern Eastern Miles at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "China Southern – Sky Pearl Club",
+            "insight": "Transfer IHG One Rewards points to China Southern Sky Pearl Club at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Delta Air Lines – SkyMiles®",
+            "insight": "Transfer IHG One Rewards points to Delta SkyMiles at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Emirates – Skywards",
+            "insight": "Transfer IHG One Rewards points to Emirates Skywards at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Etihad Airways – Etihad Guest",
+            "insight": "Transfer IHG One Rewards points to Etihad Guest at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Eva Airways – Infinity MileageLands",
+            "insight": "Transfer IHG One Rewards points to EVA Air Infinity MileageLands at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Finnair – Finnair Plus",
+            "insight": "Transfer IHG One Rewards points to Finnair Plus at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Gulf Air – Falconflyer",
+            "insight": "Transfer IHG One Rewards points to Gulf Air Falconflyer at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Hainan Airlines – Fortune Wings Club",
+            "insight": "Transfer IHG One Rewards points to Hainan Airlines Fortune Wings Club at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Iberia Airlines – Iberia Plus",
+            "insight": "Transfer IHG One Rewards points to Iberia Plus at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "InterMiles",
+            "insight": "Transfer IHG One Rewards points to InterMiles at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Japan Airlines – JAL Mileage Bank",
+            "insight": "Transfer IHG One Rewards points to Japan Airlines JAL Mileage Bank at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "JetBlue – TrueBlue",
+            "insight": "Transfer IHG One Rewards points to JetBlue TrueBlue at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Korean Air – SKYPASS",
+            "insight": "Transfer IHG One Rewards points to Korean Air SKYPASS at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Lufthansa – Miles & More",
+            "insight": "Transfer IHG One Rewards points to Lufthansa Miles & More at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Malaysia Airlines – Enrich",
+            "insight": "Transfer IHG One Rewards points to Malaysia Airlines Enrich at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "MilleMiglia (ITA Airways / Alitalia)",
+            "insight": "Transfer IHG One Rewards points to ITA Airways MilleMiglia at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Qantas Airlines – Frequent Flyer",
+            "insight": "Transfer IHG One Rewards points to Qantas Frequent Flyer at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Singapore Airlines – KrisFlyer",
+            "insight": "Transfer IHG One Rewards points to Singapore Airlines KrisFlyer at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "South African Airways – Voyager",
+            "insight": "Transfer IHG One Rewards points to South African Airways Voyager at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Thai Airways – Royal Orchid Plus",
+            "insight": "Transfer IHG One Rewards points to Thai Airways Royal Orchid Plus at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Turkish Airlines – Miles&Smiles",
+            "insight": "Transfer IHG One Rewards points to Turkish Airlines Miles&Smiles at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "United Airlines – MileagePlus®",
+            "insight": "Transfer IHG One Rewards points to United MileagePlus at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Virgin Atlantic – Flying Club",
+            "insight": "Transfer IHG One Rewards points to Virgin Atlantic Flying Club at a 5:1 ratio with a 10,000-point minimum."
+          },
+          {
+            "to": "Virgin Australia – Velocity Frequent Flyer",
+            "insight": "Transfer IHG One Rewards points to Virgin Australia Velocity Frequent Flyer at a 5:1 ratio with a 10,000-point minimum."
+          }
+        ]
+      }
+    ]
   }
 ]
