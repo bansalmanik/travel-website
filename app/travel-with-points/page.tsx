@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const sections = [
   {
+    title: "Points Conversion",
+    description:
+      "Compare transfer partners, check standard ratios, and note any timing quirks before you move your points.",
+    href: "/pointsconversion",
+    accent: "bg-violet-100 text-violet-900",
+  },
+  {
     title: "Credit Cards",
     description:
       "Earn transferrable points, maximize category bonuses, and decide when a premium annual fee is worth it.",
