@@ -1,142 +1,692 @@
 [
   {
-    "from": "American Express Membership Rewards",
-    "rates": [
-      {
-        "rate": "1 : 1",
-        "partners": [
-          {
-            "to": "Air Canada Aeroplan",
-            "insight": "Transfers are usually instant. Bonus promotions can occasionally increase the ratio."
-          },
-          {
-            "to": "Marriott Bonvoy",
-            "insight": "Allow up to 48 hours. A 5,000-point bonus is added for every 60,000 points transferred."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "from": "Chase Ultimate Rewards",
-    "rates": [
-      {
-        "rate": "1 : 1",
-        "partners": [
-          {
-            "to": "World of Hyatt",
-            "insight": "Transfers are instant. Redemptions start at 3,500 points for off-peak Category 1 hotels."
-          },
-          {
-            "to": "United MileagePlus",
-            "insight": "Transfers are instant, but you cannot transfer United miles back to Chase once complete."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "from": "Citi ThankYou Points",
-    "rates": [
-      {
-        "rate": "1 : 1",
-        "partners": [
-          {
-            "to": "Avianca LifeMiles",
-            "insight": "Transfers post within 24 hours. LifeMiles regularly discounts award bookings by 10\u201315%."
-          }
-        ]
-      },
-      {
-        "rate": "1 : 2",
-        "partners": [
-          {
-            "to": "Choice Privileges",
-            "insight": "Expect 1\u20132 day processing. Watch for seasonal promotions on all-inclusive partner resorts."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "from": "Axis Bank Burgundy Private & Magnus (Burgundy) Credit Cards",
+    "from": "Axis Burgundy Private Credit Cards",
     "rates": [
       {
         "rate": "5 EDGE REWARD Points : 4 Partner Points",
         "partners": [
           {
-            "to": "Axis Bank Airline & Hotel Partners",
-            "insight": "Premium Burgundy cardholders enjoy the best conversion rate across all Axis Bank transfer partners."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 12,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 3,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 12,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 12,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 12,00,000." 
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 12,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 3,00,000." 
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 12,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 12,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 3,00,000."
+          }
+        ]
+      }
+    ]
+  },
+    {
+    "from": "Axis Magnus (Burgundy) Credit Cards",
+    "rates": [
+      {
+        "rate": "5 EDGE REWARD Points : 4 Partner Points",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 8,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 2,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 8,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 8,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 8,00,000." 
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 8,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 2,00,000." 
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 8,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 8,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 2,00,000."
           }
         ]
       }
     ]
   },
   {
-    "from": "Axis Bank Reserve & Magnus Credit Cards",
+    "from": "Axis Magnus(plain) Credit Cards",
     "rates": [
       {
         "rate": "5 EDGE REWARD Points : 2 Partner Points",
         "partners": [
           {
-            "to": "Axis Bank Airline & Hotel Partners",
-            "insight": "High-end Reserve and Magnus cardholders receive an elevated 2-for-5 transfer ratio to any partner."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000." 
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          }
+        ]
+      }
+    ]
+  },
+    {
+    "from": "Axis Reserve Credit Card",
+    "rates": [
+      {
+        "rate": "5 EDGE REWARD Points : 2 Partner Points",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000." 
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
           }
         ]
       }
     ]
   },
   {
-    "from": "Axis Bank Horizon Credit Card",
+    "from": "Axis Horizon Credit Card",
     "rates": [
       {
         "rate": "1 EDGE Mile : 1 Partner Point",
         "partners": [
           {
-            "to": "Axis Bank Airline & Hotel Partners",
-            "insight": "Horizon cardholders enjoy a simple one-to-one conversion to any partner program."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000." 
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
           }
         ]
       }
     ]
   },
   {
-    "from": "IndianOil Axis Bank Premium Credit Card",
+    "from": "IndianOil Axis Premium Credit Card",
     "rates": [
       {
         "rate": "2 EDGE Miles : 1 Partner Point",
         "partners": [
           {
-            "to": "Axis Bank Airline & Hotel Partners",
-            "insight": "Convert earned fuel rewards into travel by transferring EDGE Miles to participating partners."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000." 
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          }
+        ]
+      },
+      {
+        "rate": "3 EDGE Miles : 10 Marriott Bonvoy Point",
+        "partners": [
+          {
+            "to": "IOCL XTRAREWARDS",
+            "insight": "Marriott conversions from IndianOil Premium cards follow a reduced ratio compared with other partners."
           }
         ]
       }
     ]
   },
   {
-    "from": "Axis Bank Olympus Credit Card",
+    "from": "Axis Olympus Credit Card",
     "rates": [
       {
         "rate": "1 EDGE Mile : 4 Partner Points",
         "partners": [
           {
-            "to": "Axis Bank Airline & Hotel Partners",
-            "insight": "Olympus cardholders receive an exceptional 4x partner conversion on every EDGE Mile transferred."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 6,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,50,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 6,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 6,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 6,00,000."
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 6,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 6,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 6,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,50,000."
           }
         ]
       }
     ]
   },
   {
-    "from": "Axis Bank Atlas Credit Card",
+    "from": "Axis Atlas Credit Card",
     "rates": [
       {
         "rate": "1 EDGE Mile : 2 Partner Points",
         "partners": [
           {
-            "to": "Axis Bank Airline & Hotel Partners",
-            "insight": "Atlas cardholders can double their points value when moving EDGE Miles to most airline and hotel partners."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "Air Asia",
+            "insight": "This is Group B partner with annual capping of 1,20,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 30,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 1,20,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 1,20,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 1,20,000." 
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 1,20,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 1,20,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 1,20,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 30,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 30,000."
           }
         ]
       },
@@ -145,33 +695,29 @@
         "partners": [
           {
             "to": "Marriott Bonvoy",
-            "insight": "Marriott conversions from Atlas cards follow a reduced ratio compared with other partners."
+            "insight": "This is Group A partner with annual capping of 30,000."
           }
         ]
       }
     ]
   },
   {
-    "from": "Axis Bank SSelect, Privilege & Rewards Credit Cards",
+    "from": "Axis Select, Privilege & Rewards Credit Cards",
     "rates": [
       {
         "rate": "5 EDGE REWARD Points : 1 Partner Point",
         "partners": [
           {
-            "to": "Vistara",
-            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia."
-          },
-          {
             "to": "ITC",
-            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia."
+            "insight": "This is Group B partner with annual capping of 4,00,000."
           },
           {
             "to": "SpiceJet",
-            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia."
+            "insight": "This is Group B partner with annual capping of 4,00,000."
           },
           {
             "to": "airasia",
-            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia."
+            "insight": "This is Group B partner with annual capping of 4,00,000."
           }
         ]
       },
@@ -179,34 +725,90 @@
         "rate": "10 EDGE REWARD Points : 1 Partner Point",
         "partners": [
           {
-            "to": "Other Axis Bank Transfer Partners",
-            "insight": "For partners outside the preferred list, SSelect, Privilege, and Rewards cards convert at a 10:1 ratio."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
           }
         ]
       }
     ]
   },
   {
-    "from": "Axis Bank Other Eligible Credit Cards",
+    "from": "Axis Other Eligible Credit/Debit Cards",
     "rates": [
       {
         "rate": "10 EDGE REWARD Points : 1 Partner Point",
         "partners": [
           {
-            "to": "Vistara",
-            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners."
-          },
-          {
             "to": "ITC",
-            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners."
+            "insight": "This is Group B partner with annual capping of 4,00,000."
           },
           {
             "to": "SpiceJet",
-            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners."
+            "insight": "This is Group B partner with annual capping of 4,00,000."
           },
           {
             "to": "airasia",
-            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners."
+            "insight": "This is Group B partner with annual capping of 4,00,000."
           }
         ]
       },
@@ -214,11 +816,237 @@
         "rate": "20 EDGE REWARD Points : 1 Partner Point",
         "partners": [
           {
-            "to": "Other Axis Bank Transfer Partners",
-            "insight": "All remaining partners convert at the base 20:1 ratio for standard Axis Bank cards."
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Ethiopian Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
           }
         ]
       }
     ]
-  }
+  },
+  {
+    "from": "HDFC Regalia Gold Cards",
+    "rates": [
+      {
+        "rate": "2 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "airasia",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          }
+        ]
+      },
+      {
+        "rate": "3 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "from": "HDFC Infinia Credit Cards",
+    "rates": [
+      {
+        "rate": "2 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "ITC",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "airasia",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          }
+        ]
+      },
+      {
+        "rate": "3 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Aeroplan",
+            "insight": "This is Group A partner with annual capping of 1,00,000."   
+          },
+          {
+            "to": "Air India",
+            "insight": "This is Group B partner with annual capping of 4,00,000."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Qatar Airways",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Singapore Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Turkish Airlines",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "This is Group A partner with annual capping of 1,00,000."
+          }
+        ]
+      }
+    ]
+  }  
 ]

@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app",
+    "\\app\\blogs",
+    "\\app\\blogs\\[slug]",
+    "\\data",
+    "\\public"
   ],
+  "SelectedNode": "\\app\\blogs\\stories.json",
   "PreviewInSolutionExplorer": false
 }
