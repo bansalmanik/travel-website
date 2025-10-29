@@ -1,8 +1,39 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import flightData from "@/data/flight-programs.json";
+
+type SectionImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+type BaseSection = {
+  id: string;
+  title: string;
+  intro?: string;
+  paragraphs?: string[];
+  images?: SectionImage[];
+};
+
+type BulletSection = BaseSection & {
+  style: "bullets";
+  bullets: string[];
+};
+
+type TableSection = BaseSection & {
+  style: "table";
+  table: {
+    caption?: string;
+    columns: string[];
+    rows: { cells: string[] }[];
+  };
+};
+
+type ProgramSection = BulletSection | TableSection;
 
 type FlightProgram = {
   slug: string;
@@ -11,9 +42,7 @@ type FlightProgram = {
   hub: string;
   summary: string;
   seoDescription: string;
-  eliteLevels: string[];
-  sweetSpots: string[];
-  transferPartners: string[];
+  sections: ProgramSection[];
 };
 
 const programs = (flightData as { programs: FlightProgram[] }).programs;
@@ -73,14 +102,105 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  const siteUrl = "https://example.com";
+  const sectionTitles = program.sections.map((section) => section.title);
+  const sectionImages = program.sections.flatMap((section) =>
+    (section.images ?? []).map((image) => `${siteUrl}${image.src}`)
+  );
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: program.name,
+    "@type": "Article",
+    headline: `${program.name} loyalty playbook`,
     description: program.summary,
-    areaServed: program.hub,
-    parentOrganization: program.alliance,
-    url: `https://example.com/travel-with-points/flight-programs/${program.slug}`
+    about: {
+      "@type": "Airline",
+      name: program.name,
+      parentOrganization: program.alliance
+    },
+    articleSection: sectionTitles,
+    image: sectionImages,
+    mainEntityOfPage: `${siteUrl}/travel-with-points/flight-programs/${program.slug}`,
+    author: {
+      "@type": "Organization",
+      name: "Travel with Points"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Travel with Points",
+      url: siteUrl
+    }
+  };
+
+  const renderSectionContent = (section: ProgramSection) => {
+    if (section.style === "table") {
+      return (
+        <div className="space-y-6">
+          {section.intro ? (
+            <p className="text-sm text-slate-100/80">{section.intro}</p>
+          ) : null}
+          {section.paragraphs?.map((paragraph, index) => (
+            <p key={`${section.id}-table-paragraph-${index}`} className="text-sm text-slate-100/80">
+              {paragraph}
+            </p>
+          ))}
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[340px] border-separate border-spacing-y-2 text-left text-sm text-slate-100/80">
+              {section.table.caption ? (
+                <caption className="pb-2 text-left text-xs uppercase tracking-[0.2em] text-emerald-300">
+                  {section.table.caption}
+                </caption>
+              ) : null}
+              <thead>
+                <tr>
+                  {section.table.columns.map((column) => (
+                    <th
+                      key={column}
+                      scope="col"
+                      className="rounded-lg bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-emerald-200"
+                    >
+                      {column}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {section.table.rows.map((row, rowIndex) => (
+                  <tr key={`${section.id}-${rowIndex}`} className="align-top">
+                    {row.cells.map((cell, cellIndex) => (
+                      <td key={`${section.id}-${rowIndex}-${cellIndex}`} className="rounded-lg bg-white/5 px-4 py-3">
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="space-y-6">
+        {section.intro ? (
+          <p className="text-sm text-slate-100/80">{section.intro}</p>
+        ) : null}
+        {section.paragraphs?.map((paragraph, index) => (
+          <p key={`${section.id}-paragraph-${index}`} className="text-sm text-slate-100/80">
+            {paragraph}
+          </p>
+        ))}
+        <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
+          {section.bullets.map((bullet, index) => (
+            <li key={`${section.id}-bullet-${index}`} className="flex items-start gap-3">
+              <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-300" aria-hidden />
+              <span>{bullet}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
   };
 
   return (
@@ -89,7 +209,7 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20 lg:py-28">
+      <article className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-20 lg:py-28">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
           <ol className="flex items-center gap-2">
             <li>
@@ -128,44 +248,45 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
           </dl>
         </section>
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Elite status highlights</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {program.eliteLevels.map((highlight) => (
-              <li key={highlight} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-300" aria-hidden />
-                <span>{highlight}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Award sweet spots</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {program.sweetSpots.map((sweetSpot) => (
-              <li key={sweetSpot} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-300" aria-hidden />
-                <span>{sweetSpot}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Transfer partners</h2>
-          <p className="text-sm text-slate-100/80">
-            Build balances quickly by moving points from bank currencies directly into {program.name}:
-          </p>
-          <ul className="grid gap-3 text-sm text-slate-100/80 sm:grid-cols-2">
-            {program.transferPartners.map((partner) => (
-              <li key={partner} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-300" aria-hidden />
-                <span>{partner}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {program.sections.map((section) => (
+          <section
+            key={section.id}
+            className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+            aria-labelledby={`${section.id}-heading`}
+          >
+            <div className="space-y-4">
+              <h2 id={`${section.id}-heading`} className="text-xl font-semibold text-white">
+                {section.title}
+              </h2>
+              {renderSectionContent(section)}
+            </div>
+            {section.images && section.images.length > 0 ? (
+              <div className="grid gap-4 sm:grid-cols-2">
+                {section.images.map((image) => (
+                  <figure
+                    key={`${section.id}-${image.src}`}
+                    className="overflow-hidden rounded-2xl border border-white/10 bg-white/10"
+                  >
+                    <div className="relative aspect-[4/3] w-full">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        sizes="(min-width: 1024px) 50vw, 100vw"
+                        className="object-cover"
+                      />
+                    </div>
+                    {image.caption ? (
+                      <figcaption className="px-4 py-3 text-xs uppercase tracking-[0.2em] text-slate-200/70">
+                        {image.caption}
+                      </figcaption>
+                    ) : null}
+                  </figure>
+                ))}
+              </div>
+            ) : null}
+          </section>
+        ))}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Compare more airline programs</p>
@@ -186,7 +307,7 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
             </svg>
           </Link>
         </footer>
-      </div>
+      </article>
     </main>
   );
 }

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import journalsData from "@/data/journals.json";
+
 const featuredStories = [
   {
     title: "Chasing Midnight Sun in Lofoten",
@@ -28,41 +30,19 @@ const featuredStories = [
   },
 ];
 
-const travelMoods = [
-  {
-    title: "Mountain Solitude",
-    description: "Where the thin air clears the mind and mornings begin above the clouds.",
-    icon: "⛰️",
-  },
-  {
-    title: "Culinary Curiosity",
-    description: "Markets, family kitchens, and recipes collected in well-loved notebooks.",
-    icon: "🍲",
-  },
-  {
-    title: "City Daydreams",
-    description: "Art walks, vinyl shops, and hidden courtyards in cities that never stop reinventing themselves.",
-    icon: "🌆",
-  },
-];
+type JournalHighlight = {
+  slug: string;
+  title: string;
+  displayDate: string;
+};
 
-const journalHighlights = [
-  {
-    title: "How I plan months-long journeys while working remotely",
-    date: "June 28, 2024",
-    url: "/blogs/remote-travel-routine",
-  },
-  {
-    title: "A packing list for curious light travelers",
-    date: "June 11, 2024",
-    url: "/blogs/packing-list",
-  },
-  {
-    title: "Finding community in hostel common rooms",
-    date: "May 30, 2024",
-    url: "/blogs/hostel-community",
-  },
-];
+const journals = (journalsData as { journals: JournalHighlight[] }).journals;
+
+const journalHighlights = journals.slice(0, 3).map((entry) => ({
+  title: entry.title,
+  date: entry.displayDate,
+  url: `/journals/${entry.slug}`,
+}));
 
 const travelWithPointsHighlights = [
   {
@@ -85,24 +65,6 @@ const travelWithPointsHighlights = [
   },
 ];
 
-const photoDiary = [
-  {
-    caption: "Golden hour over alpine lakes in the Dolomites.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    caption: "Collecting spices in Marrakech’s buzzing souks.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1505744386214-fa16e387eec8?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    caption: "Cycling sunrise streets in Hoi An.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
-  },
-];
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
@@ -121,11 +83,11 @@ export default function Home() {
         <div className="mx-auto max-w-3xl px-6 pb-24 pt-12 text-white sm:pb-32 sm:pt-20">
           <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-200">Travel journal & visual stories</p>
           <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl sm:leading-tight">
-            Hey, I’m Ana—writer, photographer, and seeker of slow, soulful journeys.
+            Miles Go Round is your compass for soulful journeys and slow travel adventures.
           </h1>
           <p className="mt-6 text-lg text-amber-100/90 sm:text-xl">
-            I share honest notes from the road, from alpine hikes to neon-drenched backstreets. No sponsored itineraries,
-            no sales pitches—just the lessons, joys, and surprises that keep me wandering.
+            Explore immersive guides, heartfelt field notes, and practical tips for transforming every mile into a memorable
+            story. From sunrise hikes to late-night street food, discover the moments that make travel feel alive.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -255,63 +217,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="moods" className="space-y-12">
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-500">Travel Moods</p>
-              <h2 className="mt-4 text-3xl font-semibold text-slate-900 sm:text-4xl">
-                Pick a vibe and follow along
-              </h2>
-            </div>
-            <p className="max-w-xl text-base text-slate-600">
-              Curated collections from past trips—perfect for sparking daydreams or planning your own escapes.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {travelMoods.map((mood) => (
-              <div
-                key={mood.title}
-                className="rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                <span className="text-4xl">{mood.icon}</span>
-                <h3 className="mt-6 text-xl font-semibold text-slate-900">{mood.title}</h3>
-                <p className="mt-4 text-sm leading-6 text-slate-600">{mood.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="grid gap-12 rounded-3xl bg-slate-900 px-8 py-12 text-white md:grid-cols-2">
-          <div className="space-y-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-300">Photo Diary</p>
-            <h2 className="text-3xl font-semibold sm:text-4xl">Postcards from the archives</h2>
-            <p className="text-base text-slate-200">
-              Small scenes that stuck with me long after the flights home—the laughter of new friends, the quiet between storms,
-              the colors that never leave.
-            </p>
-          </div>
-          <div className="grid gap-6">
-            {photoDiary.map((photo, index) => (
-              <figure
-                key={photo.caption}
-                className={`overflow-hidden rounded-3xl border border-white/10 bg-white/10 shadow-xl backdrop-blur ${index === 1 ? "md:ml-12" : ""}`}
-              >
-                <div className="relative h-52 w-full">
-                  <Image
-                    src={photo.imageUrl}
-                    alt={photo.caption}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 768px) 40vw, 100vw"
-                  />
-                </div>
-                <figcaption className="px-6 py-4 text-sm text-slate-100">{photo.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
-        </section>
-
         <section id="journal" className="space-y-12">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -357,10 +262,12 @@ export default function Home() {
                 required
                 placeholder="hello@you.com"
                 className="w-full rounded-full border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:border-slate-400 focus:outline-none"
+                suppressHydrationWarning
               />
               <button
                 className="flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-slate-800"
                 type="submit"
+                suppressHydrationWarning
               >
                 Join the list
               </button>
@@ -371,7 +278,7 @@ export default function Home() {
 
       <footer className="border-t border-slate-200 bg-white/70 py-10 text-sm text-slate-600">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Away With Ana. Stories from a life in motion.</p>
+          <p>© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
           <div className="flex gap-6">
             <a className="transition hover:text-slate-900" href="https://instagram.com" target="_blank" rel="noreferrer">
               Instagram
@@ -379,7 +286,7 @@ export default function Home() {
             <a className="transition hover:text-slate-900" href="https://youtube.com" target="_blank" rel="noreferrer">
               YouTube
             </a>
-            <a className="transition hover:text-slate-900" href="mailto:hello@awaywithana.com">
+            <a className="transition hover:text-slate-900" href="mailto:hello@milesgoround.com">
               Email
             </a>
           </div>
