@@ -898,43 +898,56 @@
     "from": "HDFC Regalia Gold Cards",
     "rates": [
       {
-        "rate": "2 Points : 1 Partner Point",
+        "rate": "1 Point : 0.5 Partner Point",
         "partners": [
           {
-            "to": "Accor Live Limitless",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "AirAsia Rewards",
+            "insight": "1 RP = 0.5 mile conversion."
+          },
+          {
+            "to": "Finnair Plus (Avios)",
+            "insight": "1 RP = 0.5 Finnair Plus Avios."
           },
           {
             "to": "Flying Blue",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "insight": "1 RP = 0.5 mile conversion."
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "to": "Hainan Airlines Fortune Wings Club",
+            "insight": "1 RP = 0.5 mile conversion."
+          },
+          {
+            "to": "Vietnam Airlines Lotusmiles",
+            "insight": "1 RP = 0.5 mile conversion."
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "1 RP = 0.5 mile conversion."
+          },
+          {
+            "to": "Avianca LifeMiles",
+            "insight": "1 RP = 0.5 mile conversion."
           },
           {
             "to": "United MileagePlus",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "insight": "1 RP = 0.5 mile conversion."
+          }
+        ]
+      },
+      {
+        "rate": "1 Point : 0.33 Partner Point",
+        "partners": [
+          {
+            "to": "British Airways Executive Club (Avios)",
+            "insight": "Lower value conversion at 1 RP = 0.33 Avios."
           },
           {
-            "to": "Turkish Airlines",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "Air Canada Aeroplan",
+            "insight": "Lower value conversion at 1 RP = 0.33 point."
           },
           {
-            "to": "Wyndham Rewards",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
-          },
-          {
-            "to": "ITC",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
-          },
-          {
-            "to": "SpiceJet",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
-          },
-          {
-            "to": "airasia",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "to": "Etihad Guest",
+            "insight": "Lower value conversion at 1 RP = 0.33 mile."
           }
         ]
       },
@@ -942,36 +955,25 @@
         "rate": "3 Points : 1 Partner Point",
         "partners": [
           {
-            "to": "Aeroplan",
-            "insight": "This is Group A partner with annual capping of 1,00,000."   
-          },
+            "to": "Air India Maharaja Points",
+            "insight": "Least favorable conversion at 3 RP = 1 mile."
+          }
+        ]
+      },
+      {
+        "rate": "1 Point : 0.5 Partner Point (Hotels)",
+        "partners": [
           {
-            "to": "Air India",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
-          },
-          {
-            "to": "Etihad Guest",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
-          },
-          {
-            "to": "Marriott Bonvoy",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
-          },
-          {
-            "to": "Qatar Airways",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
-          },
-          {
-            "to": "Singapore Airlines",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
-          },
-          {
-            "to": "Turkish Airlines",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "IHG One Rewards",
+            "insight": "Standard hotel transfer at 1 RP = 0.5 point."
           },
           {
             "to": "Wyndham Rewards",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "insight": "Standard hotel transfer at 1 RP = 0.5 point."
+          },
+          {
+            "to": "ALL – Accor Live Limitless",
+            "insight": "Standard hotel transfer at 1 RP = 0.5 point."
           }
         ]
       }
@@ -982,80 +984,208 @@
     "from": "HDFC Infinia Credit Cards",
     "rates": [
       {
-        "rate": "2 Points : 1 Partner Point",
+        "rate": "1 Point : 1 Partner Point",
         "partners": [
           {
-            "to": "Accor Live Limitless",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "AirAsia Rewards",
+            "insight": "Optimal 1:1 transfer ratio."
+          },
+          {
+            "to": "Finnair Plus (Avios)",
+            "insight": "Optimal 1:1 transfer ratio."
           },
           {
             "to": "Flying Blue",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "insight": "Optimal 1:1 transfer ratio."
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "to": "Hainan Airlines Fortune Wings Club",
+            "insight": "Optimal 1:1 transfer ratio."
           },
           {
-            "to": "United MileagePlus",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "Vietnam Airlines Lotusmiles",
+            "insight": "Optimal 1:1 transfer ratio."
           },
           {
-            "to": "Turkish Airlines",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "SpiceJet SpiceClub",
+            "insight": "Optimal 1:1 transfer ratio."
           },
           {
-            "to": "Wyndham Rewards",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "Singapore Airlines KrisFlyer",
+            "insight": "Redeemed via Net Banking at 1:1."
           },
           {
-            "to": "ITC",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "to": "Club Vistara",
+            "insight": "Redeemed via Net Banking at 1:1."
           },
           {
-            "to": "SpiceJet",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
-          },
-          {
-            "to": "airasia",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "to": "InterMiles",
+            "insight": "Redeemed via Net Banking at 1:1."
           }
         ]
       },
       {
-        "rate": "3 Points : 1 Partner Point",
+        "rate": "2 Points : 1 Partner Point",
         "partners": [
           {
-            "to": "Aeroplan",
-            "insight": "This is Group A partner with annual capping of 1,00,000."   
+            "to": "British Airways Executive Club (Avios)",
+            "insight": "Devalued 2:1 transfer ratio."
           },
           {
-            "to": "Air India",
-            "insight": "This is Group B partner with annual capping of 4,00,000."
+            "to": "Air Canada Aeroplan",
+            "insight": "Devalued 2:1 transfer ratio."
+          },
+          {
+            "to": "Avianca LifeMiles",
+            "insight": "Devalued 2:1 transfer ratio."
           },
           {
             "to": "Etihad Guest",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "insight": "Devalued 2:1 transfer ratio."
           },
           {
-            "to": "Marriott Bonvoy",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "Devalued 2:1 transfer ratio."
           },
           {
-            "to": "Qatar Airways",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "United MileagePlus",
+            "insight": "Devalued 2:1 transfer ratio."
           },
           {
-            "to": "Singapore Airlines",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
-          },
+            "to": "Air India Maharaja Points",
+            "insight": "Devalued 2:1 transfer ratio."
+          }
+        ]
+      },
+      {
+        "rate": "1 Point : 1 Partner Point (Hotels)",
+        "partners": [
           {
-            "to": "Turkish Airlines",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "to": "IHG One Rewards",
+            "insight": "Optimal 1:1 hotel transfer."
           },
           {
             "to": "Wyndham Rewards",
-            "insight": "This is Group A partner with annual capping of 1,00,000."
+            "insight": "Optimal 1:1 hotel transfer."
+          }
+        ]
+      },
+      {
+        "rate": "2 Points : 1 Partner Point (Hotels)",
+        "partners": [
+          {
+            "to": "ALL – Accor Live Limitless",
+            "insight": "Devalued 2:1 hotel transfer."
+          },
+          {
+            "to": "Club ITC Green Points",
+            "insight": "Devalued 2:1 hotel transfer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "HDFC",
+    "from": "HDFC Diners Club Black Credit Cards",
+    "rates": [
+      {
+        "rate": "1 Point : 1 Partner Point",
+        "partners": [
+          {
+            "to": "AirAsia Rewards",
+            "insight": "Optimal 1:1 transfer ratio."
+          },
+          {
+            "to": "Finnair Plus (Avios)",
+            "insight": "Optimal 1:1 transfer ratio."
+          },
+          {
+            "to": "Flying Blue",
+            "insight": "Optimal 1:1 transfer ratio."
+          },
+          {
+            "to": "Hainan Airlines Fortune Wings Club",
+            "insight": "Optimal 1:1 transfer ratio."
+          },
+          {
+            "to": "Vietnam Airlines Lotusmiles",
+            "insight": "Optimal 1:1 transfer ratio."
+          },
+          {
+            "to": "SpiceJet SpiceClub",
+            "insight": "Optimal 1:1 transfer ratio."
+          },
+          {
+            "to": "Singapore Airlines KrisFlyer",
+            "insight": "Redeemed via Net Banking at 1:1."
+          },
+          {
+            "to": "Club Vistara",
+            "insight": "Redeemed via Net Banking at 1:1."
+          },
+          {
+            "to": "InterMiles",
+            "insight": "Redeemed via Net Banking at 1:1."
+          }
+        ]
+      },
+      {
+        "rate": "2 Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "British Airways Executive Club (Avios)",
+            "insight": "Devalued 2:1 transfer ratio."
+          },
+          {
+            "to": "Air Canada Aeroplan",
+            "insight": "Devalued 2:1 transfer ratio."
+          },
+          {
+            "to": "Avianca LifeMiles",
+            "insight": "Devalued 2:1 transfer ratio."
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "Devalued 2:1 transfer ratio."
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "Devalued 2:1 transfer ratio."
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "Devalued 2:1 transfer ratio."
+          },
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "Devalued 2:1 transfer ratio."
+          }
+        ]
+      },
+      {
+        "rate": "1 Point : 1 Partner Point (Hotels)",
+        "partners": [
+          {
+            "to": "IHG One Rewards",
+            "insight": "Optimal 1:1 hotel transfer."
+          },
+          {
+            "to": "Wyndham Rewards",
+            "insight": "Optimal 1:1 hotel transfer."
+          }
+        ]
+      },
+      {
+        "rate": "2 Points : 1 Partner Point (Hotels)",
+        "partners": [
+          {
+            "to": "ALL – Accor Live Limitless",
+            "insight": "Devalued 2:1 hotel transfer."
+          },
+          {
+            "to": "Club ITC Green Points",
+            "insight": "Devalued 2:1 hotel transfer."
           }
         ]
       }
