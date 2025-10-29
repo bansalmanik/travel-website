@@ -1574,5 +1574,137 @@
         ]
       }
     ]
+  },
+  {
+    "program": "Accor",
+    "from": "ALL – Accor Live Limitless",
+    "rates": [
+      {
+        "rate": "2,000 Aegean Miles : 500 ALL Points",
+        "partners": [
+          {
+            "to": "Aegean Miles+Bonus",
+            "insight": "Transfer 2,000 Aegean Miles into 500 ALL points (4:1 ratio); no reverse conversion available."
+          }
+        ]
+      },
+      {
+        "rate": "11,250 Azul Points : 1,000 ALL Points",
+        "partners": [
+          {
+            "to": "Azul Fidelidade",
+            "insight": "Convert 11,250 Azul points into 1,000 ALL points (11.25:1 ratio); reverse transfer not specified."
+          }
+        ]
+      },
+      {
+        "rate": "4,000 Skywards Miles : 1,000 ALL Points",
+        "partners": [
+          {
+            "to": "Emirates Skywards",
+            "insight": "Transfer 4,000 Skywards Miles into 1,000 ALL points (4:1 ratio); reverse conversion unavailable."
+          }
+        ]
+      },
+      {
+        "rate": "2,300 Avios : 500 ALL Points",
+        "partners": [
+          {
+            "to": "Finnair Plus (Avios)",
+            "insight": "Transfer 2,300 Avios into 500 ALL points (4.6:1 ratio); reverse conversion not provided."
+          }
+        ]
+      },
+      {
+        "rate": "Joint Accrual",
+        "partners": [
+          {
+            "to": "Flying Blue (Air France/KLM)",
+            "insight": "Earn Flying Blue miles and ALL points simultaneously on eligible stays; conversion ratio not listed."
+          }
+        ]
+      },
+      {
+        "rate": "4,000 ALL Points : 5,000 Volare Points",
+        "partners": [
+          {
+            "to": "ITA Airways (Volare)",
+            "insight": "Redeem 4,000 ALL points for 5,000 Volare points (4:5 ratio) via Accor to airline transfer."
+          }
+        ]
+      },
+      {
+        "rate": "5,000 JAL Miles : 1,000 ALL Points",
+        "partners": [
+          {
+            "to": "Japan Airlines Mileage Bank",
+            "insight": "Transfer 5,000 JAL miles into 1,000 ALL points (5:1 ratio); reverse conversion not available."
+          }
+        ]
+      },
+      {
+        "rate": "200 Juneyao Points : 800 ALL Points",
+        "partners": [
+          {
+            "to": "Juneyao Air",
+            "insight": "Convert 200 Juneyao points into 800 ALL points (0.25:1 effective ratio in favor of ALL); reverse transfer not specified."
+          }
+        ]
+      },
+      {
+        "rate": "5,680 LATAM Points : 1,000 ALL Points",
+        "partners": [
+          {
+            "to": "LATAM Pass (Brazil)",
+            "insight": "Transfer 5,680 LATAM points into 1,000 ALL points (5.68:1 ratio); reverse conversion not detailed."
+          }
+        ]
+      },
+      {
+        "rate": "Joint Accrual",
+        "partners": [
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "Earn Qantas Frequent Flyer and ALL points simultaneously on eligible stays; direct conversion not available."
+          }
+        ]
+      },
+      {
+        "rate": "4,500 Avios : 1,000 ALL Points",
+        "partners": [
+          {
+            "to": "Qatar Airways Privilege Club",
+            "insight": "Transfer 4,500 Avios into 1,000 ALL points (4.5:1 ratio); reverse conversion not specified."
+          }
+        ]
+      },
+      {
+        "rate": "4,500 KrisFlyer Miles : 1,000 ALL Points",
+        "partners": [
+          {
+            "to": "Singapore Airlines KrisFlyer",
+            "insight": "Transfer 4,500 KrisFlyer miles into 1,000 ALL points (4.5:1 ratio); reverse conversion not indicated."
+          }
+        ]
+      },
+      {
+        "rate": "Miles to ALL Conversion",
+        "partners": [
+          {
+            "to": "Smiles (Gol Airlines)",
+            "insight": "Smiles miles can be converted into ALL points, though the exact ratio is not publicly stated."
+          }
+        ]
+      },
+      {
+        "rate": "5,000 LotusMiles : 1,000 ALL Points",
+        "partners": [
+          {
+            "to": "Vietnam Airlines LotusMiles",
+            "insight": "Transfer 5,000 LotusMiles into 1,000 ALL points (5:1 ratio); reverse conversion not available."
+          }
+        ]
+      }
+    ]
   }
 ]
