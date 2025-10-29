@@ -1,9 +1,7 @@
 [
   {
     "from": "American Express Membership Rewards",
-    "fromType": "Flexible Points Currency",
     "to": "Air Canada Aeroplan",
-    "toType": "Airline Loyalty Program",
     "rate": "1 : 1",
     "insight": "Transfers are usually instant. Bonus promotions can occasionally increase the ratio.",
     "terms": [
@@ -14,9 +12,7 @@
   },
   {
     "from": "American Express Membership Rewards",
-    "fromType": "Flexible Points Currency",
     "to": "Marriott Bonvoy",
-    "toType": "Hotel Loyalty Program",
     "rate": "1 : 1",
     "insight": "Allow up to 48 hours. A 5,000-point bonus is added for every 60,000 points transferred.",
     "terms": [
@@ -27,9 +23,7 @@
   },
   {
     "from": "Chase Ultimate Rewards",
-    "fromType": "Flexible Points Currency",
     "to": "World of Hyatt",
-    "toType": "Hotel Loyalty Program",
     "rate": "1 : 1",
     "insight": "Transfers are instant. Redemptions start at 3,500 points for off-peak Category 1 hotels.",
     "terms": [
@@ -40,9 +34,7 @@
   },
   {
     "from": "Chase Ultimate Rewards",
-    "fromType": "Flexible Points Currency",
     "to": "United MileagePlus",
-    "toType": "Airline Loyalty Program",
     "rate": "1 : 1",
     "insight": "Transfers are instant, but you cannot transfer United miles back to Chase once complete.",
     "terms": [
@@ -53,9 +45,7 @@
   },
   {
     "from": "Citi ThankYou Points",
-    "fromType": "Flexible Points Currency",
     "to": "Avianca LifeMiles",
-    "toType": "Airline Loyalty Program",
     "rate": "1 : 1",
     "insight": "Transfers post within 24 hours. LifeMiles regularly discounts award bookings by 10–15%.",
     "terms": [
@@ -66,9 +56,7 @@
   },
   {
     "from": "Citi ThankYou Points",
-    "fromType": "Flexible Points Currency",
     "to": "Choice Privileges",
-    "toType": "Hotel Loyalty Program",
     "rate": "1 : 2",
     "insight": "Expect 1–2 day processing. Watch for seasonal promotions on all-inclusive partner resorts.",
     "terms": [
@@ -79,9 +67,7 @@
   },
   {
     "from": "Axis Bank Burgundy Private & Magnus (Burgundy) Credit Cards",
-    "fromType": "Bank Credit Card",
     "to": "Axis Bank Airline & Hotel Partners",
-    "toType": "Transfer Partners",
     "rate": "5 EDGE REWARD Points : 4 Partner Points",
     "insight": "Premium Burgundy cardholders enjoy the best conversion rate across all Axis Bank transfer partners.",
     "terms": [
@@ -92,9 +78,7 @@
   },
   {
     "from": "Axis Bank Reserve & Magnus Credit Cards",
-    "fromType": "Bank Credit Card",
     "to": "Axis Bank Airline & Hotel Partners",
-    "toType": "Transfer Partners",
     "rate": "5 EDGE REWARD Points : 2 Partner Points",
     "insight": "High-end Reserve and Magnus cardholders receive an elevated 2-for-5 transfer ratio to any partner.",
     "terms": [
@@ -105,9 +89,7 @@
   },
   {
     "from": "Axis Bank Horizon Credit Card",
-    "fromType": "Bank Credit Card",
     "to": "Axis Bank Airline & Hotel Partners",
-    "toType": "Transfer Partners",
     "rate": "1 EDGE Mile : 1 Partner Point",
     "insight": "Horizon cardholders enjoy a simple one-to-one conversion to any partner program.",
     "terms": [
@@ -118,9 +100,7 @@
   },
   {
     "from": "IndianOil Axis Bank Premium Credit Card",
-    "fromType": "Bank Credit Card",
     "to": "Axis Bank Airline & Hotel Partners",
-    "toType": "Transfer Partners",
     "rate": "2 EDGE Miles : 1 Partner Point",
     "insight": "Convert earned fuel rewards into travel by transferring EDGE Miles to participating partners.",
     "terms": [
@@ -131,9 +111,7 @@
   },
   {
     "from": "Axis Bank Olympus Credit Card",
-    "fromType": "Bank Credit Card",
     "to": "Axis Bank Airline & Hotel Partners",
-    "toType": "Transfer Partners",
     "rate": "1 EDGE Mile : 4 Partner Points",
     "insight": "Olympus cardholders receive an exceptional 4x partner conversion on every EDGE Mile transferred.",
     "terms": [
@@ -144,9 +122,7 @@
   },
   {
     "from": "Axis Bank Atlas Credit Card",
-    "fromType": "Bank Credit Card",
     "to": "Axis Bank Airline & Hotel Partners",
-    "toType": "Transfer Partners",
     "rate": "1 EDGE Mile : 2 Partner Points",
     "insight": "Atlas cardholders can double their points value when moving EDGE Miles to most airline and hotel partners.",
     "terms": [
@@ -157,9 +133,7 @@
   },
   {
     "from": "Axis Bank Atlas Credit Card",
-    "fromType": "Bank Credit Card",
     "to": "Marriott Bonvoy",
-    "toType": "Hotel Loyalty Program",
     "rate": "2 EDGE Miles : 1 Marriott Bonvoy Point",
     "insight": "Marriott conversions from Atlas cards follow a reduced ratio compared with other partners.",
     "terms": [
@@ -170,9 +144,7 @@
   },
   {
     "from": "Axis Bank SSelect, Privilege & Rewards Credit Cards",
-    "fromType": "Bank Credit Card",
     "to": "Vistara, ITC, SpiceJet, airasia",
-    "toType": "Airline & Hotel Partners",
     "rate": "5 EDGE REWARD Points : 1 Partner Point",
     "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia.",
     "terms": [
@@ -183,9 +155,7 @@
   },
   {
     "from": "Axis Bank SSelect, Privilege & Rewards Credit Cards",
-    "fromType": "Bank Credit Card",
     "to": "Other Axis Bank Transfer Partners",
-    "toType": "Transfer Partners",
     "rate": "10 EDGE REWARD Points : 1 Partner Point",
     "insight": "For partners outside the preferred list, SSelect, Privilege, and Rewards cards convert at a 10:1 ratio.",
     "terms": [
@@ -196,9 +166,7 @@
   },
   {
     "from": "Axis Bank Other Eligible Credit Cards",
-    "fromType": "Bank Credit Card",
     "to": "Vistara, ITC, SpiceJet, airasia",
-    "toType": "Airline & Hotel Partners",
     "rate": "10 EDGE REWARD Points : 1 Partner Point",
     "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners.",
     "terms": [
@@ -209,9 +177,7 @@
   },
   {
     "from": "Axis Bank Other Eligible Credit Cards",
-    "fromType": "Bank Credit Card",
     "to": "Other Axis Bank Transfer Partners",
-    "toType": "Transfer Partners",
     "rate": "20 EDGE REWARD Points : 1 Partner Point",
     "insight": "All remaining partners convert at the base 20:1 ratio for standard Axis Bank cards.",
     "terms": [
