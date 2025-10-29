@@ -47,14 +47,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!journal) {
     return {
-      title: "Journal not found | Away With Ana",
+      title: "Journal not found | Miles Go Round",
     };
   }
 
   const pageUrl = `https://example.com/journals/${journal.slug}`;
 
   return {
-    title: `${journal.title} | Away With Ana`,
+    title: `${journal.title} | Miles Go Round`,
     description: journal.seoDescription,
     alternates: {
       canonical: `/journals/${journal.slug}`,

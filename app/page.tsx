@@ -83,11 +83,11 @@ export default function Home() {
         <div className="mx-auto max-w-3xl px-6 pb-24 pt-12 text-white sm:pb-32 sm:pt-20">
           <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-200">Travel journal & visual stories</p>
           <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl sm:leading-tight">
-            Hey, I’m Ana—writer, photographer, and seeker of slow, soulful journeys.
+            Miles Go Round is your compass for soulful journeys and slow travel adventures.
           </h1>
           <p className="mt-6 text-lg text-amber-100/90 sm:text-xl">
-            I share honest notes from the road, from alpine hikes to neon-drenched backstreets. No sponsored itineraries,
-            no sales pitches—just the lessons, joys, and surprises that keep me wandering.
+            Explore immersive guides, heartfelt field notes, and practical tips for transforming every mile into a memorable
+            story. From sunrise hikes to late-night street food, discover the moments that make travel feel alive.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -278,7 +278,7 @@ export default function Home() {
 
       <footer className="border-t border-slate-200 bg-white/70 py-10 text-sm text-slate-600">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Away With Ana. Stories from a life in motion.</p>
+          <p>© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
           <div className="flex gap-6">
             <a className="transition hover:text-slate-900" href="https://instagram.com" target="_blank" rel="noreferrer">
               Instagram
@@ -286,7 +286,7 @@ export default function Home() {
             <a className="transition hover:text-slate-900" href="https://youtube.com" target="_blank" rel="noreferrer">
               YouTube
             </a>
-            <a className="transition hover:text-slate-900" href="mailto:hello@awaywithana.com">
+            <a className="transition hover:text-slate-900" href="mailto:hello@milesgoround.com">
               Email
             </a>
           </div>
