@@ -1,189 +1,339 @@
 [
   {
     "from": "American Express Membership Rewards",
-    "to": "Air Canada Aeroplan",
-    "rate": "1 : 1",
-    "insight": "Transfers are usually instant. Bonus promotions can occasionally increase the ratio.",
-    "terms": [
-      "All transfers are final and cannot be reversed.",
-      "The name on both loyalty accounts must match exactly to complete the transfer.",
-      "Aeroplan miles expire after 18 months of inactivity unless you earn, redeem, or transfer in more miles."
-    ]
-  },
-  {
-    "from": "American Express Membership Rewards",
-    "to": "Marriott Bonvoy",
-    "rate": "1 : 1",
-    "insight": "Allow up to 48 hours. A 5,000-point bonus is added for every 60,000 points transferred.",
-    "terms": [
-      "Transfers typically post within two days but can take longer during promotions.",
-      "You must transfer in increments of 1,000 Membership Rewards points.",
-      "Once points reach Marriott Bonvoy they follow the program's 24-month activity expiration policy."
-    ]
-  },
-  {
-    "from": "Chase Ultimate Rewards",
-    "to": "World of Hyatt",
-    "rate": "1 : 1",
-    "insight": "Transfers are instant. Redemptions start at 3,500 points for off-peak Category 1 hotels.",
-    "terms": [
-      "Only primary cardholders can initiate transfers to World of Hyatt.",
-      "Hyatt accounts must be open and in good standing prior to the transfer.",
-      "Hyatt points do not expire with at least one earning or redeeming activity every 24 months."
+    "rates": [
+      {
+        "rate": "1 : 1",
+        "partners": [
+          {
+            "to": "Air Canada Aeroplan",
+            "insight": "Transfers are usually instant. Bonus promotions can occasionally increase the ratio.",
+            "terms": [
+              "All transfers are final and cannot be reversed.",
+              "The name on both loyalty accounts must match exactly to complete the transfer.",
+              "Aeroplan miles expire after 18 months of inactivity unless you earn, redeem, or transfer in more miles."
+            ]
+          },
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "Allow up to 48 hours. A 5,000-point bonus is added for every 60,000 points transferred.",
+            "terms": [
+              "Transfers typically post within two days but can take longer during promotions.",
+              "You must transfer in increments of 1,000 Membership Rewards points.",
+              "Once points reach Marriott Bonvoy they follow the program's 24-month activity expiration policy."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Chase Ultimate Rewards",
-    "to": "United MileagePlus",
-    "rate": "1 : 1",
-    "insight": "Transfers are instant, but you cannot transfer United miles back to Chase once complete.",
-    "terms": [
-      "MileagePlus accounts must belong to you or an authorized user on the credit card.",
-      "United miles never expire, but award space is subject to capacity controls.",
-      "Changes and cancellations follow United's award ticket fee structure."
+    "rates": [
+      {
+        "rate": "1 : 1",
+        "partners": [
+          {
+            "to": "World of Hyatt",
+            "insight": "Transfers are instant. Redemptions start at 3,500 points for off-peak Category 1 hotels.",
+            "terms": [
+              "Only primary cardholders can initiate transfers to World of Hyatt.",
+              "Hyatt accounts must be open and in good standing prior to the transfer.",
+              "Hyatt points do not expire with at least one earning or redeeming activity every 24 months."
+            ]
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "Transfers are instant, but you cannot transfer United miles back to Chase once complete.",
+            "terms": [
+              "MileagePlus accounts must belong to you or an authorized user on the credit card.",
+              "United miles never expire, but award space is subject to capacity controls.",
+              "Changes and cancellations follow United's award ticket fee structure."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Citi ThankYou Points",
-    "to": "Avianca LifeMiles",
-    "rate": "1 : 1",
-    "insight": "Transfers post within 24 hours. LifeMiles regularly discounts award bookings by 10–15%.",
-    "terms": [
-      "LifeMiles transfers must be made in 1,000-point increments.",
-      "Purchased, pooled, or transferred-in LifeMiles follow the program's standard expiration rules.",
-      "Award tickets booked with LifeMiles are subject to partner carrier taxes and surcharges."
-    ]
-  },
-  {
-    "from": "Citi ThankYou Points",
-    "to": "Choice Privileges",
-    "rate": "1 : 2",
-    "insight": "Expect 1–2 day processing. Watch for seasonal promotions on all-inclusive partner resorts.",
-    "terms": [
-      "Choice Privileges requires a minimum transfer of 1,000 ThankYou points.",
-      "Transferred points expire according to Choice's standard terms, typically two years from the deposit date.",
-      "Award availability varies by property and can be capacity-controlled during peak periods."
+    "rates": [
+      {
+        "rate": "1 : 1",
+        "partners": [
+          {
+            "to": "Avianca LifeMiles",
+            "insight": "Transfers post within 24 hours. LifeMiles regularly discounts award bookings by 10–15%.",
+            "terms": [
+              "LifeMiles transfers must be made in 1,000-point increments.",
+              "Purchased, pooled, or transferred-in LifeMiles follow the program's standard expiration rules.",
+              "Award tickets booked with LifeMiles are subject to partner carrier taxes and surcharges."
+            ]
+          }
+        ]
+      },
+      {
+        "rate": "1 : 2",
+        "partners": [
+          {
+            "to": "Choice Privileges",
+            "insight": "Expect 1–2 day processing. Watch for seasonal promotions on all-inclusive partner resorts.",
+            "terms": [
+              "Choice Privileges requires a minimum transfer of 1,000 ThankYou points.",
+              "Transferred points expire according to Choice's standard terms, typically two years from the deposit date.",
+              "Award availability varies by property and can be capacity-controlled during peak periods."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Axis Bank Burgundy Private & Magnus (Burgundy) Credit Cards",
-    "to": "Axis Bank Airline & Hotel Partners",
-    "rate": "5 EDGE REWARD Points : 4 Partner Points",
-    "insight": "Premium Burgundy cardholders enjoy the best conversion rate across all Axis Bank transfer partners.",
-    "terms": [
-      "Ratios apply to all current Axis Bank airline and hotel transfer partners.",
-      "Transfers are irreversible once initiated and follow the partner program's expiry rules.",
-      "The primary cardholder name must match the receiving loyalty account."
+    "rates": [
+      {
+        "rate": "5 EDGE REWARD Points : 4 Partner Points",
+        "partners": [
+          {
+            "to": "Axis Bank Airline & Hotel Partners",
+            "insight": "Premium Burgundy cardholders enjoy the best conversion rate across all Axis Bank transfer partners.",
+            "terms": [
+              "Ratios apply to all current Axis Bank airline and hotel transfer partners.",
+              "Transfers are irreversible once initiated and follow the partner program's expiry rules.",
+              "The primary cardholder name must match the receiving loyalty account."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Axis Bank Reserve & Magnus Credit Cards",
-    "to": "Axis Bank Airline & Hotel Partners",
-    "rate": "5 EDGE REWARD Points : 2 Partner Points",
-    "insight": "High-end Reserve and Magnus cardholders receive an elevated 2-for-5 transfer ratio to any partner.",
-    "terms": [
-      "Ratios apply uniformly to all Axis Bank transfer partners.",
-      "Transferred points follow the destination program's expiration policies.",
-      "Allow up to 24 hours for the transfer to reflect, depending on the partner."
+    "rates": [
+      {
+        "rate": "5 EDGE REWARD Points : 2 Partner Points",
+        "partners": [
+          {
+            "to": "Axis Bank Airline & Hotel Partners",
+            "insight": "High-end Reserve and Magnus cardholders receive an elevated 2-for-5 transfer ratio to any partner.",
+            "terms": [
+              "Ratios apply uniformly to all Axis Bank transfer partners.",
+              "Transferred points follow the destination program's expiration policies.",
+              "Allow up to 24 hours for the transfer to reflect, depending on the partner."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Axis Bank Horizon Credit Card",
-    "to": "Axis Bank Airline & Hotel Partners",
-    "rate": "1 EDGE Mile : 1 Partner Point",
-    "insight": "Horizon cardholders enjoy a simple one-to-one conversion to any partner program.",
-    "terms": [
-      "All transfers must be made in whole EDGE Mile increments.",
-      "Partner-specific minimums may apply at the time of transfer.",
-      "Processing times vary by partner and can take up to two business days."
+    "rates": [
+      {
+        "rate": "1 EDGE Mile : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Axis Bank Airline & Hotel Partners",
+            "insight": "Horizon cardholders enjoy a simple one-to-one conversion to any partner program.",
+            "terms": [
+              "All transfers must be made in whole EDGE Mile increments.",
+              "Partner-specific minimums may apply at the time of transfer.",
+              "Processing times vary by partner and can take up to two business days."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "IndianOil Axis Bank Premium Credit Card",
-    "to": "Axis Bank Airline & Hotel Partners",
-    "rate": "2 EDGE Miles : 1 Partner Point",
-    "insight": "Convert earned fuel rewards into travel by transferring EDGE Miles to participating partners.",
-    "terms": [
-      "A minimum of 200 EDGE Miles per transfer may be required by Axis Bank.",
-      "Partner program terms govern point expiration once miles are transferred.",
-      "Name and account details must align between Axis Bank and partner accounts."
+    "rates": [
+      {
+        "rate": "2 EDGE Miles : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Axis Bank Airline & Hotel Partners",
+            "insight": "Convert earned fuel rewards into travel by transferring EDGE Miles to participating partners.",
+            "terms": [
+              "A minimum of 200 EDGE Miles per transfer may be required by Axis Bank.",
+              "Partner program terms govern point expiration once miles are transferred.",
+              "Name and account details must align between Axis Bank and partner accounts."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Axis Bank Olympus Credit Card",
-    "to": "Axis Bank Airline & Hotel Partners",
-    "rate": "1 EDGE Mile : 4 Partner Points",
-    "insight": "Olympus cardholders receive an exceptional 4x partner conversion on every EDGE Mile transferred.",
-    "terms": [
-      "Enhanced ratios are available across all Axis Bank transfer partners.",
-      "Once converted, partner points cannot be moved back to Axis Bank.",
-      "Expect transfers to complete within one business day for most partners."
+    "rates": [
+      {
+        "rate": "1 EDGE Mile : 4 Partner Points",
+        "partners": [
+          {
+            "to": "Axis Bank Airline & Hotel Partners",
+            "insight": "Olympus cardholders receive an exceptional 4x partner conversion on every EDGE Mile transferred.",
+            "terms": [
+              "Enhanced ratios are available across all Axis Bank transfer partners.",
+              "Once converted, partner points cannot be moved back to Axis Bank.",
+              "Expect transfers to complete within one business day for most partners."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Axis Bank Atlas Credit Card",
-    "to": "Axis Bank Airline & Hotel Partners",
-    "rate": "1 EDGE Mile : 2 Partner Points",
-    "insight": "Atlas cardholders can double their points value when moving EDGE Miles to most airline and hotel partners.",
-    "terms": [
-      "Standard 1:2 transfers exclude Marriott Bonvoy, which follows a dedicated ratio.",
-      "Transfers are final and governed by the partner program's expiration rules.",
-      "Allow up to 48 hours for the transfer to appear in the partner account."
-    ]
-  },
-  {
-    "from": "Axis Bank Atlas Credit Card",
-    "to": "Marriott Bonvoy",
-    "rate": "2 EDGE Miles : 1 Marriott Bonvoy Point",
-    "insight": "Marriott conversions from Atlas cards follow a reduced ratio compared with other partners.",
-    "terms": [
-      "Transfers must be completed in increments supported by Marriott Bonvoy.",
-      "Once received, Marriott Bonvoy points observe the program's 24-month activity rule.",
-      "Processing can take up to three business days."
+    "rates": [
+      {
+        "rate": "1 EDGE Mile : 2 Partner Points",
+        "partners": [
+          {
+            "to": "Axis Bank Airline & Hotel Partners",
+            "insight": "Atlas cardholders can double their points value when moving EDGE Miles to most airline and hotel partners.",
+            "terms": [
+              "Standard 1:2 transfers exclude Marriott Bonvoy, which follows a dedicated ratio.",
+              "Transfers are final and governed by the partner program's expiration rules.",
+              "Allow up to 48 hours for the transfer to appear in the partner account."
+            ]
+          }
+        ]
+      },
+      {
+        "rate": "2 EDGE Miles : 1 Marriott Bonvoy Point",
+        "partners": [
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "Marriott conversions from Atlas cards follow a reduced ratio compared with other partners.",
+            "terms": [
+              "Transfers must be completed in increments supported by Marriott Bonvoy.",
+              "Once received, Marriott Bonvoy points observe the program's 24-month activity rule.",
+              "Processing can take up to three business days."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Axis Bank SSelect, Privilege & Rewards Credit Cards",
-    "to": "Vistara, ITC, SpiceJet, airasia",
-    "rate": "5 EDGE REWARD Points : 1 Partner Point",
-    "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia.",
-    "terms": [
-      "Only the listed partners qualify for the 5:1 conversion rate.",
-      "Other partners default to the standard SSelect conversion ratio.",
-      "Ensure partner accounts are active before initiating a transfer."
-    ]
-  },
-  {
-    "from": "Axis Bank SSelect, Privilege & Rewards Credit Cards",
-    "to": "Other Axis Bank Transfer Partners",
-    "rate": "10 EDGE REWARD Points : 1 Partner Point",
-    "insight": "For partners outside the preferred list, SSelect, Privilege, and Rewards cards convert at a 10:1 ratio.",
-    "terms": [
-      "Applies to all remaining airline and hotel partners in the Axis Bank catalog.",
-      "Transferred points follow the partner program's expiration schedule.",
-      "Processing timelines depend on the destination program."
+    "rates": [
+      {
+        "rate": "5 EDGE REWARD Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Vistara",
+            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia.",
+            "terms": [
+              "Only the listed partners qualify for the 5:1 conversion rate.",
+              "Other partners default to the standard SSelect conversion ratio.",
+              "Ensure partner accounts are active before initiating a transfer."
+            ]
+          },
+          {
+            "to": "ITC",
+            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia.",
+            "terms": [
+              "Only the listed partners qualify for the 5:1 conversion rate.",
+              "Other partners default to the standard SSelect conversion ratio.",
+              "Ensure partner accounts are active before initiating a transfer."
+            ]
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia.",
+            "terms": [
+              "Only the listed partners qualify for the 5:1 conversion rate.",
+              "Other partners default to the standard SSelect conversion ratio.",
+              "Ensure partner accounts are active before initiating a transfer."
+            ]
+          },
+          {
+            "to": "airasia",
+            "insight": "Mid-tier cardholders get improved value when transferring to Vistara, ITC, SpiceJet, or airasia.",
+            "terms": [
+              "Only the listed partners qualify for the 5:1 conversion rate.",
+              "Other partners default to the standard SSelect conversion ratio.",
+              "Ensure partner accounts are active before initiating a transfer."
+            ]
+          }
+        ]
+      },
+      {
+        "rate": "10 EDGE REWARD Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Other Axis Bank Transfer Partners",
+            "insight": "For partners outside the preferred list, SSelect, Privilege, and Rewards cards convert at a 10:1 ratio.",
+            "terms": [
+              "Applies to all remaining airline and hotel partners in the Axis Bank catalog.",
+              "Transferred points follow the partner program's expiration schedule.",
+              "Processing timelines depend on the destination program."
+            ]
+          }
+        ]
+      }
     ]
   },
   {
     "from": "Axis Bank Other Eligible Credit Cards",
-    "to": "Vistara, ITC, SpiceJet, airasia",
-    "rate": "10 EDGE REWARD Points : 1 Partner Point",
-    "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners.",
-    "terms": [
-      "Only transfers to Vistara, ITC, SpiceJet, and airasia qualify for this rate.",
-      "Transfers may take up to three business days to reflect.",
-      "Ensure the recipient program account is in good standing before transferring."
-    ]
-  },
-  {
-    "from": "Axis Bank Other Eligible Credit Cards",
-    "to": "Other Axis Bank Transfer Partners",
-    "rate": "20 EDGE REWARD Points : 1 Partner Point",
-    "insight": "All remaining partners convert at the base 20:1 ratio for standard Axis Bank cards.",
-    "terms": [
-      "This conversion applies to any partner not explicitly listed for a higher ratio.",
-      "Transferred points cannot be reversed once submitted.",
-      "Expect processing to take between one and three business days."
+    "rates": [
+      {
+        "rate": "10 EDGE REWARD Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Vistara",
+            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners.",
+            "terms": [
+              "Only transfers to Vistara, ITC, SpiceJet, and airasia qualify for this rate.",
+              "Transfers may take up to three business days to reflect.",
+              "Ensure the recipient program account is in good standing before transferring."
+            ]
+          },
+          {
+            "to": "ITC",
+            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners.",
+            "terms": [
+              "Only transfers to Vistara, ITC, SpiceJet, and airasia qualify for this rate.",
+              "Transfers may take up to three business days to reflect.",
+              "Ensure the recipient program account is in good standing before transferring."
+            ]
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners.",
+            "terms": [
+              "Only transfers to Vistara, ITC, SpiceJet, and airasia qualify for this rate.",
+              "Transfers may take up to three business days to reflect.",
+              "Ensure the recipient program account is in good standing before transferring."
+            ]
+          },
+          {
+            "to": "airasia",
+            "insight": "Entry-level cards still unlock a 10:1 ratio for key airline and hotel partners.",
+            "terms": [
+              "Only transfers to Vistara, ITC, SpiceJet, and airasia qualify for this rate.",
+              "Transfers may take up to three business days to reflect.",
+              "Ensure the recipient program account is in good standing before transferring."
+            ]
+          }
+        ]
+      },
+      {
+        "rate": "20 EDGE REWARD Points : 1 Partner Point",
+        "partners": [
+          {
+            "to": "Other Axis Bank Transfer Partners",
+            "insight": "All remaining partners convert at the base 20:1 ratio for standard Axis Bank cards.",
+            "terms": [
+              "This conversion applies to any partner not explicitly listed for a higher ratio.",
+              "Transferred points cannot be reversed once submitted.",
+              "Expect processing to take between one and three business days."
+            ]
+          }
+        ]
+      }
     ]
   }
 ]

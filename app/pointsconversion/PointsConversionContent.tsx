@@ -6,58 +6,85 @@ import conversions from "@/data/points-conversion.json";
 
 type Conversion = (typeof conversions)[number];
 
-type ConversionByFrom = Record<string, Conversion[]>;
+type ConversionByFrom = Record<string, Conversion>;
+
+type PartnerOption = {
+  id: string;
+  to: string;
+  rate: string;
+  insight: string;
+  terms: string[];
+};
 
 const conversionsByFrom: ConversionByFrom = conversions.reduce((acc, conversion) => {
-  if (!acc[conversion.from]) {
-    acc[conversion.from] = [];
-  }
-
-  acc[conversion.from].push(conversion);
+  acc[conversion.from] = conversion;
 
   return acc;
 }, {} as ConversionByFrom);
 
 export default function PointsConversionContent() {
   const [selectedFrom, setSelectedFrom] = useState(conversions[0]?.from ?? "");
-  const [selectedTo, setSelectedTo] = useState("");
+  const [selectedPartnerId, setSelectedPartnerId] = useState("");
 
-  const fromOptions = useMemo(() => Object.keys(conversionsByFrom).sort((a, b) => a.localeCompare(b)), []);
+  const fromOptions = useMemo(
+    () => Object.keys(conversionsByFrom).sort((a, b) => a.localeCompare(b)),
+    []
+  );
 
-  const filteredToOptions = useMemo(() => {
+  const selectedProgram = useMemo(() => {
     if (!selectedFrom) {
-      return [] as Conversion[];
-    }
-
-    return conversionsByFrom[selectedFrom] ?? [];
-  }, [selectedFrom]);
-
-  const normalizedSelectedTo = useMemo(() => {
-    if (filteredToOptions.length === 0) {
-      return "";
-    }
-
-    const currentSelectionExists = filteredToOptions.some((option) => option.to === selectedTo);
-
-    if (currentSelectionExists) {
-      return selectedTo;
-    }
-
-    return filteredToOptions[0].to;
-  }, [filteredToOptions, selectedTo]);
-
-  const selectedConversion = useMemo(() => {
-    if (!selectedFrom || !normalizedSelectedTo) {
       return null;
     }
 
-    return conversions.find(
-      (conversion) => conversion.from === selectedFrom && conversion.to === normalizedSelectedTo
+    return conversionsByFrom[selectedFrom] ?? null;
+  }, [selectedFrom]);
+
+  const partnerOptions = useMemo(() => {
+    if (!selectedProgram) {
+      return [] as PartnerOption[];
+    }
+
+    return selectedProgram.rates.flatMap((rate) =>
+      rate.partners.map((partner) => ({
+        id: `${rate.rate}__${partner.to}`,
+        to: partner.to,
+        rate: rate.rate,
+        insight: partner.insight,
+        terms: partner.terms,
+      }))
     );
-  }, [selectedFrom, normalizedSelectedTo]);
+  }, [selectedProgram]);
+
+  const normalizedSelectedPartnerId = useMemo(() => {
+    if (partnerOptions.length === 0) {
+      return "";
+    }
+
+    const currentSelectionExists = partnerOptions.some(
+      (option) => option.id === selectedPartnerId
+    );
+
+    if (currentSelectionExists) {
+      return selectedPartnerId;
+    }
+
+    return partnerOptions[0].id;
+  }, [partnerOptions, selectedPartnerId]);
+
+  const selectedPartner = useMemo(() => {
+    if (!normalizedSelectedPartnerId) {
+      return null;
+    }
+
+    return (
+      partnerOptions.find((option) => option.id === normalizedSelectedPartnerId) ??
+      null
+    );
+  }, [normalizedSelectedPartnerId, partnerOptions]);
 
   const handleFromChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setSelectedFrom(event.target.value);
+    setSelectedPartnerId("");
   };
 
   return (
@@ -101,19 +128,19 @@ export default function PointsConversionContent() {
                 Transfer to
               </span>
               <select
-                value={normalizedSelectedTo}
-                onChange={(event) => setSelectedTo(event.target.value)}
+                value={normalizedSelectedPartnerId}
+                onChange={(event) => setSelectedPartnerId(event.target.value)}
                 className="w-full rounded-2xl border border-white/20 bg-slate-900/80 px-4 py-3 text-base text-slate-100 shadow focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
                 aria-label="Select the loyalty partner you are transferring to"
-                disabled={filteredToOptions.length === 0}
+                disabled={partnerOptions.length === 0}
               >
-                {filteredToOptions.length === 0 ? (
+                {partnerOptions.length === 0 ? (
                   <option value="" disabled>
                     No partners available
                   </option>
                 ) : (
-                  filteredToOptions.map((option) => (
-                    <option key={option.to} value={option.to}>
+                  partnerOptions.map((option) => (
+                    <option key={option.id} value={option.id}>
                       {option.to}
                     </option>
                   ))
@@ -123,22 +150,22 @@ export default function PointsConversionContent() {
           </div>
 
           <div className="mt-10 rounded-3xl border border-white/10 bg-slate-900/60 p-8 text-center">
-            {selectedConversion ? (
+            {selectedPartner ? (
               <div className="space-y-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">
                   Conversion Rate
                 </p>
-                <p className="text-5xl font-semibold text-white">{selectedConversion.rate}</p>
+                <p className="text-5xl font-semibold text-white">{selectedPartner.rate}</p>
                 <div className="flex flex-wrap justify-center gap-3 text-xs uppercase tracking-[0.25em] text-amber-200">
                   <span className="rounded-full border border-amber-200/40 px-3 py-1 text-amber-200/90">
                     {selectedFrom}
                   </span>
                   <span className="rounded-full border border-amber-200/40 px-3 py-1 text-amber-200/90">
-                    {selectedConversion.to}
+                    {selectedPartner.to}
                   </span>
                 </div>
                 <p className="mx-auto max-w-2xl text-sm leading-6 text-slate-100/80">
-                  {selectedConversion.insight}
+                  {selectedPartner.insight}
                 </p>
               </div>
             ) : (
@@ -160,9 +187,9 @@ export default function PointsConversionContent() {
             </p>
           </div>
 
-          {selectedConversion ? (
+          {selectedPartner ? (
             <ul className="list-disc space-y-3 pl-5 text-sm leading-6 text-slate-100/80">
-              {selectedConversion.terms.map((term) => (
+              {selectedPartner.terms.map((term) => (
                 <li key={term}>{term}</li>
               ))}
             </ul>
