@@ -4,7 +4,7 @@
     "from": "Axis Burgundy Private Credit Cards",
     "rates": [
       {
-        "rate": "5 EDGE REWARD Points : 4 Partner Points",
+        "rate": "5 EDGE Points : 4 Partner Points",
         "partners": [
           {
             "to": "Accor Live Limitless",
@@ -91,7 +91,7 @@
     "from": "Axis Magnus (Burgundy) Credit Cards",
     "rates": [
       {
-        "rate": "5 EDGE REWARD Points : 4 Partner Points",
+        "rate": "5 EDGE Points : 4 Partner Points",
         "partners": [
           {
             "to": "Accor Live Limitless",
@@ -178,7 +178,7 @@
     "from": "Axis Magnus(plain) Credit Cards",
     "rates": [
       {
-        "rate": "5 EDGE REWARD Points : 2 Partner Points",
+        "rate": "5 EDGE Points : 2 Partner Points",
         "partners": [
           {
             "to": "Accor Live Limitless",
@@ -265,7 +265,7 @@
     "from": "Axis Reserve Credit Card",
     "rates": [
       {
-        "rate": "5 EDGE REWARD Points : 2 Partner Points",
+        "rate": "5 EDGE Points : 2 Partner Points",
         "partners": [
           {
             "to": "Accor Live Limitless",
@@ -714,7 +714,7 @@
     "from": "Axis Select, Privilege & Rewards Credit Cards",
     "rates": [
       {
-        "rate": "5 EDGE REWARD Points : 1 Partner Point",
+        "rate": "5 EDGE Points : 1 Partner Point",
         "partners": [
           {
             "to": "ITC",
@@ -731,7 +731,7 @@
         ]
       },
       {
-        "rate": "10 EDGE REWARD Points : 1 Partner Point",
+        "rate": "10 EDGE Points : 1 Partner Point",
         "partners": [
           {
             "to": "Accor Live Limitless",
@@ -806,7 +806,7 @@
     "from": "Axis Other Eligible Credit/Debit Cards",
     "rates": [
       {
-        "rate": "10 EDGE REWARD Points : 1 Partner Point",
+        "rate": "10 EDGE Points : 1 Partner Point",
         "partners": [
           {
             "to": "ITC",
@@ -823,7 +823,7 @@
         ]
       },
       {
-        "rate": "20 EDGE REWARD Points : 1 Partner Point",
+        "rate": "20 EDGE Points : 1 Partner Point",
         "partners": [
           {
             "to": "Accor Live Limitless",
@@ -1296,7 +1296,7 @@
         ]
       },
       {
-        "rate": "2 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "rate": "2 Points : 1 Partner Point",
         "partners": [
           {
             "to": "Air India",
@@ -1361,7 +1361,7 @@
         ]
       },
       {
-        "rate": "1 Point : 2 Partner Points (HSBC Visa Platinum / RuPay Platinum)",
+        "rate": "1 Point : 2 Partner Points",
         "partners": [
           {
             "to": "AirAsia Rewards",
@@ -1370,7 +1370,7 @@
         ]
       },
       {
-        "rate": "4 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "rate": "4 Points : 1 Partner Point",
         "partners": [
           {
             "to": "Hainan Airlines Fortune Wings Club",
@@ -1383,7 +1383,7 @@
         ]
       },
       {
-        "rate": "3 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "rate": "3 Points : 1 Partner Point",
         "partners": [
           {
             "to": "United MileagePlus",
@@ -1392,7 +1392,7 @@
         ]
       },
       {
-        "rate": "10 Points : 1 Partner Point (HSBC Visa Platinum / RuPay Platinum)",
+        "rate": "10 Points : 1 Partner Point",
         "partners": [
           {
             "to": "Shangri-La Circle",
@@ -1407,7 +1407,7 @@
     "from": "American Express Membership Rewards Credit Cards",
     "rates": [
       {
-        "rate": "2 Membership Rewards Points : 1 Partner Point",
+        "rate": "2 MR Points : 1 Partner Point",
         "partners": [
           {
             "to": "Asia Miles",
@@ -1440,7 +1440,7 @@
         ]
       },
       {
-        "rate": "1 Membership Rewards Point : 0.9 Hilton Honors Points",
+        "rate": "1 MR Point : 0.9 Hilton Honors Points",
         "partners": [
           {
             "to": "Hilton Honors",
@@ -1449,7 +1449,7 @@
         ]
       },
       {
-        "rate": "1 Membership Rewards Point : 1 Marriott Bonvoy Point",
+        "rate": "1 MR Point : 1 Marriott Bonvoy Point",
         "partners": [
           {
             "to": "Marriott Bonvoy",
@@ -1712,7 +1712,7 @@
     "from": "Marriott Bonvoy Points",
     "rates": [
       {
-        "rate": "3 Marriott Bonvoy Points : 1 Airline Mile",
+        "rate": "3 Marriott Points : 1 Airline Mile",
         "partners": [
           {
             "to": "AEGEAN Miles+Bonus",
@@ -1861,7 +1861,7 @@
         ]
       },
       {
-        "rate": "200 Marriott Bonvoy Points : 1 Airpoints Dollar",
+        "rate": "200 Marriott Points : 1 Airpoints Dollar",
         "partners": [
           {
             "to": "Air New Zealand Airpoints",
@@ -1873,10 +1873,10 @@
   },
   {
     "program": "IHG One Rewards",
-    "from": "IHG One Rewards Points",
+    "from": "Points",
     "rates": [
       {
-        "rate": "5 IHG One Rewards Points : 1 Partner Point (10,000 point minimum)",
+        "rate": "5 Points : 1 Partner Point (10,000 point minimum)",
         "partners": [
           {
             "to": "Aeromexico – Club Premier",
