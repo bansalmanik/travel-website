@@ -2,18 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import cardData from "@/data/credit-cards.json";
 
+type AnnualFee = {
+  amount: number;
+  currency: string;
+  gstApplicable?: boolean;
+};
+
 type Card = {
   slug: string;
   name: string;
   issuer: string;
-  annualFee: string;
+  network: string;
+  type: string;
   summary: string;
   seoDescription: string;
-  welcomeOffer: string;
-  bestFor: string;
-  earnRates: string[];
-  topFeatures?: string[];
-  transferPartners: string[];
+  annualFee: AnnualFee;
+  websiteDisplayTags?: string[];
+  keyHighlights?: string[];
 };
 
 type CardStrategy = {
@@ -32,6 +37,24 @@ const { cards, cardStrategies, favoriteCombos } = cardData as {
   cardStrategies: CardStrategy[];
   favoriteCombos: FavoriteCombo[];
 };
+
+function formatAnnualFee(annualFee: AnnualFee) {
+  const locale = annualFee.currency === "INR" ? "en-IN" : "en-US";
+  const hasFraction = !Number.isInteger(annualFee.amount);
+  const formatter = new Intl.NumberFormat(locale, {
+    style: "currency",
+    currency: annualFee.currency,
+    minimumFractionDigits: hasFraction ? 2 : 0,
+    maximumFractionDigits: hasFraction ? 2 : 0
+  });
+  const fee = formatter.format(annualFee.amount);
+
+  if (annualFee.gstApplicable) {
+    return `${fee} + GST`;
+  }
+
+  return fee;
+}
 
 export const metadata: Metadata = {
   title: "Travel credit card strategy | Travel with Points",
@@ -83,12 +106,32 @@ export default function CreditCardsPage() {
                   <dl className="grid gap-3 text-sm text-slate-100/80">
                     <div>
                       <dt className="font-semibold text-white">Annual fee</dt>
-                      <dd>{card.annualFee}</dd>
+                      <dd>{formatAnnualFee(card.annualFee)}</dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold text-white">Network</dt>
+                      <dd>{card.network}</dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold text-white">Card type</dt>
+                      <dd>{card.type}</dd>
                     </div>
                   </dl>
-                  {card.topFeatures?.length ? (
+                  {card.websiteDisplayTags?.length ? (
+                    <ul className="flex flex-wrap gap-2">
+                      {card.websiteDisplayTags.slice(0, 3).map((tag) => (
+                        <li
+                          key={tag}
+                          className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-200"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  {card.keyHighlights?.length ? (
                     <p className="text-sm text-slate-100/70">
-                      <span className="font-semibold text-white">Standout feature:</span> {card.topFeatures[0]}
+                      <span className="font-semibold text-white">Standout highlight:</span> {card.keyHighlights[0]}
                     </p>
                   ) : null}
                 </div>
