@@ -29,6 +29,13 @@ const sections = [
     href: "/travel-with-points/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
   },
+  {
+    title: "Affiliates Website",
+    description:
+      "Preview the partner tools we recommend for creators building point-friendly experiences.",
+    href: "/travel-with-points/affiliates",
+    accent: "bg-rose-100 text-rose-900",
+  },
 ];
 
 const quickTips = [
