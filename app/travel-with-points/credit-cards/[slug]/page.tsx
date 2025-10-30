@@ -89,7 +89,7 @@ type CardMedia = {
 
 type BaseCard = {
   slug: string;
-  layout: "tieredMiles" | "lifestyle";
+  layout: "tieredMiles" | "lifestyle" | "premiumTravel";
   name: string;
   issuer: string;
   network: string;
@@ -234,7 +234,129 @@ type LifestyleCard = BaseCard & {
   rewardTags?: string[];
 };
 
-type Card = TieredMilesCard | LifestyleCard;
+type PremiumTravelFeeWaiver = {
+  spendRequirement: number;
+  currency: string;
+  note?: string;
+};
+
+type PremiumTravelFees = {
+  joiningFee: number;
+  annualFee: number;
+  waiver?: PremiumTravelFeeWaiver;
+};
+
+type PremiumWelcomeBenefitPerk = {
+  type: string;
+  valueInInr?: number;
+  partner?: string;
+  name?: string;
+  validity?: string;
+  value?: number;
+};
+
+type PremiumWelcomeBenefitRequirement = {
+  spend: number;
+  periodDays: number;
+  postingTime?: string;
+  benefits: PremiumWelcomeBenefitPerk[];
+};
+
+type PremiumTravelWelcomeBenefits = {
+  requirements: PremiumWelcomeBenefitRequirement[];
+  sourceNote?: string;
+};
+
+type PremiumTravelRewardProgram = {
+  currency: string;
+  baseRate: string;
+  acceleratedRate?: {
+    rate: string;
+    categories: string[];
+    monthlyCap?: number;
+  };
+  earnLogic?: string;
+  expiry?: string;
+  sourceNote?: string;
+};
+
+type PremiumTravelMilestoneBonus = {
+  thresholdInInr: number;
+  rewardPoints: number;
+  cycle: string;
+};
+
+type PremiumTravelMilestoneBenefits = {
+  annualSpendBonus?: PremiumTravelMilestoneBonus;
+  first90DaySpendBonus?: PremiumTravelMilestoneBonus;
+};
+
+type PremiumTravelRedemptionPartners = {
+  airlines?: string[];
+  hotels?: string[];
+};
+
+type PremiumTravelRedemption = {
+  type: string;
+  rate?: string;
+  platform?: string;
+  instantRedemption?: boolean;
+  partners?: PremiumTravelRedemptionPartners;
+};
+
+type PremiumTravelLoungeAccess = {
+  domestic?: number;
+  international?: number;
+  note?: string;
+};
+
+type PremiumTravelGolfBenefits = {
+  freeRounds?: number;
+  freeLessons?: number;
+  limit?: string;
+  discount?: string;
+};
+
+type PremiumTravelHolidayBenefit = {
+  partner: string;
+  benefit: string;
+};
+
+type PremiumTravelTravelBenefits = {
+  airportLoungeAccess?: PremiumTravelLoungeAccess;
+  golf?: PremiumTravelGolfBenefits;
+  holidayBenefits?: PremiumTravelHolidayBenefit[];
+  dutyFreeDiscount?: string;
+};
+
+type PremiumTravelOtherPrivileges = {
+  purchaseProtection?: string;
+  movieDiningBenefits?: string;
+  exclusivePrivileges?: string[];
+};
+
+type PremiumTravelEligibility = {
+  age?: string;
+  minIncome?: string;
+  residency?: string;
+  citiesServed?: string[];
+};
+
+type PremiumTravelCard = BaseCard & {
+  layout: "premiumTravel";
+  fees: PremiumTravelFees;
+  welcomeBenefits: PremiumTravelWelcomeBenefits;
+  rewardProgram: PremiumTravelRewardProgram;
+  rewardExclusions?: string[];
+  milestoneBenefits?: PremiumTravelMilestoneBenefits;
+  redemption: PremiumTravelRedemption;
+  travelBenefits?: PremiumTravelTravelBenefits;
+  otherPrivileges?: PremiumTravelOtherPrivileges;
+  eligibility?: PremiumTravelEligibility;
+  tags?: string[];
+};
+
+type Card = TieredMilesCard | LifestyleCard | PremiumTravelCard;
 
 const cards = (cardData as { cards: Card[] }).cards;
 
@@ -309,6 +431,33 @@ function formatLabel(key: string) {
     .replace(/([A-Z])/g, " $1")
     .replace(/^./, (char) => char.toUpperCase())
     .replace(/\bId\b/, "ID");
+}
+
+function describePremiumWelcomePerk(perk: PremiumWelcomeBenefitPerk) {
+  switch (perk.type) {
+    case "cashback":
+      return perk.valueInInr ? `${formatSpend(perk.valueInInr, "INR")} cashback` : "Cashback";
+    case "hotel_voucher":
+      if (perk.valueInInr && perk.partner) {
+        return `${formatSpend(perk.valueInInr, "INR")} ${perk.partner} voucher`;
+      }
+
+      return "Hotel voucher";
+    case "membership":
+      if (perk.name && perk.validity) {
+        return `${perk.name} membership (${perk.validity})`;
+      }
+
+      return perk.name ? `${perk.name} membership` : "Complimentary membership";
+    case "reward_points":
+      return perk.value ? `${formatNumber(perk.value)} Reward Points` : "Reward Points";
+    default:
+      if (perk.name && perk.valueInInr) {
+        return `${perk.name} - ${formatSpend(perk.valueInInr, "INR")}`;
+      }
+
+      return perk.name ?? perk.type;
+  }
 }
 
 function createTieredWelcomeOfferSummary(welcomeBenefit: TieredWelcomeBenefit, rewardsCurrency: string) {
@@ -755,6 +904,15 @@ function CardImageSection({ image }: CardImageSectionProps) {
 function createWelcomeOfferSummary(card: Card) {
   if (card.layout === "tieredMiles") {
     return createTieredWelcomeOfferSummary(card.welcomeBenefit, card.rewards.currency);
+  }
+
+  if (card.layout === "premiumTravel") {
+    return card.welcomeBenefits.requirements
+      .map((requirement) => {
+        const benefits = requirement.benefits.map((benefit) => describePremiumWelcomePerk(benefit)).join(" + ");
+        return `${benefits} after spending ${formatSpend(requirement.spend, card.annualFee.currency)} in ${requirement.periodDays} days`;
+      })
+      .join("; ");
   }
 
   const summaryParts: string[] = [];
@@ -1238,6 +1396,493 @@ function LifestyleSpecialProgramsSection({ specialPrograms }: LifestyleSpecialPr
   );
 }
 
+type PremiumTravelCardSectionsProps = {
+  card: PremiumTravelCard;
+};
+
+function PremiumTravelCardSections({ card }: PremiumTravelCardSectionsProps) {
+  return (
+    <>
+      <PremiumTravelSnapshot card={card} />
+      <PremiumTravelWelcomeBenefitsSection card={card} />
+      <PremiumTravelRewardsSection rewardProgram={card.rewardProgram} currency={card.annualFee.currency} />
+      <PremiumTravelRewardExclusionsSection exclusions={card.rewardExclusions} />
+      <PremiumTravelMilestoneSection milestoneBenefits={card.milestoneBenefits} currency={card.annualFee.currency} />
+      <PremiumTravelRedemptionSection redemption={card.redemption} />
+      <PremiumTravelTravelBenefitsSection travelBenefits={card.travelBenefits} />
+      <PremiumTravelOtherPrivilegesSection otherPrivileges={card.otherPrivileges} />
+      <PremiumTravelEligibilitySection eligibility={card.eligibility} />
+    </>
+  );
+}
+
+type PremiumTravelSnapshotProps = {
+  card: PremiumTravelCard;
+};
+
+function PremiumTravelSnapshot({ card }: PremiumTravelSnapshotProps) {
+  const { fees, rewardProgram, tags } = card;
+  const waiverDescription = fees.waiver
+    ? `Annual fee waived on ${formatSpend(
+        fees.waiver.spendRequirement,
+        fees.waiver.currency ?? card.annualFee.currency
+      )} annual spend${fees.waiver.note ? ` (${fees.waiver.note})` : ""}.`
+    : undefined;
+
+  return (
+    <SectionWrapper title="Card snapshot" description={waiverDescription}>
+      <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
+        <div>
+          <dt className="font-semibold text-white">Issuer</dt>
+          <dd>{card.issuer}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Network</dt>
+          <dd>{card.network}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Card type</dt>
+          <dd>{card.type}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Joining fee</dt>
+          <dd>{formatSpend(fees.joiningFee, card.annualFee.currency)}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Annual fee</dt>
+          <dd>{formatAnnualFee(card.annualFee)}</dd>
+        </div>
+        {fees.waiver ? (
+          <div>
+            <dt className="font-semibold text-white">Annual fee waiver</dt>
+            <dd>
+              Waived with {formatSpend(fees.waiver.spendRequirement, fees.waiver.currency ?? card.annualFee.currency)}
+            </dd>
+          </div>
+        ) : null}
+        <div>
+          <dt className="font-semibold text-white">Rewards currency</dt>
+          <dd>{rewardProgram.currency}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Points expiry</dt>
+          <dd>{rewardProgram.expiry ?? "—"}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Earn logic</dt>
+          <dd>{rewardProgram.earnLogic ?? "—"}</dd>
+        </div>
+      </dl>
+      {tags?.length ? (
+        <div className="mt-6">
+          <p className="font-semibold text-white">Focus tags</p>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <li
+                key={tag}
+                className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-200"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {card.keyHighlights?.length ? (
+        <div className="mt-6">
+          <p className="font-semibold text-white">Highlights</p>
+          <ul className="mt-2 space-y-2">
+            {card.keyHighlights.map((highlight) => (
+              <li key={highlight} className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelWelcomeBenefitsSectionProps = {
+  card: PremiumTravelCard;
+};
+
+function PremiumTravelWelcomeBenefitsSection({ card }: PremiumTravelWelcomeBenefitsSectionProps) {
+  const { welcomeBenefits } = card;
+
+  if (!welcomeBenefits.requirements.length) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Welcome & milestone unlocks" description={welcomeBenefits.sourceNote}>
+      <div className="space-y-4">
+        {welcomeBenefits.requirements.map((requirement, index) => (
+          <article
+            key={`${requirement.spend}-${requirement.periodDays}-${index}`}
+            className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-6 text-sm text-slate-100/80"
+          >
+            <div>
+              <h3 className="text-base font-semibold text-white">
+                Spend {formatSpend(requirement.spend, card.annualFee.currency)} in {requirement.periodDays} days
+              </h3>
+              {requirement.postingTime ? (
+                <p className="text-xs uppercase tracking-[0.25em] text-amber-300">Posting: {requirement.postingTime}</p>
+              ) : null}
+            </div>
+            <ul className="space-y-2">
+              {requirement.benefits.map((benefit, benefitIndex) => (
+                <li key={`${benefit.type}-${benefitIndex}`} className="flex items-start gap-3">
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span>{describePremiumWelcomePerk(benefit)}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelRewardsSectionProps = {
+  rewardProgram: PremiumTravelRewardProgram;
+  currency: string;
+};
+
+function PremiumTravelRewardsSection({ rewardProgram, currency }: PremiumTravelRewardsSectionProps) {
+  return (
+    <SectionWrapper title="Rewards earning" description={rewardProgram.sourceNote}>
+      <div className="grid gap-4 text-sm text-slate-100/80 md:grid-cols-2">
+        <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+          <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Base earn rate</h3>
+          <p className="text-base font-semibold text-white">{rewardProgram.baseRate}</p>
+          <p>Rewards currency: {rewardProgram.currency}</p>
+        </article>
+        {rewardProgram.acceleratedRate ? (
+          <article className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Accelerated earn</h3>
+              <p className="text-base font-semibold text-white">{rewardProgram.acceleratedRate.rate}</p>
+            </div>
+            <ul className="space-y-1 text-sm">
+              {rewardProgram.acceleratedRate.categories.map((category) => (
+                <li key={category} className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span>{category}</span>
+                </li>
+              ))}
+            </ul>
+            {rewardProgram.acceleratedRate.monthlyCap ? (
+              <p className="text-xs text-slate-100/70">
+                Monthly bonus cap: {formatSpend(rewardProgram.acceleratedRate.monthlyCap, currency)} spend
+              </p>
+            ) : null}
+          </article>
+        ) : null}
+      </div>
+      <div className="mt-4 space-y-2 text-sm text-slate-100/80">
+        {rewardProgram.earnLogic ? <p>Points accrue at: {rewardProgram.earnLogic}</p> : null}
+        {rewardProgram.expiry ? <p>Points expiry: {rewardProgram.expiry}</p> : null}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelRewardExclusionsSectionProps = {
+  exclusions?: string[];
+};
+
+function PremiumTravelRewardExclusionsSection({ exclusions }: PremiumTravelRewardExclusionsSectionProps) {
+  if (!exclusions?.length) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Reward exclusions">
+      <ul className="grid gap-2 text-sm text-slate-100/80 sm:grid-cols-2">
+        {exclusions.map((exclusion) => (
+          <li key={exclusion} className="flex items-start gap-3">
+            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+            <span>{exclusion}</span>
+          </li>
+        ))}
+      </ul>
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelMilestoneSectionProps = {
+  milestoneBenefits?: PremiumTravelMilestoneBenefits;
+  currency: string;
+};
+
+function PremiumTravelMilestoneSection({ milestoneBenefits, currency }: PremiumTravelMilestoneSectionProps) {
+  if (!milestoneBenefits) {
+    return null;
+  }
+
+  const { annualSpendBonus, first90DaySpendBonus } = milestoneBenefits;
+
+  if (!annualSpendBonus && !first90DaySpendBonus) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Milestone bonuses">
+      <div className="grid gap-4 text-sm text-slate-100/80 md:grid-cols-2">
+        {first90DaySpendBonus ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-base font-semibold text-white">{first90DaySpendBonus.cycle}</h3>
+            <p>
+              Spend {formatSpend(first90DaySpendBonus.thresholdInInr, currency)} → {formatNumber(first90DaySpendBonus.rewardPoints)} Reward Points
+            </p>
+          </article>
+        ) : null}
+        {annualSpendBonus ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-base font-semibold text-white">{annualSpendBonus.cycle}</h3>
+            <p>
+              Spend {formatSpend(annualSpendBonus.thresholdInInr, currency)} → {formatNumber(annualSpendBonus.rewardPoints)} Reward Points
+            </p>
+          </article>
+        ) : null}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelRedemptionSectionProps = {
+  redemption: PremiumTravelRedemption;
+};
+
+function PremiumTravelRedemptionSection({ redemption }: PremiumTravelRedemptionSectionProps) {
+  const hasPartners = Boolean(redemption.partners?.airlines?.length || redemption.partners?.hotels?.length);
+
+  return (
+    <SectionWrapper title="Redeeming points">
+      <div className="space-y-4 text-sm text-slate-100/80">
+        <dl className="grid gap-4 sm:grid-cols-2">
+          <div>
+            <dt className="font-semibold text-white">Redemption type</dt>
+            <dd>{redemption.type}</dd>
+          </div>
+          {redemption.rate ? (
+            <div>
+              <dt className="font-semibold text-white">Transfer rate</dt>
+              <dd>{redemption.rate}</dd>
+            </div>
+          ) : null}
+          {redemption.platform ? (
+            <div>
+              <dt className="font-semibold text-white">Platform</dt>
+              <dd>{redemption.platform}</dd>
+            </div>
+          ) : null}
+          <div>
+            <dt className="font-semibold text-white">Instant transfers</dt>
+            <dd>{redemption.instantRedemption ? "Yes" : "No"}</dd>
+          </div>
+        </dl>
+        {hasPartners ? (
+          <div className="grid gap-4 text-sm text-slate-100/80 sm:grid-cols-2">
+            {redemption.partners?.airlines?.length ? (
+              <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+                <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Airline partners</h3>
+                <ul className="space-y-1">
+                  {redemption.partners.airlines.map((partner) => (
+                    <li key={partner} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                      <span>{partner}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ) : null}
+            {redemption.partners?.hotels?.length ? (
+              <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+                <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Hotel partners</h3>
+                <ul className="space-y-1">
+                  {redemption.partners.hotels.map((partner) => (
+                    <li key={partner} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                      <span>{partner}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ) : null}
+          </div>
+        ) : null}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelTravelBenefitsSectionProps = {
+  travelBenefits?: PremiumTravelTravelBenefits;
+};
+
+function PremiumTravelTravelBenefitsSection({ travelBenefits }: PremiumTravelTravelBenefitsSectionProps) {
+  if (!travelBenefits) {
+    return null;
+  }
+
+  const { airportLoungeAccess, golf, holidayBenefits, dutyFreeDiscount } = travelBenefits;
+
+  if (!airportLoungeAccess && !golf && !holidayBenefits?.length && !dutyFreeDiscount) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Travel & lifestyle perks">
+      <div className="grid gap-4 text-sm text-slate-100/80 md:grid-cols-2">
+        {airportLoungeAccess ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-base font-semibold text-white">Airport lounges</h3>
+            {typeof airportLoungeAccess.domestic === "number" ? <p>{airportLoungeAccess.domestic} domestic visits</p> : null}
+            {typeof airportLoungeAccess.international === "number" ? (
+              <p>{airportLoungeAccess.international} international visits</p>
+            ) : null}
+            {airportLoungeAccess.note ? (
+              <p className="text-xs uppercase tracking-[0.25em] text-amber-300">{airportLoungeAccess.note}</p>
+            ) : null}
+          </article>
+        ) : null}
+        {golf ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-base font-semibold text-white">Golf program</h3>
+            {typeof golf.freeRounds === "number" ? <p>{golf.freeRounds} complimentary rounds</p> : null}
+            {typeof golf.freeLessons === "number" ? <p>{golf.freeLessons} coaching sessions</p> : null}
+            {golf.limit ? <p className="text-xs text-slate-100/70">Limit: {golf.limit}</p> : null}
+            {golf.discount ? <p className="text-xs text-slate-100/70">{golf.discount}</p> : null}
+          </article>
+        ) : null}
+      </div>
+      {holidayBenefits?.length ? (
+        <div className="mt-4 space-y-2">
+          <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Holiday offers</h3>
+          <ul className="grid gap-2 text-sm text-slate-100/80 sm:grid-cols-2">
+            {holidayBenefits.map((benefit) => (
+              <li key={`${benefit.partner}-${benefit.benefit}`} className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                <span>
+                  {benefit.partner}: {benefit.benefit}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {dutyFreeDiscount ? (
+        <p className="mt-4 text-sm text-slate-100/80">Duty-free shopping: {dutyFreeDiscount}</p>
+      ) : null}
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelOtherPrivilegesSectionProps = {
+  otherPrivileges?: PremiumTravelOtherPrivileges;
+};
+
+function PremiumTravelOtherPrivilegesSection({ otherPrivileges }: PremiumTravelOtherPrivilegesSectionProps) {
+  if (!otherPrivileges) {
+    return null;
+  }
+
+  const { purchaseProtection, movieDiningBenefits, exclusivePrivileges } = otherPrivileges;
+
+  if (!purchaseProtection && !movieDiningBenefits && !exclusivePrivileges?.length) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Additional privileges">
+      <ul className="space-y-2 text-sm text-slate-100/80">
+        {purchaseProtection ? (
+          <li className="flex items-start gap-3">
+            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+            <span>Purchase protection: {purchaseProtection}</span>
+          </li>
+        ) : null}
+        {movieDiningBenefits ? (
+          <li className="flex items-start gap-3">
+            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+            <span>{movieDiningBenefits}</span>
+          </li>
+        ) : null}
+        {exclusivePrivileges?.length ? (
+          <li>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+              <span className="font-semibold text-white">Exclusive experiences</span>
+            </div>
+            <ul className="mt-2 space-y-1 pl-5 text-sm text-slate-100/80">
+              {exclusivePrivileges.map((privilege) => (
+                <li key={privilege} className="list-disc">
+                  {privilege}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ) : null}
+      </ul>
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelEligibilitySectionProps = {
+  eligibility?: PremiumTravelEligibility;
+};
+
+function PremiumTravelEligibilitySection({ eligibility }: PremiumTravelEligibilitySectionProps) {
+  if (!eligibility) {
+    return null;
+  }
+
+  const { age, minIncome, residency, citiesServed } = eligibility;
+
+  return (
+    <SectionWrapper title="Eligibility">
+      <dl className="grid gap-4 text-sm text-slate-100/80 sm:grid-cols-2">
+        {age ? (
+          <div>
+            <dt className="font-semibold text-white">Age</dt>
+            <dd>{age}</dd>
+          </div>
+        ) : null}
+        {minIncome ? (
+          <div>
+            <dt className="font-semibold text-white">Minimum income</dt>
+            <dd>{minIncome}</dd>
+          </div>
+        ) : null}
+        {residency ? (
+          <div>
+            <dt className="font-semibold text-white">Residency</dt>
+            <dd>{residency}</dd>
+          </div>
+        ) : null}
+      </dl>
+      {citiesServed?.length ? (
+        <div className="mt-4 space-y-2">
+          <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Cities serviced</h3>
+          <ul className="grid gap-2 text-sm text-slate-100/80 sm:grid-cols-2">
+            {citiesServed.map((city) => (
+              <li key={city} className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                <span>{city}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </SectionWrapper>
+  );
+}
+
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -1346,8 +1991,10 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
 
         {card.layout === "tieredMiles" ? (
           <TieredMilesCardSections card={card} />
-        ) : (
+        ) : card.layout === "lifestyle" ? (
           <LifestyleCardSections card={card} />
+        ) : (
+          <PremiumTravelCardSections card={card} />
         )}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
