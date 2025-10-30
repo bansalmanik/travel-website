@@ -286,9 +286,34 @@ type PremiumTravelMilestoneBonus = {
   cycle: string;
 };
 
+type PremiumTravelMilestoneAdditionalBenefit = {
+  type: string;
+  partner?: string;
+  valueInInr?: number;
+  deliveryTimeline?: string;
+};
+
+type PremiumTravelMilestoneSplit = {
+  thresholdPoints?: number;
+  extraPointsViaSupport?: number;
+  redemptionNote?: string;
+};
+
+type PremiumTravelMilestoneDetail = {
+  thresholdInInr: number;
+  rewardPoints?: number;
+  cycle?: string;
+  description?: string;
+  split?: PremiumTravelMilestoneSplit;
+  additionalBenefit?: PremiumTravelMilestoneAdditionalBenefit;
+  redeemableOn?: string[];
+};
+
 type PremiumTravelMilestoneBenefits = {
   annualSpendBonus?: PremiumTravelMilestoneBonus;
   first90DaySpendBonus?: PremiumTravelMilestoneBonus;
+  additionalMilestones?: PremiumTravelMilestoneDetail[];
+  eligibleSpendNote?: string;
 };
 
 type PremiumTravelRedemptionPartners = {
@@ -302,12 +327,26 @@ type PremiumTravelRedemption = {
   platform?: string;
   instantRedemption?: boolean;
   partners?: PremiumTravelRedemptionPartners;
+  notes?: string[];
+};
+
+type PremiumTravelDomesticLoungeAccess = {
+  complimentaryVisitsPerYear: number;
+  quarterlyCap?: number;
+  notes?: string[];
+};
+
+type PremiumTravelPriorityPassAccess = {
+  membershipFee?: string;
+  visitCharges?: string;
+  notes?: string[];
 };
 
 type PremiumTravelLoungeAccess = {
-  domestic?: number;
+  domestic?: number | PremiumTravelDomesticLoungeAccess;
   international?: number;
   note?: string;
+  priorityPass?: PremiumTravelPriorityPassAccess;
 };
 
 type PremiumTravelGolfBenefits = {
@@ -333,6 +372,7 @@ type PremiumTravelOtherPrivileges = {
   purchaseProtection?: string;
   movieDiningBenefits?: string;
   exclusivePrivileges?: string[];
+  securityServices?: string[];
 };
 
 type PremiumTravelEligibility = {
@@ -340,6 +380,22 @@ type PremiumTravelEligibility = {
   minIncome?: string;
   residency?: string;
   citiesServed?: string[];
+};
+
+type PremiumTravelVoucherOffer = {
+  name: string;
+  valueInInr?: number;
+  trigger?: string;
+  validity?: string;
+  validityDays?: number;
+  oneTimeUse?: boolean;
+  bookingChannels?: string[];
+  notes?: string[];
+};
+
+type PremiumTravelVouchersAndOffers = {
+  vouchers?: PremiumTravelVoucherOffer[];
+  otherPrograms?: string[];
 };
 
 type PremiumTravelCard = BaseCard & {
@@ -354,6 +410,7 @@ type PremiumTravelCard = BaseCard & {
   otherPrivileges?: PremiumTravelOtherPrivileges;
   eligibility?: PremiumTravelEligibility;
   tags?: string[];
+  vouchersAndOffers?: PremiumTravelVouchersAndOffers;
 };
 
 type Card = TieredMilesCard | LifestyleCard | PremiumTravelCard;
@@ -1408,6 +1465,10 @@ function PremiumTravelCardSections({ card }: PremiumTravelCardSectionsProps) {
       <PremiumTravelRewardsSection rewardProgram={card.rewardProgram} currency={card.annualFee.currency} />
       <PremiumTravelRewardExclusionsSection exclusions={card.rewardExclusions} />
       <PremiumTravelMilestoneSection milestoneBenefits={card.milestoneBenefits} currency={card.annualFee.currency} />
+      <PremiumTravelVouchersSection
+        vouchersAndOffers={card.vouchersAndOffers}
+        currency={card.annualFee.currency}
+      />
       <PremiumTravelRedemptionSection redemption={card.redemption} />
       <PremiumTravelTravelBenefitsSection travelBenefits={card.travelBenefits} />
       <PremiumTravelOtherPrivilegesSection otherPrivileges={card.otherPrivileges} />
@@ -1624,29 +1685,202 @@ function PremiumTravelMilestoneSection({ milestoneBenefits, currency }: PremiumT
     return null;
   }
 
-  const { annualSpendBonus, first90DaySpendBonus } = milestoneBenefits;
+  const { annualSpendBonus, first90DaySpendBonus, additionalMilestones, eligibleSpendNote } = milestoneBenefits;
+  const hasTraditionalMilestones = Boolean(annualSpendBonus || first90DaySpendBonus);
+  const hasAdditionalMilestones = Boolean(additionalMilestones?.length);
 
-  if (!annualSpendBonus && !first90DaySpendBonus) {
+  if (!hasTraditionalMilestones && !hasAdditionalMilestones) {
     return null;
   }
 
   return (
-    <SectionWrapper title="Milestone bonuses">
-      <div className="grid gap-4 text-sm text-slate-100/80 md:grid-cols-2">
-        {first90DaySpendBonus ? (
-          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-            <h3 className="text-base font-semibold text-white">{first90DaySpendBonus.cycle}</h3>
-            <p>
-              Spend {formatSpend(first90DaySpendBonus.thresholdInInr, currency)} → {formatNumber(first90DaySpendBonus.rewardPoints)} Reward Points
-            </p>
+    <SectionWrapper title="Milestone bonuses" description={eligibleSpendNote}>
+      {hasTraditionalMilestones ? (
+        <div className="grid gap-4 text-sm text-slate-100/80 md:grid-cols-2">
+          {first90DaySpendBonus ? (
+            <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+              <h3 className="text-base font-semibold text-white">{first90DaySpendBonus.cycle}</h3>
+              <p>
+                Spend {formatSpend(first90DaySpendBonus.thresholdInInr, currency)} → {formatNumber(first90DaySpendBonus.rewardPoints)} Reward Points
+              </p>
+            </article>
+          ) : null}
+          {annualSpendBonus ? (
+            <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+              <h3 className="text-base font-semibold text-white">{annualSpendBonus.cycle}</h3>
+              <p>
+                Spend {formatSpend(annualSpendBonus.thresholdInInr, currency)} → {formatNumber(annualSpendBonus.rewardPoints)} Reward Points
+              </p>
+            </article>
+          ) : null}
+        </div>
+      ) : null}
+      {hasAdditionalMilestones ? (
+        <div className="mt-6 space-y-4">
+          {additionalMilestones!.map((milestone, index) => {
+            const detailKey = `${milestone.thresholdInInr}-${milestone.rewardPoints ?? "no-points"}-${index}`;
+            const splitDetails: string[] = [];
+
+            if (milestone.split?.thresholdPoints) {
+              splitDetails.push(
+                `${formatNumber(milestone.split.thresholdPoints)} Reward Points post threshold`
+              );
+            }
+
+            if (milestone.split?.extraPointsViaSupport) {
+              splitDetails.push(
+                `${formatNumber(milestone.split.extraPointsViaSupport)} Reward Points via support`
+              );
+            }
+
+            return (
+              <article
+                key={detailKey}
+                className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-6 text-sm text-slate-100/80"
+              >
+                <div className="space-y-1">
+                  <h3 className="text-base font-semibold text-white">
+                    Spend {formatSpend(milestone.thresholdInInr, currency)}
+                    {milestone.cycle ? ` (${milestone.cycle})` : ""}
+                  </h3>
+                  {milestone.rewardPoints ? (
+                    <p className="font-semibold text-amber-200">
+                      Bonus: {formatNumber(milestone.rewardPoints)} Reward Points
+                    </p>
+                  ) : null}
+                  {milestone.description ? <p>{milestone.description}</p> : null}
+                </div>
+                {splitDetails.length || milestone.split?.redemptionNote ? (
+                  <div className="space-y-2 rounded-xl border border-white/10 bg-slate-950/60 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Breakdown</p>
+                    <ul className="space-y-1">
+                      {splitDetails.map((item) => (
+                        <li key={item} className="flex items-start gap-2">
+                          <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    {milestone.split?.redemptionNote ? (
+                      <p className="text-xs text-slate-100/70">{milestone.split.redemptionNote}</p>
+                    ) : null}
+                  </div>
+                ) : null}
+                {milestone.redeemableOn?.length ? (
+                  <div className="space-y-2">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Redeem via</p>
+                    <ul className="grid gap-2 sm:grid-cols-2">
+                      {milestone.redeemableOn.map((platform) => (
+                        <li key={platform} className="rounded-xl border border-white/10 bg-slate-950/60 px-3 py-2">
+                          {platform}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+                {milestone.additionalBenefit ? (
+                  <div className="space-y-2 rounded-xl border border-amber-300/20 bg-amber-300/10 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">
+                      Extra benefit
+                    </p>
+                    <p className="font-semibold text-white">{milestone.additionalBenefit.type.replace(/_/g, " ")}</p>
+                    <ul className="space-y-1 text-sm text-slate-100/80">
+                      {milestone.additionalBenefit.partner ? (
+                        <li>Partner: {milestone.additionalBenefit.partner}</li>
+                      ) : null}
+                      {typeof milestone.additionalBenefit.valueInInr === "number" ? (
+                        <li>Value: {formatSpend(milestone.additionalBenefit.valueInInr, currency)}</li>
+                      ) : null}
+                      {milestone.additionalBenefit.deliveryTimeline ? (
+                        <li>Delivery: {milestone.additionalBenefit.deliveryTimeline}</li>
+                      ) : null}
+                    </ul>
+                  </div>
+                ) : null}
+              </article>
+            );
+          })}
+        </div>
+      ) : null}
+    </SectionWrapper>
+  );
+}
+
+type PremiumTravelVouchersSectionProps = {
+  vouchersAndOffers?: PremiumTravelVouchersAndOffers;
+  currency: string;
+};
+
+function PremiumTravelVouchersSection({ vouchersAndOffers, currency }: PremiumTravelVouchersSectionProps) {
+  if (!vouchersAndOffers) {
+    return null;
+  }
+
+  const { vouchers, otherPrograms } = vouchersAndOffers;
+
+  if (!vouchers?.length && !otherPrograms?.length) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Vouchers & offers">
+      <div className="space-y-4">
+        {vouchers?.map((voucher) => (
+          <article
+            key={voucher.name}
+            className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-6 text-sm text-slate-100/80"
+          >
+            <div className="space-y-1">
+              <h3 className="text-base font-semibold text-white">{voucher.name}</h3>
+              {typeof voucher.valueInInr === "number" ? (
+                <p className="text-sm text-amber-200">
+                  Value: {formatSpend(voucher.valueInInr, currency)}
+                </p>
+              ) : null}
+              {voucher.trigger ? <p>{voucher.trigger}</p> : null}
+            </div>
+            <ul className="space-y-1 text-xs text-slate-100/70">
+              {voucher.validity ? <li>Valid for: {voucher.validity}</li> : null}
+              {typeof voucher.validityDays === "number" ? (
+                <li>Validity: {voucher.validityDays} days</li>
+              ) : null}
+              {voucher.oneTimeUse ? <li>One-time use voucher</li> : null}
+            </ul>
+            {voucher.bookingChannels?.length ? (
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Booking channels</p>
+                <ul className="grid gap-2 text-sm text-slate-100/80 sm:grid-cols-2">
+                  {voucher.bookingChannels.map((channel) => (
+                    <li key={channel} className="rounded-xl border border-white/10 bg-slate-950/60 px-3 py-2">
+                      {channel}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            {voucher.notes?.length ? (
+              <ul className="space-y-1 text-xs text-slate-100/70">
+                {voucher.notes.map((note) => (
+                  <li key={note} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                    <span>{note}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </article>
-        ) : null}
-        {annualSpendBonus ? (
-          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-            <h3 className="text-base font-semibold text-white">{annualSpendBonus.cycle}</h3>
-            <p>
-              Spend {formatSpend(annualSpendBonus.thresholdInInr, currency)} → {formatNumber(annualSpendBonus.rewardPoints)} Reward Points
-            </p>
+        ))}
+        {otherPrograms?.length ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5 text-sm text-slate-100/80">
+            <h3 className="text-base font-semibold text-white">Other featured programs</h3>
+            <ul className="space-y-1">
+              {otherPrograms.map((program) => (
+                <li key={program} className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span>{program}</span>
+                </li>
+              ))}
+            </ul>
           </article>
         ) : null}
       </div>
@@ -1716,6 +1950,19 @@ function PremiumTravelRedemptionSection({ redemption }: PremiumTravelRedemptionS
             ) : null}
           </div>
         ) : null}
+        {redemption.notes?.length ? (
+          <div className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Notes</p>
+            <ul className="space-y-1 text-xs text-slate-100/70">
+              {redemption.notes.map((note) => (
+                <li key={note} className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span>{note}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </div>
     </SectionWrapper>
   );
@@ -1736,18 +1983,66 @@ function PremiumTravelTravelBenefitsSection({ travelBenefits }: PremiumTravelTra
     return null;
   }
 
+  const domesticLoungeDetails =
+    typeof airportLoungeAccess?.domestic === "number"
+      ? { complimentaryVisitsPerYear: airportLoungeAccess.domestic }
+      : airportLoungeAccess?.domestic;
+  const internationalVisits =
+    typeof airportLoungeAccess?.international === "number"
+      ? airportLoungeAccess.international
+      : undefined;
+  const priorityPassAccess = airportLoungeAccess?.priorityPass;
+
   return (
     <SectionWrapper title="Travel & lifestyle perks">
       <div className="grid gap-4 text-sm text-slate-100/80 md:grid-cols-2">
         {airportLoungeAccess ? (
-          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+          <article className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
             <h3 className="text-base font-semibold text-white">Airport lounges</h3>
-            {typeof airportLoungeAccess.domestic === "number" ? <p>{airportLoungeAccess.domestic} domestic visits</p> : null}
-            {typeof airportLoungeAccess.international === "number" ? (
-              <p>{airportLoungeAccess.international} international visits</p>
+            {domesticLoungeDetails ? (
+              <div className="space-y-1">
+                <p>{domesticLoungeDetails.complimentaryVisitsPerYear} domestic visits per year</p>
+                {domesticLoungeDetails.quarterlyCap ? (
+                  <p className="text-xs text-slate-100/70">
+                    Max {domesticLoungeDetails.quarterlyCap} visits per quarter
+                  </p>
+                ) : null}
+                {domesticLoungeDetails.notes?.length ? (
+                  <ul className="space-y-1 text-xs text-slate-100/70">
+                    {domesticLoungeDetails.notes.map((note) => (
+                      <li key={note} className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                        <span>{note}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </div>
+            ) : null}
+            {typeof internationalVisits === "number" ? (
+              <p>{internationalVisits} international visits</p>
             ) : null}
             {airportLoungeAccess.note ? (
               <p className="text-xs uppercase tracking-[0.25em] text-amber-300">{airportLoungeAccess.note}</p>
+            ) : null}
+          </article>
+        ) : null}
+        {priorityPassAccess ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-base font-semibold text-white">Priority Pass access</h3>
+            {priorityPassAccess.membershipFee ? <p>{priorityPassAccess.membershipFee}</p> : null}
+            {priorityPassAccess.visitCharges ? (
+              <p className="text-xs text-slate-100/70">{priorityPassAccess.visitCharges}</p>
+            ) : null}
+            {priorityPassAccess.notes?.length ? (
+              <ul className="space-y-1 text-xs text-slate-100/70">
+                {priorityPassAccess.notes.map((note) => (
+                  <li key={note} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                    <span>{note}</span>
+                  </li>
+                ))}
+              </ul>
             ) : null}
           </article>
         ) : null}
@@ -1792,9 +2087,9 @@ function PremiumTravelOtherPrivilegesSection({ otherPrivileges }: PremiumTravelO
     return null;
   }
 
-  const { purchaseProtection, movieDiningBenefits, exclusivePrivileges } = otherPrivileges;
+  const { purchaseProtection, movieDiningBenefits, exclusivePrivileges, securityServices } = otherPrivileges;
 
-  if (!purchaseProtection && !movieDiningBenefits && !exclusivePrivileges?.length) {
+  if (!purchaseProtection && !movieDiningBenefits && !exclusivePrivileges?.length && !securityServices?.length) {
     return null;
   }
 
@@ -1823,6 +2118,21 @@ function PremiumTravelOtherPrivilegesSection({ otherPrivileges }: PremiumTravelO
               {exclusivePrivileges.map((privilege) => (
                 <li key={privilege} className="list-disc">
                   {privilege}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ) : null}
+        {securityServices?.length ? (
+          <li>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+              <span className="font-semibold text-white">Security & services</span>
+            </div>
+            <ul className="mt-2 space-y-1 pl-5 text-sm text-slate-100/80">
+              {securityServices.map((service) => (
+                <li key={service} className="list-disc">
+                  {service}
                 </li>
               ))}
             </ul>

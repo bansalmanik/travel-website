@@ -524,6 +524,207 @@
         "Hotel & Airline Rewards",
         "Dining & Lifestyle Benefits"
       ]
+    },
+    {
+      "slug": "american-express-platinum-travel-credit-card",
+      "layout": "premiumTravel",
+      "name": "American Express® Platinum Travel Credit Card",
+      "issuer": "American Express Banking Corp.",
+      "network": "American Express",
+      "type": "Travel Rewards Credit Card",
+      "summary": "Milestone-driven Membership Rewards card that unlocks Taj travel vouchers, domestic lounge visits, and concierge-backed support for frequent flyers.",
+      "seoDescription": "Maximize Membership Rewards with the American Express Platinum Travel Credit Card. Learn how milestone bonuses, Taj vouchers, and lounge access combine to elevate your travel strategy.",
+      "annualFee": {
+        "amount": 5000,
+        "currency": "INR",
+        "gstApplicable": true
+      },
+      "websiteDisplayTags": [
+        "Travel Vouchers",
+        "Milestone Rewards",
+        "Domestic Lounge Access"
+      ],
+      "keyHighlights": [
+        "₹10,000 Taj Experiences e-gift card plus 25K MR after ₹4 lakh annual milestone",
+        "Membership Rewards never expire while the account remains in good standing"
+      ],
+      "fees": {
+        "joiningFee": 5000,
+        "annualFee": 5000
+      },
+      "welcomeBenefits": {
+        "requirements": [
+          {
+            "spend": 15000,
+            "periodDays": 90,
+            "benefits": [
+              {
+                "type": "reward_points",
+                "value": 10000,
+                "name": "Membership Rewards points"
+              }
+            ]
+          }
+        ],
+        "sourceNote": "Spend requirement counted within 90 days of card setup."
+      },
+      "rewardProgram": {
+        "currency": "Membership Rewards® points",
+        "baseRate": "1 MR / ₹50 on eligible spends",
+        "earnLogic": "Points accrue at 1 MR per ₹50 on eligible swipes; accelerated earn not available.",
+        "expiry": "No expiry while card is active and in good standing; forfeited within 30 days after closure"
+      },
+      "rewardExclusions": [
+        "Fuel",
+        "Insurance",
+        "Utilities",
+        "Cash transactions",
+        "EMI conversion at Point of Sale"
+      ],
+      "milestoneBenefits": {
+        "additionalMilestones": [
+          {
+            "thresholdInInr": 190000,
+            "rewardPoints": 15000,
+            "cycle": "Card membership year",
+            "split": {
+              "thresholdPoints": 7500,
+              "extraPointsViaSupport": 7500,
+              "redemptionNote": "Call/chat Amex to post bonus MR"
+            },
+            "redeemableOn": [
+              "Platinum Travel Collection",
+              "Amex Travel Online (Pay with Points)"
+            ]
+          },
+          {
+            "thresholdInInr": 400000,
+            "rewardPoints": 25000,
+            "cycle": "Card membership year",
+            "split": {
+              "thresholdPoints": 10000,
+              "extraPointsViaSupport": 15000,
+              "redemptionNote": "Call/chat Amex to post bonus MR"
+            },
+            "additionalBenefit": {
+              "type": "hotel_voucher",
+              "partner": "Taj / SeleQtions / Vivanta",
+              "valueInInr": 10000,
+              "deliveryTimeline": "Voucher emailed within ~30 days of milestone"
+            },
+            "redeemableOn": [
+              "Platinum Travel Collection",
+              "Amex Travel Online (Pay with Points)"
+            ]
+          }
+        ],
+        "eligibleSpendNote": "Milestones track 12 months from issuance/renewal; excludes cash advances, fees/charges, and net of refunds."
+      },
+      "redemption": {
+        "type": "Travel bookings via Platinum Travel Collection & Amex Travel Online",
+        "platform": "Amex Travel Online (Pay with Points)",
+        "instantRedemption": false,
+        "notes": [
+          "Milestone MR can be redeemed for domestic/international flights, hotels, and transfers on Amex Travel Online"
+        ]
+      },
+      "travelBenefits": {
+        "airportLoungeAccess": {
+          "domestic": {
+            "complimentaryVisitsPerYear": 8,
+            "quarterlyCap": 2,
+            "notes": [
+              "Primary/basic cardmember only",
+              "First-come-first-served",
+              "₹2 authorization on Amex terminal at lounge",
+              "No access to American Express Proprietary Lounges"
+            ]
+          },
+          "note": "Quarterly cap of 2 visits for the primary cardmember.",
+          "priorityPass": {
+            "membershipFee": "Priority Pass membership fee (US$99) waived",
+            "visitCharges": "Basic cardmember and guests charged ~US$35 per visit (prevailing PP rate)",
+            "notes": [
+              "Guest visits chargeable and billed to card",
+              "See Priority Pass T&Cs for full details"
+            ]
+          }
+        }
+      },
+      "otherPrivileges": {
+        "movieDiningBenefits": "Up to 20% dining savings at select American Express partner restaurants",
+        "exclusivePrivileges": [
+          "Fuel convenience fee waiver at HPCL (as offered by issuer)",
+          "EMI options on eligible purchases"
+        ],
+        "securityServices": [
+          "Zero lost card liability",
+          "Contactless payments enabled",
+          "Dedicated Platinum Travel services support"
+        ]
+      },
+      "eligibility": {
+        "age": "18+ years",
+        "minIncome": "₹6,00,000 annual income",
+        "residency": "Resident Indian with Indian or multinational bank account",
+        "citiesServed": [
+          "Delhi/NCR",
+          "Mumbai",
+          "Bengaluru",
+          "Chennai",
+          "Pune",
+          "Hyderabad",
+          "Jaipur",
+          "Indore",
+          "Coimbatore",
+          "Chandigarh",
+          "Ahmedabad",
+          "Surat",
+          "Vadodara",
+          "Lucknow",
+          "Ludhiana",
+          "Nagpur",
+          "Nashik",
+          "Thiruvananthapuram",
+          "Mysuru"
+        ]
+      },
+      "tags": [
+        "Travel Vouchers",
+        "Milestone Rewards",
+        "Domestic Lounge Access",
+        "Taj Voucher",
+        "Amex Travel Online"
+      ],
+      "vouchersAndOffers": {
+        "vouchers": [
+          {
+            "name": "Taj Experiences e-Gift Card",
+            "valueInInr": 10000,
+            "trigger": "On achieving ₹4,00,000 annual milestone",
+            "validity": "Valid for stays and spend at Taj, SeleQtions, Vivanta hotels in India",
+            "validityDays": 360,
+            "oneTimeUse": true,
+            "bookingChannels": [
+              "tajhotels.com",
+              "seleqtionshotels.com",
+              "vivantahotels.com",
+              "Taj Reservations Worldwide / reservations@ihcltata.com"
+            ],
+            "notes": [
+              "Not valid on closed user group, negotiated, or employee rates",
+              "No redemption via third-party OTAs",
+              "Standalone restaurant/spa spend must be billed to the room"
+            ]
+          }
+        ],
+        "otherPrograms": [
+          "Priority Pass membership (visits chargeable)",
+          "Fuel convenience fee waiver at HPCL (as offered by issuer)",
+          "Up to 20% dining savings at select restaurants (issuer network program)",
+          "EMI options on eligible purchases"
+        ]
+      }
     }
   ],
   "cardStrategies": [
