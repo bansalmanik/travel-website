@@ -29,6 +29,13 @@ const sections = [
     href: "/travel-with-points/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
   },
+  {
+    title: "Bank Programs",
+    description:
+      "Tap into bank-specific travel portals and redemption tools to stretch every transferable point further.",
+    href: "/travel-with-points/bank-programs",
+    accent: "bg-rose-100 text-rose-900",
+  },
 ];
 
 const quickTips = [
