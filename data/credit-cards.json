@@ -2,6 +2,7 @@
   "cards": [
     {
       "slug": "axis-bank-atlas-credit-card",
+      "layout": "tieredMiles",
       "name": "Axis Bank Atlas Credit Card",
       "issuer": "Axis Bank",
       "network": "Visa",
@@ -148,6 +149,171 @@
           "alt": "Axis Bank Atlas Credit Card"
         }
       }
+    },
+    {
+      "slug": "hdfc-bank-regalia-gold-credit-card",
+      "layout": "lifestyle",
+      "name": "HDFC Bank Regalia Gold Credit Card",
+      "issuer": "HDFC Bank",
+      "network": "Visa/Mastercard",
+      "type": "Premium Travel & Lifestyle Rewards Card",
+      "summary": "Premium lifestyle card bundling Swiggy One, MMT Black Gold, quarterly vouchers, and lounge visits for frequent travellers.",
+      "seoDescription": "Review the HDFC Bank Regalia Gold Credit Card welcome memberships, 5X partner rewards, milestone flight vouchers, and lounge access before you apply.",
+      "annualFee": {
+        "amount": 2500,
+        "currency": "INR",
+        "gstApplicable": true
+      },
+      "websiteDisplayTags": [
+        "Airport Lounge Access",
+        "5X Shopping Rewards",
+        "Swiggy One & MMT Benefits"
+      ],
+      "keyHighlights": [
+        "Unlock Swiggy One and MMT Black Gold after ₹1 lakh spend in 90 days.",
+        "Earn 5X rewards on Myntra, Nykaa, Reliance Digital, and Marks & Spencer up to 5,000 RP monthly.",
+        "Collect quarterly and annual flight vouchers worth up to ₹10,000 a year."
+      ],
+      "fees": {
+        "joiningFee": 2500,
+        "renewalFee": 2500,
+        "welcomeBenefitCondition": "Spend ₹1 lakh in 90 days to unlock memberships"
+      },
+      "welcomeBenefits": {
+        "membershipUnlock": {
+          "benefits": [
+            "Swiggy One membership (replacing Club Vistara Silver from Nov 1, 2024)",
+            "MMT Black Gold membership"
+          ],
+          "spendRequirement": "₹1,00,000 in 90 days",
+          "unlockTime": "Within 48 hours after meeting spend",
+          "downloadWindow": "60 days after benefit period end"
+        },
+        "joiningVoucher": {
+          "valueInInr": 2500,
+          "condition": "Issued after paying the joining fee"
+        }
+      },
+      "rewards": {
+        "baseRate": "4 Reward Points per ₹150 on retail spends",
+        "acceleratedRewards": {
+          "rate": "5X (20 RP/₹150) on select merchants",
+          "merchants": [
+            "Myntra",
+            "Nykaa",
+            "Reliance Digital",
+            "Marks & Spencer"
+          ],
+          "monthlyCapRp": 5000,
+          "minSpend": 150
+        },
+        "rewardExclusions": [
+          "Fuel",
+          "Cash withdrawals",
+          "Card fees & charges",
+          "Wallet loads",
+          "Smart EMI conversions",
+          "Government payments",
+          "Rent payments",
+          "Insurance RP cap 2,000/month",
+          "Grocery RP cap 2,000/month"
+        ],
+        "rewardPosting": "Posted by 1st week of next month",
+        "rewardValidity": "2 years",
+        "monthlyRpCap": 50000
+      },
+      "redemption": {
+        "smartBuyPortalValue": {
+          "exclusiveCatalog": "1 RP = ₹0.65",
+          "flightsHotels": "1 RP = ₹0.50 (max 50,000 RP/month)",
+          "productsVouchers": "1 RP = up to ₹0.35",
+          "statementCredit": "1 RP = ₹0.20 (max 50,000 RP/month)"
+        },
+        "airmilesConversion": {
+          "conversionRate": "1 RP = up to 0.5 airmiles"
+        },
+        "travelRedemptionLimit": "Use Reward Points for up to 70% of a booking's value"
+      },
+      "milestoneBenefits": {
+        "quarterly": {
+          "spendRequirement": 150000,
+          "voucherValue": 1500,
+          "brandChoices": [
+            "Marriott",
+            "Myntra",
+            "MMT Hotels",
+            "Marks & Spencer",
+            "Reliance Digital"
+          ]
+        },
+        "annual": [
+          {
+            "threshold": 500000,
+            "benefit": "₹5,000 flight voucher"
+          },
+          {
+            "threshold": 750000,
+            "benefit": "Additional ₹5,000 flight voucher"
+          }
+        ],
+        "voucherUnlockTime": "Benefits unlock within 48 hours of meeting the spend"
+      },
+      "loungeAccess": {
+        "india": {
+          "quota": 12,
+          "terminals": "Domestic & international terminals within India",
+          "method": "Swipe card"
+        },
+        "internationalPriorityPass": {
+          "quota": 6,
+          "chargeAfterQuotaUsd": 27,
+          "notes": [
+            "Priority Pass usage within India is chargeable",
+            "Add-on cardholders need their own Priority Pass"
+          ]
+        }
+      },
+      "concierge": {
+        "email": "regaliagold.support@smartbuyoffers.co",
+        "phone": "1860 425 1188"
+      },
+      "insurance": {
+        "lostCardLiability": "Zero liability if reported immediately"
+      },
+      "foreignExchangeMarkup": "2%",
+      "eligibility": {
+        "salariedPrivate": {
+          "age": "21-60",
+          "incomeMin": "₹1,50,000/month"
+        },
+        "selfEmployed": {
+          "age": "21-65",
+          "itrMin": "₹18,00,000/year"
+        },
+        "salariedGovernment": {
+          "age": "21-60",
+          "incomeMin": "₹1,00,000/month"
+        }
+      },
+      "specialPrograms": {
+        "dining": {
+          "program": "Good Food Trail",
+          "benefit": "Flat 10% off at 35,000+ restaurants",
+          "platform": "Dineout"
+        }
+      },
+      "travelBenefitsTags": [
+        "Airport Lounge Access",
+        "Priority Pass",
+        "Hotel & Flight Milestones",
+        "Premium Concierge"
+      ],
+      "rewardTags": [
+        "5X Shopping Rewards",
+        "Premium Catalog Redemption",
+        "Flight Vouchers",
+        "Dining Discounts"
+      ]
     }
   ],
   "cardStrategies": [
