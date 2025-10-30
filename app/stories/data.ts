@@ -7,7 +7,7 @@ export type StoryImage = {
   caption?: string;
 };
 
-export type BlogSummary = {
+export type StorySummary = {
   slug: string;
   title: string;
   excerpt: string;
@@ -20,25 +20,25 @@ export type BlogSummary = {
   coverImage: StoryImage;
 };
 
-export type BlogPost = BlogSummary & {
+export type Story = StorySummary & {
   content: string[];
   highlights: string[];
   gallery?: StoryImage[];
   videoUrl?: string;
 };
 
-const storiesPath = path.join(process.cwd(), "app", "blogs", "stories.json");
+const storiesPath = path.join(process.cwd(), "app", "stories", "stories.json");
 
 async function readJsonFile<T>(filePath: string): Promise<T> {
   const fileContents = await fs.readFile(filePath, "utf-8");
   return JSON.parse(fileContents) as T;
 }
 
-async function getAllStories(): Promise<BlogPost[]> {
-  return readJsonFile<BlogPost[]>(storiesPath);
+async function getAllStories(): Promise<Story[]> {
+  return readJsonFile<Story[]>(storiesPath);
 }
 
-export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
+export async function getAllStorySummaries(): Promise<StorySummary[]> {
   const stories = await getAllStories();
   return stories.map(
     ({ slug, title, excerpt, author, date, readTime, category, city, country, coverImage }) => ({
@@ -56,7 +56,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
   );
 }
 
-export async function getBlogBySlug(slug: string): Promise<BlogPost | null> {
+export async function getStoryBySlug(slug: string): Promise<Story | null> {
   const stories = await getAllStories();
   return stories.find((story) => story.slug === slug) ?? null;
 }

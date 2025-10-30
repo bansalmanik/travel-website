@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const navigationLinks = [
-  { href: "/blogs", label: "Stories" },
+  { href: "/stories", label: "Stories" },
   { href: "/travel-with-points", label: "Travel on points" },
   { href: "/journals", label: "Journal" },
   { href: "/#connect", label: "Connect" },
