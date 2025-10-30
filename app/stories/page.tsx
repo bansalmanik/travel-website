@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getAllBlogSummaries } from "./data";
+import { getAllStorySummaries } from "./data";
 
 export const metadata = {
   title: "Travel Explorer | Stories",
   description: "Discover travel inspiration, itineraries, and stories from around the globe.",
 };
 
-export default async function BlogsPage() {
-  const blogPosts = await getAllBlogSummaries();
+export default async function StoriesPage() {
+  const stories = await getAllStorySummaries();
 
   return (
     <div className="bg-gradient-to-b from-white via-slate-50 to-slate-100 py-20 text-zinc-900 dark:from-black dark:via-zinc-950 dark:to-black dark:text-zinc-100">
@@ -26,12 +26,12 @@ export default async function BlogsPage() {
         </section>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post) => (
+          {stories.map((post) => (
             <article
               key={post.slug}
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900"
             >
-              <Link href={`/blogs/${post.slug}`} className="flex h-full flex-col">
+              <Link href={`/stories/${post.slug}`} className="flex h-full flex-col">
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image
                     src={post.coverImage.src}
@@ -39,7 +39,7 @@ export default async function BlogsPage() {
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    priority={post.slug === blogPosts[0]?.slug}
+                    priority={post.slug === stories[0]?.slug}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" aria-hidden />
                   <div className="absolute bottom-3 left-3 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-900 shadow-sm dark:bg-zinc-900/80 dark:text-zinc-100">

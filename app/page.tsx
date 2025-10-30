@@ -92,7 +92,7 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-300"
-              href="/blogs"
+              href="/stories"
             >
               Dive into Stories
             </Link>

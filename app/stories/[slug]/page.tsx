@@ -2,23 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { getAllBlogSummaries, getBlogBySlug } from "../data";
+import { getAllStorySummaries, getStoryBySlug } from "../data";
 
-type BlogPageProps = {
+type StoryPageProps = {
   params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
-  const posts = await getAllBlogSummaries();
+  const posts = await getAllStorySummaries();
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({ params }: BlogPageProps) {
+export async function generateMetadata({ params }: StoryPageProps) {
   const { slug } = await params;
-  const post = await getBlogBySlug(slug);
+  const post = await getStoryBySlug(slug);
 
   if (!post) {
-    return { title: "Blog not found" };
+    return { title: "Story not found" };
   }
 
   const title = `${post.title} | Travel Explorer`;
@@ -41,9 +41,9 @@ export async function generateMetadata({ params }: BlogPageProps) {
   };
 }
 
-export default async function BlogDetailPage({ params }: BlogPageProps) {
+export default async function StoryDetailPage({ params }: StoryPageProps) {
   const { slug } = await params;
-  const post = await getBlogBySlug(slug);
+  const post = await getStoryBySlug(slug);
 
   if (!post) {
     notFound();
@@ -151,7 +151,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-zinc-100 p-6 text-sm text-zinc-600 dark:bg-zinc-900 dark:text-zinc-300 sm:flex-row">
           <p>Looking for more inspiration? Explore our latest destinations and guides.</p>
           <Link
-            href="/blogs"
+            href="/stories"
             className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2 font-medium text-white shadow-md transition hover:bg-blue-500"
           >
             ← Back to all stories
