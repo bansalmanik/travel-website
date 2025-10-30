@@ -10,7 +10,7 @@ type AnnualFee = {
 
 type Card = {
   slug: string;
-  layout: "tieredMiles" | "lifestyle";
+  layout: "tieredMiles" | "lifestyle" | "premiumTravel";
   name: string;
   issuer: string;
   network: string;
