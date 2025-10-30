@@ -285,162 +285,155 @@
       ]
     },
     {
-      "slug": "world-of-hyatt",
-      "name": "World of Hyatt",
-      "footprint": "1,300+ hotels with outsized luxury and all-inclusive partners",
-      "summary": "Low award rates, milestone rewards, and partnerships like Small Luxury Hotels make Hyatt points incredibly valuable.",
-      "seoDescription": "Learn how World of Hyatt milestones, suite upgrades, and transfer partners deliver unmatched value for award stays.",
+      "slug": "accor-live-limitless",
+      "name": "Accor Live Limitless (ALL)",
+      "footprint": "5,500+ hotels spanning 110 countries",
+      "summary": "Earn Reward and Status Points across Accor’s luxury-to-economy brands with cash-like redemptions and lifestyle perks.",
+      "seoDescription": "Explore Accor Live Limitless elite tiers, earning rates, and fixed-value redemptions for hotel stays, dining, and experiences.",
       "overview": {
+        "description": "Accor Live Limitless (ALL) is Accor’s global loyalty program rewarding hotel, dining, and lifestyle spend across brands like Raffles, Sofitel, Pullman, and ibis.",
         "items": [
-          "Fixed award chart keeps premium redemptions predictable across 8 categories.",
-          "Milestone rewards deliver suite upgrades, club access, and FIND credits every 10 nights starting at 20.",
-          "Small Luxury Hotels of the World partnership expands boutique options with elite benefits.",
-          "All-inclusive brands like Secrets and Dreams can be booked with Hyatt points at competitive rates."
+          "Earn both Reward Points and Status Points on stays, dining, and events.",
+          "Redeem with a fixed cash value: 2,000 Reward Points reduce eligible bills by €40.",
+          "Lifestyle partnerships unlock VIP access to concerts, sports, and cultural events.",
+          "Accor Plus and regional credit cards provide accelerated earn and dining benefits."
         ],
-        "note": "Hyatt’s smaller footprint is offset by premium partner properties and transferable points from Chase Ultimate Rewards®.",
+        "note": "The program’s cash-equivalent redemption structure keeps point values predictable with no blackout dates.",
         "image": {
-          "src": "/images/content/photo-1542314831-068-77e78053cad8.svg",
-          "alt": "Luxury resort pool overlooking the ocean"
+          "src": "/images/content/photo-1528909514045-2fa4ac7a08ba.svg",
+          "alt": "Guest enjoying a chic hotel lobby within the Accor portfolio"
         }
       },
       "statusLevels": {
         "tiers": [
           "Member",
-          "Discoverist",
-          "Explorist",
-          "Globalist"
+          "Silver",
+          "Gold",
+          "Platinum",
+          "Diamond"
         ],
         "rows": [
           {
             "label": "Stay requirement",
             "values": [
-              "Free to join",
-              "10 nights / 25K base points",
-              "30 nights / 50K base points",
-              "60 nights / 100K base points"
+              "Join program",
+              "10 nights / 2,000 Status Points",
+              "30 nights / 7,000 Status Points",
+              "60 nights / 14,000 Status Points",
+              "26,000 Status Points"
             ]
           },
           {
-            "label": "Bonus points on stays",
-            "description": "Base points are 5 per $1 before elite bonuses are applied.",
+            "label": "Reward Point bonus",
+            "description": "Earn rates vary by brand category with incremental elite bonuses on top of base earn.",
             "values": [
-              "0% Bonus",
-              "10% Bonus",
-              "20% Bonus",
-              "30% Bonus"
+              "Base earn by brand",
+              "+20% bonus",
+              "+30% bonus",
+              "+50% bonus",
+              "+75% bonus"
             ]
           },
           {
-            "label": "Room upgrades",
-            "description": "Space-available upgrades; Globalist includes standard suites at check-in.",
+            "label": "Upgrades",
+            "values": [
+              "Member rates & Wi-Fi",
+              "Late checkout (subject to availability)",
+              "Room upgrades when available",
+              "Suites where available",
+              "Suites where available"
+            ]
+          },
+          {
+            "label": "Lounge access",
             "values": [
               "Not included",
-              "Preferred rooms",
-              "Preferred rooms + priority suites",
-              "Standard suites when available"
+              "Not included",
+              "Not included",
+              "Included where lounges exist",
+              "Included where lounges exist"
             ]
           },
           {
-            "label": "Club lounge access",
-            "description": "Access lounges or complimentary breakfast at Hyatt Regency, Grand Hyatt, and select brands.",
+            "label": "Breakfast benefit",
             "values": [
               "Not included",
-              "2 Club Access Awards",
-              "2 Club Access Awards",
-              "Complimentary + guest access"
+              "Not included",
+              "Not included",
+              "Complimentary at select brands",
+              "Complimentary at select brands"
             ]
           },
           {
-            "label": "Late checkout",
+            "label": "Guaranteed availability",
             "values": [
-              "2 p.m. (based on availability)",
-              "2 p.m. (based on availability)",
-              "2 p.m. (based on availability)",
-              "4 p.m. guaranteed"
+              "Not included",
+              "Not included",
+              "72-hour guarantee",
+              "48-hour guarantee",
+              "48-hour guarantee"
             ]
           },
           {
-            "label": "Parking & resort fees on awards",
+            "label": "Signature perks",
             "values": [
-              "Fees apply",
-              "Fees apply",
-              "Waived on free night awards",
-              "Waived on free night awards"
-            ]
-          },
-          {
-            "label": "Milestone rewards",
-            "description": "Earn suite upgrades, FIND credits, and Guest of Honor awards every 10 elite nights.",
-            "values": [
-              "Not applicable",
-              "Starts at 20 nights",
-              "Suite upgrades at 50 nights",
-              "Guest of Honor + My Hyatt Concierge"
-            ]
-          },
-          {
-            "label": "Guest of Honor",
-            "description": "Extend Globalist benefits to friends or family on award stays.",
-            "values": [
-              "Not available",
-              "Not available",
-              "Not available",
-              "Available"
-            ]
-          },
-          {
-            "label": "My Hyatt Concierge",
-            "description": "Dedicated team assists with complex itineraries, suite requests, and special occasions.",
-            "values": [
-              "Not available",
-              "Not available",
-              "Not available",
-              "Available"
+              "Earn points on stays & dining",
+              "Welcome drink",
+              "Early check-in / late checkout",
+              "VIP experiences & suite upgrades",
+              "Dedicated service line + weekend night"
             ]
           }
         ],
-        "note": "Aim for 60-night Globalist status to unlock waived resort fees, free breakfast, and the Guest of Honor benefit.",
+        "note": "Diamond status unlocks a complimentary weekend night, dining credits, and a dedicated support line.",
         "image": {
-          "src": "/images/content/photo-1582719478250--17846ff570bd.svg",
-          "alt": "Guest relaxing in a hotel suite with city view"
+          "src": "/images/content/photo-1489515217757-5fd1be406fef.svg",
+          "alt": "Accor guest suite with city skyline views"
         }
       },
       "coBrandedCards": {
         "items": [
-          "World of Hyatt Credit Card",
-          "World of Hyatt Business Credit Card"
+          "Regional Accor credit cards in select markets"
         ],
-        "note": "Personal and business cards together provide 10 elite night credits annually plus spending-based night boosts."
+        "note": "No co-branded card in India yet, but local issuers offer ALL earning cards in Europe, Asia, and Australia."
       },
       "pointsEarn": {
         "items": [
-          "5 base points per $1 on eligible Hyatt purchases.",
-          "Discoverist, Explorist, and Globalist earn 10%, 20%, and 30% bonuses respectively.",
-          "All-inclusive resorts award based on room rate before taxes and fees.",
-          "Transfer Chase Ultimate Rewards® at a 1:1 ratio instantly."
+          "Earn Reward & Status Points on room rate, taxes, dining, spa, and event spend.",
+          "Luxury brands earn 25 Reward Points per €10; midscale 15; economy 10.",
+          "Status Points accrue at 10 per €10 of eligible spend across brands.",
+          "Earn points via Accor Plus dining, partner airlines, and select Accor credit cards."
         ]
       },
       "pointsBurn": {
         "items": [
-          "Category 1 starts at 3,500 points off-peak for standard rooms.",
-          "Premium suites can be booked with a fixed multiplier over standard room pricing.",
-          "Use Cash + Points when nightly rates creep above 2 cents per point for extra value."
+          "Redeem at a fixed rate: 2,000 Reward Points = €40 toward eligible charges.",
+          "Use points to pay for stays, dining, spa services, and room upgrades with no blackout dates.",
+          "Access experiences, concerts, sports events, and partner redemptions including airlines and car rentals.",
+          "Combine cash + points at checkout to stretch balances for longer stays."
         ]
       },
       "paidMemberships": {
         "items": [
-          "World of Hyatt membership is complimentary; status is earned via nights, base points, or meetings.",
-          "Hyatt Leverage corporate accounts offer discounted rates without changing elite qualification."
+          "Program is free to join; elite status is earned via stays and Status Points.",
+          "Accor Plus membership (paid) boosts dining discounts and points earning in Asia Pacific."
         ]
       },
       "otherBenefits": {
         "items": [
-          "Guest of Honor lets friends enjoy your Globalist perks on award stays.",
-          "Milestone Rewards at 40, 50, and 60 nights include suite upgrade awards.",
-          "Brand Explorer free night certificate after staying at 5 unique Hyatt brands.",
-          "Partnership with American Airlines AAdvantage® allows elite members to earn bonus miles and Loyalty Points."
+          "Earn points on dining even when you are not staying overnight.",
+          "VIP sports and entertainment partnerships include Paris Saint-Germain and Accor Arena.",
+          "Suite upgrade rewards and priority check-in for Platinum and higher members.",
+          "Cash-like redemption model keeps point valuations transparent for budgeting trips."
         ]
-      }
+      },
+      "tags": [
+        "Hotel Loyalty",
+        "Travel Rewards",
+        "Cash-like Redemption",
+        "Dining Rewards",
+        "VIP Experiences"
+      ]
     },
     {
       "slug": "hilton-honors",
