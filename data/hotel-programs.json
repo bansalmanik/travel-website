@@ -737,6 +737,153 @@
           "Premier cardholders receive a Fourth Night Free award when redeeming points."
         ]
       }
+    },
+    {
+      "slug": "club-itc-culinaire",
+      "name": "Club ITC Culinaire",
+      "footprint": "350+ ITC Hotels, Welcomhotels, Mementos, Storii, Fortune, and select Sheraton properties across India",
+      "summary": "Paid dining and hospitality membership layering 20% savings with Green Points, milestone vouchers, and complimentary nights across the ITC portfolio.",
+      "seoDescription": "Review Club ITC Culinaire pricing, elite alignment, milestone rewards, and voucher perks for maximizing ITC Hotels dining and stay value.",
+      "overview": {
+        "description": "Culinaire links directly with Club ITC to deliver immediate savings, Green Points, and curated dining and stay experiences.",
+        "items": [
+          "Enjoy 20% savings on dining, spa, and laundry at participating ITC-managed hotels.",
+          "Earn Green Points on food & beverage and accommodation spending to accelerate Club ITC status.",
+          "Unlock milestone vouchers for upgrades, buffet meals, and suite credits as annual spend grows.",
+          "Complimentary nights, celebratory cakes, and buffet experiences anchor the yearly voucher pack.",
+          "Add a spouse for ₹1,000 per year to share on-property discounts (voucher entitlements excluded)."
+        ],
+        "note": "The 20% savings apply for up to 15 diners per bill, ideal for family celebrations and corporate dining."
+      },
+      "quickFacts": [
+        { "label": "Issuer", "value": "ITC Hotels" },
+        { "label": "Program type", "value": "Paid dining & hospitality membership" },
+        { "label": "Core savings", "value": "20% on dining, spa, and laundry" },
+        { "label": "Green Points earning", "value": "Up to 6% on F&B with elite alignment" },
+        { "label": "Primary plan fee", "value": "₹19,000+ taxes (Culinaire Select, 1 year)" }
+      ],
+      "enrollment": {
+        "items": [
+          "Memberships are sold in one to five year bundles with tiered pricing for Select and Elite variants.",
+          "Renew before expiry to receive a 1,500 Green Points bonus on any Culinaire plan.",
+          "Existing Club ITC members retain their membership number when upgrading into Culinaire."
+        ],
+        "note": "Prices listed are pre-tax; GST applies to both enrollment and select voucher redemptions from January 1, 2025."
+      },
+      "eliteBenefitDetails": {
+        "title": "Club ITC elite alignment",
+        "items": [
+          "Silver + Culinaire earns 6% Green Points on dining and 4% on stays.",
+          "Gold + Culinaire boosts earning to 9% on dining and 6% on stays.",
+          "Platinum and Platinum Select + Culinaire members receive 12% on dining and 8% on stays."
+        ],
+        "note": "Culinaire stacking accelerates Club ITC tier progression via enhanced Green Point accrual."
+      },
+      "paidMemberships": {
+        "title": "Culinaire plan variants",
+        "items": [
+          "Culinaire Select: ₹19,000 for 1 year (₹34,200 for 2 years; ₹48,450 for 3; ₹60,800 for 4; ₹71,250 for 5) with one complimentary night, two meals for two, a cake, and two 50% dining vouchers.",
+          "Culinaire Elite: ₹29,500 for 1 year (₹53,100 for 2 years; ₹75,250 for 3; ₹94,400 for 4; ₹110,650 for 5) with two complimentary nights, four meals for two, enhanced Green Point earning, and premium rate vouchers.",
+          "Optional spouse add-on: ₹1,000 per year plus taxes granting shared savings but no duplicate vouchers."
+        ]
+      },
+      "specialPerks": {
+        "title": "Milestone rewards",
+        "description": "Track eligible food and beverage spend each calendar year to unlock layered vouchers.",
+        "items": [
+          "₹30,000 spend: complimentary room upgrade voucher.",
+          "₹90,000 spend: complimentary buffet meal for two.",
+          "₹1,20,000 spend: ₹5,000 hotel credit redeemable during a suite night stay.",
+          "₹2,00,000 spend: additional complimentary buffet meal for two."
+        ],
+        "note": "Milestone spending must be achieved within a single calendar year; unused balances do not roll over."
+      },
+      "otherBenefits": {
+        "items": [
+          "Voucher mix includes complimentary suite experiences and 15%–20% Best Available Rate certificates depending on tier.",
+          "Green Points and active vouchers migrate automatically when transitioning from legacy Club ITC or Culinaire memberships.",
+          "Guest care is available at participating ITC Hotels and Welcomhotels, with email support via clubitc@itchotels.in."
+        ]
+      },
+      "notesSection": {
+        "items": [
+          "Spouse plans are valid only alongside an active primary Culinaire membership.",
+          "Vouchers can be redeemed at participating ITC-managed hotels; WelcomHeritage Hotels offer only the 20% dining discount with no Green Points accrual.",
+          "Effective January 1, 2025, GST applies when redeeming luxury stay vouchers.",
+          "Member migration retains existing membership numbers with tier mapping based on prior-year activity."
+        ],
+        "note": "For more details visit https://www.itchotels.com/clubitc/culinaire or email clubitc@itchotels.in."
+      },
+      "tags": [
+        "Dining Membership",
+        "Hotel Loyalty",
+        "Green Points",
+        "Spa Benefits",
+        "Milestone Rewards",
+        "Luxury Hospitality"
+      ]
+    },
+    {
+      "slug": "taj-epicure",
+      "name": "Taj Epicure",
+      "footprint": "Taj, SeleQtions, Vivanta, and Taj Safaris hotels across India",
+      "summary": "Paid membership by IHCL bundling 25% dining savings, spa discounts, Qmin delivery perks, and a deep roster of stay vouchers at Taj brands.",
+      "seoDescription": "Explore Taj Epicure Preferred and Privileged benefits, pricing, and voucher inclusions for maximizing dining and stay value at Taj Hotels.",
+      "overview": {
+        "description": "Epicure delivers Taj guests a blend of dining value, wellness perks, and stay experiences across IHCL’s luxury and lifestyle portfolio.",
+        "items": [
+          "Save 25% on dining in-residence and Qmin delivery orders alongside 20% spa savings.",
+          "Receive complimentary night certificates, room upgrades, and set meals for two.",
+          "Benefit from Taj Club lounge access vouchers, curated pool lunch with wine experiences, and celebratory cake inclusions.",
+          "Membership aligns with NeuPass, providing Silver or Gold tiers depending on plan selection.",
+          "Phone and email concierge support assist with voucher usage and escalations."
+        ],
+        "note": "Present a valid Epicure membership card to access dining discounts at participating restaurants."
+      },
+      "quickFacts": [
+        { "label": "Issuer", "value": "IHCL (Taj Hotels)" },
+        { "label": "Program type", "value": "Paid hotel membership" },
+        { "label": "Dining savings", "value": "25% on F&B and Qmin delivery" },
+        { "label": "Spa discount", "value": "20% on qualifying treatments" },
+        { "label": "NeuPass tier", "value": "Silver or Gold depending on membership" }
+      ],
+      "enrollment": {
+        "items": [
+          "Epicure Preferred membership is priced at ₹25,000 plus taxes; Epicure Privileged is ₹50,000 plus taxes.",
+          "Add-on cards are available so family members can redeem on-property discounts and vouchers.",
+          "Reach support at 1800-111-825 or epicure.escalations@ihcltata.com for onboarding or assistance."
+        ]
+      },
+      "paidMemberships": {
+        "title": "Epicure plan benefits",
+        "items": [
+          "Epicure Preferred: 25% dining and Qmin savings, one complimentary night stay, two set meals for two, two one-level upgrades, one 60-minute spa treatment, rate vouchers across Taj Palaces, City Resorts, and Taj Safaris, plus a pool lunch with wine experience.",
+          "Epicure Privileged: Mirrors Preferred discounts with two complimentary nights, four set meals for two, four room upgrades, three 60-minute spa sessions, expanded rate vouchers, Taj Club lounge access, and a pool lunch with wine experience.",
+          "Both tiers include a celebratory birthday cake and eligibility for add-on member cards."
+        ]
+      },
+      "otherBenefits": {
+        "items": [
+          "Complimentary room upgrades are subject to availability at check-in.",
+          "Select benefits, including experiences and spa sessions, are limited to once per membership year.",
+          "Escalation support is available via praloy.saha@ihcltata.com for unresolved service issues."
+        ]
+      },
+      "notesSection": {
+        "items": [
+          "Vouchers are redeemable only at participating Taj, SeleQtions, Vivanta, and Taj Safaris hotels.",
+          "Club lounge access vouchers are exclusive to Epicure Privileged memberships.",
+          "Room upgrades require eligible rate bookings and remain subject to inventory at time of arrival."
+        ]
+      },
+      "tags": [
+        "Hotel Membership",
+        "Dining Program",
+        "Luxury Travel",
+        "Spa Benefits",
+        "Free Night Vouchers",
+        "Taj Hotels"
+      ]
     }
   ]
 }
