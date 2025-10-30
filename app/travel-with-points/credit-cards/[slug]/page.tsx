@@ -18,20 +18,20 @@ type AnnualFee = {
   gstApplicable?: boolean;
 };
 
-type WelcomeBenefitDetail = {
+type TieredWelcomeBenefitDetail = {
   validFrom?: string;
   validTo?: string;
   miles: number;
   condition: string;
 };
 
-type WelcomeBenefit = {
-  details: WelcomeBenefitDetail[];
+type TieredWelcomeBenefit = {
+  details: TieredWelcomeBenefitDetail[];
   milesPostingTime: string;
   onlyForPaidCards?: boolean;
 };
 
-type EarnRateValue =
+type TieredEarnRateValue =
   | string
   | {
       rate: string;
@@ -39,10 +39,10 @@ type EarnRateValue =
       cap?: string;
     };
 
-type Rewards = {
+type TieredRewards = {
   currency: string;
   conversion?: string;
-  earnRate: Record<string, EarnRateValue>;
+  earnRate: Record<string, TieredEarnRateValue>;
   exclusions: string[];
   milesPostingTime: string;
 };
@@ -52,31 +52,31 @@ type TierLevel = {
   upgradeSpend: number | null;
 };
 
-type Tiers = {
+type TieredTiers = {
   levels: TierLevel[];
   downgradeRule?: string;
 };
 
-type TierBenefits = {
+type TieredTierBenefits = {
   annualMilesOnFeePayment: Record<string, number>;
   milestoneBenefits: { spend: number; miles: number }[];
 };
 
-type LoungeAccess = {
+type TieredLoungeAccess = {
   domestic: Record<string, number>;
   international: Record<string, number>;
   guestAccessIncluded?: boolean;
   notes?: string;
 };
 
-type MilesRedemption = {
+type TieredMilesRedemption = {
   options: string[];
   transferPartnersValue?: string;
   annualTransferLimit?: number;
   groupLimits?: Record<string, number>;
 };
 
-type AdditionalInfo = {
+type TieredAdditionalInfo = {
   milesNotEncashable?: boolean;
   anniversaryYearBasis?: boolean;
   tierSpendExclusions?: string;
@@ -87,8 +87,9 @@ type CardMedia = {
   cardImage?: SectionImage;
 };
 
-type Card = {
+type BaseCard = {
   slug: string;
+  layout: "tieredMiles" | "lifestyle";
   name: string;
   issuer: string;
   network: string;
@@ -96,17 +97,144 @@ type Card = {
   summary: string;
   seoDescription: string;
   annualFee: AnnualFee;
-  welcomeBenefit: WelcomeBenefit;
-  rewards: Rewards;
-  tiers: Tiers;
-  tierBenefits: TierBenefits;
-  loungeAccess: LoungeAccess;
-  milesRedemption: MilesRedemption;
-  additionalInfo: AdditionalInfo;
   websiteDisplayTags?: string[];
   keyHighlights?: string[];
   media?: CardMedia;
 };
+
+type TieredMilesCard = BaseCard & {
+  layout: "tieredMiles";
+  welcomeBenefit: TieredWelcomeBenefit;
+  rewards: TieredRewards;
+  tiers: TieredTiers;
+  tierBenefits: TieredTierBenefits;
+  loungeAccess: TieredLoungeAccess;
+  milesRedemption: TieredMilesRedemption;
+  additionalInfo: TieredAdditionalInfo;
+};
+
+type LifestyleAcceleratedRewards = {
+  rate: string;
+  merchants: string[];
+  monthlyCapRp?: number;
+  minSpend?: number;
+};
+
+type LifestyleRewards = {
+  baseRate: string;
+  acceleratedRewards?: LifestyleAcceleratedRewards;
+  rewardExclusions: string[];
+  rewardPosting: string;
+  rewardValidity?: string;
+  monthlyRpCap?: number;
+};
+
+type LifestyleMembershipUnlock = {
+  benefits: string[];
+  spendRequirement: string;
+  unlockTime?: string;
+  downloadWindow?: string;
+};
+
+type LifestyleJoiningVoucher = {
+  valueInInr: number;
+  condition: string;
+};
+
+type LifestyleWelcomeBenefits = {
+  membershipUnlock?: LifestyleMembershipUnlock;
+  joiningVoucher?: LifestyleJoiningVoucher;
+};
+
+type LifestyleRedemption = {
+  smartBuyPortalValue: {
+    exclusiveCatalog: string;
+    flightsHotels: string;
+    productsVouchers: string;
+    statementCredit: string;
+  };
+  airmilesConversion?: {
+    conversionRate: string;
+  };
+  travelRedemptionLimit?: string;
+};
+
+type LifestyleMilestoneBenefits = {
+  quarterly?: {
+    spendRequirement: number;
+    voucherValue: number;
+    brandChoices: string[];
+  };
+  annual?: {
+    threshold: number;
+    benefit: string;
+  }[];
+  voucherUnlockTime?: string;
+};
+
+type LifestyleLoungeAccess = {
+  india?: {
+    quota: number;
+    terminals: string;
+    method?: string;
+  };
+  internationalPriorityPass?: {
+    quota: number;
+    chargeAfterQuotaUsd: number;
+    notes?: string[];
+  };
+};
+
+type LifestyleConcierge = {
+  email?: string;
+  phone?: string;
+};
+
+type LifestyleInsurance = {
+  lostCardLiability?: string;
+};
+
+type LifestyleEligibility = Record<
+  string,
+  {
+    age: string;
+    incomeMin?: string;
+    itrMin?: string;
+  }
+>;
+
+type LifestyleSpecialPrograms = {
+  dining?: {
+    program: string;
+    benefit: string;
+    platform?: string;
+  };
+};
+
+type LifestyleFeesSummary = {
+  joiningFee: number;
+  renewalFee: number;
+  welcomeBenefitCondition?: string;
+};
+
+type LifestyleCard = BaseCard & {
+  layout: "lifestyle";
+  fees: LifestyleFeesSummary;
+  welcomeBenefits: LifestyleWelcomeBenefits;
+  rewards: LifestyleRewards;
+  redemption: LifestyleRedemption;
+  milestoneBenefits?: LifestyleMilestoneBenefits;
+  loungeAccess: LifestyleLoungeAccess;
+  concierge?: LifestyleConcierge;
+  insurance?: LifestyleInsurance;
+  foreignExchangeMarkup?: string;
+  eligibility?: LifestyleEligibility;
+  specialPrograms?: LifestyleSpecialPrograms;
+  travelBenefitsTags?: string[];
+  rewardTags?: string[];
+};
+
+type Card = TieredMilesCard | LifestyleCard;
 
 const cards = (cardData as { cards: Card[] }).cards;
 
@@ -183,7 +311,7 @@ function formatLabel(key: string) {
     .replace(/\bId\b/, "ID");
 }
 
-function createWelcomeOfferSummary(welcomeBenefit: WelcomeBenefit, rewardsCurrency: string) {
+function createTieredWelcomeOfferSummary(welcomeBenefit: TieredWelcomeBenefit, rewardsCurrency: string) {
   if (!welcomeBenefit.details.length) {
     return "";
   }
@@ -193,11 +321,11 @@ function createWelcomeOfferSummary(welcomeBenefit: WelcomeBenefit, rewardsCurren
     .join("; ");
 }
 
-type CardSnapshotProps = {
-  card: Card;
+type TieredCardSnapshotProps = {
+  card: TieredMilesCard;
 };
 
-function CardSnapshot({ card }: CardSnapshotProps) {
+function TieredCardSnapshot({ card }: TieredCardSnapshotProps) {
   return (
     <SectionWrapper title="Card snapshot">
       <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
@@ -266,12 +394,12 @@ function CardSnapshot({ card }: CardSnapshotProps) {
   );
 }
 
-type WelcomeBenefitSectionProps = {
-  welcomeBenefit: WelcomeBenefit;
+type TieredWelcomeBenefitSectionProps = {
+  welcomeBenefit: TieredWelcomeBenefit;
   rewardsCurrency: string;
 };
 
-function WelcomeBenefitSection({ welcomeBenefit, rewardsCurrency }: WelcomeBenefitSectionProps) {
+function TieredWelcomeBenefitSection({ welcomeBenefit, rewardsCurrency }: TieredWelcomeBenefitSectionProps) {
   return (
     <SectionWrapper
       title="Welcome benefits"
@@ -313,11 +441,11 @@ function WelcomeBenefitSection({ welcomeBenefit, rewardsCurrency }: WelcomeBenef
   );
 }
 
-type RewardsSectionProps = {
-  rewards: Rewards;
+type TieredRewardsSectionProps = {
+  rewards: TieredRewards;
 };
 
-function RewardsSection({ rewards }: RewardsSectionProps) {
+function TieredRewardsSection({ rewards }: TieredRewardsSectionProps) {
   return (
     <SectionWrapper
       title="Rewards earning"
@@ -357,12 +485,12 @@ function RewardsSection({ rewards }: RewardsSectionProps) {
   );
 }
 
-type TiersSectionProps = {
-  tiers: Tiers;
+type TieredTiersSectionProps = {
+  tiers: TieredTiers;
   currency: string;
 };
 
-function TiersSection({ tiers, currency }: TiersSectionProps) {
+function TieredTiersSection({ tiers, currency }: TieredTiersSectionProps) {
   return (
     <SectionWrapper title="Tier progression" description={tiers.downgradeRule}>
       <div className="overflow-x-auto">
@@ -393,13 +521,13 @@ function TiersSection({ tiers, currency }: TiersSectionProps) {
   );
 }
 
-type TierBenefitsSectionProps = {
-  tierBenefits: TierBenefits;
+type TieredTierBenefitsSectionProps = {
+  tierBenefits: TieredTierBenefits;
   rewardsCurrency: string;
   spendCurrency: string;
 };
 
-function TierBenefitsSection({ tierBenefits, rewardsCurrency, spendCurrency }: TierBenefitsSectionProps) {
+function TieredTierBenefitsSection({ tierBenefits, rewardsCurrency, spendCurrency }: TieredTierBenefitsSectionProps) {
   return (
     <SectionWrapper title="Tier benefits">
       <div className="space-y-8">
@@ -459,11 +587,11 @@ function TierBenefitsSection({ tierBenefits, rewardsCurrency, spendCurrency }: T
   );
 }
 
-type LoungeAccessSectionProps = {
-  loungeAccess: LoungeAccess;
+type TieredLoungeAccessSectionProps = {
+  loungeAccess: TieredLoungeAccess;
 };
 
-function LoungeAccessSection({ loungeAccess }: LoungeAccessSectionProps) {
+function TieredLoungeAccessSection({ loungeAccess }: TieredLoungeAccessSectionProps) {
   const tiers = Array.from(
     new Set([
       ...Object.keys(loungeAccess.domestic),
@@ -508,12 +636,12 @@ function LoungeAccessSection({ loungeAccess }: LoungeAccessSectionProps) {
   );
 }
 
-type MilesRedemptionSectionProps = {
-  milesRedemption: MilesRedemption;
+type TieredMilesRedemptionSectionProps = {
+  milesRedemption: TieredMilesRedemption;
   rewardsCurrency: string;
 };
 
-function MilesRedemptionSection({ milesRedemption, rewardsCurrency }: MilesRedemptionSectionProps) {
+function TieredMilesRedemptionSection({ milesRedemption, rewardsCurrency }: TieredMilesRedemptionSectionProps) {
   return (
     <SectionWrapper title="Miles redemption options">
       <div className="space-y-6">
@@ -556,12 +684,12 @@ function MilesRedemptionSection({ milesRedemption, rewardsCurrency }: MilesRedem
   );
 }
 
-type AdditionalInfoSectionProps = {
-  additionalInfo: AdditionalInfo;
+type TieredAdditionalInfoSectionProps = {
+  additionalInfo: TieredAdditionalInfo;
   rewardsCurrency: string;
 };
 
-function AdditionalInfoSection({ additionalInfo, rewardsCurrency }: AdditionalInfoSectionProps) {
+function TieredAdditionalInfoSection({ additionalInfo, rewardsCurrency }: TieredAdditionalInfoSectionProps) {
   const bulletPoints: string[] = [];
 
   if (additionalInfo.milesNotEncashable) {
@@ -624,6 +752,492 @@ function CardImageSection({ image }: CardImageSectionProps) {
   );
 }
 
+function createWelcomeOfferSummary(card: Card) {
+  if (card.layout === "tieredMiles") {
+    return createTieredWelcomeOfferSummary(card.welcomeBenefit, card.rewards.currency);
+  }
+
+  const summaryParts: string[] = [];
+
+  if (card.welcomeBenefits.membershipUnlock) {
+    const membership = card.welcomeBenefits.membershipUnlock;
+    const memberships = membership.benefits.join(" + ");
+    summaryParts.push(`${memberships} after spending ${membership.spendRequirement}`);
+  }
+
+  if (card.welcomeBenefits.joiningVoucher) {
+    const voucher = card.welcomeBenefits.joiningVoucher;
+    summaryParts.push(`₹${formatNumber(voucher.valueInInr)} voucher - ${voucher.condition}`);
+  }
+
+  return summaryParts.join("; ");
+}
+
+type TieredMilesCardSectionsProps = {
+  card: TieredMilesCard;
+};
+
+function TieredMilesCardSections({ card }: TieredMilesCardSectionsProps) {
+  return (
+    <>
+      <TieredCardSnapshot card={card} />
+      <TieredWelcomeBenefitSection welcomeBenefit={card.welcomeBenefit} rewardsCurrency={card.rewards.currency} />
+      <TieredRewardsSection rewards={card.rewards} />
+      <TieredTiersSection tiers={card.tiers} currency={card.annualFee.currency} />
+      <TieredTierBenefitsSection
+        tierBenefits={card.tierBenefits}
+        rewardsCurrency={card.rewards.currency}
+        spendCurrency={card.annualFee.currency}
+      />
+      <TieredLoungeAccessSection loungeAccess={card.loungeAccess} />
+      <TieredMilesRedemptionSection milesRedemption={card.milesRedemption} rewardsCurrency={card.rewards.currency} />
+      <TieredAdditionalInfoSection additionalInfo={card.additionalInfo} rewardsCurrency={card.rewards.currency} />
+    </>
+  );
+}
+
+type LifestyleCardSectionsProps = {
+  card: LifestyleCard;
+};
+
+function LifestyleCardSections({ card }: LifestyleCardSectionsProps) {
+  return (
+    <>
+      <LifestyleCardSnapshot card={card} />
+      <LifestyleWelcomeBenefitsSection card={card} />
+      <LifestyleRewardsSection rewards={card.rewards} currency={card.annualFee.currency} />
+      <LifestyleRedemptionSection redemption={card.redemption} />
+      <LifestyleMilestoneSection milestoneBenefits={card.milestoneBenefits} currency={card.annualFee.currency} />
+      <LifestyleLoungeAccessSection loungeAccess={card.loungeAccess} />
+      <LifestyleSupportSection concierge={card.concierge} insurance={card.insurance} />
+      <LifestyleEligibilitySection eligibility={card.eligibility} />
+      <LifestyleSpecialProgramsSection specialPrograms={card.specialPrograms} />
+    </>
+  );
+}
+
+type LifestyleCardSnapshotProps = {
+  card: LifestyleCard;
+};
+
+function LifestyleCardSnapshot({ card }: LifestyleCardSnapshotProps) {
+  const { fees, travelBenefitsTags, rewardTags } = card;
+  const snapshotDescription = fees.welcomeBenefitCondition
+    ? `Welcome perks unlock when you ${fees.welcomeBenefitCondition}.`
+    : undefined;
+
+  return (
+    <SectionWrapper title="Card snapshot" description={snapshotDescription}>
+      <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
+        <div>
+          <dt className="font-semibold text-white">Issuer</dt>
+          <dd>{card.issuer}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Network</dt>
+          <dd>{card.network}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Card type</dt>
+          <dd>{card.type}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Joining fee</dt>
+          <dd>{formatSpend(fees.joiningFee, card.annualFee.currency)}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Renewal fee</dt>
+          <dd>{formatSpend(fees.renewalFee, card.annualFee.currency)}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-white">Foreign exchange markup</dt>
+          <dd>{card.foreignExchangeMarkup ?? "—"}</dd>
+        </div>
+        {travelBenefitsTags?.length ? (
+          <div className="sm:col-span-2">
+            <dt className="font-semibold text-white">Travel focus</dt>
+            <dd className="mt-2">
+              <ul className="flex flex-wrap gap-2">
+                {travelBenefitsTags.map((tag) => (
+                  <li
+                    key={tag}
+                    className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-200"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        ) : null}
+        {rewardTags?.length ? (
+          <div className="sm:col-span-2">
+            <dt className="font-semibold text-white">Rewards focus</dt>
+            <dd className="mt-2">
+              <ul className="flex flex-wrap gap-2">
+                {rewardTags.map((tag) => (
+                  <li
+                    key={tag}
+                    className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-200"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        ) : null}
+        {card.keyHighlights?.length ? (
+          <div className="sm:col-span-2">
+            <dt className="font-semibold text-white">Highlights</dt>
+            <dd className="mt-2">
+              <ul className="space-y-2">
+                {card.keyHighlights.map((highlight) => (
+                  <li key={highlight} className="flex items-start gap-3">
+                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        ) : null}
+      </dl>
+    </SectionWrapper>
+  );
+}
+
+type LifestyleWelcomeBenefitsSectionProps = {
+  card: LifestyleCard;
+};
+
+function LifestyleWelcomeBenefitsSection({ card }: LifestyleWelcomeBenefitsSectionProps) {
+  const { membershipUnlock, joiningVoucher } = card.welcomeBenefits;
+
+  if (!membershipUnlock && !joiningVoucher) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Welcome benefits">
+      <div className="grid gap-6 sm:grid-cols-2">
+        {membershipUnlock ? (
+          <article className="space-y-4 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+            <div className="space-y-1">
+              <h3 className="text-lg font-semibold text-white">Membership unlock</h3>
+              <p className="text-sm text-slate-100/80">Spend {membershipUnlock.spendRequirement} to unlock both memberships.</p>
+            </div>
+            <ul className="space-y-2 text-sm text-slate-100/80">
+              {membershipUnlock.benefits.map((benefit) => (
+                <li key={benefit} className="flex items-start gap-3">
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="space-y-1 text-xs uppercase tracking-[0.3em] text-amber-300">
+              {membershipUnlock.unlockTime ? <p>Unlocks: {membershipUnlock.unlockTime}</p> : null}
+              {membershipUnlock.downloadWindow ? <p>Download window: {membershipUnlock.downloadWindow}</p> : null}
+            </div>
+          </article>
+        ) : null}
+        {joiningVoucher ? (
+          <article className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+            <h3 className="text-lg font-semibold text-white">Joining voucher</h3>
+            <p className="text-sm text-slate-100/80">
+              Worth ₹{formatNumber(joiningVoucher.valueInInr)} in welcome vouchers once you {joiningVoucher.condition}.
+            </p>
+          </article>
+        ) : null}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type LifestyleRewardsSectionProps = {
+  rewards: LifestyleRewards;
+  currency: string;
+};
+
+function LifestyleRewardsSection({ rewards, currency }: LifestyleRewardsSectionProps) {
+  const meta: string[] = [rewards.rewardPosting];
+
+  if (rewards.rewardValidity) {
+    meta.push(`Valid for ${rewards.rewardValidity}`);
+  }
+
+  if (rewards.monthlyRpCap) {
+    meta.push(`Monthly cap: ${formatNumber(rewards.monthlyRpCap)} RP`);
+  }
+
+  return (
+    <SectionWrapper title="Rewards earning" description={meta.join(" · ")}>
+      <div className="space-y-6">
+        <div className="space-y-2">
+          <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">Base earn rate</h3>
+          <p className="text-sm text-slate-100/80">{rewards.baseRate}</p>
+        </div>
+        {rewards.acceleratedRewards ? (
+          <div className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+            <h3 className="text-base font-semibold text-white">5X partner merchants</h3>
+            <p className="text-sm text-slate-100/80">{rewards.acceleratedRewards.rate}</p>
+            <ul className="mt-2 grid gap-2 text-sm text-slate-100/80 sm:grid-cols-2">
+              {rewards.acceleratedRewards.merchants.map((merchant) => (
+                <li key={merchant} className="rounded-xl border border-white/10 bg-slate-950/60 px-3 py-2">
+                  {merchant}
+                </li>
+              ))}
+            </ul>
+            <div className="text-xs uppercase tracking-[0.3em] text-amber-300">
+              {rewards.acceleratedRewards.minSpend ? (
+                <p>Min transaction: {formatSpend(rewards.acceleratedRewards.minSpend, currency)}</p>
+              ) : null}
+              {rewards.acceleratedRewards.monthlyCapRp ? (
+                <p>Monthly bonus cap: {formatNumber(rewards.acceleratedRewards.monthlyCapRp)} RP</p>
+              ) : null}
+            </div>
+          </div>
+        ) : null}
+        <div className="space-y-3">
+          <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">Exclusions & caps</h3>
+          <ul className="grid gap-2 text-sm text-slate-100/80 sm:grid-cols-2">
+            {rewards.rewardExclusions.map((item) => (
+              <li key={item} className="rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type LifestyleRedemptionSectionProps = {
+  redemption: LifestyleRedemption;
+};
+
+function LifestyleRedemptionSection({ redemption }: LifestyleRedemptionSectionProps) {
+  const { smartBuyPortalValue } = redemption;
+
+  return (
+    <SectionWrapper title="Redemption value" description={redemption.travelRedemptionLimit}>
+      <div className="grid gap-4 text-sm text-slate-100/80 sm:grid-cols-2">
+        {Object.entries(smartBuyPortalValue).map(([key, value]) => (
+          <article key={key} className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">{formatLabel(key)}</h3>
+            <p className="mt-2 text-base font-semibold text-white">{value}</p>
+          </article>
+        ))}
+      </div>
+      {redemption.airmilesConversion ? (
+        <p className="mt-6 text-sm text-slate-100/80">{redemption.airmilesConversion.conversionRate}</p>
+      ) : null}
+    </SectionWrapper>
+  );
+}
+
+type LifestyleMilestoneSectionProps = {
+  milestoneBenefits?: LifestyleMilestoneBenefits;
+  currency: string;
+};
+
+function LifestyleMilestoneSection({ milestoneBenefits, currency }: LifestyleMilestoneSectionProps) {
+  if (!milestoneBenefits) {
+    return null;
+  }
+
+  const { quarterly, annual, voucherUnlockTime } = milestoneBenefits;
+
+  if (!quarterly && (!annual || !annual.length)) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Milestone benefits" description={voucherUnlockTime}>
+      <div className="space-y-6">
+        {quarterly ? (
+          <article className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+            <h3 className="text-base font-semibold text-white">Quarterly gift vouchers</h3>
+            <p className="text-sm text-slate-100/80">
+              Spend {formatSpend(quarterly.spendRequirement, currency)} each quarter to choose a {formatSpend(quarterly.voucherValue, currency)} voucher.
+            </p>
+            <ul className="grid gap-2 text-sm text-slate-100/80 sm:grid-cols-2">
+              {quarterly.brandChoices.map((brand) => (
+                <li key={brand} className="rounded-xl border border-white/10 bg-slate-950/60 px-3 py-2">
+                  {brand}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ) : null}
+        {annual?.length ? (
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">Annual flight vouchers</h3>
+            <ul className="space-y-2 text-sm text-slate-100/80">
+              {annual.map((item) => (
+                <li key={`${item.threshold}-${item.benefit}`} className="flex items-start gap-3">
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span>
+                    {formatSpend(item.threshold, currency)} spend → {item.benefit}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type LifestyleLoungeAccessSectionProps = {
+  loungeAccess: LifestyleLoungeAccess;
+};
+
+function LifestyleLoungeAccessSection({ loungeAccess }: LifestyleLoungeAccessSectionProps) {
+  if (!loungeAccess.india && !loungeAccess.internationalPriorityPass) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Lounge access">
+      <div className="grid gap-4 text-sm text-slate-100/80 sm:grid-cols-2">
+        {loungeAccess.india ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+            <h3 className="text-base font-semibold text-white">India lounges</h3>
+            <p>{loungeAccess.india.quota} complimentary visits</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-amber-300">{loungeAccess.india.terminals}</p>
+            {loungeAccess.india.method ? (
+              <p className="text-xs text-slate-100/70">Access method: {loungeAccess.india.method}</p>
+            ) : null}
+          </article>
+        ) : null}
+        {loungeAccess.internationalPriorityPass ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+            <h3 className="text-base font-semibold text-white">Priority Pass (International)</h3>
+            <p>{loungeAccess.internationalPriorityPass.quota} visits per membership year</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-amber-300">
+              ${loungeAccess.internationalPriorityPass.chargeAfterQuotaUsd} after quota
+            </p>
+            {loungeAccess.internationalPriorityPass.notes?.length ? (
+              <ul className="space-y-2 text-xs text-slate-100/70">
+                {loungeAccess.internationalPriorityPass.notes.map((note) => (
+                  <li key={note} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-amber-300" aria-hidden />
+                    <span>{note}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </article>
+        ) : null}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type LifestyleSupportSectionProps = {
+  concierge?: LifestyleConcierge;
+  insurance?: LifestyleInsurance;
+};
+
+function LifestyleSupportSection({ concierge, insurance }: LifestyleSupportSectionProps) {
+  if (!concierge && !insurance) {
+    return null;
+  }
+
+  return (
+    <SectionWrapper title="Support & protection">
+      <div className="grid gap-4 text-sm text-slate-100/80 sm:grid-cols-2">
+        {concierge ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Concierge</h3>
+            {concierge.email ? <p>Email: {concierge.email}</p> : null}
+            {concierge.phone ? <p>Phone: {concierge.phone}</p> : null}
+          </article>
+        ) : null}
+        {insurance ? (
+          <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Insurance</h3>
+            {insurance.lostCardLiability ? <p>{insurance.lostCardLiability}</p> : null}
+          </article>
+        ) : null}
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type LifestyleEligibilitySectionProps = {
+  eligibility?: LifestyleEligibility;
+};
+
+function LifestyleEligibilitySection({ eligibility }: LifestyleEligibilitySectionProps) {
+  if (!eligibility) {
+    return null;
+  }
+
+  const segments = Object.entries(eligibility);
+
+  return (
+    <SectionWrapper title="Eligibility">
+      <div className="overflow-x-auto">
+        <table className="min-w-full divide-y divide-white/10 text-sm text-slate-100/80">
+          <thead>
+            <tr>
+              <th scope="col" className="px-4 py-3 text-left font-semibold uppercase tracking-wide text-slate-200">
+                Segment
+              </th>
+              <th scope="col" className="px-4 py-3 text-left font-semibold uppercase tracking-wide text-slate-200">
+                Age
+              </th>
+              <th scope="col" className="px-4 py-3 text-left font-semibold uppercase tracking-wide text-slate-200">
+                Income / ITR requirement
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white/10">
+            {segments.map(([segment, details]) => (
+              <tr key={segment} className="align-top">
+                <td className="px-4 py-3">{formatLabel(segment)}</td>
+                <td className="px-4 py-3">{details.age}</td>
+                <td className="px-4 py-3">
+                  {details.incomeMin ?? details.itrMin ?? "—"}
+                  {details.incomeMin && details.itrMin ? (
+                    <p className="text-xs text-slate-100/60">ITR: {details.itrMin}</p>
+                  ) : null}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </SectionWrapper>
+  );
+}
+
+type LifestyleSpecialProgramsSectionProps = {
+  specialPrograms?: LifestyleSpecialPrograms;
+};
+
+function LifestyleSpecialProgramsSection({ specialPrograms }: LifestyleSpecialProgramsSectionProps) {
+  if (!specialPrograms?.dining) {
+    return null;
+  }
+
+  const { dining } = specialPrograms;
+
+  return (
+    <SectionWrapper title="Special programs">
+      <article className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6 text-sm text-slate-100/80">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">{dining.program}</p>
+        <p className="text-base font-semibold text-white">{dining.benefit}</p>
+        {dining.platform ? <p>Powered by {dining.platform}</p> : null}
+      </article>
+    </SectionWrapper>
+  );
+}
+
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -679,7 +1293,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const welcomeOfferSummary = createWelcomeOfferSummary(card.welcomeBenefit, card.rewards.currency);
+  const welcomeOfferSummary = createWelcomeOfferSummary(card);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "FinancialProduct",
@@ -730,25 +1344,11 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
 
         {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
 
-        <CardSnapshot card={card} />
-
-        <WelcomeBenefitSection welcomeBenefit={card.welcomeBenefit} rewardsCurrency={card.rewards.currency} />
-
-        <RewardsSection rewards={card.rewards} />
-
-        <TiersSection tiers={card.tiers} currency={card.annualFee.currency} />
-
-        <TierBenefitsSection
-          tierBenefits={card.tierBenefits}
-          rewardsCurrency={card.rewards.currency}
-          spendCurrency={card.annualFee.currency}
-        />
-
-        <LoungeAccessSection loungeAccess={card.loungeAccess} />
-
-        <MilesRedemptionSection milesRedemption={card.milesRedemption} rewardsCurrency={card.rewards.currency} />
-
-        <AdditionalInfoSection additionalInfo={card.additionalInfo} rewardsCurrency={card.rewards.currency} />
+        {card.layout === "tieredMiles" ? (
+          <TieredMilesCardSections card={card} />
+        ) : (
+          <LifestyleCardSections card={card} />
+        )}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Ready for more cards?</p>
