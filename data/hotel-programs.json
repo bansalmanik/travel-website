@@ -429,26 +429,26 @@
       },
       "tags": [
         "Hotel Loyalty",
-        "Travel Rewards",
-        "Cash-like Redemption",
-        "Dining Rewards",
-        "VIP Experiences"
+        "Free Breakfast",
+        "Suite Upgrades",
+        "Fifth Night Free",
+        "Digital Key"
       ]
     },
     {
       "slug": "hilton-honors",
       "name": "Hilton Honors",
-      "footprint": "7,000+ hotels and resorts worldwide",
-      "summary": "Dynamic pricing paired with automatic elite status from credit cards makes Hilton easy to engage with.",
-      "seoDescription": "Find out how Hilton Honors elite perks, free breakfast benefits, and 5th Night Free awards make points easy to spend.",
+      "footprint": "7,000+ hotels across 120 countries",
+      "summary": "Points + Money awards, elite rollover nights, and complimentary breakfast at higher tiers keep Hilton Honors members engaged.",
+      "seoDescription": "Explore Hilton Honors perks including Points + Money awards, 5th Night Free redemptions, and elite benefits like breakfast and lounge access.",
       "overview": {
         "items": [
-          "Nearly every Hilton brand participates in Honors, from Hampton to Waldorf Astoria.",
-          "Award pricing is flexible but often caps at 120K points for luxury properties.",
-          "Automatic elite status from Amex co-branded cards speeds up benefit access.",
-          "Points pool with up to 10 friends or family to reach redemptions faster."
+          "Earn points on hotel stays, dining, and partner spending across brands like Waldorf Astoria, Conrad, and Hampton.",
+          "Points + Money awards and no blackout dates on standard rooms make redemptions flexible.",
+          "Elite rollover nights and milestone bonuses reward frequent travelers year over year.",
+          "Status gifting for top-tier members helps family or friends enjoy elite perks."
         ],
-        "note": "Hilton Honors excels when you combine frequent points sales, Amex transfer bonuses, and the 5th Night Free feature."
+        "note": "Hilton Honors excels when you combine frequent points sales, transfer bonuses, and the 5th Night Free feature for longer stays."
       },
       "statusLevels": {
         "tiers": [
@@ -477,8 +477,8 @@
             ]
           },
           {
-            "label": "Daily food & beverage credit / breakfast",
-            "description": "Gold and Diamond receive complimentary breakfast or a daily F&B credit at most full-service brands in the Americas.",
+            "label": "Breakfast or daily food & beverage credit",
+            "description": "Gold and Diamond enjoy complimentary breakfast or daily dining credits at most full-service brands.",
             "values": [
               "Not included",
               "Continental breakfast at select brands",
@@ -543,7 +543,7 @@
             ]
           }
         ],
-        "note": "Hilton Honors Diamond can be secured instantly with the Hilton Aspire card, unlocking top-tier perks without nightly requirements.",
+        "note": "Hilton Honors Diamond can be secured instantly with the Hilton Aspire card, unlocking lounge access, premium Wi-Fi, and status gifting.",
         "image": {
           "src": "/images/content/photo-1528909514045--406e194c93d3.svg",
           "alt": "Hilton resort entrance at sunset"
@@ -560,52 +560,52 @@
       },
       "pointsEarn": {
         "items": [
-          "10 base points per $1 at most Hilton brands.",
-          "Limited service brands like Tru and Home2 Suites earn 5 base points per $1.",
-          "Elite tier bonuses stack on top of base points and ongoing global promotions.",
-          "American Express Membership Rewards® transfer to Hilton at a 1:2 ratio."
+          "Earn 10 base points per $1 at most Hilton brands and 5 points per $1 at Tru and Home2 Suites.",
+          "Silver, Gold, and Diamond elites earn 20%, 80%, and 100% point bonuses respectively.",
+          "Hilton Honors points accrue on room rates, dining, spa services, and on-property incidentals.",
+          "Supplement earnings via Hilton co-branded cards, airline and car rental partners, or Amex Membership Rewards® transfers at 1:2."
         ]
       },
       "pointsBurn": {
         "items": [
-          "Standard room rewards start around 5,000 points and scale dynamically.",
-          "Aim for 0.4–0.6 cents per point at luxury properties and peak season resorts.",
-          "Use Points & Money awards to conserve points when cash rates are low."
+          "Redeem for free nights, room upgrades, Hilton Experiences, and even car rentals.",
+          "Points + Money awards stretch balances when cash rates are reasonable.",
+          "U.S. members can use Shop with Points at Amazon or transfer points to airline partners."
         ]
       },
       "paidMemberships": {
         "items": [
-          "Hilton Honors is complimentary; elite tiers can also be gifted or granted via American Express cards.",
-          "Hilton Grand Vacations owners may receive complimentary elite status accelerators."
+          "Hilton Honors is complimentary to join, with elite status earned through stays or co-branded credit cards.",
+          "Hilton Grand Vacations ownership and Diamond gifting can accelerate elite status."
         ]
       },
       "otherBenefits": {
         "items": [
           "5th Night Free on award stays of five nights or more.",
-          "Points pooling allows sharing with up to 10 members at no cost.",
-          "Elite rollover nights help you jumpstart the following year’s qualification.",
-          "Partnerships with Lyft and Live Nation generate extra points on rides and event tickets."
+          "Elite rollover nights and milestone bonuses help maintain status year to year.",
+          "Diamond members receive executive lounge access, premium Wi-Fi, and status gifting options.",
+          "Points pooling allows sharing with up to 10 members at no cost."
         ]
       }
     },
     {
       "slug": "ihg-one-rewards",
       "name": "IHG One Rewards",
-      "footprint": "6,000+ hotels with luxury brands like Regent and Six Senses",
-      "summary": "Revamped elite program with milestone choice awards, lounge access for top tiers, and a healthy pipeline of new luxury properties.",
-      "seoDescription": "Get up to speed on IHG One Rewards benefits, milestone choices, and sweet spots for the program's flexible award pricing.",
+      "footprint": "6,200+ hotels across 100 countries",
+      "summary": "Milestone Rewards, dynamic award pricing, and suite upgrades keep IHG One Rewards competitive for frequent guests.",
+      "seoDescription": "Learn how IHG One Rewards members earn and redeem points for free nights, suite upgrades, Milestone Rewards, and flexible Point & Cash bookings.",
       "overview": {
         "items": [
-          "Dynamic award pricing often yields outsized value during off-peak dates.",
-          "Milestone Rewards let you pick suite upgrades, food & beverage credits, or annual lounge membership.",
-          "Chase co-branded cards include fourth-night-free awards and automatic Platinum status.",
-          "Luxury & Lifestyle brands like Kimpton and Regent deliver unique on-property perks."
+          "Earn points on stays across brands like InterContinental, Kimpton, Six Senses, and Holiday Inn.",
+          "Dynamic pricing and Point & Cash awards offer flexibility when redeeming for free nights.",
+          "Milestone Rewards every 10 nights from 20 to 100 nights unlock suite upgrades and food & beverage credits.",
+          "Diamond elites can choose free breakfast while suite upgrades extend to select luxury stays."
         ],
-        "note": "IHG’s overhaul introduced meaningful elite benefits, especially for travelers who cross 40 and 70 night milestones."
+        "note": "IHG’s overhaul introduced meaningful elite benefits, especially when you plan stays around Milestone Rewards thresholds."
       },
       "statusLevels": {
         "tiers": [
-          "Club Member",
+          "Member",
           "Silver Elite",
           "Gold Elite",
           "Platinum Elite",
@@ -616,10 +616,10 @@
             "label": "Stay requirement",
             "values": [
               "Free to join",
-              "10 nights / 10K elite qualifying points",
-              "20 nights / 20K elite qualifying points",
-              "40 nights / 40K elite qualifying points",
-              "70 nights / 70K elite qualifying points"
+              "10 nights",
+              "20 nights / 40K points",
+              "40 nights / 60K points",
+              "70 nights / 120K points"
             ]
           },
           {
@@ -649,7 +649,7 @@
               "Not included",
               "Points or drink/snack at select brands",
               "Points or drink/snack at select brands",
-              "Hot breakfast option at select brands"
+              "Free breakfast welcome choice"
             ]
           },
           {
@@ -669,7 +669,7 @@
               "Not included",
               "Not included",
               "Not included",
-              "Guaranteed at Regent, InterContinental, Kimpton, and participating brands"
+              "Available via Milestone Rewards or participating luxury brands"
             ]
           },
           {
@@ -694,7 +694,7 @@
             ]
           }
         ],
-        "note": "Milestone Rewards are the secret sauce—plan your stays to hit 40 nights for two confirmable suite upgrades.",
+        "note": "Milestone Rewards are the secret sauce—plan your stays every 10 nights to pick bonuses like suite upgrades or lounge membership.",
         "image": {
           "src": "/images/content/photo-1554995207-c18-3652a602396e.svg",
           "alt": "IHG hotel exterior at dusk"
@@ -710,31 +710,31 @@
       },
       "pointsEarn": {
         "items": [
-          "10 base points per $1 at most full-service and lifestyle brands.",
-          "5 base points per $1 at Staybridge Suites and Candlewood Suites.",
-          "Diamond elites earn a 100% point bonus on top of base earnings.",
-          "Chase Ultimate Rewards® transfer to IHG at a 1:1 ratio via the Chase Travel portal (Pay Yourself Back)."
+          "Earn 10 base points per $1 at most brands and 5 points per $1 at Staybridge Suites and Candlewood Suites.",
+          "Silver, Gold, Platinum, and Diamond elites receive 20%, 40%, 60%, and 100% point bonuses respectively.",
+          "Eligible charges include room rates, on-property dining, and other hotel incidentals.",
+          "Boost earnings with IHG co-branded credit cards, airline and car rental partners, or dining partners."
         ]
       },
       "pointsBurn": {
         "items": [
-          "Dynamic pricing means off-peak redemptions can drop below 0.5 cents per point.",
-          "Fourth Night Free benefit on award stays with IHG Premier cards effectively reduces nightly cost by 25%.",
-          "Use Points & Cash to buy back discounted points when rates are favorable."
+          "Redeem for free nights, room upgrades, or experiences through the IHG marketplace.",
+          "Point & Cash bookings provide flexibility when you are short on points.",
+          "Transfer to airline partners or redeem for digital rewards and merchandise."
         ]
       },
       "paidMemberships": {
         "items": [
-          "IHG One Rewards is complimentary; elite tiers come from stays, points, or qualifying credit card spend.",
-          "InterContinental Ambassador is a paid program that grants guaranteed upgrades, free weekend nights, and additional amenities at InterContinental hotels."
+          "IHG One Rewards is complimentary; elite tiers are achieved through stays, qualifying points, or co-branded credit cards.",
+          "InterContinental Ambassador membership adds guaranteed upgrades, a free weekend night, and other InterContinental perks."
         ]
       },
       "otherBenefits": {
         "items": [
-          "Kimpton Inner Circle elites receive chef's treats and on-property experiences.",
-          "PointBreaks promos occasionally offer select hotels for as low as 5,000 points per night.",
-          "Annual choice awards include a confirmable suite upgrade that can be applied to cash or award stays.",
-          "Partnership with Mr & Mrs Smith adds boutique properties with elite recognition and earn/burn options."
+          "Milestone Rewards every 10 nights from 20 to 100 nights let you pick bonus points, credits, or suite upgrades.",
+          "Diamond elites can select free breakfast as part of their welcome amenity.",
+          "Elite rollover nights help maintain status into the next year.",
+          "Premier cardholders receive a Fourth Night Free award when redeeming points."
         ]
       }
     }
