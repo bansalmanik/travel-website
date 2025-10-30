@@ -1,49 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { FlightProgramSections } from "@/app/components/flight-program-sections";
+import type { FlightProgram } from "@/app/travel-with-points/flight-programs/types";
 import flightData from "@/data/flight-programs.json";
-
-type SectionImage = {
-  src: string;
-  alt: string;
-  caption?: string;
-};
-
-type BaseSection = {
-  id: string;
-  title: string;
-  intro?: string;
-  paragraphs?: string[];
-  images?: SectionImage[];
-};
-
-type BulletSection = BaseSection & {
-  style: "bullets";
-  bullets: string[];
-};
-
-type TableSection = BaseSection & {
-  style: "table";
-  table: {
-    caption?: string;
-    columns: string[];
-    rows: { cells: string[] }[];
-  };
-};
-
-type ProgramSection = BulletSection | TableSection;
-
-type FlightProgram = {
-  slug: string;
-  name: string;
-  alliance: string;
-  hub: string;
-  summary: string;
-  seoDescription: string;
-  sections: ProgramSection[];
-};
 
 const programs = (flightData as { programs: FlightProgram[] }).programs;
 
@@ -74,7 +35,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       `${program.name} award chart`,
       `${program.name} elite status`,
       `${program.alliance} loyalty program`,
-      "airline miles sweet spots"
+      "airline miles sweet spots",
+      ...(program.tags ?? [])
     ],
     alternates: {
       canonical: `/travel-with-points/flight-programs/${program.slug}`
@@ -132,77 +94,6 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
     }
   };
 
-  const renderSectionContent = (section: ProgramSection) => {
-    if (section.style === "table") {
-      return (
-        <div className="space-y-6">
-          {section.intro ? (
-            <p className="text-sm text-slate-100/80">{section.intro}</p>
-          ) : null}
-          {section.paragraphs?.map((paragraph, index) => (
-            <p key={`${section.id}-table-paragraph-${index}`} className="text-sm text-slate-100/80">
-              {paragraph}
-            </p>
-          ))}
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[340px] border-separate border-spacing-y-2 text-left text-sm text-slate-100/80">
-              {section.table.caption ? (
-                <caption className="pb-2 text-left text-xs uppercase tracking-[0.2em] text-emerald-300">
-                  {section.table.caption}
-                </caption>
-              ) : null}
-              <thead>
-                <tr>
-                  {section.table.columns.map((column) => (
-                    <th
-                      key={column}
-                      scope="col"
-                      className="rounded-lg bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-emerald-200"
-                    >
-                      {column}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {section.table.rows.map((row, rowIndex) => (
-                  <tr key={`${section.id}-${rowIndex}`} className="align-top">
-                    {row.cells.map((cell, cellIndex) => (
-                      <td key={`${section.id}-${rowIndex}-${cellIndex}`} className="rounded-lg bg-white/5 px-4 py-3">
-                        {cell}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      );
-    }
-
-    return (
-      <div className="space-y-6">
-        {section.intro ? (
-          <p className="text-sm text-slate-100/80">{section.intro}</p>
-        ) : null}
-        {section.paragraphs?.map((paragraph, index) => (
-          <p key={`${section.id}-paragraph-${index}`} className="text-sm text-slate-100/80">
-            {paragraph}
-          </p>
-        ))}
-        <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-          {section.bullets.map((bullet, index) => (
-            <li key={`${section.id}-bullet-${index}`} className="flex items-start gap-3">
-              <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-300" aria-hidden />
-              <span>{bullet}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  };
-
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <script
@@ -248,45 +139,7 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
           </dl>
         </section>
 
-        {program.sections.map((section) => (
-          <section
-            key={section.id}
-            className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
-            aria-labelledby={`${section.id}-heading`}
-          >
-            <div className="space-y-4">
-              <h2 id={`${section.id}-heading`} className="text-xl font-semibold text-white">
-                {section.title}
-              </h2>
-              {renderSectionContent(section)}
-            </div>
-            {section.images && section.images.length > 0 ? (
-              <div className="grid gap-4 sm:grid-cols-2">
-                {section.images.map((image) => (
-                  <figure
-                    key={`${section.id}-${image.src}`}
-                    className="overflow-hidden rounded-2xl border border-white/10 bg-white/10"
-                  >
-                    <div className="relative aspect-[4/3] w-full">
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        fill
-                        sizes="(min-width: 1024px) 50vw, 100vw"
-                        className="object-cover"
-                      />
-                    </div>
-                    {image.caption ? (
-                      <figcaption className="px-4 py-3 text-xs uppercase tracking-[0.2em] text-slate-200/70">
-                        {image.caption}
-                      </figcaption>
-                    ) : null}
-                  </figure>
-                ))}
-              </div>
-            ) : null}
-          </section>
-        ))}
+        <FlightProgramSections sections={program.sections} />
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Compare more airline programs</p>

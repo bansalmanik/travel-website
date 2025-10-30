@@ -591,6 +591,201 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "indigo-bluchip",
+      "name": "IndiGo BluChip",
+      "alliance": "Independent (6E)",
+      "hub": "Delhi (DEL), Mumbai (BOM), Bengaluru (BLR)",
+      "summary": "IndiGo's BluChip program layers easy earning on base fares with stackable channel bonuses and deep discounts on prepaid add-ons.",
+      "seoDescription": "Understand IndiGo BluChip earning, tier shortcuts, and 6E Prime perks with a flexible guide to India's largest low-cost carrier loyalty program.",
+      "tags": [
+        "Airline Loyalty",
+        "Flight Rewards",
+        "Tiered Benefits",
+        "Add-On Discounts",
+        "Dynamic Activity Review"
+      ],
+      "sections": [
+        {
+          "id": "program-essentials",
+          "title": "Program essentials",
+          "style": "key-values",
+          "intro": "Key facts to get started with IndiGo BluChip.",
+          "columns": 2,
+          "items": [
+            {
+              "label": "Issuer",
+              "value": "IndiGo Airlines (6E)"
+            },
+            {
+              "label": "Program type",
+              "value": "Airline loyalty program"
+            },
+            {
+              "label": "Join cost",
+              "value": "Free to join"
+            },
+            {
+              "label": "Earn currency",
+              "value": "IndiGo BluChips"
+            },
+            {
+              "label": "Earning basis",
+              "value": "Base fare + fuel surcharge (YQ)"
+            },
+            {
+              "label": "Tiers",
+              "value": "Blu 3 • Blu 2 • Blu 1"
+            }
+          ],
+          "images": [
+            {
+              "src": "/flight-programs/india-gateway.svg",
+              "alt": "IndiGo aircraft against an India skyline",
+              "caption": "BluChip keeps frequent India flyers engaged across 6E hubs."
+            }
+          ]
+        },
+        {
+          "id": "overview",
+          "title": "How IndiGo BluChip works",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "IndiGo BluChip rewards members for every eligible rupee spent with IndiGo and select partners, layering base earnings with tier and channel bonuses."
+            },
+            {
+              "type": "bullets",
+              "title": "Ways to earn BluChips",
+              "items": [
+                "8 BluChips per ₹100 on base fare and fuel surcharge across IndiGo and eligible codeshare flights.",
+                "Extra BluChips when booking on the IndiGo website or mobile app via channel bonuses.",
+                "Earn on prepaid add-ons such as Seat Select, Excess Baggage, and Fast Forward."
+              ]
+            },
+            {
+              "type": "bullets",
+              "title": "Eligible flight activity",
+              "items": [
+                "6E marketed and operated flights",
+                "6E marketed flights operated by codeshare partners"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "BluChips stay valid with any earn or redeem activity at least once every 24 months."
+            }
+          ]
+        },
+        {
+          "id": "tier-benefits",
+          "title": "BluChip tier breakdown",
+          "style": "table",
+          "intro": "Three elite tiers unlock progressively richer bonuses, 6E Prime passes, and discounts on IndiGo's most popular add-ons.",
+          "table": {
+            "caption": "IndiGo BluChip elite tiers at a glance",
+            "columns": [
+              "Tier",
+              "Qualification",
+              "Retention",
+              "Earn & bonuses",
+              "Signature perks"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Blu 3 (Entry)",
+                  "Automatic enrollment",
+                  "No expiry",
+                  "8 BluChips / ₹100 base earn + 4 BluChips / ₹100 channel bonus",
+                  "10% Seat Select, Excess Baggage, Fast Forward discounts · 0 6E Prime passes · Nominees: 5"
+                ]
+              },
+              {
+                "cells": [
+                  "Blu 2",
+                  "₹1,00,000 IndiGo spend + 4 IndiGo flights (12 months)",
+                  "₹1,00,000 spend + 4 flights annually",
+                  "8 BluChips / ₹100 base + 2 BluChips / ₹100 tier bonus",
+                  "20% add-on discounts · 20 6E Prime passes · Nominees: 5"
+                ]
+              },
+              {
+                "cells": [
+                  "Blu 1",
+                  "₹2,00,000 IndiGo spend + 8 IndiGo flights (12 months)",
+                  "₹2,00,000 spend + 8 flights annually",
+                  "8 BluChips / ₹100 base + 4 BluChips / ₹100 tier bonus",
+                  "30% add-on discounts · 40 6E Prime passes · Nominees: 5"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "tier-rules",
+          "title": "Tier tracking rules",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "IndiGo reviews your spend and flight activity daily for upgrades while retention is measured across the last 365 days."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Upgrade evaluations happen in near real time once thresholds are crossed.",
+                "Annual retention looks back 365 days for both spend and flight requirements.",
+                "Only base fare and fuel surcharge qualify toward BluChip earnings and thresholds.",
+                "Pre-booked add-ons earn at the tier-adjusted bonus rate."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "discounts-and-perks",
+          "title": "Discounts & perks",
+          "style": "bullets",
+          "intro": "BluChip tiers unlock deeper savings on IndiGo's most popular extras.",
+          "bullets": [
+            "Seat selection savings apply only on pre-booked selections across the fleet.",
+            "Discounted Excess Baggage and Fast Forward services scale from 10% to 30% depending on tier.",
+            "6E Prime passes bundle Fast Forward, seat selection, and meals for frequent travelers."
+          ]
+        },
+        {
+          "id": "passes-and-benefits",
+          "title": "Passes & nominee benefits",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "6E Prime passes provide bundles of priority services you can redeem or share with nominees."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Redeem 6E Prime passes for Fast Forward, preferred seating, and meal combos depending on your tier allotment.",
+                "Nominees enjoy the same discounted add-on pricing, making family travel cheaper.",
+                "Manage nominee access directly in your BluChip dashboard."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "points-policy",
+          "title": "Points policy essentials",
+          "style": "bullets",
+          "intro": "Understand the rules that keep your BluChips active and flexible.",
+          "bullets": [
+            "BluChips do not expire as long as you record activity at least once every 24 months.",
+            "All earn calculations follow Base + Tier Bonus + Channel Bonus for clear tracking.",
+            "Monitor the activity log in your account to confirm credits from flights and add-ons."
+          ]
+        }
+      ]
     }
   ],
   "awardPlaybook": [

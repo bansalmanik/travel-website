@@ -4,23 +4,33 @@
       "slug": "marriott-bonvoy",
       "name": "Marriott Bonvoy",
       "footprint": "8,000+ hotels across 139 countries",
-      "summary": "Massive global reach with 30 brands and 5th Night Free awards that stretch certificates and points.",
+      "summary": "Global hotel ecosystem with 30 brands, elite choice benefits, and certificates that stretch further with 5th Night Free awards.",
       "seoDescription": "Explore Marriott Bonvoy elite tiers, certificates, and redemption strategies to maximize the world’s largest hotel program.",
       "overview": {
+        "description": "Global hotel loyalty program with elite status tiers, points on stays, and redemptions for nights, upgrades, and experiences.",
         "items": [
-          "30 distinct hotel brands that span from budget-friendly Moxy to ultra-luxury Ritz-Carlton Reserve.",
-          "Dynamic pricing combined with point top-offs makes free night certificates extremely flexible.",
-          "Elite Night Credits roll in from co-branded cards and annual Choice Benefits unlock milestone perks.",
-          "Homes & Villas portfolio offers vacation rentals that still earn elite night credits and points."
+          "Earn and redeem points across 30 distinct hotel brands plus Homes & Villas vacation rentals.",
+          "Dynamic award pricing can be offset by PointSavers discounts, 5th Night Free, and certificate top-offs.",
+          "Elite Night Credits stack via stays, co-branded card bonuses, and Annual Choice Benefits milestones.",
+          "Ambassador Elite layers personalized service, Your24 scheduling, and 48-Hour availability guarantees."
         ],
-        "note": "Marriott Bonvoy is built for road warriors chasing aspirational redemptions without sacrificing coverage in secondary markets.",
+        "note": "Marriott Bonvoy balances aspirational resorts with unmatched global coverage—ideal for frequent travelers who need both reach and rewards.",
         "image": {
           "src": "/images/content/photo-1520256862855--0d09ea8ba8cb.svg",
           "alt": "Modern Marriott hotel lobby with warm lighting"
         }
       },
+      "quickFacts": [
+        { "label": "Issuer", "value": "Marriott International" },
+        { "label": "Program type", "value": "Hotel loyalty program" },
+        { "label": "Brands", "value": "30" },
+        { "label": "Properties", "value": "8,000+ hotels" },
+        { "label": "Countries & territories", "value": "139" },
+        { "label": "Free to join", "value": "Yes" }
+      ],
       "statusLevels": {
         "tiers": [
+          "Member",
           "Silver Elite",
           "Gold Elite",
           "Platinum Elite",
@@ -31,6 +41,7 @@
           {
             "label": "Stay requirement",
             "values": [
+              "Join program",
               "10 nights / year",
               "25 nights / year",
               "50 nights / year",
@@ -40,8 +51,9 @@
           },
           {
             "label": "Ultimate Reservation Guarantee",
-            "description": "If we can’t honor your reservation, Marriott will cover a comparable stay nearby and compensate for the inconvenience.",
+            "description": "If a hotel can’t honor your reservation, Marriott will rebook you at a comparable property and compensate for the inconvenience.",
             "values": [
+              "Not included",
               "Included",
               "Included",
               "Included",
@@ -53,19 +65,21 @@
             "label": "Bonus points on stays",
             "description": "Earn extra points on eligible hotel purchases depending on elite tier.",
             "values": [
-              "10% Bonus",
-              "25% Bonus",
-              "50% Bonus",
-              "75% Bonus",
-              "75% Bonus"
+              "Base earning (no bonus)",
+              "10% bonus",
+              "25% bonus",
+              "50% bonus",
+              "75% bonus",
+              "75% bonus"
             ]
           },
           {
             "label": "Late checkout",
             "description": "Request complimentary late checkout to enjoy more time on property (availability varies).",
             "values": [
+              "Request at desk",
               "Priority late checkout",
-              "2 p.m.",
+              "2 p.m. late checkout",
               "4 p.m. guaranteed",
               "4 p.m. guaranteed",
               "4 p.m. guaranteed"
@@ -75,6 +89,7 @@
             "label": "Welcome gift",
             "description": "Receive a special amenity or bonus points at participating brands upon arrival.",
             "values": [
+              "Member rates & mobile key",
               "Points",
               "Points or breakfast",
               "Points, breakfast, or amenity",
@@ -86,8 +101,9 @@
             "label": "Enhanced upgrades",
             "description": "Space-available room upgrades; suites included for Platinum Elite and higher.",
             "values": [
-              "Space-available room upgrades",
-              "Space-available enhanced rooms",
+              "Standard room type",
+              "Space-available upgrades",
+              "Enhanced rooms",
               "Includes select suites",
               "Includes select suites",
               "Includes select suites"
@@ -97,6 +113,7 @@
             "label": "Lounge access",
             "description": "Executive lounge entry with complimentary breakfast where available.",
             "values": [
+              "Not included",
               "Not included",
               "Not included",
               "Guaranteed where offered",
@@ -111,6 +128,7 @@
               "Not applicable",
               "Not applicable",
               "Eligible at 50 nights",
+              "Eligible at 50 nights",
               "Eligible at 50 & 75 nights",
               "Eligible at 50 & 75 nights"
             ]
@@ -119,6 +137,7 @@
             "label": "48-Hour Guarantee",
             "description": "Book by 3 p.m., two days prior to arrival and Marriott will find you a room.",
             "values": [
+              "Not available",
               "Not available",
               "Not available",
               "Available",
@@ -134,6 +153,7 @@
               "Not available",
               "Not available",
               "Not available",
+              "Not available",
               "Available"
             ]
           },
@@ -145,13 +165,15 @@
               "Not available",
               "Not available",
               "Not available",
+              "Not available",
               "Dedicated Ambassador"
             ]
           },
           {
             "label": "Airline & travel partners",
-            "description": "Elite members tap into partnerships with Emirates Skywards, United MileagePlus®, and Hertz Gold Plus Rewards®.",
+            "description": "Tap into airline, rental car, and lifestyle partners for incremental earning and benefits.",
             "values": [
+              "Earn & transfer with partners",
               "Emirates Skywards bonus miles",
               "Emirates Skywards bonus miles",
               "Emirates & Hertz Five Star®",
@@ -166,222 +188,267 @@
           "alt": "Hotel loyalty membership card on a marble table"
         }
       },
+      "enrollment": {
+        "items": [
+          "Cost: Free to join for all travelers.",
+          "Elite Night Credits accrue through hotel stays, Homes & Villas reservations, meetings, and co-branded credit card bonuses.",
+          "Lifetime Silver, Gold, and Platinum status can be earned through long-term stay and elite year combinations."
+        ],
+        "note": "Ambassador Elite qualification adds a $23,000 USD annual spend requirement on top of 100 qualifying nights."
+      },
+      "pointsEarn": {
+        "title": "Earning points",
+        "items": [
+          "Earn 10 points per $1 on eligible room charges at most Marriott brands.",
+          "Element, Residence Inn, and TownePlace Suites earn 5 points per $1 while Homes & Villas by Marriott Bonvoy earns 2 points per $1.",
+          "Eligible incidentals—dining, spa treatments, and on-property services—also accrue points when charged to your room.",
+          "Elite bonuses start at 10% for Silver members and rise to 75% for Titanium and Ambassador elites.",
+          "Boost balances with co-branded Marriott credit cards, targeted promotions, and Uber / Uber Eats earning partnerships in select regions."
+        ],
+        "note": "Track elite night credits from personal and business Marriott cards to jump-start status each year."
+      },
+      "pointsBurn": {
+        "title": "Redeeming points",
+        "items": [
+          "Redeem for free nights, room upgrades, and Marriott Bonvoy Moments experiences worldwide.",
+          "Instantly apply points toward dining or spa charges during a stay, or choose Cash + Points to lower nightly costs.",
+          "Dynamic pricing flexes with demand, but 5th Night Free, PointSavers (up to ~20% off), and certificate top-offs (35K–85K points) stretch value.",
+          "Expect 0.6 – 0.9 cents per point in typical redemptions, with outsized value at aspirational resorts or peak cash rates."
+        ]
+      },
+      "eliteBenefitDetails": {
+        "items": [
+          "Enhanced room upgrades are available at most properties, with suites extended to Platinum Elite and higher when inventory allows.",
+          "Late checkout scales with status: Silver enjoys priority handling, Gold receives 2 p.m., and Platinum+ tiers get a guaranteed 4 p.m. checkout.",
+          "Welcome gifts evolve from points-only for lower elites to your choice of points, breakfast, or an amenity for Platinum Elite and beyond.",
+          "Executive lounge access is guaranteed for Platinum Elite and higher at properties offering lounges.",
+          "Ultimate Reservation Guarantee provides compensation and rebooking if the hotel cannot honor your stay."
+        ]
+      },
+      "partnerships": {
+        "items": [
+          "Airline partners include United MileagePlus, Emirates Skywards, Qatar Airways, and additional transfer options via major bank currencies.",
+          "Rental car alliances with Hertz and SIXT unlock status tiers and accelerated earning on qualifying rentals.",
+          "Uber and Uber Eats partnerships in select regions award Bonvoy points on rides and deliveries.",
+          "American Express Membership Rewards transfer to Marriott Bonvoy at a 3:1 ratio, often with limited-time bonuses."
+        ]
+      },
       "coBrandedCards": {
         "items": [
-          "Marriott Bonvoy Boundless® Credit Card",
-          "Marriott Bonvoy Brilliant® American Express® Card",
-          "Marriott Bonvoy Bevy™ American Express® Card",
-          "Marriott Bonvoy Business® American Express® Card"
+          "Marriott Bonvoy Boundless® (Chase) – annual free night certificate and 15 elite night credits.",
+          "Marriott Bonvoy Brilliant® (Amex) – automatic Platinum Elite status, 85K certificate, and monthly dining credits.",
+          "Marriott Bonvoy Bevy™ (Amex) – 50% bonus points on stays after $15K spend and annual 50K certificate with spend.",
+          "Marriott Bonvoy Business® (Amex) – 15 elite night credits plus annual free night award."
         ],
-        "note": "Pair a personal and business card to stack 30 Elite Night Credits toward Platinum status each year.",
+        "note": "Pair personal and business cards to stack at least 30 elite night credits toward Platinum Elite before your first stay.",
         "image": {
           "src": "/images/content/photo-1523285367489--b0b6cecd7646.svg",
           "alt": "Stack of travel credit cards on a desk"
         }
       },
-      "pointsEarn": {
+      "specialPerks": {
         "items": [
-          "10 points per $1 spent at most Marriott brands.",
-          "5 points per $1 at extended stay brands like Element, Residence Inn, and TownePlace Suites.",
-          "2 points per $1 on Homes & Villas by Marriott Bonvoy stays.",
-          "Transfer partner bonus when converting from American Express Membership Rewards® at 3:1 ratio."
+          "5th Night Free automatically applies on award stays of four nights or longer.",
+          "Suite Night Awards from Annual Choice Benefits request confirmed suite upgrades ahead of arrival.",
+          "Elite Night Credits from co-branded cards and milestone rewards accelerate qualification.",
+          "Homes & Villas by Marriott Bonvoy reservations earn both points and elite night credits."
         ]
       },
-      "pointsBurn": {
+      "lifetimeStatus": {
         "items": [
-          "Typical redemption value ranges from 0.6 – 0.9 cents per point depending on destination.",
-          "Look for PointSavers rates to drop nightly cost by up to 20%.",
-          "Use Cash + Points on high demand dates to preserve balances without paying full cash rate."
-        ]
-      },
-      "paidMemberships": {
-        "items": [
-          "Marriott Bonvoy is free to join; no paid subscription tier is required.",
-          "Titanium Elite and Ambassador Elite benefits are earned exclusively through stay activity or co-branded spend."
+          "Lifetime Silver, Gold, and Platinum tiers lock in benefits after hitting long-term stay and elite year thresholds.",
+          "Lifetime status preserves core benefits even if annual stay activity dips."
         ]
       },
       "otherBenefits": {
+        "title": "Strategy insights",
         "items": [
-          "5th Night Free on award stays of four nights or longer.",
-          "Annual free night certificates worth 35K–85K points from premium credit cards.",
-          "Earned Choice Benefits include Suite Night Awards and Elite Night Credits.",
-          "Partnership with Uber and Eat Pass to earn Bonvoy points on rides and deliveries in select regions."
-        ],
-        "note": "Maximize Marriott Bonvoy by stacking 5th Night Free with off-peak pricing for aspirational resorts."
-      }
+          "Combine PointSavers discounts with 5th Night Free to drop effective nightly costs well below cash rates.",
+          "Use certificate top-offs to stretch 35K or 50K awards into higher-category properties during peak dates.",
+          "Track Ambassador qualification progress to unlock Your24 scheduling and a dedicated personal ambassador."
+        ]
+      },
+      "notesSection": {
+        "items": [
+          "Dynamic pricing means award costs vary by date and demand—plan around off-peak calendars when possible.",
+          "Status shortcuts exist via co-branded credit cards and targeted promotions.",
+          "Ambassador Elite adds personalized support plus the Your24 arrival and departure flexibility."
+        ]
+      },
+      "tags": [
+        "Hotel Loyalty",
+        "Travel Rewards",
+        "Elite Status Program",
+        "Suite Upgrades",
+        "Free Nights",
+        "Luxury Hotels"
+      ]
     },
     {
-      "slug": "world-of-hyatt",
-      "name": "World of Hyatt",
-      "footprint": "1,300+ hotels with outsized luxury and all-inclusive partners",
-      "summary": "Low award rates, milestone rewards, and partnerships like Small Luxury Hotels make Hyatt points incredibly valuable.",
-      "seoDescription": "Learn how World of Hyatt milestones, suite upgrades, and transfer partners deliver unmatched value for award stays.",
+      "slug": "accor-live-limitless",
+      "name": "Accor Live Limitless (ALL)",
+      "footprint": "5,500+ hotels spanning 110 countries",
+      "summary": "Earn Reward and Status Points across Accor’s luxury-to-economy brands with cash-like redemptions and lifestyle perks.",
+      "seoDescription": "Explore Accor Live Limitless elite tiers, earning rates, and fixed-value redemptions for hotel stays, dining, and experiences.",
       "overview": {
+        "description": "Accor Live Limitless (ALL) is Accor’s global loyalty program rewarding hotel, dining, and lifestyle spend across brands like Raffles, Sofitel, Pullman, and ibis.",
         "items": [
-          "Fixed award chart keeps premium redemptions predictable across 8 categories.",
-          "Milestone rewards deliver suite upgrades, club access, and FIND credits every 10 nights starting at 20.",
-          "Small Luxury Hotels of the World partnership expands boutique options with elite benefits.",
-          "All-inclusive brands like Secrets and Dreams can be booked with Hyatt points at competitive rates."
+          "Earn both Reward Points and Status Points on stays, dining, and events.",
+          "Redeem with a fixed cash value: 2,000 Reward Points reduce eligible bills by €40.",
+          "Lifestyle partnerships unlock VIP access to concerts, sports, and cultural events.",
+          "Accor Plus and regional credit cards provide accelerated earn and dining benefits."
         ],
-        "note": "Hyatt’s smaller footprint is offset by premium partner properties and transferable points from Chase Ultimate Rewards®.",
+        "note": "The program’s cash-equivalent redemption structure keeps point values predictable with no blackout dates.",
         "image": {
-          "src": "/images/content/photo-1542314831-068-77e78053cad8.svg",
-          "alt": "Luxury resort pool overlooking the ocean"
+          "src": "/images/content/photo-1528909514045-2fa4ac7a08ba.svg",
+          "alt": "Guest enjoying a chic hotel lobby within the Accor portfolio"
         }
       },
       "statusLevels": {
         "tiers": [
           "Member",
-          "Discoverist",
-          "Explorist",
-          "Globalist"
+          "Silver",
+          "Gold",
+          "Platinum",
+          "Diamond"
         ],
         "rows": [
           {
             "label": "Stay requirement",
             "values": [
-              "Free to join",
-              "10 nights / 25K base points",
-              "30 nights / 50K base points",
-              "60 nights / 100K base points"
+              "Join program",
+              "10 nights / 2,000 Status Points",
+              "30 nights / 7,000 Status Points",
+              "60 nights / 14,000 Status Points",
+              "26,000 Status Points"
             ]
           },
           {
-            "label": "Bonus points on stays",
-            "description": "Base points are 5 per $1 before elite bonuses are applied.",
+            "label": "Reward Point bonus",
+            "description": "Earn rates vary by brand category with incremental elite bonuses on top of base earn.",
             "values": [
-              "0% Bonus",
-              "10% Bonus",
-              "20% Bonus",
-              "30% Bonus"
+              "Base earn by brand",
+              "+20% bonus",
+              "+30% bonus",
+              "+50% bonus",
+              "+75% bonus"
             ]
           },
           {
-            "label": "Room upgrades",
-            "description": "Space-available upgrades; Globalist includes standard suites at check-in.",
+            "label": "Upgrades",
+            "values": [
+              "Member rates & Wi-Fi",
+              "Late checkout (subject to availability)",
+              "Room upgrades when available",
+              "Suites where available",
+              "Suites where available"
+            ]
+          },
+          {
+            "label": "Lounge access",
             "values": [
               "Not included",
-              "Preferred rooms",
-              "Preferred rooms + priority suites",
-              "Standard suites when available"
+              "Not included",
+              "Not included",
+              "Included where lounges exist",
+              "Included where lounges exist"
             ]
           },
           {
-            "label": "Club lounge access",
-            "description": "Access lounges or complimentary breakfast at Hyatt Regency, Grand Hyatt, and select brands.",
+            "label": "Breakfast benefit",
             "values": [
               "Not included",
-              "2 Club Access Awards",
-              "2 Club Access Awards",
-              "Complimentary + guest access"
+              "Not included",
+              "Not included",
+              "Complimentary at select brands",
+              "Complimentary at select brands"
             ]
           },
           {
-            "label": "Late checkout",
+            "label": "Guaranteed availability",
             "values": [
-              "2 p.m. (based on availability)",
-              "2 p.m. (based on availability)",
-              "2 p.m. (based on availability)",
-              "4 p.m. guaranteed"
+              "Not included",
+              "Not included",
+              "72-hour guarantee",
+              "48-hour guarantee",
+              "48-hour guarantee"
             ]
           },
           {
-            "label": "Parking & resort fees on awards",
+            "label": "Signature perks",
             "values": [
-              "Fees apply",
-              "Fees apply",
-              "Waived on free night awards",
-              "Waived on free night awards"
-            ]
-          },
-          {
-            "label": "Milestone rewards",
-            "description": "Earn suite upgrades, FIND credits, and Guest of Honor awards every 10 elite nights.",
-            "values": [
-              "Not applicable",
-              "Starts at 20 nights",
-              "Suite upgrades at 50 nights",
-              "Guest of Honor + My Hyatt Concierge"
-            ]
-          },
-          {
-            "label": "Guest of Honor",
-            "description": "Extend Globalist benefits to friends or family on award stays.",
-            "values": [
-              "Not available",
-              "Not available",
-              "Not available",
-              "Available"
-            ]
-          },
-          {
-            "label": "My Hyatt Concierge",
-            "description": "Dedicated team assists with complex itineraries, suite requests, and special occasions.",
-            "values": [
-              "Not available",
-              "Not available",
-              "Not available",
-              "Available"
+              "Earn points on stays & dining",
+              "Welcome drink",
+              "Early check-in / late checkout",
+              "VIP experiences & suite upgrades",
+              "Dedicated service line + weekend night"
             ]
           }
         ],
-        "note": "Aim for 60-night Globalist status to unlock waived resort fees, free breakfast, and the Guest of Honor benefit.",
+        "note": "Diamond status unlocks a complimentary weekend night, dining credits, and a dedicated support line.",
         "image": {
-          "src": "/images/content/photo-1582719478250--17846ff570bd.svg",
-          "alt": "Guest relaxing in a hotel suite with city view"
+          "src": "/images/content/photo-1489515217757-5fd1be406fef.svg",
+          "alt": "Accor guest suite with city skyline views"
         }
       },
       "coBrandedCards": {
         "items": [
-          "World of Hyatt Credit Card",
-          "World of Hyatt Business Credit Card"
+          "Regional Accor credit cards in select markets"
         ],
-        "note": "Personal and business cards together provide 10 elite night credits annually plus spending-based night boosts."
+        "note": "No co-branded card in India yet, but local issuers offer ALL earning cards in Europe, Asia, and Australia."
       },
       "pointsEarn": {
         "items": [
-          "5 base points per $1 on eligible Hyatt purchases.",
-          "Discoverist, Explorist, and Globalist earn 10%, 20%, and 30% bonuses respectively.",
-          "All-inclusive resorts award based on room rate before taxes and fees.",
-          "Transfer Chase Ultimate Rewards® at a 1:1 ratio instantly."
+          "Earn Reward & Status Points on room rate, taxes, dining, spa, and event spend.",
+          "Luxury brands earn 25 Reward Points per €10; midscale 15; economy 10.",
+          "Status Points accrue at 10 per €10 of eligible spend across brands.",
+          "Earn points via Accor Plus dining, partner airlines, and select Accor credit cards."
         ]
       },
       "pointsBurn": {
         "items": [
-          "Category 1 starts at 3,500 points off-peak for standard rooms.",
-          "Premium suites can be booked with a fixed multiplier over standard room pricing.",
-          "Use Cash + Points when nightly rates creep above 2 cents per point for extra value."
+          "Redeem at a fixed rate: 2,000 Reward Points = €40 toward eligible charges.",
+          "Use points to pay for stays, dining, spa services, and room upgrades with no blackout dates.",
+          "Access experiences, concerts, sports events, and partner redemptions including airlines and car rentals.",
+          "Combine cash + points at checkout to stretch balances for longer stays."
         ]
       },
       "paidMemberships": {
         "items": [
-          "World of Hyatt membership is complimentary; status is earned via nights, base points, or meetings.",
-          "Hyatt Leverage corporate accounts offer discounted rates without changing elite qualification."
+          "Program is free to join; elite status is earned via stays and Status Points.",
+          "Accor Plus membership (paid) boosts dining discounts and points earning in Asia Pacific."
         ]
       },
       "otherBenefits": {
         "items": [
-          "Guest of Honor lets friends enjoy your Globalist perks on award stays.",
-          "Milestone Rewards at 40, 50, and 60 nights include suite upgrade awards.",
-          "Brand Explorer free night certificate after staying at 5 unique Hyatt brands.",
-          "Partnership with American Airlines AAdvantage® allows elite members to earn bonus miles and Loyalty Points."
+          "Earn points on dining even when you are not staying overnight.",
+          "VIP sports and entertainment partnerships include Paris Saint-Germain and Accor Arena.",
+          "Suite upgrade rewards and priority check-in for Platinum and higher members.",
+          "Cash-like redemption model keeps point valuations transparent for budgeting trips."
         ]
-      }
+      },
+      "tags": [
+        "Hotel Loyalty",
+        "Free Breakfast",
+        "Suite Upgrades",
+        "Fifth Night Free",
+        "Digital Key"
+      ]
     },
     {
       "slug": "hilton-honors",
       "name": "Hilton Honors",
-      "footprint": "7,000+ hotels and resorts worldwide",
-      "summary": "Dynamic pricing paired with automatic elite status from credit cards makes Hilton easy to engage with.",
-      "seoDescription": "Find out how Hilton Honors elite perks, free breakfast benefits, and 5th Night Free awards make points easy to spend.",
+      "footprint": "7,000+ hotels across 120 countries",
+      "summary": "Points + Money awards, elite rollover nights, and complimentary breakfast at higher tiers keep Hilton Honors members engaged.",
+      "seoDescription": "Explore Hilton Honors perks including Points + Money awards, 5th Night Free redemptions, and elite benefits like breakfast and lounge access.",
       "overview": {
         "items": [
-          "Nearly every Hilton brand participates in Honors, from Hampton to Waldorf Astoria.",
-          "Award pricing is flexible but often caps at 120K points for luxury properties.",
-          "Automatic elite status from Amex co-branded cards speeds up benefit access.",
-          "Points pool with up to 10 friends or family to reach redemptions faster."
+          "Earn points on hotel stays, dining, and partner spending across brands like Waldorf Astoria, Conrad, and Hampton.",
+          "Points + Money awards and no blackout dates on standard rooms make redemptions flexible.",
+          "Elite rollover nights and milestone bonuses reward frequent travelers year over year.",
+          "Status gifting for top-tier members helps family or friends enjoy elite perks."
         ],
-        "note": "Hilton Honors excels when you combine frequent points sales, Amex transfer bonuses, and the 5th Night Free feature."
+        "note": "Hilton Honors excels when you combine frequent points sales, transfer bonuses, and the 5th Night Free feature for longer stays."
       },
       "statusLevels": {
         "tiers": [
@@ -410,8 +477,8 @@
             ]
           },
           {
-            "label": "Daily food & beverage credit / breakfast",
-            "description": "Gold and Diamond receive complimentary breakfast or a daily F&B credit at most full-service brands in the Americas.",
+            "label": "Breakfast or daily food & beverage credit",
+            "description": "Gold and Diamond enjoy complimentary breakfast or daily dining credits at most full-service brands.",
             "values": [
               "Not included",
               "Continental breakfast at select brands",
@@ -476,7 +543,7 @@
             ]
           }
         ],
-        "note": "Hilton Honors Diamond can be secured instantly with the Hilton Aspire card, unlocking top-tier perks without nightly requirements.",
+        "note": "Hilton Honors Diamond can be secured instantly with the Hilton Aspire card, unlocking lounge access, premium Wi-Fi, and status gifting.",
         "image": {
           "src": "/images/content/photo-1528909514045--406e194c93d3.svg",
           "alt": "Hilton resort entrance at sunset"
@@ -493,52 +560,52 @@
       },
       "pointsEarn": {
         "items": [
-          "10 base points per $1 at most Hilton brands.",
-          "Limited service brands like Tru and Home2 Suites earn 5 base points per $1.",
-          "Elite tier bonuses stack on top of base points and ongoing global promotions.",
-          "American Express Membership Rewards® transfer to Hilton at a 1:2 ratio."
+          "Earn 10 base points per $1 at most Hilton brands and 5 points per $1 at Tru and Home2 Suites.",
+          "Silver, Gold, and Diamond elites earn 20%, 80%, and 100% point bonuses respectively.",
+          "Hilton Honors points accrue on room rates, dining, spa services, and on-property incidentals.",
+          "Supplement earnings via Hilton co-branded cards, airline and car rental partners, or Amex Membership Rewards® transfers at 1:2."
         ]
       },
       "pointsBurn": {
         "items": [
-          "Standard room rewards start around 5,000 points and scale dynamically.",
-          "Aim for 0.4–0.6 cents per point at luxury properties and peak season resorts.",
-          "Use Points & Money awards to conserve points when cash rates are low."
+          "Redeem for free nights, room upgrades, Hilton Experiences, and even car rentals.",
+          "Points + Money awards stretch balances when cash rates are reasonable.",
+          "U.S. members can use Shop with Points at Amazon or transfer points to airline partners."
         ]
       },
       "paidMemberships": {
         "items": [
-          "Hilton Honors is complimentary; elite tiers can also be gifted or granted via American Express cards.",
-          "Hilton Grand Vacations owners may receive complimentary elite status accelerators."
+          "Hilton Honors is complimentary to join, with elite status earned through stays or co-branded credit cards.",
+          "Hilton Grand Vacations ownership and Diamond gifting can accelerate elite status."
         ]
       },
       "otherBenefits": {
         "items": [
           "5th Night Free on award stays of five nights or more.",
-          "Points pooling allows sharing with up to 10 members at no cost.",
-          "Elite rollover nights help you jumpstart the following year’s qualification.",
-          "Partnerships with Lyft and Live Nation generate extra points on rides and event tickets."
+          "Elite rollover nights and milestone bonuses help maintain status year to year.",
+          "Diamond members receive executive lounge access, premium Wi-Fi, and status gifting options.",
+          "Points pooling allows sharing with up to 10 members at no cost."
         ]
       }
     },
     {
       "slug": "ihg-one-rewards",
       "name": "IHG One Rewards",
-      "footprint": "6,000+ hotels with luxury brands like Regent and Six Senses",
-      "summary": "Revamped elite program with milestone choice awards, lounge access for top tiers, and a healthy pipeline of new luxury properties.",
-      "seoDescription": "Get up to speed on IHG One Rewards benefits, milestone choices, and sweet spots for the program's flexible award pricing.",
+      "footprint": "6,200+ hotels across 100 countries",
+      "summary": "Milestone Rewards, dynamic award pricing, and suite upgrades keep IHG One Rewards competitive for frequent guests.",
+      "seoDescription": "Learn how IHG One Rewards members earn and redeem points for free nights, suite upgrades, Milestone Rewards, and flexible Point & Cash bookings.",
       "overview": {
         "items": [
-          "Dynamic award pricing often yields outsized value during off-peak dates.",
-          "Milestone Rewards let you pick suite upgrades, food & beverage credits, or annual lounge membership.",
-          "Chase co-branded cards include fourth-night-free awards and automatic Platinum status.",
-          "Luxury & Lifestyle brands like Kimpton and Regent deliver unique on-property perks."
+          "Earn points on stays across brands like InterContinental, Kimpton, Six Senses, and Holiday Inn.",
+          "Dynamic pricing and Point & Cash awards offer flexibility when redeeming for free nights.",
+          "Milestone Rewards every 10 nights from 20 to 100 nights unlock suite upgrades and food & beverage credits.",
+          "Diamond elites can choose free breakfast while suite upgrades extend to select luxury stays."
         ],
-        "note": "IHG’s overhaul introduced meaningful elite benefits, especially for travelers who cross 40 and 70 night milestones."
+        "note": "IHG’s overhaul introduced meaningful elite benefits, especially when you plan stays around Milestone Rewards thresholds."
       },
       "statusLevels": {
         "tiers": [
-          "Club Member",
+          "Member",
           "Silver Elite",
           "Gold Elite",
           "Platinum Elite",
@@ -549,10 +616,10 @@
             "label": "Stay requirement",
             "values": [
               "Free to join",
-              "10 nights / 10K elite qualifying points",
-              "20 nights / 20K elite qualifying points",
-              "40 nights / 40K elite qualifying points",
-              "70 nights / 70K elite qualifying points"
+              "10 nights",
+              "20 nights / 40K points",
+              "40 nights / 60K points",
+              "70 nights / 120K points"
             ]
           },
           {
@@ -582,7 +649,7 @@
               "Not included",
               "Points or drink/snack at select brands",
               "Points or drink/snack at select brands",
-              "Hot breakfast option at select brands"
+              "Free breakfast welcome choice"
             ]
           },
           {
@@ -602,7 +669,7 @@
               "Not included",
               "Not included",
               "Not included",
-              "Guaranteed at Regent, InterContinental, Kimpton, and participating brands"
+              "Available via Milestone Rewards or participating luxury brands"
             ]
           },
           {
@@ -627,7 +694,7 @@
             ]
           }
         ],
-        "note": "Milestone Rewards are the secret sauce—plan your stays to hit 40 nights for two confirmable suite upgrades.",
+        "note": "Milestone Rewards are the secret sauce—plan your stays every 10 nights to pick bonuses like suite upgrades or lounge membership.",
         "image": {
           "src": "/images/content/photo-1554995207-c18-3652a602396e.svg",
           "alt": "IHG hotel exterior at dusk"
@@ -643,33 +710,180 @@
       },
       "pointsEarn": {
         "items": [
-          "10 base points per $1 at most full-service and lifestyle brands.",
-          "5 base points per $1 at Staybridge Suites and Candlewood Suites.",
-          "Diamond elites earn a 100% point bonus on top of base earnings.",
-          "Chase Ultimate Rewards® transfer to IHG at a 1:1 ratio via the Chase Travel portal (Pay Yourself Back)."
+          "Earn 10 base points per $1 at most brands and 5 points per $1 at Staybridge Suites and Candlewood Suites.",
+          "Silver, Gold, Platinum, and Diamond elites receive 20%, 40%, 60%, and 100% point bonuses respectively.",
+          "Eligible charges include room rates, on-property dining, and other hotel incidentals.",
+          "Boost earnings with IHG co-branded credit cards, airline and car rental partners, or dining partners."
         ]
       },
       "pointsBurn": {
         "items": [
-          "Dynamic pricing means off-peak redemptions can drop below 0.5 cents per point.",
-          "Fourth Night Free benefit on award stays with IHG Premier cards effectively reduces nightly cost by 25%.",
-          "Use Points & Cash to buy back discounted points when rates are favorable."
+          "Redeem for free nights, room upgrades, or experiences through the IHG marketplace.",
+          "Point & Cash bookings provide flexibility when you are short on points.",
+          "Transfer to airline partners or redeem for digital rewards and merchandise."
         ]
       },
       "paidMemberships": {
         "items": [
-          "IHG One Rewards is complimentary; elite tiers come from stays, points, or qualifying credit card spend.",
-          "InterContinental Ambassador is a paid program that grants guaranteed upgrades, free weekend nights, and additional amenities at InterContinental hotels."
+          "IHG One Rewards is complimentary; elite tiers are achieved through stays, qualifying points, or co-branded credit cards.",
+          "InterContinental Ambassador membership adds guaranteed upgrades, a free weekend night, and other InterContinental perks."
         ]
       },
       "otherBenefits": {
         "items": [
-          "Kimpton Inner Circle elites receive chef's treats and on-property experiences.",
-          "PointBreaks promos occasionally offer select hotels for as low as 5,000 points per night.",
-          "Annual choice awards include a confirmable suite upgrade that can be applied to cash or award stays.",
-          "Partnership with Mr & Mrs Smith adds boutique properties with elite recognition and earn/burn options."
+          "Milestone Rewards every 10 nights from 20 to 100 nights let you pick bonus points, credits, or suite upgrades.",
+          "Diamond elites can select free breakfast as part of their welcome amenity.",
+          "Elite rollover nights help maintain status into the next year.",
+          "Premier cardholders receive a Fourth Night Free award when redeeming points."
         ]
       }
+    },
+    {
+      "slug": "club-itc-culinaire",
+      "name": "Club ITC Culinaire",
+      "footprint": "350+ ITC Hotels, Welcomhotels, Mementos, Storii, Fortune, and select Sheraton properties across India",
+      "summary": "Paid dining and hospitality membership layering 20% savings with Green Points, milestone vouchers, and complimentary nights across the ITC portfolio.",
+      "seoDescription": "Review Club ITC Culinaire pricing, elite alignment, milestone rewards, and voucher perks for maximizing ITC Hotels dining and stay value.",
+      "overview": {
+        "description": "Culinaire links directly with Club ITC to deliver immediate savings, Green Points, and curated dining and stay experiences.",
+        "items": [
+          "Enjoy 20% savings on dining, spa, and laundry at participating ITC-managed hotels.",
+          "Earn Green Points on food & beverage and accommodation spending to accelerate Club ITC status.",
+          "Unlock milestone vouchers for upgrades, buffet meals, and suite credits as annual spend grows.",
+          "Complimentary nights, celebratory cakes, and buffet experiences anchor the yearly voucher pack.",
+          "Add a spouse for ₹1,000 per year to share on-property discounts (voucher entitlements excluded)."
+        ],
+        "note": "The 20% savings apply for up to 15 diners per bill, ideal for family celebrations and corporate dining."
+      },
+      "quickFacts": [
+        { "label": "Issuer", "value": "ITC Hotels" },
+        { "label": "Program type", "value": "Paid dining & hospitality membership" },
+        { "label": "Core savings", "value": "20% on dining, spa, and laundry" },
+        { "label": "Green Points earning", "value": "Up to 6% on F&B with elite alignment" },
+        { "label": "Primary plan fee", "value": "₹19,000+ taxes (Culinaire Select, 1 year)" }
+      ],
+      "enrollment": {
+        "items": [
+          "Memberships are sold in one to five year bundles with tiered pricing for Select and Elite variants.",
+          "Renew before expiry to receive a 1,500 Green Points bonus on any Culinaire plan.",
+          "Existing Club ITC members retain their membership number when upgrading into Culinaire."
+        ],
+        "note": "Prices listed are pre-tax; GST applies to both enrollment and select voucher redemptions from January 1, 2025."
+      },
+      "eliteBenefitDetails": {
+        "title": "Club ITC elite alignment",
+        "items": [
+          "Silver + Culinaire earns 6% Green Points on dining and 4% on stays.",
+          "Gold + Culinaire boosts earning to 9% on dining and 6% on stays.",
+          "Platinum and Platinum Select + Culinaire members receive 12% on dining and 8% on stays."
+        ],
+        "note": "Culinaire stacking accelerates Club ITC tier progression via enhanced Green Point accrual."
+      },
+      "paidMemberships": {
+        "title": "Culinaire plan variants",
+        "items": [
+          "Culinaire Select: ₹19,000 for 1 year (₹34,200 for 2 years; ₹48,450 for 3; ₹60,800 for 4; ₹71,250 for 5) with one complimentary night, two meals for two, a cake, and two 50% dining vouchers.",
+          "Culinaire Elite: ₹29,500 for 1 year (₹53,100 for 2 years; ₹75,250 for 3; ₹94,400 for 4; ₹110,650 for 5) with two complimentary nights, four meals for two, enhanced Green Point earning, and premium rate vouchers.",
+          "Optional spouse add-on: ₹1,000 per year plus taxes granting shared savings but no duplicate vouchers."
+        ]
+      },
+      "specialPerks": {
+        "title": "Milestone rewards",
+        "description": "Track eligible food and beverage spend each calendar year to unlock layered vouchers.",
+        "items": [
+          "₹30,000 spend: complimentary room upgrade voucher.",
+          "₹90,000 spend: complimentary buffet meal for two.",
+          "₹1,20,000 spend: ₹5,000 hotel credit redeemable during a suite night stay.",
+          "₹2,00,000 spend: additional complimentary buffet meal for two."
+        ],
+        "note": "Milestone spending must be achieved within a single calendar year; unused balances do not roll over."
+      },
+      "otherBenefits": {
+        "items": [
+          "Voucher mix includes complimentary suite experiences and 15%–20% Best Available Rate certificates depending on tier.",
+          "Green Points and active vouchers migrate automatically when transitioning from legacy Club ITC or Culinaire memberships.",
+          "Guest care is available at participating ITC Hotels and Welcomhotels, with email support via clubitc@itchotels.in."
+        ]
+      },
+      "notesSection": {
+        "items": [
+          "Spouse plans are valid only alongside an active primary Culinaire membership.",
+          "Vouchers can be redeemed at participating ITC-managed hotels; WelcomHeritage Hotels offer only the 20% dining discount with no Green Points accrual.",
+          "Effective January 1, 2025, GST applies when redeeming luxury stay vouchers.",
+          "Member migration retains existing membership numbers with tier mapping based on prior-year activity."
+        ],
+        "note": "For more details visit https://www.itchotels.com/clubitc/culinaire or email clubitc@itchotels.in."
+      },
+      "tags": [
+        "Dining Membership",
+        "Hotel Loyalty",
+        "Green Points",
+        "Spa Benefits",
+        "Milestone Rewards",
+        "Luxury Hospitality"
+      ]
+    },
+    {
+      "slug": "taj-epicure",
+      "name": "Taj Epicure",
+      "footprint": "Taj, SeleQtions, Vivanta, and Taj Safaris hotels across India",
+      "summary": "Paid membership by IHCL bundling 25% dining savings, spa discounts, Qmin delivery perks, and a deep roster of stay vouchers at Taj brands.",
+      "seoDescription": "Explore Taj Epicure Preferred and Privileged benefits, pricing, and voucher inclusions for maximizing dining and stay value at Taj Hotels.",
+      "overview": {
+        "description": "Epicure delivers Taj guests a blend of dining value, wellness perks, and stay experiences across IHCL’s luxury and lifestyle portfolio.",
+        "items": [
+          "Save 25% on dining in-residence and Qmin delivery orders alongside 20% spa savings.",
+          "Receive complimentary night certificates, room upgrades, and set meals for two.",
+          "Benefit from Taj Club lounge access vouchers, curated pool lunch with wine experiences, and celebratory cake inclusions.",
+          "Membership aligns with NeuPass, providing Silver or Gold tiers depending on plan selection.",
+          "Phone and email concierge support assist with voucher usage and escalations."
+        ],
+        "note": "Present a valid Epicure membership card to access dining discounts at participating restaurants."
+      },
+      "quickFacts": [
+        { "label": "Issuer", "value": "IHCL (Taj Hotels)" },
+        { "label": "Program type", "value": "Paid hotel membership" },
+        { "label": "Dining savings", "value": "25% on F&B and Qmin delivery" },
+        { "label": "Spa discount", "value": "20% on qualifying treatments" },
+        { "label": "NeuPass tier", "value": "Silver or Gold depending on membership" }
+      ],
+      "enrollment": {
+        "items": [
+          "Epicure Preferred membership is priced at ₹25,000 plus taxes; Epicure Privileged is ₹50,000 plus taxes.",
+          "Add-on cards are available so family members can redeem on-property discounts and vouchers.",
+          "Reach support at 1800-111-825 or epicure.escalations@ihcltata.com for onboarding or assistance."
+        ]
+      },
+      "paidMemberships": {
+        "title": "Epicure plan benefits",
+        "items": [
+          "Epicure Preferred: 25% dining and Qmin savings, one complimentary night stay, two set meals for two, two one-level upgrades, one 60-minute spa treatment, rate vouchers across Taj Palaces, City Resorts, and Taj Safaris, plus a pool lunch with wine experience.",
+          "Epicure Privileged: Mirrors Preferred discounts with two complimentary nights, four set meals for two, four room upgrades, three 60-minute spa sessions, expanded rate vouchers, Taj Club lounge access, and a pool lunch with wine experience.",
+          "Both tiers include a celebratory birthday cake and eligibility for add-on member cards."
+        ]
+      },
+      "otherBenefits": {
+        "items": [
+          "Complimentary room upgrades are subject to availability at check-in.",
+          "Select benefits, including experiences and spa sessions, are limited to once per membership year.",
+          "Escalation support is available via praloy.saha@ihcltata.com for unresolved service issues."
+        ]
+      },
+      "notesSection": {
+        "items": [
+          "Vouchers are redeemable only at participating Taj, SeleQtions, Vivanta, and Taj Safaris hotels.",
+          "Club lounge access vouchers are exclusive to Epicure Privileged memberships.",
+          "Room upgrades require eligible rate bookings and remain subject to inventory at time of arrival."
+        ]
+      },
+      "tags": [
+        "Hotel Membership",
+        "Dining Program",
+        "Luxury Travel",
+        "Spa Benefits",
+        "Free Night Vouchers",
+        "Taj Hotels"
+      ]
     }
   ]
 }

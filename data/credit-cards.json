@@ -1,699 +1,770 @@
 {
   "cards": [
     {
-      "slug": "chase-sapphire-preferred",
-      "name": "Chase Sapphire Preferred®",
-      "issuer": "Chase",
-      "annualFee": "$95",
-      "summary": "Flexible workhorse card with strong transfer partners, built-in travel protections, and easy-to-use redemption options.",
-      "seoDescription": "Review the Chase Sapphire Preferred benefits, transfer partners, and earning structure to see why it remains the go-to starter travel card.",
-      "welcomeOffer": "Earn 60,000 bonus points after you spend $4,000 on purchases in the first 3 months from account opening.",
-      "bestFor": "Travelers who want premium-style perks without a premium fee and value flexible redemption options.",
-      "introduction": {
-        "bullets": [
-          "Positioned above entry-level no-fee cards, the Sapphire Preferred anchors the Chase Ultimate Rewards ecosystem.",
-          "Pairs nicely with Freedom cards to boost portal redemptions and unlock transfer partners.",
-          "Balances premium-style protections with a manageable annual fee."
-        ],
-        "paragraph": "Consider it the natural upgrade when you're ready to turn everyday spending into meaningful travel experiences.",
-        "image": {
-          "src": "/images/content/photo-1470252649378--e90b07bd4d70.svg",
-          "alt": "Traveler planning a trip with a credit card and map on a table",
-          "caption": "Mapping out transfer partner sweet spots before the next trip."
-        }
+      "slug": "axis-bank-atlas-credit-card",
+      "layout": "tieredMiles",
+      "name": "Axis Bank Atlas Credit Card",
+      "issuer": "Axis Bank",
+      "network": "Visa",
+      "type": "Travel Rewards Credit Card",
+      "summary": "Premium EDGE Miles card with tiered rewards, lounge visits, and milestone bonuses tailored for frequent travellers.",
+      "seoDescription": "Explore the Axis Bank Atlas Credit Card welcome benefits, EDGE Miles earning structure, lounge access, and tier upgrades to plan your travel strategy.",
+      "annualFee": {
+        "amount": 5000,
+        "currency": "INR",
+        "gstApplicable": true
       },
-      "overview": {
-        "headers": [
-          "Reward rate",
-          "Best for",
-          "USP"
+      "welcomeBenefit": {
+        "details": [
+          {
+            "validFrom": "2024-04-20",
+            "miles": 2500,
+            "condition": "Complete 1 transaction within 37 days of card issuance"
+          },
+          {
+            "validFrom": "2022-12-20",
+            "validTo": "2024-04-20",
+            "miles": 5000,
+            "condition": "Complete 1 transaction within 30 days of card issuance"
+          },
+          {
+            "validTo": "2022-12-20",
+            "miles": 5000,
+            "condition": "Complete 3 transactions within 60 days of card issuance"
+          }
         ],
-        "rows": [
-          [
-            "1x–5x Ultimate Rewards",
-            "Flexible travel redemptions",
-            "1:1 transfer partners with built-in travel protections"
-          ]
-        ],
-        "paragraph": "The card fits travelers seeking optionality—earn in strong bonus categories and redeem through portals or partners.",
-        "image": {
-          "src": "/images/content/photo-1525182008055--acba6fe1b456.svg",
-          "alt": "Traveler using a laptop to compare reward charts",
-          "caption": "Comparing flexible redemption paths before booking."
-        }
-      },
-      "annualFeeDetails": {
-        "headers": [
-          "Fee component",
-          "Details"
-        ],
-        "rows": [
-          [
-            "Joining fee",
-            "$95 (often offset by welcome offer)"
-          ],
-          [
-            "Welcome benefit",
-            "60,000-point bonus after $4,000 spend in 3 months"
-          ],
-          [
-            "Renewal / annual fee",
-            "$95"
-          ],
-          [
-            "Renewal benefit",
-            "10% anniversary points bonus"
-          ],
-          [
-            "Renewal fee waiver",
-            "Occasionally targeted retention or product-change offers"
-          ]
-        ],
-        "paragraph": "Even without a waiver, the mix of credits and travel protections can justify the ongoing cost."
+        "milesPostingTime": "Within 7 days",
+        "onlyForPaidCards": true
       },
       "rewards": {
-        "headers": [
-          "Spend type",
-          "Reward points",
-          "Estimated value (portal)",
-          "Estimated value (transfer)"
+        "currency": "EDGE Miles",
+        "conversion": "1 EDGE Mile = ~₹1",
+        "earnRate": {
+          "travelSpends": {
+            "rate": "5 EDGE Miles / ₹100",
+            "eligible": "Axis Travel EDGE Portal, direct airline & hotel",
+            "cap": "₹2,00,000/month then 2 Miles/₹100"
+          },
+          "otherSpends": "2 EDGE Miles / ₹100"
+        },
+        "exclusions": [
+          "Gold/Jewellery",
+          "Rent",
+          "Wallet loads",
+          "Government Institution",
+          "Insurance",
+          "Fuel",
+          "Utilities",
+          "Telecom"
         ],
-        "rows": [
-          [
-            "Chase travel portal bookings",
-            "5x points",
-            "~10% back",
-            "~12.5% when transferring smartly"
-          ],
-          [
-            "Dining purchases",
-            "3x points",
-            "~6% back",
-            "~7.5% with partners"
-          ],
-          [
-            "Other travel",
-            "2x points",
-            "~4% back",
-            "~5% with partners"
-          ],
-          [
-            "All other spending",
-            "1x point",
-            "~2% back",
-            "~2.5% with partners"
-          ]
-        ],
-        "paragraph": "Ultimate Rewards shine when paired with premium partners like Hyatt or Air Canada for high-value award travel.",
-        "image": {
-          "src": "/images/content/photo-1489515217757--911f53afa31a.svg",
-          "alt": "Airplane wing over a sunset sky",
-          "caption": "Redeeming points for bucket-list award flights."
-        }
+        "milesPostingTime": "Within 12 days"
       },
-      "milestoneBenefits": {
-        "headers": [
-          "Spend requirement",
-          "Milestone benefit",
-          "Benefit type"
+      "tiers": {
+        "levels": [
+          {
+            "name": "Silver",
+            "upgradeSpend": null
+          },
+          {
+            "name": "Gold",
+            "upgradeSpend": 750000
+          },
+          {
+            "name": "Platinum",
+            "upgradeSpend": 1500000
+          }
         ],
-        "rows": [
-          [
-            "Account anniversary",
-            "10% bonus points based on prior-year spending",
-            "Automatic bonus"
-          ],
-          [
-            "$50 annual hotel booking",
-            "$50 statement credit via Chase travel portal",
-            "Travel credit"
-          ]
-        ],
-        "paragraph": "Stack the hotel credit with a portal promotion to squeeze even more value out of the annual fee."
+        "downgradeRule": "If spend threshold not met in next anniversary cycle"
       },
-      "redemption": {
-        "bullets": [
-          "Use the Chase Ultimate Rewards portal for 1.25¢ per point on flights, hotels, and experiences.",
-          "Transfer 1:1 to partners like World of Hyatt, United MileagePlus, and Air Canada Aeroplan.",
-          "Combine points with no-fee Freedom cards for additional earning power before transferring.",
-          "Cash back or statement credits yield 1¢ per point—best reserved for when travel plans change."
-        ],
-        "paragraph": "Portal bookings are simple, but partner transfers unlock aspirational itineraries and higher cents-per-point value.",
-        "image": {
-          "src": "/images/content/photo-1500530855697--970378c505dc.svg",
-          "alt": "Traveler photographing mountain scenery",
-          "caption": "Points-funded adventures that deserve a spot in the album."
-        }
+      "tierBenefits": {
+        "annualMilesOnFeePayment": {
+          "Silver": 0,
+          "Gold": 2500,
+          "Platinum": 5000
+        },
+        "milestoneBenefits": [
+          {
+            "spend": 300000,
+            "miles": 2500
+          },
+          {
+            "spend": 750000,
+            "miles": 2500
+          },
+          {
+            "spend": 1500000,
+            "miles": 5000
+          }
+        ]
       },
       "loungeAccess": {
-        "headers": [
-          "Access type",
-          "Access via",
-          "Access limit"
+        "domestic": {
+          "Silver": 8,
+          "Gold": 12,
+          "Platinum": 18
+        },
+        "international": {
+          "Silver": 4,
+          "Gold": 6,
+          "Platinum": 12
+        },
+        "guestAccessIncluded": true,
+        "notes": "Visits shared across primary & guests"
+      },
+      "milesRedemption": {
+        "options": [
+          "Flights",
+          "Hotels",
+          "Experiences",
+          "Airline Miles Transfer",
+          "Hotel Points Transfer"
         ],
-        "rows": [
-          [
-            "Domestic lounges",
-            "Not included",
-            "N/A"
-          ],
-          [
-            "International lounges",
-            "Not included",
-            "N/A"
-          ]
-        ],
-        "paragraph": "Pair the card with Priority Pass access from a premium sibling if lounge time matters to you.",
-        "image": {
-          "src": "/images/content/photo-1525182008055--acba6fe1b456.svg",
-          "alt": "Empty airport lounge with panoramic runway views",
-          "caption": "Dreaming of lounges unlocked by pairing with a premium card."
+        "transferPartnersValue": "1 EDGE Mile = 2 Partner Points (2:1 for Marriott Bonvoy)",
+        "annualTransferLimit": 150000,
+        "groupLimits": {
+          "Group A": 30000,
+          "Group B": 120000
         }
       },
-      "forexMarkup": {
-        "bullets": [
-          "Foreign transaction fees: None.",
-          "Rewards on international purchases mirror domestic earn rates.",
-          "Net return hinges on transfer strategy; portal redemptions average ~2% back on unbonused spend."
-        ],
-        "paragraph": "No forex fees mean it's safe to swipe abroad, especially when you value flexible transfer partners.",
-        "image": {
-          "src": "/images/content/photo-1521292270410--f29ffc531709.svg",
-          "alt": "Passport and travel wallet on a world map",
-          "caption": "Ready to tap abroad without worrying about foreign fees."
+      "additionalInfo": {
+        "milesNotEncashable": true,
+        "anniversaryYearBasis": true,
+        "tierSpendExclusions": "Same as rewards exclusions",
+        "accessMethod": "Swipe card at lounge"
+      },
+      "websiteDisplayTags": [
+        "Premium Travel Card",
+        "Airport Lounge Access",
+        "Transferable Miles",
+        "High Rewards on Travel"
+      ],
+      "keyHighlights": [
+        "Earn EDGE Miles faster on travel with built-in tier upgrades",
+        "Share generous lounge visits with accompanying guests",
+        "Transfer EDGE Miles to airlines and hotels for outsized value"
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/axis-atlas-card.svg",
+          "alt": "Axis Bank Atlas Credit Card"
         }
       }
     },
     {
-      "slug": "american-express-platinum",
-      "name": "The Platinum Card® from American Express",
-      "issuer": "American Express",
-      "annualFee": "$695",
-      "summary": "Flagship premium card with worldwide lounge access, airline fee credits, and unrivaled luxury travel partnerships.",
-      "seoDescription": "See how the Amex Platinum unlocks airport lounges, airline credits, and elite hotel perks to elevate every trip.",
-      "welcomeOffer": "Earn 80,000 Membership Rewards® points after spending $6,000 on purchases in the first 6 months of card membership.",
-      "bestFor": "Frequent travelers who can maximize statement credits and want lounge access nearly everywhere they fly.",
-      "introduction": {
-        "bullets": [
-          "Sits at the top of the Membership Rewards ecosystem with luxury travel perks.",
-          "Pairs endless lounge access with easy-to-use monthly statement credits.",
-          "Best leveraged by frequent flyers who can plan around enrollment-based offers."
-        ],
-        "paragraph": "Treat it as your lifestyle membership card, not just a payment tool, and the value multiplies quickly."
+      "slug": "hdfc-bank-regalia-gold-credit-card",
+      "layout": "lifestyle",
+      "name": "HDFC Bank Regalia Gold Credit Card",
+      "issuer": "HDFC Bank",
+      "network": "Visa/Mastercard",
+      "type": "Premium Travel & Lifestyle Rewards Card",
+      "summary": "Premium lifestyle card bundling Swiggy One, MMT Black Gold, quarterly vouchers, and lounge visits for frequent travellers.",
+      "seoDescription": "Review the HDFC Bank Regalia Gold Credit Card welcome memberships, 5X partner rewards, milestone flight vouchers, and lounge access before you apply.",
+      "annualFee": {
+        "amount": 2500,
+        "currency": "INR",
+        "gstApplicable": true
       },
-      "overview": {
-        "headers": [
-          "Reward rate",
-          "Best for",
-          "USP"
-        ],
-        "rows": [
-          [
-            "1x–5x Membership Rewards",
-            "Premium frequent travelers",
-            "Global lounge access plus statement credits"
-          ]
-        ],
-        "paragraph": "The Platinum Card rewards travel-booking behavior while layering on elite-style comforts."
+      "websiteDisplayTags": [
+        "Airport Lounge Access",
+        "5X Shopping Rewards",
+        "Swiggy One & MMT Benefits"
+      ],
+      "keyHighlights": [
+        "Unlock Swiggy One and MMT Black Gold after ₹1 lakh spend in 90 days.",
+        "Earn 5X rewards on Myntra, Nykaa, Reliance Digital, and Marks & Spencer up to 5,000 RP monthly.",
+        "Collect quarterly and annual flight vouchers worth up to ₹10,000 a year."
+      ],
+      "fees": {
+        "joiningFee": 2500,
+        "renewalFee": 2500,
+        "welcomeBenefitCondition": "Spend ₹1 lakh in 90 days to unlock memberships"
       },
-      "annualFeeDetails": {
-        "headers": [
-          "Fee component",
-          "Details"
-        ],
-        "rows": [
-          [
-            "Joining fee",
-            "$695"
+      "welcomeBenefits": {
+        "membershipUnlock": {
+          "benefits": [
+            "Swiggy One membership (replacing Club Vistara Silver from Nov 1, 2024)",
+            "MMT Black Gold membership"
           ],
-          [
-            "Welcome benefit",
-            "80,000-point bonus after $6,000 spend in 6 months"
-          ],
-          [
-            "Renewal / annual fee",
-            "$695"
-          ],
-          [
-            "Renewal benefit",
-            "$200 airline fee, $200 Uber Cash, $240 digital entertainment, and more"
-          ],
-          [
-            "Renewal fee waiver",
-            "Rare—watch for retention offers via chat or phone"
-          ]
-        ],
-        "paragraph": "Stacking the numerous credits easily offsets the fee if you integrate them into everyday routines."
+          "spendRequirement": "₹1,00,000 in 90 days",
+          "unlockTime": "Within 48 hours after meeting spend",
+          "downloadWindow": "60 days after benefit period end"
+        },
+        "joiningVoucher": {
+          "valueInInr": 2500,
+          "condition": "Issued after paying the joining fee"
+        }
       },
       "rewards": {
-        "headers": [
-          "Spend type",
-          "Reward points",
-          "Estimated value (cash)",
-          "Estimated value (transfer)"
-        ],
-        "rows": [
-          [
-            "Flights booked directly or via Amex Travel",
-            "5x points",
-            "~7.5% back",
-            "~10% with premium partners"
+        "baseRate": "4 Reward Points per ₹150 on retail spends",
+        "acceleratedRewards": {
+          "rate": "5X (20 RP/₹150) on select merchants",
+          "merchants": [
+            "Myntra",
+            "Nykaa",
+            "Reliance Digital",
+            "Marks & Spencer"
           ],
-          [
-            "Prepaid hotels on AmexTravel.com",
-            "5x points",
-            "~7.5% back",
-            "~10% with premium partners"
-          ],
-          [
-            "Other eligible purchases",
-            "1x point",
-            "~1.5% back",
-            "~2% with partners"
-          ]
+          "monthlyCapRp": 5000,
+          "minSpend": 150
+        },
+        "rewardExclusions": [
+          "Fuel",
+          "Cash withdrawals",
+          "Card fees & charges",
+          "Wallet loads",
+          "Smart EMI conversions",
+          "Government payments",
+          "Rent payments",
+          "Insurance RP cap 2,000/month",
+          "Grocery RP cap 2,000/month"
         ],
-        "paragraph": "Membership Rewards excel when moved to airline partners like ANA, Virgin Atlantic, or Air France-KLM."
-      },
-      "milestoneBenefits": {
-        "headers": [
-          "Spend requirement",
-          "Milestone benefit",
-          "Benefit type"
-        ],
-        "rows": [
-          [
-            "$75,000 annual spend",
-            "Earn 50% more points on travel booked via Amex Travel",
-            "Premium Booking Bonus"
-          ],
-          [
-            "Card anniversary",
-            "$200 prepaid Fine Hotels + Resorts credit",
-            "Travel statement credit"
-          ]
-        ],
-        "paragraph": "Lean on high-spend travel years to unlock the incremental earning multipliers."
+        "rewardPosting": "Posted by 1st week of next month",
+        "rewardValidity": "2 years",
+        "monthlyRpCap": 50000
       },
       "redemption": {
-        "bullets": [
-          "Transfer 1:1 to over 20 airline partners including ANA, Delta (via variable ratio), and Singapore Airlines.",
-          "Redeem via Amex Travel at 1¢ per point for flights or 0.7¢ for other travel—boosted to 1.54¢ with Business Platinum Pay With Points rebate.",
-          "Use the luxury-centric Amex Experiences for curated event tickets and dining.",
-          "Statement credits are possible at 0.6¢ per point but are rarely optimal."
+        "smartBuyPortalValue": {
+          "exclusiveCatalog": "1 RP = ₹0.65",
+          "flightsHotels": "1 RP = ₹0.50 (max 50,000 RP/month)",
+          "productsVouchers": "1 RP = up to ₹0.35",
+          "statementCredit": "1 RP = ₹0.20 (max 50,000 RP/month)"
+        },
+        "airmilesConversion": {
+          "conversionRate": "1 RP = up to 0.5 airmiles"
+        },
+        "travelRedemptionLimit": "Use Reward Points for up to 70% of a booking's value"
+      },
+      "milestoneBenefits": {
+        "quarterly": {
+          "spendRequirement": 150000,
+          "voucherValue": 1500,
+          "brandChoices": [
+            "Marriott",
+            "Myntra",
+            "MMT Hotels",
+            "Marks & Spencer",
+            "Reliance Digital"
+          ]
+        },
+        "annual": [
+          {
+            "threshold": 500000,
+            "benefit": "₹5,000 flight voucher"
+          },
+          {
+            "threshold": 750000,
+            "benefit": "Additional ₹5,000 flight voucher"
+          }
         ],
-        "paragraph": "Aim for premium cabin awards through airline partners to realize outsized value from Membership Rewards."
+        "voucherUnlockTime": "Benefits unlock within 48 hours of meeting the spend"
       },
       "loungeAccess": {
-        "headers": [
-          "Access type",
-          "Access via",
-          "Access limit"
-        ],
-        "rows": [
-          [
-            "Domestic lounges",
-            "Centurion Lounge, Delta Sky Club (when flying Delta)",
-            "Unlimited for primary cardholder"
-          ],
-          [
-            "International lounges",
-            "Priority Pass Select, Plaza Premium, Lufthansa",
-            "Varies by network; generally unlimited"
-          ],
-          [
-            "Authorized users",
-            "Additional Platinum or Gold cards",
-            "Up to 3 add-ons share access"
+        "india": {
+          "quota": 12,
+          "terminals": "Domestic & international terminals within India",
+          "method": "Swipe card"
+        },
+        "internationalPriorityPass": {
+          "quota": 6,
+          "chargeAfterQuotaUsd": 27,
+          "notes": [
+            "Priority Pass usage within India is chargeable",
+            "Add-on cardholders need their own Priority Pass"
           ]
-        ],
-        "paragraph": "Register for Priority Pass and book Delta flights on the same day to access the full lounge network."
+        }
       },
-      "forexMarkup": {
-        "bullets": [
-          "Foreign transaction fees: None.",
-          "Earning rate abroad matches domestic categories—focus on flights and prepaid hotels.",
-          "Net return typically 5%–10% when transferring to high-value airline partners."
-        ],
-        "paragraph": "The metal build and worldwide acceptance make it a reliable international travel companion."
-      }
+      "concierge": {
+        "email": "regaliagold.support@smartbuyoffers.co",
+        "phone": "1860 425 1188"
+      },
+      "insurance": {
+        "lostCardLiability": "Zero liability if reported immediately"
+      },
+      "foreignExchangeMarkup": "2%",
+      "eligibility": {
+        "salariedPrivate": {
+          "age": "21-60",
+          "incomeMin": "₹1,50,000/month"
+        },
+        "selfEmployed": {
+          "age": "21-65",
+          "itrMin": "₹18,00,000/year"
+        },
+        "salariedGovernment": {
+          "age": "21-60",
+          "incomeMin": "₹1,00,000/month"
+        }
+      },
+      "specialPrograms": {
+        "dining": {
+          "program": "Good Food Trail",
+          "benefit": "Flat 10% off at 35,000+ restaurants",
+          "platform": "Dineout"
+        }
+      },
+      "travelBenefitsTags": [
+        "Airport Lounge Access",
+        "Priority Pass",
+        "Hotel & Flight Milestones",
+        "Premium Concierge"
+      ],
+      "rewardTags": [
+        "5X Shopping Rewards",
+        "Premium Catalog Redemption",
+        "Flight Vouchers",
+        "Dining Discounts"
+      ]
     },
     {
-      "slug": "capital-one-venture-x",
-      "name": "Capital One Venture X Rewards Credit Card",
-      "issuer": "Capital One",
-      "annualFee": "$395",
-      "summary": "Premium yet approachable card with flat-rate earning, lounge access, and annual credits that offset the fee.",
-      "seoDescription": "Learn how the Capital One Venture X combines simple 2x earning with luxe travel perks and transfer flexibility.",
-      "welcomeOffer": "Earn 75,000 bonus miles when you spend $4,000 on purchases within the first 3 months from account opening.",
-      "bestFor": "Travelers who prefer straightforward earning but still want lounge access and transferable miles.",
-      "introduction": {
-        "bullets": [
-          "Capital One's answer to premium travel cards with an approachable annual fee.",
-          "Earns a flat 2x on everything plus massive multipliers through Capital One Travel.",
-          "Includes lounge access for you and up to four authorized users at no additional cost."
-        ],
-        "paragraph": "Think of it as a premium starter card that rewards both simplicity seekers and points enthusiasts alike."
+      "slug": "hsbc-travelone-credit-card",
+      "layout": "premiumTravel",
+      "name": "HSBC TravelOne Credit Card",
+      "issuer": "HSBC Bank",
+      "network": "Mastercard World",
+      "type": "Premium Travel Credit Card",
+      "summary": "Premium travel card with instant airline transfers, rich lounge access, and milestone bonuses for heavy travellers.",
+      "seoDescription": "Review the HSBC TravelOne Credit Card welcome bonuses, 1:1 airline and hotel transfers, lounge visits, and milestone rewards before you apply.",
+      "annualFee": {
+        "amount": 4999,
+        "currency": "INR",
+        "gstApplicable": true
       },
-      "overview": {
-        "headers": [
-          "Reward rate",
-          "Best for",
-          "USP"
-        ],
-        "rows": [
-          [
-            "2x–10x Capital One Miles",
-            "Travelers who value simplicity",
-            "$300 travel credit + 10K anniversary miles"
-          ]
-        ],
-        "paragraph": "The Venture X offsets its fee almost automatically, making it easy to justify even for casual travelers."
+      "websiteDisplayTags": [
+        "Premium Travel Card",
+        "Instant Miles Transfer",
+        "Airport Lounge Access"
+      ],
+      "keyHighlights": [
+        "Unlock ₹4,000 in welcome value plus EazyDiner Prime after ₹10K spend in 30 days.",
+        "Earn up to 4 Reward Points per ₹100 on travel and overseas purchases with a 1:1 partner transfer ratio.",
+        "Access 6 domestic and 4 international lounges plus golf and lifestyle privileges."
+      ],
+      "fees": {
+        "joiningFee": 4999,
+        "annualFee": 4999,
+        "waiver": {
+          "spendRequirement": 800000,
+          "currency": "INR"
+        }
       },
-      "annualFeeDetails": {
-        "headers": [
-          "Fee component",
-          "Details"
+      "welcomeBenefits": {
+        "requirements": [
+          {
+            "spend": 10000,
+            "periodDays": 30,
+            "postingTime": "Within 60 days after 30-day completion",
+            "benefits": [
+              {
+                "type": "cashback",
+                "valueInInr": 1000
+              },
+              {
+                "type": "hotel_voucher",
+                "valueInInr": 3000,
+                "partner": "The Postcard Hotel"
+              },
+              {
+                "type": "membership",
+                "name": "EazyDiner Prime",
+                "validity": "3 months"
+              }
+            ]
+          },
+          {
+            "spend": 100000,
+            "periodDays": 90,
+            "benefits": [
+              {
+                "type": "reward_points",
+                "value": 3000
+              }
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Joining fee",
-            "$395"
-          ],
-          [
-            "Welcome benefit",
-            "75,000-mile bonus after $4,000 spend in 3 months"
-          ],
-          [
-            "Renewal / annual fee",
-            "$395"
-          ],
-          [
-            "Renewal benefit",
-            "$300 Capital One Travel credit + 10,000 anniversary miles"
-          ],
-          [
-            "Renewal fee waiver",
-            "Not standard—retention offers possible"
-          ]
-        ],
-        "paragraph": "The annual travel credit and anniversary miles alone can outweigh the annual fee when redeemed well."
+        "sourceNote": "Per welcome & 90-day milestone terms"
       },
-      "rewards": {
-        "headers": [
-          "Spend type",
-          "Reward points",
-          "Estimated value (portal)",
-          "Estimated value (transfer)"
-        ],
-        "rows": [
-          [
-            "Hotels & rental cars via Capital One Travel",
-            "10x miles",
-            "~15% back",
-            "~20% with high-value partners"
+      "rewardProgram": {
+        "currency": "Reward Points",
+        "baseRate": "2 RP per ₹100 spend",
+        "acceleratedRate": {
+          "rate": "4 RP per ₹100",
+          "categories": [
+            "Flights",
+            "Online Travel Aggregators",
+            "Foreign Currency (non-DCC only)"
           ],
-          [
-            "Flights via Capital One Travel",
-            "5x miles",
-            "~7.5% back",
-            "~10% with high-value partners"
-          ],
-          [
-            "All other purchases",
-            "2x miles",
-            "~3% back",
-            "~4% with partners"
-          ],
-          [
-            "Capital One Dining",
-            "Earn up to 10x",
-            "Varies",
-            "Varies"
-          ]
-        ],
-        "paragraph": "Miles transfer to partners like Air Canada Aeroplan, Avianca LifeMiles, and British Airways for outsized value."
+          "monthlyCap": 50000
+        },
+        "earnLogic": "1 RP per ₹50 eligible spend",
+        "expiry": "3 years",
+        "sourceNote": "Base & accelerated rules per rewards T&C"
       },
+      "rewardExclusions": [
+        "Utilities",
+        "Government & tax payments",
+        "Insurance",
+        "Jewellery",
+        "Wallet loads",
+        "Fuel",
+        "Money transfer",
+        "Education",
+        "Cash advances & charges",
+        "Financial institutions"
+      ],
       "milestoneBenefits": {
-        "headers": [
-          "Spend requirement",
-          "Milestone benefit",
-          "Benefit type"
-        ],
-        "rows": [
-          [
-            "Card anniversary",
-            "10,000 bonus miles",
-            "Automatic anniversary bonus"
-          ],
-          [
-            "Annual Capital One Travel booking",
-            "$300 statement credit",
-            "Travel credit"
-          ]
-        ],
-        "paragraph": "Book at least $300 through Capital One Travel yearly to keep the effective net fee near zero."
+        "annualSpendBonus": {
+          "thresholdInInr": 1200000,
+          "rewardPoints": 10000,
+          "cycle": "Anniversary year"
+        },
+        "first90DaySpendBonus": {
+          "thresholdInInr": 100000,
+          "rewardPoints": 3000,
+          "cycle": "First 90 days"
+        }
       },
       "redemption": {
-        "bullets": [
-          "Redeem miles for travel purchases at a fixed 1¢ per mile through Purchase Eraser.",
-          "Transfer to 15+ airline and hotel partners, often at a 1:1 ratio.",
-          "Book flights, hotels, and rental cars directly in the Capital One Travel portal for simplicity.",
-          "Use miles for gift cards or cash back if needed—typically at reduced value."
-        ],
-        "paragraph": "Transfers to programs like Turkish Airlines Miles&Smiles and Wyndham Rewards create excellent sweet spots."
-      },
-      "loungeAccess": {
-        "headers": [
-          "Access type",
-          "Access via",
-          "Access limit"
-        ],
-        "rows": [
-          [
-            "Domestic lounges",
-            "Capital One Lounges + Priority Pass",
-            "Unlimited for cardholder and 2 guests"
+        "type": "Instant miles/hotel transfer",
+        "rate": "1 RP = 1 airline mile / hotel point (select partners)",
+        "platform": "HSBC Mobile Banking App",
+        "instantRedemption": true,
+        "partners": {
+          "airlines": [
+            "Air India",
+            "Air France-KLM Flying Blue",
+            "British Airways",
+            "Etihad Guest",
+            "Singapore Airlines",
+            "Qatar Airways Privilege Club",
+            "Qantas",
+            "United MileagePlus",
+            "Turkish Airlines Miles&Smiles",
+            "Japan Airlines JAL",
+            "Vietnam Airlines",
+            "AirAsia (1:3)"
           ],
-          [
-            "International lounges",
-            "Priority Pass Select",
-            "Unlimited visits for cardholder"
-          ],
-          [
-            "Authorized users",
-            "Complimentary (up to 4)",
-            "Share the same access"
+          "hotels": [
+            "Marriott Bonvoy",
+            "Accor Live Limitless",
+            "IHG One Rewards",
+            "Wyndham Rewards",
+            "Shangri-La Circle (5:1)"
           ]
-        ],
-        "paragraph": "Register each authorized user for Priority Pass to maximize the lounge benefit."
+        }
       },
-      "forexMarkup": {
-        "bullets": [
-          "Foreign transaction fees: None.",
-          "2x everywhere ensures consistent rewards abroad.",
-          "Expect 1%–2% net gain after accounting for transfer partner redemptions."
+      "travelBenefits": {
+        "airportLoungeAccess": {
+          "domestic": 6,
+          "international": 4,
+          "note": "per year"
+        },
+        "golf": {
+          "freeRounds": 4,
+          "freeLessons": 12,
+          "limit": "1 per month",
+          "discount": "50% on extra rounds"
+        },
+        "holidayBenefits": [
+          {
+            "partner": "Yatra",
+            "benefit": "15% off"
+          },
+          {
+            "partner": "EaseMyTrip",
+            "benefit": "15% off"
+          },
+          {
+            "partner": "Paytm Travel",
+            "benefit": "15% off"
+          },
+          {
+            "partner": "Cleartrip",
+            "benefit": "15% off"
+          },
+          {
+            "partner": "StayVista",
+            "benefit": "11% off (max ₹3,000)"
+          }
         ],
-        "paragraph": "Swipe it internationally without worry thanks to network-wide acceptance and no forex fee."
-      }
+        "dutyFreeDiscount": "Up to 20% at select stores"
+      },
+      "otherPrivileges": {
+        "purchaseProtection": "Up to USD 20,000",
+        "movieDiningBenefits": "Powered by Zomato District app",
+        "exclusivePrivileges": [
+          "Bicester Village VIP access",
+          "Hands-free shopping benefits"
+        ]
+      },
+      "eligibility": {
+        "age": "18-65 years",
+        "minIncome": "₹6,00,000 annual (salaried)",
+        "residency": "Indian residents",
+        "citiesServed": [
+          "Mumbai",
+          "Delhi NCR",
+          "Bangalore",
+          "Hyderabad",
+          "Pune",
+          "Chennai",
+          "Kolkata",
+          "Ahmedabad",
+          "Jaipur",
+          "Chandigarh",
+          "Noida",
+          "Gurgaon",
+          "Kochi",
+          "Coimbatore"
+        ]
+      },
+      "tags": [
+        "Premium Travel Card",
+        "Instant Miles Transfer",
+        "Airport Lounge Access",
+        "Hotel & Airline Rewards",
+        "Dining & Lifestyle Benefits"
+      ]
     },
     {
-      "slug": "amex-gold",
-      "name": "American Express® Gold Card",
-      "issuer": "American Express",
-      "annualFee": "$250",
-      "summary": "Dining and grocery powerhouse that feeds you Membership Rewards points fast with easy statement credits.",
-      "seoDescription": "Understand how the Amex Gold card's bonus categories and monthly dining credits make it a staple in points strategies.",
-      "welcomeOffer": "Earn 60,000 Membership Rewards® points after you spend $4,000 on eligible purchases within the first 6 months.",
-      "bestFor": "Foodies and home cooks who can maximize dining rewards and flexible transfer partners.",
-      "introduction": {
-        "bullets": [
-          "Targets everyday dining and grocery runs with rich multipliers.",
-          "Pairs well with the Amex Platinum or Green to cover more travel categories.",
-          "Monthly credits offset much of the annual fee when used consistently."
-        ],
-        "paragraph": "If your budget leans heavily toward food, this card turns every meal into Membership Rewards momentum."
+      "slug": "american-express-platinum-travel-credit-card",
+      "layout": "premiumTravel",
+      "name": "American Express® Platinum Travel Credit Card",
+      "issuer": "American Express Banking Corp.",
+      "network": "American Express",
+      "type": "Travel Rewards Credit Card",
+      "summary": "Milestone-driven Membership Rewards card that unlocks Taj travel vouchers, domestic lounge visits, and concierge-backed support for frequent flyers.",
+      "seoDescription": "Maximize Membership Rewards with the American Express Platinum Travel Credit Card. Learn how milestone bonuses, Taj vouchers, and lounge access combine to elevate your travel strategy.",
+      "annualFee": {
+        "amount": 5000,
+        "currency": "INR",
+        "gstApplicable": true
       },
-      "overview": {
-        "headers": [
-          "Reward rate",
-          "Best for",
-          "USP"
-        ],
-        "rows": [
-          [
-            "1x–4x Membership Rewards",
-            "Dining and grocery enthusiasts",
-            "$10 dining + $10 Uber Cash monthly credits"
-          ]
-        ],
-        "paragraph": "High multipliers on staple categories make it easy to rack up transferable points quickly."
+      "websiteDisplayTags": [
+        "Travel Vouchers",
+        "Milestone Rewards",
+        "Domestic Lounge Access"
+      ],
+      "keyHighlights": [
+        "₹10,000 Taj Experiences e-gift card plus 25K MR after ₹4 lakh annual milestone",
+        "Membership Rewards never expire while the account remains in good standing"
+      ],
+      "fees": {
+        "joiningFee": 5000,
+        "annualFee": 5000
       },
-      "annualFeeDetails": {
-        "headers": [
-          "Fee component",
-          "Details"
+      "welcomeBenefits": {
+        "requirements": [
+          {
+            "spend": 15000,
+            "periodDays": 90,
+            "benefits": [
+              {
+                "type": "reward_points",
+                "value": 10000,
+                "name": "Membership Rewards points"
+              }
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Joining fee",
-            "$250"
-          ],
-          [
-            "Welcome benefit",
-            "60,000-point bonus after $4,000 spend in 6 months"
-          ],
-          [
-            "Renewal / annual fee",
-            "$250"
-          ],
-          [
-            "Renewal benefit",
-            "$120 dining credit + $120 Uber Cash (monthly enrollment required)"
-          ],
-          [
-            "Renewal fee waiver",
-            "Retention offers possible with history"
-          ]
-        ],
-        "paragraph": "Use both monthly credits and the fee becomes far easier to justify year after year."
+        "sourceNote": "Spend requirement counted within 90 days of card setup."
       },
-      "rewards": {
-        "headers": [
-          "Spend type",
-          "Reward points",
-          "Estimated value (cash)",
-          "Estimated value (transfer)"
-        ],
-        "rows": [
-          [
-            "Worldwide dining",
-            "4x points",
-            "~6% back",
-            "~8% with partners"
-          ],
-          [
-            "U.S. supermarkets (up to $25K)",
-            "4x points",
-            "~6% back",
-            "~8% with partners"
-          ],
-          [
-            "Flights booked directly or via Amex Travel",
-            "3x points",
-            "~4.5% back",
-            "~6% with partners"
-          ],
-          [
-            "Other eligible purchases",
-            "1x point",
-            "~1.5% back",
-            "~2% with partners"
-          ]
-        ],
-        "paragraph": "Pair with Rakuten or dining portals to stack additional rewards on top of the generous multipliers."
+      "rewardProgram": {
+        "currency": "Membership Rewards® points",
+        "baseRate": "1 MR / ₹50 on eligible spends",
+        "earnLogic": "Points accrue at 1 MR per ₹50 on eligible swipes; accelerated earn not available.",
+        "expiry": "No expiry while card is active and in good standing; forfeited within 30 days after closure"
       },
+      "rewardExclusions": [
+        "Fuel",
+        "Insurance",
+        "Utilities",
+        "Cash transactions",
+        "EMI conversion at Point of Sale"
+      ],
       "milestoneBenefits": {
-        "headers": [
-          "Spend requirement",
-          "Milestone benefit",
-          "Benefit type"
+        "additionalMilestones": [
+          {
+            "thresholdInInr": 190000,
+            "rewardPoints": 15000,
+            "cycle": "Card membership year",
+            "split": {
+              "thresholdPoints": 7500,
+              "extraPointsViaSupport": 7500,
+              "redemptionNote": "Call/chat Amex to post bonus MR"
+            },
+            "redeemableOn": [
+              "Platinum Travel Collection",
+              "Amex Travel Online (Pay with Points)"
+            ]
+          },
+          {
+            "thresholdInInr": 400000,
+            "rewardPoints": 25000,
+            "cycle": "Card membership year",
+            "split": {
+              "thresholdPoints": 10000,
+              "extraPointsViaSupport": 15000,
+              "redemptionNote": "Call/chat Amex to post bonus MR"
+            },
+            "additionalBenefit": {
+              "type": "hotel_voucher",
+              "partner": "Taj / SeleQtions / Vivanta",
+              "valueInInr": 10000,
+              "deliveryTimeline": "Voucher emailed within ~30 days of milestone"
+            },
+            "redeemableOn": [
+              "Platinum Travel Collection",
+              "Amex Travel Online (Pay with Points)"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "$25,000 annual supermarket spend",
-            "4x points cap maintained",
-            "Category accelerator"
-          ],
-          [
-            "Card anniversary",
-            "Access to Amex Offers refresh",
-            "Targeted statement credits"
-          ]
-        ],
-        "paragraph": "Monitor category caps to ensure you're maximizing bonus spend before moving overflow to another card."
+        "eligibleSpendNote": "Milestones track 12 months from issuance/renewal; excludes cash advances, fees/charges, and net of refunds."
       },
       "redemption": {
-        "bullets": [
-          "Transfer to airline partners like Air Canada, British Airways, Iberia, and Virgin Atlantic for premium cabin deals.",
-          "Redeem via Amex Travel for flights at 1¢ per point or hotels at 0.7¢.",
-          "Use the exclusive Amex Gold Collection for high-end merchandise at ~0.65¢ per point.",
-          "Statement credits redeem at 0.6¢ and should be a last resort."
-        ],
-        "paragraph": "Leverage transfer partners for aspirational redemptions—think Iberia business class or Virgin Atlantic Upper Class."
+        "type": "Travel bookings via Platinum Travel Collection & Amex Travel Online",
+        "platform": "Amex Travel Online (Pay with Points)",
+        "instantRedemption": false,
+        "notes": [
+          "Milestone MR can be redeemed for domestic/international flights, hotels, and transfers on Amex Travel Online"
+        ]
       },
-      "loungeAccess": {
-        "headers": [
-          "Access type",
-          "Access via",
-          "Access limit"
-        ],
-        "rows": [
-          [
-            "Domestic lounges",
-            "Not included",
-            "N/A"
-          ],
-          [
-            "International lounges",
-            "Not included",
-            "N/A"
-          ],
-          [
-            "Partner experiences",
-            "Enroll in Priority Pass (restaurant credits only)",
-            "Subject to program limits"
-          ]
-        ],
-        "paragraph": "Add an Amex Platinum or enroll in premium lounge memberships if airport time is important to you."
+      "travelBenefits": {
+        "airportLoungeAccess": {
+          "domestic": {
+            "complimentaryVisitsPerYear": 8,
+            "quarterlyCap": 2,
+            "notes": [
+              "Primary/basic cardmember only",
+              "First-come-first-served",
+              "₹2 authorization on Amex terminal at lounge",
+              "No access to American Express Proprietary Lounges"
+            ]
+          },
+          "note": "Quarterly cap of 2 visits for the primary cardmember.",
+          "priorityPass": {
+            "membershipFee": "Priority Pass membership fee (US$99) waived",
+            "visitCharges": "Basic cardmember and guests charged ~US$35 per visit (prevailing PP rate)",
+            "notes": [
+              "Guest visits chargeable and billed to card",
+              "See Priority Pass T&Cs for full details"
+            ]
+          }
+        }
       },
-      "forexMarkup": {
-        "bullets": [
-          "Foreign transaction fees: None.",
-          "4x dining multiplier applies globally when the merchant codes as restaurant.",
-          "Expect 1.5%–2% net value on uncapped international spending when transferring points."
+      "otherPrivileges": {
+        "movieDiningBenefits": "Up to 20% dining savings at select American Express partner restaurants",
+        "exclusivePrivileges": [
+          "Fuel convenience fee waiver at HPCL (as offered by issuer)",
+          "EMI options on eligible purchases"
         ],
-        "paragraph": "While it's chip-and-signature in some regions, acceptance remains strong in major cities worldwide."
+        "securityServices": [
+          "Zero lost card liability",
+          "Contactless payments enabled",
+          "Dedicated Platinum Travel services support"
+        ]
+      },
+      "eligibility": {
+        "age": "18+ years",
+        "minIncome": "₹6,00,000 annual income",
+        "residency": "Resident Indian with Indian or multinational bank account",
+        "citiesServed": [
+          "Delhi/NCR",
+          "Mumbai",
+          "Bengaluru",
+          "Chennai",
+          "Pune",
+          "Hyderabad",
+          "Jaipur",
+          "Indore",
+          "Coimbatore",
+          "Chandigarh",
+          "Ahmedabad",
+          "Surat",
+          "Vadodara",
+          "Lucknow",
+          "Ludhiana",
+          "Nagpur",
+          "Nashik",
+          "Thiruvananthapuram",
+          "Mysuru"
+        ]
+      },
+      "tags": [
+        "Travel Vouchers",
+        "Milestone Rewards",
+        "Domestic Lounge Access",
+        "Taj Voucher",
+        "Amex Travel Online"
+      ],
+      "vouchersAndOffers": {
+        "vouchers": [
+          {
+            "name": "Taj Experiences e-Gift Card",
+            "valueInInr": 10000,
+            "trigger": "On achieving ₹4,00,000 annual milestone",
+            "validity": "Valid for stays and spend at Taj, SeleQtions, Vivanta hotels in India",
+            "validityDays": 360,
+            "oneTimeUse": true,
+            "bookingChannels": [
+              "tajhotels.com",
+              "seleqtionshotels.com",
+              "vivantahotels.com",
+              "Taj Reservations Worldwide / reservations@ihcltata.com"
+            ],
+            "notes": [
+              "Not valid on closed user group, negotiated, or employee rates",
+              "No redemption via third-party OTAs",
+              "Standalone restaurant/spa spend must be billed to the room"
+            ]
+          }
+        ],
+        "otherPrograms": [
+          "Priority Pass membership (visits chargeable)",
+          "Fuel convenience fee waiver at HPCL (as offered by issuer)",
+          "Up to 20% dining savings at select restaurants (issuer network program)",
+          "EMI options on eligible purchases"
+        ]
       }
     }
   ],
   "cardStrategies": [
     {
-      "title": "Start with a flexible currency",
-      "description": "Chase Ultimate Rewards, American Express Membership Rewards, and Capital One Miles give you multiple airline and hotel partners to work with."
+      "title": "Center your wallet on transferable currencies",
+      "description": "EDGE Miles combine fixed-value redemptions with the option to move into partner programs when sweet spots appear."
     },
     {
-      "title": "Pair premium with no-fee",
-      "description": "A premium card unlocks lounge access and travel credits, while a no-fee card keeps points alive when you want to downgrade."
+      "title": "Track tier milestones across the card anniversary",
+      "description": "Atlas tiers reset each anniversary year, so line up big travel or business expenses early to unlock upgrades."
     },
     {
-      "title": "Stack category bonuses",
-      "description": "Use dining, grocery, and travel multipliers to earn faster—then move those points into the program offering the best redemption."
+      "title": "Mix in low-fee backups for exclusions",
+      "description": "Pair Atlas with a no-fee rewards or cashback card for categories like utilities or rent that do not earn EDGE Miles."
     }
   ],
   "favoriteCombos": [
     {
-      "name": "Everyday Essentials",
+      "name": "Travel EDGE Accelerator",
       "cards": [
-        "Chase Sapphire Preferred",
-        "Chase Freedom Flex"
+        "Axis Bank Atlas Credit Card",
+        "Axis Bank Magnus"
       ],
-      "note": "A low annual fee starter duo that earns 3x travel/dining and rotating 5x categories while sharing one points pool."
+      "note": "Use Atlas for travel and lounge access while Magnus handles luxury lifestyle credits and dining offers."
     },
     {
-      "name": "Premium Globetrotter",
+      "name": "Miles + Cashback Safety Net",
       "cards": [
-        "Amex Platinum",
-        "Amex Gold"
+        "Axis Bank Atlas Credit Card",
+        "Prime Cashback Card"
       ],
-      "note": "Stack $200 in airline incidental credits with 4x grocery/dining to rack up transferable points quickly."
+      "note": "Retain EDGE Mile flexibility yet cover non-bonus categories with a flat-rate cashback companion."
     },
     {
-      "name": "Cashback Safety Net",
+      "name": "Global Traveller Starter",
       "cards": [
-        "Capital One Venture",
-        "Citi Double Cash"
+        "Axis Bank Atlas Credit Card",
+        "Entry-level No-Forex Fee Card"
       ],
-      "note": "Earn 2x everywhere, then transfer to Capital One partners or fall back on simple statement credits when award space is scarce."
+      "note": "Combine Atlas lounge visits and partner transfers with a no-forex-fee backup for spends outside the EDGE ecosystem."
     }
   ]
 }

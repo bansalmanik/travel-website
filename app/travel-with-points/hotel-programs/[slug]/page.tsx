@@ -11,9 +11,16 @@ type SectionImage = {
 };
 
 type ListSection = {
+  title?: string;
+  description?: string;
   items?: string[];
   note?: string;
   image?: SectionImage;
+};
+
+type QuickFact = {
+  label: string;
+  value: string;
 };
 
 type StatusRow = {
@@ -36,12 +43,20 @@ type HotelProgram = {
   summary: string;
   seoDescription: string;
   overview?: ListSection;
+  quickFacts?: QuickFact[];
   statusLevels?: StatusLevelsSection;
+  enrollment?: ListSection;
   coBrandedCards?: ListSection;
   pointsEarn?: ListSection;
   pointsBurn?: ListSection;
+  eliteBenefitDetails?: ListSection;
+  partnerships?: ListSection;
+  specialPerks?: ListSection;
+  lifetimeStatus?: ListSection;
   paidMemberships?: ListSection;
   otherBenefits?: ListSection;
+  notesSection?: ListSection;
+  tags?: string[];
 };
 
 const programs = (hotelData as { programs: HotelProgram[] }).programs;
@@ -119,29 +134,91 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     );
   };
 
-  const renderListSection = (title: string, section?: ListSection) => {
-    if (!section?.items || section.items.length === 0) {
+  const renderListSection = (defaultTitle: string, section?: ListSection) => {
+    if (!section) {
       return null;
     }
+
+    const hasContent =
+      (section.description && section.description.trim().length > 0) ||
+      (section.items && section.items.length > 0) ||
+      (section.note && section.note.trim().length > 0) ||
+      section.image;
+
+    if (!hasContent) {
+      return null;
+    }
+
+    const title = section.title ?? defaultTitle;
 
     return (
       <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-white">{title}</h2>
-          <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
-            {section.items.map((item) => (
-              <li key={item} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          {section.description ? (
+            <p className="text-sm leading-6 text-slate-200/80">{section.description}</p>
+          ) : null}
+          {section.items && section.items.length > 0 ? (
+            <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
+              {section.items.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
           {section.note ? (
             <p className="text-sm text-slate-200/80">{section.note}</p>
           ) : null}
         </div>
         {renderSectionImage(section.image)}
       </section>
+    );
+  };
+
+  const renderQuickFacts = (facts?: QuickFact[]) => {
+    if (!facts || facts.length === 0) {
+      return null;
+    }
+
+    return (
+      <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold text-white">Quick facts</h2>
+          <dl className="grid gap-4 sm:grid-cols-2">
+            {facts.map((fact) => (
+              <div
+                key={`${fact.label}-${fact.value}`}
+                className="rounded-2xl border border-white/5 bg-black/20 p-4"
+              >
+                <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-300">
+                  {fact.label}
+                </dt>
+                <dd className="mt-2 text-sm font-medium text-slate-100/90">{fact.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+    );
+  };
+
+  const renderTags = (tags?: string[]) => {
+    if (!tags || tags.length === 0) {
+      return null;
+    }
+
+    return (
+      <ul className="flex flex-wrap gap-2">
+        {tags.map((tag) => (
+          <li key={tag}>
+            <span className="inline-flex items-center rounded-full border border-sky-300/40 bg-sky-300/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-sky-200">
+              {tag}
+            </span>
+          </li>
+        ))}
+      </ul>
     );
   };
 
@@ -153,53 +230,65 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     return (
       <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
         <div className="space-y-6">
-          <div className="space-y-3">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <h2 className="text-xl font-semibold text-white">Status levels</h2>
-              <p className="text-xs font-medium uppercase tracking-[0.35em] text-sky-300">
-                Elite benefits by tier
-              </p>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-white/10 text-left text-sm text-slate-100/80">
-                <caption className="sr-only">Elite benefits comparison across loyalty tiers</caption>
-                <thead>
-                  <tr>
-                    <th scope="col" className="whitespace-nowrap px-4 py-3 font-semibold text-slate-100">
-                      Benefit
+          <div className="space-y-2">
+            <h2 className="text-xl font-semibold text-white">Status levels</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-200">
+              Elite benefits by tier
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[560px] border-separate border-spacing-y-3 text-left text-sm text-slate-100/80">
+              <caption className="sr-only">Elite benefits comparison across loyalty tiers</caption>
+              <thead>
+                <tr>
+                  <th
+                    scope="col"
+                    className="rounded-lg bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-sky-200"
+                  >
+                    Benefit
+                  </th>
+                  {section.tiers.map((tier) => (
+                    <th
+                      key={tier}
+                      scope="col"
+                      className="rounded-lg bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-sky-200"
+                    >
+                      {tier}
                     </th>
-                    {section.tiers.map((tier) => (
-                      <th
-                        key={tier}
-                        scope="col"
-                        className="whitespace-nowrap px-4 py-3 font-semibold text-slate-100"
-                      >
-                        {tier}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-white/5">
-                  {section.rows.map((row) => (
-                    <tr key={row.label} className="align-top">
-                      <th scope="row" className="whitespace-nowrap px-4 py-4 text-left font-semibold text-slate-100">
-                        <div className="space-y-2">
-                          <span>{row.label}</span>
-                          {row.description ? (
-                            <p className="max-w-xs text-xs font-normal text-slate-300/80">{row.description}</p>
-                          ) : null}
-                        </div>
-                      </th>
-                      {section.tiers.map((_, index) => (
-                        <td key={`${row.label}-${index}`} className="whitespace-pre-wrap px-4 py-4 text-slate-100/80">
-                          {row.values[index] && row.values[index].length > 0 ? row.values[index] : "—"}
-                        </td>
-                      ))}
-                    </tr>
                   ))}
-                </tbody>
-              </table>
-            </div>
+                </tr>
+              </thead>
+              <tbody>
+                {section.rows.map((row) => (
+                  <tr key={row.label} className="align-top">
+                    <th
+                      scope="row"
+                      className="rounded-lg bg-white/10 px-4 py-4 text-left text-sm font-semibold text-white"
+                    >
+                      <div className="space-y-2">
+                        <span>{row.label}</span>
+                        {row.description ? (
+                          <p className="max-w-xs text-xs font-normal text-slate-300/80">{row.description}</p>
+                        ) : null}
+                      </div>
+                    </th>
+                    {section.tiers.map((_, index) => {
+                      const value = row.values[index];
+                      const hasValue = typeof value === "string" && value.trim().length > 0;
+
+                      return (
+                        <td
+                          key={`${row.label}-${index}`}
+                          className="rounded-lg bg-white/5 px-4 py-4 text-slate-100/80"
+                        >
+                          {hasValue ? value : <span className="text-slate-500/70">—</span>}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
           {section.note ? <p className="text-sm text-slate-200/80">{section.note}</p> : null}
         </div>
@@ -219,7 +308,8 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     name: program.name,
     description: program.summary,
     areaServed: program.footprint,
-    url: `https://example.com/travel-with-points/hotel-programs/${program.slug}`
+    url: `https://example.com/travel-with-points/hotel-programs/${program.slug}`,
+    ...(program.tags ? { keywords: program.tags } : {})
   };
 
   return (
@@ -251,6 +341,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-300">Hotel loyalty guide</p>
           <h1 className="text-4xl font-semibold text-white">{program.name}</h1>
           <p className="text-base text-slate-200/80">{program.summary}</p>
+          {renderTags(program.tags)}
         </header>
 
         <section className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
@@ -268,19 +359,33 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
           </p>
         </section>
 
+        {renderQuickFacts(program.quickFacts)}
+
         {renderListSection("Overview", program.overview)}
+
+        {renderListSection("Enrollment", program.enrollment)}
 
         {renderStatusSection(program.statusLevels)}
 
+        {renderListSection("Earning points", program.pointsEarn)}
+
+        {renderListSection("Redeeming points", program.pointsBurn)}
+
+        {renderListSection("Elite benefit details", program.eliteBenefitDetails)}
+
+        {renderListSection("Partnerships", program.partnerships)}
+
         {renderListSection("Co-branded cards", program.coBrandedCards)}
 
-        {renderListSection("Points earn rate", program.pointsEarn)}
+        {renderListSection("Special perks", program.specialPerks)}
 
-        {renderListSection("Points burn rate", program.pointsBurn)}
+        {renderListSection("Lifetime status", program.lifetimeStatus)}
 
-        {renderListSection("Paid memberships", program.paidMemberships)}
+        {renderListSection("Membership policies", program.paidMemberships)}
 
-        {renderListSection("Other benefits", program.otherBenefits)}
+        {renderListSection("Additional benefits", program.otherBenefits)}
+
+        {renderListSection("Notes", program.notesSection)}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Research more hotel brands</p>
