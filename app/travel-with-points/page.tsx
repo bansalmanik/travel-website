@@ -30,10 +30,10 @@ const sections = [
     accent: "bg-emerald-100 text-emerald-900",
   },
   {
-    title: "Affiliates Website",
+    title: "Bank Programs",
     description:
-      "Preview the partner tools we recommend for creators building point-friendly experiences.",
-    href: "/travel-with-points/affiliates",
+      "Tap into bank-specific travel portals and redemption tools to stretch every transferable point further.",
+    href: "/travel-with-points/bank-programs",
     accent: "bg-rose-100 text-rose-900",
   },
 ];
