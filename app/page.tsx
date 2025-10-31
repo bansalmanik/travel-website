@@ -71,7 +71,7 @@ export default function Home() {
       <header className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?auto=format&fit=crop&w=1600&q=80"
+            src="/images/content/20230617_112049.JPG"
             alt="Sunset over mountains and fjords"
             fill
             className="object-cover brightness-75"
