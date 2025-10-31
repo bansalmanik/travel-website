@@ -643,17 +643,6 @@
           }
         ],
         "enabled": true
-      },
-      {
-        "rate": "3 EDGE Miles : 10 Marriott Bonvoy Point",
-        "partners": [
-          {
-            "to": "IOCL XTRAREWARDS",
-            "insight": "Marriott conversions from IndianOil Premium cards follow a reduced ratio compared with other partners.",
-            "enabled": true
-          }
-        ],
-        "enabled": true
       }
     ],
     "enabled": true
