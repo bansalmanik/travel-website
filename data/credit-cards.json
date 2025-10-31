@@ -158,7 +158,7 @@
           "alt": "Axis Bank Atlas Credit Card"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -326,7 +326,7 @@
         "Flight Vouchers",
         "Dining Discounts"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -548,7 +548,7 @@
         "Hotel & Airline Rewards",
         "Dining & Lifestyle Benefits"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -755,24 +755,24 @@
           "EMI options on eligible purchases"
         ]
       },
-      "enabled": true
+      "enabled": false
     }
   ],
   "cardStrategies": [
     {
       "title": "Center your wallet on transferable currencies",
       "description": "EDGE Miles combine fixed-value redemptions with the option to move into partner programs when sweet spots appear.",
-      "enabled": true
+      "enabled": false
     },
     {
       "title": "Track tier milestones across the card anniversary",
       "description": "Atlas tiers reset each anniversary year, so line up big travel or business expenses early to unlock upgrades.",
-      "enabled": true
+      "enabled": false
     },
     {
       "title": "Mix in low-fee backups for exclusions",
       "description": "Pair Atlas with a no-fee rewards or cashback card for categories like utilities or rent that do not earn EDGE Miles.",
-      "enabled": true
+      "enabled": false
     }
   ],
   "favoriteCombos": [
@@ -783,7 +783,7 @@
         "Axis Bank Magnus"
       ],
       "note": "Use Atlas for travel and lounge access while Magnus handles luxury lifestyle credits and dining offers.",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "Miles + Cashback Safety Net",
@@ -792,7 +792,7 @@
         "Prime Cashback Card"
       ],
       "note": "Retain EDGE Mile flexibility yet cover non-bonus categories with a flat-rate cashback companion.",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "Global Traveller Starter",
@@ -801,7 +801,7 @@
         "Entry-level No-Forex Fee Card"
       ],
       "note": "Combine Atlas lounge visits and partner transfers with a no-forex-fee backup for spends outside the EDGE ecosystem.",
-      "enabled": true
+      "enabled": false
     }
   ]
 }
