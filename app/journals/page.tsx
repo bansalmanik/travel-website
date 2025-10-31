@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import journalsData from "@/data/journals.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 type JournalEntry = {
   slug: string;
@@ -16,10 +17,14 @@ type JournalEntry = {
   heroImage: {
     src: string;
     alt: string;
+    enabled?: boolean;
   };
+  enabled?: boolean;
 };
 
-const journals = (journalsData as { journals: JournalEntry[] }).journals;
+const journals = filterEnabled(
+  (journalsData as { journals: JournalEntry[] }).journals
+).map((entry) => filterEnabledDeep(entry));
 
 const pageTitle = "Travel Journal Library | Miles Go Round";
 const pageDescription =

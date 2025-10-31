@@ -5,6 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import cardData from "@/data/credit-cards.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 type SectionImage = {
   src: string;
@@ -415,7 +416,9 @@ type PremiumTravelCard = BaseCard & {
 
 type Card = TieredMilesCard | LifestyleCard | PremiumTravelCard;
 
-const cards = (cardData as { cards: Card[] }).cards;
+const cards = filterEnabled((cardData as { cards: Card[] }).cards).map((card) =>
+  filterEnabledDeep(card)
+);
 
 type SectionWrapperProps = {
   title: string;

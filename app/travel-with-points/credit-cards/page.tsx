@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import cardData from "@/data/credit-cards.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 type AnnualFee = {
   amount: number;
@@ -20,24 +21,35 @@ type Card = {
   annualFee: AnnualFee;
   websiteDisplayTags?: string[];
   keyHighlights?: string[];
+  enabled?: boolean;
 };
 
 type CardStrategy = {
   title: string;
   description: string;
+  enabled?: boolean;
 };
 
 type FavoriteCombo = {
   name: string;
   cards: string[];
   note: string;
+  enabled?: boolean;
 };
 
-const { cards, cardStrategies, favoriteCombos } = cardData as {
+const {
+  cards: rawCards = [],
+  cardStrategies: rawCardStrategies = [],
+  favoriteCombos: rawFavoriteCombos = []
+} = cardData as {
   cards: Card[];
   cardStrategies: CardStrategy[];
   favoriteCombos: FavoriteCombo[];
 };
+
+const cards = filterEnabled(rawCards).map((card) => filterEnabledDeep(card));
+const cardStrategies = filterEnabled(rawCardStrategies);
+const favoriteCombos = filterEnabled(rawFavoriteCombos);
 
 function formatAnnualFee(annualFee: AnnualFee) {
   const locale = annualFee.currency === "INR" ? "en-IN" : "en-US";
