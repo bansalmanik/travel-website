@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import GallerySlider from "@/app/components/gallery-slider";
+
 import { getAllStorySummaries, getStoryBySlug } from "../data";
 
 type StoryPageProps = {
@@ -115,24 +117,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
         {currentPost.gallery?.length ? (
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">Photo Highlights</h2>
-            <div className="grid gap-6 sm:grid-cols-2">
-              {currentPost.gallery.map((image) => (
-                <figure key={image.src} className="overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900">
-                  <div className="relative h-60 w-full">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      className="object-cover"
-                      sizes="(min-width: 1024px) 50vw, 100vw"
-                    />
-                  </div>
-                  {image.caption ? (
-                    <figcaption className="px-4 py-3 text-sm text-zinc-600 dark:text-zinc-300">{image.caption}</figcaption>
-                  ) : null}
-                </figure>
-              ))}
-            </div>
+            <GallerySlider images={currentPost.gallery} />
           </section>
         ) : null}
 

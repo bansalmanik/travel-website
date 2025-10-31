@@ -1,35 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { getAllStorySummaries } from "@/app/stories/data";
 import journalsData from "@/data/journals.json";
 import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-const featuredStories = [
-  {
-    title: "Chasing Midnight Sun in Lofoten",
-    excerpt:
-      "A week of pastel skies, wild campfires, and the quiet magic of Norwegian fishing villages.",
-    location: "Lofoten Islands, Norway",
-    imageUrl:
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Tea Trails Through Sri Lanka",
-    excerpt:
-      "Riding misty mountain trains, sipping cardamom tea, and listening to stories of the pickers who know the hills best.",
-    location: "Ella, Sri Lanka",
-    imageUrl:
-      "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Slow Evenings in Oaxaca",
-    excerpt:
-      "Cooking with local maestras, mezcal tastings under courtyard lanterns, and finding art in everyday rituals.",
-    location: "Oaxaca, Mexico",
-    imageUrl:
-      "https://images.unsplash.com/photo-1529927066849-66e8e0b30c4b?auto=format&fit=crop&w=1200&q=80",
-  },
-];
 
 type JournalHighlight = {
   slug: string;
@@ -69,7 +43,10 @@ const travelWithPointsHighlights = [
   },
 ];
 
-export default function Home() {
+export default async function Home() {
+  const storySummaries = await getAllStorySummaries();
+  const featuredStories = storySummaries.slice(0, 3);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
       <header className="relative isolate overflow-hidden">
@@ -126,21 +103,25 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-3">
             {featuredStories.map((story) => (
-              <article
-                key={story.title}
+              <Link
+                key={story.slug}
+                href={`/stories/${story.slug}`}
                 className="group overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-2xl"
               >
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src={story.imageUrl}
-                    alt={story.title}
+                    src={story.coverImage.src}
+                    alt={story.coverImage.alt}
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"
                     sizes="(min-width: 768px) 33vw, 100vw"
+                    priority={story.slug === featuredStories[0]?.slug}
                   />
                 </div>
                 <div className="space-y-3 px-6 py-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-500">{story.location}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-500">
+                    {story.city}, {story.country}
+                  </p>
                   <h3 className="text-xl font-semibold text-slate-900">{story.title}</h3>
                   <p className="text-sm leading-6 text-slate-600">{story.excerpt}</p>
                   <span className="inline-flex items-center text-sm font-semibold text-sky-600">
@@ -160,7 +141,7 @@ export default function Home() {
                     </svg>
                   </span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </section>
