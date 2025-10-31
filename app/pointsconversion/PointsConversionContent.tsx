@@ -20,6 +20,29 @@ type PartnerOption = {
   insight: string;
 };
 
+type ParsedRate = {
+  fromValue: string;
+  fromUnit: string;
+  toValue: string;
+  toUnit: string;
+};
+
+const parseRate = (rate: string): ParsedRate => {
+  const [rawFrom = "", rawTo = ""] = rate.split(":");
+  const [fromValue = "", ...fromUnitParts] = rawFrom.trim().split(" ");
+  const [toValue = "", ...toUnitParts] = rawTo.trim().split(" ");
+
+  const fromUnit = fromUnitParts.join(" ");
+  const toUnit = toUnitParts.join(" ");
+
+  return {
+    fromValue: fromValue || rawFrom.trim(),
+    fromUnit: fromUnit || (fromValue ? "" : rawFrom.trim()),
+    toValue: toValue || rawTo.trim(),
+    toUnit: toUnit || (toValue ? "" : rawTo.trim()),
+  };
+};
+
 const conversionsByFrom: ConversionByFrom = conversions.reduce((acc, conversion) => {
   acc[conversion.from] = conversion;
 
@@ -124,6 +147,14 @@ export default function PointsConversionContent() {
     );
   }, [normalizedSelectedPartnerId, partnerOptions]);
 
+  const parsedRate = useMemo(() => {
+    if (!selectedPartner) {
+      return null;
+    }
+
+    return parseRate(selectedPartner.rate);
+  }, [selectedPartner]);
+
   const handleProgramChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const newProgram = event.target.value;
     setSelectedProgramName(newProgram);
@@ -149,115 +180,161 @@ export default function PointsConversionContent() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-16 lg:py-24">
+    <div className="min-h-screen bg-slate-950 text-slate-100">
+      <div className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-16 lg:gap-14 lg:py-24">
         <header className="space-y-4 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">
-            Points Conversion
-          </p>
-          <h1 className="text-4xl font-semibold sm:text-5xl">
-            Optimize every transfer between loyalty ecosystems
+          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+            Track how your points convert
           </h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-200/80">
-            Compare flexible currencies with airline and hotel partners without mixing in unrelated loyalty offers.
-            Choose your source points, browse the available partners, and understand the insights that matter before you
-            move a single point.
+          <p className="mx-auto max-w-2xl text-base text-slate-200/75">
+            Choose a card program and a partner to see a clear, side-by-side breakdown of the transfer ratio with
+            helpful guidance for planning your move.
           </p>
         </header>
 
-        <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <div className="grid gap-6 lg:grid-cols-3">
-            <label className="space-y-2">
-              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
-                Program
-              </span>
-              <select
-                value={selectedProgramName}
-                onChange={handleProgramChange}
-                className="w-full rounded-2xl border border-white/20 bg-slate-900/80 px-4 py-3 text-base text-slate-100 shadow focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
-                aria-label="Select the card program"
-              >
-                {programOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="space-y-2">
-              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
-                Transfer from
-              </span>
-              <select
-                value={normalizedSelectedFrom}
-                onChange={handleFromChange}
-                className="w-full rounded-2xl border border-white/20 bg-slate-900/80 px-4 py-3 text-base text-slate-100 shadow focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
-                aria-label="Select the points program you are transferring from"
-                disabled={fromOptions.length === 0}
-              >
-                {fromOptions.length === 0 ? (
-                  <option value="" disabled>
-                    No cards available
-                  </option>
-                ) : (
-                  fromOptions.map((option) => (
+        <section className="grid gap-8 lg:grid-cols-[300px_1fr] lg:items-start">
+          <div className="rounded-3xl border border-white/5 bg-slate-900/60 p-6 shadow-lg shadow-slate-950/30">
+            <div className="space-y-5">
+              <label className="block space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                  Program
+                </span>
+                <select
+                  value={selectedProgramName}
+                  onChange={handleProgramChange}
+                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                  aria-label="Select the card program"
+                >
+                  {programOptions.map((option) => (
                     <option key={option} value={option}>
                       {option}
                     </option>
-                  ))
-                )}
-              </select>
-            </label>
-            <label className="space-y-2">
-              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
-                Transfer to
-              </span>
-              <select
-                value={normalizedSelectedPartnerId}
-                onChange={(event) => setSelectedPartnerId(event.target.value)}
-                className="w-full rounded-2xl border border-white/20 bg-slate-900/80 px-4 py-3 text-base text-slate-100 shadow focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
-                aria-label="Select the loyalty partner you are transferring to"
-                disabled={partnerOptions.length === 0}
-              >
-                {partnerOptions.length === 0 ? (
-                  <option value="" disabled>
-                    No partners available
-                  </option>
-                ) : (
-                  partnerOptions.map((option) => (
-                    <option key={option.id} value={option.id}>
-                      {option.to}
+                  ))}
+                </select>
+              </label>
+              <label className="block space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                  Transfer from
+                </span>
+                <select
+                  value={normalizedSelectedFrom}
+                  onChange={handleFromChange}
+                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                  aria-label="Select the points program you are transferring from"
+                  disabled={fromOptions.length === 0}
+                >
+                  {fromOptions.length === 0 ? (
+                    <option value="" disabled>
+                      No cards available
                     </option>
-                  ))
-                )}
-              </select>
-            </label>
+                  ) : (
+                    fromOptions.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))
+                  )}
+                </select>
+              </label>
+              <label className="block space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                  Transfer to
+                </span>
+                <select
+                  value={normalizedSelectedPartnerId}
+                  onChange={(event) => setSelectedPartnerId(event.target.value)}
+                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                  aria-label="Select the loyalty partner you are transferring to"
+                  disabled={partnerOptions.length === 0}
+                >
+                  {partnerOptions.length === 0 ? (
+                    <option value="" disabled>
+                      No partners available
+                    </option>
+                  ) : (
+                    partnerOptions.map((option) => (
+                      <option key={option.id} value={option.id}>
+                        {option.to}
+                      </option>
+                    ))
+                  )}
+                </select>
+              </label>
+            </div>
           </div>
 
-          <div className="mt-10 rounded-3xl border border-white/10 bg-slate-900/60 p-8 text-center">
+          <div className="rounded-3xl border border-white/10 bg-slate-900/40 p-8 lg:p-10">
             {selectedPartner ? (
-              <div className="space-y-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">
-                  Conversion Rate
-                </p>
-                <p className="text-5xl font-semibold text-white">{selectedPartner.rate}</p>
-                <div className="flex flex-wrap justify-center gap-3 text-xs uppercase tracking-[0.25em] text-amber-200">
-                  <span className="rounded-full border border-amber-200/40 px-3 py-1 text-amber-200/90">
-                    {normalizedSelectedFrom}
-                  </span>
-                  <span className="rounded-full border border-amber-200/40 px-3 py-1 text-amber-200/90">
-                    {selectedPartner.to}
-                  </span>
+              <div className="flex h-full flex-col gap-8">
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                      From program
+                    </p>
+                    <p className="mt-3 text-sm text-slate-100/90">{normalizedSelectedFrom}</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                      To partner
+                    </p>
+                    <p className="mt-3 text-sm text-slate-100/90">{selectedPartner.to}</p>
+                  </div>
                 </div>
-                <p className="mx-auto max-w-2xl text-sm leading-6 text-slate-100/80">
-                  {selectedPartner.insight}
-                </p>
+
+                <div className="rounded-2xl border border-amber-300/20 bg-slate-950/70 p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/80">
+                    Conversion rate
+                  </p>
+                  {parsedRate ? (
+                    <div className="mt-5 flex items-end justify-center gap-10 sm:gap-16">
+                      <div className="space-y-1 text-center">
+                        <p className="text-4xl font-semibold text-white sm:text-5xl">{parsedRate.fromValue}</p>
+                        {parsedRate.fromUnit ? (
+                          <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-200/70">
+                            {parsedRate.fromUnit}
+                          </p>
+                        ) : null}
+                      </div>
+                      <div className="text-center text-amber-200/80">
+                        <p className="text-sm font-medium uppercase tracking-[0.4em]">to</p>
+                        <p className="text-2xl font-semibold">→</p>
+                      </div>
+                      <div className="space-y-1 text-center">
+                        <p className="text-4xl font-semibold text-white sm:text-5xl">{parsedRate.toValue}</p>
+                        {parsedRate.toUnit ? (
+                          <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-200/70">
+                            {parsedRate.toUnit}
+                          </p>
+                        ) : null}
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                      Snapshot
+                    </p>
+                    <p className="mt-3 text-sm leading-6 text-slate-100/80">
+                      Review how the numbers translate before you move your balance. Confirm current partner promos and
+                      make sure you are ready—most transfers are final.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                      Partner insight
+                    </p>
+                    <p className="mt-3 text-sm leading-6 text-slate-100/80">{selectedPartner.insight}</p>
+                  </div>
+                </div>
               </div>
             ) : (
-              <div className="space-y-3 text-slate-200/70">
+              <div className="flex h-full flex-col items-center justify-center gap-4 text-center text-slate-200/80">
                 <p className="text-lg font-semibold text-white">Choose a partner pairing</p>
-                <p className="text-sm leading-6">
-                  Pick a source program and then choose a transfer partner to surface its conversion ratio.
+                <p className="max-w-md text-sm leading-6">
+                  Select a source program and destination partner to see the transfer breakdown with tips tailored to the
+                  combination.
                 </p>
               </div>
             )}
