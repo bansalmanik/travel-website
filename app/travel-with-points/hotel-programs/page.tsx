@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import hotelData from "@/data/hotel-programs.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 type SectionImage = {
   src: string;
@@ -37,14 +38,19 @@ type ElitePath = {
 type BookingTips = string[];
 
 const {
-  programs = [],
-  elitePaths = [],
+  programs: rawPrograms = [],
+  elitePaths: rawElitePaths = [],
   bookingTips = []
 } = hotelData as {
   programs?: HotelProgram[];
   elitePaths?: ElitePath[];
   bookingTips?: BookingTips;
 };
+
+const programs = filterEnabled(rawPrograms).map((program) =>
+  filterEnabledDeep(program)
+);
+const elitePaths = filterEnabled(rawElitePaths);
 
 export const metadata: Metadata = {
   title: "Hotel loyalty programs guide | Travel with Points",

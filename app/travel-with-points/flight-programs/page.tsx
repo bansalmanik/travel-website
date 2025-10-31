@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import flightData from "@/data/flight-programs.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 type ProgramSection = {
   id: string;
@@ -37,11 +38,21 @@ type FavoriteRoute = {
   highlight: string;
 };
 
-const { programs, awardPlaybook, favoriteRoutes } = flightData as {
-  programs: FlightProgram[];
-  awardPlaybook: AwardPlaybookItem[];
-  favoriteRoutes: FavoriteRoute[];
+const {
+  programs: rawPrograms = [],
+  awardPlaybook: rawAwardPlaybook = [],
+  favoriteRoutes: rawFavoriteRoutes = []
+} = flightData as {
+  programs?: FlightProgram[];
+  awardPlaybook?: AwardPlaybookItem[];
+  favoriteRoutes?: FavoriteRoute[];
 };
+
+const programs = filterEnabled(rawPrograms).map((program) =>
+  filterEnabledDeep(program)
+);
+const awardPlaybook = filterEnabled(rawAwardPlaybook);
+const favoriteRoutes = filterEnabled(rawFavoriteRoutes);
 
 export const metadata: Metadata = {
   title: "Flight loyalty program sweet spots | Travel with Points",

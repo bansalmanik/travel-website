@@ -19,18 +19,21 @@
           {
             "validFrom": "2024-04-20",
             "miles": 2500,
-            "condition": "Complete 1 transaction within 37 days of card issuance"
+            "condition": "Complete 1 transaction within 37 days of card issuance",
+            "enabled": true
           },
           {
             "validFrom": "2022-12-20",
             "validTo": "2024-04-20",
             "miles": 5000,
-            "condition": "Complete 1 transaction within 30 days of card issuance"
+            "condition": "Complete 1 transaction within 30 days of card issuance",
+            "enabled": true
           },
           {
             "validTo": "2022-12-20",
             "miles": 5000,
-            "condition": "Complete 3 transactions within 60 days of card issuance"
+            "condition": "Complete 3 transactions within 60 days of card issuance",
+            "enabled": true
           }
         ],
         "milesPostingTime": "Within 7 days",
@@ -63,15 +66,18 @@
         "levels": [
           {
             "name": "Silver",
-            "upgradeSpend": null
+            "upgradeSpend": null,
+            "enabled": true
           },
           {
             "name": "Gold",
-            "upgradeSpend": 750000
+            "upgradeSpend": 750000,
+            "enabled": true
           },
           {
             "name": "Platinum",
-            "upgradeSpend": 1500000
+            "upgradeSpend": 1500000,
+            "enabled": true
           }
         ],
         "downgradeRule": "If spend threshold not met in next anniversary cycle"
@@ -85,15 +91,18 @@
         "milestoneBenefits": [
           {
             "spend": 300000,
-            "miles": 2500
+            "miles": 2500,
+            "enabled": true
           },
           {
             "spend": 750000,
-            "miles": 2500
+            "miles": 2500,
+            "enabled": true
           },
           {
             "spend": 1500000,
-            "miles": 5000
+            "miles": 5000,
+            "enabled": true
           }
         ]
       },
@@ -148,7 +157,8 @@
           "src": "/images/cards/axis-atlas-card.svg",
           "alt": "Axis Bank Atlas Credit Card"
         }
-      }
+      },
+      "enabled": true
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -249,11 +259,13 @@
         "annual": [
           {
             "threshold": 500000,
-            "benefit": "₹5,000 flight voucher"
+            "benefit": "₹5,000 flight voucher",
+            "enabled": true
           },
           {
             "threshold": 750000,
-            "benefit": "Additional ₹5,000 flight voucher"
+            "benefit": "Additional ₹5,000 flight voucher",
+            "enabled": true
           }
         ],
         "voucherUnlockTime": "Benefits unlock within 48 hours of meeting the spend"
@@ -313,7 +325,8 @@
         "Premium Catalog Redemption",
         "Flight Vouchers",
         "Dining Discounts"
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -356,19 +369,23 @@
             "benefits": [
               {
                 "type": "cashback",
-                "valueInInr": 1000
+                "valueInInr": 1000,
+                "enabled": true
               },
               {
                 "type": "hotel_voucher",
                 "valueInInr": 3000,
-                "partner": "The Postcard Hotel"
+                "partner": "The Postcard Hotel",
+                "enabled": true
               },
               {
                 "type": "membership",
                 "name": "EazyDiner Prime",
-                "validity": "3 months"
+                "validity": "3 months",
+                "enabled": true
               }
-            ]
+            ],
+            "enabled": true
           },
           {
             "spend": 100000,
@@ -376,9 +393,11 @@
             "benefits": [
               {
                 "type": "reward_points",
-                "value": 3000
+                "value": 3000,
+                "enabled": true
               }
-            ]
+            ],
+            "enabled": true
           }
         ],
         "sourceNote": "Per welcome & 90-day milestone terms"
@@ -467,23 +486,28 @@
         "holidayBenefits": [
           {
             "partner": "Yatra",
-            "benefit": "15% off"
+            "benefit": "15% off",
+            "enabled": true
           },
           {
             "partner": "EaseMyTrip",
-            "benefit": "15% off"
+            "benefit": "15% off",
+            "enabled": true
           },
           {
             "partner": "Paytm Travel",
-            "benefit": "15% off"
+            "benefit": "15% off",
+            "enabled": true
           },
           {
             "partner": "Cleartrip",
-            "benefit": "15% off"
+            "benefit": "15% off",
+            "enabled": true
           },
           {
             "partner": "StayVista",
-            "benefit": "11% off (max ₹3,000)"
+            "benefit": "11% off (max ₹3,000)",
+            "enabled": true
           }
         ],
         "dutyFreeDiscount": "Up to 20% at select stores"
@@ -523,7 +547,8 @@
         "Airport Lounge Access",
         "Hotel & Airline Rewards",
         "Dining & Lifestyle Benefits"
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -561,9 +586,11 @@
               {
                 "type": "reward_points",
                 "value": 10000,
-                "name": "Membership Rewards points"
+                "name": "Membership Rewards points",
+                "enabled": true
               }
-            ]
+            ],
+            "enabled": true
           }
         ],
         "sourceNote": "Spend requirement counted within 90 days of card setup."
@@ -595,7 +622,8 @@
             "redeemableOn": [
               "Platinum Travel Collection",
               "Amex Travel Online (Pay with Points)"
-            ]
+            ],
+            "enabled": true
           },
           {
             "thresholdInInr": 400000,
@@ -615,7 +643,8 @@
             "redeemableOn": [
               "Platinum Travel Collection",
               "Amex Travel Online (Pay with Points)"
-            ]
+            ],
+            "enabled": true
           }
         ],
         "eligibleSpendNote": "Milestones track 12 months from issuance/renewal; excludes cash advances, fees/charges, and net of refunds."
@@ -715,7 +744,8 @@
               "Not valid on closed user group, negotiated, or employee rates",
               "No redemption via third-party OTAs",
               "Standalone restaurant/spa spend must be billed to the room"
-            ]
+            ],
+            "enabled": true
           }
         ],
         "otherPrograms": [
@@ -724,21 +754,25 @@
           "Up to 20% dining savings at select restaurants (issuer network program)",
           "EMI options on eligible purchases"
         ]
-      }
+      },
+      "enabled": true
     }
   ],
   "cardStrategies": [
     {
       "title": "Center your wallet on transferable currencies",
-      "description": "EDGE Miles combine fixed-value redemptions with the option to move into partner programs when sweet spots appear."
+      "description": "EDGE Miles combine fixed-value redemptions with the option to move into partner programs when sweet spots appear.",
+      "enabled": true
     },
     {
       "title": "Track tier milestones across the card anniversary",
-      "description": "Atlas tiers reset each anniversary year, so line up big travel or business expenses early to unlock upgrades."
+      "description": "Atlas tiers reset each anniversary year, so line up big travel or business expenses early to unlock upgrades.",
+      "enabled": true
     },
     {
       "title": "Mix in low-fee backups for exclusions",
-      "description": "Pair Atlas with a no-fee rewards or cashback card for categories like utilities or rent that do not earn EDGE Miles."
+      "description": "Pair Atlas with a no-fee rewards or cashback card for categories like utilities or rent that do not earn EDGE Miles.",
+      "enabled": true
     }
   ],
   "favoriteCombos": [
@@ -748,7 +782,8 @@
         "Axis Bank Atlas Credit Card",
         "Axis Bank Magnus"
       ],
-      "note": "Use Atlas for travel and lounge access while Magnus handles luxury lifestyle credits and dining offers."
+      "note": "Use Atlas for travel and lounge access while Magnus handles luxury lifestyle credits and dining offers.",
+      "enabled": true
     },
     {
       "name": "Miles + Cashback Safety Net",
@@ -756,7 +791,8 @@
         "Axis Bank Atlas Credit Card",
         "Prime Cashback Card"
       ],
-      "note": "Retain EDGE Mile flexibility yet cover non-bonus categories with a flat-rate cashback companion."
+      "note": "Retain EDGE Mile flexibility yet cover non-bonus categories with a flat-rate cashback companion.",
+      "enabled": true
     },
     {
       "name": "Global Traveller Starter",
@@ -764,7 +800,8 @@
         "Axis Bank Atlas Credit Card",
         "Entry-level No-Forex Fee Card"
       ],
-      "note": "Combine Atlas lounge visits and partner transfers with a no-forex-fee backup for spends outside the EDGE ecosystem."
+      "note": "Combine Atlas lounge visits and partner transfers with a no-forex-fee backup for spends outside the EDGE ecosystem.",
+      "enabled": true
     }
   ]
 }

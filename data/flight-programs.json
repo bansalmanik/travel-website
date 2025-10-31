@@ -27,9 +27,11 @@
             {
               "src": "/flight-programs/cabin-experience.svg",
               "alt": "Singapore Airlines Suites cabin",
-              "caption": "Saver awards unlock Singapore's flagship Suites experience."
+              "caption": "Saver awards unlock Singapore's flagship Suites experience.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "status-levels",
@@ -53,21 +55,24 @@
                   "KrisFlyer Elite Silver",
                   "25,000 Elite miles",
                   "25% bonus miles on Singapore Airlines, priority waitlisting, complimentary standard seat selection"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "KrisFlyer Elite Gold",
                   "50,000 Elite miles",
                   "Star Alliance Gold lounge access, extra baggage, priority check-in and boarding"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "PPS Club",
                   "S$25,000 in PPS Value",
                   "Access to The Private Room, priority award waitlist, dedicated PPS phone support"
-                ]
+                ],
+                "enabled": true
               }
             ]
           },
@@ -75,9 +80,11 @@
             {
               "src": "/flight-programs/status-lounge.svg",
               "alt": "Traveler relaxing in a lounge",
-              "caption": "Star Alliance Gold unlocks premium lounge spaces worldwide."
+              "caption": "Star Alliance Gold unlocks premium lounge spaces worldwide.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "earn-rate",
@@ -98,9 +105,11 @@
             {
               "src": "/flight-programs/points-transfer.svg",
               "alt": "Illustration of points flowing between loyalty programs",
-              "caption": "Instant bank transfers keep saver award seats within reach."
+              "caption": "Instant bank transfers keep saver award seats within reach.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "sweet-spots",
@@ -120,9 +129,11 @@
             {
               "src": "/flight-programs/route-map.svg",
               "alt": "Stylized route map from New York to Singapore",
-              "caption": "Premium cabin bargains center on long-haul routes via Singapore."
+              "caption": "Premium cabin bargains center on long-haul routes via Singapore.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "usp",
@@ -142,11 +153,14 @@
             {
               "src": "/flight-programs/globetrotter.svg",
               "alt": "Traveler planning an around-the-world trip",
-              "caption": "Plan multi-stop adventures with generous routing rules."
+              "caption": "Plan multi-stop adventures with generous routing rules.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         }
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "avios",
@@ -175,9 +189,11 @@
             {
               "src": "/flight-programs/city-hop.svg",
               "alt": "Airplane connecting European cities",
-              "caption": "Avios excel on short-haul hops across Europe and Asia."
+              "caption": "Avios excel on short-haul hops across Europe and Asia.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "status-levels",
@@ -201,21 +217,24 @@
                   "Bronze",
                   "300 Tier Points",
                   "Priority check-in, business-class seat selection, 25% Avios bonus"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "Silver",
                   "600 Tier Points",
                   "oneworld Sapphire status, lounge access, 50% Avios bonus"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "Gold",
                   "1,500 Tier Points",
                   "oneworld Emerald status, First Wing access, 100% Avios bonus"
-                ]
+                ],
+                "enabled": true
               }
             ]
           },
@@ -223,9 +242,11 @@
             {
               "src": "/flight-programs/status-lounge.svg",
               "alt": "Frequent flyer enjoying a lounge",
-              "caption": "oneworld elite status smooths every stage of travel."
+              "caption": "oneworld elite status smooths every stage of travel.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "earn-rate",
@@ -246,9 +267,11 @@
             {
               "src": "/flight-programs/points-transfer.svg",
               "alt": "Avios flowing from credit cards to airlines",
-              "caption": "Transfer bonuses can supercharge Avios balances."
+              "caption": "Transfer bonuses can supercharge Avios balances.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "sweet-spots",
@@ -268,9 +291,11 @@
             {
               "src": "/flight-programs/route-map.svg",
               "alt": "Map showing Doha and London connections",
-              "caption": "Qsuite awards shine when booked through Qatar Privilege Club."
+              "caption": "Qsuite awards shine when booked through Qatar Privilege Club.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "usp",
@@ -290,11 +315,14 @@
             {
               "src": "/flight-programs/globetrotter.svg",
               "alt": "Traveler moving loyalty points between programs",
-              "caption": "Shift Avios where award space and surcharges are most favorable."
+              "caption": "Shift Avios where award space and surcharges are most favorable.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         }
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "air-india-flying-returns",
@@ -323,9 +351,11 @@
             {
               "src": "/flight-programs/india-gateway.svg",
               "alt": "Gateway of India monument with aircraft",
-              "caption": "Flying Returns centers travelers connecting through Delhi and Mumbai."
+              "caption": "Flying Returns centers travelers connecting through Delhi and Mumbai.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "status-levels",
@@ -349,21 +379,24 @@
                   "Silver Edge Club",
                   "25,000 points",
                   "15% bonus miles, priority check-in, preference on upgrade waitlists"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "Golden Edge Club",
                   "50,000 points",
                   "Star Alliance Gold benefits, complimentary lounge access across India"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "The Maharajah Club",
                   "75,000 points",
                   "Dedicated relationship manager, four upgrade vouchers, priority boarding"
-                ]
+                ],
+                "enabled": true
               }
             ]
           },
@@ -371,9 +404,11 @@
             {
               "src": "/flight-programs/status-lounge.svg",
               "alt": "Passenger enjoying premium airport services",
-              "caption": "Top-tier elites enjoy expedited handling throughout India."
+              "caption": "Top-tier elites enjoy expedited handling throughout India.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "earn-rate",
@@ -394,9 +429,11 @@
             {
               "src": "/flight-programs/points-transfer.svg",
               "alt": "Illustration of loyalty points moving from banks to airlines",
-              "caption": "Local bank partners make it easy to top up Flying Returns miles."
+              "caption": "Local bank partners make it easy to top up Flying Returns miles.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "sweet-spots",
@@ -416,9 +453,11 @@
             {
               "src": "/flight-programs/route-map.svg",
               "alt": "Map highlighting routes from India to Europe",
-              "caption": "Key long-haul routes price aggressively through Flying Returns."
+              "caption": "Key long-haul routes price aggressively through Flying Returns.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "usp",
@@ -438,11 +477,14 @@
             {
               "src": "/flight-programs/globetrotter.svg",
               "alt": "Traveler planning an Indian subcontinent journey",
-              "caption": "Elite benefits extend across India’s growing route map."
+              "caption": "Elite benefits extend across India’s growing route map.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         }
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "air-canada-aeroplan",
@@ -471,9 +513,11 @@
             {
               "src": "/flight-programs/cabin-experience.svg",
               "alt": "Premium cabin seat with ambient lighting",
-              "caption": "Aeroplan unlocks aspirational cabins on partners like ANA and Emirates."
+              "caption": "Aeroplan unlocks aspirational cabins on partners like ANA and Emirates.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "status-levels",
@@ -497,21 +541,24 @@
                   "25K",
                   "25,000 SQM or 25 SQS + $3,000 SQD",
                   "Two Maple Leaf Lounge passes, 25% bonus points"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "50K",
                   "50,000 SQM or 50 SQS + $6,000 SQD",
                   "Star Alliance Gold, eUpgrade credits, preferred pricing"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
                   "Super Elite 100K",
                   "100,000 SQM or 100 SQS + $20,000 SQD",
                   "Concierge service, unlimited lounge access, highest upgrade priority"
-                ]
+                ],
+                "enabled": true
               }
             ]
           },
@@ -519,9 +566,11 @@
             {
               "src": "/flight-programs/status-lounge.svg",
               "alt": "Traveler reviewing benefits at an airport lounge",
-              "caption": "Higher tiers unlock concierge-style service and upgrades."
+              "caption": "Higher tiers unlock concierge-style service and upgrades.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "earn-rate",
@@ -542,9 +591,11 @@
             {
               "src": "/flight-programs/points-transfer.svg",
               "alt": "Aeroplan points flowing from various partners",
-              "caption": "Multiple transferable currencies keep Aeroplan balances flush."
+              "caption": "Multiple transferable currencies keep Aeroplan balances flush.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "sweet-spots",
@@ -564,9 +615,11 @@
             {
               "src": "/flight-programs/route-map.svg",
               "alt": "Map of Aeroplan partner routes",
-              "caption": "Stopovers turn one-way redemptions into globe-spanning itineraries."
+              "caption": "Stopovers turn one-way redemptions into globe-spanning itineraries.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "usp",
@@ -586,11 +639,14 @@
             {
               "src": "/flight-programs/globetrotter.svg",
               "alt": "Traveler planning an Aeroplan redemption",
-              "caption": "Aeroplan balances stretch further thanks to flexible redemption tools."
+              "caption": "Aeroplan balances stretch further thanks to flexible redemption tools.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         }
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "indigo-bluchip",
@@ -616,36 +672,44 @@
           "items": [
             {
               "label": "Issuer",
-              "value": "IndiGo Airlines (6E)"
+              "value": "IndiGo Airlines (6E)",
+              "enabled": true
             },
             {
               "label": "Program type",
-              "value": "Airline loyalty program"
+              "value": "Airline loyalty program",
+              "enabled": true
             },
             {
               "label": "Join cost",
-              "value": "Free to join"
+              "value": "Free to join",
+              "enabled": true
             },
             {
               "label": "Earn currency",
-              "value": "IndiGo BluChips"
+              "value": "IndiGo BluChips",
+              "enabled": true
             },
             {
               "label": "Earning basis",
-              "value": "Base fare + fuel surcharge (YQ)"
+              "value": "Base fare + fuel surcharge (YQ)",
+              "enabled": true
             },
             {
               "label": "Tiers",
-              "value": "Blu 3 • Blu 2 • Blu 1"
+              "value": "Blu 3 • Blu 2 • Blu 1",
+              "enabled": true
             }
           ],
           "images": [
             {
               "src": "/flight-programs/india-gateway.svg",
               "alt": "IndiGo aircraft against an India skyline",
-              "caption": "BluChip keeps frequent India flyers engaged across 6E hubs."
+              "caption": "BluChip keeps frequent India flyers engaged across 6E hubs.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "overview",
@@ -654,7 +718,8 @@
           "blocks": [
             {
               "type": "paragraph",
-              "text": "IndiGo BluChip rewards members for every eligible rupee spent with IndiGo and select partners, layering base earnings with tier and channel bonuses."
+              "text": "IndiGo BluChip rewards members for every eligible rupee spent with IndiGo and select partners, layering base earnings with tier and channel bonuses.",
+              "enabled": true
             },
             {
               "type": "bullets",
@@ -663,7 +728,8 @@
                 "8 BluChips per ₹100 on base fare and fuel surcharge across IndiGo and eligible codeshare flights.",
                 "Extra BluChips when booking on the IndiGo website or mobile app via channel bonuses.",
                 "Earn on prepaid add-ons such as Seat Select, Excess Baggage, and Fast Forward."
-              ]
+              ],
+              "enabled": true
             },
             {
               "type": "bullets",
@@ -671,13 +737,16 @@
               "items": [
                 "6E marketed and operated flights",
                 "6E marketed flights operated by codeshare partners"
-              ]
+              ],
+              "enabled": true
             },
             {
               "type": "paragraph",
-              "text": "BluChips stay valid with any earn or redeem activity at least once every 24 months."
+              "text": "BluChips stay valid with any earn or redeem activity at least once every 24 months.",
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "tier-benefits",
@@ -701,7 +770,8 @@
                   "No expiry",
                   "8 BluChips / ₹100 base earn + 4 BluChips / ₹100 channel bonus",
                   "10% Seat Select, Excess Baggage, Fast Forward discounts · 0 6E Prime passes · Nominees: 5"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
@@ -710,7 +780,8 @@
                   "₹1,00,000 spend + 4 flights annually",
                   "8 BluChips / ₹100 base + 2 BluChips / ₹100 tier bonus",
                   "20% add-on discounts · 20 6E Prime passes · Nominees: 5"
-                ]
+                ],
+                "enabled": true
               },
               {
                 "cells": [
@@ -719,10 +790,12 @@
                   "₹2,00,000 spend + 8 flights annually",
                   "8 BluChips / ₹100 base + 4 BluChips / ₹100 tier bonus",
                   "30% add-on discounts · 40 6E Prime passes · Nominees: 5"
-                ]
+                ],
+                "enabled": true
               }
             ]
-          }
+          },
+          "enabled": true
         },
         {
           "id": "tier-rules",
@@ -731,7 +804,8 @@
           "blocks": [
             {
               "type": "paragraph",
-              "text": "IndiGo reviews your spend and flight activity daily for upgrades while retention is measured across the last 365 days."
+              "text": "IndiGo reviews your spend and flight activity daily for upgrades while retention is measured across the last 365 days.",
+              "enabled": true
             },
             {
               "type": "bullets",
@@ -740,9 +814,11 @@
                 "Annual retention looks back 365 days for both spend and flight requirements.",
                 "Only base fare and fuel surcharge qualify toward BluChip earnings and thresholds.",
                 "Pre-booked add-ons earn at the tier-adjusted bonus rate."
-              ]
+              ],
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "discounts-and-perks",
@@ -753,7 +829,8 @@
             "Seat selection savings apply only on pre-booked selections across the fleet.",
             "Discounted Excess Baggage and Fast Forward services scale from 10% to 30% depending on tier.",
             "6E Prime passes bundle Fast Forward, seat selection, and meals for frequent travelers."
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "passes-and-benefits",
@@ -762,7 +839,8 @@
           "blocks": [
             {
               "type": "paragraph",
-              "text": "6E Prime passes provide bundles of priority services you can redeem or share with nominees."
+              "text": "6E Prime passes provide bundles of priority services you can redeem or share with nominees.",
+              "enabled": true
             },
             {
               "type": "bullets",
@@ -770,9 +848,11 @@
                 "Redeem 6E Prime passes for Fast Forward, preferred seating, and meal combos depending on your tier allotment.",
                 "Nominees enjoy the same discounted add-on pricing, making family travel cheaper.",
                 "Manage nominee access directly in your BluChip dashboard."
-              ]
+              ],
+              "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "points-policy",
@@ -783,40 +863,48 @@
             "BluChips do not expire as long as you record activity at least once every 24 months.",
             "All earn calculations follow Base + Tier Bonus + Channel Bonus for clear tracking.",
             "Monitor the activity log in your account to confirm credits from flights and add-ons."
-          ]
+          ],
+          "enabled": true
         }
-      ]
+      ],
+      "enabled": true
     }
   ],
   "awardPlaybook": [
     {
       "title": "Search partners, not airlines",
-      "detail": "Use Air Canada Aeroplan, Avianca LifeMiles, or Virgin Atlantic to book seats on Star Alliance and SkyTeam partners with fewer surcharges."
+      "detail": "Use Air Canada Aeroplan, Avianca LifeMiles, or Virgin Atlantic to book seats on Star Alliance and SkyTeam partners with fewer surcharges.",
+      "enabled": true
     },
     {
       "title": "Leverage stopovers",
-      "detail": "Programs like Aeroplan and Alaska Mileage Plan allow stopovers on one-way awards—turn a connection into a mini vacation."
+      "detail": "Programs like Aeroplan and Alaska Mileage Plan allow stopovers on one-way awards—turn a connection into a mini vacation.",
+      "enabled": true
     },
     {
       "title": "Watch transfer bonuses",
-      "detail": "Amex, Chase, and Capital One regularly offer 15–30% bonuses. Transfer only when a specific award is available."
+      "detail": "Amex, Chase, and Capital One regularly offer 15–30% bonuses. Transfer only when a specific award is available.",
+      "enabled": true
     }
   ],
   "favoriteRoutes": [
     {
       "route": "US ➜ Europe",
       "program": "Virgin Atlantic Flying Club",
-      "highlight": "Redeem 50k points for one-way Delta One to Europe during off-peak dates."
+      "highlight": "Redeem 50k points for one-way Delta One to Europe during off-peak dates.",
+      "enabled": true
     },
     {
       "route": "US ➜ Asia",
       "program": "Alaska Mileage Plan",
-      "highlight": "Fly Japan Airlines business class for 60k miles with a free stopover in Tokyo."
+      "highlight": "Fly Japan Airlines business class for 60k miles with a free stopover in Tokyo.",
+      "enabled": true
     },
     {
       "route": "Intra-Europe",
       "program": "Avios (British Airways / Iberia)",
-      "highlight": "Short-haul flights start at 4k points and avoid high fuel surcharges when booked through Iberia."
+      "highlight": "Short-haul flights start at 4k points and avoid high fuel surcharges when booked through Iberia.",
+      "enabled": true
     }
   ]
 }

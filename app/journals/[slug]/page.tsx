@@ -4,17 +4,20 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import journalsData from "@/data/journals.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 type SectionImage = {
   src: string;
   alt: string;
   caption?: string;
+  enabled?: boolean;
 };
 
 type JournalSection = {
   heading: string;
   body: string[];
   image?: SectionImage;
+  enabled?: boolean;
 };
 
 type JournalEntry = {
@@ -28,9 +31,12 @@ type JournalEntry = {
   readTime: string;
   heroImage: SectionImage;
   sections: JournalSection[];
+  enabled?: boolean;
 };
 
-const journals = (journalsData as { journals: JournalEntry[] }).journals;
+const journals = filterEnabled(
+  (journalsData as { journals: JournalEntry[] }).journals
+).map((entry) => filterEnabledDeep(entry));
 
 type PageProps = {
   params: Promise<{ slug: string }>;
