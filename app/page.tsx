@@ -35,7 +35,7 @@ export default async function Home() {
     date: entry.displayDate,
     url: `/journals/${entry.slug}`,
   }));
-  const heroImageSrc = await getPrivateImageSrc("/images/content/20230617_112049.JPG");
+  const heroImageSrc = await getPrivateImageSrc("/images/content/20230617_112049.jpg");
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
