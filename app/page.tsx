@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { getAllStorySummaries } from "@/app/stories/data";
 import { getJournalEntries } from "@/lib/contentData";
+import { getPrivateImageSrc } from "@/lib/privateAssets";
 
 const travelWithPointsHighlights = [
   {
@@ -34,13 +35,14 @@ export default async function Home() {
     date: entry.displayDate,
     url: `/journals/${entry.slug}`,
   }));
+  const heroImageSrc = await getPrivateImageSrc("/images/content/20230617_112049.JPG");
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
       <header className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/images/content/20230617_112049.JPG"
+            src={heroImageSrc}
             alt="Sunset over mountains and fjords"
             fill
             className="object-cover brightness-75"
