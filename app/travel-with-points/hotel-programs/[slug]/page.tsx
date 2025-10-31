@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import hotelData from "@/data/hotel-programs.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 type SectionImage = {
   src: string;
@@ -59,7 +60,9 @@ type HotelProgram = {
   tags?: string[];
 };
 
-const programs = (hotelData as { programs: HotelProgram[] }).programs;
+const programs = filterEnabled(
+  (hotelData as { programs: HotelProgram[] }).programs
+).map((program) => filterEnabledDeep(program));
 
 type PageProps = {
   params: Promise<{ slug: string }>;

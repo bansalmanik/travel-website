@@ -21,12 +21,36 @@
         }
       },
       "quickFacts": [
-        { "label": "Issuer", "value": "Marriott International" },
-        { "label": "Program type", "value": "Hotel loyalty program" },
-        { "label": "Brands", "value": "30" },
-        { "label": "Properties", "value": "8,000+ hotels" },
-        { "label": "Countries & territories", "value": "139" },
-        { "label": "Free to join", "value": "Yes" }
+        {
+          "label": "Issuer",
+          "value": "Marriott International",
+          "enabled": true
+        },
+        {
+          "label": "Program type",
+          "value": "Hotel loyalty program",
+          "enabled": true
+        },
+        {
+          "label": "Brands",
+          "value": "30",
+          "enabled": true
+        },
+        {
+          "label": "Properties",
+          "value": "8,000+ hotels",
+          "enabled": true
+        },
+        {
+          "label": "Countries & territories",
+          "value": "139",
+          "enabled": true
+        },
+        {
+          "label": "Free to join",
+          "value": "Yes",
+          "enabled": true
+        }
       ],
       "statusLevels": {
         "tiers": [
@@ -47,7 +71,8 @@
               "50 nights / year",
               "75 nights / year",
               "100 nights + $23,000 USD spend"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Ultimate Reservation Guarantee",
@@ -59,7 +84,8 @@
               "Included",
               "Included",
               "Included"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Bonus points on stays",
@@ -71,7 +97,8 @@
               "50% bonus",
               "75% bonus",
               "75% bonus"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Late checkout",
@@ -83,7 +110,8 @@
               "4 p.m. guaranteed",
               "4 p.m. guaranteed",
               "4 p.m. guaranteed"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Welcome gift",
@@ -95,7 +123,8 @@
               "Points, breakfast, or amenity",
               "Points, breakfast, or amenity",
               "Points, breakfast, or amenity"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Enhanced upgrades",
@@ -107,7 +136,8 @@
               "Includes select suites",
               "Includes select suites",
               "Includes select suites"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Lounge access",
@@ -119,7 +149,8 @@
               "Guaranteed where offered",
               "Guaranteed where offered",
               "Guaranteed where offered"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Annual Choice Benefit",
@@ -131,7 +162,8 @@
               "Eligible at 50 nights",
               "Eligible at 50 & 75 nights",
               "Eligible at 50 & 75 nights"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "48-Hour Guarantee",
@@ -143,7 +175,8 @@
               "Available",
               "Available",
               "Available"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Your24",
@@ -155,7 +188,8 @@
               "Not available",
               "Not available",
               "Available"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Ambassador Service",
@@ -167,7 +201,8 @@
               "Not available",
               "Not available",
               "Dedicated Ambassador"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Airline & travel partners",
@@ -179,7 +214,8 @@
               "Emirates & Hertz Five Star®",
               "Emirates, Hertz President’s Circle®",
               "United Premier® Silver + Ambassador perks"
-            ]
+            ],
+            "enabled": true
           }
         ],
         "note": "Ambassador Elite layers personalized service on top of Titanium benefits for frequent business travelers.",
@@ -282,7 +318,8 @@
         "Suite Upgrades",
         "Free Nights",
         "Luxury Hotels"
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "accor-live-limitless",
@@ -321,7 +358,8 @@
               "30 nights / 7,000 Status Points",
               "60 nights / 14,000 Status Points",
               "26,000 Status Points"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Reward Point bonus",
@@ -332,7 +370,8 @@
               "+30% bonus",
               "+50% bonus",
               "+75% bonus"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Upgrades",
@@ -342,7 +381,8 @@
               "Room upgrades when available",
               "Suites where available",
               "Suites where available"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Lounge access",
@@ -352,7 +392,8 @@
               "Not included",
               "Included where lounges exist",
               "Included where lounges exist"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Breakfast benefit",
@@ -362,7 +403,8 @@
               "Not included",
               "Complimentary at select brands",
               "Complimentary at select brands"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Guaranteed availability",
@@ -372,7 +414,8 @@
               "72-hour guarantee",
               "48-hour guarantee",
               "48-hour guarantee"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Signature perks",
@@ -382,7 +425,8 @@
               "Early check-in / late checkout",
               "VIP experiences & suite upgrades",
               "Dedicated service line + weekend night"
-            ]
+            ],
+            "enabled": true
           }
         ],
         "note": "Diamond status unlocks a complimentary weekend night, dining credits, and a dedicated support line.",
@@ -433,7 +477,8 @@
         "Suite Upgrades",
         "Fifth Night Free",
         "Digital Key"
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "hilton-honors",
@@ -465,7 +510,8 @@
               "10 nights / 4 stays / 25K base points",
               "40 nights / 20 stays / 75K base points",
               "60 nights / 30 stays / 120K base points"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Bonus points on stays",
@@ -474,7 +520,8 @@
               "20% Bonus",
               "80% Bonus",
               "100% Bonus"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Breakfast or daily food & beverage credit",
@@ -484,7 +531,8 @@
               "Continental breakfast at select brands",
               "Daily F&B credit or breakfast",
               "Daily F&B credit or breakfast"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Room upgrades",
@@ -493,7 +541,8 @@
               "Space-available upgrades",
               "Space-available upgrades including executive rooms",
               "Upgrades including standard suites"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Executive lounge access",
@@ -502,7 +551,8 @@
               "Not included",
               "When upgraded to executive level",
               "Guaranteed where available"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Fifth Night Free",
@@ -512,7 +562,8 @@
               "Available",
               "Available",
               "Available"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Milestone bonuses",
@@ -522,7 +573,8 @@
               "Not applicable",
               "Eligible at 40 nights",
               "Eligible at 40 nights"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Premium Wi-Fi",
@@ -531,7 +583,8 @@
               "Standard Wi-Fi",
               "Premium Wi-Fi",
               "Premium Wi-Fi"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "48-hour room guarantee",
@@ -540,7 +593,8 @@
               "Not available",
               "Available",
               "Available"
-            ]
+            ],
+            "enabled": true
           }
         ],
         "note": "Hilton Honors Diamond can be secured instantly with the Hilton Aspire card, unlocking lounge access, premium Wi-Fi, and status gifting.",
@@ -586,7 +640,8 @@
           "Diamond members receive executive lounge access, premium Wi-Fi, and status gifting options.",
           "Points pooling allows sharing with up to 10 members at no cost."
         ]
-      }
+      },
+      "enabled": true
     },
     {
       "slug": "ihg-one-rewards",
@@ -620,7 +675,8 @@
               "20 nights / 40K points",
               "40 nights / 60K points",
               "70 nights / 120K points"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Bonus points on stays",
@@ -630,7 +686,8 @@
               "40% Bonus",
               "60% Bonus",
               "100% Bonus"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Early check-in & late checkout",
@@ -640,7 +697,8 @@
               "2 p.m. late checkout (subject to availability)",
               "2 p.m. late checkout (subject to availability)",
               "2 p.m. late checkout (subject to availability)"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Welcome amenity",
@@ -650,7 +708,8 @@
               "Points or drink/snack at select brands",
               "Points or drink/snack at select brands",
               "Free breakfast welcome choice"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Room upgrades",
@@ -660,7 +719,8 @@
               "Space-available upgrades",
               "Space-available upgrades including premium rooms",
               "Best available rooms including suites (where offered)"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Lounge access",
@@ -670,7 +730,8 @@
               "Not included",
               "Not included",
               "Available via Milestone Rewards or participating luxury brands"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Milestone choice awards",
@@ -681,7 +742,8 @@
               "Eligible from 20 nights",
               "Eligible from 20 nights",
               "Eligible from 20 nights"
-            ]
+            ],
+            "enabled": true
           },
           {
             "label": "Dedicated Diamond support",
@@ -691,7 +753,8 @@
               "Not available",
               "Not available",
               "24/7 agent support"
-            ]
+            ],
+            "enabled": true
           }
         ],
         "note": "Milestone Rewards are the secret sauce—plan your stays every 10 nights to pick bonuses like suite upgrades or lounge membership.",
@@ -736,7 +799,8 @@
           "Elite rollover nights help maintain status into the next year.",
           "Premier cardholders receive a Fourth Night Free award when redeeming points."
         ]
-      }
+      },
+      "enabled": true
     },
     {
       "slug": "club-itc-culinaire",
@@ -756,11 +820,31 @@
         "note": "The 20% savings apply for up to 15 diners per bill, ideal for family celebrations and corporate dining."
       },
       "quickFacts": [
-        { "label": "Issuer", "value": "ITC Hotels" },
-        { "label": "Program type", "value": "Paid dining & hospitality membership" },
-        { "label": "Core savings", "value": "20% on dining, spa, and laundry" },
-        { "label": "Green Points earning", "value": "Up to 6% on F&B with elite alignment" },
-        { "label": "Primary plan fee", "value": "₹19,000+ taxes (Culinaire Select, 1 year)" }
+        {
+          "label": "Issuer",
+          "value": "ITC Hotels",
+          "enabled": true
+        },
+        {
+          "label": "Program type",
+          "value": "Paid dining & hospitality membership",
+          "enabled": true
+        },
+        {
+          "label": "Core savings",
+          "value": "20% on dining, spa, and laundry",
+          "enabled": true
+        },
+        {
+          "label": "Green Points earning",
+          "value": "Up to 6% on F&B with elite alignment",
+          "enabled": true
+        },
+        {
+          "label": "Primary plan fee",
+          "value": "₹19,000+ taxes (Culinaire Select, 1 year)",
+          "enabled": true
+        }
       ],
       "enrollment": {
         "items": [
@@ -821,7 +905,8 @@
         "Spa Benefits",
         "Milestone Rewards",
         "Luxury Hospitality"
-      ]
+      ],
+      "enabled": true
     },
     {
       "slug": "taj-epicure",
@@ -841,11 +926,31 @@
         "note": "Present a valid Epicure membership card to access dining discounts at participating restaurants."
       },
       "quickFacts": [
-        { "label": "Issuer", "value": "IHCL (Taj Hotels)" },
-        { "label": "Program type", "value": "Paid hotel membership" },
-        { "label": "Dining savings", "value": "25% on F&B and Qmin delivery" },
-        { "label": "Spa discount", "value": "20% on qualifying treatments" },
-        { "label": "NeuPass tier", "value": "Silver or Gold depending on membership" }
+        {
+          "label": "Issuer",
+          "value": "IHCL (Taj Hotels)",
+          "enabled": true
+        },
+        {
+          "label": "Program type",
+          "value": "Paid hotel membership",
+          "enabled": true
+        },
+        {
+          "label": "Dining savings",
+          "value": "25% on F&B and Qmin delivery",
+          "enabled": true
+        },
+        {
+          "label": "Spa discount",
+          "value": "20% on qualifying treatments",
+          "enabled": true
+        },
+        {
+          "label": "NeuPass tier",
+          "value": "Silver or Gold depending on membership",
+          "enabled": true
+        }
       ],
       "enrollment": {
         "items": [
@@ -883,7 +988,8 @@
         "Spa Benefits",
         "Free Night Vouchers",
         "Taj Hotels"
-      ]
+      ],
+      "enabled": true
     }
   ]
 }

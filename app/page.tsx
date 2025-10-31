@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import journalsData from "@/data/journals.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 const featuredStories = [
   {
@@ -34,9 +35,12 @@ type JournalHighlight = {
   slug: string;
   title: string;
   displayDate: string;
+  enabled?: boolean;
 };
 
-const journals = (journalsData as { journals: JournalHighlight[] }).journals;
+const journals = filterEnabled(
+  (journalsData as { journals: JournalHighlight[] }).journals
+).map((entry) => filterEnabledDeep(entry));
 
 const journalHighlights = journals.slice(0, 3).map((entry) => ({
   title: entry.title,

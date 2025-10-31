@@ -2,9 +2,10 @@
 
 import type { ChangeEvent } from "react";
 import { useMemo, useState } from "react";
-import conversions from "@/data/points-conversion.json";
+import rawConversions from "@/data/points-conversion.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
-type Conversion = (typeof conversions)[number];
+type Conversion = (typeof rawConversions)[number];
 
 type ConversionByFrom = Record<string, Conversion>;
 
@@ -42,6 +43,10 @@ const parseRate = (rate: string): ParsedRate => {
     toUnit: toUnit || (toValue ? "" : rawTo.trim()),
   };
 };
+
+const conversions = filterEnabled(rawConversions).map((conversion) =>
+  filterEnabledDeep(conversion)
+) as Conversion[];
 
 const conversionsByFrom: ConversionByFrom = conversions.reduce((acc, conversion) => {
   acc[conversion.from] = conversion;

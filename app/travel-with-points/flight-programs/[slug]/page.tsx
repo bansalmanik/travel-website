@@ -5,8 +5,11 @@ import { notFound } from "next/navigation";
 import { FlightProgramSections } from "@/app/components/flight-program-sections";
 import type { FlightProgram } from "@/app/travel-with-points/flight-programs/types";
 import flightData from "@/data/flight-programs.json";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
-const programs = (flightData as { programs: FlightProgram[] }).programs;
+const programs = filterEnabled(
+  (flightData as { programs: FlightProgram[] }).programs
+).map((program) => filterEnabledDeep(program));
 
 type PageProps = {
   params: Promise<{ slug: string }>;
