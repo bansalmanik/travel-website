@@ -10,17 +10,17 @@
     "city": "Chitkul",
     "country": "India",
     "coverImage": {
-      "src": "/images/content/20230408_143522.JPG",
+      "src": "/images/content/20230408_143522.jpg",
       "alt": "Morning sun touching snowy peaks above a Himalayan village"
     },
     "gallery": [
       {
-        "src": "/images/content/20230408_143854.JPG",
+        "src": "/images/content/20230408_143854.jpg",
         "alt": "Basu River flowing past stone houses in Chitkul",
         "caption": "The Baspa River wraps the village in a ribbon of glacial blue."
       },
       {
-        "src": "/images/content/20230408_132352.JPG",
+        "src": "/images/content/20230408_132352.jpg",
         "alt": "Prayer flags fluttering below Himalayan ridgeline",
         "caption": "Prayer flags snap in the alpine wind as shepherds guide their flocks uphill."
       },
@@ -58,12 +58,12 @@
     "city": "Paradise Island",
     "country": "Maldives",
     "coverImage": {
-      "src": "/images/content/20231220_162748.JPG",
+      "src": "/images/content/20231220_162748.jpg",
       "alt": "Water villas over a luminous turquoise lagoon"
     },
     "gallery": [
       {
-        "src": "/images/content/20231223_191940.JPG",
+        "src": "/images/content/20231223_191940.jpg",
         "alt": "Breakfast tray floating in a private plunge pool",
         "caption": "Breakfast arrives as a floating tray of tropical fruit and Maldivian mas huni."
       },
