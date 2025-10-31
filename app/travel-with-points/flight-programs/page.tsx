@@ -1,58 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import flightData from "@/data/flight-programs.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
-type ProgramSection = {
-  id: string;
-  title: string;
-  style: string;
-  intro: string;
-  paragraphs: string[];
-  bullets?: string[];
-  images?: {
-    src: string;
-    alt: string;
-    caption: string;
-  }[];
-};
-
-type FlightProgram = {
-  slug: string;
-  name: string;
-  alliance: string;
-  hub: string;
-  summary: string;
-  seoDescription: string;
-  sections: ProgramSection[];
-};
-
-type AwardPlaybookItem = {
-  title: string;
-  detail: string;
-};
-
-type FavoriteRoute = {
-  route: string;
-  program: string;
-  highlight: string;
-};
-
-const {
-  programs: rawPrograms = [],
-  awardPlaybook: rawAwardPlaybook = [],
-  favoriteRoutes: rawFavoriteRoutes = []
-} = flightData as {
-  programs?: FlightProgram[];
-  awardPlaybook?: AwardPlaybookItem[];
-  favoriteRoutes?: FavoriteRoute[];
-};
-
-const programs = filterEnabled(rawPrograms).map((program) =>
-  filterEnabledDeep(program)
-);
-const awardPlaybook = filterEnabled(rawAwardPlaybook);
-const favoriteRoutes = filterEnabled(rawFavoriteRoutes);
+import type {
+  AwardPlaybookItem,
+  FavoriteRoute,
+  FlightProgram,
+} from "@/app/travel-with-points/flight-programs/types";
+import { getFlightProgramContent } from "@/lib/contentData";
 
 export const metadata: Metadata = {
   title: "Flight loyalty program sweet spots | Travel with Points",
@@ -69,7 +23,17 @@ export const metadata: Metadata = {
   }
 };
 
-export default function FlightProgramsPage() {
+export default async function FlightProgramsPage() {
+  const {
+    programs,
+    awardPlaybook,
+    favoriteRoutes,
+  }: {
+    programs: FlightProgram[];
+    awardPlaybook: AwardPlaybookItem[];
+    favoriteRoutes: FavoriteRoute[];
+  } = await getFlightProgramContent();
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">

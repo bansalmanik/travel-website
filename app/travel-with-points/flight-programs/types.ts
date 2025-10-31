@@ -58,3 +58,16 @@ export type FlightProgram = {
   sections: ProgramSection[];
   tags?: string[];
 };
+
+export type AwardPlaybookItem = {
+  title: string;
+  detail: string;
+  enabled?: boolean;
+};
+
+export type FavoriteRoute = {
+  route: string;
+  program: string;
+  highlight: string;
+  enabled?: boolean;
+};
