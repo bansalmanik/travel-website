@@ -1,56 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import hotelData from "@/data/hotel-programs.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-type SectionImage = {
-  src: string;
-  alt: string;
-};
-
-type ListSection = {
-  items?: string[];
-  note?: string;
-  image?: SectionImage;
-};
-
-type StatusLevelsSection = {
-  tiers: string[];
-};
-
-type HotelProgram = {
-  slug: string;
-  name: string;
-  footprint: string;
-  summary: string;
-  seoDescription: string;
-  overview?: ListSection;
-  statusLevels?: StatusLevelsSection;
-  coBrandedCards?: ListSection;
-};
-
-type ElitePath = {
-  tier: string;
-  highlight: string;
-};
-
-type BookingTips = string[];
-
-const {
-  programs: rawPrograms = [],
-  elitePaths: rawElitePaths = [],
-  bookingTips = []
-} = hotelData as {
-  programs?: HotelProgram[];
-  elitePaths?: ElitePath[];
-  bookingTips?: BookingTips;
-};
-
-const programs = filterEnabled(rawPrograms).map((program) =>
-  filterEnabledDeep(program)
-);
-const elitePaths = filterEnabled(rawElitePaths);
+import { getHotelProgramContent } from "@/lib/contentData";
 
 export const metadata: Metadata = {
   title: "Hotel loyalty programs guide | Travel with Points",
@@ -67,7 +18,10 @@ export const metadata: Metadata = {
   }
 };
 
-export default function HotelProgramsPage() {
+export default async function HotelProgramsPage() {
+  const { programs, elitePaths, bookingTips } =
+    await getHotelProgramContent();
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">

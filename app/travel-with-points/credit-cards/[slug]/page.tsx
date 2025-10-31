@@ -4,421 +4,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import cardData from "@/data/credit-cards.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-type SectionImage = {
-  src: string;
-  alt: string;
-  caption?: string;
-};
-
-type AnnualFee = {
-  amount: number;
-  currency: string;
-  gstApplicable?: boolean;
-};
-
-type TieredWelcomeBenefitDetail = {
-  validFrom?: string;
-  validTo?: string;
-  miles: number;
-  condition: string;
-};
-
-type TieredWelcomeBenefit = {
-  details: TieredWelcomeBenefitDetail[];
-  milesPostingTime: string;
-  onlyForPaidCards?: boolean;
-};
-
-type TieredEarnRateValue =
-  | string
-  | {
-      rate: string;
-      eligible?: string;
-      cap?: string;
-    };
-
-type TieredRewards = {
-  currency: string;
-  conversion?: string;
-  earnRate: Record<string, TieredEarnRateValue>;
-  exclusions: string[];
-  milesPostingTime: string;
-};
-
-type TierLevel = {
-  name: string;
-  upgradeSpend: number | null;
-};
-
-type TieredTiers = {
-  levels: TierLevel[];
-  downgradeRule?: string;
-};
-
-type TieredTierBenefits = {
-  annualMilesOnFeePayment: Record<string, number>;
-  milestoneBenefits: { spend: number; miles: number }[];
-};
-
-type TieredLoungeAccess = {
-  domestic: Record<string, number>;
-  international: Record<string, number>;
-  guestAccessIncluded?: boolean;
-  notes?: string;
-};
-
-type TieredMilesRedemption = {
-  options: string[];
-  transferPartnersValue?: string;
-  annualTransferLimit?: number;
-  groupLimits?: Record<string, number>;
-};
-
-type TieredAdditionalInfo = {
-  milesNotEncashable?: boolean;
-  anniversaryYearBasis?: boolean;
-  tierSpendExclusions?: string;
-  accessMethod?: string;
-};
-
-type CardMedia = {
-  cardImage?: SectionImage;
-};
-
-type BaseCard = {
-  slug: string;
-  layout: "tieredMiles" | "lifestyle" | "premiumTravel";
-  name: string;
-  issuer: string;
-  network: string;
-  type: string;
-  summary: string;
-  seoDescription: string;
-  annualFee: AnnualFee;
-  websiteDisplayTags?: string[];
-  keyHighlights?: string[];
-  media?: CardMedia;
-};
-
-type TieredMilesCard = BaseCard & {
-  layout: "tieredMiles";
-  welcomeBenefit: TieredWelcomeBenefit;
-  rewards: TieredRewards;
-  tiers: TieredTiers;
-  tierBenefits: TieredTierBenefits;
-  loungeAccess: TieredLoungeAccess;
-  milesRedemption: TieredMilesRedemption;
-  additionalInfo: TieredAdditionalInfo;
-};
-
-type LifestyleAcceleratedRewards = {
-  rate: string;
-  merchants: string[];
-  monthlyCapRp?: number;
-  minSpend?: number;
-};
-
-type LifestyleRewards = {
-  baseRate: string;
-  acceleratedRewards?: LifestyleAcceleratedRewards;
-  rewardExclusions: string[];
-  rewardPosting: string;
-  rewardValidity?: string;
-  monthlyRpCap?: number;
-};
-
-type LifestyleMembershipUnlock = {
-  benefits: string[];
-  spendRequirement: string;
-  unlockTime?: string;
-  downloadWindow?: string;
-};
-
-type LifestyleJoiningVoucher = {
-  valueInInr: number;
-  condition: string;
-};
-
-type LifestyleWelcomeBenefits = {
-  membershipUnlock?: LifestyleMembershipUnlock;
-  joiningVoucher?: LifestyleJoiningVoucher;
-};
-
-type LifestyleRedemption = {
-  smartBuyPortalValue: {
-    exclusiveCatalog: string;
-    flightsHotels: string;
-    productsVouchers: string;
-    statementCredit: string;
-  };
-  airmilesConversion?: {
-    conversionRate: string;
-  };
-  travelRedemptionLimit?: string;
-};
-
-type LifestyleMilestoneBenefits = {
-  quarterly?: {
-    spendRequirement: number;
-    voucherValue: number;
-    brandChoices: string[];
-  };
-  annual?: {
-    threshold: number;
-    benefit: string;
-  }[];
-  voucherUnlockTime?: string;
-};
-
-type LifestyleLoungeAccess = {
-  india?: {
-    quota: number;
-    terminals: string;
-    method?: string;
-  };
-  internationalPriorityPass?: {
-    quota: number;
-    chargeAfterQuotaUsd: number;
-    notes?: string[];
-  };
-};
-
-type LifestyleConcierge = {
-  email?: string;
-  phone?: string;
-};
-
-type LifestyleInsurance = {
-  lostCardLiability?: string;
-};
-
-type LifestyleEligibility = Record<
-  string,
-  {
-    age: string;
-    incomeMin?: string;
-    itrMin?: string;
-  }
->;
-
-type LifestyleSpecialPrograms = {
-  dining?: {
-    program: string;
-    benefit: string;
-    platform?: string;
-  };
-};
-
-type LifestyleFeesSummary = {
-  joiningFee: number;
-  renewalFee: number;
-  welcomeBenefitCondition?: string;
-};
-
-type LifestyleCard = BaseCard & {
-  layout: "lifestyle";
-  fees: LifestyleFeesSummary;
-  welcomeBenefits: LifestyleWelcomeBenefits;
-  rewards: LifestyleRewards;
-  redemption: LifestyleRedemption;
-  milestoneBenefits?: LifestyleMilestoneBenefits;
-  loungeAccess: LifestyleLoungeAccess;
-  concierge?: LifestyleConcierge;
-  insurance?: LifestyleInsurance;
-  foreignExchangeMarkup?: string;
-  eligibility?: LifestyleEligibility;
-  specialPrograms?: LifestyleSpecialPrograms;
-  travelBenefitsTags?: string[];
-  rewardTags?: string[];
-};
-
-type PremiumTravelFeeWaiver = {
-  spendRequirement: number;
-  currency: string;
-  note?: string;
-};
-
-type PremiumTravelFees = {
-  joiningFee: number;
-  annualFee: number;
-  waiver?: PremiumTravelFeeWaiver;
-};
-
-type PremiumWelcomeBenefitPerk = {
-  type: string;
-  valueInInr?: number;
-  partner?: string;
-  name?: string;
-  validity?: string;
-  value?: number;
-};
-
-type PremiumWelcomeBenefitRequirement = {
-  spend: number;
-  periodDays: number;
-  postingTime?: string;
-  benefits: PremiumWelcomeBenefitPerk[];
-};
-
-type PremiumTravelWelcomeBenefits = {
-  requirements: PremiumWelcomeBenefitRequirement[];
-  sourceNote?: string;
-};
-
-type PremiumTravelRewardProgram = {
-  currency: string;
-  baseRate: string;
-  acceleratedRate?: {
-    rate: string;
-    categories: string[];
-    monthlyCap?: number;
-  };
-  earnLogic?: string;
-  expiry?: string;
-  sourceNote?: string;
-};
-
-type PremiumTravelMilestoneBonus = {
-  thresholdInInr: number;
-  rewardPoints: number;
-  cycle: string;
-};
-
-type PremiumTravelMilestoneAdditionalBenefit = {
-  type: string;
-  partner?: string;
-  valueInInr?: number;
-  deliveryTimeline?: string;
-};
-
-type PremiumTravelMilestoneSplit = {
-  thresholdPoints?: number;
-  extraPointsViaSupport?: number;
-  redemptionNote?: string;
-};
-
-type PremiumTravelMilestoneDetail = {
-  thresholdInInr: number;
-  rewardPoints?: number;
-  cycle?: string;
-  description?: string;
-  split?: PremiumTravelMilestoneSplit;
-  additionalBenefit?: PremiumTravelMilestoneAdditionalBenefit;
-  redeemableOn?: string[];
-};
-
-type PremiumTravelMilestoneBenefits = {
-  annualSpendBonus?: PremiumTravelMilestoneBonus;
-  first90DaySpendBonus?: PremiumTravelMilestoneBonus;
-  additionalMilestones?: PremiumTravelMilestoneDetail[];
-  eligibleSpendNote?: string;
-};
-
-type PremiumTravelRedemptionPartners = {
-  airlines?: string[];
-  hotels?: string[];
-};
-
-type PremiumTravelRedemption = {
-  type: string;
-  rate?: string;
-  platform?: string;
-  instantRedemption?: boolean;
-  partners?: PremiumTravelRedemptionPartners;
-  notes?: string[];
-};
-
-type PremiumTravelDomesticLoungeAccess = {
-  complimentaryVisitsPerYear: number;
-  quarterlyCap?: number;
-  notes?: string[];
-};
-
-type PremiumTravelPriorityPassAccess = {
-  membershipFee?: string;
-  visitCharges?: string;
-  notes?: string[];
-};
-
-type PremiumTravelLoungeAccess = {
-  domestic?: number | PremiumTravelDomesticLoungeAccess;
-  international?: number;
-  note?: string;
-  priorityPass?: PremiumTravelPriorityPassAccess;
-};
-
-type PremiumTravelGolfBenefits = {
-  freeRounds?: number;
-  freeLessons?: number;
-  limit?: string;
-  discount?: string;
-};
-
-type PremiumTravelHolidayBenefit = {
-  partner: string;
-  benefit: string;
-};
-
-type PremiumTravelTravelBenefits = {
-  airportLoungeAccess?: PremiumTravelLoungeAccess;
-  golf?: PremiumTravelGolfBenefits;
-  holidayBenefits?: PremiumTravelHolidayBenefit[];
-  dutyFreeDiscount?: string;
-};
-
-type PremiumTravelOtherPrivileges = {
-  purchaseProtection?: string;
-  movieDiningBenefits?: string;
-  exclusivePrivileges?: string[];
-  securityServices?: string[];
-};
-
-type PremiumTravelEligibility = {
-  age?: string;
-  minIncome?: string;
-  residency?: string;
-  citiesServed?: string[];
-};
-
-type PremiumTravelVoucherOffer = {
-  name: string;
-  valueInInr?: number;
-  trigger?: string;
-  validity?: string;
-  validityDays?: number;
-  oneTimeUse?: boolean;
-  bookingChannels?: string[];
-  notes?: string[];
-};
-
-type PremiumTravelVouchersAndOffers = {
-  vouchers?: PremiumTravelVoucherOffer[];
-  otherPrograms?: string[];
-};
-
-type PremiumTravelCard = BaseCard & {
-  layout: "premiumTravel";
-  fees: PremiumTravelFees;
-  welcomeBenefits: PremiumTravelWelcomeBenefits;
-  rewardProgram: PremiumTravelRewardProgram;
-  rewardExclusions?: string[];
-  milestoneBenefits?: PremiumTravelMilestoneBenefits;
-  redemption: PremiumTravelRedemption;
-  travelBenefits?: PremiumTravelTravelBenefits;
-  otherPrivileges?: PremiumTravelOtherPrivileges;
-  eligibility?: PremiumTravelEligibility;
-  tags?: string[];
-  vouchersAndOffers?: PremiumTravelVouchersAndOffers;
-};
-
-type Card = TieredMilesCard | LifestyleCard | PremiumTravelCard;
-
-const cards = filterEnabled((cardData as { cards: Card[] }).cards).map((card) =>
-  filterEnabledDeep(card)
-);
+import type {
+  AnnualFee,
+  Card,
+  LifestyleCard,
+  LifestyleConcierge,
+  LifestyleEligibility,
+  LifestyleInsurance,
+  LifestyleLoungeAccess,
+  LifestyleMilestoneBenefits,
+  LifestyleRedemption,
+  LifestyleRewards,
+  LifestyleSpecialPrograms,
+  PremiumTravelCard,
+  PremiumTravelEligibility,
+  PremiumTravelMilestoneBenefits,
+  PremiumTravelOtherPrivileges,
+  PremiumTravelRedemption,
+  PremiumTravelRewardProgram,
+  PremiumTravelTravelBenefits,
+  PremiumTravelVouchersAndOffers,
+  SectionImage,
+  TieredAdditionalInfo,
+  TieredLoungeAccess,
+  TieredMilesCard,
+  TieredMilesRedemption,
+  TieredTierBenefits,
+  TieredTiers,
+  TieredWelcomeBenefit,
+} from "@/app/travel-with-points/credit-cards/types";
+import { getCreditCardContent } from "@/lib/contentData";
 
 type SectionWrapperProps = {
   title: string;
@@ -436,6 +51,12 @@ function SectionWrapper({ title, description, children }: SectionWrapperProps) {
       {children}
     </section>
   );
+}
+
+async function getCards(): Promise<Card[]> {
+  const { cards } = await getCreditCardContent();
+
+  return cards;
 }
 
 function formatAnnualFee(annualFee: AnnualFee) {
@@ -2200,13 +1821,16 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const cards = await getCards();
+
   return cards.map((card) => ({ slug: card.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const cards = await getCards();
   const card = cards.find((item) => item.slug === decodedSlug);
 
   if (!card) {
@@ -2245,6 +1869,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function CreditCardDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const cards = await getCards();
   const card = cards.find((item) => item.slug === decodedSlug);
 
   if (!card) {

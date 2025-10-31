@@ -3,78 +3,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import hotelData from "@/data/hotel-programs.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-type SectionImage = {
-  src: string;
-  alt: string;
-};
-
-type ListSection = {
-  title?: string;
-  description?: string;
-  items?: string[];
-  note?: string;
-  image?: SectionImage;
-};
-
-type QuickFact = {
-  label: string;
-  value: string;
-};
-
-type StatusRow = {
-  label: string;
-  description?: string;
-  values: string[];
-};
-
-type StatusLevelsSection = {
-  tiers: string[];
-  rows: StatusRow[];
-  note?: string;
-  image?: SectionImage;
-};
-
-type HotelProgram = {
-  slug: string;
-  name: string;
-  footprint: string;
-  summary: string;
-  seoDescription: string;
-  overview?: ListSection;
-  quickFacts?: QuickFact[];
-  statusLevels?: StatusLevelsSection;
-  enrollment?: ListSection;
-  coBrandedCards?: ListSection;
-  pointsEarn?: ListSection;
-  pointsBurn?: ListSection;
-  eliteBenefitDetails?: ListSection;
-  partnerships?: ListSection;
-  specialPerks?: ListSection;
-  lifetimeStatus?: ListSection;
-  paidMemberships?: ListSection;
-  otherBenefits?: ListSection;
-  notesSection?: ListSection;
-  tags?: string[];
-};
-
-const programs = filterEnabled(
-  (hotelData as { programs: HotelProgram[] }).programs
-).map((program) => filterEnabledDeep(program));
+import type { HotelProgram, ListSection, SectionImage } from "@/app/travel-with-points/hotel-programs/types";
+import { getHotelProgramContent } from "@/lib/contentData";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
+async function getPrograms(): Promise<HotelProgram[]> {
+  const { programs } = await getHotelProgramContent();
+
+  return programs;
+}
+
+export async function generateStaticParams() {
+  const programs = await getPrograms();
+
   return programs.map((program) => ({ slug: program.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);
 
   if (!program) {
@@ -113,6 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function HotelProgramDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);
 
   if (!program) {

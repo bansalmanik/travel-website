@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import PointsConversionContent from "./PointsConversionContent";
+import { getPointsConversions } from "@/lib/contentData";
 
 export const metadata: Metadata = {
   title: "Points Conversion Guide | Transfer Rates",
@@ -19,6 +20,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PointsConversionPage() {
-  return <PointsConversionContent />;
+export default async function PointsConversionPage() {
+  const conversions = await getPointsConversions();
+
+  return <PointsConversionContent conversions={conversions} />;
 }

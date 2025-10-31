@@ -4,24 +4,27 @@ import { notFound } from "next/navigation";
 
 import { FlightProgramSections } from "@/app/components/flight-program-sections";
 import type { FlightProgram } from "@/app/travel-with-points/flight-programs/types";
-import flightData from "@/data/flight-programs.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-const programs = filterEnabled(
-  (flightData as { programs: FlightProgram[] }).programs
-).map((program) => filterEnabledDeep(program));
+import { getFlightProgramContent } from "@/lib/contentData";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
+async function getPrograms(): Promise<FlightProgram[]> {
+  const { programs } = await getFlightProgramContent();
+
+  return programs;
+}
+
+export async function generateStaticParams() {
+  const programs = await getPrograms();
   return programs.map((program) => ({ slug: program.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);
 
   if (!program) {
@@ -61,6 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function FlightProgramDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);
 
   if (!program) {

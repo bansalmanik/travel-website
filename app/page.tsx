@@ -2,25 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllStorySummaries } from "@/app/stories/data";
-import journalsData from "@/data/journals.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-type JournalHighlight = {
-  slug: string;
-  title: string;
-  displayDate: string;
-  enabled?: boolean;
-};
-
-const journals = filterEnabled(
-  (journalsData as { journals: JournalHighlight[] }).journals
-).map((entry) => filterEnabledDeep(entry));
-
-const journalHighlights = journals.slice(0, 3).map((entry) => ({
-  title: entry.title,
-  date: entry.displayDate,
-  url: `/journals/${entry.slug}`,
-}));
+import { getJournalEntries } from "@/lib/contentData";
 
 const travelWithPointsHighlights = [
   {
@@ -46,6 +28,12 @@ const travelWithPointsHighlights = [
 export default async function Home() {
   const storySummaries = await getAllStorySummaries();
   const featuredStories = storySummaries.slice(0, 3);
+  const journalEntries = await getJournalEntries();
+  const journalHighlights = journalEntries.slice(0, 3).map((entry) => ({
+    title: entry.title,
+    date: entry.displayDate,
+    url: `/journals/${entry.slug}`,
+  }));
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
