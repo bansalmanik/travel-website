@@ -77,12 +77,6 @@ export default async function Home() {
             >
               Dive into Stories
             </Link>
-            <a
-              className="inline-flex items-center justify-center rounded-full border border-white/70 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:border-white hover:text-white"
-              href="#connect"
-            >
-              Say Hello
-            </a>
           </div>
         </div>
       </header>
@@ -228,37 +222,6 @@ export default async function Home() {
           </div>
         </section>
 
-        <section id="connect" className="overflow-hidden rounded-3xl bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 px-8 py-16 text-slate-900">
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            <div className="max-w-2xl space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.4em] text-slate-800/80">Stay in the loop</p>
-              <h2 className="text-3xl font-semibold sm:text-4xl">Monthly postcards from wherever I’m roaming</h2>
-              <p className="text-base text-slate-900/80">
-                Subscribe for thoughtful essays, photo stories, and playlists from the road. No spam—just honest travel notes and the occasional digital postcard.
-              </p>
-            </div>
-            <form className="flex w-full max-w-sm flex-col gap-3 rounded-3xl bg-white/80 p-6 shadow-xl md:min-w-[280px]" action="#" method="post">
-              <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-700" htmlFor="email">
-                Email address
-              </label>
-              <input
-                id="email"
-                type="email"
-                required
-                placeholder="hello@you.com"
-                className="w-full rounded-full border border-slate-200 px-4 py-3 text-sm text-slate-900 focus:border-slate-400 focus:outline-none"
-                suppressHydrationWarning
-              />
-              <button
-                className="flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-slate-800"
-                type="submit"
-                suppressHydrationWarning
-              >
-                Join the list
-              </button>
-            </form>
-          </div>
-        </section>
       </main>
 
       <footer className="border-t border-slate-200 bg-white/70 py-10 text-sm text-slate-600">
