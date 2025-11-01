@@ -8,19 +8,19 @@ import { getPrivateImageSrc } from "@/lib/privateAssets";
 const travelWithPointsHighlights = [
   {
     title: "Credit Cards",
-    description: "Compare welcome bonuses, annual fees, and sweet spots for travel statement credits.",
+    description: "Learn how to earn miles, redeem flights, and fly better without spending more..",
     href: "/travel-with-points/credit-cards",
     accent: "bg-amber-100 text-amber-900",
   },
   {
     title: "Hotel Programs",
-    description: "Understand elite tiers, free night certificates, and when to transfer points for maximum value.",
+      description: "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
     href: "/travel-with-points/hotel-programs",
     accent: "bg-sky-100 text-sky-900",
   },
   {
     title: "Flight Programs",
-    description: "Decode award charts, routing rules, and how to stack alliances for long-haul redemptions.",
+      description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
   },
@@ -141,8 +141,8 @@ export default async function Home() {
                 Travel with points and turn loyalty into long weekends
               </h2>
               <p className="text-base text-slate-100/80">
-                Learn the playbook I use to stretch miles and points for boutique hotels, business-class upgrades, and family visits.
-                Start with an overview or jump straight to the guides below.
+                              Earn smarter. Redeem better. Fly further.
+                              Miles and points that take you places
               </p>
               <Link
                 className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-300"
