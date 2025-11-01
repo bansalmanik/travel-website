@@ -157,11 +157,6 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
                           className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                           loading="lazy"
                         />
-                        {media.caption ? (
-                          <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-sm text-white">
-                            {media.caption}
-                          </figcaption>
-                        ) : null}
                       </figure>
                     ))}
                   </div>
