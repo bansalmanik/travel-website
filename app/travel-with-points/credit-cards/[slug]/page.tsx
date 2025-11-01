@@ -99,6 +99,7 @@ function formatDate(value?: string) {
   }
 
   const formatter = new Intl.DateTimeFormat("en-IN", {
+    timeZone: "UTC",
     year: "numeric",
     month: "short",
     day: "numeric"
