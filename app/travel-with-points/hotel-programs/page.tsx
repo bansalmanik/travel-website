@@ -37,12 +37,17 @@ export default async function HotelProgramsPage() {
         <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
           <h2 className="text-2xl font-semibold text-white">Featured hotel programs</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {programs.map((program) => {
-              const highlight = program.overview?.items?.[0];
-              const topTier =
-                program.statusLevels && program.statusLevels.tiers.length > 0
-                  ? program.statusLevels.tiers[program.statusLevels.tiers.length - 1]
-                  : undefined;
+            {programs.length === 0 ? (
+              <p className="col-span-full rounded-2xl border border-dashed border-white/10 bg-slate-900/40 p-6 text-center text-sm text-slate-200/80">
+                Coming soon – building out our hotel program library.
+              </p>
+            ) : (
+              programs.map((program) => {
+                const highlight = program.overview?.items?.[0];
+                const topTier =
+                  program.statusLevels && program.statusLevels.tiers.length > 0
+                    ? program.statusLevels.tiers[program.statusLevels.tiers.length - 1]
+                    : undefined;
 
                 return (
                   <article
@@ -89,32 +94,45 @@ export default async function HotelProgramsPage() {
                     </Link>
                   </article>
                 );
-            })}
+              })
+            )}
           </div>
         </section>
 
         <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
           <h2 className="text-2xl font-semibold text-white">Paths to elite status</h2>
           <div className="grid gap-6 md:grid-cols-3">
-            {elitePaths.map((path) => (
-              <article key={path.tier} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-                <h3 className="text-lg font-semibold text-white">{path.tier}</h3>
-                <p className="text-sm leading-6 text-slate-100/80">{path.highlight}</p>
-              </article>
-            ))}
+            {elitePaths.length === 0 ? (
+              <p className="col-span-full rounded-2xl border border-dashed border-white/10 bg-slate-900/40 p-5 text-center text-sm text-slate-200/80">
+                Coming soon – elite status roadmaps are under construction.
+              </p>
+            ) : (
+              elitePaths.map((path) => (
+                <article key={path.tier} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+                  <h3 className="text-lg font-semibold text-white">{path.tier}</h3>
+                  <p className="text-sm leading-6 text-slate-100/80">{path.highlight}</p>
+                </article>
+              ))
+            )}
           </div>
         </section>
 
         <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
           <h2 className="text-2xl font-semibold text-white">Booking checklist</h2>
-          <ul className="space-y-4 text-sm leading-6 text-slate-100/80">
-            {bookingTips.map((tip) => (
-              <li key={tip} className="flex items-start gap-3">
-                <span className="mt-1 h-2.5 w-2.5 rounded-full bg-sky-300" aria-hidden />
-                <span>{tip}</span>
-              </li>
-            ))}
-          </ul>
+          {bookingTips.length === 0 ? (
+            <p className="rounded-2xl border border-dashed border-white/10 bg-slate-900/40 p-6 text-center text-sm text-slate-200/80">
+              Coming soon – a fresh booking checklist is on its way.
+            </p>
+          ) : (
+            <ul className="space-y-4 text-sm leading-6 text-slate-100/80">
+              {bookingTips.map((tip) => (
+                <li key={tip} className="flex items-start gap-3">
+                  <span className="mt-1 h-2.5 w-2.5 rounded-full bg-sky-300" aria-hidden />
+                  <span>{tip}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
       </div>
     </main>
