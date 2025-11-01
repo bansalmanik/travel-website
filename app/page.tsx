@@ -14,15 +14,22 @@ const travelWithPointsHighlights = [
   },
   {
     title: "Hotel Programs",
-      description: "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
+    description:
+      "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
     href: "/travel-with-points/hotel-programs",
     accent: "bg-sky-100 text-sky-900",
   },
   {
     title: "Flight Programs",
-      description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
+    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
+  },
+  {
+    title: "Points Conversion",
+    description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
+    href: "/pointsconversion",
+    accent: "bg-purple-100 text-purple-900",
   },
 ];
 
