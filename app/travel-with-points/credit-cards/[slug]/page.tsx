@@ -24,6 +24,7 @@ import type {
   PremiumTravelRewardProgram,
   PremiumTravelTravelBenefits,
   PremiumTravelVouchersAndOffers,
+  PremiumWelcomeBenefitPerk,
   SectionImage,
   TieredAdditionalInfo,
   TieredLoungeAccess,
