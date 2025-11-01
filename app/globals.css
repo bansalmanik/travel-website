@@ -25,6 +25,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+[data-nextjs-dev-indicator],
+[data-nextjs-scroll-portal] {
+  display: none !important;
+}
+
 @layer utilities {
   .no-scrollbar {
     -ms-overflow-style: none;
