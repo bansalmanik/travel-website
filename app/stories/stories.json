@@ -64,21 +64,20 @@
     "gallery": [
       {
         "src": "/images/content/20231223_191940.jpg",
-        "alt": "Breakfast tray floating in a private plunge pool",
-        "caption": "Breakfast arrives as a floating tray of tropical fruit and Maldivian mas huni."
+        "alt": "Christmas in Maldives",
+        "layout": "portrait"
       },
       {
-        "src": "/images/content/photo-1493558103817-58b2924bce98.svg",
-        "alt": "Couple snorkeling above coral reef",
-        "caption": "A five-minute swim reveals reef sharks, eagle rays, and neon coral gardens."
+        "src": "/images/content/maldives_2.JPG",
+        "alt": "Couple snorkeling above coral reef"
       },
       {
-        "src": "/images/content/photo-1525182008055--acba6fe1b456.svg",
+        "src": "/images/content/maldives-3.JPG",
         "alt": "Sunset sailboat gliding past an overwater villa",
         "caption": "Evening catamaran cruises trace the atoll as the sky shifts through sherbet hues."
       },
       {
-        "src": "/images/content/photo-1526481280695--e2928a46df37.svg",
+        "src": "/images/content/deck.JPG",
         "alt": "Spa cabana facing a calm lagoon",
         "caption": "Open-air spa cabanas catch the breeze while waves lap softly against the stilts."
       }
@@ -97,22 +96,15 @@
         ],
         "media": [
           {
-            "src": "/images/content/photo-1500534314209--8629a0f52424.svg",
+            "src": "/images/content/christmas_tree.JPG",
             "alt": "Palm trees wrapped in fairy lights framing a Christmas tree on a tropical boardwalk at night",
-            "caption": "Holiday lights drape the palms along Villa Nautica’s boardwalk after sunset.",
-            "layout": "landscape"
+            "caption": "",
+            "layout": "portrait"
           },
           {
-            "src": "/images/content/photo-1500530855697--970378c505dc.svg",
+            "src": "/images/content/speed_boat.JPG",
             "alt": "Festive breakfast table set under palm shade on a bright island morning",
-            "caption": "Christmas morning arrives with beachside brunch and sun-glazed sand.",
-            "layout": "landscape"
-          },
-          {
-            "src": "/images/content/photo-1524594154903--47e8d54b066d.svg",
-            "alt": "Infinity pool overlooking a calm turquoise lagoon under a clear sky",
-            "caption": "Dry-season skies keep the infinity pool sparkling all afternoon.",
-            "layout": "landscape"
+            "layout": "portrait"
           }
         ]
       },
@@ -125,16 +117,15 @@
         ],
         "media": [
           {
-            "src": "/images/content/photo-1508672019048--d4fb7955603b.svg",
+            "src": "/images/content/maldives_1.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
-            "caption": "Water villas line the lagoon for sunrise views from every deck.",
             "layout": "landscape"
           }
         ]
       },
       {
         "id": "morning-rituals",
-        "title": "Breakfast Shows and Sky-High Lookouts",
+        "title": "Breakfast and Sky-High Lookouts",
         "paragraphs": [
           "Mornings started at Bageecha Restaurant. Think: a long, generous buffet with at least seven little worlds—starters, fruits, soups, mains, island specials, and a dessert table that deserves its own passport. There was a live counter too; the chef would sear fish like a tiny performance. I lost count of the cinnamon rolls (four in one go, if we’re being honest). The menu shifted daily, so breakfast felt new every time.",
           "After breakfast, we wandered. No rush, no agenda. The island has these viewpoints that make you stop mid-sentence. Our favorite climb was the Crow’s Nest—the angle up there turns the lagoon into a painting.",
@@ -142,16 +133,9 @@
         ],
         "media": [
           {
-            "src": "/images/content/photo-1477587458883-47145ed94245.svg",
+            "src": "/images/content/private_beach.JPG",
             "alt": "Lagoon lookout tower rising above palm trees at Villa Nautica",
-            "caption": "Climb the Crow’s Nest for a full sweep of the lagoon’s shifting blues.",
-            "layout": "portrait"
-          },
-          {
-            "src": "/images/content/photo-1470252649378--e90b07bd4d70.svg",
-            "alt": "Open-air gym with nautical-inspired weights and ropes",
-            "caption": "Ship Shape keeps workouts playful with maritime details and sea views.",
-            "layout": "portrait"
+            "layout": "landscape"
           }
         ]
       },
@@ -187,21 +171,8 @@
         ],
         "media": [
           {
-            "src": "/images/content/photo-1501117716987--32399377d959.svg",
+            "src": "/images/content/stingray.JPG",
             "alt": "Seagull standing on a wooden railing near the beach",
-            "caption": "Lunch companions arrive on cue, eyeing every plate for a spare bite.",
-            "layout": "portrait"
-          },
-          {
-            "src": "/images/content/photo-1524594154903--47e8d54b066d.svg",
-            "alt": "Sunset reflecting on an infinity pool beside the ocean",
-            "caption": "Golden hour turns the infinity pool into liquid light.",
-            "layout": "landscape"
-          },
-          {
-            "src": "/images/content/photo-1582719478250--17846ff570bd.svg",
-            "alt": "Stingray swimming alongside a baby reef shark in shallow water",
-            "caption": "Evening feeding draws stingrays and baby sharks right to the pier.",
             "layout": "landscape"
           }
         ]
