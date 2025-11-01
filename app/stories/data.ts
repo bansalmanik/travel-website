@@ -23,11 +23,25 @@ export type StorySummary = {
   coverImage: StoryImage;
 };
 
+export type StorySectionMedia = StoryImage & {
+  layout?: "landscape" | "portrait" | "square";
+};
+
+export type StorySection = {
+  id: string;
+  title?: string;
+  subtitle?: string;
+  paragraphs?: string[];
+  media?: StorySectionMedia[];
+  callout?: string;
+};
+
 export type Story = StorySummary & {
   content: string[];
   highlights: string[];
   gallery?: StoryImage[];
   videoUrl?: string;
+  sections?: StorySection[];
 };
 
 const storiesPath = path.join(process.cwd(), "app", "stories", "stories.json");
@@ -56,6 +70,19 @@ async function resolveOptionalImages<T extends ImageLike>(images?: T[]): Promise
   return Promise.all(images.map((image) => resolveImage(image)));
 }
 
+async function resolveSections(sections?: StorySection[]): Promise<StorySection[] | undefined> {
+  if (!sections || sections.length === 0) {
+    return sections;
+  }
+
+  return Promise.all(
+    sections.map(async (section) => ({
+      ...section,
+      media: await resolveOptionalImages(section.media),
+    })),
+  );
+}
+
 const loadStories = cache(async () => {
   const stories = await readJsonFile<Story[]>(storiesPath);
 
@@ -64,6 +91,7 @@ const loadStories = cache(async () => {
       ...story,
       coverImage: await resolveImage(story.coverImage),
       gallery: await resolveOptionalImages(story.gallery),
+      sections: await resolveSections(story.sections),
     })),
   );
 });
