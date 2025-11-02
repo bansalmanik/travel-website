@@ -11,7 +11,7 @@ type StoryPageProps = {
   params: { slug: string };
 };
 
-export const dynamic = "error";
+export const dynamic = "force-static";
 export const dynamicParams = false;
 export const revalidate = false;
 
