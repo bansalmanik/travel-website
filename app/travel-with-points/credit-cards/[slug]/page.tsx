@@ -37,8 +37,6 @@ import type {
 } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
-export const runtime = "edge";
-
 type SectionWrapperProps = {
   title: string;
   description?: string;
@@ -1823,7 +1821,7 @@ function PremiumTravelEligibilitySection({ eligibility }: PremiumTravelEligibili
 }
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
 export async function generateStaticParams() {
@@ -1833,7 +1831,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const cards = await getCards();
   const card = cards.find((item) => item.slug === decodedSlug);
@@ -1872,7 +1870,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function CreditCardDetailPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const cards = await getCards();
   const card = cards.find((item) => item.slug === decodedSlug);

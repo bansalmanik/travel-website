@@ -5,10 +5,8 @@ import { notFound } from "next/navigation";
 
 import { getJournalEntries } from "@/lib/contentData";
 
-export const runtime = "edge";
-
 export type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
 export async function generateStaticParams() {
@@ -17,7 +15,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const journals = await getJournalEntries();
   const journal = journals.find((entry) => entry.slug === decodedSlug);
@@ -58,7 +56,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function JournalDetailPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const journals = await getJournalEntries();
   const journal = journals.find((entry) => entry.slug === decodedSlug);
