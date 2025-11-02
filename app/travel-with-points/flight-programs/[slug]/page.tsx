@@ -7,6 +7,8 @@ import type { FlightProgram } from "@/app/travel-with-points/flight-programs/typ
 import flightData from "@/data/flight-programs.json";
 import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
+export const runtime = "edge";
+
 const programs = filterEnabled(
   (flightData as { programs: FlightProgram[] }).programs
 ).map((program) => filterEnabledDeep(program));
@@ -14,10 +16,6 @@ const programs = filterEnabled(
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-export function generateStaticParams() {
-  return programs.map((program) => ({ slug: program.slug }));
-}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import journalsData from "@/data/journals.json";
 import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
+export const runtime = "edge";
+
 type SectionImage = {
   src: string;
   alt: string;
@@ -41,10 +43,6 @@ const journals = filterEnabled(
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-export function generateStaticParams() {
-  return journals.map((entry) => ({ slug: entry.slug }));
-}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
