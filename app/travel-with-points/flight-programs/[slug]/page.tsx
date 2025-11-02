@@ -10,7 +10,7 @@ type PageProps = {
   params: { slug: string };
 };
 
-export const dynamic = "force-static";
+export const revalidate = false;
 export const dynamicParams = false;
 
 async function getPrograms(): Promise<FlightProgram[]> {
