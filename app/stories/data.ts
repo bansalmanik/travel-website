@@ -1,8 +1,7 @@
-import path from "path";
-import { promises as fs } from "fs";
 import { cache } from "react";
 
 import { getPrivateImageSrc } from "@/lib/privateAssets";
+import storiesJson from "./stories.json";
 
 export type StoryImage = {
   src: string;
@@ -44,13 +43,6 @@ export type Story = StorySummary & {
   sections?: StorySection[];
 };
 
-const storiesPath = path.join(process.cwd(), "app", "stories", "stories.json");
-
-async function readJsonFile<T>(filePath: string): Promise<T> {
-  const fileContents = await fs.readFile(filePath, "utf-8");
-  return JSON.parse(fileContents) as T;
-}
-
 type ImageLike = { src: string };
 
 async function resolveImage<T extends ImageLike>(image: T): Promise<T> {
@@ -84,7 +76,7 @@ async function resolveSections(sections?: StorySection[]): Promise<StorySection[
 }
 
 const loadStories = cache(async () => {
-  const stories = await readJsonFile<Story[]>(storiesPath);
+  const stories = storiesJson as Story[];
 
   return Promise.all(
     stories.map(async (story) => ({
