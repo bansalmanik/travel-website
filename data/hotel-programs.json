@@ -9,10 +9,7 @@
       "overview": {
         "description": "Global hotel loyalty program with elite status tiers, points on stays, and redemptions for nights, upgrades, and experiences.",
         "items": [
-          "Earn and redeem points across 30 distinct hotel brands plus Homes & Villas vacation rentals.",
-          "Dynamic award pricing can be offset by PointSavers discounts, 5th Night Free, and certificate top-offs.",
-          "Elite Night Credits stack via stays, co-branded card bonuses, and Annual Choice Benefits milestones.",
-          "Ambassador Elite layers personalized service, Your24 scheduling, and 48-Hour availability guarantees."
+
         ],
         "note": "Marriott Bonvoy balances aspirational resorts with unmatched global coverage—ideal for frequent travelers who need both reach and rewards.",
         "image": {
@@ -76,7 +73,7 @@
           },
           {
             "label": "Ultimate Reservation Guarantee",
-            "description": "If a hotel can’t honor your reservation, Marriott will rebook you at a comparable property and compensate for the inconvenience.",
+            "description": "",
             "values": [
               "Not included",
               "Included",
@@ -89,7 +86,7 @@
           },
           {
             "label": "Bonus points on stays",
-            "description": "Earn extra points on eligible hotel purchases depending on elite tier.",
+            "description": "",
             "values": [
               "Base earning (no bonus)",
               "10% bonus",
@@ -102,7 +99,7 @@
           },
           {
             "label": "Late checkout",
-            "description": "Request complimentary late checkout to enjoy more time on property (availability varies).",
+            "description": "",
             "values": [
               "Request at desk",
               "Priority late checkout",
@@ -115,7 +112,7 @@
           },
           {
             "label": "Welcome gift",
-            "description": "Receive a special amenity or bonus points at participating brands upon arrival.",
+            "description": "",
             "values": [
               "Member rates & mobile key",
               "Points",
@@ -128,7 +125,7 @@
           },
           {
             "label": "Enhanced upgrades",
-            "description": "Space-available room upgrades; suites included for Platinum Elite and higher.",
+            "description": "",
             "values": [
               "Standard room type",
               "Space-available upgrades",
@@ -141,7 +138,7 @@
           },
           {
             "label": "Lounge access",
-            "description": "Executive lounge entry with complimentary breakfast where available.",
+            "description": "",
             "values": [
               "Not included",
               "Not included",
@@ -154,7 +151,7 @@
           },
           {
             "label": "Annual Choice Benefit",
-            "description": "Select milestone rewards like Suite Night Awards, bonus Elite Night Credits, or gift Silver status.",
+            "description": "",
             "values": [
               "Not applicable",
               "Not applicable",
@@ -167,7 +164,7 @@
           },
           {
             "label": "48-Hour Guarantee",
-            "description": "Book by 3 p.m., two days prior to arrival and Marriott will find you a room.",
+            "description": "",
             "values": [
               "Not available",
               "Not available",
@@ -180,7 +177,7 @@
           },
           {
             "label": "Your24",
-            "description": "Choose your own 24-hour check-in/check-out window through the Ambassador service team.",
+            "description": "",
             "values": [
               "Not available",
               "Not available",
@@ -193,7 +190,7 @@
           },
           {
             "label": "Ambassador Service",
-            "description": "Dedicated personal Ambassador handles complex itineraries and special requests.",
+            "description": "",
             "values": [
               "Not available",
               "Not available",
@@ -206,7 +203,7 @@
           },
           {
             "label": "Airline & travel partners",
-            "description": "Tap into airline, rental car, and lifestyle partners for incremental earning and benefits.",
+            "description": "",
             "values": [
               "Earn & transfer with partners",
               "Emirates Skywards bonus miles",
@@ -218,11 +215,7 @@
             "enabled": true
           }
         ],
-        "note": "Ambassador Elite layers personalized service on top of Titanium benefits for frequent business travelers.",
-        "image": {
-          "src": "/images/content/photo-1501117716987--32399377d959.svg",
-          "alt": "Hotel loyalty membership card on a marble table"
-        }
+        "note": ""
       },
       "enrollment": {
         "items": [
@@ -239,44 +232,21 @@
           "Element, Residence Inn, and TownePlace Suites earn 5 points per $1 while Homes & Villas by Marriott Bonvoy earns 2 points per $1.",
           "Eligible incidentals—dining, spa treatments, and on-property services—also accrue points when charged to your room.",
           "Elite bonuses start at 10% for Silver members and rise to 75% for Titanium and Ambassador elites.",
-          "Boost balances with co-branded Marriott credit cards, targeted promotions, and Uber / Uber Eats earning partnerships in select regions."
-        ],
-        "note": "Track elite night credits from personal and business Marriott cards to jump-start status each year."
+          "Boost balances with co-branded Marriott credit cards and targeted promotions"
+        ]
       },
       "pointsBurn": {
         "title": "Redeeming points",
         "items": [
           "Redeem for free nights, room upgrades, and Marriott Bonvoy Moments experiences worldwide.",
           "Instantly apply points toward dining or spa charges during a stay, or choose Cash + Points to lower nightly costs.",
-          "Dynamic pricing flexes with demand, but 5th Night Free, PointSavers (up to ~20% off), and certificate top-offs (35K–85K points) stretch value.",
-          "Expect 0.6 – 0.9 cents per point in typical redemptions, with outsized value at aspirational resorts or peak cash rates."
-        ]
-      },
-      "eliteBenefitDetails": {
-        "items": [
-          "Enhanced room upgrades are available at most properties, with suites extended to Platinum Elite and higher when inventory allows.",
-          "Late checkout scales with status: Silver enjoys priority handling, Gold receives 2 p.m., and Platinum+ tiers get a guaranteed 4 p.m. checkout.",
-          "Welcome gifts evolve from points-only for lower elites to your choice of points, breakfast, or an amenity for Platinum Elite and beyond.",
-          "Executive lounge access is guaranteed for Platinum Elite and higher at properties offering lounges.",
-          "Ultimate Reservation Guarantee provides compensation and rebooking if the hotel cannot honor your stay."
-        ]
-      },
-      "partnerships": {
-        "items": [
-          "Airline partners include United MileagePlus, Emirates Skywards, Qatar Airways, and additional transfer options via major bank currencies.",
-          "Rental car alliances with Hertz and SIXT unlock status tiers and accelerated earning on qualifying rentals.",
-          "Uber and Uber Eats partnerships in select regions award Bonvoy points on rides and deliveries.",
-          "American Express Membership Rewards transfer to Marriott Bonvoy at a 3:1 ratio, often with limited-time bonuses."
+          "Expect 0.4 - 0.5 INR per point in typical redemptions, with outsized value at aspirational resorts or peak cash rates."
         ]
       },
       "coBrandedCards": {
         "items": [
-          "Marriott Bonvoy Boundless® (Chase) – annual free night certificate and 15 elite night credits.",
-          "Marriott Bonvoy Brilliant® (Amex) – automatic Platinum Elite status, 85K certificate, and monthly dining credits.",
-          "Marriott Bonvoy Bevy™ (Amex) – 50% bonus points on stays after $15K spend and annual 50K certificate with spend.",
-          "Marriott Bonvoy Business® (Amex) – 15 elite night credits plus annual free night award."
+          "HDFC Marriott Bonvoy – annual free night worth 15k points and 15 elite night credits."
         ],
-        "note": "Pair personal and business cards to stack at least 30 elite night credits toward Platinum Elite before your first stay.",
         "image": {
           "src": "/images/content/photo-1523285367489--b0b6cecd7646.svg",
           "alt": "Stack of travel credit cards on a desk"
@@ -286,22 +256,13 @@
         "items": [
           "5th Night Free automatically applies on award stays of four nights or longer.",
           "Suite Night Awards from Annual Choice Benefits request confirmed suite upgrades ahead of arrival.",
-          "Elite Night Credits from co-branded cards and milestone rewards accelerate qualification.",
-          "Homes & Villas by Marriott Bonvoy reservations earn both points and elite night credits."
+          "Elite Night Credits from co-branded cards and milestone rewards accelerate qualification."
         ]
       },
       "lifetimeStatus": {
         "items": [
           "Lifetime Silver, Gold, and Platinum tiers lock in benefits after hitting long-term stay and elite year thresholds.",
           "Lifetime status preserves core benefits even if annual stay activity dips."
-        ]
-      },
-      "otherBenefits": {
-        "title": "Strategy insights",
-        "items": [
-          "Combine PointSavers discounts with 5th Night Free to drop effective nightly costs well below cash rates.",
-          "Use certificate top-offs to stretch 35K or 50K awards into higher-category properties during peak dates.",
-          "Track Ambassador qualification progress to unlock Your24 scheduling and a dedicated personal ambassador."
         ]
       },
       "notesSection": {
@@ -333,7 +294,7 @@
           "Earn both Reward Points and Status Points on stays, dining, and events.",
           "Redeem with a fixed cash value: 2,000 Reward Points reduce eligible bills by €40.",
           "Lifestyle partnerships unlock VIP access to concerts, sports, and cultural events.",
-          "Accor Plus and regional credit cards provide accelerated earn and dining benefits."
+          "Accor Plus provides accelerated earn and dining benefits."
         ],
         "note": "The program’s cash-equivalent redemption structure keeps point values predictable with no blackout dates.",
         "image": {
@@ -444,9 +405,8 @@
       "pointsEarn": {
         "items": [
           "Earn Reward & Status Points on room rate, taxes, dining, spa, and event spend.",
-          "Luxury brands earn 25 Reward Points per €10; midscale 15; economy 10.",
-          "Status Points accrue at 10 per €10 of eligible spend across brands.",
-          "Earn points via Accor Plus dining, partner airlines, and select Accor credit cards."
+          "Luxury brands earn 25 Reward Points per €10; midscale 12.5; economy 10.",
+          "Earn points via Accor Plus dining and partner airlines"
         ]
       },
       "pointsBurn": {
@@ -460,15 +420,8 @@
       "paidMemberships": {
         "items": [
           "Program is free to join; elite status is earned via stays and Status Points.",
-          "Accor Plus membership (paid) boosts dining discounts and points earning in Asia Pacific."
-        ]
-      },
-      "otherBenefits": {
-        "items": [
-          "Earn points on dining even when you are not staying overnight.",
-          "VIP sports and entertainment partnerships include Paris Saint-Germain and Accor Arena.",
-          "Suite upgrade rewards and priority check-in for Platinum and higher members.",
-          "Cash-like redemption model keeps point valuations transparent for budgeting trips."
+          "Accor Plus membership (paid) boosts dining discounts and points earning in Asia Pacific.",
+          "Accor Plus membership (paid) also give 2 Buy One Get One Nights."
         ]
       },
       "tags": [

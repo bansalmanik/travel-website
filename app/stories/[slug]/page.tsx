@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import GallerySlider from "@/app/components/gallery-slider";
 
 import { getAllStorySummaries, getStoryBySlug } from "../data";
+import type { StorySectionMedia } from "../data";
 
 type StoryPageProps = {
   params: Promise<{ slug: string }>;
@@ -53,6 +54,17 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
 
   const currentPost = post;
 
+  const getMediaAspectClass = (layout?: StorySectionMedia["layout"]) => {
+    switch (layout) {
+      case "portrait":
+        return "aspect-[3/4]";
+      case "square":
+        return "aspect-square";
+      default:
+        return "aspect-video";
+    }
+  };
+
   return (
     <article className="bg-white text-zinc-900 dark:bg-black dark:text-zinc-100">
       <div className="relative isolate overflow-hidden">
@@ -91,11 +103,68 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
       </div>
 
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16">
-        <div className="space-y-6 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-          {currentPost.content.map((paragraph) => (
-            <p key={paragraph.slice(0, 16)}>{paragraph}</p>
-          ))}
-        </div>
+        {currentPost.content?.length ? (
+          <div className="space-y-6 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+            {currentPost.content.map((paragraph) => (
+              <p key={paragraph.slice(0, 16)}>{paragraph}</p>
+            ))}
+          </div>
+        ) : null}
+
+        {currentPost.sections?.length ? (
+          <div className="space-y-14">
+            {currentPost.sections.map((section) => (
+              <section key={section.id} id={section.id} className="space-y-6">
+                {section.title ? (
+                  <header className="space-y-2">
+                    <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+                      {section.title}
+                    </h2>
+                    {section.subtitle ? (
+                      <p className="text-base text-zinc-600 dark:text-zinc-300">{section.subtitle}</p>
+                    ) : null}
+                  </header>
+                ) : null}
+
+                {section.paragraphs?.length ? (
+                  <div className="space-y-4 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+                    {section.paragraphs.map((paragraph) => (
+                      <p key={paragraph.slice(0, 24)}>{paragraph}</p>
+                    ))}
+                  </div>
+                ) : null}
+
+                {section.callout ? (
+                  <blockquote className="rounded-2xl border-l-4 border-blue-400 bg-blue-50/60 p-6 text-lg italic text-blue-900 dark:border-blue-300/60 dark:bg-blue-500/10 dark:text-blue-200">
+                    {section.callout}
+                  </blockquote>
+                ) : null}
+
+                {section.media?.length ? (
+                  <div
+                    className={`grid gap-5 ${section.media.length > 1 ? "sm:grid-cols-2" : ""}`}
+                  >
+                    {section.media.map((media) => (
+                      <figure
+                        key={`${media.src}-${media.caption ?? media.alt}`}
+                        className={`group overflow-hidden rounded-3xl bg-zinc-100 dark:bg-zinc-900 ${getMediaAspectClass(media.layout)} relative`}
+                      >
+                        <Image
+                          src={media.src}
+                          alt={media.alt}
+                          fill
+                          sizes="(min-width: 1024px) 600px, (min-width: 640px) 50vw, 100vw"
+                          className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      </figure>
+                    ))}
+                  </div>
+                ) : null}
+              </section>
+            ))}
+          </div>
+        ) : null}
 
         {currentPost.videoUrl ? (
           <section className="space-y-4">

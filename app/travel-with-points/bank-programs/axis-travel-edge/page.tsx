@@ -35,17 +35,13 @@ export default function AxisTravelEdgePage() {
         <div className="space-y-4">
           <h1 className="text-4xl font-semibold sm:text-5xl">{programName}</h1>
           <p className="text-base leading-7 text-slate-200/80">
-            We&apos;re assembling practical tips, sweet spot awards, and transfer partner plays for Axis Travel Edge users.
+            We are assembling practical tips, sweet spot awards, and transfer partner plays for Axis Travel Edge users.
             Check back soon for the full breakdown.
           </p>
         </div>
         <div className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-8 text-sm leading-6 text-slate-100/80">
           <p className="font-semibold uppercase tracking-[0.3em] text-rose-200/90">Status</p>
           <p className="text-lg font-medium text-white">Coming soon</p>
-          <p>
-            Want early access? Join the newsletter from the homepage and we&apos;ll notify you when the Axis Travel Edge guide
-            goes live.
-          </p>
         </div>
         <Link href="/travel-with-points/bank-programs" className="inline-flex items-center text-sm font-semibold text-amber-300">
           <svg

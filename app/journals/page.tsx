@@ -2,29 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import journalsData from "@/data/journals.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-type JournalEntry = {
-  slug: string;
-  title: string;
-  author: string;
-  summary: string;
-  seoDescription: string;
-  publishedOn: string;
-  displayDate: string;
-  readTime: string;
-  heroImage: {
-    src: string;
-    alt: string;
-    enabled?: boolean;
-  };
-  enabled?: boolean;
-};
-
-const journals = filterEnabled(
-  (journalsData as { journals: JournalEntry[] }).journals
-).map((entry) => filterEnabledDeep(entry));
+import { getJournalEntries } from "@/lib/contentData";
 
 const pageTitle = "Travel Journal Library | Miles Go Round";
 const pageDescription =
@@ -49,7 +27,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function JournalsPage() {
+export default async function JournalsPage() {
+  const journals = await getJournalEntries();
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",

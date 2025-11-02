@@ -2,57 +2,54 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllStorySummaries } from "@/app/stories/data";
-import journalsData from "@/data/journals.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
-
-type JournalHighlight = {
-  slug: string;
-  title: string;
-  displayDate: string;
-  enabled?: boolean;
-};
-
-const journals = filterEnabled(
-  (journalsData as { journals: JournalHighlight[] }).journals
-).map((entry) => filterEnabledDeep(entry));
-
-const journalHighlights = journals.slice(0, 3).map((entry) => ({
-  title: entry.title,
-  date: entry.displayDate,
-  url: `/journals/${entry.slug}`,
-}));
+import { getJournalEntries } from "@/lib/contentData";
+import { getPrivateImageSrc } from "@/lib/privateAssets";
 
 const travelWithPointsHighlights = [
   {
     title: "Credit Cards",
-    description: "Compare welcome bonuses, annual fees, and sweet spots for travel statement credits.",
+    description: "Learn how to earn miles, redeem flights, and fly better without spending more..",
     href: "/travel-with-points/credit-cards",
     accent: "bg-amber-100 text-amber-900",
   },
   {
     title: "Hotel Programs",
-    description: "Understand elite tiers, free night certificates, and when to transfer points for maximum value.",
+    description:
+      "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
     href: "/travel-with-points/hotel-programs",
     accent: "bg-sky-100 text-sky-900",
   },
   {
     title: "Flight Programs",
-    description: "Decode award charts, routing rules, and how to stack alliances for long-haul redemptions.",
+    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
+  },
+  {
+    title: "Points Conversion",
+    description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
+    href: "/pointsconversion",
+    accent: "bg-purple-100 text-purple-900",
   },
 ];
 
 export default async function Home() {
   const storySummaries = await getAllStorySummaries();
   const featuredStories = storySummaries.slice(0, 3);
+  const journalEntries = await getJournalEntries();
+  const journalHighlights = journalEntries.slice(0, 3).map((entry) => ({
+    title: entry.title,
+    date: entry.displayDate,
+    url: `/journals/${entry.slug}`,
+  }));
+  const heroImageSrc = await getPrivateImageSrc("/images/content/20230617_112049.jpg");
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
       <header className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/images/content/20230617_112049.jpg"
+            src={heroImageSrc}
             alt="Sunset over mountains and fjords"
             fill
             className="object-cover brightness-75"
@@ -151,8 +148,8 @@ export default async function Home() {
                 Travel with points and turn loyalty into long weekends
               </h2>
               <p className="text-base text-slate-100/80">
-                Learn the playbook I use to stretch miles and points for boutique hotels, business-class upgrades, and family visits.
-                Start with an overview or jump straight to the guides below.
+                              Earn smarter. Redeem better. Fly further.
+                              Miles and points that take you places
               </p>
               <Link
                 className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-300"

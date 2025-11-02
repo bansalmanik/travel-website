@@ -3,50 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import journalsData from "@/data/journals.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
+import { getJournalEntries } from "@/lib/contentData";
 
 export const runtime = "edge";
 
-type SectionImage = {
-  src: string;
-  alt: string;
-  caption?: string;
-  enabled?: boolean;
-};
-
-type JournalSection = {
-  heading: string;
-  body: string[];
-  image?: SectionImage;
-  enabled?: boolean;
-};
-
-type JournalEntry = {
-  slug: string;
-  title: string;
-  author: string;
-  summary: string;
-  seoDescription: string;
-  publishedOn: string;
-  displayDate: string;
-  readTime: string;
-  heroImage: SectionImage;
-  sections: JournalSection[];
-  enabled?: boolean;
-};
-
-const journals = filterEnabled(
-  (journalsData as { journals: JournalEntry[] }).journals
-).map((entry) => filterEnabledDeep(entry));
-
-type PageProps = {
+export type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateStaticParams() {
+  const journals = await getJournalEntries();
+  return journals.map((entry) => ({ slug: entry.slug }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const journals = await getJournalEntries();
   const journal = journals.find((entry) => entry.slug === decodedSlug);
 
   if (!journal) {
@@ -87,6 +60,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function JournalDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
+  const journals = await getJournalEntries();
   const journal = journals.find((entry) => entry.slug === decodedSlug);
 
   if (!journal) {

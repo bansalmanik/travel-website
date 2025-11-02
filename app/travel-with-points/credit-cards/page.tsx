@@ -1,55 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import cardData from "@/data/credit-cards.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
-type AnnualFee = {
-  amount: number;
-  currency: string;
-  gstApplicable?: boolean;
-};
-
-type Card = {
-  slug: string;
-  layout: "tieredMiles" | "lifestyle" | "premiumTravel";
-  name: string;
-  issuer: string;
-  network: string;
-  type: string;
-  summary: string;
-  seoDescription: string;
-  annualFee: AnnualFee;
-  websiteDisplayTags?: string[];
-  keyHighlights?: string[];
-  enabled?: boolean;
-};
-
-type CardStrategy = {
-  title: string;
-  description: string;
-  enabled?: boolean;
-};
-
-type FavoriteCombo = {
-  name: string;
-  cards: string[];
-  note: string;
-  enabled?: boolean;
-};
-
-const {
-  cards: rawCards = [],
-  cardStrategies: rawCardStrategies = [],
-  favoriteCombos: rawFavoriteCombos = []
-} = cardData as {
-  cards: Card[];
-  cardStrategies: CardStrategy[];
-  favoriteCombos: FavoriteCombo[];
-};
-
-const cards = filterEnabled(rawCards).map((card) => filterEnabledDeep(card));
-const cardStrategies = filterEnabled(rawCardStrategies);
-const favoriteCombos = filterEnabled(rawFavoriteCombos);
+import type { AnnualFee } from "@/app/travel-with-points/credit-cards/types";
+import { getCreditCardContent } from "@/lib/contentData";
 
 function formatAnnualFee(annualFee: AnnualFee) {
   const locale = annualFee.currency === "INR" ? "en-IN" : "en-US";
@@ -85,7 +38,10 @@ export const metadata: Metadata = {
   }
 };
 
-export default function CreditCardsPage() {
+export default async function CreditCardsPage() {
+  const { cards, cardStrategies, favoriteCombos } =
+    await getCreditCardContent();
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">

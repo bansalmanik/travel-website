@@ -35,16 +35,13 @@ export default function IciciIshopPage() {
         <div className="space-y-4">
           <h1 className="text-4xl font-semibold sm:text-5xl">{programName}</h1>
           <p className="text-base leading-7 text-slate-200/80">
-            The ICICI IShop roadmap will spotlight limited-time boosters, partner conversions, and redemption examples.
-            We&apos;re putting the finishing touches on the guide now.
+            Shop smarter with ICICI more points, more savings, same everyday spending.
+            We are putting the finishing touches on the guide now.
           </p>
         </div>
         <div className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-8 text-sm leading-6 text-slate-100/80">
           <p className="font-semibold uppercase tracking-[0.3em] text-rose-200/90">Status</p>
           <p className="text-lg font-medium text-white">Coming soon</p>
-          <p>
-            Add your email via the homepage newsletter signup and you&apos;ll get notified as soon as the ICICI IShop guide drops.
-          </p>
         </div>
         <Link href="/travel-with-points/bank-programs" className="inline-flex items-center text-sm font-semibold text-amber-300">
           <svg

@@ -9,22 +9,22 @@ const bankPrograms = [
   {
     name: "Axis Travel Edge",
     href: "/travel-with-points/bank-programs/axis-travel-edge",
-    blurb: "Preview the upcoming guide to maximizing the Axis Bank Travel Edge portal and transfer offers.",
+    blurb: "Axis Bank Travel portal that gives you accelerated points and miles on flight and hotel bookings.",
   },
   {
     name: "HDFC SmartBuy",
     href: "/travel-with-points/bank-programs/hdfc-smartbuy",
-    blurb: "See how we plan to stack SmartBuy bonuses, flash deals, and transfer partners for outsized value.",
+    blurb: "HDFC Bank reward portal where you can earn accelerated Reward Points, cashback, and miles on online shopping and travel bookings.",
   },
   {
     name: "HSBC Market Place",
     href: "/travel-with-points/bank-programs/hsbc-market-place",
-    blurb: "Track the evolving HSBC Market Place offers and learn where to deploy your points once content launches.",
+    blurb: "Newly Revamped HSBC portal that gives outsized reward on flight and Hotel bookings.",
   },
   {
     name: "ICICI IShop",
     href: "/travel-with-points/bank-programs/icici-ishop",
-    blurb: "Get ready for best practices on pairing ICICI IShop deals with partner transfers and cashback promos.",
+    blurb: "ICICI's answer to HDFC Smartbuy. Get accelerated rewards on vouchers, flights and hotels.",
   },
 ];
 
@@ -57,8 +57,7 @@ export default function BankProgramsPage() {
         <div className="space-y-5">
           <h1 className="text-4xl font-semibold sm:text-5xl">Bank Programs</h1>
           <p className="text-base leading-7 text-slate-200/80">
-            These bank-specific hubs are getting a refresh. Explore what&apos;s coming soon and choose which program you
-            want us to cover first.
+          Learn how to stack bonuses, earn accelerated points, and multiply your rewards on everyday spending
           </p>
         </div>
         <div className="grid gap-6 text-left sm:grid-cols-2">

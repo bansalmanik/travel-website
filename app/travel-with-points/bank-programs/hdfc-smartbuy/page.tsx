@@ -42,9 +42,6 @@ export default function HdfcSmartbuyPage() {
         <div className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-8 text-sm leading-6 text-slate-100/80">
           <p className="font-semibold uppercase tracking-[0.3em] text-rose-200/90">Status</p>
           <p className="text-lg font-medium text-white">Coming soon</p>
-          <p>
-            Subscribe to the newsletter to get notified the moment the SmartBuy strategy blueprint is published.
-          </p>
         </div>
         <Link href="/travel-with-points/bank-programs" className="inline-flex items-center text-sm font-semibold text-amber-300">
           <svg

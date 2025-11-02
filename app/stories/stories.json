@@ -16,23 +16,19 @@
     "gallery": [
       {
         "src": "/images/content/20230408_143854.jpg",
-        "alt": "Basu River flowing past stone houses in Chitkul",
-        "caption": "The Baspa River wraps the village in a ribbon of glacial blue."
+        "alt": "Basu River flowing past stone houses in Chitkul"
       },
       {
         "src": "/images/content/20230408_132352.jpg",
-        "alt": "Prayer flags fluttering below Himalayan ridgeline",
-        "caption": "Prayer flags snap in the alpine wind as shepherds guide their flocks uphill."
+        "alt": "Prayer flags fluttering below Himalayan ridgeline"
       },
       {
         "src": "/images/content/20231223_105939.jpg",
-        "alt": "Himalayan village footpath lined with cedar homes",
-        "caption": "Wooden balconies glow gold just after sunrise in the old village quarter."
+        "alt": "Himalayan village footpath lined with cedar homes"
       },
       {
         "src": "/images/content/photo-1521292270410--f29ffc531709.svg",
-        "alt": "Traveler crossing a wooden bridge over a turquoise river",
-        "caption": "A narrow bridge offers a perfect pause to take in the Baspa River below."
+        "alt": "Traveler crossing a wooden bridge over a turquoise river"
       }
     ],
     "content": [
@@ -50,10 +46,10 @@
   {
     "slug": "lagoon-days-at-villa-nautica",
     "title": "Lagoon Days at Villa Nautica, Maldives",
-    "excerpt": "Dive into turquoise shallows, reefside breakfasts, and sunset sails at Paradise Island's revived retreat.",
+    "excerpt": "December at Villa Nautica means festive palms, slow lagoon mornings, and sandbank sunsets that stretch time.",
     "author": "Manik",
     "date": "May 22, 2024",
-    "readTime": "8 min read",
+    "readTime": "10 min read",
     "category": "Maldives",
     "city": "Paradise Island",
     "country": "Maldives",
@@ -64,35 +60,131 @@
     "gallery": [
       {
         "src": "/images/content/20231223_191940.jpg",
-        "alt": "Breakfast tray floating in a private plunge pool",
-        "caption": "Breakfast arrives as a floating tray of tropical fruit and Maldivian mas huni."
+        "alt": "Christmas in Maldives",
+        "layout": "portrait"
       },
       {
-        "src": "/images/content/photo-1493558103817-58b2924bce98.svg",
-        "alt": "Couple snorkeling above coral reef",
-        "caption": "A five-minute swim reveals reef sharks, eagle rays, and neon coral gardens."
+        "src": "/images/content/maldives_2.JPG",
+        "alt": "Couple snorkeling above coral reef"
       },
       {
-        "src": "/images/content/photo-1525182008055--acba6fe1b456.svg",
-        "alt": "Sunset sailboat gliding past an overwater villa",
-        "caption": "Evening catamaran cruises trace the atoll as the sky shifts through sherbet hues."
+        "src": "/images/content/maldives-3.jpg",
+        "alt": "Sunset sailboat gliding past an overwater villa"
       },
       {
-        "src": "/images/content/photo-1526481280695--e2928a46df37.svg",
-        "alt": "Spa cabana facing a calm lagoon",
-        "caption": "Open-air spa cabanas catch the breeze while waves lap softly against the stilts."
+        "src": "/images/content/deck.JPG",
+        "alt": "Spa cabana facing a calm lagoon"
       }
     ],
     "content": [
-      "Villa Nautica is a 20-minute speedboat from Malé, yet it feels a world away once you step onto the teak boardwalks. Each water villa opens to a panorama of translucent blues and a soundtrack of lapping waves.",
-      "My days followed the rhythm of the tide: sunrise snorkels along the house reef, mid-morning cappuccinos at the seaside café, and siestas in a hammock suspended above the lagoon. The staff shared tips on spotting bioluminescence at night, and sure enough the water shimmered electric blue after dusk.",
-      "Sunset is celebrated with a catamaran cruise that circles neighboring sandbanks. We clinked mocktails as the sky shifted through sherbet hues, promising to return for the manta ray migration later in the year."
+      "I went to the Maldives for quiet, and found a version of calm I didn’t know I was missing. It’s the place people whisper about when they say ‘one day.’ Powdery sand, water the color of bottled dreams, and more islands than you can count. You can go modest on a local island or go all-in with private resorts and water villas. I did a little of both—but mostly, I surrendered to a single private island: Villa Nautica."
+    ],
+    "sections": [
+      {
+        "id": "festive-december",
+        "title": "December Arrival with Holiday Sparkle",
+        "paragraphs": [
+          "We flew into Malé, and a short ferry ride later, the rest of the world slipped out of frame. December there feels different—warmer, brighter, slower. The island wore Christmas like it was born to: palms dressed up, paths twinkling, the air carrying that soft, buzzy holiday energy.",
+          "By day, red and green popped against white sand and blue everything. By night, the lights came on and the island glowed.",
+          "The Maldives keeps it simple: rainy season and dry season. December to May is your best bet. We had a sprinkle or two, but mostly sun—the kind that makes the ocean look like melted sapphire and convinces you the infinity pool was built just for you."
+        ],
+        "media": [
+          {
+            "src": "/images/content/christmas_tree.JPG",
+            "alt": "Palm trees wrapped in fairy lights framing a Christmas tree on a tropical boardwalk at night",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/speed_boat.JPG",
+            "alt": "Festive breakfast table set under palm shade on a bright island morning",
+            "layout": "portrait"
+          }
+        ]
+      },
+      {
+        "id": "villa-life",
+        "title": "Settling into Island Rhythm",
+        "paragraphs": [
+          "We planned five days at Villa Nautica and a sixth on Hulhumale, just to taste local life. Our home base was a Beach Villa—my forever daydream: open the door, step onto sand. People talk about villa-hopping, and you can, but switching rooms eats time. I wanted a rhythm. Dinner, beach walk, stars. Repeat.",
+          "If you like your own plunge pool, the Beach Pool Villa is a quiet little secret leading straight to the shore. If you want the ocean as your front porch, the Water Villa is it."
+        ],
+        "media": [
+          {
+            "src": "/images/content/maldives_1.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "morning-rituals",
+        "title": "Breakfast and Sky-High Lookouts",
+        "paragraphs": [
+          "Mornings started at Bageecha Restaurant. Think: a long, generous buffet with at least seven little worlds—starters, fruits, soups, mains, island specials, and a dessert table that deserves its own passport. There was a live counter too; the chef would sear fish like a tiny performance. I lost count of the cinnamon rolls (four in one go, if we’re being honest). The menu shifted daily, so breakfast felt new every time.",
+          "After breakfast, we wandered. No rush, no agenda. The island has these viewpoints that make you stop mid-sentence. Our favorite climb was the Crow’s Nest—the angle up there turns the lagoon into a painting.",
+          "Then there’s Ship Shape—nautical props, ropes, weights. More vibe than workout. The kind of place where you shoot a video, grin back at it later, and feel lucky."
+        ],
+        "media": [
+          {
+            "src": "/images/content/private_beach.JPG",
+            "alt": "Lagoon lookout tower rising above palm trees at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "water-adventures",
+        "title": "Island Time in the Water",
+        "paragraphs": [
+          "Water called, as it always does here. You can join guided snorkel or dive sessions, but we brought our own gear and moved at island speed. Colorful fish, coral like sculptures, and that pulse you can only hear underwater. The ‘shark’ we joked about never showed; our cameras caught everything else.",
+          "And on the clearest mornings, we took a quick boat hop to a nearby sandbank—a thin ribbon of white where water wraps you in a full 360°. It feels like standing in the middle of the sea with the horizon for company and sugar-soft sand under your toes. Time stretches there; so do smiles."
+        ],
+        "media": [
+          {
+            "src": "/images/content/photo-1493558103817-58b2924bce98.svg",
+            "alt": "Snorkeler gliding above coral and tropical fish in the Maldives",
+            "layout": "landscape"
+          },
+          {
+            "src": "/images/content/photo-1526481280695--e2928a46df37.svg",
+            "alt": "Remote sandbank surrounded by shallow turquoise water",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "slow-afternoons",
+        "title": "Slow Afternoons and Sunset Rituals",
+        "paragraphs": [
+          "There’s an electric cart to ferry you around, but walking is the secret. Green palms, white paths, blue edges—colors you can feel. We circled back to Bageecha for lunch, usually with a few hopeful seagulls hanging around like regulars.",
+          "Afternoons belonged to the infinity pool. Slow laps. Longer sunsets. That golden hour where even time seems to float.",
+          "Right before dinner, we’d drift over to the pier to watch stingrays and baby sharks arrive on cue for feeding. Five calm minutes that felt like a little miracle. They’d glide in, then vanish, like a curtain closing."
+        ],
+        "media": [
+          {
+            "src": "/images/content/stingray.JPG",
+            "alt": "Seagull standing on a wooden railing near the beach",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "hulhumale-farewell",
+        "title": "A Hulhumale Farewell",
+        "paragraphs": [
+          "Nights could be loud—karaoke, dancing—or quiet. We chose quiet. Barefoot walks, moonlit water, the hush that only beaches know. That’s the memory I keep replaying.",
+          "On the last day, we moved to Hulhumale. Busier beach, same electric-blue water. We found a great Indian restaurant for dinner, then walked the city blocks—clean, modern, growing fast. Construction cranes on the skyline, proof that tourism is changing more than just postcards.",
+          "If I had to explain the trip in one line: it felt like exhaling—properly—for the first time in a long time. And the best part? Every time I think I’ve picked a favorite moment, another one rises to the surface."
+        ]
+      }
     ],
     "videoUrl": "https://www.youtube.com/embed/3fHmHP7YOwk",
     "highlights": [
-      "Book the house reef snorkeling session at high tide",
-      "Reserve a floating breakfast on arrival for the calmest waters",
-      "Watch for bioluminescence along the western jetty after 9 PM"
+      "Time a December stay for festive lights and dry-season skies",
+      "Book a Beach Pool Villa if you crave privacy with steps-to-sand access",
+      "Pack your own snorkel gear for slow, self-led reef swims",
+      "Catch stingray feeding at the pier just before dinner",
+      "Add a Hulhumale stopover to taste local life beyond the resort"
     ]
   },
   {
@@ -112,23 +204,19 @@
     "gallery": [
       {
         "src": "/images/content/photo-1501594907352-04cda38ebc29.svg",
-        "alt": "People walking through colorful Mission District alleyway",
-        "caption": "Clarion Alley murals shift with every activist brushstroke."
+        "alt": "People walking through colorful Mission District alleyway"
       },
       {
         "src": "/images/content/photo-1446776811953-b23d57bd21aa.svg",
-        "alt": "Picnic on the grass at Alamo Square Park",
-        "caption": "Late afternoon picnics overlook the Painted Ladies and the downtown skyline."
+        "alt": "Picnic on the grass at Alamo Square Park"
       },
       {
         "src": "/images/content/photo-1511497584788--4ee03e4cc93d.svg",
-        "alt": "Golden hour light hitting the Palace of Fine Arts",
-        "caption": "A sunset stroll around the lagoon makes the Beaux-Arts columns glow."
+        "alt": "Golden hour light hitting the Palace of Fine Arts"
       },
       {
         "src": "/images/content/photo-1523285367489--b0b6cecd7646.svg",
-        "alt": "Cyclist looking out over the Marin Headlands",
-        "caption": "Rent a bike for coastal views that show the bridge and the Pacific all at once."
+        "alt": "Cyclist looking out over the Marin Headlands"
       }
     ],
     "content": [
@@ -160,23 +248,19 @@
     "gallery": [
       {
         "src": "/images/content/photo-1439066615861-d1af74d74000.svg",
-        "alt": "Cyclists on a path beside Lake Annecy",
-        "caption": "Cycling the Voie Verte keeps the lake's turquoise water in constant view."
+        "alt": "Cyclists on a path beside Lake Annecy"
       },
       {
         "src": "/images/content/photo-1441974231531-c6227db76b6e.svg",
-        "alt": "Outdoor café with cheese fondue in Annecy",
-        "caption": "Lunch is a bubbling pot of Beaufort cheese and crisp Savoyard white wine."
+        "alt": "Outdoor café with cheese fondue in Annecy"
       },
       {
         "src": "/images/content/photo-1528909514045-406e194c93d3.svg",
-        "alt": "Pastel sunset over Lake Annecy with boats anchored nearby",
-        "caption": "Evening boat docks glow softly as the surrounding peaks turn lavender."
+        "alt": "Pastel sunset over Lake Annecy with boats anchored nearby"
       },
       {
         "src": "/images/content/photo-1527169402691-6d31811e54c5.svg",
-        "alt": "Traveler walking through stone archway in Annecy old town",
-        "caption": "Wander under ancient archways to find hidden courtyards and indie bookstores."
+        "alt": "Traveler walking through stone archway in Annecy old town"
       }
     ],
     "content": [
@@ -208,23 +292,19 @@
     "gallery": [
       {
         "src": "/images/content/photo-1477587458883-47145ed94245.svg",
-        "alt": "High mountain road leading to Keylong",
-        "caption": "The ascent to Baralacha La threads through glaciers and prayer flag-lined bends."
+        "alt": "High mountain road leading to Keylong"
       },
       {
         "src": "/images/content/photo-1500530855697-b586d89ba3ee.svg",
-        "alt": "Camping tent glowing under Milky Way",
-        "caption": "Nightfall reveals a sky thick with constellations rarely seen elsewhere."
+        "alt": "Camping tent glowing under Milky Way"
       },
       {
         "src": "/images/content/photo-1426604966848-e37abe0c5c06.svg",
-        "alt": "River valley framed by towering Himalayan cliffs",
-        "caption": "Meltwater rivers carve bright teal streaks through the high mountain desert."
+        "alt": "River valley framed by towering Himalayan cliffs"
       },
       {
         "src": "/images/content/photo-1520256862855-0d09ea8ba8cb.svg",
-        "alt": "Yak caravan crossing a rocky alpine meadow",
-        "caption": "Caravans move slowly across the plateau, bells echoing in the thin mountain air."
+        "alt": "Yak caravan crossing a rocky alpine meadow"
       }
     ],
     "content": [
