@@ -37,7 +37,6 @@ import type {
 } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
-export const runtime = "edge";
 
 type SectionWrapperProps = {
   title: string;
