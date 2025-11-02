@@ -1824,8 +1824,9 @@ type PageProps = {
   params: { slug: string };
 };
 
-export const dynamic = "force-static";
+export const dynamic = "error";
 export const dynamicParams = false;
+export const revalidate = false;
 
 export async function generateStaticParams() {
   const cards = await getCards();
