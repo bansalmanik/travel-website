@@ -50,9 +50,14 @@ export default async function FlightProgramsPage() {
           <h2 className="text-2xl font-semibold text-white">Featured airline loyalty programs</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {programs.map((program) => {
-              const signatureSweetSpot = program.sections
-                ?.find((section) => section.id === "sweet-spots")
-                ?.bullets?.[0];
+              const signatureSweetSpotSection = program.sections?.find(
+                (section) => section.id === "sweet-spots"
+              );
+
+              const signatureSweetSpot =
+                signatureSweetSpotSection && "bullets" in signatureSweetSpotSection
+                  ? signatureSweetSpotSection.bullets?.[0]
+                  : undefined;
 
               return (
                 <article
