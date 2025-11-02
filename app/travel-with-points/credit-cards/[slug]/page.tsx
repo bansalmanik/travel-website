@@ -7,6 +7,8 @@ import { notFound } from "next/navigation";
 import cardData from "@/data/credit-cards.json";
 import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
+export const runtime = "edge";
+
 type SectionImage = {
   src: string;
   alt: string;
@@ -2199,10 +2201,6 @@ function PremiumTravelEligibilitySection({ eligibility }: PremiumTravelEligibili
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-export function generateStaticParams() {
-  return cards.map((card) => ({ slug: card.slug }));
-}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
