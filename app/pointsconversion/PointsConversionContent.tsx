@@ -2,10 +2,8 @@
 
 import type { ChangeEvent } from "react";
 import { useMemo, useState } from "react";
-import rawConversions from "@/data/points-conversion.json";
-import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
-type Conversion = (typeof rawConversions)[number];
+import type { Conversion } from "@/app/pointsconversion/types";
 
 type ConversionByFrom = Record<string, Conversion>;
 
@@ -44,22 +42,24 @@ const parseRate = (rate: string): ParsedRate => {
   };
 };
 
-const conversions = filterEnabled(rawConversions).map((conversion) =>
-  filterEnabledDeep(conversion)
-) as Conversion[];
+type PointsConversionContentProps = {
+  conversions: Conversion[];
+};
 
-const conversionsByFrom: ConversionByFrom = conversions.reduce((acc, conversion) => {
-  acc[conversion.from] = conversion;
-
-  return acc;
-}, {} as ConversionByFrom);
-
-export default function PointsConversionContent() {
+export default function PointsConversionContent({ conversions }: PointsConversionContentProps) {
   const [selectedProgramName, setSelectedProgramName] = useState<string>(
     ALL_PROGRAMS_OPTION
   );
   const [selectedFrom, setSelectedFrom] = useState(conversions[0]?.from ?? "");
   const [selectedPartnerId, setSelectedPartnerId] = useState("");
+
+  const conversionsByFrom = useMemo(() => {
+    return conversions.reduce((acc, conversion) => {
+      acc[conversion.from] = conversion;
+
+      return acc;
+    }, {} as ConversionByFrom);
+  }, [conversions]);
 
   const programOptions = useMemo(() => {
     const uniquePrograms = Array.from(
@@ -67,7 +67,7 @@ export default function PointsConversionContent() {
     ).sort((a, b) => a.localeCompare(b));
 
     return [ALL_PROGRAMS_OPTION, ...uniquePrograms];
-  }, []);
+  }, [conversions]);
 
   const filteredConversions = useMemo(() => {
     if (
@@ -80,7 +80,7 @@ export default function PointsConversionContent() {
     return conversions.filter(
       (conversion) => getProgramName(conversion) === selectedProgramName
     );
-  }, [selectedProgramName]);
+  }, [selectedProgramName, conversions]);
 
   const fromOptions = useMemo(
     () =>
@@ -108,7 +108,7 @@ export default function PointsConversionContent() {
     }
 
     return conversionsByFrom[normalizedSelectedFrom] ?? null;
-  }, [normalizedSelectedFrom]);
+  }, [normalizedSelectedFrom, conversionsByFrom]);
 
   const partnerOptions = useMemo(() => {
     if (!selectedConversion) {
