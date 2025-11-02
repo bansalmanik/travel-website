@@ -9,6 +9,9 @@ export type PageProps = {
   params: { slug: string };
 };
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const journals = await getJournalEntries();
   return journals.map((entry) => ({ slug: entry.slug }));

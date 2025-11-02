@@ -7,8 +7,11 @@ import type { FlightProgram } from "@/app/travel-with-points/flight-programs/typ
 import { getFlightProgramContent } from "@/lib/contentData";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
+
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
 async function getPrograms(): Promise<FlightProgram[]> {
   const { programs } = await getFlightProgramContent();
@@ -22,7 +25,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);
@@ -62,7 +65,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function FlightProgramDetailPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);

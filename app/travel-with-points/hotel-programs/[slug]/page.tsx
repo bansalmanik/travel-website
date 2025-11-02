@@ -13,8 +13,11 @@ import type {
 import { getHotelProgramContent } from "@/lib/contentData";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
+
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
 async function getPrograms(): Promise<HotelProgram[]> {
   const { programs } = await getHotelProgramContent();
@@ -29,7 +32,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);
@@ -68,7 +71,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function HotelProgramDetailPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const decodedSlug = decodeURIComponent(slug);
   const programs = await getPrograms();
   const program = programs.find((item) => item.slug === decodedSlug);

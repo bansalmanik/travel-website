@@ -8,8 +8,11 @@ import { getAllStorySummaries, getStoryBySlug } from "../data";
 import type { StorySectionMedia } from "../data";
 
 type StoryPageProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
+
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const posts = await getAllStorySummaries();
@@ -17,8 +20,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: StoryPageProps) {
-  const { slug } = await params;
-  const post = await getStoryBySlug(slug);
+  const { slug } = params;
+  const decodedSlug = decodeURIComponent(slug);
+  const post = await getStoryBySlug(decodedSlug);
 
   if (!post) {
     return { title: "Story not found" };
@@ -45,8 +49,9 @@ export async function generateMetadata({ params }: StoryPageProps) {
 }
 
 export default async function StoryDetailPage({ params }: StoryPageProps) {
-  const { slug } = await params;
-  const post = await getStoryBySlug(slug);
+  const { slug } = params;
+  const decodedSlug = decodeURIComponent(slug);
+  const post = await getStoryBySlug(decodedSlug);
 
   if (!post) {
     notFound();
