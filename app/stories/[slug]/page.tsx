@@ -7,14 +7,12 @@ import GallerySlider from "@/app/components/gallery-slider";
 import { getAllStorySummaries, getStoryBySlug } from "../data";
 import type { StorySectionMedia } from "../data";
 
+export const runtime = "nodejs";
+
 type StoryPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  const posts = await getAllStorySummaries();
-  return posts.map((post) => ({ slug: post.slug }));
-}
 
 export async function generateMetadata({ params }: StoryPageProps) {
   const { slug } = await params;

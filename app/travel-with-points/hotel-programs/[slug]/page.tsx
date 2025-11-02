@@ -22,11 +22,7 @@ async function getPrograms(): Promise<HotelProgram[]> {
   return programs;
 }
 
-export async function generateStaticParams() {
-  const programs = await getPrograms();
-
-  return programs.map((program) => ({ slug: program.slug }));
-}
+export const runtime = "nodejs";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

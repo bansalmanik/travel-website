@@ -37,7 +37,7 @@ import type {
 } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 type SectionWrapperProps = {
   title: string;
@@ -1826,11 +1826,6 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  const cards = await getCards();
-
-  return cards.map((card) => ({ slug: card.slug }));
-}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
