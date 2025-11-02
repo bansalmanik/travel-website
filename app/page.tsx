@@ -52,7 +52,7 @@ export default async function Home() {
       <header className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/images/content/20230617_112049.JPG"
+            src="/images/content/20230617_112049.jpg"
             alt="Sunset over mountains and fjords"
             fill
             className="object-cover brightness-75"
