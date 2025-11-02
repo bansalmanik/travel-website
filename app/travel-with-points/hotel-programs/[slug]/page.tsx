@@ -184,7 +184,12 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
   };
 
   const renderStatusSection = (section?: StatusLevelsSection) => {
-    if (!section || section.tiers.length === 0 || section.rows.length === 0) {
+    if (
+      !section ||
+      section.tiers.length === 0 ||
+      !section.rows ||
+      section.rows.length === 0
+    ) {
       return null;
     }
 
