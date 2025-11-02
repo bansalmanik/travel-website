@@ -3,7 +3,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import type { HotelProgram, ListSection, SectionImage } from "@/app/travel-with-points/hotel-programs/types";
+import type {
+  HotelProgram,
+  ListSection,
+  QuickFact,
+  SectionImage,
+  StatusLevelsSection
+} from "@/app/travel-with-points/hotel-programs/types";
 import { getHotelProgramContent } from "@/lib/contentData";
 
 type PageProps = {
