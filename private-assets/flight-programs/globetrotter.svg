@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Global travel planning</title>
+  <desc id="desc">Illustration of a traveler planning an around-the-world journey.</desc>
+  <defs>
+    <linearGradient id="backgroundGlobe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#backgroundGlobe)" rx="32" />
+  <circle cx="200" cy="220" r="120" fill="#1d4ed8" opacity="0.35" />
+  <circle cx="200" cy="220" r="90" fill="#38bdf8" opacity="0.4" />
+  <path d="M120 220h160" stroke="#93c5fd" stroke-width="6" stroke-linecap="round" opacity="0.4" />
+  <path d="M200 130c36 32 36 148 0 180" stroke="#93c5fd" stroke-width="6" stroke-linecap="round" opacity="0.4" />
+  <rect x="320" y="120" width="220" height="160" rx="24" fill="#f8fafc" opacity="0.1" stroke="#38bdf8" stroke-width="2" />
+  <rect x="344" y="144" width="176" height="112" rx="16" fill="#111827" />
+  <path d="M344 176h176" stroke="#1d4ed8" stroke-width="4" stroke-linecap="round" opacity="0.7" />
+  <path d="M344 208h176" stroke="#22d3ee" stroke-width="4" stroke-linecap="round" opacity="0.7" />
+  <circle cx="392" cy="240" r="18" fill="#22d3ee" />
+  <circle cx="472" cy="240" r="18" fill="#34d399" />
+  <path d="M392 240c20-12 40-12 60 0" stroke="#f472b6" stroke-width="4" stroke-linecap="round" fill="none" />
+</svg>
