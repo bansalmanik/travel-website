@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 
 import { getJournalEntries } from "@/lib/contentData";
 
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 export type PageProps = {
   params: Promise<{ slug: string }>;

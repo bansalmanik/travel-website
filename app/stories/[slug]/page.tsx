@@ -7,7 +7,7 @@ import GallerySlider from "@/app/components/gallery-slider";
 import { getAllStorySummaries, getStoryBySlug } from "../data";
 import type { StorySectionMedia } from "../data";
 
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 type StoryPageProps = {
   params: Promise<{ slug: string }>;

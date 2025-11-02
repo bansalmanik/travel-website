@@ -22,7 +22,7 @@ async function getPrograms(): Promise<HotelProgram[]> {
   return programs;
 }
 
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

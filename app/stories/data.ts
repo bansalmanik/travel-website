@@ -1,5 +1,4 @@
 import { cache } from "react";
-import { getPrivateImageSrc } from "@/lib/privateAssets";
 
 export type StoryImage = {
     src: string;
@@ -51,8 +50,7 @@ async function loadJsonStories(): Promise<Story[]> {
 type ImageLike = { src: string };
 
 async function resolveImage<T extends ImageLike>(image: T): Promise<T> {
-    const resolvedSrc = await getPrivateImageSrc(image.src);
-    return { ...image, src: resolvedSrc };
+    return { ...image };
 }
 
 async function resolveOptionalImages<T extends ImageLike>(

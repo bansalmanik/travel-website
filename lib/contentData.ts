@@ -20,7 +20,6 @@ import type {
 import type { JournalDataset, JournalEntry } from "@/app/journals/types";
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
-import { getPrivateImageSrc } from "./privateAssets";
 
 
 async function loadJsonData<T>(fileName: string): Promise<T> {
@@ -31,12 +30,7 @@ async function loadJsonData<T>(fileName: string): Promise<T> {
 type ImageLike = { src: string };
 
 async function resolveImage<T extends ImageLike>(image: T): Promise<T> {
-    const resolvedSrc = await getPrivateImageSrc(image.src);
-
-    return {
-        ...image,
-        src: resolvedSrc,
-    };
+    return { ...image };
 }
 
 async function resolveOptionalImage<T extends ImageLike>(
