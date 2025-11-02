@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import hotelData from "@/data/hotel-programs.json";
 import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
+export const runtime = "edge";
+
 type SectionImage = {
   src: string;
   alt: string;
@@ -67,10 +69,6 @@ const programs = filterEnabled(
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-export function generateStaticParams() {
-  return programs.map((program) => ({ slug: program.slug }));
-}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
