@@ -1824,7 +1824,7 @@ type PageProps = {
   params: { slug: string };
 };
 
-export const revalidate = false;
+export const dynamic = "force-static";
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
