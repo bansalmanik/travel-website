@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { getAllStorySummaries } from "@/app/stories/data";
 import { getJournalEntries } from "@/lib/contentData";
-import { getPrivateImageSrc } from "@/lib/privateAssets";
 
 const travelWithPointsHighlights = [
   {
@@ -42,7 +41,7 @@ export default async function Home() {
     date: entry.displayDate,
     url: `/journals/${entry.slug}`,
   }));
-  const heroImageSrc = await getPrivateImageSrc("/images/content/20230617_112049.jpg");
+  const heroImageSrc = "/images/content/20230617_112049.jpg";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
