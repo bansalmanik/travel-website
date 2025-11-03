@@ -64,7 +64,7 @@
         "layout": "portrait"
       },
       {
-        "src": "/images/content/maldives_2.jpg",
+        "src": "/images/content/maldives_2.JPG",
         "alt": "Couple snorkeling above coral reef",
         "layout": "landscape"
       },
@@ -74,11 +74,11 @@
         "layout": "portrait"
       },
       {
-        "src": "/images/content/deck.jpg",
+        "src": "/images/content/deck.JPG",
         "alt": "Spa cabana facing a calm lagoon"
       },
       {
-        "src": "/images/content/villa-nautica-1.jpg",
+        "src": "/images/content/villa-nautica-1.JPG",
         "alt": "Sunset sailboat gliding past an overwater villa"
       },
       {
@@ -96,12 +96,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/christmas_tree.jpg",
+            "src": "/images/content/christmas_tree.JPG",
             "alt": "Palm trees wrapped in fairy lights framing a Christmas tree on a tropical boardwalk at night",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/speed_boat.jpg",
+            "src": "/images/content/speed_boat.JPG",
             "alt": "Festive breakfast table set under palm shade on a bright island morning",
             "layout": "portrait"
           }
@@ -129,7 +129,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/private_beach.jpg",
+            "src": "/images/content/private_beach.JPG",
             "alt": "Lagoon lookout tower rising above palm trees at Villa Nautica",
             "layout": "landscape"
           }
@@ -177,7 +177,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/sandbank.jpg",
+            "src": "/images/content/sandbank.JPG",
             "alt": "Seagull standing on a wooden railing near the beach",
             "layout": "landscape"
           }
@@ -191,7 +191,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/maldives_3.jpg",
+            "src": "/images/content/maldives_3.JPG",
             "alt": "Festive breakfast table set under palm shade on a bright island morning",
             "layout": "landscape"
           }
@@ -205,7 +205,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/hulhumale_1.jpg",
+            "src": "/images/content/hulhumale_1.JPG",
             "alt": "Festive breakfast table set under palm shade on a bright island morning",
             "layout": "landscape"
           }
@@ -232,42 +232,42 @@
     "city": "San Francisco",
     "country": "USA",
     "coverImage": {
-      "src": "/images/content/GoldenGate.jpg",
+      "src": "/images/content/GoldenGate.JPG",
       "alt": "Golden Gate Bridge emerging from morning fog"
     },
     "gallery": [
       {
-        "src": "/images/content/goldengate-sfo.jpg",
+        "src": "/images/content/goldengate-sfo.JPG",
         "alt": "People walking through colorful Mission District alleyway",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/citizenM-sfo.jpg",
+        "src": "/images/content/citizenM-sfo.JPG",
         "alt": "Picnic on the grass at Alamo Square Park",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/sfo-3.jpg",
+        "src": "/images/content/sfo-3.JPG",
         "alt": "Golden hour light hitting the Palace of Fine Arts",
         "layout": "portrait" 
       },
       {
-        "src": "/images/content/sfo-5.jpg",
+        "src": "/images/content/sfo-5.JPG",
         "alt": "Cyclist looking out over the Marin Headlands",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/sfo-6.jpg",
+        "src": "/images/content/sfo-6.JPG",
         "alt": "Picnic on the grass at Alamo Square Park",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/sfo-7.jpg",
+        "src": "/images/content/sfo-7.JPG",
         "alt": "Golden hour light hitting the Palace of Fine Arts",
         "layout": "portrait" 
       },
       {
-        "src": "/images/content/sfo-4.jpg",
+        "src": "/images/content/sfo-4.JPG",
         "alt": "Cyclist looking out over the Marin Headlands",
         "layout": "portrait"
       }
@@ -298,7 +298,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/GoldenGate.jpg",
+            "src": "/images/content/GoldenGate.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -311,7 +311,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/skyline.jpg",
+            "src": "/images/content/skyline.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -324,12 +324,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/applebees-sfo.jpg",
+            "src": "/images/content/applebees-sfo.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/lunch-sfo.jpg",
+            "src": "/images/content/lunch-sfo.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }          
@@ -342,12 +342,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/hopon-2-sfo.jpg",
+            "src": "/images/content/hopon-2-sfo.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/hopon-1-sfo.jpg",
+            "src": "/images/content/hopon-1-sfo.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }          
@@ -360,12 +360,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/sfo-1.jpg",
+            "src": "/images/content/sfo-1.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/sfo-2.jpg",
+            "src": "/images/content/sfo-2.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }          
