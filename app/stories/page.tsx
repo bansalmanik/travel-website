@@ -32,12 +32,12 @@ export default async function StoriesPage() {
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900"
             >
               <Link href={`/stories/${post.slug}`} className="flex h-full flex-col">
-                <div className="relative h-48 w-full overflow-hidden">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-3xl bg-zinc-100 dark:bg-zinc-800">
                   <Image
                     src={post.coverImage.src}
                     alt={post.coverImage.alt}
                     fill
-                    className="object-cover transition duration-500 group-hover:scale-105"
+                    className="object-contain object-center transition duration-500"
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     priority={post.slug === stories[0]?.slug}
                   />
