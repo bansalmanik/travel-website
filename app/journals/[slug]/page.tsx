@@ -11,10 +11,6 @@ export type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  const journals = await getJournalEntries();
-  return journals.map((entry) => ({ slug: entry.slug }));
-}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
