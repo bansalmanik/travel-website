@@ -65,28 +65,34 @@
       },
       {
         "src": "/images/content/maldives_2.JPG",
-        "alt": "Couple snorkeling above coral reef"
+        "alt": "Couple snorkeling above coral reef",
+        "layout": "landscape"
       },
       {
         "src": "/images/content/maldives-3.jpg",
-        "alt": "Sunset sailboat gliding past an overwater villa"
+        "alt": "Sunset sailboat gliding past an overwater villa",
+        "layout": "portrait"
       },
       {
         "src": "/images/content/deck.JPG",
         "alt": "Spa cabana facing a calm lagoon"
+      },
+      {
+        "src": "/images/content/villa-nautica-1.jpg",
+        "alt": "Sunset sailboat gliding past an overwater villa"
+      },
+      {
+        "src": "/images/content/villa-nautica-2.JPG",
+        "alt": "Spa cabana facing a calm lagoon"
       }
-    ],
-    "content": [
-      "I went to the Maldives for quiet, and found a version of calm I didn’t know I was missing. It’s the place people whisper about when they say ‘one day.’ Powdery sand, water the color of bottled dreams, and more islands than you can count. You can go modest on a local island or go all-in with private resorts and water villas. I did a little of both—but mostly, I surrendered to a single private island: Villa Nautica."
     ],
     "sections": [
       {
         "id": "festive-december",
-        "title": "December Arrival with Holiday Sparkle",
         "paragraphs": [
-          "We flew into Malé, and a short ferry ride later, the rest of the world slipped out of frame. December there feels different—warmer, brighter, slower. The island wore Christmas like it was born to: palms dressed up, paths twinkling, the air carrying that soft, buzzy holiday energy.",
-          "By day, red and green popped against white sand and blue everything. By night, the lights came on and the island glowed.",
-          "The Maldives keeps it simple: rainy season and dry season. December to May is your best bet. We had a sprinkle or two, but mostly sun—the kind that makes the ocean look like melted sapphire and convinces you the infinity pool was built just for you."
+          "The Maldives sits on many bucket lists, and we finally made it in December—just in time for a festive escape. From the window seat, the ocean showed up in bands of blue, with ferries sketching white wakes below.",
+          "At Malé, the salt air met us at the terminal while we waited for the ferry to Villa Nautica, our private-island base among countless options",
+          "As we pulled away, Malé’s skyline—cranes and new buildings—slid by in the distance, and the ferry carved a turquoise-and-white path toward our temporary paradise. Daylight sharpened everything: white sand, green palms, and water in every shade of blue. The island greeted us with lights and garlands. We sipped a welcome mocktail during a quick check-in, then a cart whisked us to our Beach Villa"
         ],
         "media": [
           {
@@ -102,15 +108,14 @@
         ]
       },
       {
-        "id": "villa-life",
-        "title": "Settling into Island Rhythm",
+        "id": "maldives-weather",
+        "title": "Weather That Helps You Relax",
         "paragraphs": [
-          "We planned five days at Villa Nautica and a sixth on Hulhumale, just to taste local life. Our home base was a Beach Villa—my forever daydream: open the door, step onto sand. People talk about villa-hopping, and you can, but switching rooms eats time. I wanted a rhythm. Dinner, beach walk, stars. Repeat.",
-          "If you like your own plunge pool, the Beach Pool Villa is a quiet little secret leading straight to the shore. If you want the ocean as your front porch, the Water Villa is it."
+          "Maldives delivers the tropical paradise in winter we imagined: sunny days, a cool breeze, and air that’s easy on the skin. For the most reliable weather, aim for the dry season (December–May)—mostly clear skies, calm seas, and only quick passing showers. We had a couple of brief sprinkles, then the sun returned—perfect for long swims and unhurried afternoons in the infinity pool overlooking the ocean. Pack reef-safe sunscreen and a light cover-up, and you’re set for easy, sun-soaked days."
         ],
         "media": [
           {
-            "src": "/images/content/maldives_1.JPG",
+            "src": "/images/content/pool-2.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -118,11 +123,9 @@
       },
       {
         "id": "morning-rituals",
-        "title": "Breakfast and Sky-High Lookouts",
+        "title": "Where We Stayed (and Why We Stayed Put)",
         "paragraphs": [
-          "Mornings started at Bageecha Restaurant. Think: a long, generous buffet with at least seven little worlds—starters, fruits, soups, mains, island specials, and a dessert table that deserves its own passport. There was a live counter too; the chef would sear fish like a tiny performance. I lost count of the cinnamon rolls (four in one go, if we’re being honest). The menu shifted daily, so breakfast felt new every time.",
-          "After breakfast, we wandered. No rush, no agenda. The island has these viewpoints that make you stop mid-sentence. Our favorite climb was the Crow’s Nest—the angle up there turns the lagoon into a painting.",
-          "Then there’s Ship Shape—nautical props, ropes, weights. More vibe than workout. The kind of place where you shoot a video, grin back at it later, and feel lucky."
+          "You can villa-hop here—Beach Villa, Beach Pool Villa, Water Villa—but we decided to keep it simple and stay put. Less time packing, more time outside. That choice set the tone for the days ahead: easy, unhurried, and exactly what we hoped the Maldives would feel like."
         ],
         "media": [
           {
@@ -134,47 +137,78 @@
       },
       {
         "id": "water-adventures",
-        "title": "Island Time in the Water",
+        "title": "Food & Dining Made Easy",
         "paragraphs": [
-          "Water called, as it always does here. You can join guided snorkel or dive sessions, but we brought our own gear and moved at island speed. Colorful fish, coral like sculptures, and that pulse you can only hear underwater. The ‘shark’ we joked about never showed; our cameras caught everything else.",
-          "And on the clearest mornings, we took a quick boat hop to a nearby sandbank—a thin ribbon of white where water wraps you in a full 360°. It feels like standing in the middle of the sea with the horizon for company and sugar-soft sand under your toes. Time stretches there; so do smiles."
-        ],
-        "media": [
-          {
-            "src": "/images/content/photo-1493558103817-58b2924bce98.svg",
-            "alt": "Snorkeler gliding above coral and tropical fish in the Maldives",
-            "layout": "landscape"
-          },
-          {
-            "src": "/images/content/photo-1526481280695--e2928a46df37.svg",
-            "alt": "Remote sandbank surrounded by shallow turquoise water",
-            "layout": "landscape"
-          }
+          "Bageecha Restaurant runs a generous, always-changing buffet: fresh fruit, cereals, breads, eggs, salads, soups, simple mains, and local dishes to sample. A live counter turns out made-to-order plates, so breakfast never repeats. Let’s be honest: desserts were the clear winner—glossy chocolate pastries and dangerously good cinnamon rolls (we lost count of how many of these we ate with zero regrets). Reminder: calories don’t count on vacation—especially when the soft buns and warm rolls are calling. And please, try the chef’s special; skipping it would be passing on a significant life experience. Between beach time and pool laps, it was easy to grab what matched our mood—light snacks, coffee, or a full plate. No fuss, just good options."
         ]
       },
       {
         "id": "slow-afternoons",
-        "title": "Slow Afternoons and Sunset Rituals",
+        "title": "Easy Activities (No Over-Planning Needed)",
         "paragraphs": [
-          "There’s an electric cart to ferry you around, but walking is the secret. Green palms, white paths, blue edges—colors you can feel. We circled back to Bageecha for lunch, usually with a few hopeful seagulls hanging around like regulars.",
-          "Afternoons belonged to the infinity pool. Slow laps. Longer sunsets. That golden hour where even time seems to float.",
-          "Right before dinner, we’d drift over to the pier to watch stingrays and baby sharks arrive on cue for feeding. Five calm minutes that felt like a little miracle. They’d glide in, then vanish, like a curtain closing."
+          "There’s plenty to do around the island. If you’re in the mood for indoors, the Araamu Spa and the Sports area have you covered. But for us, the beach kept calling—so we chose to wander. The island is walkable, so skip the cart and enjoy the feel of sand in your toes while you explore. We hunted down the best selfie spots, and one favorite kept winning: the Crow’s Nest. It’s a short, simple climb with a wide look over the lagoon—our regular pause point before deciding what to do next. Perfect moment coming up in the photo! "
         ],
         "media": [
           {
-            "src": "/images/content/stingray.JPG",
+            "src": "/images/content/sports.jpg",
             "alt": "Seagull standing on a wooden railing near the beach",
             "layout": "landscape"
           }
         ]
       },
       {
-        "id": "hulhumale-farewell",
-        "title": "A Hulhumale Farewell",
+        "id": "fitness",
         "paragraphs": [
-          "Nights could be loud—karaoke, dancing—or quiet. We chose quiet. Barefoot walks, moonlit water, the hush that only beaches know. That’s the memory I keep replaying.",
-          "On the last day, we moved to Hulhumale. Busier beach, same electric-blue water. We found a great Indian restaurant for dinner, then walked the city blocks—clean, modern, growing fast. Construction cranes on the skyline, proof that tourism is changing more than just postcards.",
-          "If I had to explain the trip in one line: it felt like exhaling—properly—for the first time in a long time. And the best part? Every time I think I’ve picked a favorite moment, another one rises to the surface."
+          "If you’re a fitness enthusiast like us, Ship Shape is instantly tempting—rigs, ropes, and pulleys set against a deep-blue horizon. Nautical metal, weathered textures, and that endless blue backdrop give pure Taylor-Swift “salt air” energy. You might not set any PRs here, but your selfies and reels absolutely will. We framed shots between pulleys, tried a few slow-mo walk-ins, and left with a camera roll full of favorites. Oh, to see it again—until then, it’s the kind of spot that sticks in our memories"
+        ],
+        "media": [
+          {
+            "src": "/images/content/shipshape-gym.jpg",
+            "alt": "Seagull standing on a wooden railing near the beach",
+            "layout": "landscape"
+          }
+        ]        
+        
+      },
+      {
+        "id": "sandbank",
+        "paragraphs": [
+          "One clear mornings, we hopped over to a nearby sandbank—a thin white strip surrounded by water on all sides. Surrounded by the sea, you could feel the infinity around you. Beware of an occasional shark swimming your way while snorkeling. The cute fishes and underwater world are truly transforming, though."
+        ],
+        "media": [
+          {
+            "src": "/images/content/sandbank.jpg",
+            "alt": "Seagull standing on a wooden railing near the beach",
+            "layout": "landscape"
+          }
+        ]  
+      },
+      {
+        "id": "stringray",
+        "paragraphs": [
+          "Just before dinner, we watched the stingray and baby shark feeding at the pier. They glide in like they’re right on schedule, circle calmly, then slip away as the water darkens.",
+          "Some evenings leaned lively with karaoke and dancing. Most nights we chose a quiet beach walk."
+        ],
+        "media": [
+          {
+            "src": "/images/content/maldives_3.JPG",
+            "alt": "Festive breakfast table set under palm shade on a bright island morning",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "hulhumale",
+        "paragraphs": [
+          "When we wanted a touch of local life, we visited Hulhumale—busier beach, plenty of cafés and restaurants, clean streets, and signs of steady growth.",
+          "The trip will stay with us for a long time. The Maldives is on everyone’s bucket list, but it never leaves the bucket list no matter how many times you visit. So, until next time, we have many snapshots to keep revisiting our dream destination."
+        ],
+        "media": [
+          {
+            "src": "/images/content/hulhumale_1.JPG",
+            "alt": "Festive breakfast table set under palm shade on a bright island morning",
+            "layout": "landscape"
+          }
         ]
       }
     ],
@@ -198,31 +232,145 @@
     "city": "San Francisco",
     "country": "USA",
     "coverImage": {
-      "src": "/images/content/photo-1489515217757-5fd1be406fef.svg",
+      "src": "/images/content/GoldenGate.jpg",
       "alt": "Golden Gate Bridge emerging from morning fog"
     },
     "gallery": [
       {
-        "src": "/images/content/photo-1501594907352-04cda38ebc29.svg",
-        "alt": "People walking through colorful Mission District alleyway"
+        "src": "/images/content/goldengate-sfo.jpg",
+        "alt": "People walking through colorful Mission District alleyway",
+        "layout": "portrait"
       },
       {
-        "src": "/images/content/photo-1446776811953-b23d57bd21aa.svg",
-        "alt": "Picnic on the grass at Alamo Square Park"
+        "src": "/images/content/citizenM-sfo.jpg",
+        "alt": "Picnic on the grass at Alamo Square Park",
+        "layout": "portrait"
       },
       {
-        "src": "/images/content/photo-1511497584788--4ee03e4cc93d.svg",
-        "alt": "Golden hour light hitting the Palace of Fine Arts"
+        "src": "/images/content/sfo-3.jpg",
+        "alt": "Golden hour light hitting the Palace of Fine Arts",
+        "layout": "portrait" 
       },
       {
-        "src": "/images/content/photo-1523285367489--b0b6cecd7646.svg",
-        "alt": "Cyclist looking out over the Marin Headlands"
+        "src": "/images/content/sfo-5.jpg",
+        "alt": "Cyclist looking out over the Marin Headlands",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/content/sfo-6.jpg",
+        "alt": "Picnic on the grass at Alamo Square Park",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/content/sfo-7.jpg",
+        "alt": "Golden hour light hitting the Palace of Fine Arts",
+        "layout": "portrait" 
+      },
+      {
+        "src": "/images/content/sfo-4.jpg",
+        "alt": "Cyclist looking out over the Marin Headlands",
+        "layout": "portrait"
       }
     ],
-    "content": [
-      "San Francisco is stitched together by steep hills and soft fog. I started at Ferry Building farmers market for peaches and pour-over coffee, then caught a historic streetcar to North Beach for a biscotti-fueled literary walk.",
-      "The afternoon unfolded in the Mission District where murals bloom across alleyways. Local artists described how each piece responds to immigration stories and community resilience, making every corner a living gallery.",
-      "End the day along Lands End trail where cypress silhouettes frame the Golden Gate Bridge. Stay for sunset when the fog drifts back in, draping the city in a silver veil that sparkles once the lights flicker on."
+    "sections": [
+      {
+        "id": "Morning",
+        "paragraphs": [
+          "Morning coffee is sacred, so we lingered over breakfast at the hotel, plotting a one-day blitz of San Francisco. Caffeine in, spirits up."
+        ],
+        "media": [
+          {
+            "src": "/images/content/coffee.jpeg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/breakfast-sfo.jpeg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }
+        ]
+      },
+      {
+        "id": "golden-gate",
+        "paragraphs": [
+          "Uber dropped us short of the Golden Gate Bridge—roads were tied up by a half-marathon so we hoofed it to the viewpoint. The path climbed just enough to count as steady-state cardio, and then…there it was: that first, fire-orange sweep over the blue bay, families jockeying for the perfect frame, the wind happily restyling everyone’s hair. From the lookout we watched cars speeding across the bridge; when we turned back, a U.S. flag snapped in the wind. Below, ferries and small boats stitched trails across the water, with islands hazy in the distance. You can walk the bridge to the other side, but we stayed where the view was best—lingering to watch waves crash on the beach below—before moving on to our next stop."
+        ],
+        "media": [
+          {
+            "src": "/images/content/GoldenGate.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "lunch",
+        "paragraphs": [
+          "We spent some time in the Golden Gate Gift Shop, an easy walk from the viewpoint. The assistant at shop kindly tipped us off to catch the yellow bus near the shop, which shuttled us to Fisherman’s Wharf—straight to the water. The wharf was buzzing: food stalls everywhere and a big Ferris wheel in the background. Still, we decided to do the ferry ride first. From Pier 39, two routes beckoned—one short loop and one that circles Alcatraz. We chose the latter. On board, the commentary ran the whole way, diving into the history of the Golden Gate Bridge and Alcatraz Island. It turned a little somber, but the city skyline from the boat cheered us right back up."
+        ],
+        "media": [
+          {
+            "src": "/images/content/skyline.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "applebees",
+        "paragraphs": [
+          "Back on land, with our appetites worked up, we headed to Applebee’s for lunch. The food hit the spot: a juicy chicken burger and a tall glass of watermelon juice. Simple. Perfect. We ate while palm trees swayed outside, the bayfront buzzing in the background"
+        ],
+        "media": [
+          {
+            "src": "/images/content/applebees-sfo.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/lunch-sfo.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }          
+        ]
+      },
+      {
+        "id": "evening",
+        "paragraphs": [
+          "For the afternoon, we hopped on a Hop-On Hop-Off bus for a 2.5-hour spin through the city. We rolled past the Tesla office and those exquisite Victorian-era houses, dipped through Chinatown while the earbuds whispered tales of its rough-and-tumble past, and cruised by the Palace of Fine Arts like a postcard come to life. We also spotted a waymo driverless cab on the way. Lombard Street twisted beneath us in those famous switchbacks, and the ride finally eased us into Union Square, where we grabbed dinner before heading “home” to CitizenM"
+        ],
+        "media": [
+          {
+            "src": "/images/content/hopon-2-sfo.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/hopon-1-sfo.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }          
+        ]
+      },
+      {
+        "id": "shopping",
+        "paragraphs": [
+          "It was a joyride—tight, tidy, and totally doable in a day. If you’re here for sightseeing, one day works. If you’re here to shop—and Union Square tempts hard with names like Macy’s and Hermès—you’ll want an extra day (or two) to roam. "
+        ],
+        "media": [
+          {
+            "src": "/images/content/sfo-1.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/sfo-2.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }          
+        ]
+      }
     ],
     "videoUrl": "https://www.youtube.com/embed/Wm7ZkxkYb4s",
     "highlights": [

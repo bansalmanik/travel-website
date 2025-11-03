@@ -31,23 +31,23 @@ export default function GallerySlider({ images }: GallerySliderProps) {
         aria-label="Story photo gallery"
       >
         {images.map((image) => (
-          <figure
-            key={image.src}
-            className="snap-start shrink-0 basis-[calc(50%-0.75rem)] overflow-hidden rounded-2xl bg-zinc-100 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
-          >
-            <div className="relative h-60 w-full">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-              />
-            </div>
-            {image.caption ? (
-              <figcaption className="px-4 py-3 text-sm">{image.caption}</figcaption>
-            ) : null}
-          </figure>
+            <figure
+                key={image.src}
+                className="snap-start shrink-0 basis-[calc(50%-0.75rem)] overflow-hidden rounded-2xl bg-zinc-100 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
+            >
+                <div className="relative aspect-[4/3] w-full md:aspect-[16/10]">
+                    <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        className="object-cover"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    />
+                </div>
+                {image.caption ? (
+                    <figcaption className="px-4 py-3 text-sm">{image.caption}</figcaption>
+                ) : null}
+            </figure>
         ))}
       </div>
 
