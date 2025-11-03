@@ -143,19 +143,19 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
                     className={`grid gap-5 ${section.media.length > 1 ? "sm:grid-cols-2" : ""}`}
                   >
                     {section.media.map((media) => (
-                      <figure
-                        key={`${media.src}-${media.caption ?? media.alt}`}
-                        className={`relative flex items-center justify-center rounded-3xl bg-zinc-100 dark:bg-zinc-900 ${getMediaAspectClass(media.layout)}`}
-                      >
-                        <Image
-                          src={media.src}
-                          alt={media.alt}
-                          fill
-                          sizes="(min-width: 1024px) 600px, (min-width: 640px) 50vw, 100vw"
-                          className="h-full w-full object-contain p-4 sm:p-6"
-                          loading="lazy"
-                        />
-                      </figure>
+                        <figure
+                            key={`${media.src}-${media.caption ?? media.alt}`}
+                            className={`group overflow-hidden rounded-3xl bg-zinc-100 dark:bg-zinc-900 ${getMediaAspectClass(media.layout)} relative`}
+                        >
+                            <Image
+                                src={media.src}
+                                alt={media.alt}
+                                fill
+                                sizes="(min-width: 1024px) 600px, (min-width: 640px) 50vw, 100vw"
+                                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                loading="lazy"
+                            />
+                        </figure>
                     ))}
                   </div>
                 ) : null}
