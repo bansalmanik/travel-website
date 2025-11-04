@@ -160,7 +160,7 @@
           "enabled": true
         }
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "slug": "avios",
@@ -322,170 +322,221 @@
           "enabled": true
         }
       ],
+      "enabled": false
+    },
+    {
+  "slug": "air-india-maharaja-club",
+  "name": "Air India Maharaja Club",
+  "alliance": "Star Alliance (AI)",
+  "hub": "Delhi (DEL), Mumbai (BOM), Bengaluru (BLR)",
+  "summary": "Air India’s Maharaja Club replaces Flying Returns with a modern four‑tier frequent flyer programme. Members earn tier and Maharaja points on Air India flights (and Star Alliance partners), unlock bonuses for direct bookings, and enjoy perks like priority services, seat upgrades and lounge access as they climb from Red to Platinum.",
+  "seoDescription": "Learn how Air India’s Maharaja Club works, from earning and retaining Maharaja points to tier benefits like free seat selection, lounge access, upgrade vouchers and flexible cash + points bookings across Air India and Star Alliance flights.",
+  "tags": [
+    "Airline Loyalty",
+    "Flight Rewards",
+    "Tiered Benefits",
+    "Lounge Access",
+    "Family Pooling"
+  ],
+  "sections": [
+    {
+      "id": "program-essentials",
+      "title": "Program essentials",
+      "style": "key-values",
+      "intro": "Key facts to get started with Air India’s Maharaja Club.",
+      "columns": 2,
+      "items": [
+        {"label": "Issuer", "value": "Air India (AI) – Star Alliance member", "enabled": true},
+        {"label": "Program type", "value": "Airline frequent‑flyer programme", "enabled": true},
+        {"label": "Join cost", "value": "Complimentary membership", "enabled": true},
+        {"label": "Earn currency", "value": "Maharaja Points (tier points & reward points)", "enabled": true},
+        {"label": "Earning basis", "value": "6–10 Maharaja Points per ₹100 spent on base fare + fuel surcharge; 6 Tier Points/₹100 on Air India flights", "enabled": true},
+        {"label": "Tiers", "value": "Red • Silver • Gold • Platinum", "enabled": true}
+      ],
+      "images": [
+        {
+          "src": "/flight-programs/maharaja-skyline.svg",
+          "alt": "Air India aircraft with Maharaja Club emblem against an Indian skyline",
+          "caption": "Maharaja Club treats loyal flyers to royal perks across Air India’s hubs.",
+          "enabled": true
+        }
+      ],
       "enabled": true
     },
     {
-      "slug": "air-india-flying-returns",
-      "name": "Air India Flying Returns (Maharajah Club)",
-      "alliance": "Star Alliance",
-      "hub": "Delhi (DEL) and Mumbai (BOM)",
-      "summary": "India’s flag carrier program offers competitive redemption rates on Air India metal and Star Alliance partners with generous stopover rules.",
-      "seoDescription": "See why Air India Flying Returns—also known as the Maharajah Club—deserves attention for Star Alliance awards to and from the Indian subcontinent.",
-      "sections": [
+      "id": "overview",
+      "title": "How the Maharaja Club works",
+      "style": "content-blocks",
+      "blocks": [
         {
-          "id": "overview",
-          "title": "Program overview",
-          "style": "bullets",
-          "intro": "Flying Returns is built for travelers who split time between India and global Star Alliance hubs.",
-          "paragraphs": [
-            "Recent IT upgrades modernized the booking engine, enabling online partner awards and dynamic account management.",
-            "Status holders receive reciprocal recognition on Vistara and Alliance Air, extending benefits to domestic networks."
-          ],
-          "bullets": [
-            "Mileage earning is distance-based with cabin bonuses up to 200%.",
-            "Family Pooling lets up to nine members combine their points.",
-            "One complimentary stopover allowed on international round-trips.",
-            "Upgrade awards available on both Air India and select Star Alliance partners."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/india-gateway.svg",
-              "alt": "Gateway of India monument with aircraft",
-              "caption": "Flying Returns centers travelers connecting through Delhi and Mumbai.",
-              "enabled": true
-            }
+          "type": "paragraph",
+          "text": "The Maharaja Club is a revamp of Air India’s Flying Returns programme. Members earn two types of points: Maharaja Points, which can be redeemed for award travel or cabin upgrades, and Tier Points, which determine your status level. Earnings accumulate whenever you fly Air India or Star Alliance partners, book via the website/app, shop with over 50 non‑airline partners or use co‑branded credit cards. Booking directly on airindia.com or the Air India app yields an extra 2 Maharaja Points per ₹100 on eligible flights【621792412824106†L259-L261】【621792412824106†L692-L738】.",
+          "enabled": true
+        },
+        {
+          "type": "bullets",
+          "title": "Ways to earn Maharaja Points",
+          "items": [
+            "6–10 Maharaja Points per ₹100 of base fare + fuel surcharge on Air India flights, depending on tier; earn an extra 2 points/₹100 when booking via Air India’s website or app.",
+            "6 Tier Points per ₹100 of base fare + fuel surcharge on Air India flights across all tiers (1 Tier Point for every 2 Maharaja Points on Star Alliance partner flights).",
+            "Earn Maharaja Points when flying with any of the 24 Star Alliance partner airlines and present your Maharaja Club ID at booking.",
+            "Accumulate points through non‑airline partners (hotels, car rentals, lifestyle brands) and co‑branded credit cards; typical partner earnings range from 4 to 24 points per ₹100 spent.",
+            "Purchase points or transfer credit‑card rewards to top up your balance when you need more for an award flight."
           ],
           "enabled": true
         },
         {
-          "id": "status-levels",
-          "title": "Maharajah Club status tiers",
-          "style": "table",
-          "intro": "Status Points earned on eligible flights determine your tier within Flying Returns.",
-          "paragraphs": [
-            "Status runs on a rolling 12-month window—track balances quarterly to avoid downgrades.",
-            "Higher tiers unlock upgrade vouchers that can be used on long-haul Boeing 777 and 787 routes."
+          "type": "bullets",
+          "title": "Eligible flight activity",
+          "items": [
+            "Air India‑operated flights booked with cash or Cash + Points (no points earned on reward tickets).",
+            "Flights operated by Star Alliance partners when crediting to your Maharaja account.",
+            "Partner flights do not earn Tier Points on a one‑to‑one basis; instead you earn 1 Tier Point for every 2 Maharaja Points."
           ],
-          "table": {
-            "caption": "Air India Flying Returns elite requirements",
-            "columns": [
-              "Tier",
-              "Status Points",
-              "Top perks"
+          "enabled": true
+        },
+        {
+          "type": "paragraph",
+          "text": "Maharaja Points normally expire after 24 months, but the expiry of your entire balance is extended by another 24 months whenever you take a paid Air India flight (does not apply to award tickets). This means points never expire for ‘active’ members who fly at least once every two years【621792412824106†L259-L327】【571271391444121†L256-L266】.",
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "tier-benefits",
+      "title": "Maharaja Club tier breakdown",
+      "style": "table",
+      "intro": "Four elite tiers unlock progressively richer earnings, upgrade vouchers, fee waivers and status perks.",
+      "table": {
+        "caption": "Air India Maharaja Club tiers at a glance",
+        "columns": ["Tier", "Qualification", "Retention", "Earn & bonuses", "Signature perks"],
+        "rows": [
+          {
+            "cells": [
+              "Red (Entry)",
+              "Automatic on enrollment", 
+              "No annual qualification required", 
+              "6 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 when booking on airindia.com or app", 
+              "1,000‑point enrolment bonus after your first paid Air India flight · Earn and redeem on Air India & Star Alliance flights · Access to Family Pool for pooling points with up to 9 members" 
             ],
-            "rows": [
-              {
-                "cells": [
-                  "Silver Edge Club",
-                  "25,000 points",
-                  "15% bonus miles, priority check-in, preference on upgrade waitlists"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "Golden Edge Club",
-                  "50,000 points",
-                  "Star Alliance Gold benefits, complimentary lounge access across India"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "The Maharajah Club",
-                  "75,000 points",
-                  "Dedicated relationship manager, four upgrade vouchers, priority boarding"
-                ],
-                "enabled": true
-              }
-            ]
+            "enabled": true
           },
-          "images": [
-            {
-              "src": "/flight-programs/status-lounge.svg",
-              "alt": "Passenger enjoying premium airport services",
-              "caption": "Top-tier elites enjoy expedited handling throughout India.",
-              "enabled": true
-            }
-          ],
+          {
+            "cells": [
+              "Silver", 
+              "15,000 Tier Points (incl. 4,500 on Air India) OR 30 flights with 4 Air India flights in 12 months", 
+              "15,000 Tier Points (4,500 AI) OR 30 flights with 4 AI flights each membership year", 
+              "8 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings", 
+              "Priority Connect helpline for booking/itinerary changes · Flat fee (≈₹1,180) for one domestic itinerary change up to 24 hours before departure · 1 cabin upgrade voucher valid 6 months · Complimentary 5 kg extra baggage allowance on Air India flights · Priority check‑in, waitlist clearance and boarding services"
+            ],
+            "enabled": true
+          },
+          {
+            "cells": [
+              "Gold", 
+              "30,000 Tier Points (incl. 9,000 on Air India) OR 60 flights with 8 Air India flights in 12 months", 
+              "30,000 Tier Points (9,000 AI) OR 60 flights with 8 AI flights each year", 
+              "9 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings", 
+              "Free itinerary change (1x) up to 24h before departure on domestic flights and up to 72h on international flights · 2 cabin upgrade vouchers valid 9 months · Fee waiver for domestic flight cancellation up to 24h (INR 1,199 + GST) · Complimentary standard seat selection · Fly Prior service (switch to an earlier domestic flight within 12h) · Lounge access with one guest and excess baggage allowance of 20 kg or 1 piece up to 23 kg on AI/Star Alliance flights · Priority check‑in, boarding and waitlist clearance"
+            ],
+            "enabled": true
+          },
+          {
+            "cells": [
+              "Platinum", 
+              "45,000 Tier Points (incl. 13,500 on Air India) OR 90 flights with 12 Air India flights in 12 months", 
+              "45,000 Tier Points (13,500 AI) OR 90 flights with 12 AI flights each year", 
+              "10 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings", 
+              "Two free itinerary changes per ticket on domestic and international flights · 3 cabin upgrade vouchers valid 12 months · Domestic cancellation fee waiver up to 24h before departure · Complimentary seat selection on all seats, including exit‑row and bulkhead · Fly Prior and priority services · Excess baggage allowance of 20 kg or 1 extra piece (Air India & Star Alliance) · Lounge access with a guest"
+            ],
+            "enabled": true
+          }
+        ]
+      },
+      "enabled": true
+    },
+    {
+      "id": "tier-rules",
+      "title": "Tier tracking rules",
+      "style": "content-blocks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Maharaja Club monitors your Tier Points and eligible flights across the past 365 days. You can move up a tier by meeting the required Tier Points or flight count, and you must meet the same threshold each year to retain your status【621792412824106†L515-L569】. Upgrades are processed automatically as soon as the qualifying threshold is reached, and your membership year resets on the date of tier upgrade.",
           "enabled": true
         },
         {
-          "id": "earn-rate",
-          "title": "How to earn Flying Returns miles",
-          "style": "bullets",
-          "intro": "Bolster your Maharajah Club balance with co-branded cards and partner conversions.",
-          "paragraphs": [
-            "India-based credit cards from Axis Bank and SBI offer milestone bonuses tied to annual spend.",
-            "Hotel partners including ITC Hotels and Taj Hotels convert loyalty points into Flying Returns miles."
-          ],
-          "bullets": [
-            "Earn 2 to 5 miles per INR 100 on Air India co-branded credit cards.",
-            "Transfer Axis Bank EDGE Rewards and HSBC Reward Points at 1:1 ratios.",
-            "Credit Star Alliance flights to Flying Returns for Status Points and Redeemable Miles.",
-            "Take advantage of seasonal promotions with Vistara for bonus accrual on domestic segments."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/points-transfer.svg",
-              "alt": "Illustration of loyalty points moving from banks to airlines",
-              "caption": "Local bank partners make it easy to top up Flying Returns miles.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "sweet-spots",
-          "title": "Flying Returns sweet spots",
-          "style": "bullets",
-          "intro": "Take advantage of region-based pricing with favorable surcharges versus other Star Alliance programs.",
-          "paragraphs": [
-            "Fuel surcharges remain modest on Air India metal, making cash co-pays reasonable even in premium cabins."
-          ],
-          "bullets": [
-            "Round-trip business class between India and Europe for 90,000 miles.",
-            "Stopover permitted on international itineraries without extra miles.",
-            "Attractive surcharges compared to booking via other Star Alliance partners.",
-            "Upgrade to business on long-haul flights for as low as 30,000 miles each way."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/route-map.svg",
-              "alt": "Map highlighting routes from India to Europe",
-              "caption": "Key long-haul routes price aggressively through Flying Returns.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "usp",
-          "title": "Why Flying Returns stands out",
-          "style": "bullets",
-          "intro": "A refreshed fleet and new alliance partnerships make Flying Returns more compelling than ever.",
-          "paragraphs": [
-            "Air India's growth plan includes new A350 aircraft with premium-heavy cabins, giving elites more upgrade opportunities."
-          ],
-          "bullets": [
-            "Complimentary domestic upgrades for Golden Edge and Maharajah Club when space permits.",
-            "Family Pooling accelerates redemptions for multigenerational trips.",
-            "Access to the expansive Star Alliance partner network out of India.",
-            "Dedicated call center for top-tier members handles complex itineraries quickly."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/globetrotter.svg",
-              "alt": "Traveler planning an Indian subcontinent journey",
-              "caption": "Elite benefits extend across India’s growing route map.",
-              "enabled": true
-            }
+          "type": "bullets",
+          "items": [
+            "Tier Points are earned only on Air India flights (6 Tier Points per ₹100) and on partner flights at 1 Tier Point per 2 Maharaja Points.",
+            "Status evaluations happen continuously; once your Tier Points or flight count crosses the threshold, your account is upgraded automatically.",
+            "Retention requires meeting the same Tier Points or flight count in the following membership year; otherwise, your status will be downgraded.",
+            "Points cannot be used to buy status; only earning flights and partner activities qualify for Tier Points."
           ],
           "enabled": true
         }
       ],
       "enabled": true
     },
+    {
+      "id": "discounts-and-perks",
+      "title": "Discounts & perks",
+      "style": "bullets",
+      "intro": "Tier‑based benefits range from basic priority services to generous fee waivers and lounge access.",
+      "bullets": [
+        "Priority Connect hotline gives Silver, Gold and Platinum members fast access to customer support for bookings, ticket changes and account issues.",
+        "Fee waivers for itinerary changes scale with your tier — a discounted change fee for Silver, free domestic/international changes for Gold and multiple free changes for Platinum.",
+        "Cabin upgrade vouchers (1–3 per year depending on tier) allow domestic cabin upgrades subject to seat availability.",
+        "Complimentary extra baggage: Silver members receive +5 kg on Air India flights; Gold and Platinum receive +20 kg or one extra 23‑kg piece on Air India and Star Alliance flights.",
+        "Lounge access for Gold and Platinum members, including one guest, at Air India and Star Alliance lounges.",
+        "Fly Prior service lets Gold and Platinum members travel on an earlier domestic flight within 12 hours of their original departure (same route, cabin and day) without fees."
+      ],
+      "enabled": true
+    },
+    {
+      "id": "passes-and-benefits",
+      "title": "Upgrade vouchers & family pooling",
+      "style": "content-blocks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Maharaja Club does not issue generic lounge passes like some programmes, but members receive upgrade vouchers and can share points through family pooling.",
+          "enabled": true
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Cabin upgrade vouchers are awarded on tier upgrade/renewal: 1 for Silver (valid 6 months), 2 for Gold (valid 9 months) and 3 for Platinum (valid 12 months), usable on domestic flights subject to availability.",
+            "Family Pool feature lets you add up to nine family members and choose how much of their earning is pooled (100%, 75% or 50%). Pooling simplifies award redemptions by combining points in one account.",
+            "Cash + Points booking allows you to pay part of a ticket in cash and part in points, helpful when your balance is low.",
+            "You can buy Maharaja Points for ₹1.50 each to top up your balance when needed; purchased points carry a 24‑month validity."
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "points-policy",
+      "title": "Points policy essentials",
+      "style": "bullets",
+      "intro": "Understand the rules governing your Maharaja Points and Tier Points.",
+      "bullets": [
+        "Maharaja Points have a default 24‑month validity but never expire for active members — each paid Air India flight resets the expiry of your entire balance for another 24 months.",
+        "Tier Points count toward status but cannot be redeemed. Tier Points expire on a rolling 365‑day basis and determine your tier level.",
+        "You earn 6 Tier Points per ₹100 spent on Air India (base fare + fuel surcharge) across all tiers and 1 Tier Point per 2 Maharaja Points on Star Alliance partner flights.",
+        "No points are awarded on codeshare or interline flights or on award tickets.",
+        "Claim missing points up to 12 months after Air India travel or within six to twelve months for Star Alliance partners, depending on the airline.",
+        "Purchases from non‑airline partners and co‑branded credit cards earn Maharaja Points but not Tier Points.",
+        "Maharaja Points can be transferred from select bank credit cards; transfer ratios vary by issuer."
+      ],
+      "enabled": true
+    }
+  ],
+  "enabled": true
+}
+,
     {
       "slug": "air-canada-aeroplan",
       "name": "Air Canada Aeroplan",
@@ -646,7 +697,7 @@
           "enabled": true
         }
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "slug": "indigo-bluchip",
