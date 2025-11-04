@@ -313,6 +313,420 @@
         }
       ],
       "enabled": true
+    },
+    {
+      "slug": "axis-travel-edge",
+      "name": "Axis Bank Travel Edge",
+      "issuer": "Axis Bank",
+      "programType": "Credit-card travel and experiences portal",
+      "joinCost": "Access included with eligible Axis Bank credit cards that earn Edge Rewards",
+      "summary": "Travel Edge curates travel, dining and experience offers for Axis Bank cardmembers with options to earn and burn Edge Rewards at elevated rates.",
+      "sections": [
+        {
+          "id": "basics",
+          "title": "Program snapshot",
+          "style": "key-values",
+          "items": [
+            {
+              "label": "Eligibility",
+              "value": "Axis Bank credit cards that participate in the Edge Rewards program (Select, Atlas, Magnus, Reserve, etc.)",
+              "enabled": true
+            },
+            {
+              "label": "Portal type",
+              "value": "Aggregator for flights, hotels, experiences, dining and concierge-booked itineraries",
+              "enabled": true
+            },
+            {
+              "label": "Currency",
+              "value": "Edge Rewards points or statement credit on select lifestyle cards",
+              "enabled": true
+            },
+            {
+              "label": "Mobile access",
+              "value": "Travel Edge is available via desktop portal and the Axis Mobile app with synced offers",
+              "enabled": true
+            },
+            {
+              "label": "Customer support",
+              "value": "24×7 concierge desk reachable by in-app chat, email or the Travel Edge helpline",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "earn",
+          "title": "Earning Edge Rewards on Travel Edge",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Log in with your registered mobile number to see curated offers based on the Axis cards linked to your account. Flights and hotels booked via the Travel Edge OTA earn base Edge Rewards plus an accelerator that depends on your card tier.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Concierge-only experiences (wine trails, Michelin dining, sports hospitality) earn a flat bonus multiplier that is communicated in the offer details. Pay with the eligible Axis card to trigger the bonus credit in 60 days.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "title": "Quick tips",
+              "items": [
+                "Use promo code EDGE10 on OTA bookings above ₹10,000 to unlock limited-time 10% savings along with Edge Rewards.",
+                "Bundled hotel + flight packages track as a single itinerary; the highest multiplier across the bundle applies.",
+                "Transferable Edge Miles from Atlas convert to partner airlines instead of Edge Rewards when routed via the Atlas dashboard."
+              ],
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "accelerators",
+          "title": "Accelerators & monthly caps",
+          "style": "table",
+          "intro": "Dummy data showing how various Axis cards earn on the portal. Edge Rewards are valued at roughly ₹0.20 each.",
+          "table": {
+            "columns": [
+              "Card",
+              "Flight/hotel multiplier",
+              "Lifestyle experiences",
+              "Monthly accelerator cap"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Magnus Metal",
+                  "10× (approx 20% back)",
+                  "8× Edge Rewards",
+                  "75,000 bonus points"
+                ]
+              },
+              {
+                "cells": [
+                  "Reserve",
+                  "12× (approx 24% back)",
+                  "10× Edge Rewards",
+                  "100,000 bonus points"
+                ]
+              },
+              {
+                "cells": [
+                  "Atlas Explorer",
+                  "8× (approx 16% back)",
+                  "5× Edge Rewards",
+                  "40,000 bonus points"
+                ]
+              },
+              {
+                "cells": [
+                  "Select/Privilege",
+                  "5× (approx 10% back)",
+                  "Flat ₹5,000 statement credit on curated experiences",
+                  "₹25,000 worth of accelerated value"
+                ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "redemption",
+          "title": "Redeeming your Edge Rewards",
+          "style": "bullets",
+          "intro": "Edge Rewards can be used within the portal or transferred to partner programs depending on the card you hold.",
+          "bullets": [
+            "Redeem for flights, hotels or activities at a fixed value between ₹0.20–0.25 per point depending on the itinerary.",
+            "Premium cards (Magnus, Reserve) unlock 1:1 transfers to airline partners like KrisFlyer, Club Vistara and Flying Blue via the Edge Rewards dashboard.",
+            "Statement credit redemptions start at ₹500 with a value of ₹0.20 per point and are best suited for Select and Privilege cards.",
+            "Travel Edge vouchers for dining and spas occasionally provide elevated value (~₹0.30 per point) during flash sales."
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "hsbc-market-place",
+      "name": "HSBC Market Place",
+      "issuer": "HSBC Bank India",
+      "programType": "Cardholder travel and shopping marketplace",
+      "joinCost": "Available to HSBC Premier, Smart Value and Cashback credit card customers at no additional fee",
+      "summary": "Market Place is HSBC's refreshed hub for stacking card offers on travel, retail vouchers and experiences with accelerated reward points.",
+      "sections": [
+        {
+          "id": "overview",
+          "title": "How Market Place works",
+          "style": "key-values",
+          "items": [
+            {
+              "label": "Launch",
+              "value": "Access the portal via hsbc.co.in or the HSBC India mobile app using your registered credentials",
+              "enabled": true
+            },
+            {
+              "label": "Offer types",
+              "value": "Travel bookings, instant e-vouchers, flash sale coupons and curated local experiences",
+              "enabled": true
+            },
+            {
+              "label": "Reward currency",
+              "value": "HSBC Reward Points or cashback based on the underlying credit card",
+              "enabled": true
+            },
+            {
+              "label": "Payout timeline",
+              "value": "Bonus rewards post within 60 days from the end of the transaction month",
+              "enabled": true
+            },
+            {
+              "label": "Support",
+              "value": "Dedicated Market Place desk reachable via 1800-419-4722 or email marketplace.in@hsbc.com",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "categories",
+          "title": "Sample categories on the refreshed portal",
+          "style": "bullets",
+          "intro": "These dummy categories illustrate the breadth of experiences available to cardmembers.",
+          "bullets": [
+            "Domestic and international flights powered by Cleartrip with bonus Reward Points up to 10×.",
+            "Hotel stays across 250,000 properties with prepaid and pay-at-hotel options.",
+            "City getaways curated with partners like Club Mahindra and Sterling Holidays.",
+            "Instant vouchers for Amazon, BigBasket, Croma, Nykaa and more powered by GyFTR.",
+            "Experiential dining packages, winery tours and concert tickets sourced through local event partners."
+          ],
+          "enabled": true
+        },
+        {
+          "id": "earn-rates",
+          "title": "Illustrative earn rates",
+          "style": "table",
+          "intro": "Use this placeholder table to understand how different HSBC cards might be bonused on Market Place.",
+          "table": {
+            "columns": [
+              "HSBC card",
+              "Travel bookings",
+              "E-vouchers",
+              "Lifestyle offers",
+              "Notes"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Premier Mastercard",
+                  "10× Reward Points",
+                  "5× Reward Points",
+                  "Complimentary concierge booking",
+                  "Monthly cap of 15,000 bonus points"
+                ]
+              },
+              {
+                "cells": [
+                  "Smart Value",
+                  "5% cashback",
+                  "5× Reward Points",
+                  "₹1,500 statement credit on spends above ₹30,000",
+                  "Cashback capped at ₹2,500 per month"
+                ]
+              },
+              {
+                "cells": [
+                  "Cashback Credit Card",
+                  "10% cashback",
+                  "7% cashback",
+                  "Movie and dining BOGO offers",
+                  "Cashback credited within 90 days"
+                ]
+              },
+              {
+                "cells": [
+                  "HSBC Premier Metal",
+                  "12× Reward Points",
+                  "8× Reward Points",
+                  "Airport meet & greet packages",
+                  "Cap of 100,000 bonus points per quarter"
+                ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "playbook",
+          "title": "Playbook to maximise the portal",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Always start from the Market Place landing page so your session tracks correctly before it redirects to a partner OTA or voucher store. Use the built-in offer filters to surface category-specific deals.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Stack card-linked promotions from HSBC's email campaigns with portal offers. For example, combine a 5% weekend cashback code with the standard Market Place travel multiplier.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "title": "Checklist",
+              "items": [
+                "Screenshot the offer terms before booking so you have proof if tracking fails.",
+                "Split large transactions across two days to stay within monthly bonus caps.",
+                "Redeem accumulated Reward Points for high-value travel first; voucher conversions usually give lower value."
+              ],
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "icici-ishop",
+      "name": "ICICI Bank iShop",
+      "issuer": "ICICI Bank",
+      "programType": "Affiliate shopping and travel portal",
+      "joinCost": "Included with ICICI Bank credit cards that earn PAYBACK or ICICI Reward points",
+      "summary": "iShop aggregates partner merchants so ICICI Bank customers can unlock additional PAYBACK points, ICICI Reward points or cashback on top of card spends.",
+      "sections": [
+        {
+          "id": "quick-facts",
+          "title": "Quick facts",
+          "style": "key-values",
+          "items": [
+            {
+              "label": "Eligible cards",
+              "value": "Coral, Rubyx, Sapphiro, Amazon Pay ICICI and other consumer cards linked with PAYBACK/ICICI Rewards",
+              "enabled": true
+            },
+            {
+              "label": "Merchant mix",
+              "value": "Flights, hotels, fashion, electronics, groceries and digital subscriptions",
+              "enabled": true
+            },
+            {
+              "label": "Reward partners",
+              "value": "PAYBACK points for co-branded cards, ICICI Reward points for premium variants, or cashback on Amazon Pay ICICI",
+              "enabled": true
+            },
+            {
+              "label": "Tracking requirement",
+              "value": "Click out via iShop and complete the purchase in the same browser session",
+              "enabled": true
+            },
+            {
+              "label": "Turnaround time",
+              "value": "Bonus rewards reflect within 45-60 days once the merchant confirms the transaction",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "featured-merchants",
+          "title": "Featured dummy merchants",
+          "style": "bullets",
+          "intro": "Populate this list with the partners you want to highlight in production.",
+          "bullets": [
+            "MakeMyTrip, EaseMyTrip and Yatra for flights and hotels with 5× PAYBACK points on select weekends.",
+            "Amazon, Myntra, AJIO, Nykaa and Tata Cliq for fashion and lifestyle with rotating 8× accelerators.",
+            "Croma, Reliance Digital and Vijay Sales electronics offers with flat cashback plus PAYBACK points.",
+            "Swiggy, Zomato and BigBasket orders triggered through iShop with limited-time 10% cashback codes.",
+            "OTT subscriptions (Disney+ Hotstar, Sony LIV) that award lump-sum bonus points for annual plans."
+          ],
+          "enabled": true
+        },
+        {
+          "id": "earn-table",
+          "title": "Illustrative earn grid",
+          "style": "table",
+          "intro": "Use these placeholders to visualise accelerators across card families.",
+          "table": {
+            "columns": [
+              "Card family",
+              "Travel",
+              "Shopping",
+              "Groceries",
+              "Monthly cap"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Sapphiro / Emeralde",
+                  "8× PAYBACK points",
+                  "6× PAYBACK points",
+                  "4× PAYBACK points",
+                  "60,000 bonus points"
+                ]
+              },
+              {
+                "cells": [
+                  "Rubyx / Coral",
+                  "5× PAYBACK points",
+                  "4× PAYBACK points",
+                  "3× PAYBACK points",
+                  "30,000 bonus points"
+                ]
+              },
+              {
+                "cells": [
+                  "Amazon Pay ICICI",
+                  "5% cashback",
+                  "5% cashback",
+                  "2% cashback",
+                  "₹1,500 cashback per month"
+                ]
+              },
+              {
+                "cells": [
+                  "Platinum Chip / Expressions",
+                  "3× Reward points",
+                  "3× Reward points",
+                  "2× Reward points",
+                  "15,000 bonus points"
+                ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "best-practices",
+          "title": "Best practices",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Disable ad-blockers so the affiliate click can be tracked. Always finish the checkout in the same window to avoid attribution loss.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Large purchases above ₹50,000 may take longer to track; save invoices and the iShop confirmation email until the points post.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "title": "Troubleshooting",
+              "items": [
+                "If points do not post after 60 days, raise a ticket from the iShop dashboard with order ID and merchant invoice.",
+                "Cancelled orders automatically claw back provisional PAYBACK points in the next statement.",
+                "Combine iShop with bank-wide milestone spends (e.g., ₹2 lakh quarterly bonus on Sapphiro) to double-dip rewards."
+              ],
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
     }
   ]
 }
