@@ -1,0 +1,318 @@
+{
+  "programs": [
+    {
+      "slug": "hdfc-smartbuy",
+      "name": "HDFC Bank SmartBuy",
+      "issuer": "HDFC Bank",
+      "programType": "Credit/debit‑card partner portal",
+      "joinCost": "No separate enrolment – use an eligible HDFC Bank credit or debit card",
+      "summary": "SmartBuy is HDFC Bank’s proprietary shopping and travel portal that aggregates deals from multiple travel portals and e‑commerce partners.  Cardholders access the portal and pay with their HDFC card to earn bonus reward points or cashback – up to 10× the standard points on super‑premium cards or up to 10 % cashback on other cards.  Rewards are credited within 90 days and can be redeemed for flights, hotels or vouchers.",
+      "sections": [
+        {
+          "id": "basics",
+          "title": "Program basics",
+          "style": "key-values",
+          "items": [
+            {
+              "label": "Eligibility",
+              "value": "HDFC Bank credit and debit card customers (varies by card segment)",
+              "enabled": true
+            },
+            {
+              "label": "Portal type",
+              "value": "Aggregator site listing travel bookings (flights, hotels, trains, buses) and partner e‑commerce offers",
+              "enabled": true
+            },
+            {
+              "label": "Currency",
+              "value": "Reward Points (Infinia/Diners Black/Regalia/Diners Privilege) or Cashback on other cards",
+              "enabled": true
+            },
+            {
+              "label": "Points validity",
+              "value": "Reward points are valid for 2 years from the date of credit; cashback is credited as statement credit",
+              "enabled": true
+            },
+            {
+              "label": "My EMI Shop",
+              "value": "Special section on SmartBuy where card‑holders can buy consumer electronics and home goods on EMI and earn up to 5 % instant cashback (capped at ₹5,000 on full‑swipe transactions and ₹10,000 on EMI transactions)",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "categories",
+          "title": "Available partners & categories",
+          "style": "bullets",
+          "intro": "SmartBuy acts as a bridge between HDFC Bank cardholders and multiple travel and shopping portals.  These categories are eligible for accelerated earnings on SmartBuy:",
+          "bullets": [
+            "Flights: book domestic or international flights through partner online travel agencies (EaseMyTrip, Yatra, Cleartrip and Go Ibibo).",
+            "Hotels: book lodging through Cleartrip, Yatra or MakeMyTrip.",
+            "IRCTC trains via authorised partner Confirmtkt.",
+            "Bus bookings via RedBus.",
+            "Apple Imagine/Tresor reseller for Apple devices.",
+            "IGP.com gifting and Instant Vouchers (GyFTR) across Amazon, Flipkart, Nykaa and other brands.",
+            "ZoomCar rentals.",
+            "Fashion and lifestyle partners such as Nykaa, Myntra and Jockey.",
+            "MakeMyTrip holiday packages and PharmEasy healthcare."
+          ],
+          "enabled": true
+        },
+        {
+          "id": "card-tiers",
+          "title": "Which cards earn points or cashback?",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "SmartBuy distinguishes between super‑premium credit cards that earn bonus reward points and other cards that earn cashback.  Infinia, Diners Club Black (including Metal Edition), Regalia Gold, Regalia and Diners Club Privilege earn accelerated reward points.  All other HDFC Bank credit cards (except Tata Neu and PayZapp cards) earn accelerated cashback, while most debit cards earn similar cashback.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Tata Neu credit cards and PayZapp wallet have separate and lower NeuCoin caps.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "accelerated-rewards",
+          "title": "Accelerated reward rates",
+          "style": "table",
+          "intro": "SmartBuy offers different multipliers based on card type and spend category.  Multipliers shown below already include the base 1× earn; values in brackets show approximate return based on a point value of ₹1 for Infinia/Diners Black and ₹0.50 for Regalia/Privilege.",
+          "table": {
+            "columns": [
+              "Category",
+              "Infinia & Diners Club Black",
+              "Regalia, Regalia Gold & Diners Privilege",
+              "Other credit/debit cards (cashback)",
+              "Notes"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Flights",
+                  "5× (~16.5 % return)",
+                  "5× (~6.6 %)",
+                  "5 % cashback",
+                  "Book via EaseMyTrip, Yatra, Cleartrip or Go Ibibo"
+                ]
+              },
+              {
+                "cells": [
+                  "Hotels",
+                  "10× (~33 %)",
+                  "10× (~13.3 %)",
+                  "5 % cashback",
+                  "Book via Cleartrip, Yatra or MakeMyTrip"
+                ]
+              },
+              {
+                "cells": [
+                  "IRCTC/Confirmtkt (train)",
+                  "3× (~10 %)",
+                  "3× (~3.9 %)",
+                  "1 % cashback",
+                  "Bookings via Confirmtkt since July 2025"
+                ]
+              },
+              {
+                "cells": [
+                  "RedBus (bus)",
+                  "5× (~16.5 %)",
+                  "5× (~6.6 %)",
+                  "5 % cashback",
+                  "—"
+                ]
+              },
+              {
+                "cells": [
+                  "Instant vouchers (GyFTR)",
+                  "5× (~16.5 %)",
+                  "5× (~6.6 %)",
+                  "5 % cashback",
+                  "Gift cards for Amazon, Flipkart, Nykaa, etc."
+                ]
+              },
+              {
+                "cells": [
+                  "Apple Imagine/Tresor",
+                  "5× (~16.5 %)",
+                  "5× (~6.6 %)",
+                  "5 % cashback",
+                  "Official reseller for Apple products"
+                ]
+              },
+              {
+                "cells": [
+                  "ZoomCar",
+                  "5× (~16.5 %)",
+                  "5× (~6.6 %)",
+                  "5 % cashback",
+                  "Self‑drive car rentals"
+                ]
+              },
+              {
+                "cells": [
+                  "Nykaa & Myntra",
+                  "5× (~16.5 %)",
+                  "5× (~6.6 %)",
+                  "5 % cashback",
+                  "Beauty/fashion partners (Myntra occasionally offers 10×/10 % during sales)"
+                ]
+              },
+              {
+                "cells": [
+                  "Jockey",
+                  "10× (~33 %)",
+                  "10× (~13.3 %)",
+                  "10 % cashback",
+                  "Apparel partner"
+                ]
+              },
+              {
+                "cells": [
+                  "MMT holiday packages",
+                  "5× (~16.5 %)",
+                  "5× (~6.6 %)",
+                  "5 % cashback",
+                  "Holiday packages booked through MakeMyTrip"
+                ]
+              },
+              {
+                "cells": [
+                  "PharmEasy / IGP.com",
+                  "10× (~33 %)",
+                  "10× (~13.3 %)",
+                  "10 % cashback",
+                  "Pharmacy & gifting categories"
+                ]
+              },
+              {
+                "cells": [
+                  "My EMI Shop",
+                  "5 % instant cashback up to ₹5,000 (full‑swipe) or up to ₹10,000 on EMI transactions【836433750561675†L76-L81】",
+                  "5 % instant cashback; EMIs eligible for core card rewards",
+                  "5 % instant cashback",
+                  "Electronics and household purchases on EMI"
+                ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "caps",
+          "title": "Monthly and daily caps on bonus earnings",
+          "style": "table",
+          "intro": "SmartBuy caps the amount of bonus reward points or cashback that can be earned each calendar month.  Base (1×) earnings continue without limit:",
+          "table": {
+            "columns": [
+              "Card type",
+              "Monthly bonus cap",
+              "Daily bonus cap",
+              "Comments"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Infinia",
+                  "15,000 reward points",
+                  "15,000 reward points per day",
+                  "Highest earning potential"
+                ]
+              },
+              {
+                "cells": [
+                  "Diners Club Black Metal & BizBlack Metal",
+                  "10,000 RP",
+                  "10,000 RP per day",
+                  "—"
+                ]
+              },
+              {
+                "cells": [
+                  "Diners Club Black",
+                  "7,500 RP",
+                  "2,500 RP per day",
+                  "—"
+                ]
+              },
+              {
+                "cells": [
+                  "Regalia, Regalia Gold, Diners Club Privilege (BizPower)",
+                  "4,000 RP",
+                  "2,000 RP per day",
+                  "—"
+                ]
+              },
+              {
+                "cells": [
+                  "Tata Neu & PayZapp wallet",
+                  "1,000 NeuCoins",
+                  "1,000 NeuCoins/day",
+                  "NeuCoins replace reward points; earn rate is lower"
+                ]
+              },
+              {
+                "cells": [
+                  "Other credit/debit cards (cashback)",
+                  "₹1,000 cashback per month",
+                  "₹1,000 per day",
+                  "Cashback computed on monthly spends; no daily cap mentioned for many cards"
+                ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "redemption",
+          "title": "Reward redemption & validity",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Reward points are valid for three years from the date they are credited.  Redeem them through SmartBuy for flights and hotels at a value of ₹1 per point for Infinia/Diners Club Black and ₹0.50 per point for Regalia/Privilege cards.  A maximum of 70 % of the booking value can be paid with reward points, with the remainder charged to your card and earning 5× reward points.  You may redeem up to 75,000 points per calendar month for flights and hotels.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "For vouchers and cash, reward value drops significantly (20–50 paise per point for vouchers and 30 paise cash for Infinia/DCB; lower for Regalia/Privilege).  SmartBuy still follows the 70 : 30 payment rule for voucher redemptions.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Super‑premium cardholders (Infinia, DCB and Regalia Gold) can also transfer points to airline and hotel loyalty programs.  Transfer ratios vary (e.g., Infinia/DCB transfer at 2:1 or 1:1 to partners like Air Canada, British Airways, Finnair, Flying Blue, Singapore Airlines, Vistara etc., while Regalia Gold transfers at 3:1 or 2:1).",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Cashback posted through SmartBuy is credited directly to the card statement and reduces the outstanding balance.  Cashback is posted within 90 days after the end of the month in which the transaction occurred.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "rules",
+          "title": "Important rules & tips",
+          "style": "bullets",
+          "intro": "Understand the rules to maximise your SmartBuy benefits:",
+          "bullets": [
+            "You must access partner portals through the SmartBuy portal to receive bonus rewards or cashback; direct bookings do not qualify.",
+            "Only full‑swipe (non‑EMI) transactions are eligible for accelerated rewards on most partners; EMI transactions accrue core card points/cashback and My EMI Shop cashback separately.",
+            "Limited‑time sales (e.g., Myntra End of Reason sale) may temporarily offer 10× reward points or 10 % cashback for specific partners.",
+            "SmartBuy’s Confirmtkt partner replaced IRCTC in July 2025; bookings earn 3× reward points or 1 % cashback.",
+            "Cancelled or returned orders are adjusted against your reward/cashback credit and may reduce your bonus earnings (as noted in individual partner T&C).",
+            "SmartBuy is an offers communication portal; HDFC Bank does not guarantee the quality of goods/services and only facilitates payments."
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    }
+  ]
+}
