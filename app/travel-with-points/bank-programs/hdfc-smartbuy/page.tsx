@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
-const programName = "HDFC SmartBuy";
+import { BankProgramSections } from "@/app/components/bank-program-sections";
+import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
+import bankProgramsData from "@/data/bank-programs.json";
+import { getBankProgramContent } from "@/lib/contentData";
+
+const programsForMetadata = (bankProgramsData.programs ?? []) as BankProgram[];
+const metadataProgram = programsForMetadata.find(
+  (program) => program.slug === "hdfc-smartbuy" && (program.enabled ?? true)
+);
+
+const programName = metadataProgram?.name ?? "HDFC Bank SmartBuy";
 const pageTitle = `${programName} | Bank Programs | Miles Go Round`;
 const pageDescription =
-  "Learn how to stack SmartBuy offers, milestone benefits, and transfer bonuses as soon as this resource launches.";
+  metadataProgram?.summary ??
+  "Explore how HDFC Bank SmartBuy boosts rewards on flights, hotels, vouchers and online shopping.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -25,41 +37,109 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HdfcSmartbuyPage() {
+export const runtime = "edge";
+
+async function loadProgram(): Promise<BankProgram | undefined> {
+  const { programs } = await getBankProgramContent();
+
+  return programs.find((program) => program.slug === "hdfc-smartbuy");
+}
+
+export default async function HdfcSmartbuyPage() {
+  const program = await loadProgram();
+
+  if (!program) {
+    notFound();
+  }
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${program.name} portal guide`,
+    description: program.summary,
+    about: {
+      "@type": "FinancialProduct",
+      name: program.name,
+      provider: program.issuer,
+      serviceType: program.programType,
+    },
+    mainEntityOfPage: `https://example.com/travel-with-points/bank-programs/${program.slug}`,
+    author: {
+      "@type": "Organization",
+      name: "Miles Go Round",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Miles Go Round",
+      url: "https://example.com",
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-3xl flex-col items-center gap-10 px-6 py-24 text-center lg:py-32">
-        <span className="inline-flex items-center rounded-full border border-rose-200/40 bg-rose-100/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-rose-200">
-          {programName}
-        </span>
-        <div className="space-y-4">
-          <h1 className="text-4xl font-semibold sm:text-5xl">{programName}</h1>
-          <p className="text-base leading-7 text-slate-200/80">
-            Our SmartBuy deep dive will cover accelerated earning categories, partner sweet spots, and redemption walkthroughs.
-            Stay tuned while we finish the guide.
-          </p>
-        </div>
-        <div className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-8 text-sm leading-6 text-slate-100/80">
-          <p className="font-semibold uppercase tracking-[0.3em] text-rose-200/90">Status</p>
-          <p className="text-lg font-medium text-white">Coming soon</p>
-        </div>
-        <Link href="/travel-with-points/bank-programs" className="inline-flex items-center text-sm font-semibold text-amber-300">
-          <svg
-            aria-hidden
-            className="mr-2 h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M19 12H5" />
-            <path d="m12 5-7 7 7 7" />
-          </svg>
-          Back to bank programs
-        </Link>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <article className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-20 lg:py-28">
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
+          <ol className="flex items-center gap-2">
+            <li>
+              <Link href="/travel-with-points" className="hover:text-sky-300">
+                Travel with Points
+              </Link>
+            </li>
+            <li aria-hidden>/</li>
+            <li>
+              <Link href="/travel-with-points/bank-programs" className="hover:text-sky-300">
+                Bank programs
+              </Link>
+            </li>
+            <li aria-hidden>/</li>
+            <li className="text-sky-200">{program.name}</li>
+          </ol>
+        </nav>
+
+        <header className="space-y-5">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-300">Bank partner portal guide</p>
+          <h1 className="text-4xl font-semibold text-white">{program.name}</h1>
+          <p className="text-base text-slate-200/80">{program.summary}</p>
+        </header>
+
+        <section className="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur lg:grid-cols-3">
+          <div className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200">Issuer</p>
+            <p className="text-sm text-slate-100/90">{program.issuer}</p>
+          </div>
+          <div className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200">Program type</p>
+            <p className="text-sm text-slate-100/90">{program.programType}</p>
+          </div>
+          <div className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200">How to join</p>
+            <p className="text-sm text-slate-100/90">{program.joinCost}</p>
+          </div>
+        </section>
+
+        <BankProgramSections sections={program.sections} />
+
+        <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold text-white">Compare more bank portals</p>
+          <Link href="/travel-with-points/bank-programs" className="inline-flex items-center font-semibold text-sky-200">
+            Back to bank programs hub
+            <svg
+              aria-hidden
+              className="ml-2 h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </Link>
+        </footer>
+      </article>
     </main>
   );
 }
