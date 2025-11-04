@@ -1,49 +1,5 @@
 [
   {
-    "slug": "spring-mornings-in-chitkul",
-    "title": "Spring Mornings in Chitkul's Cedar Air",
-    "excerpt": "Wake up to snow-dusted peaks, village chai, and riverside trails in India's last village on the Indo-Tibetan road.",
-    "author": "Akshita",
-    "date": "June 7, 2024",
-    "readTime": "6 min read",
-    "category": "India",
-    "city": "Chitkul",
-    "country": "India",
-    "coverImage": {
-      "src": "/images/content/20230408_143522.jpg",
-      "alt": "Morning sun touching snowy peaks above a Himalayan village"
-    },
-    "gallery": [
-      {
-        "src": "/images/content/20230408_143854.jpg",
-        "alt": "Basu River flowing past stone houses in Chitkul"
-      },
-      {
-        "src": "/images/content/20230408_132352.jpg",
-        "alt": "Prayer flags fluttering below Himalayan ridgeline"
-      },
-      {
-        "src": "/images/content/20231223_105939.jpg",
-        "alt": "Himalayan village footpath lined with cedar homes"
-      },
-      {
-        "src": "/images/content/photo-1521292270410--f29ffc531709.svg",
-        "alt": "Traveler crossing a wooden bridge over a turquoise river"
-      }
-    ],
-    "content": [
-      "The road to Chitkul twists through pine forests before spilling into a wide valley where wooden homes cling to terraced hillsides. Sunrise paints Kinnaur Kailash in copper while villagers gather at the lone bakery for butter tea.",
-      "I spent the morning following cedar-scented footpaths to the Baspa River. The meltwater rushes past smooth boulders, and every turn reveals apple orchards waking from winter. A local guide named Dorje shared stories of the Indo-Tibetan trade caravans that once crossed these ridges.",
-      "Afternoons are best for slow rambles to the village temple and nearby grazing meadows. Bring layers—the weather swings from sun to snow flurries in minutes—but stay long enough to watch twilight soak the valley in lavender light."
-    ],
-    "videoUrl": "https://www.youtube.com/embed/vQ8zGkwyj2M",
-    "highlights": [
-      "Catch the first light from the ridge above the village",
-      "Sample buckwheat bread and apricot jam from the lone bakery",
-      "Hire local guides for treks toward the Indo-Tibetan pass"
-    ]
-  },
-  {
     "slug": "lagoon-days-at-villa-nautica",
     "title": "Lagoon Days at Villa Nautica, Maldives",
     "excerpt": "December at Villa Nautica means festive palms, slow lagoon mornings, and sandbank sunsets that stretch time.",
@@ -421,50 +377,6 @@
       "Browse the Tuesday farmers market for Tomme de Savoie",
       "Rent bikes early for a relaxed ride along the lake",
       "Book a sunset paddleboard session for pastel reflections"
-    ]
-  },
-  {
-    "slug": "summits-and-stargaze-lahaul",
-    "title": "Summits and Stargaze in Lahaul Valley",
-    "excerpt": "Cross high passes, discover monasteries, and camp beneath constellations in Himachal's wild heart.",
-    "author": "Akshita",
-    "date": "February 11, 2024",
-    "readTime": "9 min read",
-    "category": "India",
-    "city": "Lahaul Valley",
-    "country": "India",
-    "coverImage": {
-      "src": "/images/content/photo-1469474968028-c0c38f4b88f2.svg",
-      "alt": "Mountain valley with winding road under starry sky"
-    },
-    "gallery": [
-      {
-        "src": "/images/content/photo-1477587458883-47145ed94245.svg",
-        "alt": "High mountain road leading to Keylong"
-      },
-      {
-        "src": "/images/content/photo-1500530855697-b586d89ba3ee.svg",
-        "alt": "Camping tent glowing under Milky Way"
-      },
-      {
-        "src": "/images/content/photo-1426604966848-e37abe0c5c06.svg",
-        "alt": "River valley framed by towering Himalayan cliffs"
-      },
-      {
-        "src": "/images/content/photo-1520256862855-0d09ea8ba8cb.svg",
-        "alt": "Yak caravan crossing a rocky alpine meadow"
-      }
-    ],
-    "content": [
-      "Lahaul Valley opens after crossing the Atal Tunnel, revealing stark mountains that guard villages of whitewashed homes. I arrived during late winter when the snow still dusted the roofs, and the air smelled of juniper smoke.",
-      "Days were spent visiting monasteries like Kardang and Shashur, where monks shared butter tea and stories of ancient trade routes. Trekkers prepared for multi-day journeys to Chandratal and beyond, but even short hikes rewarded us with sweeping views and frozen waterfalls.",
-      "My favorite memory was camping near Jispa. The night sky exploded with stars, the Milky Way arching overhead as yaks grazed silently nearby. Pack warm gear and respect the altitude; acclimatization days are essential here."
-    ],
-    "videoUrl": "https://www.youtube.com/embed/C9F9IJgBVA0",
-    "highlights": [
-      "Acclimatize in Keylong before attempting higher passes",
-      "Carry reusable bottles and refill at village spring taps",
-      "Stay out late for unmatched stargazing on clear nights"
     ]
   }
 ]
