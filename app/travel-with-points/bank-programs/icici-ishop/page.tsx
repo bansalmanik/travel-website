@@ -1,12 +1,14 @@
 import { makeBankProgramPage } from "../program-page-factory";
 
-const { metadata, runtime, Page: IciciIshopPage } = makeBankProgramPage({
+const { metadata, Page: IciciIshopPage } = makeBankProgramPage({
   slug: "icici-ishop",
   fallbackName: "ICICI IShop",
   fallbackSummary:
     "Unlock extra ICICI Bank rewards and cashback by routing purchases through the IShop partner marketplace.",
 });
 
-export { metadata, runtime };
+export const runtime = "edge"; // or "nodejs"
+
+export { metadata };
 
 export default IciciIshopPage;

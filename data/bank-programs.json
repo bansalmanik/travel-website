@@ -316,117 +316,102 @@
     },
     {
       "slug": "axis-travel-edge",
-      "name": "Axis Bank Travel Edge",
+      "name": "Axis Travel Edge",
       "issuer": "Axis Bank",
-      "programType": "Credit-card travel and experiences portal",
-      "joinCost": "Access included with eligible Axis Bank credit cards that earn Edge Rewards",
-      "summary": "Travel Edge curates travel, dining and experience offers for Axis Bank cardmembers with options to earn and burn Edge Rewards at elevated rates.",
+      "programType": "Credit-card travel & rewards portal",
+      "joinCost": "No separate enrolment – use an eligible Axis Bank credit card and book via the Travel Edge portal",
+      "summary": "Travel Edge is Axis Bank’s dedicated travel booking platform where card-holders can book flights, hotels and travel experiences with Accelerated EDGE Miles/EDGE Reward Points, redeem points for bookings or transfer points to airline/hotel loyalty partners. Premium cards earn higher multipliers and better transfer ratios.",
       "sections": [
         {
           "id": "basics",
-          "title": "Program snapshot",
+          "title": "Program basics",
           "style": "key-values",
           "items": [
             {
               "label": "Eligibility",
-              "value": "Axis Bank credit cards that participate in the Edge Rewards program (Select, Atlas, Magnus, Reserve, etc.)",
+              "value": "Axis Bank credit cards eligible for EDGE Rewards/EDGE Miles; bookings must be via Travel Edge portal or partner website with card payment. :contentReference[oaicite:1]{index=1}",
               "enabled": true
             },
             {
               "label": "Portal type",
-              "value": "Aggregator for flights, hotels, experiences, dining and concierge-booked itineraries",
+              "value": "Travel booking site (flights, hotels, travel experiences) plus points/miles transfer platform",
               "enabled": true
             },
             {
               "label": "Currency",
-              "value": "Edge Rewards points or statement credit on select lifestyle cards",
+              "value": "EDGE Miles / EDGE Reward Points (depending on card variant)",
               "enabled": true
             },
             {
-              "label": "Mobile access",
-              "value": "Travel Edge is available via desktop portal and the Axis Mobile app with synced offers",
-              "enabled": true
-            },
-            {
-              "label": "Customer support",
-              "value": "24×7 concierge desk reachable by in-app chat, email or the Travel Edge helpline",
+              "label": "Points validity",
+              "value": "Typically 3 years for EDGE Reward Points; check your card T&C. :contentReference[oaicite:2]{index=2}",
               "enabled": true
             }
           ],
           "enabled": true
         },
         {
-          "id": "earn",
-          "title": "Earning Edge Rewards on Travel Edge",
+          "id": "categories",
+          "title": "Available partners & categories",
+          "style": "bullets",
+          "intro": "Travel Edge supports bookings across the following categories:",
+          "bullets": [
+            "Domestic & international flights via Travel Edge portal",
+            "Hotel stays globally via Travel Edge portal",
+            "Travel experiences & activities via portal",
+            "Points/Miles transfer to airline & hotel partner loyalty programmes via portal"
+          ],
+          "enabled": true
+        },
+        {
+          "id": "card-tiers",
+          "title": "Which cards earn accelerated rewards or miles?",
           "style": "content-blocks",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "Log in with your registered mobile number to see curated offers based on the Axis cards linked to your account. Flights and hotels booked via the Travel Edge OTA earn base Edge Rewards plus an accelerator that depends on your card tier.",
+              "text": "Premium cards such as Atlas Credit Card earn 5 EDGE Miles per ₹100 on Travel Edge portal, airline and hotel spends up to ₹2,00,000/month; above that the rate drops to 2 EDGE Miles per ₹100. :contentReference[oaicite:3]{index=3}",
               "enabled": true
             },
             {
               "type": "paragraph",
-              "text": "Concierge-only experiences (wine trails, Michelin dining, sports hospitality) earn a flat bonus multiplier that is communicated in the offer details. Pay with the eligible Axis card to trigger the bonus credit in 60 days.",
-              "enabled": true
-            },
-            {
-              "type": "bullets",
-              "title": "Quick tips",
-              "items": [
-                "Use promo code EDGE10 on OTA bookings above ₹10,000 to unlock limited-time 10% savings along with Edge Rewards.",
-                "Bundled hotel + flight packages track as a single itinerary; the highest multiplier across the bundle applies.",
-                "Transferable Edge Miles from Atlas convert to partner airlines instead of Edge Rewards when routed via the Atlas dashboard."
-              ],
+              "text": "Other cards may earn lower multipliers (2× or regular earn) depending on card variant and merchant category code (MCC). Check card-specific T&Cs. :contentReference[oaicite:4]{index=4}",
               "enabled": true
             }
           ],
           "enabled": true
         },
         {
-          "id": "accelerators",
-          "title": "Accelerators & monthly caps",
+          "id": "accelerated-rewards",
+          "title": "Accelerated reward/mile rates",
           "style": "table",
-          "intro": "Dummy data showing how various Axis cards earn on the portal. Edge Rewards are valued at roughly ₹0.20 each.",
+          "intro": "Examples of accelerated earnings for travel spend via Travel Edge portal:",
           "table": {
-            "columns": [
-              "Card",
-              "Flight/hotel multiplier",
-              "Lifestyle experiences",
-              "Monthly accelerator cap"
-            ],
+            "columns": [ "Category", "Premium card (e.g., Atlas)", "Other card variants", "Notes" ],
             "rows": [
               {
-                "cells": [
-                  "Magnus Metal",
-                  "10× (approx 20% back)",
-                  "8× Edge Rewards",
-                  "75,000 bonus points"
-                ]
+                "cells": [ "Flights & Hotels (via Travel Edge/airline/hotel merchants)", "5 EDGE Miles / ₹100 up to ₹2 L/month", "2 EDGE Miles / ₹100 beyond cap or for standard cards", "Applicable for Atlas and similar cards. :contentReference[oaicite:5]{index=5}" ]
               },
               {
-                "cells": [
-                  "Reserve",
-                  "12× (approx 24% back)",
-                  "10× Edge Rewards",
-                  "100,000 bonus points"
-                ]
+                "cells": [ "Transfer to loyalty partners", "1 EDGE Mile = ₹1 value when redeemed via portal; or 1 EDGE Mile = 2 partner points (for select cards)", "Varies by partner and card tier.", "See partner transfer T&C. :contentReference[oaicite:6]{index=6}" ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "caps",
+          "title": "Caps & limits",
+          "style": "table",
+          "intro": "Caps on accelerated earn or transfer activity:",
+          "table": {
+            "columns": [ "Item", "Limit", "Notes" ],
+            "rows": [
+              {
+                "cells": [ "Accelerated earn cap for travel spends", "Up to ₹2,00,000/month for 5× earn", "Beyond this spend, earn rate reduces to 2× for eligible card. :contentReference[oaicite:7]{index=7}" ]
               },
               {
-                "cells": [
-                  "Atlas Explorer",
-                  "8× (approx 16% back)",
-                  "5× Edge Rewards",
-                  "40,000 bonus points"
-                ]
-              },
-              {
-                "cells": [
-                  "Select/Privilege",
-                  "5× (approx 10% back)",
-                  "Flat ₹5,000 statement credit on curated experiences",
-                  "₹25,000 worth of accelerated value"
-                ]
+                "cells": [ "Annual transfer cap to partner loyalty programmes", "For example, Atlas cards: 1,50,000 reward points per year; 30,000 to Group A partners (Accor/Marriott/Wyndham) :contentReference[oaicite:8]{index=8}", "“Group A/Group B” caps apply" ]
               }
             ]
           },
@@ -434,14 +419,185 @@
         },
         {
           "id": "redemption",
-          "title": "Redeeming your Edge Rewards",
+          "title": "Reward redemption & validity",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "EDGE Miles/Reward Points can be redeemed for bookings on Travel Edge portal, or transferred to airline/hotel loyalty partners. Example: Axis Atlas card – 1 EDGE Mile = ₹1 if redeemed via portal; or 1 EDGE Mile = 2 partner points when transferred to select hotel programmes. :contentReference[oaicite:9]{index=9}",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Points expire as per card-specific validity (commonly 3 years). Transfers subject to T&C including minimum points, partner linking and waiting period. :contentReference[oaicite:10]{index=10}",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "rules",
+          "title": "Important rules & tips",
           "style": "bullets",
-          "intro": "Edge Rewards can be used within the portal or transferred to partner programs depending on the card you hold.",
+          "intro": "Key considerations when using Travel Edge:",
           "bullets": [
-            "Redeem for flights, hotels or activities at a fixed value between ₹0.20–0.25 per point depending on the itinerary.",
-            "Premium cards (Magnus, Reserve) unlock 1:1 transfers to airline partners like KrisFlyer, Club Vistara and Flying Blue via the Edge Rewards dashboard.",
-            "Statement credit redemptions start at ₹500 with a value of ₹0.20 per point and are best suited for Select and Privilege cards.",
-            "Travel Edge vouchers for dining and spas occasionally provide elevated value (~₹0.30 per point) during flash sales."
+            "Bookings must be made via Travel Edge portal to qualify for accelerated earn. Ordinary bookings may not earn the higher rate. :contentReference[oaicite:11]{index=11}",
+            "Merchant Category Code (MCC) matters. Even bookings via Travel Edge portal may earn lower rate if MCC is Travel Agency instead of Travel Portal. :contentReference[oaicite:12]{index=12}",
+            "Cancellations or refunds will reverse the earned Miles/Points.",
+            "Check the fare offered by Travel Edge versus direct airline/hotel price – some users report slightly higher fare on portal which reduces net benefit. :contentReference[oaicite:13]{index=13}",
+            "Link your frequent-flyer / hotel loyalty account before transferring points; each transfer partner has its own waiting period. :contentReference[oaicite:14]{index=14}"
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "icici-ishop",
+      "name": "ICICI Bank iShop Rewards",
+      "issuer": "ICICI Bank",
+      "programType": "Credit/debit-card partner portal",
+      "joinCost": "No separate enrolment – use an eligible ICICI Bank credit or debit card",
+      "summary": "iShop is ICICI Bank’s online shopping and travel portal where card-holders can book flights, hotels, buses or buy shopping vouchers to earn accelerated reward points (up to ~12×) or iCash cashback (up to ~29 %). Offers, caps and categories vary by card tier, and bonus rewards are credited post-settlement.",
+      "sections": [
+        {
+          "id": "basics",
+          "title": "Program basics",
+          "style": "key-values",
+          "items": [
+            {
+              "label": "Eligibility",
+              "value": "ICICI Bank credit and debit card customers (varies by card tier) {“source”: “online”: true}",
+              "enabled": true
+            },
+            {
+              "label": "Portal type",
+              "value": "Aggregator site listing flights, hotels, buses, instant vouchers and other e-commerce offers",
+              "enabled": true
+            },
+            {
+              "label": "Currency",
+              "value": "Reward Points (for premium cards) or iCash cashback (for others)",
+              "enabled": true
+            },
+            {
+              "label": "Points validity",
+              "value": "Typically 2 years from credit (varies by card); iCash credited as statement credit",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "categories",
+          "title": "Available partners & categories",
+          "style": "bullets",
+          "intro": "iShop supports accelerated earnings on the following types of spends:",
+          "bullets": [
+            "Flights – domestic or international, via partner OTAs",
+            "Hotels – booking via portal partners",
+            "Bus bookings via RedBus or others",
+            "Instant vouchers & e-gift cards – Amazon, Flipkart, Myntra, Croma, Hamleys etc.",
+            "Shopping & consumer electronics via voucher-partners",
+            "Holiday packages and experiences"
+          ],
+          "enabled": true
+        },
+        {
+          "id": "card-tiers",
+          "title": "Which cards earn bonus points or cashback?",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "iShop distinguishes between premium ICICI cards that earn accelerated reward points (Emeralde Private, Times Black, Emerald, Diamant) and other standard credit/debit cards that earn iCash cashback.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "For premium cards, the offer multipliers and caps are higher; for standard cards, cashback rates apply with lower caps.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "accelerated-rewards",
+          "title": "Accelerated reward and cashback rates",
+          "style": "table",
+          "intro": "Typical multipliers or cashback via iShop (varies by card & category):",
+          "table": {
+            "columns": [ "Category", "Premium cards (~Points)", "Standard cards (~iCash)", "Notes" ],
+            "rows": [
+              {
+                "cells": [ "Flights", "6× (~18 %)", "1–3 % iCash", "Via partner OTAs" ]
+              },
+              {
+                "cells": [ "Hotels", "12× (~36 %)", "3–5 % iCash", "Via portal booking" ]
+              },
+              {
+                "cells": [ "Bus bookings", "6× (~18 %)", "Up to 6 % iCash", "Includes RedBus" ]
+              },
+              {
+                "cells": [ "Instant vouchers / e-gift cards", "6× (~18 %) or up to 12× in promos", "Up to 29 % iCash", "Selected voucher partners" ]
+              },
+              {
+                "cells": [ "Electronics & lifestyle offers", "Up to 6× (~18 %)", "Up to 10 % cashback", "On specific partner offers" ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "caps",
+          "title": "Monthly and voucher-limit caps",
+          "style": "table",
+          "intro": "Bonus earnings on iShop are subject to monthly caps and limits on voucher redemption:",
+          "table": {
+            "columns": [ "Card type / partner", "Monthly cap", "Voucher limit", "Notes" ],
+            "rows": [
+              {
+                "cells": [ "Emeralde Private / Times Black", "≈ 18,000 points", "₹30,000-₹1,00,000 depending on partner", "Top tier cards" ]
+              },
+              {
+                "cells": [ "Emeralde / Diamant", "≈ 12,000 points", "Varies", "Mid-tier cards" ]
+              },
+              {
+                "cells": [ "Standard credit/debit cards", "≈ 9,000 points or ₹1,000-₹2,000 cashback", "₹12,000/month on Amazon/Flipkart vouchers", "Entry level" ]
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "redemption",
+          "title": "Reward redemption & validity",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "For premium cards, reward points can be redeemed for flights, hotels, vouchers or transferred to airline/hotel loyalty programmes. iCash is credited as statement credit and reduces outstanding balance.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Points must be redeemed within their validity period (typically ~2 years) and cancelled bookings or returns will reverse bonus earnings.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "rules",
+          "title": "Important rules & tips",
+          "style": "bullets",
+          "intro": "Key things to note when using iShop:",
+          "bullets": [
+            "You must access partner offers via the iShop portal; direct bookings or visits do not qualify for accelerated rewards.",
+            "Bonus reward points or iCash only apply to final settled spend; cancelled transactions reverse the rewards.",
+            "Standard cards may earn only cashback (iCash) not accelerated points.",
+            "Check the voucher partner’s terms — some have separate fees or daily limits.",
+            "Promotional periods may offer higher multipliers (for example 12× or 29 % iCash) but are temporary."
           ],
           "enabled": true
         }
@@ -452,38 +608,38 @@
       "slug": "hsbc-market-place",
       "name": "HSBC Market Place",
       "issuer": "HSBC Bank India",
-      "programType": "Cardholder travel and shopping marketplace",
-      "joinCost": "Available to HSBC Premier, Smart Value and Cashback credit card customers at no additional fee",
-      "summary": "Market Place is HSBC's refreshed hub for stacking card offers on travel, retail vouchers and experiences with accelerated reward points.",
+      "programType": "Credit-card travel & rewards marketplace",
+      "joinCost": "No separate enrolment – available to eligible HSBC credit cards",
+      "summary": "HSBC Travel With Points allows HSBC credit cardholders to book flights, hotels and car rentals using reward points or card payment. Through Hopper, members earn accelerated points on travel bookings and can redeem points at 1:1 on select premium cards. Points can also be transferred to global airline and hotel loyalty partners.",
       "sections": [
         {
-          "id": "overview",
-          "title": "How Market Place works",
+          "id": "basics",
+          "title": "Program basics",
           "style": "key-values",
           "items": [
             {
-              "label": "Launch",
-              "value": "Access the portal via hsbc.co.in or the HSBC India mobile app using your registered credentials",
+              "label": "Eligibility",
+              "value": "HSBC Privé, Premier, TravelOne, Visa Platinum & RuPay Platinum credit cards :contentReference[oaicite:1]{index=1}",
               "enabled": true
             },
             {
-              "label": "Offer types",
-              "value": "Travel bookings, instant e-vouchers, flash sale coupons and curated local experiences",
+              "label": "Portal type",
+              "value": "Travel booking platform (flights, hotels, car rentals) powered by Hopper :contentReference[oaicite:2]{index=2}",
               "enabled": true
             },
             {
-              "label": "Reward currency",
-              "value": "HSBC Reward Points or cashback based on the underlying credit card",
+              "label": "Currency",
+              "value": "HSBC Reward Points",
               "enabled": true
             },
             {
-              "label": "Payout timeline",
-              "value": "Bonus rewards post within 60 days from the end of the transaction month",
+              "label": "Points validity",
+              "value": "Privé & Premier: No expiry; TravelOne & Platinum: 3 years :contentReference[oaicite:3]{index=3}",
               "enabled": true
             },
             {
-              "label": "Support",
-              "value": "Dedicated Market Place desk reachable via 1800-419-4722 or email marketplace.in@hsbc.com",
+              "label": "Access",
+              "value": "HSBC India Mobile App + Website",
               "enabled": true
             }
           ],
@@ -491,242 +647,147 @@
         },
         {
           "id": "categories",
-          "title": "Sample categories on the refreshed portal",
+          "title": "Eligible booking categories",
           "style": "bullets",
-          "intro": "These dummy categories illustrate the breadth of experiences available to cardmembers.",
+          "intro": "Bookings eligible for accelerated earning:",
           "bullets": [
-            "Domestic and international flights powered by Cleartrip with bonus Reward Points up to 10×.",
-            "Hotel stays across 250,000 properties with prepaid and pay-at-hotel options.",
-            "City getaways curated with partners like Club Mahindra and Sterling Holidays.",
-            "Instant vouchers for Amazon, BigBasket, Croma, Nykaa and more powered by GyFTR.",
-            "Experiential dining packages, winery tours and concert tickets sourced through local event partners."
+            "Domestic & international flights",
+            "Hotel stays",
+            "Car rentals"
           ],
           "enabled": true
         },
         {
-          "id": "earn-rates",
-          "title": "Illustrative earn rates",
+          "id": "card-tiers",
+          "title": "Eligible cards",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Only select HSBC credit cards earn accelerated points. Corporate and supplementary cards are excluded. :contentReference[oaicite:5]{index=5}",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Privé and Premier cards get premium redemption and transfer ratios.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "accelerated-rewards",
+          "title": "Accelerated reward rates",
           "style": "table",
-          "intro": "Use this placeholder table to understand how different HSBC cards might be bonused on Market Place.",
+          "intro": "These travel multipliers apply only when booking through HSBC Travel With Points.",
           "table": {
-            "columns": [
-              "HSBC card",
-              "Travel bookings",
-              "E-vouchers",
-              "Lifestyle offers",
-              "Notes"
-            ],
+            "columns": [ "Card Type", "Flights", "Hotels", "Car Rentals", "Notes" ],
             "rows": [
               {
-                "cells": [
-                  "Premier Mastercard",
-                  "10× Reward Points",
-                  "5× Reward Points",
-                  "Complimentary concierge booking",
-                  "Monthly cap of 15,000 bonus points"
-                ]
+                "cells": [ "HSBC Privé", "6X (30 pts/150)", "12X (60 pts/150)", "2X (10 pts/150)", "Highest earn rates :contentReference[oaicite:6]{index=6}" ]
               },
               {
-                "cells": [
-                  "Smart Value",
-                  "5% cashback",
-                  "5× Reward Points",
-                  "₹1,500 statement credit on spends above ₹30,000",
-                  "Cashback capped at ₹2,500 per month"
-                ]
+                "cells": [ "HSBC Premier", "6X (18 pts/100)", "12X (36 pts/100)", "2X (6 pts/100)", ":contentReference[oaicite:7]{index=7}" ]
               },
               {
-                "cells": [
-                  "Cashback Credit Card",
-                  "10% cashback",
-                  "7% cashback",
-                  "Movie and dining BOGO offers",
-                  "Cashback credited within 90 days"
-                ]
+                "cells": [ "HSBC TravelOne", "4X (16 pts/100)", "6X (24 pts/100)", "2X (8 pts/100)", "Bonus capped at 50k/month for TravelOne overall :contentReference[oaicite:8]{index=8}" ]
               },
               {
-                "cells": [
-                  "HSBC Premier Metal",
-                  "12× Reward Points",
-                  "8× Reward Points",
-                  "Airport meet & greet packages",
-                  "Cap of 100,000 bonus points per quarter"
-                ]
+                "cells": [ "HSBC Visa/RuPay Platinum", "4X (8 pts/150)", "6X (12 pts/150)", "2X (4 pts/150)", "Entry tier :contentReference[oaicite:9]{index=9}" ]
               }
             ]
           },
           "enabled": true
         },
         {
-          "id": "playbook",
-          "title": "Playbook to maximise the portal",
-          "style": "content-blocks",
-          "blocks": [
-            {
-              "type": "paragraph",
-              "text": "Always start from the Market Place landing page so your session tracks correctly before it redirects to a partner OTA or voucher store. Use the built-in offer filters to surface category-specific deals.",
-              "enabled": true
-            },
-            {
-              "type": "paragraph",
-              "text": "Stack card-linked promotions from HSBC's email campaigns with portal offers. For example, combine a 5% weekend cashback code with the standard Market Place travel multiplier.",
-              "enabled": true
-            },
-            {
-              "type": "bullets",
-              "title": "Checklist",
-              "items": [
-                "Screenshot the offer terms before booking so you have proof if tracking fails.",
-                "Split large transactions across two days to stay within monthly bonus caps.",
-                "Redeem accumulated Reward Points for high-value travel first; voucher conversions usually give lower value."
-              ],
-              "enabled": true
-            }
-          ],
+          "id": "caps",
+          "title": "Monthly caps",
+          "style": "table",
+          "intro": "Accelerated earnings have a monthly ceiling:",
+          "table": {
+            "columns": [ "Card", "Monthly Accelerated Cap", "Notes" ],
+            "rows": [
+              {
+                "cells": [ "All eligible HSBC cards", "18,000 Reward Points/month", "Base points uncapped :contentReference[oaicite:10]{index=10}" ]
+              },
+              {
+                "cells": [ "HSBC TravelOne", "50,000 bonus points on travel categories", "Airline/travel MCC bonus rules :contentReference[oaicite:11]{index=11}" ]
+              }
+            ]
+          },
           "enabled": true
-        }
-      ],
-      "enabled": true
-    },
-    {
-      "slug": "icici-ishop",
-      "name": "ICICI Bank iShop",
-      "issuer": "ICICI Bank",
-      "programType": "Affiliate shopping and travel portal",
-      "joinCost": "Included with ICICI Bank credit cards that earn PAYBACK or ICICI Reward points",
-      "summary": "iShop aggregates partner merchants so ICICI Bank customers can unlock additional PAYBACK points, ICICI Reward points or cashback on top of card spends.",
-      "sections": [
+        },
         {
-          "id": "quick-facts",
-          "title": "Quick facts",
+          "id": "fees",
+          "title": "Convenience fees",
           "style": "key-values",
           "items": [
             {
-              "label": "Eligible cards",
-              "value": "Coral, Rubyx, Sapphiro, Amazon Pay ICICI and other consumer cards linked with PAYBACK/ICICI Rewards",
-              "enabled": true
+              "label": "Domestic flights",
+              "value": "₹300 per passenger per leg :contentReference[oaicite:12]{index=12}"
             },
             {
-              "label": "Merchant mix",
-              "value": "Flights, hotels, fashion, electronics, groceries and digital subscriptions",
-              "enabled": true
-            },
-            {
-              "label": "Reward partners",
-              "value": "PAYBACK points for co-branded cards, ICICI Reward points for premium variants, or cashback on Amazon Pay ICICI",
-              "enabled": true
-            },
-            {
-              "label": "Tracking requirement",
-              "value": "Click out via iShop and complete the purchase in the same browser session",
-              "enabled": true
-            },
-            {
-              "label": "Turnaround time",
-              "value": "Bonus rewards reflect within 45-60 days once the merchant confirms the transaction",
-              "enabled": true
+              "label": "International flights",
+              "value": "₹700 per passenger per leg :contentReference[oaicite:13]{index=13}"
             }
-          ],
-          "enabled": true
+          ]
         },
         {
-          "id": "featured-merchants",
-          "title": "Featured dummy merchants",
-          "style": "bullets",
-          "intro": "Populate this list with the partners you want to highlight in production.",
-          "bullets": [
-            "MakeMyTrip, EaseMyTrip and Yatra for flights and hotels with 5× PAYBACK points on select weekends.",
-            "Amazon, Myntra, AJIO, Nykaa and Tata Cliq for fashion and lifestyle with rotating 8× accelerators.",
-            "Croma, Reliance Digital and Vijay Sales electronics offers with flat cashback plus PAYBACK points.",
-            "Swiggy, Zomato and BigBasket orders triggered through iShop with limited-time 10% cashback codes.",
-            "OTT subscriptions (Disney+ Hotstar, Sony LIV) that award lump-sum bonus points for annual plans."
-          ],
-          "enabled": true
-        },
-        {
-          "id": "earn-table",
-          "title": "Illustrative earn grid",
-          "style": "table",
-          "intro": "Use these placeholders to visualise accelerators across card families.",
-          "table": {
-            "columns": [
-              "Card family",
-              "Travel",
-              "Shopping",
-              "Groceries",
-              "Monthly cap"
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "Sapphiro / Emeralde",
-                  "8× PAYBACK points",
-                  "6× PAYBACK points",
-                  "4× PAYBACK points",
-                  "60,000 bonus points"
-                ]
-              },
-              {
-                "cells": [
-                  "Rubyx / Coral",
-                  "5× PAYBACK points",
-                  "4× PAYBACK points",
-                  "3× PAYBACK points",
-                  "30,000 bonus points"
-                ]
-              },
-              {
-                "cells": [
-                  "Amazon Pay ICICI",
-                  "5% cashback",
-                  "5% cashback",
-                  "2% cashback",
-                  "₹1,500 cashback per month"
-                ]
-              },
-              {
-                "cells": [
-                  "Platinum Chip / Expressions",
-                  "3× Reward points",
-                  "3× Reward points",
-                  "2× Reward points",
-                  "15,000 bonus points"
-                ]
-              }
-            ]
-          },
-          "enabled": true
-        },
-        {
-          "id": "best-practices",
-          "title": "Best practices",
+          "id": "redemption",
+          "title": "Reward redemption",
           "style": "content-blocks",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "Disable ad-blockers so the affiliate click can be tracked. Always finish the checkout in the same window to avoid attribution loss.",
-              "enabled": true
+              "text": "Redeem points for flights, hotels, cars or pay partially with card. No restriction on % points vs card :contentReference[oaicite:14]{index=14}"
             },
             {
               "type": "paragraph",
-              "text": "Large purchases above ₹50,000 may take longer to track; save invoices and the iShop confirmation email until the points post.",
-              "enabled": true
+              "text": "Privé & Premier: 1:1 redemption value on travel bookings :contentReference[oaicite:15]{index=15}"
             },
             {
-              "type": "bullets",
-              "title": "Troubleshooting",
-              "items": [
-                "If points do not post after 60 days, raise a ticket from the iShop dashboard with order ID and merchant invoice.",
-                "Cancelled orders automatically claw back provisional PAYBACK points in the next statement.",
-                "Combine iShop with bank-wide milestone spends (e.g., ₹2 lakh quarterly bonus on Sapphiro) to double-dip rewards."
-              ],
-              "enabled": true
+              "type": "paragraph",
+              "text": "Points valid on Privé/Premier forever; TravelOne & Platinum valid 3 years :contentReference[oaicite:16]{index=16}"
             }
-          ],
-          "enabled": true
+          ]
+        },
+        {
+          "id": "transfer-partners",
+          "title": "Airline & hotel transfer partners",
+          "style": "bullets",
+          "intro": "Major transfer programs include: :contentReference[oaicite:17]{index=17}",
+          "bullets": [
+            "Air India Flying Returns (Maharaja Club)",
+            "Singapore KrisFlyer",
+            "Air France-KLM Flying Blue",
+            "British Airways Executive Club",
+            "Qatar Privilege Club",
+            "Accor Live Limitless",
+            "Marriott Bonvoy",
+            "IHG One Rewards",
+            "Wyndham Rewards",
+            "Shangri-La Circle"
+          ]
+        },
+        {
+          "id": "rules",
+          "title": "Key rules",
+          "style": "bullets",
+          "intro": "Important usage notes:",
+          "bullets": [
+            "Booking must be via HSBC portal; direct bookings don't earn bonus",
+            "Accelerated points posted within ~10 days of settlement :contentReference[oaicite:18]{index=18}",
+            "Cancellations reverse bonus points",
+            "Exclusions: utilities, taxes, fuel, insurance, wallet loads, education, rent etc. :contentReference[oaicite:19]{index=19}",
+            "Support handled by Hopper for travel; points queries via HSBC"
+          ]
         }
       ],
       "enabled": true
     }
+
+
+
+
   ]
 }
