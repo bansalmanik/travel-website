@@ -23,8 +23,28 @@ import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
 
 async function loadJsonData<T>(fileName: string): Promise<T> {
-    const data = await import(`@/data/${fileName}`);
-    return data.default as T;
+    if (process.env.NODE_ENV !== "production") {
+        const data = await import(`@/data/${fileName}`);
+        return data.default as T;
+    }
+
+    throw new Error(
+        `JSON file ${fileName} is not available when running in production. ` +
+            "Ensure the dataset is stored in Cloudflare KV."
+    );
+}
+
+async function loadJsonDataset<T>(
+    kvKey: string,
+    fileName: string
+): Promise<T> {
+    const kvData = await readMilesGoRoundKVJson<T>(kvKey);
+
+    if (kvData !== undefined && kvData !== null) {
+        return kvData;
+    }
+
+    return loadJsonData<T>(fileName);
 }
 
 type ImageLike = { src: string };
@@ -58,7 +78,7 @@ async function resolveListSection(
 }
 
 export async function getJournalEntries(): Promise<JournalEntry[]> {
-    const data = await loadJsonData<JournalDataset>("journals.json");
+    const data = await loadJsonDataset<JournalDataset>("journals", "journals.json");
     const journals = filterEnabled(data.journals).map((entry) =>
         filterEnabledDeep(entry)
     );
@@ -82,7 +102,10 @@ export async function getCreditCardContent(): Promise<{
     cardStrategies: CardStrategy[];
     favoriteCombos: FavoriteCombo[];
 }> {
-    const data = await loadJsonData<CreditCardDataset>("credit-cards.json");
+    const data = await loadJsonDataset<CreditCardDataset>(
+        "credit-cards",
+        "credit-cards.json"
+    );
 
     const cards = filterEnabled(data.cards).map((card) => filterEnabledDeep(card));
 
@@ -113,11 +136,11 @@ export async function getFlightProgramContent(): Promise<{
     awardPlaybook: AwardPlaybookItem[];
     favoriteRoutes: FavoriteRoute[];
 }> {
-    const data = await loadJsonData<{
+    const data = await loadJsonDataset<{
         programs: FlightProgram[];
         awardPlaybook: AwardPlaybookItem[];
         favoriteRoutes: FavoriteRoute[];
-    }>("flight-programs.json");
+    }>("flight-programs", "flight-programs.json");
 
     const programs = filterEnabled(data.programs).map((program) =>
         filterEnabledDeep(program)
@@ -147,7 +170,10 @@ export async function getHotelProgramContent(): Promise<{
     elitePaths: ElitePath[];
     bookingTips: string[];
 }> {
-    const data = await loadJsonData<HotelDataset>("hotel-programs.json");
+    const data = await loadJsonDataset<HotelDataset>(
+        "hotel-programs",
+        "hotel-programs.json"
+    );
 
     const programs = filterEnabled(data.programs ?? []).map((program) =>
         filterEnabledDeep(program)
@@ -187,15 +213,10 @@ export async function getHotelProgramContent(): Promise<{
 export async function getBankProgramContent(): Promise<{
     programs: BankProgram[];
 }> {
-    const kvData = await readMilesGoRoundKVJson<{ programs: BankProgram[] }>(
-        "bank-programs"
+    const data = await loadJsonDataset<{ programs: BankProgram[] }>(
+        "bank-programs",
+        "bank-programs.json"
     );
-
-    const data =
-        kvData ??
-        (await loadJsonData<{ programs: BankProgram[] }>(
-            "bank-programs.json"
-        ));
 
     const programs = filterEnabled(data.programs ?? []).map((program) =>
         filterEnabledDeep(program)
@@ -205,7 +226,10 @@ export async function getBankProgramContent(): Promise<{
 }
 
 export async function getPointsConversions(): Promise<Conversion[]> {
-    const data = await loadJsonData<Conversion[]>("points-conversion.json");
+    const data = await loadJsonDataset<Conversion[]>(
+        "points-conversion",
+        "points-conversion.json"
+    );
     return filterEnabled(data).map((conversion) =>
         filterEnabledDeep(conversion)
     ) as Conversion[];
