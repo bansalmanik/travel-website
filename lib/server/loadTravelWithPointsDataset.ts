@@ -1,14 +1,62 @@
 import { cache } from "react";
 
-type LoaderOptions = {
-  kvRestApiUrl?: string;
-  kvRestApiToken?: string;
+type CloudflareKvNamespace = {
+  get(key: string, type?: "text"): Promise<string | null>;
 };
 
-const options: LoaderOptions = {
-  kvRestApiUrl: process.env.TRAVEL_WITH_POINTS_KV_REST_API_URL,
-  kvRestApiToken: process.env.TRAVEL_WITH_POINTS_KV_REST_API_TOKEN,
+type GlobalWithMaybeEnv = typeof globalThis & {
+  __env__?: Record<string, unknown>;
+  __ENV__?: Record<string, unknown>;
+  __NEXT_ON_PAGES__?: { env?: Record<string, unknown> };
+  env?: Record<string, unknown>;
 };
+
+let detectedKvNamespace: CloudflareKvNamespace | null | undefined;
+
+function isKvNamespace(candidate: unknown): candidate is CloudflareKvNamespace {
+  return (
+    typeof candidate === "object" &&
+    candidate !== null &&
+    typeof (candidate as CloudflareKvNamespace).get === "function"
+  );
+}
+
+function resolveKvNamespace(): CloudflareKvNamespace | null {
+  if (detectedKvNamespace !== undefined) {
+    return detectedKvNamespace;
+  }
+
+  if (typeof globalThis !== "undefined") {
+    const globalWithEnv = globalThis as GlobalWithMaybeEnv;
+    const globalRecord = globalWithEnv as unknown as Record<string, unknown>;
+    const candidates: unknown[] = [
+      globalRecord["MilesGoRound"],
+      globalWithEnv.env?.["MilesGoRound"],
+      globalWithEnv.__env__?.["MilesGoRound"],
+      globalWithEnv.__ENV__?.["MilesGoRound"],
+      globalWithEnv.__NEXT_ON_PAGES__?.env?.["MilesGoRound"],
+    ];
+
+    for (const candidate of candidates) {
+      if (isKvNamespace(candidate)) {
+        detectedKvNamespace = candidate;
+        return candidate;
+      }
+    }
+  }
+
+  if (typeof process !== "undefined") {
+    const envRecord = (process as unknown as { env?: Record<string, unknown> }).env;
+    const candidate = envRecord?.["MilesGoRound"];
+    if (isKvNamespace(candidate)) {
+      detectedKvNamespace = candidate;
+      return candidate;
+    }
+  }
+
+  detectedKvNamespace = null;
+  return null;
+}
 
 const fallbackPayloads: Record<string, string> = {
   "bank-programs.json": JSON.stringify({ programs: [] }),
@@ -24,24 +72,17 @@ const loadDatasetText = cache(async (fileName: string): Promise<string> => {
     throw new Error("A dataset file name must be provided.");
   }
 
-  const kvRestApiUrl = options.kvRestApiUrl;
-  const kvRestApiToken = options.kvRestApiToken;
-  if (kvRestApiUrl && kvRestApiToken) {
-    const base = kvRestApiUrl.endsWith("/") ? kvRestApiUrl : `${kvRestApiUrl}/`;
-    const response = await fetch(`${base}${encodeURIComponent(fileName)}`, {
-      headers: {
-        Authorization: `Bearer ${kvRestApiToken}`,
-      },
-      cache: "no-store",
-    });
+  const kvNamespace = resolveKvNamespace();
+  if (kvNamespace) {
+    const response = await kvNamespace.get(fileName, "text");
 
-    if (!response.ok) {
-      throw new Error(
-        `Failed to load "${fileName}" from Cloudflare KV (status ${response.status}).`
-      );
+    if (typeof response === "string") {
+      return response;
     }
 
-    return await response.text();
+    throw new Error(
+      `Travel with Points dataset "${fileName}" was not found in the MilesGoRound KV namespace.`
+    );
   }
 
   const nodeEnv = typeof process !== "undefined" ? process.env.NODE_ENV : undefined;
@@ -56,15 +97,15 @@ const loadDatasetText = cache(async (fileName: string): Promise<string> => {
 
   if (nodeEnv !== "production" || allowEmptyFallback) {
     console.warn(
-      `Travel with Points dataset "${fileName}" falling back to an empty payload because KV credentials are not configured.\n` +
-        "Set TRAVEL_WITH_POINTS_KV_REST_API_URL and TRAVEL_WITH_POINTS_KV_REST_API_TOKEN to load real data."
+      `Travel with Points dataset "${fileName}" falling back to an empty payload because the MilesGoRound KV binding is not available.\n` +
+        "Ensure the Cloudflare Pages project is configured with the MilesGoRound KV namespace."
     );
 
     return fallbackPayloads[fileName] ?? "{}";
   }
 
   throw new Error(
-    "Travel with Points dataset loader is not configured. Set TRAVEL_WITH_POINTS_KV_REST_API_URL and TRAVEL_WITH_POINTS_KV_REST_API_TOKEN."
+    "Travel with Points dataset loader could not find the MilesGoRound KV binding."
   );
 });
 
