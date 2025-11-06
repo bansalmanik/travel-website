@@ -1,5 +1,3 @@
-import { cache } from "react";
-
 import type {
     AwardPlaybookItem,
     FavoriteRoute,
@@ -20,6 +18,7 @@ import type {
 import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
 import type { JournalDataset, JournalEntry } from "@/app/journals/types";
 import type { Conversion } from "@/app/pointsconversion/types";
+import { readMilesGoRoundKVJson } from "./cloudflareKv";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
 
@@ -188,9 +187,15 @@ export async function getHotelProgramContent(): Promise<{
 export async function getBankProgramContent(): Promise<{
     programs: BankProgram[];
 }> {
-    const data = await loadJsonData<{ programs: BankProgram[] }>(
-        "bank-programs.json"
+    const kvData = await readMilesGoRoundKVJson<{ programs: BankProgram[] }>(
+        "bank-programs"
     );
+
+    const data =
+        kvData ??
+        (await loadJsonData<{ programs: BankProgram[] }>(
+            "bank-programs.json"
+        ));
 
     const programs = filterEnabled(data.programs ?? []).map((program) =>
         filterEnabledDeep(program)

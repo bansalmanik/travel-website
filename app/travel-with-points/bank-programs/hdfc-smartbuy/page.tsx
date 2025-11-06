@@ -1,6 +1,6 @@
 import { makeBankProgramPage } from "../program-page-factory";
 
-const { metadata, Page: HdfcSmartbuyPage } = makeBankProgramPage({
+const { generateMetadata, Page: HdfcSmartbuyPage } = makeBankProgramPage({
     slug: "hdfc-smartbuy",
     fallbackName: "HDFC Bank SmartBuy",
     fallbackSummary:
@@ -10,6 +10,6 @@ const { metadata, Page: HdfcSmartbuyPage } = makeBankProgramPage({
 
 export const runtime = "edge"; // or "nodejs"
 
-export { metadata };
+export { generateMetadata };
 
 export default HdfcSmartbuyPage;

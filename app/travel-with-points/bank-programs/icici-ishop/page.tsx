@@ -1,6 +1,6 @@
 import { makeBankProgramPage } from "../program-page-factory";
 
-const { metadata, Page: IciciIshopPage } = makeBankProgramPage({
+const { generateMetadata, Page: IciciIshopPage } = makeBankProgramPage({
   slug: "icici-ishop",
   fallbackName: "ICICI IShop",
   fallbackSummary:
@@ -9,6 +9,6 @@ const { metadata, Page: IciciIshopPage } = makeBankProgramPage({
 
 export const runtime = "edge"; // or "nodejs"
 
-export { metadata };
+export { generateMetadata };
 
 export default IciciIshopPage;

@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 
 import { BankProgramSections } from "@/app/components/bank-program-sections";
 import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
-import bankProgramsData from "@/data/bank-programs.json";
+import { cache } from "react";
+
 import { getBankProgramContent } from "@/lib/contentData";
 
 type BankProgramPageConfig = {
@@ -15,7 +16,7 @@ type BankProgramPageConfig = {
 };
 
 type BankProgramPageDefinition = {
-  metadata: Metadata;
+  generateMetadata: () => Promise<Metadata>;
   runtime: "edge";
   Page: () => Promise<JSX.Element>;
 };
@@ -25,36 +26,43 @@ export function makeBankProgramPage({
   fallbackName,
   fallbackSummary,
 }: BankProgramPageConfig): BankProgramPageDefinition {
-  const programsForMetadata = (bankProgramsData.programs ?? []) as BankProgram[];
-  const metadataProgram = programsForMetadata.find(
-    (program) => program.slug === slug && (program.enabled ?? true)
-  );
+  const loadPrograms = cache(async () => {
+    const { programs } = await getBankProgramContent();
+    return programs;
+  });
 
-  const programName = metadataProgram?.name ?? fallbackName;
-  const pageTitle = `${programName} | Bank Programs | Miles Go Round`;
-  const pageDescription = metadataProgram?.summary ?? fallbackSummary;
+  async function generateMetadata(): Promise<Metadata> {
+    const programsForMetadata = await loadPrograms();
+    const metadataProgram = programsForMetadata.find(
+      (program) => program.slug === slug && (program.enabled ?? true)
+    );
 
-  const metadata: Metadata = {
-    title: pageTitle,
-    description: pageDescription,
-    alternates: {
-      canonical: `/travel-with-points/bank-programs/${slug}`,
-    },
-    openGraph: {
+    const programName = metadataProgram?.name ?? fallbackName;
+    const pageTitle = `${programName} | Bank Programs | Miles Go Round`;
+    const pageDescription = metadataProgram?.summary ?? fallbackSummary;
+
+    return {
       title: pageTitle,
       description: pageDescription,
-      type: "article",
-      url: `https://example.com/travel-with-points/bank-programs/${slug}`,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: pageTitle,
-      description: pageDescription,
-    },
-  };
+      alternates: {
+        canonical: `/travel-with-points/bank-programs/${slug}`,
+      },
+      openGraph: {
+        title: pageTitle,
+        description: pageDescription,
+        type: "article",
+        url: `https://example.com/travel-with-points/bank-programs/${slug}`,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: pageTitle,
+        description: pageDescription,
+      },
+    } satisfies Metadata;
+  }
 
   async function loadProgram(): Promise<BankProgram | undefined> {
-    const { programs } = await getBankProgramContent();
+    const programs = await loadPrograms();
 
     return programs.find((program) => program.slug === slug);
   }
@@ -158,5 +166,5 @@ export function makeBankProgramPage({
     );
   };
 
-  return { metadata, runtime: "edge" as const, Page };
+  return { generateMetadata, runtime: "edge" as const, Page };
 }
