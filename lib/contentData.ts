@@ -23,15 +23,20 @@ import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
 
 async function loadJsonData<T>(fileName: string): Promise<T> {
-    if (process.env.NODE_ENV !== "production") {
+    try {
         const data = await import(`@/data/${fileName}`);
         return data.default as T;
-    }
+    } catch (error) {
+        const message =
+            `Unable to load JSON dataset "${fileName}" from the local data directory.` +
+            " Ensure the dataset exists locally or is stored in Cloudflare KV.";
 
-    throw new Error(
-        `JSON file ${fileName} is not available when running in production. ` +
-            "Ensure the dataset is stored in Cloudflare KV."
-    );
+        if (error instanceof Error) {
+            throw new Error(`${message}\n${error.message}`);
+        }
+
+        throw new Error(message);
+    }
 }
 
 async function loadJsonDataset<T>(
