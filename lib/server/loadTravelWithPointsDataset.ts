@@ -3,13 +3,20 @@ import { cache } from "react";
 type LoaderOptions = {
   kvRestApiUrl?: string;
   kvRestApiToken?: string;
-  httpBaseUrl?: string;
 };
 
 const options: LoaderOptions = {
   kvRestApiUrl: process.env.TRAVEL_WITH_POINTS_KV_REST_API_URL,
   kvRestApiToken: process.env.TRAVEL_WITH_POINTS_KV_REST_API_TOKEN,
-  httpBaseUrl: process.env.TRAVEL_WITH_POINTS_DATA_BASE_URL,
+};
+
+const fallbackPayloads: Record<string, string> = {
+  "bank-programs.json": JSON.stringify({ programs: [] }),
+  "credit-cards.json": JSON.stringify({ cards: [], cardStrategies: [], favoriteCombos: [] }),
+  "flight-programs.json": JSON.stringify({ programs: [], awardPlaybook: [], favoriteRoutes: [] }),
+  "hotel-programs.json": JSON.stringify({ programs: [], elitePaths: [], bookingTips: [] }),
+  "journals.json": JSON.stringify({ journals: [] }),
+  "points-conversion.json": JSON.stringify([]),
 };
 
 const loadDatasetText = cache(async (fileName: string): Promise<string> => {
@@ -37,33 +44,27 @@ const loadDatasetText = cache(async (fileName: string): Promise<string> => {
     return await response.text();
   }
 
-  const httpBaseUrl = options.httpBaseUrl;
-  if (httpBaseUrl) {
-    const base = httpBaseUrl.endsWith("/") ? httpBaseUrl : `${httpBaseUrl}/`;
-    const response = await fetch(`${base}${fileName}`);
-
-    if (!response.ok) {
-      throw new Error(
-        `Failed to load "${fileName}" from remote data URL (status ${response.status}).`
-      );
+  const nodeEnv = typeof process !== "undefined" ? process.env.NODE_ENV : undefined;
+  const allowEmptyFallback = (() => {
+    if (typeof process === "undefined") {
+      return false;
     }
 
-    return await response.text();
-  }
+    const flag = process.env.TRAVEL_WITH_POINTS_ALLOW_EMPTY_DATA ?? "";
+    return flag === "1" || flag.toLowerCase() === "true";
+  })();
 
-  const nodeEnv = typeof process !== "undefined" ? process.env.NODE_ENV : undefined;
-  if (nodeEnv !== "production") {
-    const [{ readFile }, { join }] = await Promise.all([
-      import("node:fs/promises"),
-      import("node:path"),
-    ]);
+  if (nodeEnv !== "production" || allowEmptyFallback) {
+    console.warn(
+      `Travel with Points dataset "${fileName}" falling back to an empty payload because KV credentials are not configured.\n` +
+        "Set TRAVEL_WITH_POINTS_KV_REST_API_URL and TRAVEL_WITH_POINTS_KV_REST_API_TOKEN to load real data."
+    );
 
-    const filePath = join(process.cwd(), "data", fileName);
-    return await readFile(filePath, "utf8");
+    return fallbackPayloads[fileName] ?? "{}";
   }
 
   throw new Error(
-    "Travel with Points dataset loader is not configured. Set TRAVEL_WITH_POINTS_KV_REST_API_URL/TRAVEL_WITH_POINTS_KV_REST_API_TOKEN or TRAVEL_WITH_POINTS_DATA_BASE_URL."
+    "Travel with Points dataset loader is not configured. Set TRAVEL_WITH_POINTS_KV_REST_API_URL and TRAVEL_WITH_POINTS_KV_REST_API_TOKEN."
   );
 });
 

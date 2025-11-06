@@ -14,7 +14,6 @@ type BankProgramPageConfig = {
 };
 
 type BankProgramPageDefinition = {
-  metadata: Metadata;
   generateMetadata: () => Promise<Metadata>;
   runtime: "edge";
   Page: () => Promise<JSX.Element>;
@@ -182,7 +181,6 @@ export function makeBankProgramPage({
   };
 
   return {
-    metadata: fallbackMetadata,
     generateMetadata,
     runtime: "edge" as const,
     Page,

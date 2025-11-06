@@ -1,6 +1,6 @@
 import { makeBankProgramPage } from "../program-page-factory";
 
-const { metadata, generateMetadata, Page: HsbcMarketPlacePage } = makeBankProgramPage({
+const { generateMetadata, Page: HsbcMarketPlacePage } = makeBankProgramPage({
   slug: "hsbc-market-place",
   fallbackName: "HSBC Market Place",
   fallbackSummary:
@@ -9,7 +9,6 @@ const { metadata, generateMetadata, Page: HsbcMarketPlacePage } = makeBankProgra
 
 export const runtime = "edge"; // or "nodejs"
 
-export { metadata };
 export { generateMetadata };
 
 export default HsbcMarketPlacePage;

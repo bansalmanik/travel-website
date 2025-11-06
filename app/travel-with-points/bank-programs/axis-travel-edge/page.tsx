@@ -1,6 +1,6 @@
 import { makeBankProgramPage } from "../program-page-factory";
 
-const { metadata, generateMetadata, Page: AxisTravelEdgePage } = makeBankProgramPage({
+const { generateMetadata, Page: AxisTravelEdgePage } = makeBankProgramPage({
   slug: "axis-travel-edge",
   fallbackName: "Axis Travel Edge",
   fallbackSummary:
@@ -9,7 +9,6 @@ const { metadata, generateMetadata, Page: AxisTravelEdgePage } = makeBankProgram
 
 export const runtime = "edge"; // or "nodejs"
 
-export { metadata };
 export { generateMetadata };
 
 export default AxisTravelEdgePage;
