@@ -11,6 +11,7 @@ import type {
   StatusLevelsSection
 } from "@/app/travel-with-points/hotel-programs/types";
 import { getHotelProgramContent } from "@/lib/contentData";
+import { filterEnabled } from "@/lib/filterEnabled";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -22,7 +23,13 @@ async function getPrograms(): Promise<HotelProgram[]> {
   return programs;
 }
 
-export const runtime = "edge";
+export async function generateStaticParams() {
+  const programs = filterEnabled(await getPrograms());
+
+  return programs.map((program) => ({
+    slug: program.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

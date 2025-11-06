@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { FlightProgramSections } from "@/app/components/flight-program-sections";
 import type { FlightProgram } from "@/app/travel-with-points/flight-programs/types";
 import { getFlightProgramContent } from "@/lib/contentData";
+import { filterEnabled } from "@/lib/filterEnabled";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -16,7 +17,13 @@ async function getPrograms(): Promise<FlightProgram[]> {
   return programs;
 }
 
-export const runtime = "edge";
+export async function generateStaticParams() {
+  const programs = filterEnabled(await getPrograms());
+
+  return programs.map((program) => ({
+    slug: program.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

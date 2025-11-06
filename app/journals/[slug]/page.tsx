@@ -5,11 +5,18 @@ import { notFound } from "next/navigation";
 
 import { getJournalEntries } from "@/lib/contentData";
 
-export const runtime = "edge";
-
 export type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+
+export async function generateStaticParams() {
+  const journals = await getJournalEntries();
+
+  return journals.map((entry) => ({
+    slug: entry.slug,
+  }));
+}
 
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
