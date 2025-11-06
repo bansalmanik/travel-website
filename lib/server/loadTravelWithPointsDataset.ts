@@ -1,112 +1,125 @@
 import { cache } from "react";
+import { headers } from "next/headers";
 
-type CloudflareKvNamespace = {
-  get(key: string, type?: "text"): Promise<string | null>;
-};
+import {
+  getFallbackDatasetPayload,
+  isTravelWithPointsDatasetKey,
+} from "./travelWithPointsKv";
 
-type GlobalWithMaybeEnv = typeof globalThis & {
-  __env__?: Record<string, unknown>;
-  __ENV__?: Record<string, unknown>;
-  __NEXT_ON_PAGES__?: { env?: Record<string, unknown> };
-  env?: Record<string, unknown>;
-};
-
-let detectedKvNamespace: CloudflareKvNamespace | null | undefined;
-
-function isKvNamespace(candidate: unknown): candidate is CloudflareKvNamespace {
-  return (
-    typeof candidate === "object" &&
-    candidate !== null &&
-    typeof (candidate as CloudflareKvNamespace).get === "function"
-  );
-}
-
-function resolveKvNamespace(): CloudflareKvNamespace | null {
-  if (detectedKvNamespace !== undefined) {
-    return detectedKvNamespace;
+function normalizeOrigin(candidate: string): string {
+  if (!candidate) {
+    return "";
   }
 
-  if (typeof globalThis !== "undefined") {
-    const globalWithEnv = globalThis as GlobalWithMaybeEnv;
-    const globalRecord = globalWithEnv as unknown as Record<string, unknown>;
-    const candidates: unknown[] = [
-      globalRecord["MilesGoRound"],
-      globalWithEnv.env?.["MilesGoRound"],
-      globalWithEnv.__env__?.["MilesGoRound"],
-      globalWithEnv.__ENV__?.["MilesGoRound"],
-      globalWithEnv.__NEXT_ON_PAGES__?.env?.["MilesGoRound"],
-    ];
+  const trimmed = candidate.trim();
+  if (!trimmed) {
+    return "";
+  }
 
-    for (const candidate of candidates) {
-      if (isKvNamespace(candidate)) {
-        detectedKvNamespace = candidate;
-        return candidate;
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed.replace(/\/$/, "");
+  }
+
+  return `https://${trimmed.replace(/\/$/, "")}`;
+}
+
+async function resolveDatasetApiOrigin(): Promise<string | null> {
+  if (typeof window !== "undefined") {
+    return "";
+  }
+
+  if (typeof process !== "undefined") {
+    const explicitEnv =
+      process.env.TRAVEL_WITH_POINTS_DATASET_API_ORIGIN ??
+      process.env.NEXT_PUBLIC_SITE_URL ??
+      process.env.SITE_URL ??
+      process.env.VERCEL_URL;
+
+    if (explicitEnv) {
+      const normalized = normalizeOrigin(explicitEnv);
+      if (normalized) {
+        return normalized;
       }
     }
   }
 
-  if (typeof process !== "undefined") {
-    const envRecord = (process as unknown as { env?: Record<string, unknown> }).env;
-    const candidate = envRecord?.["MilesGoRound"];
-    if (isKvNamespace(candidate)) {
-      detectedKvNamespace = candidate;
-      return candidate;
+  try {
+    const headerList = await Promise.resolve(headers());
+    const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
+    if (host) {
+      const protocol = headerList.get("x-forwarded-proto") ?? "https";
+      return `${protocol}://${host}`;
     }
+  } catch {
+    // headers() throws outside of a request context. We fall through to the
+    // environment-based fallbacks below.
   }
 
-  detectedKvNamespace = null;
+  if (typeof process !== "undefined" && process.env.NODE_ENV !== "production") {
+    return "http://127.0.0.1:3000";
+  }
+
   return null;
 }
 
-const fallbackPayloads: Record<string, string> = {
-  "bank-programs.json": JSON.stringify({ programs: [] }),
-  "credit-cards.json": JSON.stringify({ cards: [], cardStrategies: [], favoriteCombos: [] }),
-  "flight-programs.json": JSON.stringify({ programs: [], awardPlaybook: [], favoriteRoutes: [] }),
-  "hotel-programs.json": JSON.stringify({ programs: [], elitePaths: [], bookingTips: [] }),
-  "journals.json": JSON.stringify({ journals: [] }),
-  "points-conversion.json": JSON.stringify([]),
-};
-
 const loadDatasetText = cache(async (fileName: string): Promise<string> => {
-  if (!fileName) {
-    throw new Error("A dataset file name must be provided.");
+  if (!isTravelWithPointsDatasetKey(fileName)) {
+    throw new Error(`Unknown Travel with Points dataset: ${fileName}`);
   }
 
-  const kvNamespace = resolveKvNamespace();
-  if (kvNamespace) {
-    const response = await kvNamespace.get(fileName, "text");
+  if (typeof window !== "undefined") {
+    const response = await fetch(`/api/travel-with-points/${fileName}`);
+    if (!response.ok) {
+      throw new Error(
+        `Travel with Points dataset "${fileName}" request failed with status ${response.status}.`
+      );
+    }
 
-    if (typeof response === "string") {
-      return response;
+    return response.text();
+  }
+
+  const origin = await resolveDatasetApiOrigin();
+  if (!origin) {
+    const allowEmptyFallback = (() => {
+      if (typeof process === "undefined") {
+        return false;
+      }
+
+      const flag = process.env.TRAVEL_WITH_POINTS_ALLOW_EMPTY_DATA ?? "";
+      return flag === "1" || flag.toLowerCase() === "true";
+    })();
+
+    if (allowEmptyFallback || process.env.NODE_ENV !== "production") {
+      console.warn(
+        `Travel with Points dataset "${fileName}" falling back to an empty payload because the dataset API origin could not be determined.\n` +
+          "Ensure the application can compute a fully qualified URL for /api/travel-with-points."
+      );
+
+      return getFallbackDatasetPayload(fileName);
     }
 
     throw new Error(
-      `Travel with Points dataset "${fileName}" was not found in the MilesGoRound KV namespace.`
+      "Travel with Points dataset loader could not determine the API origin for /api/travel-with-points."
     );
   }
 
-  const nodeEnv = typeof process !== "undefined" ? process.env.NODE_ENV : undefined;
-  const allowEmptyFallback = (() => {
-    if (typeof process === "undefined") {
-      return false;
-    }
+  const response = await fetch(`${origin}/api/travel-with-points/${fileName}`, {
+    cache: "no-store",
+  });
 
-    const flag = process.env.TRAVEL_WITH_POINTS_ALLOW_EMPTY_DATA ?? "";
-    return flag === "1" || flag.toLowerCase() === "true";
-  })();
-
-  if (nodeEnv !== "production" || allowEmptyFallback) {
-    console.warn(
-      `Travel with Points dataset "${fileName}" falling back to an empty payload because the MilesGoRound KV binding is not available.\n` +
-        "Ensure the Cloudflare Pages project is configured with the MilesGoRound KV namespace."
+  if (response.status === 404) {
+    throw new Error(
+      `Travel with Points dataset "${fileName}" was not found. Ensure the ${fileName} key exists in the MilesGoRound KV namespace.`
     );
-
-    return fallbackPayloads[fileName] ?? "{}";
   }
 
-  throw new Error(
-    "Travel with Points dataset loader could not find the MilesGoRound KV binding."
-  );
+  if (!response.ok) {
+    throw new Error(
+      `Travel with Points dataset "${fileName}" request failed with status ${response.status}.`
+    );
+  }
+
+  return response.text();
 });
 
 export async function loadTravelWithPointsDataset<T>(fileName: string): Promise<T> {
