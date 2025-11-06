@@ -89,6 +89,55 @@ const loadDatasetText = cache(async (fileName: string): Promise<string> => {
       return flag === "1" || flag.toLowerCase() === "true";
     })();
 
+    try {
+      const routeModule = (await import(
+        "@/app/api/travel-with-points/[dataset]/route"
+      )) as typeof import("@/app/api/travel-with-points/[dataset]/route");
+
+      if (typeof routeModule.GET === "function") {
+        const params = Promise.resolve({ dataset: fileName });
+        const response = await routeModule.GET(
+          new Request(
+            `https://internal.miles/api/travel-with-points/${fileName}`
+          ),
+          { params }
+        );
+
+        if (response?.ok) {
+          return response.text();
+        }
+
+        if (response?.status === 404) {
+          throw new Error(
+            `Travel with Points dataset "${fileName}" was not found. Ensure the ${fileName} key exists in the MilesGoRound KV namespace.`
+          );
+        }
+
+        const status = response?.status ?? "unknown";
+        throw new Error(
+          `Travel with Points dataset "${fileName}" request failed with status ${status}.`
+        );
+      }
+    } catch (error) {
+      if (!(allowEmptyFallback || process.env.NODE_ENV !== "production")) {
+        if (error instanceof Error) {
+          throw error;
+        }
+
+        throw new Error(
+          "Travel with Points dataset loader could not determine the API origin for /api/travel-with-points."
+        );
+      }
+
+      console.warn(
+        `Travel with Points dataset "${fileName}" falling back to an empty payload because the dataset API origin could not be determined.\n` +
+          "Ensure the application can compute a fully qualified URL for /api/travel-with-points.",
+        error
+      );
+
+      return getFallbackDatasetPayload(fileName);
+    }
+
     if (allowEmptyFallback || process.env.NODE_ENV !== "production") {
       console.warn(
         `Travel with Points dataset "${fileName}" falling back to an empty payload because the dataset API origin could not be determined.\n` +
