@@ -18,12 +18,12 @@ import type {
 } from "@/app/travel-with-points/hotel-programs/types";
 import type { JournalDataset, JournalEntry } from "@/app/journals/types";
 import type { Conversion } from "@/app/pointsconversion/types";
+import { loadTravelWithPointsDataset } from "@/lib/server/loadTravelWithPointsDataset";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
 
 async function loadJsonData<T>(fileName: string): Promise<T> {
-    const data = await import(`@/data/${fileName}`);
-    return data.default as T;
+    return loadTravelWithPointsDataset<T>(fileName);
 }
 
 type ImageLike = { src: string };
