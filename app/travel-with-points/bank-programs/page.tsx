@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const runtime = "edge";
+export const dynamic = "force-static";
 
 export default async function BankProgramsPage() {
   const { programs } = await getBankProgramContent();

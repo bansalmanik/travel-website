@@ -6,11 +6,19 @@ import { notFound } from "next/navigation";
 import type { AnnualFee, Card } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
-export const runtime = "edge";
-
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateStaticParams() {
+  const { cards } = await getCreditCardContent();
+
+  return cards
+    .filter((card) => card.enabled !== false)
+    .map((card) => ({
+      slug: card.slug,
+    }));
+}
 
 async function getCard(slug: string): Promise<Card | null> {
   const decodedSlug = decodeURIComponent(slug);

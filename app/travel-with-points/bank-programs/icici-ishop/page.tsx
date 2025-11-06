@@ -7,8 +7,6 @@ const { generateMetadata, Page: IciciIshopPage } = makeBankProgramPage({
     "Unlock extra ICICI Bank rewards and cashback by routing purchases through the IShop partner marketplace.",
 });
 
-export const runtime = "edge"; // or "nodejs"
-
 export { generateMetadata };
 
 export default IciciIshopPage;

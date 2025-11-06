@@ -7,8 +7,6 @@ const { generateMetadata, Page: AxisTravelEdgePage } = makeBankProgramPage({
     "Learn how Axis Bank Travel Edge unlocks accelerated Edge Rewards on flights, hotels and everyday lifestyle partners.",
 });
 
-export const runtime = "edge"; // or "nodejs"
-
 export { generateMetadata };
 
 export default AxisTravelEdgePage;
