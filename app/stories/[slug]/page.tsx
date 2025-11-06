@@ -13,7 +13,6 @@ type StoryPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-
 export async function generateMetadata({ params }: StoryPageProps) {
   const { slug } = await params;
   const post = await getStoryBySlug(slug);

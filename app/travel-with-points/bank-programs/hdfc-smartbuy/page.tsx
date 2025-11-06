@@ -7,9 +7,6 @@ const { generateMetadata, Page: HdfcSmartbuyPage } = makeBankProgramPage({
         "Explore how HDFC Bank SmartBuy boosts rewards on flights, hotels, vouchers and online shopping.",
 });
 
-
-export const runtime = "edge"; // or "nodejs"
-
 export { generateMetadata };
 
 export default HdfcSmartbuyPage;

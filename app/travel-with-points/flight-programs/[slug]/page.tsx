@@ -6,6 +6,8 @@ import { FlightProgramSections } from "@/app/components/flight-program-sections"
 import type { FlightProgram } from "@/app/travel-with-points/flight-programs/types";
 import { getFlightProgramContent } from "@/lib/contentData";
 
+export const runtime = "edge";
+
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -15,8 +17,6 @@ async function getPrograms(): Promise<FlightProgram[]> {
 
   return programs;
 }
-
-export const runtime = "edge";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
