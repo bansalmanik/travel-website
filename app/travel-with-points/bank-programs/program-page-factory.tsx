@@ -5,7 +5,6 @@ import { notFound } from "next/navigation";
 
 import { BankProgramSections } from "@/app/components/bank-program-sections";
 import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
-import bankProgramsData from "@/data/bank-programs.json";
 import { getBankProgramContent } from "@/lib/contentData";
 
 type BankProgramPageConfig = {
@@ -25,14 +24,9 @@ export function makeBankProgramPage({
   fallbackName,
   fallbackSummary,
 }: BankProgramPageConfig): BankProgramPageDefinition {
-  const programsForMetadata = (bankProgramsData.programs ?? []) as BankProgram[];
-  const metadataProgram = programsForMetadata.find(
-    (program) => program.slug === slug && (program.enabled ?? true)
-  );
-
-  const programName = metadataProgram?.name ?? fallbackName;
+  const programName = fallbackName;
   const pageTitle = `${programName} | Bank Programs | Miles Go Round`;
-  const pageDescription = metadataProgram?.summary ?? fallbackSummary;
+  const pageDescription = fallbackSummary;
 
   const metadata: Metadata = {
     title: pageTitle,

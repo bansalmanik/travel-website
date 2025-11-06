@@ -1,4 +1,5 @@
 import { cache } from "react";
+import { headers } from "next/headers";
 
 import type {
     AwardPlaybookItem,
@@ -27,6 +28,40 @@ async function loadJsonData<T>(fileName: string): Promise<T> {
     const data = await import(`@/data/${fileName}`);
     return data.default as T;
 }
+
+const fetchBankPrograms = cache(async () => {
+    const headerList = headers();
+    const protocol = headerList.get("x-forwarded-proto") ?? "https";
+    const host =
+        headerList.get("x-forwarded-host") ?? headerList.get("host");
+    const fallbackBaseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+    const normalizedFallback = fallbackBaseUrl
+        ? fallbackBaseUrl.startsWith("http")
+            ? fallbackBaseUrl
+            : `https://${fallbackBaseUrl}`
+        : undefined;
+
+    const baseUrl = host ? `${protocol}://${host}` : normalizedFallback;
+
+    if (!baseUrl) {
+        throw new Error(
+            "Unable to determine base URL for bank program API route."
+        );
+    }
+
+    const response = await fetch(new URL("/api/bank-programs", baseUrl), {
+        cache: "no-store",
+    });
+
+    if (!response.ok) {
+        throw new Error(
+            `Failed to fetch bank programs (${response.status}).`
+        );
+    }
+
+    return (await response.json()) as { programs?: BankProgram[] };
+});
 
 type ImageLike = { src: string };
 
@@ -188,9 +223,7 @@ export async function getHotelProgramContent(): Promise<{
 export async function getBankProgramContent(): Promise<{
     programs: BankProgram[];
 }> {
-    const data = await loadJsonData<{ programs: BankProgram[] }>(
-        "bank-programs.json"
-    );
+    const data = await fetchBankPrograms();
 
     const programs = filterEnabled(data.programs ?? []).map((program) =>
         filterEnabledDeep(program)
