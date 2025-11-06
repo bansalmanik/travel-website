@@ -86,7 +86,12 @@ const loadDatasetText = cache(async (fileName: string): Promise<string> => {
       }
 
       const flag = process.env.TRAVEL_WITH_POINTS_ALLOW_EMPTY_DATA ?? "";
-      return flag === "1" || flag.toLowerCase() === "true";
+      if (flag === "1" || flag.toLowerCase() === "true") {
+        return true;
+      }
+
+      const phase = process.env.NEXT_PHASE ?? "";
+      return phase === "phase-production-build";
     })();
 
     try {
