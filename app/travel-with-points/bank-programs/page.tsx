@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { getBankProgramContent } from "@/lib/contentData";
+import { getBankProgramContent } from "@/lib/getBankProgramContent";
 
 const pageTitle = "Bank Programs | Miles Go Round";
 const pageDescription =
