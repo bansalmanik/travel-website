@@ -1,0 +1,187 @@
+{
+  "journals": [
+    {
+      "slug": "lagoon-life-in-the-maldives",
+      "title": "Lagoon Life in the Maldives",
+      "author": "Ana",
+      "summary": "Remote work mornings, reef-friendly afternoons, and sunset dhonis on Paradise Island.",
+      "seoDescription": "Ana shares a week of slow travel in the Maldives with lagoon swims, remote work mornings, and sunset dhoni rides.",
+      "publishedOn": "2024-05-18",
+      "displayDate": "May 18, 2024",
+      "readTime": "7 min read",
+      "heroImage": {
+        "src": "/images/content/maldives-3.jpg",
+        "alt": "Sunset sailboat drifting across a turquoise lagoon",
+        "caption": "The lagoon at golden hour outside our beach villa",
+        "enabled": true
+      },
+      "sections": [
+        {
+          "heading": "Morning Rhythm",
+          "body": [
+            "Most days started with the hush of the lagoon and the soft hum of the ceiling fan. I’d brew coffee, open the sliding doors, and let the sun flood the room while catching up on messages from home.",
+            "By nine I was settled with my laptop on the deck, alternating between stand-up calls and barefoot breaks in the sand. Beach villas make for surprisingly productive offices when the Wi-Fi is steady and there’s fresh fruit within reach."
+          ],
+          "image": {
+            "src": "/images/content/deck.JPG",
+            "alt": "Remote work setup on a deck overlooking the lagoon",
+            "caption": "Morning stand-up with a lagoon backdrop",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Reef-Friendly Afternoons",
+          "body": [
+            "After lunch we’d walk the island paths shaded by palms and hibiscus. Reef-safe sunscreen and a rash guard are non-negotiables; the equatorial sun means business.",
+            "Snorkeling past parrotfish and sleepy reef sharks made the case for moving slowly. Every afternoon ended with mocktails at the pool bar, a good book, and the kind of sunset that erases the rest of the to-do list."
+          ],
+          "image": {
+            "src": "/images/content/pool-2.jpg",
+            "alt": "Infinity pool looking out over overwater villas",
+            "caption": "Afternoon swims before the evening glow",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Dhoni Sunsets",
+          "body": [
+            "The resort runs an evening dhoni ride that felt more like a guided meditation than a boat trip. We drifted past neighboring islands while the crew pointed out constellations blinking on overhead.",
+            "Back on shore we’d rinse off the salt, tuck our gear away, and settle into beanbags on the sand for the nightly movie under the palms."
+          ],
+          "image": {
+            "src": "/images/content/private_beach.JPG",
+            "alt": "Traditional dhoni boat at sunset",
+            "caption": "Gliding home as the sky shifts from peach to indigo",
+            "enabled": true
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "slow-sundays-in-san-francisco",
+      "title": "Slow Sundays in San Francisco",
+      "author": "Ana",
+      "summary": "Cable car climbs, caf\u00e9 work sessions, and fog-draped runs across the Golden Gate.",
+      "seoDescription": "A work-and-wander weekend in San Francisco with Ferry Building breakfasts, Presidio trails, and evening jazz.",
+      "publishedOn": "2024-03-10",
+      "displayDate": "March 10, 2024",
+      "readTime": "6 min read",
+      "heroImage": {
+        "src": "/images/content/skyline.JPG",
+        "alt": "San Francisco skyline at blue hour",
+        "caption": "Blue hour settling over the Embarcadero",
+        "enabled": true
+      },
+      "sections": [
+        {
+          "heading": "Ferry Building Starts",
+          "body": [
+            "We based ourselves near the Ferry Building, which meant breakfast on the pier and a front-row seat to the Saturday farmers market.",
+            "I carved out two focused hours at a corner table inside Blue Bottle, headphones on and cappuccino in hand, before we wandered the stalls for picnic supplies."
+          ],
+          "image": {
+            "src": "/images/content/breakfast-sfo.jpeg",
+            "alt": "Coffee and pastries on a table at the Ferry Building",
+            "caption": "Fueling a productive morning by the bay",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Golden Gate Reset",
+          "body": [
+            "When the afternoon fog rolled in we laced up for a run across the Golden Gate Bridge. The wind was brisk, the views unreal, and the energy reset the rest of the day.",
+            "We cooled down at Crissy Field and watched kitesurfers trace bright arcs against the gray sky before heading back toward North Beach for a late lunch."
+          ],
+          "image": {
+            "src": "/images/content/GoldenGate.JPG",
+            "alt": "Runner pausing on the Golden Gate Bridge",
+            "caption": "Fog, wind, and a perfect runner's high",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Jazz and Nightcaps",
+          "body": [
+            "Sunday nights are for live jazz at Club Deluxe. We grabbed a corner booth, ordered Negronis, and let the horn section wrap up the weekend.",
+            "Back at the hotel, I reviewed Monday’s flight alerts before setting the phone on airplane mode. The city noise faded into the hallway and the lights of the Transamerica Pyramid blinked goodnight."
+          ],
+          "image": {
+            "src": "/images/content/citizenM-sfo.JPG",
+            "alt": "Hotel room overlooking San Francisco at night",
+            "caption": "City lights through rain-specked glass",
+            "enabled": true
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "annecy-alpine-escape",
+      "title": "Annecy Alpine Escape",
+      "author": "Ana",
+      "summary": "Market mornings, lakeside bike rides, and tartiflette-fueled coworking in the French Alps.",
+      "seoDescription": "Working remotely from Annecy with market hauls, lakeside cycling paths, and cozy tartiflette dinners.",
+      "publishedOn": "2023-11-04",
+      "displayDate": "November 4, 2023",
+      "readTime": "8 min read",
+      "heroImage": {
+        "src": "/images/content/photo-1476610182048--b3c8a3656880.svg",
+        "alt": "Canals of Annecy reflecting pastel buildings",
+        "caption": "Pastel facades mirrored in the Thiou canal",
+        "enabled": true
+      },
+      "sections": [
+        {
+          "heading": "Market-to-Desk",
+          "body": [
+            "Saturday markets crowd the old town with mountain cheese, sunflowers, and bakers selling still-warm baguettes. We stocked up, then walked the cobblestones back to our Airbnb loft overlooking the canal.",
+            "The afternoon belonged to spreadsheets and status docs with the windows cracked open to let in the accordion buskers below."
+          ],
+          "image": {
+            "src": "/images/content/photo-1500530855697-b586d89ba3ee.svg",
+            "alt": "Market stand in Annecy with cheese and flowers",
+            "caption": "Groceries that double as souvenirs",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Lakeside Laps",
+          "body": [
+            "Annecy’s bike path loops the lake in an effortless 35 kilometers. We rented e-bikes, packed a baguette, and cruised past sailboats, families, and rows of plane trees.",
+            "Halfway around we paused for a swim in water so clear you could count the pebbles. By sunset we were back in town with just enough time to upload photos before dinner."
+          ],
+          "image": {
+            "src": "/images/content/photo-1523285367489--b0b6cecd7646.svg",
+            "alt": "Cyclist riding along Lake Annecy",
+            "caption": "Easy miles with alpine views",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Cozy Evenings",
+          "body": [
+            "The chill settled in after dark, so we ducked into a bistro for tartiflette and vin chaud. Laptops stayed closed while we traded stories with the owner about winter on the slopes.",
+            "Back at the loft I set alarms for Monday’s meetings, packed my day bag, and watched the mist roll across the rooftops."
+          ],
+          "image": {
+            "src": "/images/content/photo-1524594154903--47e8d54b066d.svg",
+            "alt": "Cozy restaurant interior with warm lighting",
+            "caption": "Evenings warmed by tartiflette and friendly locals",
+            "enabled": true
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    }
+  ]
+}
