@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, type ReactElement } from "react";
 
 import type {
   BankProgramSection,
@@ -139,7 +139,7 @@ function renderContentBlocksSection(section: ContentBlocksSection) {
   );
 }
 
-function renderTableRow(row: TableRow, index: number) {
+function renderTableRow(row: TableRow, index: number): ReactElement | null {
   const hasContent = row.cells.some((cell) => cell.trim().length);
 
   if (!hasContent) {
@@ -192,7 +192,7 @@ function renderTableSection(section: TableSection) {
           <tbody className="divide-y divide-white/5">
             {section.table?.rows
               .map((row, index) => renderTableRow(row, index))
-              .filter((row): row is JSX.Element => row !== null)}
+              .filter((row): row is ReactElement => row !== null)}
           </tbody>
         </table>
       </div>
