@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { TravelGradientPage, TravelStack } from "@/app/travel-with-points/_shared/layout";
+
 const sections = [
   {
     title: "Points Conversion",
@@ -55,8 +57,8 @@ const quickTips = [
 
 export default function TravelWithPointsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 py-20 lg:py-28">
+    <TravelGradientPage className="via-slate-800">
+      <TravelStack className="max-w-5xl gap-16">
         <header className="space-y-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel with Points</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">
@@ -111,7 +113,7 @@ export default function TravelWithPointsPage() {
             </div>
           ))}
         </section>
-      </div>
-    </div>
+      </TravelStack>
+    </TravelGradientPage>
   );
 }

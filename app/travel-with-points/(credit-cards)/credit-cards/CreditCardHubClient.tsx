@@ -9,6 +9,11 @@ import type {
   CreditCardDataset,
   FavoriteCombo,
 } from "@/app/travel-with-points/(credit-cards)/credit-cards/types";
+import {
+  cx,
+  travelContentShell,
+  travelGradientBackground,
+} from "@/app/travel-with-points/_shared/styles";
 import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 import type { AnnualFee } from "@/app/travel-with-points/(credit-cards)/credit-cards/types";
@@ -74,8 +79,8 @@ export function CreditCardHubClient() {
 
   if (state.status === "loading") {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-        <div className="mx-auto flex max-w-4xl flex-col gap-6 px-6 py-20 lg:py-28">
+      <main className={travelGradientBackground}>
+        <div className={cx(travelContentShell, "gap-6")}> 
           <p className="text-sm text-slate-200/70">Loading credit card strategy…</p>
         </div>
       </main>
@@ -84,8 +89,13 @@ export function CreditCardHubClient() {
 
   if (state.status === "error") {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-        <div className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 lg:py-28">
+      <main className={travelGradientBackground}>
+        <div
+          className={cx(
+            "mx-auto flex max-w-3xl flex-col",
+            "gap-6 px-6 py-20 lg:py-28"
+          )}
+        >
           <h1 className="text-3xl font-semibold text-white">Unable to load cards</h1>
           <p className="text-sm text-slate-200/80">
             Something went wrong while loading the travel credit card hub. Please refresh to try again.
@@ -98,8 +108,8 @@ export function CreditCardHubClient() {
   const { cards, strategies, combos } = state;
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
+    <main className={travelGradientBackground}>
+      <div className={cx(travelContentShell, "gap-16")}> 
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel with Points</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">Credit card strategy</h1>

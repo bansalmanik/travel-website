@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { TravelGradientPage, TravelStack } from "@/app/travel-with-points/_shared/layout";
 import { getHotelProgramContent } from "@/lib/contentData";
 
 export const metadata: Metadata = {
@@ -23,8 +24,8 @@ export default async function HotelProgramsPage() {
     await getHotelProgramContent();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
+    <TravelGradientPage>
+      <TravelStack className="gap-16">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-300">Travel with Points</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">Hotel loyalty programs</h1>
@@ -116,7 +117,7 @@ export default async function HotelProgramsPage() {
             ))}
           </ul>
         </section>
-      </div>
-    </main>
+      </TravelStack>
+    </TravelGradientPage>
   );
 }

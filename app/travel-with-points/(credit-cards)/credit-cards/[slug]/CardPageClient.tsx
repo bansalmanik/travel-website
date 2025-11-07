@@ -12,12 +12,17 @@ import type {
   PremiumTravelCard,
   TieredMilesCard,
 } from "@/app/travel-with-points/(credit-cards)/credit-cards/types";
+import {
+  cx,
+  travelContentShell,
+  travelGradientBackground,
+} from "@/app/travel-with-points/_shared/styles";
 import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
 
 
 const loadingPage = (
-  <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-    <div className="mx-auto flex max-w-4xl flex-col gap-6 px-6 py-20 lg:py-28">
+  <main className={travelGradientBackground}>
+    <div className={cx(travelContentShell, "gap-6")}>
       <p className="text-sm text-slate-200/70">Loading card details…</p>
     </div>
   </main>
@@ -776,8 +781,13 @@ export function CardPageClient({ slug }: CardPageClientProps) {
 
   if (state.status === "missing") {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-        <div className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 lg:py-28">
+      <main className={travelGradientBackground}>
+        <div
+          className={cx(
+            "mx-auto flex max-w-3xl flex-col",
+            "gap-6 px-6 py-20 lg:py-28"
+          )}
+        >
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Credit card guide</p>
           <h1 className="text-3xl font-semibold text-white">Card not found</h1>
           <p className="text-sm text-slate-200/80">
@@ -808,8 +818,8 @@ export function CardPageClient({ slug }: CardPageClientProps) {
   const { card } = state;
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-20 lg:py-28">
+    <main className={travelGradientBackground}>
+      <div className={cx(travelContentShell, "gap-12")}>
         <nav className="text-xs uppercase tracking-[0.3em] text-slate-200/70">
           <Link href="/travel-with-points" className="hover:text-amber-300">
             Travel with Points

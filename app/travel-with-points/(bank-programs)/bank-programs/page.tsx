@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { ArrowLink } from "@/app/travel-with-points/_shared/arrow-link";
+import { TravelGradientPage, TravelStack } from "@/app/travel-with-points/_shared/layout";
 import { getBankProgramContent } from "@/lib/contentData";
 
 const pageTitle = "Bank Programs | Miles Go Round";
@@ -35,36 +37,27 @@ export default async function BankProgramsPage() {
 
   if (!visiblePrograms.length) {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-        <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 px-6 py-24 text-center lg:py-32">
+      <TravelGradientPage>
+        <TravelStack className="items-center gap-6 text-center lg:py-32">
           <h1 className="text-4xl font-semibold sm:text-5xl">Bank Programs</h1>
           <p className="text-base leading-7 text-slate-200/80">
             Our bank portal guides are being updated. Check back soon for the latest playbooks.
           </p>
-          <Link href="/travel-with-points" className="inline-flex items-center text-sm font-semibold text-amber-300">
-            <svg
-              aria-hidden
-              className="mr-2 h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M19 12H5" />
-              <path d="m12 5-7 7 7 7" />
-            </svg>
+          <ArrowLink
+            href="/travel-with-points"
+            direction="left"
+            accentClass="text-amber-300"
+          >
             Back to travel with points
-          </Link>
-        </div>
-      </main>
+          </ArrowLink>
+        </TravelStack>
+      </TravelGradientPage>
     );
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-24 text-center lg:py-32">
+    <TravelGradientPage>
+      <TravelStack className="gap-12 text-center lg:py-32">
         <span className="inline-flex items-center self-center rounded-full border border-rose-200/40 bg-rose-100/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-rose-200">
           Bank Programs
         </span>
@@ -104,23 +97,15 @@ export default async function BankProgramsPage() {
             </Link>
           ))}
         </div>
-        <Link href="/travel-with-points" className="inline-flex items-center self-center text-sm font-semibold text-amber-300">
-          <svg
-            aria-hidden
-            className="mr-2 h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M19 12H5" />
-            <path d="m12 5-7 7 7 7" />
-          </svg>
+        <ArrowLink
+          href="/travel-with-points"
+          direction="left"
+          accentClass="text-amber-300"
+          className="self-center"
+        >
           Back to travel with points
-        </Link>
-      </div>
-    </main>
+        </ArrowLink>
+      </TravelStack>
+    </TravelGradientPage>
   );
 }
