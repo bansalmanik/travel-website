@@ -6,14 +6,28 @@ type BankProgramsKV = {
   get(key: string): Promise<string | null>;
 };
 
-type RouteContext = {
-  env: {
-    BANK_PROGRAMS: BankProgramsKV;
-  };
+type RouteEnv = {
+  BANK_PROGRAMS: BankProgramsKV;
 };
 
-export async function GET(_request: NextRequest, { env }: RouteContext) {
-  const data = await env.BANK_PROGRAMS.get("bank-programs.json");
+type RouteContext = {
+  params: Promise<Record<string, string>>;
+  env?: RouteEnv;
+};
+
+export async function GET(
+  _request: NextRequest,
+  context: RouteContext
+): Promise<Response> {
+  const store = context.env?.BANK_PROGRAMS;
+
+  if (!store) {
+    return new Response("Bank programs store is not configured", {
+      status: 500
+    });
+  }
+
+  const data = await store.get("bank-programs.json");
 
   if (!data) {
     return new Response("Bank programs data not found", { status: 404 });

@@ -23,33 +23,62 @@ import type { JournalDataset, JournalEntry } from "@/app/journals/types";
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
+function getNormalizedFallbackBaseUrl(): string | undefined {
+    const fallbackBaseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
-async function loadJsonData<T>(fileName: string): Promise<T> {
-    const data = await import(`@/data/${fileName}`);
-    return data.default as T;
+    if (!fallbackBaseUrl) {
+        return undefined;
+    }
+
+    return fallbackBaseUrl.startsWith("http")
+        ? fallbackBaseUrl
+        : `https://${fallbackBaseUrl}`;
 }
 
-const fetchBankPrograms = cache(async () => {
-    const headerList = headers();
+async function resolveBaseUrl(): Promise<string | undefined> {
+    const headerList = await headers();
     const protocol = headerList.get("x-forwarded-proto") ?? "https";
     const host =
         headerList.get("x-forwarded-host") ?? headerList.get("host");
-    const fallbackBaseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
-    const normalizedFallback = fallbackBaseUrl
-        ? fallbackBaseUrl.startsWith("http")
-            ? fallbackBaseUrl
-            : `https://${fallbackBaseUrl}`
-        : undefined;
+    if (host) {
+        return `${protocol}://${host}`;
+    }
 
-    const baseUrl = host ? `${protocol}://${host}` : normalizedFallback;
+    return getNormalizedFallbackBaseUrl();
+}
+
+async function getBaseUrlOrThrow(context: string): Promise<string> {
+    const baseUrl = await resolveBaseUrl();
 
     if (!baseUrl) {
         throw new Error(
-            "Unable to determine base URL for bank program API route."
+            `Unable to determine base URL for ${context}. ` +
+                "Set NEXT_PUBLIC_SITE_URL to the deployed domain."
         );
     }
 
+    return baseUrl;
+}
+
+async function fetchJsonData<T>(fileName: string): Promise<T> {
+    const baseUrl = await getBaseUrlOrThrow("static data request");
+    const response = await fetch(new URL(`/data/${fileName}`, baseUrl), {
+        cache: "force-cache",
+        next: { revalidate: 60 * 60 },
+    });
+
+    if (!response.ok) {
+        throw new Error(
+            `Failed to fetch ${fileName} (${response.status}).`
+        );
+    }
+
+    return (await response.json()) as T;
+}
+
+const fetchBankPrograms = cache(async () => {
+    const baseUrl = await getBaseUrlOrThrow("bank program API route");
     const response = await fetch(new URL("/api/bank-programs", baseUrl), {
         cache: "no-store",
     });
@@ -94,7 +123,7 @@ async function resolveListSection(
 }
 
 export async function getJournalEntries(): Promise<JournalEntry[]> {
-    const data = await loadJsonData<JournalDataset>("journals.json");
+    const data = await fetchJsonData<JournalDataset>("journals.json");
     const journals = filterEnabled(data.journals).map((entry) =>
         filterEnabledDeep(entry)
     );
@@ -118,7 +147,9 @@ export async function getCreditCardContent(): Promise<{
     cardStrategies: CardStrategy[];
     favoriteCombos: FavoriteCombo[];
 }> {
-    const data = await loadJsonData<CreditCardDataset>("credit-cards.json");
+    const data = await fetchJsonData<CreditCardDataset>(
+        "credit-cards.json"
+    );
 
     const cards = filterEnabled(data.cards).map((card) => filterEnabledDeep(card));
 
@@ -149,7 +180,7 @@ export async function getFlightProgramContent(): Promise<{
     awardPlaybook: AwardPlaybookItem[];
     favoriteRoutes: FavoriteRoute[];
 }> {
-    const data = await loadJsonData<{
+    const data = await fetchJsonData<{
         programs: FlightProgram[];
         awardPlaybook: AwardPlaybookItem[];
         favoriteRoutes: FavoriteRoute[];
@@ -183,7 +214,7 @@ export async function getHotelProgramContent(): Promise<{
     elitePaths: ElitePath[];
     bookingTips: string[];
 }> {
-    const data = await loadJsonData<HotelDataset>("hotel-programs.json");
+    const data = await fetchJsonData<HotelDataset>("hotel-programs.json");
 
     const programs = filterEnabled(data.programs ?? []).map((program) =>
         filterEnabledDeep(program)
@@ -233,7 +264,7 @@ export async function getBankProgramContent(): Promise<{
 }
 
 export async function getPointsConversions(): Promise<Conversion[]> {
-    const data = await loadJsonData<Conversion[]>("points-conversion.json");
+    const data = await fetchJsonData<Conversion[]>("points-conversion.json");
     return filterEnabled(data).map((conversion) =>
         filterEnabledDeep(conversion)
     ) as Conversion[];
