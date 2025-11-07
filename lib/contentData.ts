@@ -4,20 +4,20 @@ import type {
     AwardPlaybookItem,
     FavoriteRoute,
     FlightProgram,
-} from "@/app/travel-with-points/flight-programs/types";
+} from "@/app/travel-with-points/(flight-programs)/flight-programs/types";
 import type {
     Card,
     CardStrategy,
     CreditCardDataset,
     FavoriteCombo,
-} from "@/app/travel-with-points/credit-cards/types";
+} from "@/app/travel-with-points/(credit-cards)/credit-cards/types";
 import type {
     ElitePath,
     HotelDataset,
     HotelProgram,
     ListSection,
-} from "@/app/travel-with-points/hotel-programs/types";
-import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
+} from "@/app/travel-with-points/(hotel-programs)/hotel-programs/types";
+import type { BankProgram } from "@/app/travel-with-points/(bank-programs)/bank-programs/types";
 import type { JournalDataset, JournalEntry } from "@/app/journals/types";
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";

@@ -9,7 +9,7 @@ import type {
   QuickFact,
   SectionImage,
   StatusLevelsSection
-} from "@/app/travel-with-points/hotel-programs/types";
+} from "@/app/travel-with-points/(hotel-programs)/hotel-programs/types";
 import { getHotelProgramContent } from "@/lib/contentData";
 
 type PageProps = {

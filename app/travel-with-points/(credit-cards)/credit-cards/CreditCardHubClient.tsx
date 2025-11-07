@@ -1,8 +1,33 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+'use client';
 
-import type { AnnualFee } from "@/app/travel-with-points/credit-cards/types";
-import { getCreditCardContent } from "@/lib/contentData";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+import type {
+  Card,
+  CardStrategy,
+  CreditCardDataset,
+  FavoriteCombo,
+} from "@/app/travel-with-points/(credit-cards)/credit-cards/types";
+import { filterEnabled, filterEnabledDeep } from "@/lib/filterEnabled";
+
+import type { AnnualFee } from "@/app/travel-with-points/(credit-cards)/credit-cards/types";
+
+type CreditCardHubState =
+  | { status: "loading" }
+  | { status: "ready"; cards: Card[]; strategies: CardStrategy[]; combos: FavoriteCombo[] }
+  | { status: "error" };
+
+async function loadCreditCardContent() {
+  const dataset = (await import("@/data/credit-cards.json")).default as CreditCardDataset;
+  const cards = filterEnabled(dataset.cards).map((card) => filterEnabledDeep(card)) as Card[];
+
+  return {
+    cards,
+    strategies: filterEnabled(dataset.cardStrategies),
+    combos: filterEnabled(dataset.favoriteCombos),
+  };
+}
 
 function formatAnnualFee(annualFee: AnnualFee) {
   const locale = annualFee.currency === "INR" ? "en-IN" : "en-US";
@@ -11,7 +36,7 @@ function formatAnnualFee(annualFee: AnnualFee) {
     style: "currency",
     currency: annualFee.currency,
     minimumFractionDigits: hasFraction ? 2 : 0,
-    maximumFractionDigits: hasFraction ? 2 : 0
+    maximumFractionDigits: hasFraction ? 2 : 0,
   });
   const fee = formatter.format(annualFee.amount);
 
@@ -22,25 +47,55 @@ function formatAnnualFee(annualFee: AnnualFee) {
   return fee;
 }
 
-export const metadata: Metadata = {
-  title: "Travel credit card strategy | Travel with Points",
-  description:
-    "Discover flexible currencies, card pairings, and smart earning tactics to maximize travel rewards with every swipe.",
-  keywords: [
-    "travel credit cards",
-    "points strategy",
-    "loyalty rewards",
-    "credit card combinations",
-    "transferable points"
-  ],
-  alternates: {
-    canonical: "/travel-with-points/credit-cards"
-  }
-};
+export function CreditCardHubClient() {
+  const [state, setState] = useState<CreditCardHubState>({ status: "loading" });
 
-export default async function CreditCardsPage() {
-  const { cards, cardStrategies, favoriteCombos } =
-    await getCreditCardContent();
+  useEffect(() => {
+    let cancelled = false;
+
+    loadCreditCardContent()
+      .then((data) => {
+        if (cancelled) {
+          return;
+        }
+
+        setState({ status: "ready", ...data });
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setState({ status: "error" });
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  if (state.status === "loading") {
+    return (
+      <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+        <div className="mx-auto flex max-w-4xl flex-col gap-6 px-6 py-20 lg:py-28">
+          <p className="text-sm text-slate-200/70">Loading credit card strategy…</p>
+        </div>
+      </main>
+    );
+  }
+
+  if (state.status === "error") {
+    return (
+      <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+        <div className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 lg:py-28">
+          <h1 className="text-3xl font-semibold text-white">Unable to load cards</h1>
+          <p className="text-sm text-slate-200/80">
+            Something went wrong while loading the travel credit card hub. Please refresh to try again.
+          </p>
+        </div>
+      </main>
+    );
+  }
+
+  const { cards, strategies, combos } = state;
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
@@ -49,12 +104,12 @@ export default async function CreditCardsPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel with Points</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">Credit card strategy</h1>
           <p className="text-base text-slate-200/80">
-            Focus on cards that earn flexible currencies, pair perks with your lifestyle, and keep an eye on welcome bonus rules.
-            The goal is to earn intentionally—not chase every shiny metal rectangle.
+            Focus on cards that earn flexible currencies, pair perks with your lifestyle, and keep an eye on welcome bonus
+            rules. The goal is to earn intentionally — not chase every shiny metal rectangle.
           </p>
         </header>
 
-        <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <section className="space-y-6">
           <h2 className="text-2xl font-semibold text-white">Featured travel credit cards</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {cards.map((card) => (
@@ -91,7 +146,7 @@ export default async function CreditCardsPage() {
                       {card.websiteDisplayTags.slice(0, 3).map((tag) => (
                         <li
                           key={tag}
-                          className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-200"
+                          className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200"
                         >
                           {tag}
                         </li>
@@ -128,10 +183,10 @@ export default async function CreditCardsPage() {
           </div>
         </section>
 
-        <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <section className="space-y-6">
           <h2 className="text-2xl font-semibold text-white">Core principles</h2>
           <div className="grid gap-6 md:grid-cols-3">
-            {cardStrategies.map((strategy) => (
+            {strategies.map((strategy) => (
               <article key={strategy.title} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
                 <h3 className="text-lg font-semibold text-white">{strategy.title}</h3>
                 <p className="text-sm leading-6 text-slate-100/80">{strategy.description}</p>
@@ -140,15 +195,13 @@ export default async function CreditCardsPage() {
           </div>
         </section>
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <section className="space-y-6">
           <h2 className="text-2xl font-semibold text-white">Starter card pairings</h2>
           <div className="space-y-6">
-            {favoriteCombos.map((combo) => (
+            {combos.map((combo) => (
               <article key={combo.name} className="space-y-2 rounded-2xl border border-white/10 bg-slate-900/60 p-6">
                 <h3 className="text-lg font-semibold text-white">{combo.name}</h3>
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">
-                  {combo.cards.join(" + ")}
-                </p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">{combo.cards.join(" + ")}</p>
                 <p className="text-sm leading-6 text-slate-100/80">{combo.note}</p>
               </article>
             ))}

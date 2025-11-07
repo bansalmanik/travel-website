@@ -6,7 +6,7 @@ import { useState } from "react";
 import type {
   ContentBlock,
   ProgramSection
-} from "@/app/travel-with-points/flight-programs/types";
+} from "@/app/travel-with-points/(flight-programs)/flight-programs/types";
 
 type FlightProgramSectionsProps = {
   sections: ProgramSection[];

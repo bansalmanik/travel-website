@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { FlightProgramSections } from "@/app/components/flight-program-sections";
-import type { FlightProgram } from "@/app/travel-with-points/flight-programs/types";
+import type { FlightProgram } from "@/app/travel-with-points/(flight-programs)/flight-programs/types";
 import { getFlightProgramContent } from "@/lib/contentData";
 
 type PageProps = {

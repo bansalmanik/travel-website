@@ -1,6 +1,6 @@
 "use client";
 
-import type { ContentBlock, ProgramSection } from "@/app/travel-with-points/bank-programs/types";
+import type { ContentBlock, ProgramSection } from "@/app/travel-with-points/(bank-programs)/bank-programs/types";
 
 type BankProgramSectionsProps = {
   sections: ProgramSection[];

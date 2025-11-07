@@ -5,7 +5,7 @@ import type {
   AwardPlaybookItem,
   FavoriteRoute,
   FlightProgram,
-} from "@/app/travel-with-points/flight-programs/types";
+} from "@/app/travel-with-points/(flight-programs)/flight-programs/types";
 import { getFlightProgramContent } from "@/lib/contentData";
 
 export const metadata: Metadata = {
