@@ -1,49 +1,5 @@
 [
   {
-    "slug": "spring-mornings-in-chitkul",
-    "title": "Spring Mornings in Chitkul's Cedar Air",
-    "excerpt": "Wake up to snow-dusted peaks, village chai, and riverside trails in India's last village on the Indo-Tibetan road.",
-    "author": "Akshita",
-    "date": "June 7, 2024",
-    "readTime": "6 min read",
-    "category": "India",
-    "city": "Chitkul",
-    "country": "India",
-    "coverImage": {
-      "src": "/images/content/20230408_143522.jpg",
-      "alt": "Morning sun touching snowy peaks above a Himalayan village"
-    },
-    "gallery": [
-      {
-        "src": "/images/content/20230408_143854.jpg",
-        "alt": "Basu River flowing past stone houses in Chitkul"
-      },
-      {
-        "src": "/images/content/20230408_132352.jpg",
-        "alt": "Prayer flags fluttering below Himalayan ridgeline"
-      },
-      {
-        "src": "/images/content/20231223_105939.jpg",
-        "alt": "Himalayan village footpath lined with cedar homes"
-      },
-      {
-        "src": "/images/content/photo-1521292270410--f29ffc531709.svg",
-        "alt": "Traveler crossing a wooden bridge over a turquoise river"
-      }
-    ],
-    "content": [
-      "The road to Chitkul twists through pine forests before spilling into a wide valley where wooden homes cling to terraced hillsides. Sunrise paints Kinnaur Kailash in copper while villagers gather at the lone bakery for butter tea.",
-      "I spent the morning following cedar-scented footpaths to the Baspa River. The meltwater rushes past smooth boulders, and every turn reveals apple orchards waking from winter. A local guide named Dorje shared stories of the Indo-Tibetan trade caravans that once crossed these ridges.",
-      "Afternoons are best for slow rambles to the village temple and nearby grazing meadows. Bring layers—the weather swings from sun to snow flurries in minutes—but stay long enough to watch twilight soak the valley in lavender light."
-    ],
-    "videoUrl": "https://www.youtube.com/embed/vQ8zGkwyj2M",
-    "highlights": [
-      "Catch the first light from the ridge above the village",
-      "Sample buckwheat bread and apricot jam from the lone bakery",
-      "Hire local guides for treks toward the Indo-Tibetan pass"
-    ]
-  },
-  {
     "slug": "lagoon-days-at-villa-nautica",
     "title": "Lagoon Days at Villa Nautica, Maldives",
     "excerpt": "December at Villa Nautica means festive palms, slow lagoon mornings, and sandbank sunsets that stretch time.",
@@ -380,91 +336,168 @@
     ]
   },
   {
-    "slug": "canal-days-in-annecy",
-    "title": "Canal Days in Annecy, France",
+    "slug": "French-Escapade",
+    "title": "French Escapade",
     "excerpt": "Glide through alpine canals, sip Savoyard wines, and cycle lakeside paths in the Venice of the Alps.",
-    "author": "Manik",
+    "author": "Akshita",
     "date": "March 19, 2024",
     "readTime": "6 min read",
     "category": "France",
     "city": "Annecy",
     "country": "France",
     "coverImage": {
-      "src": "/images/content/photo-1505761671935-60b3a7427bad.svg",
+      "src": "/images/content/anncy-cover.JPG",
       "alt": "Colorful houses lining a canal in Annecy"
     },
     "gallery": [
       {
-        "src": "/images/content/photo-1439066615861-d1af74d74000.svg",
+        "src": "/images/content/france-1-6.JPG",
         "alt": "Cyclists on a path beside Lake Annecy"
       },
       {
-        "src": "/images/content/photo-1441974231531-c6227db76b6e.svg",
+        "src": "/images/content/france-1-3.JPG",
         "alt": "Outdoor café with cheese fondue in Annecy"
       },
       {
-        "src": "/images/content/photo-1528909514045-406e194c93d3.svg",
+        "src": "/images/content/france-1-4.JPG",
         "alt": "Pastel sunset over Lake Annecy with boats anchored nearby"
       },
       {
-        "src": "/images/content/photo-1527169402691-6d31811e54c5.svg",
+        "src": "/images/content/france-1-5.JPG",
+        "alt": "Traveler walking through stone archway in Annecy old town"
+      },
+      {
+        "src": "/images/content/france-1-2.JPG",
+        "alt": "Pastel sunset over Lake Annecy with boats anchored nearby"
+      },
+      {
+        "src": "/images/content/france-1-1.JPG",
         "alt": "Traveler walking through stone archway in Annecy old town"
       }
     ],
-    "content": [
-      "Annecy’s old town wakes up slowly with shutters opening above flower-laced canals. I grabbed a still-warm baguette and wandered under pastel arcades until the markets buzzed with cheesemongers and perfumed lavender stalls.",
-      "Renting a bike is the easiest way to explore beyond the medieval core. The lakeside Voie Verte stretches for miles, offering alpine panoramas and tempting stops for swims at sandy coves.",
-      "Evenings call for fondue in a candlelit bistro and a stroll to Palais de l’Isle. As dusk deepens, the surrounding peaks mirror in the water, reminding you why the town is nicknamed the Venice of the Alps."
-    ],
-    "videoUrl": "https://www.youtube.com/embed/zDlqzTeWY5A",
-    "highlights": [
-      "Browse the Tuesday farmers market for Tomme de Savoie",
-      "Rent bikes early for a relaxed ride along the lake",
-      "Book a sunset paddleboard session for pastel reflections"
-    ]
-  },
-  {
-    "slug": "summits-and-stargaze-lahaul",
-    "title": "Summits and Stargaze in Lahaul Valley",
-    "excerpt": "Cross high passes, discover monasteries, and camp beneath constellations in Himachal's wild heart.",
-    "author": "Akshita",
-    "date": "February 11, 2024",
-    "readTime": "9 min read",
-    "category": "India",
-    "city": "Lahaul Valley",
-    "country": "India",
-    "coverImage": {
-      "src": "/images/content/photo-1469474968028-c0c38f4b88f2.svg",
-      "alt": "Mountain valley with winding road under starry sky"
-    },
-    "gallery": [
+    "sections": [
       {
-        "src": "/images/content/photo-1477587458883-47145ed94245.svg",
-        "alt": "High mountain road leading to Keylong"
+        "id": "grenoble",
+        "paragraphs": [
+          "Grenoble felt alive the moment we arrived—trams gliding past café terraces, conversations spilling onto sidewalks, and the skyline always trimmed by mountains. Its French aesthetic shows up in chapel spires, church façades, and stone bridges, but the mood is modern and energetic. We stayed here and let the city set the tempo: markets in the morning, riverside walks in the afternoon, church bells threading through the noise."
+        ],
+        "media": [
+          {
+            "src": "/images/content/grenoble-2.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
       },
       {
-        "src": "/images/content/photo-1500530855697-b586d89ba3ee.svg",
-        "alt": "Camping tent glowing under Milky Way"
+        "id": "grenoble-cafe",
+        "paragraphs": [
+          "Down the side streets, we found stained-glass quiet next to street art, and little moments where the past and present shook hands—an old doorway, a sleek café, a view that ends in blue peaks."
+        ],
+        "media": [
+          {
+            "src": "/images/content/grenoble-cover.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
       },
       {
-        "src": "/images/content/photo-1426604966848-e37abe0c5c06.svg",
-        "alt": "River valley framed by towering Himalayan cliffs"
+        "id": "anecy",
+        "paragraphs": [
+          "Annecy is about a couple of hours’ drive from Grenoble and the drive is simply exquisite with French countryside passing by your window.",
+          "Annecy really is a kind of French Venice—canals under flower-dressed balconies, bridges that beg for one more photo, and the lake stealing the show from every angle. The streets are wonderfully walkable and almost too pretty, like stepping into one of my medieval-set novels—only here the interiors have been gently modernized while the surfaces keep their timeless spell."
+        ],
+        "media": [
+          {
+            "src": "/images/content/annecy1.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
       },
       {
-        "src": "/images/content/photo-1520256862855-0d09ea8ba8cb.svg",
-        "alt": "Yak caravan crossing a rocky alpine meadow"
+        "id": "annecy",
+        "paragraphs": [
+          "We wandered from pastel lanes to the water’s edge and found the man-made beach: an easy pause where you can sit, watch the light change on the lake, and feel the Alps framing the horizon."
+        ],
+        "media": [
+          {
+            "src": "/images/content/annecy-2.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "ice-cream",
+        "paragraphs": [
+          "Between gelato stops and lazy canal crossings, Annecy felt like a place designed for lingering—reflections, cobbles, and glimpses of mountains that make even short walks feel like scenes."
+        ],
+        "media": [
+          {
+            "src": "/images/content/annecy-sardin.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/annecy-gelato.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }
+        ]
+      },
+      {
+        "id": "shopping",
+        "paragraphs": [
+          "Chambéry shifted the tone from postcard to page-turner. The museum set inside a former castle holds rooms that feel like arrested time: glass cases with objects people once used, wore, read, and repaired. We’ve met them in books; here they felt as real as we are, just living on another chapter."
+        ],
+        "media": [
+          {
+            "src": "/images/content/chambery-1.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/chambery-2.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }
+        ]
+      },
+
+      {
+        "id": "chambery - 2",
+        "paragraphs": [
+          "Corridors echo softly, courtyards hold their breath, and labels add small anchors to big stories. Behind the glass, daily life shows up in stubborn detail—tools polished by hands, fabrics softened by years—proof that history isn’t distant, only paused."
+        ],
+        "media": [
+          {
+            "src": "/images/content/chambery-3.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+
+      {
+        "id": "chambery - 3",
+        "paragraphs": [
+          "The road trip from Grenoble to Chambéry and Annecy is picturesque. The memories sit like postcard impressions in my mind. Grenoble brings bustle and views; Annecy adds light, water, and that lived-in fairytale feel; Chambéry lends the weight of memory. Together they form a quiet progression—city energy, lakeside calm, and a deliberate walk through time—with the Alps never far from view."
+        ],
+        "media": [
+          {
+            "src": "/images/content/chambery-4.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
       }
     ],
-    "content": [
-      "Lahaul Valley opens after crossing the Atal Tunnel, revealing stark mountains that guard villages of whitewashed homes. I arrived during late winter when the snow still dusted the roofs, and the air smelled of juniper smoke.",
-      "Days were spent visiting monasteries like Kardang and Shashur, where monks shared butter tea and stories of ancient trade routes. Trekkers prepared for multi-day journeys to Chandratal and beyond, but even short hikes rewarded us with sweeping views and frozen waterfalls.",
-      "My favorite memory was camping near Jispa. The night sky exploded with stars, the Milky Way arching overhead as yaks grazed silently nearby. Pack warm gear and respect the altitude; acclimatization days are essential here."
-    ],
-    "videoUrl": "https://www.youtube.com/embed/C9F9IJgBVA0",
     "highlights": [
-      "Acclimatize in Keylong before attempting higher passes",
-      "Carry reusable bottles and refill at village spring taps",
-      "Stay out late for unmatched stargazing on clear nights"
+      "Ride a cable car early to avoid lines and catch the best views",
+      "Sample mission-style burritos and third-wave coffee on Valencia Street",
+      "Time Lands End hike with sunset for golden light over the bridge"
     ]
   }
 ]
