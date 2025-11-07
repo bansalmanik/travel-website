@@ -1,5 +1,6 @@
 import { cache } from "react";
 
+import type { BankProgram, BankProgramDataset } from "@/app/travel-with-points/bank-programs/types";
 import type {
     AwardPlaybookItem,
     FavoriteRoute,
@@ -139,6 +140,20 @@ export async function getFlightProgramContent(): Promise<{
         programs: programsWithImages,
         awardPlaybook: filterEnabled(data.awardPlaybook),
         favoriteRoutes: filterEnabled(data.favoriteRoutes),
+    };
+}
+
+export async function getBankProgramContent(): Promise<{
+    programs: BankProgram[];
+}> {
+    const data = await loadJsonData<BankProgramDataset>("bank-programs.json");
+
+    const programs = filterEnabled(data.programs).map((program) =>
+        filterEnabledDeep(program)
+    );
+
+    return {
+        programs,
     };
 }
 
