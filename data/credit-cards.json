@@ -158,7 +158,7 @@
           "alt": "Axis Bank Atlas Credit Card"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -326,7 +326,7 @@
         "Flight Vouchers",
         "Dining Discounts"
       ],
-      "enabled": false
+      "enabled": true
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -548,7 +548,7 @@
         "Hotel & Airline Rewards",
         "Dining & Lifestyle Benefits"
       ],
-      "enabled": false
+      "enabled": true
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -755,7 +755,7 @@
           "EMI options on eligible purchases"
         ]
       },
-      "enabled": false
+      "enabled": true
     }
   ],
   "cardStrategies": [
