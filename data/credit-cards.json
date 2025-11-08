@@ -22,9 +22,9 @@
         "High Rewards on Travel"
       ],
       "keyHighlights": [
-        "Earn EDGE Miles faster on travel with built-in tier upgrades",
-        "Share generous lounge visits with accompanying guests",
-        "Transfer EDGE Miles to airlines and hotels for outsized value"
+        "4% valueback on everyday spends (≈8% via Accor)",
+        "10% valueback when booking direct with hotels & airlines or Axis Travel EDGE (≈20% via Accor)",
+        "Strong milestone perks for high spenders"
       ],
       "media": {
         "cardImage": {
@@ -37,42 +37,17 @@
           "id": "welcome-annual-renewal",
           "title": "Welcome, annual & renewal benefits",
           "content": {
+            "bullets": [
+              "Welcome benefit of 2500 Edge Miles when you pay annual fee and make 1st transaction",
+              "There is no renewal fee wavier but you get renewal benefits on reaching certain spend threshold"
+            ],
             "paragraphs": [
               "Atlas issues milestone EDGE Miles as soon as you activate the card and again when you renew for another year."
-            ],
-            "bullets": [
-              "Miles typically post within 7 days of the qualifying transaction.",
-              "Welcome awards apply only on paid variants."
-            ],
-            "table": {
-              "caption": "Activation timeline",
-              "columns": [
-                "Window",
-                "Miles awarded",
-                "Requirement"
-              ],
-              "rows": [
-                [
-                  "From 20 Apr 2024",
-                  "2,500 EDGE Miles",
-                  "Complete 1 transaction within 37 days of issuance"
-                ],
-                [
-                  "20 Dec 2022 – 19 Apr 2024",
-                  "5,000 EDGE Miles",
-                  "Complete 1 transaction within 30 days of issuance"
-                ],
-                [
-                  "Before 20 Dec 2022",
-                  "5,000 EDGE Miles",
-                  "Complete 3 transactions within 60 days of issuance"
-                ]
-              ]
-            }
+            ]
           },
           "subsections": [
             {
-              "title": "Renewal miles by tier",
+              "title": "Renewal miles benefit by tier",
               "content": {
                 "table": {
                   "columns": [
@@ -138,9 +113,9 @@
               "Redeem EDGE Miles for flights, hotels or experiences, or move them to airline and hotel partners when a sweet spot appears."
             ],
             "bullets": [
-              "Flights, hotels, experiences via Axis Travel EDGE",
-              "Airline mile transfers",
-              "Hotel point transfers"
+              "Redeem on Travel Edge portal: 1 Edge Mile = ₹1",
+              "Trasnfer to Airlines miles at 1 Edge Mile = 2 Airline Miles",
+              "Trasnfer to Hotel points at 1 Edge Mile = 2 Hotel points(except marriot which is 2:1)"
             ],
             "table": {
               "columns": [
@@ -149,7 +124,7 @@
               ],
               "rows": [
                 [
-                  "Annual transfer limit",
+                  "Annual Miles transfer limit",
                   "1,50,000 EDGE Miles"
                 ],
                 [
@@ -232,9 +207,6 @@
           "id": "lounge-access",
           "title": "Lounge access",
           "content": {
-            "paragraphs": [
-              "Share lounge access with travelling companions using the generous visit pool."
-            ],
             "table": {
               "columns": [
                 "Tier",
@@ -260,19 +232,20 @@
               ]
             },
             "bullets": [
-              "Guest access is included; visits are shared across the pool.",
-              "Swipe the card at partner lounges to enter."
+              "Guest access if any is included.",
+              "Swipe the card at partner lounges to enter",
+              "International Lounges can now be accessed with digital priority pass also"
             ]
           }
         },
         {
           "id": "program-notes",
-          "title": "Program notes",
+          "title": "Notes",
           "content": {
             "bullets": [
-              "EDGE Miles are not encashable.",
-              "Tier spend exclusions mirror the earning exclusions.",
-              "Track spends on a card-anniversary basis for milestone evaluation."
+              "Accor is the sweet spot for redemption with 8% base redmption value.",
+              "Exceptional returns when swiping directly on Hotel and Airline, both online and offline.",
+              "Travel aggregators like MakeMyTrip and Goibibo do not earn accelerated Edge Miles"
             ]
           }
         }
