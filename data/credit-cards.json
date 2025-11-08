@@ -41,7 +41,7 @@
       },
       "rewards": {
         "currency": "EDGE Miles",
-        "conversion": "1 EDGE Mile = ~₹1",
+        "conversion": "1 EDGE Mile = 2 Partner Miles (Except Marriott)",
         "earnRate": {
           "travelSpends": {
             "rate": "5 EDGE Miles / ₹100",
@@ -154,7 +154,7 @@
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/axis-atlas-card.svg",
+          "src": "/images/cards/Axis-Bank-Atlas-Credit-Card.WEBP",
           "alt": "Axis Bank Atlas Credit Card"
         }
       },
