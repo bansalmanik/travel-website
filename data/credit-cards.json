@@ -811,7 +811,7 @@
       "name": "American Express® Platinum Travel Credit Card",
       "issuer": "American Express Banking Corp.",
       "network": "American Express",
-      "type": "Travel Rewards Credit Card",
+      "type": "Milestone Card",
       "summary": "Milestone-driven Membership Rewards card that unlocks Taj travel vouchers, domestic lounge visits, and concierge-backed support for frequent flyers.",
       "seoDescription": "Maximize Membership Rewards with the American Express Platinum Travel Credit Card. Learn how milestone bonuses, Taj vouchers, and lounge access combine to elevate your travel strategy.",
       "annualFee": {
@@ -820,14 +820,13 @@
         "gstApplicable": true
       },
       "rewardsCurrency": "Membership Rewards® points",
-      "conversion": "1 MR = ₹0.25 or more when redeemed via the Platinum Travel Collection",
       "websiteDisplayTags": [
         "Travel Vouchers",
         "Milestone Rewards",
         "Domestic Lounge Access"
       ],
       "keyHighlights": [
-        "₹10,000 Taj Experiences e-gift card plus 25K MR after ₹4 lakh annual milestone",
+        "₹10,000 Taj Experiences e-gift card plus 40K MR after ₹4 lakh annual milestone",
         "Membership Rewards never expire while the account remains in good standing"
       ],
       "media": {
@@ -858,10 +857,6 @@
                   [
                     "Spend ₹15,000 within 90 days",
                     "10,000 Membership Rewards points"
-                  ],
-                  [
-                    "Annual fee",
-                    "₹5,000 + GST"
                   ]
                 ]
               }
@@ -905,19 +900,6 @@
           "title": "Reward earning",
           "content": [
             {
-              "type": "paragraphs",
-              "paragraphs": [
-                "Membership Rewards accrue at a steady pace across everyday spends, ready for travel conversions."
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "No accelerated earn categories keep tracking simple.",
-                "Exclusions: fuel, insurance, utilities, cash transactions, and in-store EMI conversions."
-              ]
-            },
-            {
               "type": "table",
               "table": {
                 "columns": [
@@ -928,9 +910,25 @@
                   [
                     "Eligible card purchases",
                     "1 MR / ₹50"
+                  ],
+                  [
+                    "Amex Reward Multiplier",
+                    "3 MR / ₹50"
                   ]
                 ]
               }
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Most people treat this as a Milestone Card to epnd 4,00,00 in card anniversery year."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Exclusions: fuel, insurance, utilities, cash transactions, and in-store EMI conversions."
+              ]
             }
           ]
         },
@@ -941,15 +939,15 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "Redeem through the Platinum Travel Collection or Pay with Points on Amex Travel Online for consistent ₹0.25+ value per MR."
+                "Marriot is the sweet spot for redemption with 1:1 conversion ratio."
               ]
             },
             {
               "type": "bullets",
               "bullets": [
-                "Use points for domestic or international flights and hotels via Amex Travel Online.",
-                "Convert milestone bonuses into Taj stays, dining, or spa experiences.",
-                "Points never expire while the account stays active and in good standing."
+                "Convert MR points to Airline Miles at 2:1 ratio.",
+                "Convert MR points to Marriot points at 1:1 ratio.",
+                "Convert MR points to other Hotel chain points at 2:1 ratio."
               ]
             }
           ]
@@ -958,13 +956,6 @@
           "id": "lounge-access",
           "title": "Lounge access",
           "content": [
-            {
-              "type": "bullets",
-              "bullets": [
-                "Expect a ₹2 authorization swipe at participating lounges for entry.",
-                "Priority Pass benefits follow program terms; guest visits are chargeable."
-              ]
-            },
             {
               "type": "table",
               "table": {
@@ -1007,20 +998,156 @@
       "enabled": true,
       "applyNow": {
         "url": "https://www.americanexpress.com/in/credit-cards/platinum-travel/",
-        "label": "Apply with American Express",
+        "label": "Apply Now",
         "disclaimer": "American Express India will provide the full application details."
       }
+    },
+    {
+      "slug": "scapia-credit-card",
+      "name": "Scapia Credit Card",
+      "issuer": "Federal Bank",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "A zero-forex, UPI-friendly travel card that earns Scapia Coins on every spend and converts them into flight and hotel discounts.",
+      "seoDescription": "Make travel more rewarding with the Scapia Credit Card by Federal Bank. Earn Scapia Coins on UPI, flights, hotels, and daily spends while enjoying zero-forex markup and milestone vouchers.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "INR",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Scapia Coins",
+      "websiteDisplayTags": [
+        "UPI Rewards",
+        "Travel Discounts",
+        "Zero Forex Markup"
+      ],
+      "keyHighlights": [
+        "UPI payments via Rupay earn Scapia Coins on everyday spends",
+        "Zero foreign exchange markup for international travel",
+        "Fast, app-first redemption for flights and hotels"
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/scapia.AVIF",
+          "alt": "Scapia Credit Card"
+        }
+      },
+      "detailSections": [
+        {
+          "id": "welcome-annual-renewal",
+          "title": "Welcome, annual & renewal benefits",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Scapia keeps things simple with a lifetime-free structure and instant card issuance through the app."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Get 1000 Scapia Coins on joining through our link."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reward-earning",
+          "title": "Reward earning",
+          "content": [
+            {
+              "type": "table",
+              "table": {
+                "columns": [ "Spend type", "Earn rate", "Return Rate" ],
+                "rows": [
+                  [ "UPI payments", "5% Scapia Coins", "1%" ],
+                  [ "Online & offline spends", "10% Scapia Coins", "2%" ],
+                  [ "Scapia app bookings", "20 % Scapia Coins", "4%" ]
+                ]
+              }
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "No rewards on rent, wallet loads, fuel, and other restricted categories."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "redemption-options",
+          "title": "Redemption options",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Scapia Coins can be redeemed directly in the Scapia app for flight and hotel bookings.",
+                "Redemptions provide instant discounts rather than transfer partners."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Redeem Coins for flights across major airlines within the app.",
+                "Use Coins for domestic and international hotel stays."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "travel-benefits",
+          "title": "Unmatched Travel Benefits",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "If you spend 10,000 in a month you unlock following benefits for next month."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Unlimited Lounge  Access.",
+                "100% cashback on shopping/dining at airports upto 1000 per airport vist.",
+                "You can also choose to get a spa at airport.",
+                "Please note that you can choose only 1 from above listed benefits per Airport departure."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Best Startegy is to get Lounge access using a different card and use Scapia for shopping."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "travel-support",
+          "title": "Travel support & protections",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Zero forex markup on international transactions.",
+                "You get both Visa and Rupay variant of the card."
+              ]
+            }
+          ]
+        }
+      ],
+      "enabled": true,
+      "applyNow": {
+        "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
+        "label": "Apply Now       ",
+        "disclaimer": "You will get 1000 scapia coins on joining using our referall. Click Apply Now to join using our referall."
+      }
     }
+
   ],
   "cardStrategies": [
     {
       "title": "Lead with transferable currencies",
       "description": "Choose cards whose rewards move into multiple airline and hotel partners so you can chase the best sweet spots without being locked in.",
-      "enabled": true
-    },
-    {
-      "title": "Layer milestone timelines",
-      "description": "Stack welcome, quarterly, and annual milestones from different cards so a single purchase can unlock multiple bonuses.",
       "enabled": true
     },
     {
@@ -1031,30 +1158,27 @@
   ],
   "favoriteCombos": [
     {
-      "name": "Weekend getaway duo",
+      "name": "Best Starter Travel Card",
       "cards": [
-        "Axis Bank Atlas Credit Card",
-        "HDFC Bank Regalia Gold Credit Card"
+        "HSBC Travel One"
       ],
-      "note": "Atlas handles EDGE Miles transfers while Regalia Gold layers on quarterly stay vouchers and extra lounge visits.",
+      "note": "With HSBC Travel One you get handsom return when making Flight and Hotel Bookings through HSBC Market Place platform. HSBC has a very extensive list of Airline and Hotel partners which make burning easy",
       "enabled": true
     },
     {
-      "name": "Global explorer stack",
+      "name": "Best All Rounder Travel Card",
       "cards": [
-        "HSBC TravelOne Credit Card",
-        "Axis Bank Atlas Credit Card"
+        "Axis Atlas Credit Card"
       ],
-      "note": "Pair instant airline transfers from TravelOne with Atlas tier perks to cover both domestic and overseas trips.",
+      "note": "With atlas you get very good base earning rate of 4% and 10% on travel category. This is an all rounder card and our absolute favourate. Sadly Axis has stopped issuing this card.",
       "enabled": true
     },
     {
-      "name": "Voucher maximiser",
+      "name": "Best Starter Card for non travellers",
       "cards": [
-        "American Express® Platinum Travel Credit Card",
-        "HDFC Bank Regalia Gold Credit Card"
+        "American Express® Platinum Travel Credit Card"
       ],
-      "note": "Use Amex for high-value Taj vouchers and MR points while Regalia Gold fills gaps with SmartBuy redemptions.",
+      "note": "Amex Platinum travel gives 40,000 points and a 10,000 Taj Voucher on spending 4,00,000 in a year. If you don't spend on travel too much but still want to earn good points in everyday spend then this is the card for you'.",
       "enabled": true
     }
   ]
