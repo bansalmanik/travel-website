@@ -10,6 +10,8 @@ import type {
   CardSection,
   CardSubSection,
   CardApplyNow,
+  CardDetailBlock,
+  CardApplyNowBlock,
   RichContent,
   RichContentBlock,
   SectionImage
@@ -309,6 +311,10 @@ function CardImageSection({ image }: { image: SectionImage }) {
   );
 }
 
+function isApplyNowBlock(block: CardDetailBlock): block is CardApplyNowBlock {
+  return "component" in block && block.component === "applyNow";
+}
+
 function CardDetailSections({ card }: { card: Card }) {
   if (!card.detailSections?.length) {
     return null;
@@ -317,9 +323,18 @@ function CardDetailSections({ card }: { card: Card }) {
   return (
     <div className="flex flex-col gap-8">
       <CardSnapshot card={card} />
-      {card.detailSections.map((section) => (
-        <SectionRenderer key={section.id} section={section} />
-      ))}
+      {card.detailSections.map((section, index) => {
+        if (isApplyNowBlock(section)) {
+          return (
+            <ApplyNowSection
+              key={`apply-now-${index}`}
+              applyNow={section.applyNow}
+            />
+          );
+        }
+
+        return <SectionRenderer key={section.id} section={section} />;
+      })}
     </div>
   );
 }
@@ -461,8 +476,6 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
 
         <CardDetailSections card={card} />
-
-        {card.applyNow ? <ApplyNowSection applyNow={card.applyNow} /> : null}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Ready for more cards?</p>

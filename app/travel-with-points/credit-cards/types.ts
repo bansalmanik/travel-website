@@ -62,6 +62,14 @@ export type CardApplyNow = {
   disclaimer?: string;
 };
 
+export type CardApplyNowBlock = {
+  component: "applyNow";
+  applyNow: CardApplyNow;
+  enabled?: boolean;
+};
+
+export type CardDetailBlock = CardSection | CardApplyNowBlock;
+
 export type Card = {
   slug: string;
   name: string;
@@ -76,8 +84,7 @@ export type Card = {
   websiteDisplayTags?: string[];
   keyHighlights?: string[];
   media?: CardMedia;
-  detailSections?: CardSection[];
-  applyNow?: CardApplyNow;
+  detailSections?: CardDetailBlock[];
   enabled?: boolean;
 };
 
