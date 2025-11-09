@@ -50,8 +50,8 @@ export default async function CreditCardsPage() {
           <h1 className="text-4xl font-semibold sm:text-5xl">Credit card strategy</h1>
           <p className="text-base text-slate-200/80">
             Focus on cards that earn flexible currencies, pair perks with your lifestyle, and keep an eye on welcome bonus rules.
-            The goal is to earn intentionally—not chase every shiny metal rectangle.
-          </p>
+            </p>
+          <p className="text-base text-slate-200/80">A focused setup earns faster, redeems better, and avoids orphaned points.</p>
         </header>
 
         <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
@@ -77,27 +77,7 @@ export default async function CreditCardsPage() {
                       <dt className="font-semibold text-white">Annual fee</dt>
                       <dd>{formatAnnualFee(card.annualFee)}</dd>
                     </div>
-                    <div>
-                      <dt className="font-semibold text-white">Network</dt>
-                      <dd>{card.network}</dd>
-                    </div>
-                    <div>
-                      <dt className="font-semibold text-white">Card type</dt>
-                      <dd>{card.type}</dd>
-                    </div>
                   </dl>
-                  {card.websiteDisplayTags?.length ? (
-                    <ul className="flex flex-wrap gap-2">
-                      {card.websiteDisplayTags.slice(0, 3).map((tag) => (
-                        <li
-                          key={tag}
-                          className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-200"
-                        >
-                          {tag}
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
                   {card.keyHighlights?.length ? (
                     <p className="text-sm text-slate-100/70">
                       <span className="font-semibold text-white">Standout highlight:</span> {card.keyHighlights[0]}
