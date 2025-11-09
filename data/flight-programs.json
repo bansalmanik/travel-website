@@ -934,21 +934,21 @@
     },
     {
       "title": "Watch transfer bonuses",
-      "detail": "Amex, Chase, and Capital One regularly offer 15–30% bonuses. Transfer only when a specific award is available.",
+      "detail": "Watchout for transfer bonused between Loyalty programs. Transfer only when a specific award is available.",
       "enabled": true
     }
   ],
   "favoriteRoutes": [
     {
-      "route": "US ➜ Europe",
+      "route": "India ➜ London",
       "program": "Virgin Atlantic Flying Club",
-      "highlight": "Redeem 50k points for one-way Delta One to Europe during off-peak dates.",
+      "highlight": "Redeem 10k points + taxes for one-way flight to London during off-peak dates. Sometimes the reward flight is available for as low as 6.5k points",
       "enabled": true
     },
     {
-      "route": "US ➜ Asia",
-      "program": "Alaska Mileage Plan",
-      "highlight": "Fly Japan Airlines business class for 60k miles with a free stopover in Tokyo.",
+      "route": "India ➜ Hong Kong",
+      "program": "Qatar Airways Avios",
+      "highlight": "Book Cathay Pacific flight from India to Hong Kong for 12500 Avios + taxes.",
       "enabled": true
     },
     {

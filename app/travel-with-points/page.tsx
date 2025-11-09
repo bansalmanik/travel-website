@@ -63,8 +63,7 @@ export default function TravelWithPointsPage() {
             Turn everyday spending into your next adventure
           </h1>
           <p className="mx-auto max-w-2xl text-base text-slate-200/80">
-            I’ve spent a decade experimenting with loyalty ecosystems. This hub distills the frameworks, spreadsheets, and
-            real itineraries that help me book aspirational trips for a fraction of the cash price.
+                      A structured look at how travel rewards fit together. Compare airline and hotel programs, understand bank partnerships, pick the right cards, and use point-conversion paths to unlock real value on flights and stays.
           </p>
         </header>
 
