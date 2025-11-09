@@ -32,58 +32,6 @@
       },
       "detailSections": [
         {
-          "id": "scapia-review",
-          "title": "Review and Use Case",
-          "content": [
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "We feel that Scapia is a no brainer card since it is Life Time Free and provices 0 Forex Markup. Even if you already have a 0 Foex card this can serve as backup."
-              ]
-            },
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "If you have more than 1 Airport trips coming up in a month then you can extract extra ordinary value out of this card. For example if you have 2 Airport visits coming up in a month then you can get 2000(16%) back by spending 12000(10000 for unlocking airport privlidges plus 1000 each time on airport). Similarly if you have 3 visits coming up this jumps to 3000(23%) back for 13000 spend. You get the gist right"
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "Incremental Return for frequent flyers.",
-                "0 Forex Markup card",
-                "You get both UPI and Visa Card",
-                "Prices for flight and hotels on scapia are very competetive"
-              ]
-            },
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "Coming on to spending use cases, we feel that you should not spend heavily on this card. Base reward of 2% is good but not great. Reward on Travel is 4% which we think is very low. Following are some spend use cases whcih we think can present good opportunities"
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "If your reward rate for a particular spend on other cards is less than 2% then you can use Scapia.",
-                "UPI spends if you don't have apowerfull UPI card'"
-              ]
-            },
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "You will have to strategize on how you use Scapia card. If you don't have Airport visits coming in next month then it does not make sense to spend on Scapia as you can generate higher returns using other cards. But if you do have Airports Visits coming up in next month then it makes sense to spend on scapia. More the number of Airport visits you have lined up, better the returns"
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "You can do Advance tax Payment or NPS investment to unlock airport benefits."
-              ]
-            }
-          ]
-        },
-        {
           "component": "applyNow",
           "applyNow": {
             "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
@@ -175,6 +123,58 @@
               "type": "paragraphs",
               "paragraphs": [
                 "Best Startegy is to get Lounge access using a different card and use Scapia for shopping."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "scapia-review",
+          "title": "Review and Use Case",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "We feel that Scapia is a no brainer card since it is Life Time Free and provices 0 Forex Markup. Even if you already have a 0 Foex card this can serve as backup."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "If you have more than 1 Airport trips coming up in a month then you can extract extra ordinary value out of this card. For example if you have 2 Airport visits coming up in a month then you can get 2000(16%) back by spending 12000(10000 for unlocking airport privlidges plus 1000 each time on airport). Similarly if you have 3 visits coming up this jumps to 3000(23%) back for 13000 spend. You get the gist right"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Incremental Return for frequent flyers.",
+                "0 Forex Markup card",
+                "You get both UPI and Visa Card",
+                "Prices for flight and hotels on scapia are very competetive"
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Coming on to spending use cases, we feel that you should not spend heavily on this card. Base reward of 2% is good but not great. Reward on Travel is 4% which we think is very low. Following are some spend use cases whcih we think can present good opportunities"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "If your reward rate for a particular spend on other cards is less than 2% then you can use Scapia.",
+                "UPI spends if you don't have apowerfull UPI card'"
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "You will have to strategize on how you use Scapia card. If you don't have Airport visits coming in next month then it does not make sense to spend on Scapia as you can generate higher returns using other cards. But if you do have Airports Visits coming up in next month then it makes sense to spend on scapia. More the number of Airport visits you have lined up, better the returns"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "You can do Advance tax Payment or NPS investment to unlock airport benefits."
               ]
             }
           ]
