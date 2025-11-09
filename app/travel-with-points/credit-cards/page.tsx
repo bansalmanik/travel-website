@@ -77,27 +77,7 @@ export default async function CreditCardsPage() {
                       <dt className="font-semibold text-white">Annual fee</dt>
                       <dd>{formatAnnualFee(card.annualFee)}</dd>
                     </div>
-                    <div>
-                      <dt className="font-semibold text-white">Network</dt>
-                      <dd>{card.network}</dd>
-                    </div>
-                    <div>
-                      <dt className="font-semibold text-white">Card type</dt>
-                      <dd>{card.type}</dd>
-                    </div>
                   </dl>
-                  {card.websiteDisplayTags?.length ? (
-                    <ul className="flex flex-wrap gap-2">
-                      {card.websiteDisplayTags.slice(0, 3).map((tag) => (
-                        <li
-                          key={tag}
-                          className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-200"
-                        >
-                          {tag}
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
                   {card.keyHighlights?.length ? (
                     <p className="text-sm text-slate-100/70">
                       <span className="font-semibold text-white">Standout highlight:</span> {card.keyHighlights[0]}

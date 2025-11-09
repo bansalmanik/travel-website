@@ -16,11 +16,27 @@ export type RichTable = {
   rows: string[][];
 };
 
-export type RichContent = {
-  paragraphs?: string[];
-  bullets?: string[];
-  table?: RichTable;
+export type RichContentParagraphBlock = {
+  type: "paragraphs";
+  paragraphs: string[];
 };
+
+export type RichContentBulletsBlock = {
+  type: "bullets";
+  bullets: string[];
+};
+
+export type RichContentTableBlock = {
+  type: "table";
+  table: RichTable;
+};
+
+export type RichContentBlock =
+  | RichContentParagraphBlock
+  | RichContentBulletsBlock
+  | RichContentTableBlock;
+
+export type RichContent = RichContentBlock[];
 
 export type CardSubSection = {
   title?: string;
@@ -40,6 +56,12 @@ export type CardMedia = {
   cardImage?: SectionImage;
 };
 
+export type CardApplyNow = {
+  url: string;
+  label?: string;
+  disclaimer?: string;
+};
+
 export type Card = {
   slug: string;
   name: string;
@@ -55,6 +77,7 @@ export type Card = {
   keyHighlights?: string[];
   media?: CardMedia;
   detailSections?: CardSection[];
+  applyNow?: CardApplyNow;
   enabled?: boolean;
 };
 

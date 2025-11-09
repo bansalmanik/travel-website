@@ -36,221 +36,280 @@
         {
           "id": "welcome-annual-renewal",
           "title": "Welcome, annual & renewal benefits",
-          "content": {
-            "bullets": [
-              "Welcome benefit of 2500 Edge Miles when you pay annual fee and make 1st transaction",
-              "There is no renewal fee wavier but you get renewal benefits on reaching certain spend threshold"
-            ],
-            "paragraphs": [
-              "Atlas issues milestone EDGE Miles as soon as you activate the card and again when you renew for another year."
-            ]
-          },
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Welcome benefit of 2500 Edge Miles when you pay annual fee and make 1st transaction",
+                "There is no renewal fee wavier but you get renewal benefits on reaching certain spend threshold"
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "2500 Edge Miles are valued at a minimum INR 5000. If Trasnfered to accor value jumps to INR 1000. This compensates more than enough for joining fee"
+              ]
+            }
+          ],
           "subsections": [
             {
-              "title": "Renewal miles benefit by tier",
-              "content": {
-                "table": {
-                  "columns": [
-                    "Tier",
-                    "Miles each renewal"
-                  ],
-                  "rows": [
-                    [
-                      "Silver",
-                      "No renewal miles"
+              "title": "Renewal miles by tier",
+              "content": [
+                {
+                  "type": "table",
+                  "table": {
+                    "columns": [
+                      "Tier",
+                      "Miles each renewal"
                     ],
-                    [
-                      "Gold",
-                      "2,500 EDGE Miles"
-                    ],
-                    [
-                      "Platinum",
-                      "5,000 EDGE Miles"
+                    "rows": [
+                      [
+                        "Silver",
+                        "No renewal miles"
+                      ],
+                      [
+                        "Gold",
+                        "2,500 EDGE Miles"
+                      ],
+                      [
+                        "Platinum",
+                        "5,000 EDGE Miles"
+                      ]
                     ]
-                  ]
+                  }
                 }
-              }
+              ]
             }
           ]
         },
         {
           "id": "reward-earning",
           "title": "Reward earning",
-          "content": {
-            "paragraphs": [
-              "EDGE Miles stack quickest when travel bookings flow through Axis Travel EDGE or direct airline and hotel channels."
-            ],
-            "table": {
-              "columns": [
-                "Spend type",
-                "Earn rate",
-                "Notes"
-              ],
-              "rows": [
-                [
-                  "Axis Travel EDGE, airlines & hotels",
-                  "5 EDGE Miles / ₹100",
-                  "Bonus applies up to ₹2,00,000 spend per month; thereafter 2 Miles / ₹100"
-                ],
-                [
-                  "Other eligible domestic & international spends",
-                  "2 EDGE Miles / ₹100",
-                  "Standard earn rate"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "EDGE Miles stack quickest when travel bookings flow through Axis Travel EDGE or direct airline and hotel channels."
               ]
             },
-            "bullets": [
-              "Exclusions: gold & jewellery, rent, wallet loads, government payments, insurance, fuel, utilities, telecom.",
-              "Miles post within 12 days of the statement cycle."
-            ]
-          }
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Notes"
+                ],
+                "rows": [
+                  [
+                    "Axis Travel EDGE, airlines & hotels",
+                    "5 EDGE Miles / ₹100",
+                    "Bonus applies up to ₹2,00,000 spend per month; thereafter 2 Miles / ₹100"
+                  ],
+                  [
+                    "Other eligible domestic & international spends",
+                    "2 EDGE Miles / ₹100",
+                    "Standard earn rate"
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Exclusions: gold & jewellery, rent, wallet loads, government payments, insurance, fuel, utilities, telecom."
+              ]
+            }
+          ]
         },
         {
           "id": "redemption-options",
           "title": "Redemption options",
-          "content": {
-            "paragraphs": [
-              "Redeem EDGE Miles for flights, hotels or experiences, or move them to airline and hotel partners when a sweet spot appears."
-            ],
-            "bullets": [
-              "Redeem on Travel Edge portal: 1 Edge Mile = ₹1",
-              "Trasnfer to Airlines miles at 1 Edge Mile = 2 Airline Miles",
-              "Trasnfer to Hotel points at 1 Edge Mile = 2 Hotel points(except marriot which is 2:1)"
-            ],
-            "table": {
-              "columns": [
-                "Limit type",
-                "Value"
-              ],
-              "rows": [
-                [
-                  "Annual Miles transfer limit",
-                  "1,50,000 EDGE Miles"
-                ],
-                [
-                  "Group A partners",
-                  "30,000 EDGE Miles each year"
-                ],
-                [
-                  "Group B partners",
-                  "1,20,000 EDGE Miles each year"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem EDGE Miles for flights, hotels or experiences, or move them to airline and hotel partners when a sweet spot appears."
               ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Redeem on Travel Edge portal: 1 Edge Mile = ₹1",
+                "Trasnfer to Airlines miles at 1 Edge Mile = 2 Airline Miles",
+                "Trasnfer to Hotel points at 1 Edge Mile = 2 Hotel points(except marriot which is 2:1)"
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Limit type",
+                  "Value"
+                ],
+                "rows": [
+                  [
+                    "Annual Miles transfer limit",
+                    "1,50,000 EDGE Miles"
+                  ],
+                  [
+                    "Group A partners",
+                    "30,000 EDGE Miles each year"
+                  ],
+                  [
+                    "Group B partners",
+                    "1,20,000 EDGE Miles each year"
+                  ]
+                ]
+              }
             }
-          }
+          ]
         },
         {
           "id": "milestone-bonuses",
           "title": "Milestone boosts",
-          "content": {
-            "paragraphs": [
-              "Hit these spends inside your card anniversary year to unlock extra EDGE Miles."
-            ],
-            "table": {
-              "columns": [
-                "Spend in anniversary year",
-                "Bonus"
-              ],
-              "rows": [
-                [
-                  "₹3,00,000",
-                  "2,500 EDGE Miles"
-                ],
-                [
-                  "₹7,50,000",
-                  "Additional 2,500 EDGE Miles"
-                ],
-                [
-                  "₹15,00,000",
-                  "Additional 5,000 EDGE Miles"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Hit these spends inside your card anniversary year to unlock extra EDGE Miles."
               ]
             },
-            "bullets": [
-              "Tier qualification and milestone tracking follow the card anniversary year."
-            ]
-          }
+            {
+              "type": "bullets",
+              "bullets": [
+                "Tier qualification and milestone tracking follow the card anniversary year."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Spend in anniversary year",
+                  "Bonus"
+                ],
+                "rows": [
+                  [
+                    "₹3,00,000",
+                    "2,500 EDGE Miles"
+                  ],
+                  [
+                    "₹7,50,000",
+                    "Additional 2,500 EDGE Miles"
+                  ],
+                  [
+                    "₹15,00,000",
+                    "Additional 5,000 EDGE Miles"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "tier-progression",
           "title": "Tier progression",
-          "content": {
-            "paragraphs": [
-              "Atlas tiers unlock higher lounge quotas and milestone earning."
-            ],
-            "table": {
-              "columns": [
-                "Tier",
-                "Spend to unlock"
-              ],
-              "rows": [
-                [
-                  "Silver",
-                  "Entry tier"
-                ],
-                [
-                  "Gold",
-                  "₹7,50,000"
-                ],
-                [
-                  "Platinum",
-                  "₹15,00,000"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Atlas tiers unlock higher lounge quotas and milestone earning."
               ]
             },
-            "bullets": [
-              "If you miss the spend target in the next cycle the tier downgrades."
-            ]
-          }
+            {
+              "type": "bullets",
+              "bullets": [
+                "If you miss the spend target in the next cycle the tier downgrades."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Tier",
+                  "Spend to unlock"
+                ],
+                "rows": [
+                  [
+                    "Silver",
+                    "Entry tier"
+                  ],
+                  [
+                    "Gold",
+                    "₹7,50,000"
+                  ],
+                  [
+                    "Platinum",
+                    "₹15,00,000"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "lounge-access",
           "title": "Lounge access",
-          "content": {
-            "table": {
-              "columns": [
-                "Tier",
-                "Domestic visits",
-                "International visits"
-              ],
-              "rows": [
-                [
-                  "Silver",
-                  "8 per year",
-                  "4 per year"
+          "content": [
+
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Tier",
+                  "Domestic visits",
+                  "International visits"
                 ],
-                [
-                  "Gold",
-                  "12 per year",
-                  "6 per year"
-                ],
-                [
-                  "Platinum",
-                  "18 per year",
-                  "12 per year"
+                "rows": [
+                  [
+                    "Silver",
+                    "8 per year",
+                    "4 per year"
+                  ],
+                  [
+                    "Gold",
+                    "12 per year",
+                    "6 per year"
+                  ],
+                  [
+                    "Platinum",
+                    "18 per year",
+                    "12 per year"
+                  ]
                 ]
-              ]
+              }
             },
-            "bullets": [
-              "Guest access if any is included.",
-              "Swipe the card at partner lounges to enter",
-              "International Lounges can now be accessed with digital priority pass also"
-            ]
-          }
+            {
+              "type": "bullets",
+              "bullets": [
+                "Accor is the sweet spot for redemption with 8% base redmption value.",
+                "Exceptional returns when swiping directly on Hotel and Airline, both online and offline.",
+                "Travel aggregators like MakeMyTrip and Goibibo do not earn accelerated Edge Miles"
+              ]
+            }
+          ]
         },
         {
           "id": "program-notes",
-          "title": "Notes",
-          "content": {
-            "bullets": [
-              "Accor is the sweet spot for redemption with 8% base redmption value.",
-              "Exceptional returns when swiping directly on Hotel and Airline, both online and offline.",
-              "Travel aggregators like MakeMyTrip and Goibibo do not earn accelerated Edge Miles"
-            ]
-          }
+          "title": "Program notes",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "EDGE Miles are not encashable.",
+                "Tier spend exclusions mirror the earning exclusions.",
+                "Track spends on a card-anniversary basis for milestone evaluation."
+              ]
+            }
+          ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "applyNow": {
+        "url": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-atlas-credit-card",
+        "label": "Apply Now",
+        "disclaimer": "You will leave Travel with Points and continue on Axis Bank's secure site."
+      }
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -274,12 +333,12 @@
       ],
       "keyHighlights": [
         "Unlock Swiggy One and MMT Black Gold after ₹1 lakh spend in 90 days.",
-        "Earn 5X rewards on Myntra, Nykaa, Reliance Digital, and Marks & Spencer up to 5,000 RP monthly.",
-        "Collect quarterly and annual flight vouchers worth up to ₹10,000 a year."
+        "Earn 5X rewards on Myntra, Fligh Bookings and Gift Vouchers through Smartbuy.",
+        "Earn 10X rewards on Pharmeasy, Hotel Bookings and IGP through Smartbuy."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/HDFC-Regalia-Gold-Card.webp",
+          "src": "/images/cards/Regalia-Gold-Image.jpg",
           "alt": "HDFC Bank Regalia Gold Credit Card"
         }
       },
@@ -287,179 +346,246 @@
         {
           "id": "welcome-annual-renewal",
           "title": "Welcome, annual & renewal benefits",
-          "content": {
-            "paragraphs": [
-              "Regalia Gold unlocks lifestyle memberships and a joining voucher when you meet the initial spend requirement."
-            ],
-            "table": {
-              "columns": [
-                "Benefit",
-                "Details"
-              ],
-              "rows": [
-                [
-                  "Welcome memberships",
-                  "Swiggy One and MMT Black Gold after ₹1,00,000 spend in 90 days"
-                ],
-                [
-                  "Joining voucher",
-                  "₹2,500 travel voucher issued after the joining fee posts"
-                ],
-                [
-                  "Annual fee",
-                  "₹2,500 + GST (charged yearly)"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Regalia Gold unlocks lifestyle memberships and a joining voucher when you meet the initial spend requirement."
               ]
             },
-            "bullets": [
-              "Membership links arrive within 48 hours of hitting the spend target and must be downloaded within 60 days of benefit end.",
-              "Keep spends above ₹4,00,000 in a membership year to request a renewal waiver from the issuer."
-            ]
-          }
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Benefit",
+                  "Details"
+                ],
+                "rows": [
+                  [
+                    "Welcome memberships",
+                    "Swiggy One and MMT Black Gold after ₹1,00,000 spend in 90 days"
+                  ],
+                  [
+                    "Joining voucher",
+                    "₹2,500 travel voucher issued after the joining fee posts"
+                  ],
+                  [
+                    "Annual fee",
+                    "₹2,500 + GST (charged yearly)"
+                  ],
+                  [
+                    "Renewal fee waiver",
+                    "₹4,00,000 in a membership year"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "reward-earning",
           "title": "Reward earning",
-          "content": {
-            "paragraphs": [
-              "Build a healthy Reward Points balance on every purchase and supercharge partner merchant spends."
-            ],
-            "table": {
-              "columns": [
-                "Spend type",
-                "Earn rate",
-                "Notes"
-              ],
-              "rows": [
-                [
-                  "Everyday retail",
-                  "4 RP / ₹150",
-                  "Base earn rate on eligible spends"
-                ],
-                [
-                  "Partner merchants",
-                  "20 RP / ₹150",
-                  "5X rewards at Myntra, Nykaa, Reliance Digital, Marks & Spencer (cap 5,000 RP/month; min txn ₹150)"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Build a healthy Reward Points balance on every purchase and supercharge partner merchant spends."
               ]
             },
-            "bullets": [
-              "Reward Points post by the first week of the next month and stay valid for 2 years.",
-              "Exclusions include fuel, cash withdrawals, card fees, wallet loads, government payments, rent, and capped earnings on insurance and grocery spends."
-            ]
-          }
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Reward Rate",
+                  "Accor reward rate"
+                ],
+                "rows": [
+                  [
+                    "Regular spends",
+                    "4 RP / ₹150",
+                    "1.3%",
+                    "2.6%"
+                  ],
+                  [
+                    "Smartbuy Flights",
+                    "20 RP / ₹150",
+                    "6.6%",
+                    "13.2%"
+                  ],
+                  [
+                    "Smartbuy Hotels",
+                    "40 RP / ₹150",
+                    "13.2%",
+                    "26.4%"
+                  ],
+                  [
+                    "Smartbuy Gyftr",
+                    "20 RP / ₹150",
+                    "6.6%",
+                    "13.2%"
+                  ],
+                  [
+                    "Smartbuy Train",
+                    "12 RP / ₹150",
+                    "4%",
+                    "8%"
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "5X points partner on smartbuy - Myntra, MakeMytrip Holiday, Redbus and others",
+                "10X points partner on smartbuy - Pharmeasy, Jockey and Jockey",
+                "Maximum 2000 Accelerated RPs can be earned in 1 day",
+                "Maximum 4000 Accelerated RPs can be earned in a calendar month",
+                "Exclusions - fuel, wallet, rent and tax payments."
+              ]
+            }
+          ]
         },
         {
           "id": "redemption-options",
           "title": "Redemption options",
-          "content": {
-            "paragraphs": [
-              "Redeem via HDFC SmartBuy for maximum value or move points to airline partners when conversions align with your itinerary."
-            ],
-            "table": {
-              "columns": [
-                "Channel",
-                "Value"
-              ],
-              "rows": [
-                [
-                  "SmartBuy exclusive catalog",
-                  "1 RP = ₹0.65"
-                ],
-                [
-                  "SmartBuy flights & hotels",
-                  "1 RP = ₹0.50 (up to 50,000 RP/month)"
-                ],
-                [
-                  "Products & vouchers",
-                  "Up to ₹0.35 per RP"
-                ],
-                [
-                  "Statement credit",
-                  "₹0.20 per RP (cap 50,000 RP/month)"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem via HDFC SmartBuy for maximum value or move points to airline partners when conversions align with your itinerary."
               ]
             },
-            "bullets": [
-              "Airline partners convert at up to 1 RP : 0.5 air mile.",
-              "You can cover up to 70% of a booking's value with Reward Points."
-            ]
-          }
+            {
+              "type": "bullets",
+              "bullets": [
+                "Airline partners convert at up to 1 RP : 0.5 air mile.",
+                "You can cover up to 70% of a booking's value with Reward Points.",
+                "Accor is the sweet spot as it gives 1 RP = ₹1 value."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Channel",
+                  "Value"
+                ],
+                "rows": [
+                  [
+                    "SmartBuy exclusive catalog",
+                    "1 RP = ₹0.65"
+                  ],
+                  [
+                    "SmartBuy flights & hotels",
+                    "1 RP = ₹0.50 (up to 50,000 RP/month)"
+                  ],
+                  [
+                    "Products & vouchers",
+                    "Up to ₹0.35 per RP"
+                  ],
+                  [
+                    "Statement credit",
+                    "₹0.20 per RP (cap 50,000 RP/month)"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "milestone-bonuses",
           "title": "Milestone bonuses",
-          "content": {
-            "paragraphs": [
-              "Stay on track each quarter and anniversary year to scoop extra travel value."
-            ],
-            "table": {
-              "columns": [
-                "Milestone",
-                "Reward"
-              ],
-              "rows": [
-                [
-                  "₹1,50,000 spend each quarter",
-                  "₹1,500 voucher from brands like Marriott, Myntra, MMT, Marks & Spencer, Reliance Digital"
-                ],
-                [
-                  "₹5,00,000 annual spend",
-                  "₹5,000 flight voucher"
-                ],
-                [
-                  "₹7,50,000 annual spend",
-                  "Additional ₹5,000 flight voucher"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Stay on track each quarter and anniversary year to scoop extra travel value."
               ]
             },
-            "bullets": [
-              "Benefits typically unlock within 48 hours once the required spend posts."
-            ]
-          }
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Milestone",
+                  "Reward"
+                ],
+                "rows": [
+                  [
+                    "₹1,50,000 spend each quarter",
+                    "₹1,500 voucher from brands like Marriott, Myntra, MMT, Marks & Spencer, Reliance Digital"
+                  ],
+                  [
+                    "₹5,00,000 annual spend",
+                    "₹5,000 flight voucher"
+                  ],
+                  [
+                    "₹7,50,000 annual spend",
+                    "Additional ₹5,000 flight voucher"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "lounge-and-travel",
           "title": "Lounge & travel comforts",
-          "content": {
-            "table": {
-              "columns": [
-                "Access type",
-                "Allowance",
-                "Notes"
-              ],
-              "rows": [
-                [
-                  "Domestic lounges",
-                  "12 visits / year",
-                  "Swipe the card at terminals across India"
-                ],
-                [
-                  "International lounges (Priority Pass)",
-                  "6 visits / year",
-                  "Usage within India is chargeable; add-on cards need their own Priority Pass"
-                ]
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Priority Pass visits beyond the quota bill at US$27.",
+                "Enjoy Good Food Trail dining offers with flat 10% off at thousands of restaurants via Dineout."
               ]
             },
-            "bullets": [
-              "Priority Pass visits beyond the quota bill at US$27.",
-              "Enjoy Good Food Trail dining offers with flat 10% off at thousands of restaurants via Dineout."
-            ]
-          }
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Access type",
+                  "Allowance",
+                  "Notes"
+                ],
+                "rows": [
+                  [
+                    "Domestic lounges",
+                    "12 visits / year",
+                    "Swipe the card at terminals across India"
+                  ],
+                  [
+                    "International lounges (Priority Pass)",
+                    "6 visits / year",
+                    "Usage within India is chargeable; add-on cards need their own Priority Pass"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
-          "id": "support-and-protection",
-          "title": "Support & protection",
-          "content": {
-            "bullets": [
-              "Concierge support: regaliagold.support@smartbuyoffers.co or 1860 425 1188.",
-              "Zero lost card liability once reported to the bank.",
-              "Standard foreign exchange markup of 2% on international swipes."
-            ]
-          }
+          "id": "review",
+          "title": "Review",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Base reward rate is not good enough so use it only through smartbuy.",
+                "Accor gives best value so you can use this as an accor co-branded card.",
+                "HDFC Salary Account customers can usually gets this card as LTF.",
+                "Regalia Gold is a no brainer if you are not elegible for any other premium card",
+                "Regalia Gold acts as a stepping stone towards DCB and Infinia"
+              ]
+            }
+          ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "applyNow": {
+        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+        "disclaimer": "Application is handled directly by HDFC Bank."
+      }
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -482,13 +608,13 @@
         "Airport Lounge Access"
       ],
       "keyHighlights": [
-        "Unlock ₹4,000 in welcome value plus EazyDiner Prime after ₹10K spend in 30 days.",
+        "₹1,000 cashback, ₹3,000 postcard hotel voucher and EazyDiner Prime after ₹10K spend in 30 days.",
         "Earn up to 4 Reward Points per ₹100 on travel and overseas purchases with a 1:1 partner transfer ratio.",
         "Access 6 domestic and 4 international lounges plus golf and lifestyle privileges."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/HSBC-TravelOne-Card.webp",
+          "src": "/images/cards/15957-hsbc-travelone-credit-t1-front-1280x720.JPG",
           "alt": "HSBC TravelOne Credit Card"
         }
       },
@@ -496,145 +622,189 @@
         {
           "id": "welcome-annual-renewal",
           "title": "Welcome, annual & renewal benefits",
-          "content": {
-            "paragraphs": [
-              "TravelOne rewards early spends with cashback, hotel stays, and dining, while big annual spends can offset the fee."
-            ],
-            "table": {
-              "columns": [
-                "Requirement",
-                "Reward"
-              ],
-              "rows": [
-                [
-                  "Spend ₹10,000 in 30 days",
-                  "₹1,000 cashback + ₹3,000 Postcard Hotel voucher + 3-month EazyDiner Prime"
-                ],
-                [
-                  "Spend ₹1,00,000 in 90 days",
-                  "3,000 bonus Reward Points"
-                ],
-                [
-                  "Annual fee",
-                  "₹4,999 + GST (waived on ₹8,00,000 annual spend)"
-                ]
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Welcome bonus of 3,000 Reward Points also triggers on the first ₹1,00,000 spent within 90 days."
               ]
             },
-            "bullets": [
-              "Welcome rewards credit within 60 days after the initial 30-day period closes.",
-              "Annual milestone bonus of 3,000 Reward Points also triggers on the first ₹1,00,000 spent within 90 days."
-            ]
-          }
-        },
-        {
-          "id": "reward-earning",
-          "title": "Reward earning",
-          "content": {
-            "paragraphs": [
-              "Use the card for travel and foreign currency purchases to earn accelerated Reward Points with no conversion delays."
-            ],
-            "table": {
-              "columns": [
-                "Spend type",
-                "Earn rate",
-                "Notes"
-              ],
-              "rows": [
-                [
-                  "Flights & OTAs + foreign currency",
-                  "4 RP / ₹100",
-                  "Accelerated earn up to ₹50,000 equivalent each month"
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Requirement",
+                  "Reward"
                 ],
-                [
-                  "All other eligible spends",
-                  "2 RP / ₹100",
-                  "Reward Points accrue at 1 RP per ₹50"
-                ]
-              ]
-            },
-            "bullets": [
-              "Points remain valid for 3 years.",
-              "Exclusions include utilities, government & tax payments, insurance, jewellery, wallet loads, fuel, education, cash advances and charges, as well as transactions at financial institutions."
-            ]
-          }
-        },
-        {
-          "id": "redemption-options",
-          "title": "Redemption options",
-          "content": {
-            "paragraphs": [
-              "Transfer points instantly to airline and hotel partners through the HSBC mobile app for 1:1 conversions on most partners."
-            ]
-          },
-          "subsections": [
-            {
-              "title": "Airline partners",
-              "content": {
-                "bullets": [
-                  "Air India, Air France-KLM Flying Blue, British Airways, Etihad Guest, Singapore Airlines KrisFlyer",
-                  "Qatar Airways Privilege Club, Qantas, United MileagePlus, Turkish Airlines Miles&Smiles, Japan Airlines, Vietnam Airlines",
-                  "AirAsia (1:3 conversion ratio)"
-                ]
-              }
-            },
-            {
-              "title": "Hotel partners",
-              "content": {
-                "bullets": [
-                  "Marriott Bonvoy, Accor Live Limitless, IHG One Rewards",
-                  "Wyndham Rewards, Shangri-La Circle (5:1 conversion ratio)"
+                "rows": [
+                  [
+                    "Spend ₹10,000 in 30 days",
+                    "₹1,000 cashback + ₹3,000 Postcard Hotel voucher + 3-month EazyDiner Prime"
+                  ],
+                  [
+                    "Spend ₹1,00,000 in 90 days",
+                    "3,000 bonus Reward Points"
+                  ],
+                  [
+                    "Annual fee",
+                    "₹4,999 + GST (waived on ₹8,00,000 annual spend)"
+                  ]
                 ]
               }
             }
           ]
         },
         {
-          "id": "milestone-bonuses",
-          "title": "Milestone bonuses",
-          "content": {
-            "table": {
-              "columns": [
-                "Milestone",
-                "Reward"
-              ],
-              "rows": [
-                [
-                  "₹1,00,000 spend in the first 90 days",
-                  "3,000 bonus Reward Points"
+          "id": "reward-earning",
+          "title": "Reward earning",
+          "content": [
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Reward Value",
+                  "Reward Value Accor"
                 ],
-                [
-                  "₹12,00,000 spend each anniversary year",
-                  "10,000 bonus Reward Points"
+                "rows": [
+                  [
+                    "Flights through HSBC Market Place",
+                    "16 RP / ₹100",
+                    "16%",
+                    "32%"
+                  ],
+                  [
+                    "Hotels through HSBC Market Place",
+                    "24 RP / ₹100",
+                    "24%",
+                    "48%"
+                  ],
+                  [
+                    "Flights & OTAs + foreign currency",
+                    "4 RP / ₹100",
+                    "Accelerated earn up to ₹50,000 equivalent each month"
+                  ],
+                  [
+                    "All other eligible spends",
+                    "2 RP / ₹100",
+                    "Reward Points accrue at 1 RP per ₹50"
+                  ]
                 ]
+              }
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "HSBC Market Place has price garuntee upto ₹1500 per booking.",
+                "15% off upto ₹5000 on flight bookigs via Paytm Flights and ClearTrip",
+                "20% off on select duty free stores",
+                "Prices on HSBC Marketplace tend to be higher than other OTA's which dampen the reward rate'"
               ]
             }
-          }
+          ]
+        },
+        {
+          "id": "redemption-options",
+          "title": "Redemption options",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Transfer points instantly to airline and hotel partners through the HSBC mobile app for 1:1 conversions on most partners."
+              ]
+            }
+          ],
+          "subsections": [
+            {
+              "title": "Airline partners",
+              "content": [
+                {
+                  "type": "bullets",
+                  "bullets": [
+                    "Air India, Air France-KLM Flying Blue, British Airways, Etihad Guest, Singapore Airlines KrisFlyer",
+                    "Qatar Airways Privilege Club, Qantas, United MileagePlus, Turkish Airlines Miles&Smiles, Japan Airlines, Vietnam Airlines",
+                    "AirAsia (1:3 conversion ratio)"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Hotel partners",
+              "content": [
+                {
+                  "type": "bullets",
+                  "bullets": [
+                    "Marriott Bonvoy, Accor Live Limitless, IHG One Rewards",
+                    "Wyndham Rewards, Shangri-La Circle (5:1 conversion ratio)"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "milestone-bonuses",
+          "title": "Milestone bonuses",
+          "content": [
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Milestone",
+                  "Reward"
+                ],
+                "rows": [
+                  [
+                    "₹1,00,000 spend in the first 90 days",
+                    "3,000 bonus Reward Points"
+                  ],
+                  [
+                    "₹12,00,000 spend each anniversary year",
+                    "10,000 bonus Reward Points"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "travel-privileges",
           "title": "Travel privileges",
-          "content": {
-            "bullets": [
-              "Six domestic and four international lounge visits per year included in the base fee.",
-              "Four complimentary golf rounds and twelve lessons annually (one free benefit per month).",
-              "Holiday partner offers: 15% off with Yatra, EaseMyTrip, Paytm Travel, Cleartrip, plus 11% off StayVista (max ₹3,000).",
-              "Duty-free savings up to 20% at select outlets."
-            ]
-          }
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Six domestic and four international lounge visits per year included in the base fee.",
+                "Four complimentary golf rounds and twelve lessons annually (one free benefit per month).",
+                "Holiday partner offers: 15% off with Yatra, EaseMyTrip, Paytm Travel, Cleartrip, plus 11% off StayVista (max ₹3,000).",
+                "Duty-free savings up to 20% at select outlets."
+              ]
+            }
+          ]
         },
         {
-          "id": "protections",
-          "title": "Protections & lifestyle perks",
-          "content": {
-            "bullets": [
-              "Purchase protection up to USD 20,000 on eligible buys.",
-              "Movie and dining privileges powered by the Zomato District app.",
-              "Bicester Village VIP access with hands-free shopping upgrades."
-            ]
-          }
+          "id": "Review",
+          "title": "Review",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "We feel this is one of the best travel cards considering a low entry barrier of 4 Lac salary requirement.",
+                "This card might not suit you ff you already hold a super premium card or an Axis Atlas.",
+                "High Prices on HSBC Marketplace is a bummer.",
+                "HSBC has Accor as transfer partner so it enhances reward value"
+              ]
+            }
+          ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "applyNow": {
+        "url": "https://www.hsbc.co.in/credit-cards/products/travelone/",
+        "label": "Apply via HSBC India",
+        "disclaimer": "Check the HSBC website for the latest eligibility and terms."
+      }
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -662,7 +832,7 @@
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/Amex-Platinum-Travel-Card.webp",
+          "src": "/images/cards/bold_plat_travel_in.webp",
           "alt": "American Express Platinum Travel Credit Card"
         }
       },
@@ -670,135 +840,176 @@
         {
           "id": "welcome-annual-renewal",
           "title": "Welcome, annual & renewal benefits",
-          "content": {
-            "paragraphs": [
-              "Start your Membership Rewards journey with a sizeable welcome bonus and milestone-driven Taj vouchers each membership year."
-            ],
-            "table": {
-              "columns": [
-                "Requirement",
-                "Reward"
-              ],
-              "rows": [
-                [
-                  "Spend ₹15,000 within 90 days",
-                  "10,000 Membership Rewards points"
-                ],
-                [
-                  "Annual fee",
-                  "₹5,000 + GST"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Start your Membership Rewards journey with a sizeable welcome bonus and milestone-driven Taj vouchers each membership year."
               ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Requirement",
+                  "Reward"
+                ],
+                "rows": [
+                  [
+                    "Spend ₹15,000 within 90 days",
+                    "10,000 Membership Rewards points"
+                  ],
+                  [
+                    "Annual fee",
+                    "₹5,000 + GST"
+                  ]
+                ]
+              }
             }
-          },
+          ],
           "subsections": [
             {
               "title": "Renewal milestones",
-              "content": {
-                "table": {
-                  "columns": [
-                    "Membership year spend",
-                    "Benefit"
-                  ],
-                  "rows": [
-                    [
-                      "₹1,90,000",
-                      "15,000 Membership Rewards points"
-                    ],
-                    [
-                      "₹4,00,000",
-                      "25,000 Membership Rewards points + ₹10,000 Taj Experiences e-gift card"
-                    ]
+              "content": [
+                {
+                  "type": "bullets",
+                  "bullets": [
+                    "Bonus MR split between automatic posting and a quick call or chat with Amex support."
                   ]
                 },
-                "bullets": [
-                  "Bonus MR split between automatic posting and a quick call or chat with Amex support."
-                ]
-              }
+                {
+                  "type": "table",
+                  "table": {
+                    "columns": [
+                      "Membership year spend",
+                      "Benefit"
+                    ],
+                    "rows": [
+                      [
+                        "₹1,90,000",
+                        "15,000 Membership Rewards points"
+                      ],
+                      [
+                        "₹4,00,000",
+                        "25,000 Membership Rewards points + ₹10,000 Taj Experiences e-gift card"
+                      ]
+                    ]
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "id": "reward-earning",
           "title": "Reward earning",
-          "content": {
-            "paragraphs": [
-              "Membership Rewards accrue at a steady pace across everyday spends, ready for travel conversions."
-            ],
-            "table": {
-              "columns": [
-                "Spend type",
-                "Earn rate"
-              ],
-              "rows": [
-                [
-                  "Eligible card purchases",
-                  "1 MR / ₹50"
-                ]
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Membership Rewards accrue at a steady pace across everyday spends, ready for travel conversions."
               ]
             },
-            "bullets": [
-              "No accelerated earn categories keep tracking simple.",
-              "Exclusions: fuel, insurance, utilities, cash transactions, and in-store EMI conversions."
-            ]
-          }
+            {
+              "type": "bullets",
+              "bullets": [
+                "No accelerated earn categories keep tracking simple.",
+                "Exclusions: fuel, insurance, utilities, cash transactions, and in-store EMI conversions."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
+                "rows": [
+                  [
+                    "Eligible card purchases",
+                    "1 MR / ₹50"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "redemption-options",
           "title": "Redemption options",
-          "content": {
-            "paragraphs": [
-              "Redeem through the Platinum Travel Collection or Pay with Points on Amex Travel Online for consistent ₹0.25+ value per MR."
-            ],
-            "bullets": [
-              "Use points for domestic or international flights and hotels via Amex Travel Online.",
-              "Convert milestone bonuses into Taj stays, dining, or spa experiences.",
-              "Points never expire while the account stays active and in good standing."
-            ]
-          }
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem through the Platinum Travel Collection or Pay with Points on Amex Travel Online for consistent ₹0.25+ value per MR."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Use points for domestic or international flights and hotels via Amex Travel Online.",
+                "Convert milestone bonuses into Taj stays, dining, or spa experiences.",
+                "Points never expire while the account stays active and in good standing."
+              ]
+            }
+          ]
         },
         {
           "id": "lounge-access",
           "title": "Lounge access",
-          "content": {
-            "table": {
-              "columns": [
-                "Channel",
-                "Allowance",
-                "Notes"
-              ],
-              "rows": [
-                [
-                  "Domestic lounges",
-                  "8 visits / year",
-                  "Capped at 2 visits per quarter for the primary cardmember"
-                ],
-                [
-                  "Priority Pass",
-                  "Membership fee waived",
-                  "Visits for primary cardmember and guests billed at prevailing US$35 rate"
-                ]
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Expect a ₹2 authorization swipe at participating lounges for entry.",
+                "Priority Pass benefits follow program terms; guest visits are chargeable."
               ]
             },
-            "bullets": [
-              "Expect a ₹2 authorization swipe at participating lounges for entry.",
-              "Priority Pass benefits follow program terms; guest visits are chargeable."
-            ]
-          }
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Channel",
+                  "Allowance",
+                  "Notes"
+                ],
+                "rows": [
+                  [
+                    "Domestic lounges",
+                    "8 visits / year",
+                    "Capped at 2 visits per quarter for the primary cardmember"
+                  ],
+                  [
+                    "Priority Pass",
+                    "Membership fee waived",
+                    "Visits for primary cardmember and guests billed at prevailing US$35 rate"
+                  ]
+                ]
+              }
+            }
+          ]
         },
         {
           "id": "travel-support",
           "title": "Travel support & protections",
-          "content": {
-            "bullets": [
-              "Dedicated Platinum Travel assistance with zero lost card liability once reported.",
-              "Fuel convenience fee waivers at HPCL locations, plus EMI options on eligible purchases.",
-              "Up to 20% dining savings at partner restaurants with American Express offers."
-            ]
-          }
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Dedicated Platinum Travel assistance with zero lost card liability once reported.",
+                "Fuel convenience fee waivers at HPCL locations, plus EMI options on eligible purchases.",
+                "Up to 20% dining savings at partner restaurants with American Express offers."
+              ]
+            }
+          ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "applyNow": {
+        "url": "https://www.americanexpress.com/in/credit-cards/platinum-travel/",
+        "label": "Apply with American Express",
+        "disclaimer": "American Express India will provide the full application details."
+      }
     }
   ],
   "cardStrategies": [

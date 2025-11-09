@@ -9,7 +9,9 @@ import type {
   Card,
   CardSection,
   CardSubSection,
+  CardApplyNow,
   RichContent,
+  RichContentBlock,
   SectionImage
 } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
@@ -58,18 +60,34 @@ function formatAnnualFee(annualFee: AnnualFee) {
   return fee;
 }
 
-function hasTableContent(table?: RichContent["table"]) {
-  return Boolean(table && table.rows.length && table.columns.length);
+function hasTableContent(tableBlock: RichContentBlock | undefined) {
+  if (!tableBlock || tableBlock.type !== "table") {
+    return false;
+  }
+
+  const { table } = tableBlock;
+
+  return Boolean(table.rows.length && table.columns.length);
 }
 
 function hasRichContent(content?: RichContent) {
-  if (!content) return false;
+  if (!content?.length) return false;
 
-  return Boolean(
-    (content.paragraphs && content.paragraphs.length) ||
-      (content.bullets && content.bullets.length) ||
-      hasTableContent(content.table)
-  );
+  return content.some((block) => {
+    if (block.type === "paragraphs") {
+      return block.paragraphs.length > 0;
+    }
+
+    if (block.type === "bullets") {
+      return block.bullets.length > 0;
+    }
+
+    if (block.type === "table") {
+      return hasTableContent(block);
+    }
+
+    return false;
+  });
 }
 
 function summarizeContent(content?: RichContent) {
@@ -77,86 +95,98 @@ function summarizeContent(content?: RichContent) {
 
   const parts: string[] = [];
 
-  if (content.paragraphs?.length) {
-    parts.push(content.paragraphs.join(" "));
-  }
+  content.forEach((block) => {
+    if (block.type === "paragraphs" && block.paragraphs.length) {
+      parts.push(block.paragraphs.join(" "));
+    }
 
-  if (content.bullets?.length) {
-    parts.push(content.bullets.join("; "));
-  }
+    if (block.type === "bullets" && block.bullets.length) {
+      parts.push(block.bullets.join("; "));
+    }
 
-  if (hasTableContent(content.table) && content.table) {
-    parts.push(
-      content.table.rows
-        .map((row) => row.filter(Boolean).join(" - "))
-        .join("; ")
-    );
-  }
+    if (block.type === "table" && hasTableContent(block)) {
+      parts.push(
+        block.table.rows
+          .map((row) => row.filter(Boolean).join(" - "))
+          .join("; ")
+      );
+    }
+  });
 
   return parts.join(" ").trim();
 }
 
-function RichContentBlock({ content }: { content: RichContent }) {
+function RichContentBlocks({ content }: { content: RichContent }) {
   if (!hasRichContent(content)) {
     return null;
   }
 
   return (
     <div className="space-y-6 text-sm leading-6 text-slate-100/80">
-      {content.paragraphs?.length ? (
-        <div className="space-y-3">
-          {content.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
-      ) : null}
-
-      {content.bullets?.length ? (
-        <ul className="space-y-3">
-          {content.bullets.map((bullet) => (
-            <li key={bullet} className="flex items-start gap-3">
-              <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
-              <span>{bullet}</span>
-            </li>
-          ))}
-        </ul>
-      ) : null}
-
-      {hasTableContent(content.table) && content.table ? (
-        <div className="overflow-x-auto">
-          <table className="min-w-full divide-y divide-white/10">
-            {content.table.caption ? (
-              <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-300">
-                {content.table.caption}
-              </caption>
-            ) : null}
-            <thead>
-              <tr>
-                {content.table.columns.map((column) => (
-                  <th
-                    key={column}
-                    scope="col"
-                    className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-200"
-                  >
-                    {column}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-white/10">
-              {content.table.rows.map((row, rowIndex) => (
-                <tr key={`${row.join("-")}-${rowIndex}`} className="align-top">
-                  {row.map((cell, cellIndex) => (
-                    <td key={`${cell}-${cellIndex}`} className="px-4 py-3 text-sm text-slate-100/80">
-                      {cell || "—"}
-                    </td>
-                  ))}
-                </tr>
+      {content.map((block, index) => {
+        if (block.type === "paragraphs" && block.paragraphs.length) {
+          return (
+            <div key={`paragraphs-${index}`} className="space-y-3">
+              {block.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
               ))}
-            </tbody>
-          </table>
-        </div>
-      ) : null}
+            </div>
+          );
+        }
+
+        if (block.type === "bullets" && block.bullets.length) {
+          return (
+            <ul key={`bullets-${index}`} className="space-y-3">
+              {block.bullets.map((bullet) => (
+                <li key={bullet} className="flex items-start gap-3">
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          );
+        }
+
+        if (block.type === "table" && hasTableContent(block)) {
+          return (
+            <div key={`table-${index}`} className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-white/10">
+                {block.table.caption ? (
+                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-300">
+                    {block.table.caption}
+                  </caption>
+                ) : null}
+                <thead>
+                  <tr>
+                    {block.table.columns.map((column) => (
+                      <th
+                        key={column}
+                        scope="col"
+                        className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-200"
+                      >
+                        {column}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10">
+                  {block.table.rows.map((row, rowIndex) => (
+                    <tr key={`${row.join("-")}-${rowIndex}`} className="align-top">
+                      {row.map((cell, cellIndex) => (
+                        <td key={`${cell}-${cellIndex}`} className="px-4 py-3 text-sm text-slate-100/80">
+                          {cell || "—"}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+
+        return null;
+      })}
     </div>
   );
 }
@@ -172,7 +202,7 @@ function SubSection({ subsection }: { subsection: CardSubSection }) {
       {subsection.description ? (
         <p className="text-sm text-slate-100/70">{subsection.description}</p>
       ) : null}
-      {subsection.content ? <RichContentBlock content={subsection.content} /> : null}
+      {subsection.content ? <RichContentBlocks content={subsection.content} /> : null}
     </div>
   );
 }
@@ -188,7 +218,7 @@ function SectionRenderer({ section }: { section: CardSection }) {
   return (
     <SectionWrapper title={section.title} description={section.description}>
       <div className="space-y-6">
-        {hasMainContent && section.content ? <RichContentBlock content={section.content} /> : null}
+        {hasMainContent && section.content ? <RichContentBlocks content={section.content} /> : null}
         {section.subsections?.length ? (
           <div className="space-y-4">
             {section.subsections.map((subsection, index) => (
@@ -291,6 +321,32 @@ function CardDetailSections({ card }: { card: Card }) {
         <SectionRenderer key={section.id} section={section} />
       ))}
     </div>
+  );
+}
+
+function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
+  if (!applyNow?.url) {
+    return null;
+  }
+
+  const label = applyNow.label?.trim() || "Apply now";
+
+  return (
+    <SectionWrapper title="Apply now">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <a
+          href={applyNow.url}
+          className="inline-flex items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-200"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {label}
+        </a>
+        {applyNow.disclaimer ? (
+          <p className="text-xs text-slate-100/70">{applyNow.disclaimer}</p>
+        ) : null}
+      </div>
+    </SectionWrapper>
   );
 }
 
@@ -405,6 +461,8 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
 
         <CardDetailSections card={card} />
+
+        {card.applyNow ? <ApplyNowSection applyNow={card.applyNow} /> : null}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-white">Ready for more cards?</p>
