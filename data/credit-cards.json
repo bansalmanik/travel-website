@@ -1,6 +1,210 @@
 {
   "cards": [
     {
+      "slug": "scapia-credit-card",
+      "name": "Scapia Credit Card",
+      "issuer": "Federal Bank",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "A zero-forex, UPI-friendly travel card that earns Scapia Coins on every spend and converts them into flight and hotel discounts.",
+      "seoDescription": "Make travel more rewarding with the Scapia Credit Card by Federal Bank. Earn Scapia Coins on UPI, flights, hotels, and daily spends while enjoying zero-forex markup and milestone vouchers.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "INR",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Scapia Coins",
+      "websiteDisplayTags": [
+        "UPI Rewards",
+        "Travel Discounts",
+        "Zero Forex Markup"
+      ],
+      "keyHighlights": [
+        "UPI payments via Rupay earn Scapia Coins on everyday spends",
+        "Zero foreign exchange markup for international travel",
+        "Fast, app-first redemption for flights and hotels"
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/scapia.AVIF",
+          "alt": "Scapia Credit Card"
+        }
+      },
+      "detailSections": [
+        {
+          "id": "scapia-review",
+          "title": "Review and Use Case",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "We feel that Scapia is a no brainer card since it is Life Time Free and provices 0 Forex Markup. Even if you already have a 0 Foex card this can serve as backup."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "If you have more than 1 Airport trips coming up in a month then you can extract extra ordinary value out of this card. For example if you have 2 Airport visits coming up in a month then you can get 2000(16%) back by spending 12000(10000 for unlocking airport privlidges plus 1000 each time on airport). Similarly if you have 3 visits coming up this jumps to 3000(23%) back for 13000 spend. You get the gist right"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Incremental Return for frequent flyers.",
+                "0 Forex Markup card",
+                "You get both UPI and Visa Card",
+                "Prices for flight and hotels on scapia are very competetive"
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Coming on to spending use cases, we feel that you should not spend heavily on this card. Base reward of 2% is good but not great. Reward on Travel is 4% which we think is very low. Following are some spend use cases whcih we think can present good opportunities"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "If your reward rate for a particular spend on other cards is less than 2% then you can use Scapia.",
+                "UPI spends if you don't have apowerfull UPI card'"
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "You will have to strategize on how you use Scapia card. If you don't have Airport visits coming in next month then it does not make sense to spend on Scapia as you can generate higher returns using other cards. But if you do have Airports Visits coming up in next month then it makes sense to spend on scapia. More the number of Airport visits you have lined up, better the returns"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "You can do Advance tax Payment or NPS investment to unlock airport benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
+            "label": "Apply Now",
+            "disclaimer": "Get 1000 scapia coins on joining using our referall by clicking Apply Now."
+          }
+        },
+        {
+          "id": "welcome-annual-renewal",
+          "title": "Welcome, annual & renewal benefits",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Scapia keeps things simple with a lifetime-free structure and instant card issuance through the app."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Get 1000 Scapia Coins on joining through our link."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reward-earning",
+          "title": "Reward earning",
+          "content": [
+            {
+              "type": "table",
+              "table": {
+                "columns": [ "Spend type", "Earn rate", "Return Rate" ],
+                "rows": [
+                  [ "UPI payments", "5% Scapia Coins", "1%" ],
+                  [ "Online & offline spends", "10% Scapia Coins", "2%" ],
+                  [ "Scapia app bookings", "20 % Scapia Coins", "4%" ]
+                ]
+              }
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "No rewards on rent, wallet loads, fuel, and other restricted categories."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "redemption-options",
+          "title": "Redemption options",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Scapia Coins can be redeemed directly in the Scapia app for flight and hotel bookings.",
+                "Redemptions provide instant discounts rather than transfer partners."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Redeem Coins for flights across major airlines within the app.",
+                "Use Coins for domestic and international hotel stays."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "travel-benefits",
+          "title": "Unmatched Travel Benefits",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "If you spend 10,000 in a month you unlock following benefits for next month."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Unlimited Lounge  Access.",
+                "100% cashback on shopping/dining at airports upto 1000 per airport vist.",
+                "You can also choose to get a spa at airport.",
+                "Please note that you can choose only 1 from above listed benefits per Airport departure."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Best Startegy is to get Lounge access using a different card and use Scapia for shopping."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "travel-support",
+          "title": "Travel support & protections",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Zero forex markup on international transactions.",
+                "You get both Visa and Rupay variant of the card."
+              ]
+            }
+          ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
+            "label": "Apply Now",
+            "disclaimer": "Get 1000 scapia coins on joining using our referall by clicking Apply Now.."
+          }
+        }
+      ],
+      "enabled": true
+
+    },
+    {
       "slug": "axis-bank-atlas-credit-card",
       "name": "Axis Bank Atlas Credit Card",
       "issuer": "Axis Bank",
@@ -121,14 +325,6 @@
               ]
             }
           ]
-        },
-        {
-          "component": "applyNow",
-          "applyNow": {
-            "url": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-atlas-credit-card",
-            "label": "Apply Now",
-            "disclaimer": "You will leave Travel with Points and continue on Axis Bank's secure site."
-          }
         },
         {
           "id": "redemption-options",
@@ -310,18 +506,9 @@
               ]
             }
           ]
-        },
-        {
-          "component": "applyNow",
-          "applyNow": {
-            "url": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-atlas-credit-card",
-            "label": "Apply Now",
-            "disclaimer": "You will leave Travel with Points and continue on Axis Bank's secure site."
-          }
         }
       ],
       "enabled": true
-      
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -824,7 +1011,7 @@
         }
       ],
       "enabled": true
-      
+
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -1024,151 +1211,7 @@
         }
       ],
       "enabled": true
-      
-    },
-    {
-      "slug": "scapia-credit-card",
-      "name": "Scapia Credit Card",
-      "issuer": "Federal Bank",
-      "network": "Visa",
-      "type": "Travel Rewards Card",
-      "summary": "A zero-forex, UPI-friendly travel card that earns Scapia Coins on every spend and converts them into flight and hotel discounts.",
-      "seoDescription": "Make travel more rewarding with the Scapia Credit Card by Federal Bank. Earn Scapia Coins on UPI, flights, hotels, and daily spends while enjoying zero-forex markup and milestone vouchers.",
-      "annualFee": {
-        "amount": 0,
-        "currency": "INR",
-        "gstApplicable": false
-      },
-      "rewardsCurrency": "Scapia Coins",
-      "websiteDisplayTags": [
-        "UPI Rewards",
-        "Travel Discounts",
-        "Zero Forex Markup"
-      ],
-      "keyHighlights": [
-        "UPI payments via Rupay earn Scapia Coins on everyday spends",
-        "Zero foreign exchange markup for international travel",
-        "Fast, app-first redemption for flights and hotels"
-      ],
-      "media": {
-        "cardImage": {
-          "src": "/images/cards/scapia.AVIF",
-          "alt": "Scapia Credit Card"
-        }
-      },
-      "detailSections": [
-        {
-          "id": "welcome-annual-renewal",
-          "title": "Welcome, annual & renewal benefits",
-          "content": [
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "Scapia keeps things simple with a lifetime-free structure and instant card issuance through the app."
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "Get 1000 Scapia Coins on joining through our link."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "reward-earning",
-          "title": "Reward earning",
-          "content": [
-            {
-              "type": "table",
-              "table": {
-                "columns": [ "Spend type", "Earn rate", "Return Rate" ],
-                "rows": [
-                  [ "UPI payments", "5% Scapia Coins", "1%" ],
-                  [ "Online & offline spends", "10% Scapia Coins", "2%" ],
-                  [ "Scapia app bookings", "20 % Scapia Coins", "4%" ]
-                ]
-              }
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "No rewards on rent, wallet loads, fuel, and other restricted categories."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "redemption-options",
-          "title": "Redemption options",
-          "content": [
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "Scapia Coins can be redeemed directly in the Scapia app for flight and hotel bookings.",
-                "Redemptions provide instant discounts rather than transfer partners."
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "Redeem Coins for flights across major airlines within the app.",
-                "Use Coins for domestic and international hotel stays."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "travel-benefits",
-          "title": "Unmatched Travel Benefits",
-          "content": [
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "If you spend 10,000 in a month you unlock following benefits for next month."
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "Unlimited Lounge  Access.",
-                "100% cashback on shopping/dining at airports upto 1000 per airport vist.",
-                "You can also choose to get a spa at airport.",
-                "Please note that you can choose only 1 from above listed benefits per Airport departure."
-              ]
-            },
-            {
-              "type": "paragraphs",
-              "paragraphs": [
-                "Best Startegy is to get Lounge access using a different card and use Scapia for shopping."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "travel-support",
-          "title": "Travel support & protections",
-          "content": [
-            {
-              "type": "bullets",
-              "bullets": [
-                "Zero forex markup on international transactions.",
-                "You get both Visa and Rupay variant of the card."
-              ]
-            }
-          ]
-        },
-        {
-          "component": "applyNow",
-          "applyNow": {
-            "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
-            "label": "Apply Now",
-            "disclaimer": "You will get 1000 scapia coins on joining using our referall. Click Apply Now to join using our referall."
-          }
-        }
-      ],
-      "enabled": true
-      
+
     }
 
   ],
