@@ -123,6 +123,14 @@
           ]
         },
         {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-atlas-credit-card",
+            "label": "Apply Now",
+            "disclaimer": "You will leave Travel with Points and continue on Axis Bank's secure site."
+          }
+        },
+        {
           "id": "redemption-options",
           "title": "Redemption options",
           "content": [
@@ -302,14 +310,18 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-atlas-credit-card",
+            "label": "Apply Now",
+            "disclaimer": "You will leave Travel with Points and continue on Axis Bank's secure site."
+          }
         }
       ],
       "enabled": true,
-      "applyNow": {
-        "url": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-atlas-credit-card",
-        "label": "Apply Now",
-        "disclaimer": "You will leave Travel with Points and continue on Axis Bank's secure site."
-      }
+      
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -579,13 +591,17 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+            "disclaimer": "Application is handled directly by HDFC Bank."
+          }
         }
       ],
       "enabled": true,
-      "applyNow": {
-        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
-        "disclaimer": "Application is handled directly by HDFC Bank."
-      }
+      
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -797,14 +813,18 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://www.hsbc.co.in/credit-cards/products/travelone/",
+            "label": "Apply via HSBC India",
+            "disclaimer": "Check the HSBC website for the latest eligibility and terms."
+          }
         }
       ],
       "enabled": true,
-      "applyNow": {
-        "url": "https://www.hsbc.co.in/credit-cards/products/travelone/",
-        "label": "Apply via HSBC India",
-        "disclaimer": "Check the HSBC website for the latest eligibility and terms."
-      }
+      
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -993,14 +1013,18 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://www.americanexpress.com/in/credit-cards/platinum-travel/",
+            "label": "Apply Now",
+            "disclaimer": "American Express India will provide the full application details."
+          }
         }
       ],
       "enabled": true,
-      "applyNow": {
-        "url": "https://www.americanexpress.com/in/credit-cards/platinum-travel/",
-        "label": "Apply Now",
-        "disclaimer": "American Express India will provide the full application details."
-      }
+      
     },
     {
       "slug": "scapia-credit-card",
@@ -1133,14 +1157,18 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
+            "label": "Apply Now",
+            "disclaimer": "You will get 1000 scapia coins on joining using our referall. Click Apply Now to join using our referall."
+          }
         }
       ],
       "enabled": true,
-      "applyNow": {
-        "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
-        "label": "Apply Now       ",
-        "disclaimer": "You will get 1000 scapia coins on joining using our referall. Click Apply Now to join using our referall."
-      }
+      
     }
 
   ],
