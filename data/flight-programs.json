@@ -379,7 +379,7 @@
           ],
           "images": [
             {
-              "src": "/images/cards/air-india-maharaja.JPG",
+              "src": "/images/cards/air-india-maharaja.jpg",
               "alt": "Air India aircraft with Maharaja Club emblem against an Indian skyline",
               "caption": "Maharaja Club treats loyal flyers to royal perks across Air India’s hubs.",
               "enabled": true
@@ -766,7 +766,7 @@
           ],
           "images": [
             {
-              "src": "/images/cards/indigo-bluchip.AVIF",
+              "src": "/images/cards/indigo-bluchip.avif",
               "alt": "IndiGo aircraft against an India skyline",
               "caption": "BluChip keeps frequent India flyers engaged across 6E hubs.",
               "enabled": true
