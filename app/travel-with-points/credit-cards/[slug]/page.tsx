@@ -315,6 +315,10 @@ function isApplyNowBlock(block: CardDetailBlock): block is CardApplyNowBlock {
   return "component" in block && block.component === "applyNow";
 }
 
+function isCardSection(block: CardDetailBlock): block is CardSection {
+  return "id" in block && typeof block.id === "string";
+}
+
 function CardDetailSections({ card }: { card: Card }) {
   if (!card.detailSections?.length) {
     return null;
@@ -418,7 +422,9 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const welcomeSection = card.detailSections?.find((section) => section.id.includes("welcome"));
+  const welcomeSection = card.detailSections?.find(
+    (section): section is CardSection => isCardSection(section) && section.id.includes("welcome")
+  );
   const offerDescription = [
     summarizeContent(welcomeSection?.content),
     ...(welcomeSection?.subsections?.map((subsection) => summarizeContent(subsection.content)) ?? [])
