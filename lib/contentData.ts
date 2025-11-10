@@ -1,5 +1,3 @@
-import { cache } from "react";
-
 import type { BankProgram, BankProgramDataset } from "@/app/travel-with-points/bank-programs/types";
 import type {
     AwardPlaybookItem,

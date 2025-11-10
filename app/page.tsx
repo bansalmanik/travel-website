@@ -7,7 +7,7 @@ import { getJournalEntries } from "@/lib/contentData";
 const travelWithPointsHighlights = [
   {
     title: "Credit Cards",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more..",
+    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/credit-cards",
     accent: "bg-amber-100 text-amber-900",
   },
