@@ -11,7 +11,7 @@ const sections = [
   {
     title: "Credit Cards",
     description:
-      "Earn transferrable points, maximize category bonuses, and decide when a premium annual fee is worth it.",
+      "Earn transferable points, maximize category bonuses, and decide when a premium annual fee is worth it.",
     href: "/travel-with-points/credit-cards",
     accent: "bg-amber-100 text-amber-900",
   },
@@ -45,7 +45,7 @@ const quickTips = [
   },
   {
     title: "Diversify currencies",
-    detail: "Balance transferrable points and co-branded cards so you can pivot when award space disappears.",
+    detail: "Balance transferable points and co-branded cards so you can pivot when award space disappears.",
   },
   {
     title: "Track expirations",
@@ -63,7 +63,8 @@ export default function TravelWithPointsPage() {
             Turn everyday spending into your next adventure
           </h1>
           <p className="mx-auto max-w-2xl text-base text-slate-200/80">
-                      A structured look at how travel rewards fit together. Compare airline and hotel programs, understand bank partnerships, pick the right cards, and use point-conversion paths to unlock real value on flights and stays.
+            A structured look at how travel rewards fit together. Compare airline and hotel programs, understand bank partnerships,
+            pick the right cards, and use point-conversion paths to unlock real value on flights and stays.
           </p>
         </header>
 

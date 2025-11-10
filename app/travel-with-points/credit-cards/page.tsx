@@ -50,8 +50,10 @@ export default async function CreditCardsPage() {
           <h1 className="text-4xl font-semibold sm:text-5xl">Credit card strategy</h1>
           <p className="text-base text-slate-200/80">
             Focus on cards that earn flexible currencies, pair perks with your lifestyle, and keep an eye on welcome bonus rules.
-            </p>
-          <p className="text-base text-slate-200/80">A focused setup earns faster, redeems better, and avoids orphaned points.</p>
+          </p>
+          <p className="text-base text-slate-200/80">
+            A focused setup earns faster, redeems better, and avoids orphaned points.
+          </p>
         </header>
 
         <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
