@@ -225,9 +225,9 @@
         "Transferable Miles",
         "High Rewards on Travel"
       ],
-        "keyHighlights": [
-          "4% value back on everyday spending (≈8% via Accor)",
-          "10% value back when booking direct with hotels & airlines or Axis Travel EDGE (≈20% via Accor)",
+      "keyHighlights": [
+        "4% value back on everyday spending (≈8% via Accor)",
+        "10% value back when booking direct with hotels & airlines or Axis Travel EDGE (≈20% via Accor)",
         "Strong milestone perks for high spenders"
       ],
       "media": {
@@ -282,6 +282,18 @@
                     ]
                   }
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Eligibility",
+          "title": "Eligibility",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Annual Income greater than ₹12,00,000"
               ]
             }
           ]
@@ -494,6 +506,37 @@
           ]
         },
         {
+          "id": "atlas-review",
+          "title": "Review and Use Case",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "This is 1 gem of a card. 4% bases reward rate(~8% accor) is just too good considering it is not a super premium card."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Joining fee of ₹5000 is completly justified and welcome benefits easily compensates for it. Annual Milestone benefits have also been setup very nicely."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Sadly Axis has stopped issuing this card. If you have it keep hold of it."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Best card for paying directly on hotel and airline websites(offline as well)",
+                "Good card for offline spending(do check for exclusions)."
+              ]
+            }
+          ]
+        },
+        {
           "id": "program-notes",
           "title": "Program notes",
           "content": [
@@ -578,6 +621,18 @@
                   ]
                 ]
               }
+            }
+          ]
+        },
+        {
+          "id": "Eligibility",
+          "title": "Eligibility",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Monthly Income greater than ₹1,50,000"
+              ]
             }
           ]
         },
@@ -764,9 +819,15 @@
           ]
         },
         {
-          "id": "review",
+          "id": "regalia-gold-review",
           "title": "Review",
           "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Regalia Gold is a solid offering from HDFC bank. Can work as a voucher card if you plan to redeem on Accor Hotels. Outside Accor Value is good but not great. Thre real bummer is daily cap of 2000 accelerated Reward points and monthly capping of 4000 accelerated Reward points. Those limits get exhausted fast"
+              ]
+            },
             {
               "type": "bullets",
               "bullets": [
@@ -854,6 +915,18 @@
                   ]
                 ]
               }
+            }
+          ]
+        },
+        {
+          "id": "Eligibility",
+          "title": "Eligibility",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Annual Income greater than ₹4,00,000"
+              ]
             }
           ]
         },
@@ -987,9 +1060,21 @@
           ]
         },
         {
-          "id": "Review",
+          "id": "regalia-gold-review",
           "title": "Review",
           "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "HSBC Travel One has been re-rated since the launch of travel bookings on HSBC Markeetplace. 16% on flight and 24% return on hotels are good propositions."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Prices on HSBC MarketPlace travel website tend to be on a higher side so do your research before booking. What we really do not like about HSBC market place is the room inventory. We have observed that for most hotels and rooms, booking with breakfast option is not available."
+              ]
+            },
             {
               "type": "bullets",
               "bullets": [
@@ -1103,6 +1188,18 @@
           ]
         },
         {
+          "id": "Eligibility",
+          "title": "Eligibility",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Annual Income greater than ₹6,00,000"
+              ]
+            }
+          ]
+        },
+        {
           "id": "reward-earning",
           "title": "Reward earning",
           "content": [
@@ -1184,6 +1281,34 @@
                   ]
                 ]
               }
+            }
+          ]
+        },
+        {
+          "id": "regalia-gold-review",
+          "title": "Review",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "A no nonsense card. Rewards on this card are mostly milestone linked and almost everything counts towards Milestone. So you can just swipe it and not worry about exclusions"
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "It would had been great if Amex provided a clear marker for Renewal fee waiver. The power of this card mostly depends on how much money you can extract from marriot points."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Swipe this card for categories that might be excluded on you other cards.",
+                "Marriot is the sweet spot for redemption.",
+                "Use Amex multiplier to buy vouchers for accelerated rewards.",
+                "When redeeming marriot points try to use 5th Night free offer",
+                "Some great use cases for spending on this card are tax payments, NPS or any other goverment payments"
+              ]
             }
           ]
         },
