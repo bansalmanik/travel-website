@@ -71,9 +71,14 @@
         ],
         "media": [
           {
-            "src": "/images/content/pool-2.jpg",
+            "src": "/images/content/Maldives-1.JPG",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
-            "layout": "landscape"
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/maldives-3.JPG",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
           }
         ]
       },

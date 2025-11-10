@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import GallerySlider from "@/app/components/gallery-slider";
 
-import { getAllStorySummaries, getStoryBySlug } from "../data";
+import { getStoryBySlug } from "../data";
 import type { StorySectionMedia } from "../data";
 
 export const runtime = "edge";
