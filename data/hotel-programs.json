@@ -13,7 +13,7 @@
         ],
         "note": "Marriott Bonvoy balances aspirational resorts with unmatched global coverage—ideal for frequent travelers who need both reach and rewards.",
         "image": {
-          "src": "/images/cards/photo-1520256862855--0d09ea8ba8cb.svg",
+          "src": "/hotel-programs/marriot-bonvoy.avif",
           "alt": "Modern Marriott hotel lobby with warm lighting"
         }
       },
@@ -115,8 +115,8 @@
             "description": "",
             "values": [
               "Member rates & mobile key",
+              "Member rates & mobile key",
               "Points",
-              "Points or breakfast",
               "Points, breakfast, or amenity",
               "Points, breakfast, or amenity",
               "Points, breakfast, or amenity"
@@ -127,8 +127,8 @@
             "label": "Enhanced upgrades",
             "description": "",
             "values": [
-              "Standard room type",
-              "Space-available upgrades",
+              "No room upgrades",
+              "No room upgrades",
               "Enhanced rooms",
               "Includes select suites",
               "Includes select suites",
@@ -206,9 +206,9 @@
             "description": "",
             "values": [
               "Earn & transfer with partners",
+              "Earn & transfer with partners",
               "Emirates Skywards bonus miles",
-              "Emirates Skywards bonus miles",
-              "Emirates & Hertz Five Star®",
+              "Emirates Skyward benefits & Hertz Five Star®",
               "Emirates, Hertz President’s Circle®",
               "United Premier® Silver + Ambassador perks"
             ],
@@ -231,6 +231,7 @@
           "Earn 10 points per $1 on eligible room charges at most Marriott brands.",
           "Element, Residence Inn, and TownePlace Suites earn 5 points per $1 while Homes & Villas by Marriott Bonvoy earns 2 points per $1.",
           "Eligible incidentals—dining, spa treatments, and on-property services—also accrue points when charged to your room.",
+          "Earn 5 points per $1 on Dining at Hotels and Resorts.",
           "Elite bonuses start at 10% for Silver members and rise to 75% for Titanium and Ambassador elites.",
           "Boost balances with co-branded Marriott credit cards and targeted promotions"
         ]
@@ -292,13 +293,13 @@
         "description": "Accor Live Limitless (ALL) is Accor’s global loyalty program rewarding hotel, dining, and lifestyle spend across brands like Raffles, Sofitel, Pullman, and ibis.",
         "items": [
           "Earn both Reward Points and Status Points on stays, dining, and events.",
-          "Redeem with a fixed cash value: 2,000 Reward Points reduce eligible bills by €40.",
+          "Redeem with a fixed cash value: 2,000 equals €40.",
           "Lifestyle partnerships unlock VIP access to concerts, sports, and cultural events.",
           "Accor Plus provides accelerated earn and dining benefits."
         ],
         "note": "The program’s cash-equivalent redemption structure keeps point values predictable with no blackout dates.",
         "image": {
-          "src": "/images/content/photo-1528909514045-2fa4ac7a08ba.svg",
+          "src": "/hotel-programs/accor-logo.jpg",
           "alt": "Guest enjoying a chic hotel lobby within the Accor portfolio"
         }
       },
@@ -400,7 +401,7 @@
         "items": [
           "Regional Accor credit cards in select markets"
         ],
-        "note": "No co-branded card in India yet, but local issuers offer ALL earning cards in Europe, Asia, and Australia."
+        "note": "No co-branded card in India yet."
       },
       "pointsEarn": {
         "items": [
@@ -427,9 +428,7 @@
       "tags": [
         "Hotel Loyalty",
         "Free Breakfast",
-        "Suite Upgrades",
-        "Fifth Night Free",
-        "Digital Key"
+        "Suite Upgrades"
       ],
       "enabled": true
     },
@@ -478,7 +477,6 @@
           },
           {
             "label": "Breakfast or daily food & beverage credit",
-            "description": "Gold and Diamond enjoy complimentary breakfast or daily dining credits at most full-service brands.",
             "values": [
               "Not included",
               "Continental breakfast at select brands",
@@ -491,7 +489,7 @@
             "label": "Room upgrades",
             "values": [
               "Not included",
-              "Space-available upgrades",
+              "Not included",
               "Space-available upgrades including executive rooms",
               "Upgrades including standard suites"
             ],
@@ -534,7 +532,7 @@
             "values": [
               "Standard Wi-Fi",
               "Standard Wi-Fi",
-              "Premium Wi-Fi",
+              "Standard Wi-Fi",
               "Premium Wi-Fi"
             ],
             "enabled": true
@@ -552,38 +550,21 @@
         ],
         "note": "Hilton Honors Diamond can be secured instantly with the Hilton Aspire card, unlocking lounge access, premium Wi-Fi, and status gifting.",
         "image": {
-          "src": "/images/content/photo-1528909514045--406e194c93d3.svg",
+          "src": "/hotel-programs/hilton-goa.jpg",
           "alt": "Hilton resort entrance at sunset"
         }
-      },
-      "coBrandedCards": {
-        "items": [
-          "Hilton Honors American Express Aspire Card",
-          "Hilton Honors American Express Surpass® Card",
-          "Hilton Honors American Express Card",
-          "Hilton Honors American Express Business Card"
-        ],
-        "note": "Aspire cardholders receive automatic Diamond status plus an annual free night certificate."
       },
       "pointsEarn": {
         "items": [
           "Earn 10 base points per $1 at most Hilton brands and 5 points per $1 at Tru and Home2 Suites.",
           "Silver, Gold, and Diamond elites earn 20%, 80%, and 100% point bonuses respectively.",
-          "Hilton Honors points accrue on room rates, dining, spa services, and on-property incidentals.",
-          "Supplement earnings via Hilton co-branded cards, airline and car rental partners, or Amex Membership Rewards® transfers at 1:2."
+          "Hilton Honors points accrue on room rates, dining, spa services, and on-property incidentals."
         ]
       },
       "pointsBurn": {
         "items": [
           "Redeem for free nights, room upgrades, Hilton Experiences, and even car rentals.",
-          "Points + Money awards stretch balances when cash rates are reasonable.",
-          "U.S. members can use Shop with Points at Amazon or transfer points to airline partners."
-        ]
-      },
-      "paidMemberships": {
-        "items": [
-          "Hilton Honors is complimentary to join, with elite status earned through stays or co-branded credit cards.",
-          "Hilton Grand Vacations ownership and Diamond gifting can accelerate elite status."
+          "Points + Money awards stretch balances when cash rates are reasonable."
         ]
       },
       "otherBenefits": {
@@ -658,7 +639,7 @@
             "values": [
               "Not included",
               "Not included",
-              "Points or drink/snack at select brands",
+              "Not included",
               "Points or drink/snack at select brands",
               "Free breakfast welcome choice"
             ],
@@ -669,7 +650,7 @@
             "values": [
               "Not included",
               "Not included",
-              "Space-available upgrades",
+              "Not included",
               "Space-available upgrades including premium rooms",
               "Best available rooms including suites (where offered)"
             ],
@@ -728,8 +709,7 @@
         "items": [
           "Earn 10 base points per $1 at most brands and 5 points per $1 at Staybridge Suites and Candlewood Suites.",
           "Silver, Gold, Platinum, and Diamond elites receive 20%, 40%, 60%, and 100% point bonuses respectively.",
-          "Eligible charges include room rates, on-property dining, and other hotel incidentals.",
-          "Boost earnings with IHG co-branded credit cards, airline and car rental partners, or dining partners."
+          "Eligible charges include room rates, on-property dining, and other hotel incidentals."
         ]
       },
       "pointsBurn": {
@@ -749,8 +729,7 @@
         "items": [
           "Milestone Rewards every 10 nights from 20 to 100 nights let you pick bonus points, credits, or suite upgrades.",
           "Diamond elites can select free breakfast as part of their welcome amenity.",
-          "Elite rollover nights help maintain status into the next year.",
-          "Premier cardholders receive a Fourth Night Free award when redeeming points."
+          "Elite rollover nights help maintain status into the next year."
         ]
       },
       "enabled": true
@@ -856,7 +835,6 @@
         "Hotel Loyalty",
         "Green Points",
         "Spa Benefits",
-        "Milestone Rewards",
         "Luxury Hospitality"
       ],
       "enabled": true
@@ -923,8 +901,7 @@
       "otherBenefits": {
         "items": [
           "Complimentary room upgrades are subject to availability at check-in.",
-          "Select benefits, including experiences and spa sessions, are limited to once per membership year.",
-          "Escalation support is available via praloy.saha@ihcltata.com for unresolved service issues."
+          "Select benefits, including experiences and spa sessions, are limited to once per membership year."
         ]
       },
       "notesSection": {
