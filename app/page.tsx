@@ -41,7 +41,7 @@ export default async function Home() {
     date: entry.displayDate,
     url: `/journals/${entry.slug}`,
   }));
-    const heroImageSrc = "/images/content/cover_1.jpg";
+  const heroImageSrc = "/images/content/cover_1.jpg";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
@@ -67,7 +67,7 @@ export default async function Home() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">
             <Link
-              className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-300 sm:w-auto"
+              className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto sm:text-base"
               href="/stories"
             >
               Dive into Stories
@@ -80,7 +80,7 @@ export default async function Home() {
         <section id="stories" className="space-y-12">
           <div className="flex flex-col gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
             <div className="space-y-2 sm:space-y-0">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-500 sm:text-sm sm:tracking-[0.4em]">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500 sm:text-sm sm:tracking-[0.35em]">
                 Featured Stories
               </p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-4xl">
@@ -92,12 +92,12 @@ export default async function Home() {
             </p>
           </div>
 
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
+          <div className="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 no-scrollbar sm:gap-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:pb-0">
             {featuredStories.map((story) => (
               <Link
                 key={story.slug}
                 href={`/stories/${story.slug}`}
-                className="group overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-2xl"
+                className="group flex min-w-[85%] snap-center flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:min-w-[70%] md:min-w-0"
               >
                 <div className="relative h-56 w-full overflow-hidden sm:h-64">
                   <Image
@@ -110,7 +110,7 @@ export default async function Home() {
                   />
                 </div>
                 <div className="space-y-3 px-6 py-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-500">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500">
                     {story.city}, {story.country}
                   </p>
                   <h3 className="text-xl font-semibold text-slate-900">{story.title}</h3>
@@ -143,7 +143,7 @@ export default async function Home() {
         >
           <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
             <div className="space-y-5 text-center md:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300 sm:text-sm sm:tracking-[0.4em]">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.35em]">
                 New Resource Hub
               </p>
               <h2 id="travel-with-points-heading" className="text-2xl font-semibold sm:text-4xl">
@@ -153,21 +153,21 @@ export default async function Home() {
                 Earn smarter. Redeem better. Fly further. Miles and points that take you places
               </p>
               <Link
-                className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-300"
+                className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                 href="/travel-with-points"
               >
                 Explore the hub
               </Link>
             </div>
-            <div className="space-y-4">
+            <div className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 no-scrollbar md:mx-0 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:pb-0">
               {travelWithPointsHighlights.map((item) => (
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="group block overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10"
+                  className="group block min-w-[70%] snap-center overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 md:min-w-0"
                 >
                   <span
-                    className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] ${item.accent}`}
+                    className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
                   >
                     {item.title}
                   </span>
@@ -197,7 +197,7 @@ export default async function Home() {
         <section id="journal" className="space-y-10">
           <div className="flex flex-col gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
             <div className="space-y-2 sm:space-y-0">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-500 sm:text-sm sm:tracking-[0.4em]">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500 sm:text-sm sm:tracking-[0.35em]">
                 Latest Journal
               </p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-4xl">
@@ -213,10 +213,10 @@ export default async function Home() {
             {journalHighlights.map((entry) => (
               <a
                 key={entry.title}
-                className="flex flex-col gap-2 rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-6"
+                className="flex flex-col gap-2 rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:p-6"
                 href={entry.url}
               >
-                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-500">{entry.date}</span>
+                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-500">{entry.date}</span>
                 <span className="text-lg font-semibold text-slate-900">{entry.title}</span>
               </a>
             ))}
