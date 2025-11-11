@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigationLinks = [
   { href: "/stories", label: "Stories" },
@@ -12,6 +13,8 @@ const navigationLinks = [
 export function SiteNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuId = "primary-navigation";
+  const pathname = usePathname();
+  const normalizedPath = pathname?.split("#")[0];
 
   const closeMenu = () => setIsMenuOpen(false);
 
@@ -62,22 +65,36 @@ export function SiteNav() {
           </Link>
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md border border-white/15 p-2 text-white transition hover:border-white/30 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:hidden"
+            className="inline-flex items-center justify-center rounded-full border border-white/15 p-2 text-white transition hover:border-white/30 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:hidden"
             aria-label="Toggle navigation menu"
             aria-expanded={isMenuOpen}
             aria-controls={menuId}
             onClick={() => setIsMenuOpen((prev) => !prev)}
           >
-            <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor">
-              <path d="M4 6h16M4 12h16M4 18h16" strokeWidth={1.5} strokeLinecap="round" />
-            </svg>
+            {isMenuOpen ? (
+              <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor">
+                <path d="M6 6l12 12M18 6 6 18" strokeWidth={1.75} strokeLinecap="round" />
+              </svg>
+            ) : (
+              <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16" strokeWidth={1.5} strokeLinecap="round" />
+              </svg>
+            )}
           </button>
         </div>
 
         <div className="hidden gap-8 text-sm uppercase tracking-[0.18em] md:flex">
           {navigationLinks.map((link) => (
-            <Link key={link.label} className="transition-opacity hover:opacity-80" href={link.href}>
+            <Link
+              key={link.label}
+              className={`relative pb-1 transition-opacity hover:opacity-80 ${normalizedPath === link.href ? "opacity-100" : "opacity-70"}`}
+              href={link.href}
+              aria-current={normalizedPath === link.href ? "page" : undefined}
+            >
               {link.label}
+              {normalizedPath === link.href ? (
+                <span className="pointer-events-none absolute inset-x-0 -bottom-2 h-1 rounded-full bg-amber-300" aria-hidden />
+              ) : null}
             </Link>
           ))}
         </div>
@@ -90,14 +107,26 @@ export function SiteNav() {
             {navigationLinks.map((link) => (
               <Link
                 key={link.label}
-                className="rounded-lg px-3 py-2 text-center font-semibold transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className={`rounded-lg px-3 py-2 text-center font-semibold transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
+                  normalizedPath === link.href ? "bg-white/10 text-white" : "text-white/90"
+                }`}
                 href={link.href}
                 onClick={closeMenu}
+                aria-current={normalizedPath === link.href ? "page" : undefined}
               >
                 {link.label}
               </Link>
             ))}
           </div>
+        ) : null}
+
+        {isMenuOpen ? (
+          <button
+            type="button"
+            aria-label="Close navigation menu"
+            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden"
+            onClick={closeMenu}
+          />
         ) : null}
       </div>
     </nav>
