@@ -604,30 +604,54 @@
           "style": "table",
           "intro": "Bonus earnings on iShop are subject to monthly caps and limits on voucher redemption:",
           "table": {
-            "columns": ["Card type / partner", "Monthly cap", "Voucher limit", "Notes"],
+            "columns": ["Card", "Monthly cap", "Daily cap", "Voucher limit / notes"],
             "rows": [
               {
                 "cells": [
-                  "Emeralde Private / Times Black",
-                  "≈ 18,000 points",
-                  "₹30,000-₹1,00,000 depending on partner",
-                  "Top tier cards"
+                  "ICICI Emeralde Private Metal Credit Card",
+                  "18,000 Reward Points",
+                  "10,000 Reward Points",
+                  "Top tier – voucher limits vary by partner (₹30k-₹1L typical)"
                 ]
               },
               {
                 "cells": [
-                  "Emeralde / Diamant",
-                  "≈ 12,000 points",
-                  "Varies",
-                  "Mid-tier cards"
+                  "ICICI Times Black Credit Card",
+                  "15,000 Reward Points",
+                  "8,000 Reward Points",
+                  "Premium tier"
                 ]
               },
               {
                 "cells": [
-                  "Standard credit/debit cards",
-                  "≈ 9,000 points or ₹1,000-₹2,000 cashback",
-                  "₹12,000/month on Amazon/Flipkart vouchers",
-                  "Entry level"
+                  "ICICI Diamant World Credit Card",
+                  "12,000 Reward Points",
+                  "7,500 Reward Points",
+                  "High tier"
+                ]
+              },
+              {
+                "cells": [
+                  "ICICI Emeralde Credit Card",
+                  "12,000 Reward Points",
+                  "7,500 Reward Points",
+                  "High tier"
+                ]
+              },
+              {
+                "cells": [
+                  "ICICI Other Credit Cards",
+                  "9,000 Reward Points",
+                  "5,000 Reward Points",
+                  "Entry/standard cards – cashback variants may have ₹12k/month voucher caps"
+                ]
+              },
+              {
+                "cells": [
+                  "ICICI Co-Branded Credit Cards",
+                  "1,100 Reward Points",
+                  "1,100 Reward Points",
+                  "Includes Amazon Pay, MakeMyTrip & other co-brands"
                 ]
               }
             ]
