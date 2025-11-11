@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteNav } from "./components/site-nav";
+import { ImageGuard } from "./components/image-guard";
 
 export const metadata: Metadata = {
   title: "Miles Go Round",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased bg-zinc-50 dark:bg-black">
         <div className="flex min-h-screen flex-col">
+          <ImageGuard />
           <SiteNav />
           <main className="flex-1">{children}</main>
         </div>
