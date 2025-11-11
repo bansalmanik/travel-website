@@ -41,7 +41,7 @@ export default async function Home() {
     date: entry.displayDate,
     url: `/journals/${entry.slug}`,
   }));
-  const heroImageSrc = "/images/content/20230617_112049.jpg";
+    const heroImageSrc = "/images/content/cover_1.jpg";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
@@ -58,9 +58,6 @@ export default async function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-sky-900/40" />
         </div>
         <div className="mx-auto max-w-3xl px-5 pb-20 pt-12 text-white sm:px-6 sm:pb-32 sm:pt-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-200 sm:text-sm sm:tracking-[0.4em]">
-            Travel journal & visual stories
-          </p>
           <h1 className="mt-5 text-3xl font-semibold leading-tight text-center sm:mt-6 sm:text-left sm:text-5xl sm:leading-tight">
             Miles Go Round is your compass for soulful journeys and slow travel adventures.
           </h1>
@@ -208,8 +205,7 @@ export default async function Home() {
               </h2>
             </div>
             <p className="mx-auto max-w-2xl text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
-              Gear guides, travel playlists, and reflections from years of slow wandering. Updated whenever I find a quiet café
-              with decent Wi-Fi.
+              Travel smarter with bite-sized guides, practical tips, and insider ways to stretch every mile and point.
             </p>
           </div>
 
