@@ -530,48 +530,68 @@
           "id": "accelerated-rewards",
           "title": "Accelerated reward and cashback rates",
           "style": "table",
-          "intro": "Typical multipliers or cashback via iShop (varies by card & category):",
+          "intro": "Accelerated earn rates on iShop by card tier and category:",
           "table": {
-            "columns": ["Category", "Premium cards (~Points)", "Standard cards (~iCash)", "Notes"],
+            "columns": [
+              "Card",
+              "Card Base Reward Rate",
+              "Reward Rate On Flight Booking",
+              "Reward Rate On Hotel Booking",
+              "Reward Rate On Gift Vouchers"
+            ],
             "rows": [
               {
                 "cells": [
-                  "Flights",
-                  "6× (~18 %)",
-                  "1–3 % iCash",
-                  "Via partner OTAs"
+                  "ICICI Emeralde Private Metal Credit Card",
+                  "3%",
+                  "18%",
+                  "36%",
+                  "18%"
                 ]
               },
               {
                 "cells": [
-                  "Hotels",
-                  "12× (~36 %)",
-                  "3–5 % iCash",
-                  "Via portal booking"
+                  "ICICI Times Black Credit Card",
+                  "2%",
+                  "12%",
+                  "24%",
+                  "12%"
                 ]
               },
               {
                 "cells": [
-                  "Bus bookings",
-                  "6× (~18 %)",
-                  "Up to 6 % iCash",
-                  "Includes RedBus"
+                  "ICICI Emeralde Credit Card",
+                  "1%",
+                  "6%",
+                  "12%",
+                  "6%"
                 ]
               },
               {
                 "cells": [
-                  "Instant vouchers / e-gift cards",
-                  "6× (~18 %) or up to 12× in promos",
-                  "Up to 29 % iCash",
-                  "Selected voucher partners"
+                  "ICICI Diamant World Credit Card",
+                  "0.75%",
+                  "4.5%",
+                  "9%",
+                  "4.5%"
                 ]
               },
               {
                 "cells": [
-                  "Electronics & lifestyle offers",
-                  "Up to 6× (~18 %)",
-                  "Up to 10 % cashback",
-                  "On specific partner offers"
+                  "ICICI Other Credit Cards",
+                  "0.50%",
+                  "3%",
+                  "6%",
+                  "3%"
+                ]
+              },
+              {
+                "cells": [
+                  "ICICI Co-Branded Credit Cards",
+                  "Various",
+                  "4%",
+                  "4%",
+                  "4%"
                 ]
               }
             ]
