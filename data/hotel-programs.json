@@ -795,13 +795,66 @@
         ],
         "note": "Culinaire stacking accelerates Club ITC tier progression via enhanced Green Point accrual."
       },
+      "statusLevels": {
+        "tiers": [
+          "Culinaire Select",
+          "Culinaire Elite"
+        ],
+        "rows": [
+          {
+            "label": "Membership fee",
+            "values": [
+              "₹19,000 (1y); ₹34,200 (2y); ₹48,450 (3y); ₹60,800 (4y); ₹71,250 (5y)",
+              "₹29,500 (1y); ₹53,100 (2y); ₹75,250 (3y); ₹94,400 (4y); ₹110,650 (5y)"
+            ]
+          },
+          {
+            "label": "Complimentary night certificates",
+            "values": [
+              "One complimentary night redeemable at participating hotels",
+              "Two complimentary nights redeemable at participating hotels"
+            ]
+          },
+          {
+            "label": "Set meals for two",
+            "values": [
+              "Two buffet or set menu meals for two",
+              "Four buffet or set menu meals for two"
+            ]
+          },
+          {
+            "label": "Dining savings vouchers",
+            "values": [
+              "Two 50% off dining vouchers plus celebratory cake",
+              "Premium rate vouchers, two 50% off dining vouchers, celebratory cake"
+            ]
+          },
+          {
+            "label": "Green Points earn on dining / stays",
+            "values": [
+              "Earn up to 6% / 4% when stacked with Club ITC Silver or higher",
+              "Earn up to 12% / 8% when stacked with Club ITC Platinum or higher"
+            ]
+          },
+          {
+            "label": "Signature inclusions",
+            "values": [
+              "Suite experiences and ₹5,000 credit via milestone rewards",
+              "Enhanced upgrades, premium rate vouchers, and milestone suite credits"
+            ]
+          }
+        ],
+        "note": "Compare Culinaire membership pricing and inclusions; taxes apply on all plans."
+      },
       "paidMemberships": {
         "title": "Culinaire plan variants",
+        "description": "Use the comparison table above to gauge core entitlements; these notes cover add-ons and nuances.",
         "items": [
-          "Culinaire Select: ₹19,000 for 1 year (₹34,200 for 2 years; ₹48,450 for 3; ₹60,800 for 4; ₹71,250 for 5) with one complimentary night, two meals for two, a cake, and two 50% dining vouchers.",
-          "Culinaire Elite: ₹29,500 for 1 year (₹53,100 for 2 years; ₹75,250 for 3; ₹94,400 for 4; ₹110,650 for 5) with two complimentary nights, four meals for two, enhanced Green Point earning, and premium rate vouchers.",
-          "Optional spouse add-on: ₹1,000 per year plus taxes granting shared savings but no duplicate vouchers."
-        ]
+          "Optional spouse add-on: ₹1,000 per year plus taxes granting shared savings but no duplicate vouchers.",
+          "Membership cards are issued digitally with physical cards available on request for an additional fee.",
+          "Complimentary nights and meals require advance reservations with the membership team."
+        ],
+        "note": "Voucher redemptions may attract GST from January 1, 2025."
       },
       "specialPerks": {
         "title": "Milestone rewards",
@@ -890,12 +943,71 @@
           "Reach support at 1800-111-825 or epicure.escalations@ihcltata.com for onboarding or assistance."
         ]
       },
+      "statusLevels": {
+        "tiers": [
+          "Epicure Preferred",
+          "Epicure Privileged"
+        ],
+        "rows": [
+          {
+            "label": "Membership fee",
+            "values": [
+              "₹25,000 + taxes per year",
+              "₹50,000 + taxes per year"
+            ]
+          },
+          {
+            "label": "Complimentary night stays",
+            "values": [
+              "One complimentary night certificate across Taj portfolio",
+              "Two complimentary night certificates across Taj portfolio"
+            ]
+          },
+          {
+            "label": "Set meals for two",
+            "values": [
+              "Two curated set meals for two",
+              "Four curated set meals for two"
+            ]
+          },
+          {
+            "label": "Room upgrades",
+            "values": [
+              "Two one-level upgrades subject to availability",
+              "Four one-level upgrades subject to availability"
+            ]
+          },
+          {
+            "label": "Spa treatments",
+            "values": [
+              "One 60-minute spa treatment",
+              "Three 60-minute spa treatments"
+            ]
+          },
+          {
+            "label": "Club & experience perks",
+            "values": [
+              "Pool lunch with wine experience and celebratory cake",
+              "Pool lunch with wine experience, Taj Club lounge access, celebratory cake"
+            ]
+          },
+          {
+            "label": "NeuPass tier alignment",
+            "values": [
+              "Includes NeuPass Silver tier",
+              "Includes NeuPass Gold tier"
+            ]
+          }
+        ],
+        "note": "Benefits are subject to availability and applicable taxes; vouchers require advance reservations."
+      },
       "paidMemberships": {
         "title": "Epicure plan benefits",
+        "description": "Review the table above for core entitlements; these highlights cover flexibility and redemption tips.",
         "items": [
-          "Epicure Preferred: 25% dining and Qmin savings, one complimentary night stay, two set meals for two, two one-level upgrades, one 60-minute spa treatment, rate vouchers across Taj Palaces, City Resorts, and Taj Safaris, plus a pool lunch with wine experience.",
-          "Epicure Privileged: Mirrors Preferred discounts with two complimentary nights, four set meals for two, four room upgrades, three 60-minute spa sessions, expanded rate vouchers, Taj Club lounge access, and a pool lunch with wine experience.",
-          "Both tiers include a celebratory birthday cake and eligibility for add-on member cards."
+          "Both tiers include a celebratory birthday cake and eligibility for add-on member cards.",
+          "Dining discounts extend to Qmin delivery orders when the membership number is quoted.",
+          "Night and experience vouchers must be booked via the Epicure helpdesk ahead of arrival."
         ]
       },
       "otherBenefits": {
