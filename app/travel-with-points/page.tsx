@@ -55,33 +55,58 @@ const quickTips = [
 
 export default function TravelWithPointsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 py-20 lg:py-28">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-4 pb-20 pt-16 sm:px-6 lg:gap-20 lg:pb-28 lg:pt-24">
         <header className="space-y-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel with Points</p>
-          <h1 className="text-4xl font-semibold sm:text-5xl">
+          <p className="text-[0.65rem] font-semibold uppercase tracking-[0.45em] text-amber-300/80 sm:text-xs">
+            Travel with Points
+          </p>
+          <h1 className="text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
             Turn everyday spending into your next adventure
           </h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-200/80">
-            A structured look at how travel rewards fit together. Compare airline and hotel programs, understand bank partnerships,
-            pick the right cards, and use point-conversion paths to unlock real value on flights and stays.
+          <p className="mx-auto max-w-2xl text-sm text-slate-200/80 sm:text-base">
+            Compare programs, map transfer routes, and pick the right cards to unlock outsized value on flights and stays. Everything is organized so you can move from idea to booked seat in minutes.
           </p>
+          <div className="mx-auto flex w-full max-w-sm flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-200/90 shadow-lg backdrop-blur sm:flex-row sm:justify-center">
+            <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-300">
+              Fast track your redemption
+            </span>
+            <Link
+              href="/pointsconversion"
+              className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-amber-300"
+            >
+              Open the conversion guide
+              <svg
+                aria-hidden
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
         </header>
 
-        <section className="grid gap-8 rounded-3xl bg-slate-900/60 p-10 shadow-2xl backdrop-blur lg:grid-cols-3">
+        <section className="grid gap-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl backdrop-blur sm:gap-8 sm:p-8 lg:grid-cols-3">
           {sections.map((section) => (
             <Link
               key={section.title}
               href={section.href}
-              className="group flex flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-6 text-left transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/10"
+              className="group flex flex-col justify-between rounded-3xl border border-white/10 bg-white/[0.08] p-6 text-left shadow-lg transition hover:-translate-y-1 hover:border-white/30 hover:bg-white/10"
             >
               <div className="space-y-4">
                 <span
-                  className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] ${section.accent}`}
+                  className={`inline-flex items-center rounded-full px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] ${section.accent}`}
                 >
                   {section.title}
                 </span>
-                <p className="text-sm leading-6 text-slate-100/80">{section.description}</p>
+                <p className="text-sm leading-6 text-slate-100/80 sm:text-base">{section.description}</p>
               </div>
               <span className="mt-6 inline-flex items-center text-sm font-semibold text-amber-300">
                 Dive deeper
@@ -103,13 +128,46 @@ export default function TravelWithPointsPage() {
           ))}
         </section>
 
-        <section className="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur lg:grid-cols-3">
-          {quickTips.map((tip) => (
-            <div key={tip.title} className="space-y-3">
-              <h2 className="text-lg font-semibold text-white">{tip.title}</h2>
-              <p className="text-sm leading-6 text-slate-100/80">{tip.detail}</p>
-            </div>
-          ))}
+        <section className="space-y-6">
+          <div className="flex items-center justify-between gap-4">
+            <h2 className="text-lg font-semibold text-white sm:text-xl">Quick win playbook</h2>
+            <Link
+              href="/travel-with-points/credit-cards"
+              className="hidden text-sm font-semibold text-amber-300 transition hover:text-amber-200 sm:inline-flex"
+            >
+              Browse starter cards →
+            </Link>
+          </div>
+          <div className="-mx-2 flex snap-x snap-mandatory gap-4 overflow-x-auto px-2 pb-2 sm:grid sm:snap-none sm:grid-cols-3 sm:overflow-visible">
+            {quickTips.map((tip) => (
+              <div
+                key={tip.title}
+                className="min-w-[70%] snap-center rounded-2xl border border-white/10 bg-white/[0.07] p-5 shadow-lg backdrop-blur sm:min-w-0"
+              >
+                <h3 className="text-base font-semibold text-white sm:text-lg">{tip.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-100/80">{tip.detail}</p>
+              </div>
+            ))}
+          </div>
+          <Link
+            href="/stories"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-amber-400/40 bg-amber-400/10 px-4 py-3 text-sm font-semibold text-amber-200 transition hover:border-amber-300 hover:bg-amber-300/20 sm:w-auto"
+          >
+            See how travelers stitched their itineraries
+            <svg
+              aria-hidden
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </Link>
         </section>
       </div>
     </div>
