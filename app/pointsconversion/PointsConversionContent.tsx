@@ -186,20 +186,20 @@ export default function PointsConversionContent({ conversions }: PointsConversio
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-16 lg:gap-14 lg:py-24">
-        <header className="space-y-4 text-center">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+      <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 py-12 sm:gap-12 sm:px-6 sm:py-16 lg:gap-14 lg:py-24">
+        <header className="space-y-3 text-center sm:space-y-4">
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-5xl">
             Track how your points convert
           </h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-200/75">
+          <p className="mx-auto max-w-2xl text-sm text-slate-200/75 sm:text-base">
             Choose a card program and a partner to see a clear, side-by-side breakdown of the transfer ratio with
             helpful guidance for planning your move.
           </p>
         </header>
 
-        <section className="grid gap-8 lg:grid-cols-[300px_1fr] lg:items-start">
-          <div className="rounded-3xl border border-white/5 bg-slate-900/60 p-6 shadow-lg shadow-slate-950/30">
-            <div className="space-y-5">
+        <section className="grid gap-6 sm:gap-8 lg:grid-cols-[320px_1fr] lg:items-start">
+          <div className="rounded-3xl border border-white/5 bg-slate-900/60 p-5 shadow-lg shadow-slate-950/30 sm:p-6 lg:sticky lg:top-24">
+            <div className="space-y-4 sm:space-y-5">
               <label className="block space-y-2">
                 <span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
                   Program
@@ -207,7 +207,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 <select
                   value={selectedProgramName}
                   onChange={handleProgramChange}
-                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30 sm:text-base"
                   aria-label="Select the card program"
                 >
                   {programOptions.map((option) => (
@@ -224,7 +224,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 <select
                   value={normalizedSelectedFrom}
                   onChange={handleFromChange}
-                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30 sm:text-base"
                   aria-label="Select the points program you are transferring from"
                   disabled={fromOptions.length === 0}
                 >
@@ -248,7 +248,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 <select
                   value={normalizedSelectedPartnerId}
                   onChange={(event) => setSelectedPartnerId(event.target.value)}
-                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                  className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30 sm:text-base"
                   aria-label="Select the loyalty partner you are transferring to"
                   disabled={partnerOptions.length === 0}
                 >
@@ -268,17 +268,17 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-slate-900/40 p-8 lg:p-10">
+          <div className="rounded-3xl border border-white/10 bg-slate-900/40 p-6 sm:p-8 lg:p-10">
             {selectedPartner ? (
-              <div className="flex h-full flex-col gap-8">
+              <div className="flex h-full flex-col gap-6 sm:gap-8">
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
                       From program
                     </p>
                     <p className="mt-3 text-sm text-slate-100/90">{normalizedSelectedFrom}</p>
                   </div>
-                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
                       To partner
                     </p>
@@ -286,13 +286,13 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-amber-300/20 bg-slate-950/70 p-6">
+                <div className="rounded-2xl border border-amber-300/20 bg-slate-950/70 p-5 sm:p-6">
                   <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/80">
                     Conversion rate
                   </p>
                   {parsedRate ? (
-                    <div className="mt-5 flex items-end justify-center gap-10 sm:gap-16">
-                      <div className="space-y-1 text-center">
+                    <div className="mt-5 flex flex-col items-center justify-center gap-6 text-center sm:flex-row sm:items-end sm:justify-center sm:gap-10 lg:gap-16">
+                      <div className="space-y-1">
                         <p className="text-4xl font-semibold text-white sm:text-5xl">{parsedRate.fromValue}</p>
                         {parsedRate.fromUnit ? (
                           <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-200/70">
@@ -302,9 +302,9 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                       </div>
                       <div className="text-center text-amber-200/80">
                         <p className="text-sm font-medium uppercase tracking-[0.4em]">to</p>
-                        <p className="text-2xl font-semibold">→</p>
+                        <p className="text-2xl font-semibold sm:text-3xl">→</p>
                       </div>
-                      <div className="space-y-1 text-center">
+                      <div className="space-y-1">
                         <p className="text-4xl font-semibold text-white sm:text-5xl">{parsedRate.toValue}</p>
                         {parsedRate.toUnit ? (
                           <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-200/70">
@@ -316,8 +316,8 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   ) : null}
                 </div>
 
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                <div className="grid gap-4 sm:grid-cols-2 sm:gap-5">
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
                       Snapshot
                     </p>
@@ -326,7 +326,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                       make sure you are ready—most transfers are final.
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
                       Partner insight
                     </p>
@@ -335,8 +335,8 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 </div>
               </div>
             ) : (
-              <div className="flex h-full flex-col items-center justify-center gap-4 text-center text-slate-200/80">
-                <p className="text-lg font-semibold text-white">Choose a partner pairing</p>
+              <div className="flex h-full flex-col items-center justify-center gap-3 text-center text-slate-200/80 sm:gap-4">
+                <p className="text-base font-semibold text-white sm:text-lg">Choose a partner pairing</p>
                 <p className="max-w-md text-sm leading-6">
                   Select a source program and destination partner to see the transfer breakdown with tips tailored to the
                   combination.
