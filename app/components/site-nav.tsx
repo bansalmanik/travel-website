@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigationLinks = [
   { href: "/stories", label: "Stories" },
@@ -11,6 +12,7 @@ const navigationLinks = [
 
 export function SiteNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
   const menuId = "primary-navigation";
 
   const closeMenu = () => setIsMenuOpen(false);
@@ -48,10 +50,10 @@ export function SiteNav() {
 
   return (
     <nav
-      aria-label="Primary navigation"
-      className="safe-area-top sticky top-0 z-50 border-b border-white/10 bg-slate-900/80 text-white backdrop-blur supports-[backdrop-filter]:bg-slate-900/70"
+      aria-label="Primary"
+      className="safe-area-top sticky top-0 z-50 border-b border-white/15 bg-slate-950/80 text-white backdrop-blur supports-[backdrop-filter]:bg-slate-950/70"
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 pb-4 pt-3 md:flex-row md:items-center md:justify-between md:px-6 md:pb-6 md:pt-6">
+      <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 pb-3 pt-3 sm:px-5 md:flex-row md:items-center md:justify-between md:pb-4 md:pt-4">
         <div className="flex items-center justify-between gap-4">
           <Link
             href="/"
@@ -74,30 +76,51 @@ export function SiteNav() {
           </button>
         </div>
 
-        <div className="hidden gap-8 text-sm uppercase tracking-[0.18em] md:flex">
-          {navigationLinks.map((link) => (
-            <Link key={link.label} className="transition-opacity hover:opacity-80" href={link.href}>
-              {link.label}
-            </Link>
-          ))}
-        </div>
+        <ul className="hidden items-center gap-6 text-xs font-semibold uppercase tracking-[0.18em] md:flex">
+          {navigationLinks.map((link) => {
+            const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
+            return (
+              <li key={link.label}>
+                <Link
+                  className={`inline-flex items-center rounded-full px-3 py-2 transition ${
+                    isActive ? "bg-white/15 text-white" : "hover:bg-white/10 hover:text-white/90"
+                  }`}
+                  href={link.href}
+                  aria-current={isActive ? "page" : undefined}
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
 
         {isMenuOpen ? (
-          <div
-            id={menuId}
-            className="flex flex-col gap-2 rounded-2xl border border-white/10 bg-slate-900/95 p-4 text-sm uppercase tracking-[0.12em] text-white/90 shadow-lg md:hidden"
-          >
-            {navigationLinks.map((link) => (
-              <Link
-                key={link.label}
-                className="rounded-lg px-3 py-2 text-center font-semibold transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                href={link.href}
-                onClick={closeMenu}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+          <>
+            <div className="fixed inset-0 z-40 bg-black/50 md:hidden" aria-hidden onClick={closeMenu} />
+            <div
+              id={menuId}
+              className="relative z-50 flex flex-col gap-2 rounded-2xl border border-white/10 bg-slate-950/95 p-4 text-sm uppercase tracking-[0.14em] text-white/90 shadow-xl md:hidden"
+            >
+              {navigationLinks.map((link) => {
+                const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
+                return (
+                  <Link
+                    key={link.label}
+                    className={`rounded-lg px-3 py-2 text-center font-semibold transition ${
+                      isActive ? "bg-white/15 text-white" : "hover:bg-white/10"
+                    }`}
+                    href={link.href}
+                    aria-current={isActive ? "page" : undefined}
+                    onClick={closeMenu}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </>
         ) : null}
       </div>
     </nav>
