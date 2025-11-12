@@ -271,21 +271,6 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           <div className="rounded-3xl border border-white/10 bg-slate-900/40 p-8 lg:p-10">
             {selectedPartner ? (
               <div className="flex h-full flex-col gap-8">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
-                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
-                      From program
-                    </p>
-                    <p className="mt-3 text-sm text-slate-100/90">{normalizedSelectedFrom}</p>
-                  </div>
-                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
-                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
-                      To partner
-                    </p>
-                    <p className="mt-3 text-sm text-slate-100/90">{selectedPartner.to}</p>
-                  </div>
-                </div>
-
                 <div className="rounded-2xl border border-amber-300/20 bg-slate-950/70 p-6">
                   <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/80">
                     Conversion rate
@@ -314,6 +299,21 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                       </div>
                     </div>
                   ) : null}
+                </div>
+
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                      From program
+                    </p>
+                    <p className="mt-3 text-sm text-slate-100/90">{normalizedSelectedFrom}</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/5 bg-slate-950/60 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+                      To partner
+                    </p>
+                    <p className="mt-3 text-sm text-slate-100/90">{selectedPartner.to}</p>
+                  </div>
                 </div>
 
                 <div className="grid gap-5 sm:grid-cols-2">
