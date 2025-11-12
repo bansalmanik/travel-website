@@ -162,21 +162,21 @@ export default async function Home() {
                 Explore the hub
               </Link>
             </div>
-            <ul className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 no-scrollbar md:mx-0 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:pb-0">
+            <ul className="mt-8 grid grid-cols-1 gap-3 sm:gap-4 md:mt-0 md:grid-cols-2">
               {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="min-w-[70%] snap-center md:min-w-0">
+                <li key={item.title}>
                   <Link
                     href={item.href}
                     aria-label={`Learn more about ${item.title}`}
-                    className="group block h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                    className="group flex h-full flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:p-6"
                   >
                     <span
-                      className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
+                      className={`self-start rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
                     >
                       {item.title}
                     </span>
-                    <p className="mt-3 text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
-                    <span className="mt-4 inline-flex items-center text-sm font-semibold text-amber-300">
+                    <p className="text-pretty text-sm leading-6 text-slate-100/90 sm:text-base">{item.description}</p>
+                    <span className="inline-flex items-center text-sm font-semibold text-amber-300">
                       Read more
                       <svg
                         aria-hidden
