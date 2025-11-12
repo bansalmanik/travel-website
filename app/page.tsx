@@ -156,27 +156,27 @@ export default async function Home() {
                 Earn smarter. Redeem better. Fly further. Miles and points that take you places
               </p>
               <Link
-                className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
                 href="/travel-with-points"
               >
                 Explore the hub
               </Link>
             </div>
-            <ul className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 no-scrollbar md:mx-0 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:pb-0">
+            <ul className="mt-4 grid gap-4 sm:mt-0 sm:grid-cols-2">
               {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="min-w-[70%] snap-center md:min-w-0">
+                <li key={item.title} className="h-full">
                   <Link
                     href={item.href}
                     aria-label={`Learn more about ${item.title}`}
-                    className="group block h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                    className="group flex h-full flex-col justify-between gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   >
                     <span
                       className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
                     >
                       {item.title}
                     </span>
-                    <p className="mt-3 text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
-                    <span className="mt-4 inline-flex items-center text-sm font-semibold text-amber-300">
+                    <p className="text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
+                    <span className="inline-flex items-center text-sm font-semibold text-amber-300">
                       Read more
                       <svg
                         aria-hidden
