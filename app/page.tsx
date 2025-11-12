@@ -41,7 +41,7 @@ export default async function Home() {
     date: entry.displayDate,
     url: `/journals/${entry.slug}`,
   }));
-  const heroImageSrc = "/images/content/cover_1.jpg";
+  const heroImageSrc = "/images/content/cover_1.JPG";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
