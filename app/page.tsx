@@ -142,10 +142,10 @@ export default async function Home() {
 
         <section
           aria-labelledby="travel-with-points-heading"
-          className="overflow-hidden rounded-3xl bg-slate-900/95 px-6 py-10 text-white shadow-xl sm:px-8 sm:py-12"
+          className="overflow-hidden rounded-3xl bg-slate-900/95 px-4 py-10 text-white shadow-xl sm:px-8 sm:py-12"
         >
-          <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
-            <div className="space-y-5 text-center md:text-left">
+          <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
+            <div className="space-y-6 text-center md:text-left">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.35em]">
                 New Resource Hub
               </p>
@@ -155,28 +155,35 @@ export default async function Home() {
               <p className="text-pretty text-sm leading-6 text-slate-100/80 sm:text-base">
                 Earn smarter. Redeem better. Fly further. Miles and points that take you places
               </p>
-              <Link
-                className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
-                href="/travel-with-points"
-              >
-                Explore the hub
-              </Link>
+              <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-start">
+                <Link
+                  className="inline-flex min-w-[200px] items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  href="/travel-with-points"
+                >
+                  Explore the hub
+                </Link>
+                <p className="max-w-xs text-center text-xs text-slate-100/70 sm:text-left">
+                  Curated guides, cheat sheets, and destination primers tailored for travel hackers on the go.
+                </p>
+              </div>
             </div>
-            <ul className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 no-scrollbar md:mx-0 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:pb-0">
+            <ul className="grid gap-4 sm:gap-6 md:grid-cols-2">
               {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="min-w-[70%] snap-center md:min-w-0">
+                <li key={item.title}>
                   <Link
                     href={item.href}
                     aria-label={`Learn more about ${item.title}`}
-                    className="group block h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                    className="group flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   >
-                    <span
-                      className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
-                    >
-                      {item.title}
-                    </span>
-                    <p className="mt-3 text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
-                    <span className="mt-4 inline-flex items-center text-sm font-semibold text-amber-300">
+                    <div className="space-y-3">
+                      <span
+                        className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
+                      >
+                        {item.title}
+                      </span>
+                      <p className="text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
+                    </div>
+                    <span className="mt-6 inline-flex items-center text-sm font-semibold text-amber-300">
                       Read more
                       <svg
                         aria-hidden
