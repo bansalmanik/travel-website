@@ -1,4 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+const pageTitle = "Travel With Points | Miles Go Round";
+const pageDescription =
+  "Compare loyalty programs, bank transfer partners, and practical strategies to turn points into memorable trips.";
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: "/travel-with-points",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    type: "website",
+    url: `${siteUrl}/travel-with-points`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+  },
+};
 
 const sections = [
   {
@@ -53,27 +78,50 @@ const quickTips = [
   },
 ];
 
+const shortcutLinks = [
+  { href: "/", label: "Home" },
+  { href: "/stories", label: "Stories" },
+  { href: "/journals", label: "Journal" },
+];
+
 export default function TravelWithPointsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 py-20 lg:py-28">
-        <header className="space-y-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel with Points</p>
-          <h1 className="text-4xl font-semibold sm:text-5xl">
-            Turn everyday spending into your next adventure
-          </h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-200/80">
-            A structured look at how travel rewards fit together. Compare airline and hotel programs, understand bank partnerships,
-            pick the right cards, and use point-conversion paths to unlock real value on flights and stays.
-          </p>
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+      <div className="mx-auto flex max-w-6xl flex-col gap-16 px-5 py-20 sm:px-6 lg:py-28">
+        <header className="flex flex-col items-center gap-10 text-center">
+          <div className="space-y-6">
+            <span className="inline-flex items-center justify-center rounded-full border border-amber-400/30 bg-amber-200/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-amber-200">
+              Travel with Points
+            </span>
+            <h1 className="text-4xl font-semibold sm:text-5xl">Turn everyday spending into your next adventure</h1>
+            <p className="mx-auto max-w-2xl text-base text-slate-200/80">
+              A structured look at how travel rewards fit together. Compare airline and hotel programs, understand bank partnerships,
+              pick the right cards, and use point-conversion paths to unlock real value on flights and stays.
+            </p>
+          </div>
+          <nav aria-label="Navigate to other sections" className="w-full max-w-md">
+            <ul className="grid grid-cols-3 gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-200/80">
+              {shortcutLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="flex h-full items-center justify-center rounded-full border border-white/15 bg-white/5 px-3 py-2 transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </header>
 
-        <section className="grid gap-8 rounded-3xl bg-slate-900/60 p-10 shadow-2xl backdrop-blur lg:grid-cols-3">
+        <section className="grid gap-8 rounded-3xl bg-slate-900/60 p-10 shadow-2xl backdrop-blur lg:grid-cols-3" role="list" aria-label="Points program categories">
           {sections.map((section) => (
             <Link
               key={section.title}
               href={section.href}
               className="group flex flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-6 text-left transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/10"
+              role="listitem"
             >
               <div className="space-y-4">
                 <span
@@ -103,9 +151,9 @@ export default function TravelWithPointsPage() {
           ))}
         </section>
 
-        <section className="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur lg:grid-cols-3">
+        <section className="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur lg:grid-cols-3" role="list" aria-label="Quick travel hacking tips">
           {quickTips.map((tip) => (
-            <div key={tip.title} className="space-y-3">
+            <div key={tip.title} className="space-y-3" role="listitem">
               <h2 className="text-lg font-semibold text-white">{tip.title}</h2>
               <p className="text-sm leading-6 text-slate-100/80">{tip.detail}</p>
             </div>
