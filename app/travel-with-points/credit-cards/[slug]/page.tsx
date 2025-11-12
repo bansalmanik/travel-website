@@ -24,13 +24,25 @@ type SectionWrapperProps = {
   title: string;
   description?: string;
   children: ReactNode;
+  id?: string;
+  className?: string;
 };
 
-function SectionWrapper({ title, description, children }: SectionWrapperProps) {
+function SectionWrapper({ title, description, children, id, className }: SectionWrapperProps) {
+  const headingId = id ? `${id}-title` : undefined;
+  const sectionClassName = [
+    "space-y-5 rounded-2xl border border-white/10 bg-slate-900/60 p-5 shadow-lg shadow-black/20 sm:p-8",
+    className
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 backdrop-blur">
-      <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-white">{title}</h2>
+    <section id={id} aria-labelledby={headingId} className={sectionClassName}>
+      <div className="space-y-2">
+        <h2 id={headingId} className="text-lg font-semibold text-white sm:text-xl">
+          {title}
+        </h2>
         {description ? <p className="text-sm text-slate-100/80">{description}</p> : null}
       </div>
       {children}
@@ -124,7 +136,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
   }
 
   return (
-    <div className="space-y-6 text-sm leading-6 text-slate-100/80">
+    <div className="space-y-5 text-[15px] leading-7 text-slate-100/80 sm:text-base">
       {content.map((block, index) => {
         if (block.type === "paragraphs" && block.paragraphs.length) {
           return (
@@ -138,12 +150,12 @@ function RichContentBlocks({ content }: { content: RichContent }) {
 
         if (block.type === "bullets" && block.bullets.length) {
           return (
-            <ul key={`bullets-${index}`} className="space-y-3">
+            <ul
+              key={`bullets-${index}`}
+              className="space-y-2 list-disc pl-5 marker:text-amber-300"
+            >
               {block.bullets.map((bullet) => (
-                <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
-                  <span>{bullet}</span>
-                </li>
+                <li key={bullet}>{bullet}</li>
               ))}
             </ul>
           );
@@ -218,7 +230,7 @@ function SectionRenderer({ section }: { section: CardSection }) {
   }
 
   return (
-    <SectionWrapper title={section.title} description={section.description}>
+    <SectionWrapper id={section.id} title={section.title} description={section.description}>
       <div className="space-y-6">
         {hasMainContent && section.content ? <RichContentBlocks content={section.content} /> : null}
         {section.subsections?.length ? (
@@ -239,8 +251,8 @@ type CardSnapshotProps = {
 
 function CardSnapshot({ card }: CardSnapshotProps) {
   return (
-    <SectionWrapper title="Card snapshot">
-      <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
+    <SectionWrapper title="Card snapshot" id="card-snapshot">
+      <dl className="grid gap-4 text-sm text-slate-100/80 sm:grid-cols-2">
         <div>
           <dt className="font-semibold text-white">Issuer</dt>
           <dd>{card.issuer}</dd>
@@ -273,12 +285,9 @@ function CardSnapshot({ card }: CardSnapshotProps) {
           <div className="sm:col-span-2">
             <dt className="font-semibold text-white">Highlights</dt>
             <dd className="mt-2">
-              <ul className="space-y-2">
+              <ul className="space-y-2 list-disc pl-5 marker:text-amber-300">
                 {card.keyHighlights.map((highlight) => (
-                  <li key={highlight} className="flex items-start gap-3">
-                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
-                    <span>{highlight}</span>
-                  </li>
+                  <li key={highlight}>{highlight}</li>
                 ))}
               </ul>
             </dd>
@@ -291,23 +300,22 @@ function CardSnapshot({ card }: CardSnapshotProps) {
 
 function CardImageSection({ image }: { image: SectionImage }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-      <figure className="space-y-3">
-        <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={640}
-            height={400}
-            className="h-auto w-full object-cover"
-            priority
-          />
-        </div>
-        {image.caption ? (
-          <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-200/70">{image.caption}</figcaption>
-        ) : null}
-      </figure>
-    </section>
+    <figure className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-4 shadow-lg shadow-black/20">
+      <div className="overflow-hidden rounded-xl border border-white/10">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={640}
+          height={400}
+          className="h-auto w-full object-cover"
+          sizes="(min-width: 768px) 640px, 100vw"
+          priority
+        />
+      </div>
+      {image.caption ? (
+        <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-200/70">{image.caption}</figcaption>
+      ) : null}
+    </figure>
   );
 }
 
@@ -325,7 +333,7 @@ function CardDetailSections({ card }: { card: Card }) {
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-7 sm:gap-8">
       <CardSnapshot card={card} />
       {card.detailSections.map((section, index) => {
         if (isApplyNowBlock(section)) {
@@ -351,11 +359,11 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
   const label = applyNow.label?.trim() || "Apply now";
 
   return (
-    <SectionWrapper title="Apply now">
+    <SectionWrapper id="apply-now" title="Apply now">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <a
           href={applyNow.url}
-          className="inline-flex items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-200"
+          className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -385,7 +393,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  return {
+  const canonicalPath = `/travel-with-points/credit-cards/${card.slug}`;
+  const pageUrl = `https://example.com${canonicalPath}`;
+
+  const metadata: Metadata = {
     title: `${card.name} travel rewards guide | Travel with Points`,
     description: card.seoDescription,
     keywords: [
@@ -396,20 +407,46 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       "reward card benefits"
     ],
     alternates: {
-      canonical: `/travel-with-points/credit-cards/${card.slug}`
+      canonical: canonicalPath
     },
     openGraph: {
       title: `${card.name} travel rewards guide`,
       description: card.seoDescription,
       type: "article",
-      url: `https://example.com/travel-with-points/credit-cards/${card.slug}`
+      url: pageUrl
     },
     twitter: {
       card: "summary",
       title: `${card.name} travel rewards guide`,
       description: card.seoDescription
+    },
+    robots: {
+      index: true,
+      follow: true
     }
   };
+
+  if (card.media?.cardImage) {
+    metadata.openGraph = {
+      ...metadata.openGraph,
+      images: [
+        {
+          url: card.media.cardImage.src,
+          width: 1200,
+          height: 630,
+          alt: card.media.cardImage.alt || card.name
+        }
+      ]
+    };
+
+    metadata.twitter = {
+      ...metadata.twitter,
+      card: "summary_large_image",
+      images: [card.media.cardImage.src]
+    };
+  }
+
+  return metadata;
 }
 
 export default async function CreditCardDetailPage({ params }: PageProps) {
@@ -433,13 +470,16 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
     .join(" ")
     .trim();
 
+  const canonicalPath = `/travel-with-points/credit-cards/${card.slug}`;
+  const pageUrl = `https://example.com${canonicalPath}`;
+
   const structuredData: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "FinancialProduct",
     name: card.name,
     issuer: card.issuer,
     description: card.summary,
-    url: `https://example.com/travel-with-points/credit-cards/${card.slug}`,
+    url: pageUrl,
     feesAndCommissionsSpecification: formatAnnualFee(card.annualFee)
   };
 
@@ -451,57 +491,98 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
     };
   }
 
+  if (card.media?.cardImage) {
+    structuredData.image = {
+      "@type": "ImageObject",
+      url: card.media.cardImage.src,
+      caption: card.media.cardImage.alt || card.name
+    };
+  }
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Travel with Points",
+        item: "https://example.com/travel-with-points"
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Credit cards",
+        item: "https://example.com/travel-with-points/credit-cards"
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: card.name,
+        item: pageUrl
+      }
+    ]
+  };
+
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-slate-950 text-slate-100">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <div className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20 lg:py-28">
-        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
-          <ol className="flex flex-wrap items-center gap-2">
-            <li>
-              <Link href="/travel-with-points" className="hover:text-amber-300">
-                Travel with Points
-              </Link>
-            </li>
-            <li aria-hidden>/</li>
-            <li>
-              <Link href="/travel-with-points/credit-cards" className="hover:text-amber-300">
-                Credit cards
-              </Link>
-            </li>
-            <li aria-hidden>/</li>
-            <li className="text-amber-200">{card.name}</li>
-          </ol>
-        </nav>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
+      <div className="mx-auto w-full max-w-3xl px-4 py-16 sm:px-6 lg:py-24">
+        <article className="space-y-10">
+          <nav aria-label="Breadcrumb" className="text-xs text-slate-300 sm:text-sm">
+            <ol className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+              <li>
+                <Link href="/travel-with-points" className="hover:text-amber-300">
+                  Travel with Points
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li>
+                <Link href="/travel-with-points/credit-cards" className="hover:text-amber-300">
+                  Credit cards
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="text-amber-200">{card.name}</li>
+            </ol>
+          </nav>
 
-        <header className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Credit card guide</p>
-          <h1 className="text-4xl font-semibold text-white">{card.name}</h1>
-          <p className="text-base text-slate-200/80">{card.summary}</p>
-        </header>
+          <header className="space-y-3">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.4em] text-amber-300 sm:text-xs">
+              Credit card guide
+            </p>
+            <h1 className="text-3xl font-semibold text-white sm:text-4xl">{card.name}</h1>
+            <p className="text-base text-slate-200/80 sm:text-lg">{card.summary}</p>
+          </header>
 
-        {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
+          {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
 
-        <CardDetailSections card={card} />
+          <CardDetailSections card={card} />
 
-        <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-white">Ready for more cards?</p>
-          <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-amber-300">
-            Back to credit cards hub
-            <svg
-              aria-hidden
-              className="ml-2 h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
+          <footer className="flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
+            <p className="font-semibold text-white">Ready for more cards?</p>
+            <Link
+              href="/travel-with-points/credit-cards"
+              className="inline-flex items-center gap-2 font-semibold text-amber-300"
             >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </Link>
-        </footer>
+              Back to credit cards hub
+              <svg
+                aria-hidden
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
+          </footer>
+        </article>
       </div>
     </main>
   );
