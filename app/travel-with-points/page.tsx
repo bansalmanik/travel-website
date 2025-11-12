@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+import { JsonLd } from "../components/json-ld";
+import { SectionHeader } from "../components/section-header";
+
 const sections = [
   {
     title: "Points Conversion",
@@ -54,26 +57,56 @@ const quickTips = [
 ];
 
 export default function TravelWithPointsPage() {
+  const baseUrl = "https://example.com";
+  const pageUrl = `${baseUrl}/travel-with-points`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Travel with Points Hub",
+    description:
+      "Compare airline, hotel, and bank loyalty programs to turn everyday spending into extraordinary travel experiences.",
+    url: pageUrl,
+    about: "Travel rewards strategies and guides",
+    hasPart: sections.map((section) => ({
+      "@type": "WebPage",
+      name: section.title,
+      url: `${baseUrl}${section.href}`,
+      description: section.description,
+    })),
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-slate-100">
-      <div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 py-20 lg:py-28">
-        <header className="space-y-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel with Points</p>
-          <h1 className="text-4xl font-semibold sm:text-5xl">
-            Turn everyday spending into your next adventure
-          </h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-200/80">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+      <JsonLd data={structuredData} />
+
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-16 px-5 py-16 sm:px-6 sm:py-24">
+        <header className="space-y-6 text-center sm:space-y-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">Travel with Points</p>
+          <h1 className="text-4xl font-semibold sm:text-5xl">Turn everyday spending into your next adventure</h1>
+          <p className="mx-auto max-w-2xl text-base text-slate-200/80 sm:text-lg">
             A structured look at how travel rewards fit together. Compare airline and hotel programs, understand bank partnerships,
-            pick the right cards, and use point-conversion paths to unlock real value on flights and stays.
+            pick the right cards, and use point-conversion paths to unlock real value on flights and stays—all from the comfort of your phone.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-[0.2em] text-slate-200/70">
+            {sections.map((section) => (
+              <a
+                key={section.title}
+                href={section.href}
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 transition hover:border-white/40 hover:bg-white/10"
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-300" aria-hidden />
+                {section.title}
+              </a>
+            ))}
+          </div>
         </header>
 
-        <section className="grid gap-8 rounded-3xl bg-slate-900/60 p-10 shadow-2xl backdrop-blur lg:grid-cols-3">
+        <section className="grid gap-6 rounded-3xl bg-slate-900/60 p-8 shadow-2xl backdrop-blur sm:p-10 lg:grid-cols-3">
           {sections.map((section) => (
             <Link
               key={section.title}
               href={section.href}
-              className="group flex flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-6 text-left transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/10"
+              className="group flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-6 text-left transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/10"
             >
               <div className="space-y-4">
                 <span
@@ -103,7 +136,13 @@ export default function TravelWithPointsPage() {
           ))}
         </section>
 
-        <section className="grid gap-8 rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur lg:grid-cols-3">
+        <section className="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur sm:p-10 lg:grid-cols-3">
+          <SectionHeader
+            eyebrow="Quick win playbook"
+            title="Build momentum in minutes"
+            description="Use these bite-sized prompts to keep your strategy cohesive even when you only have a few spare moments to plan."
+            align="center"
+          />
           {quickTips.map((tip) => (
             <div key={tip.title} className="space-y-3">
               <h2 className="text-lg font-semibold text-white">{tip.title}</h2>
