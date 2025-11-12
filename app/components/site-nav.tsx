@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigationLinks = [
   { href: "/stories", label: "Stories" },
@@ -12,6 +13,7 @@ const navigationLinks = [
 export function SiteNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuId = "primary-navigation";
+  const pathname = usePathname();
 
   const closeMenu = () => setIsMenuOpen(false);
 
@@ -74,12 +76,22 @@ export function SiteNav() {
           </button>
         </div>
 
-        <div className="hidden gap-8 text-sm uppercase tracking-[0.18em] md:flex">
-          {navigationLinks.map((link) => (
-            <Link key={link.label} className="transition-opacity hover:opacity-80" href={link.href}>
-              {link.label}
-            </Link>
-          ))}
+        <div className="hidden items-center gap-6 text-sm font-semibold uppercase tracking-[0.18em] md:flex">
+          {navigationLinks.map((link) => {
+            const isActive = pathname.startsWith(link.href);
+            return (
+              <Link
+                key={link.label}
+                className={`rounded-full px-3 py-2 transition-colors ${
+                  isActive ? "bg-white text-slate-900" : "hover:bg-white/10"
+                }`}
+                href={link.href}
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
 
         {isMenuOpen ? (
@@ -87,16 +99,22 @@ export function SiteNav() {
             id={menuId}
             className="flex flex-col gap-2 rounded-2xl border border-white/10 bg-slate-900/95 p-4 text-sm uppercase tracking-[0.12em] text-white/90 shadow-lg md:hidden"
           >
-            {navigationLinks.map((link) => (
-              <Link
-                key={link.label}
-                className="rounded-lg px-3 py-2 text-center font-semibold transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                href={link.href}
-                onClick={closeMenu}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navigationLinks.map((link) => {
+              const isActive = pathname.startsWith(link.href);
+              return (
+                <Link
+                  key={link.label}
+                  className={`rounded-lg px-3 py-2 text-center font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
+                    isActive ? "bg-white/15" : "hover:bg-white/10"
+                  }`}
+                  href={link.href}
+                  onClick={closeMenu}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
         ) : null}
       </div>

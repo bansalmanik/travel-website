@@ -57,15 +57,16 @@ export default async function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-sky-900/40" />
         </div>
-        <div className="mx-auto max-w-3xl px-5 pb-20 pt-12 text-white sm:px-6 sm:pb-32 sm:pt-20">
-          <h1 className="mt-5 text-3xl font-semibold leading-tight text-center sm:mt-6 sm:text-left sm:text-5xl sm:leading-tight">
+        <div className="mx-auto flex max-w-3xl flex-col gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80 sm:text-sm">Travel differently</p>
+          <h1 className="text-pretty text-center text-3xl font-semibold leading-tight sm:text-left sm:text-5xl sm:leading-tight">
             Miles Go Round is your compass for soulful journeys and slow travel adventures.
           </h1>
-          <p className="mt-5 text-base text-amber-100/90 text-center sm:mt-6 sm:text-left sm:text-xl">
+          <p className="text-pretty text-center text-base text-amber-100/90 sm:text-left sm:text-lg">
             Explore immersive guides, heartfelt field notes, and practical tips for transforming every mile into a memorable
             story. From sunrise hikes to late-night street food, discover the moments that make travel feel alive.
           </p>
-          <div className="mt-8 flex flex-col items-center gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4">
             <Link
               className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto sm:text-base"
               href="/stories"
@@ -76,7 +77,7 @@ export default async function Home() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl space-y-20 px-5 py-14 sm:space-y-24 sm:px-6 sm:py-24">
+      <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
         <section id="stories" className="space-y-12">
           <div className="flex flex-col gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
             <div className="space-y-2 sm:space-y-0">
@@ -87,54 +88,56 @@ export default async function Home() {
                 Recent chapters from life on the road
               </h2>
             </div>
-            <p className="mx-auto max-w-2xl text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
+            <p className="mx-auto max-w-2xl text-balance text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
               Long-form travelogues with practical notes, playlists, and the quieter moments that rarely make it into guidebooks.
             </p>
           </div>
 
-          <div className="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 no-scrollbar sm:gap-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:pb-0">
+          <ul className="-mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 no-scrollbar sm:gap-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:pb-0">
             {featuredStories.map((story) => (
-              <Link
-                key={story.slug}
-                href={`/stories/${story.slug}`}
-                className="group flex min-w-[85%] snap-center flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:min-w-[70%] md:min-w-0"
-              >
-                <div className="relative h-56 w-full overflow-hidden sm:h-64">
-                  <Image
-                    src={story.coverImage.src}
-                    alt={story.coverImage.alt}
-                    fill
-                    className="object-cover transition duration-500 group-hover:scale-105"
-                    sizes="(min-width: 768px) 33vw, 100vw"
-                    priority={story.slug === featuredStories[0]?.slug}
-                  />
-                </div>
-                <div className="space-y-3 px-6 py-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500">
-                    {story.city}, {story.country}
-                  </p>
-                  <h3 className="text-xl font-semibold text-slate-900">{story.title}</h3>
-                  <p className="text-sm leading-6 text-slate-600">{story.excerpt}</p>
-                  <span className="inline-flex items-center text-sm font-semibold text-sky-600">
-                    Read the story
-                    <svg
-                      aria-hidden
-                      className="ml-2 h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
-              </Link>
+              <li key={story.slug} className="min-w-[85%] snap-center sm:min-w-[70%] md:min-w-0">
+                <Link
+                  href={`/stories/${story.slug}`}
+                  aria-label={`Read ${story.title} from ${story.city}, ${story.country}`}
+                  className="group flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                >
+                  <div className="relative h-56 w-full overflow-hidden sm:h-64">
+                    <Image
+                      src={story.coverImage.src}
+                      alt={story.coverImage.alt}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-105"
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      priority={story.slug === featuredStories[0]?.slug}
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-3 px-6 py-6">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500">
+                      {story.city}, {story.country}
+                    </p>
+                    <h3 className="text-xl font-semibold text-slate-900">{story.title}</h3>
+                    <p className="text-balance text-sm leading-6 text-slate-600">{story.excerpt}</p>
+                    <span className="mt-auto inline-flex items-center text-sm font-semibold text-sky-600">
+                      Read the story
+                      <svg
+                        aria-hidden
+                        className="ml-2 h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
+                    </span>
+                  </div>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         <section
@@ -149,7 +152,7 @@ export default async function Home() {
               <h2 id="travel-with-points-heading" className="text-2xl font-semibold sm:text-4xl">
                 Travel with points and turn loyalty into long weekends
               </h2>
-              <p className="text-sm leading-6 text-slate-100/80 sm:text-base">
+              <p className="text-pretty text-sm leading-6 text-slate-100/80 sm:text-base">
                 Earn smarter. Redeem better. Fly further. Miles and points that take you places
               </p>
               <Link
@@ -159,38 +162,40 @@ export default async function Home() {
                 Explore the hub
               </Link>
             </div>
-            <div className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 no-scrollbar md:mx-0 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:pb-0">
+            <ul className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 no-scrollbar md:mx-0 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:pb-0">
               {travelWithPointsHighlights.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="group block min-w-[70%] snap-center overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 md:min-w-0"
-                >
-                  <span
-                    className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
+                <li key={item.title} className="min-w-[70%] snap-center md:min-w-0">
+                  <Link
+                    href={item.href}
+                    aria-label={`Learn more about ${item.title}`}
+                    className="group block h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   >
-                    {item.title}
-                  </span>
-                  <p className="mt-3 text-sm leading-6 text-slate-100/90">{item.description}</p>
-                  <span className="mt-4 inline-flex items-center text-sm font-semibold text-amber-300">
-                    Read more
-                    <svg
-                      aria-hidden
-                      className="ml-2 h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
+                    <span
+                      className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
                     >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
-                </Link>
+                      {item.title}
+                    </span>
+                    <p className="mt-3 text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
+                    <span className="mt-4 inline-flex items-center text-sm font-semibold text-amber-300">
+                      Read more
+                      <svg
+                        aria-hidden
+                        className="ml-2 h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
+                    </span>
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 
@@ -204,23 +209,25 @@ export default async function Home() {
                 Behind-the-scenes notes & resources
               </h2>
             </div>
-            <p className="mx-auto max-w-2xl text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
+            <p className="mx-auto max-w-2xl text-balance text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
               Travel smarter with bite-sized guides, practical tips, and insider ways to stretch every mile and point.
             </p>
           </div>
 
-          <div className="space-y-4 sm:space-y-6">
+          <ul className="space-y-4 sm:space-y-6">
             {journalHighlights.map((entry) => (
-              <a
-                key={entry.title}
-                className="flex flex-col gap-2 rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:p-6"
-                href={entry.url}
-              >
-                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-500">{entry.date}</span>
-                <span className="text-lg font-semibold text-slate-900">{entry.title}</span>
-              </a>
+              <li key={entry.title}>
+                <a
+                  className="flex flex-col gap-2 rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:p-6"
+                  href={entry.url}
+                  aria-label={`Read journal entry ${entry.title}`}
+                >
+                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-500">{entry.date}</span>
+                  <span className="text-pretty text-lg font-semibold text-slate-900">{entry.title}</span>
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
       </main>
