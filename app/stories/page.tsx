@@ -15,13 +15,11 @@ export default async function StoriesPage() {
     <div className="bg-gradient-to-b from-white via-slate-50 to-slate-100 py-20 text-zinc-900 dark:from-black dark:via-zinc-950 dark:to-black dark:text-zinc-100">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-6">
         <section className="mx-auto max-w-3xl text-center">
-          <p className="text-sm uppercase tracking-[0.4em] text-blue-500">Journal</p>
           <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
             Stories to Inspire Your Next Getaway
           </h1>
           <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-            From desert sunsets to neon skylines, our travel writers bring the world to your screen. Explore curated guides,
-            insider tips, and heartfelt stories from every corner of the globe.
+                      A collection of our journeys, told in moments and memories, the places we saw, the paths we followed, and the little surprises along the way.
           </p>
         </section>
 
