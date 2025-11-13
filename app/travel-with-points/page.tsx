@@ -149,25 +149,6 @@ export default function TravelWithPointsPage() {
               </div>
             ))}
           </div>
-          <Link
-            href="/stories"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-amber-400/40 bg-amber-400/10 px-4 py-3 text-sm font-semibold text-amber-200 transition hover:border-amber-300 hover:bg-amber-300/20 sm:w-auto"
-          >
-            See how travelers stitched their itineraries
-            <svg
-              aria-hidden
-              className="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </Link>
         </section>
       </div>
     </div>
