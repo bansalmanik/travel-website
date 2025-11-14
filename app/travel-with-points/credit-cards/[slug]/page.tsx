@@ -28,7 +28,7 @@ type SectionWrapperProps = {
 
 function SectionWrapper({ title, description, children }: SectionWrapperProps) {
   return (
-    <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 backdrop-blur">
+    <section className="space-y-6 rounded-3xl border border-white/5 bg-slate-900/40 p-5 shadow-sm backdrop-blur sm:p-6 lg:p-8">
       <div className="space-y-3">
         <h2 className="text-xl font-semibold text-white">{title}</h2>
         {description ? <p className="text-sm text-slate-100/80">{description}</p> : null}
@@ -199,7 +199,7 @@ function SubSection({ subsection }: { subsection: CardSubSection }) {
   }
 
   return (
-    <div className="space-y-4 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
+    <div className="space-y-4 rounded-2xl border border-white/5 bg-slate-900/50 p-5">
       {subsection.title ? <h3 className="text-base font-semibold text-white">{subsection.title}</h3> : null}
       {subsection.description ? (
         <p className="text-sm text-slate-100/70">{subsection.description}</p>
@@ -240,7 +240,7 @@ type CardSnapshotProps = {
 function CardSnapshot({ card }: CardSnapshotProps) {
   return (
     <SectionWrapper title="Card snapshot">
-      <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
+      <dl className="grid gap-5 text-sm text-slate-100/80 sm:grid-cols-2">
         <div>
           <dt className="font-semibold text-white">Issuer</dt>
           <dd>{card.issuer}</dd>
@@ -291,7 +291,7 @@ function CardSnapshot({ card }: CardSnapshotProps) {
 
 function CardImageSection({ image }: { image: SectionImage }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+    <section className="rounded-3xl border border-white/5 bg-slate-900/40 p-5 shadow-sm backdrop-blur sm:p-6">
       <figure className="space-y-3">
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60">
           <Image
@@ -325,7 +325,7 @@ function CardDetailSections({ card }: { card: Card }) {
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6 sm:gap-8">
       <CardSnapshot card={card} />
       {card.detailSections.map((section, index) => {
         if (isApplyNowBlock(section)) {
@@ -355,7 +355,7 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <a
           href={applyNow.url}
-          className="inline-flex items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-200"
+          className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-200 sm:w-auto"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -385,6 +385,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const imageSrc = card.media?.cardImage?.src
+    ? `https://example.com${card.media.cardImage.src}`
+    : undefined;
+
   return {
     title: `${card.name} travel rewards guide | Travel with Points`,
     description: card.seoDescription,
@@ -402,12 +406,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: `${card.name} travel rewards guide`,
       description: card.seoDescription,
       type: "article",
-      url: `https://example.com/travel-with-points/credit-cards/${card.slug}`
+      url: `https://example.com/travel-with-points/credit-cards/${card.slug}`,
+      images: imageSrc
+        ? [
+            {
+              url: imageSrc,
+              alt: card.media?.cardImage?.alt ?? card.name
+            }
+          ]
+        : undefined
     },
     twitter: {
-      card: "summary",
+      card: imageSrc ? "summary_large_image" : "summary",
       title: `${card.name} travel rewards guide`,
-      description: card.seoDescription
+      description: card.seoDescription,
+      images: imageSrc ? [imageSrc] : undefined
     }
   };
 }
@@ -451,10 +464,39 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
     };
   }
 
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Travel with Points",
+        item: "https://example.com/travel-with-points"
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Credit cards",
+        item: "https://example.com/travel-with-points/credit-cards"
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: card.name,
+        item: `https://example.com/travel-with-points/credit-cards/${card.slug}`
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <div className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20 lg:py-28">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+      />
+      <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:py-28">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
@@ -473,10 +515,10 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
           </ol>
         </nav>
 
-        <header className="space-y-4">
+        <header className="space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Credit card guide</p>
-          <h1 className="text-4xl font-semibold text-white">{card.name}</h1>
-          <p className="text-base text-slate-200/80">{card.summary}</p>
+          <h1 className="text-3xl font-semibold text-white sm:text-4xl">{card.name}</h1>
+          <p className="text-base text-slate-200/80 sm:text-lg">{card.summary}</p>
         </header>
 
         {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
