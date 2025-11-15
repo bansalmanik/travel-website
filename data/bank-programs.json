@@ -455,7 +455,7 @@
           "enabled": true
         }
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "slug": "icici-ishop",
