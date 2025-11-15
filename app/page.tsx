@@ -236,16 +236,16 @@ export default async function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 sm:text-left">
           <p>© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
           <div className="flex justify-center gap-6 sm:justify-start">
-            <a className="transition hover:text-slate-900" href="https://instagram.com" target="_blank" rel="noreferrer">
+                      <a className="transition hover:text-slate-900" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
               Instagram
             </a>
-            <a className="transition hover:text-slate-900" href="https://youtube.com" target="_blank" rel="noreferrer">
+                      <a className="transition hover:text-slate-900" href="https://www.youtube.com/@milesGoRound" target="_blank" rel="noreferrer">
               YouTube
             </a>
-            <a className="transition hover:text-slate-900" href="mailto:hello@milesgoround.com">
-              Email
-            </a>
           </div>
+                  <a className="transition hover:text-slate-900" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
+                      X/twitter
+          </a>
         </div>
       </footer>
     </div>
