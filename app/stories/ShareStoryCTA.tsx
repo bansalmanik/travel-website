@@ -67,10 +67,6 @@ export default function ShareStoryCTA() {
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 inline-flex h-2.5 w-2.5 flex-shrink-0 rounded-full bg-blue-500" aria-hidden />
-                  <span>Our editors assess submissions for originality, clarity, and alignment with Travel Explorer&apos;s standards.</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-1 inline-flex h-2.5 w-2.5 flex-shrink-0 rounded-full bg-blue-500" aria-hidden />
                   <span>We&apos;ll reach out if more details are needed and to confirm publishing timelines.</span>
                 </li>
               </ul>
