@@ -51,6 +51,8 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
   }
 
   const currentPost = post;
+  const instagramHandle = currentPost.instagramHandle?.replace(/^@/, "");
+  const instagramUrl = instagramHandle ? `https://www.instagram.com/${instagramHandle}/` : null;
 
   const getMediaAspectClass = (layout?: StorySectionMedia["layout"]) => {
     switch (layout) {
@@ -95,6 +97,26 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
                 <p className="text-white">{currentPost.author}</p>
                 <p>{currentPost.date}</p>
               </div>
+              {instagramUrl ? (
+                <Link
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 font-semibold text-white transition hover:border-white/60 hover:bg-white/20"
+                >
+                  <span className="sr-only">Visit {currentPost.author}’s Instagram</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden
+                    className="h-5 w-5 text-white transition group-hover:scale-105"
+                    fill="currentColor"
+                  >
+                    <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7Zm11.25-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2.5A1.5 1.5 0 1 0 12 13a1.5 1.5 0 0 0 0-3Z" />
+                  </svg>
+                  <span className="text-xs font-semibold">@{instagramHandle}</span>
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>
