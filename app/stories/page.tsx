@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllStorySummaries } from "./data";
+import ShareStoryCTA from "./ShareStoryCTA";
 
 export const metadata = {
   title: "Travel Explorer | Stories",
@@ -19,9 +20,11 @@ export default async function StoriesPage() {
             Stories to Inspire Your Next Getaway
           </h1>
           <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-                      A collection of our journeys, told in moments and memories, the places we saw, the paths we followed, and the little surprises along the way.
+                        A collection of our journeys, told in moments and memories, the places we saw, the paths we followed, and the little surprises along the way.
           </p>
         </section>
+
+        <ShareStoryCTA />
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {stories.map((post) => (
