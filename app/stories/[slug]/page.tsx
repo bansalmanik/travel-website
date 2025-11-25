@@ -51,6 +51,8 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
   }
 
   const currentPost = post;
+  const instagramHandle = currentPost.instagramHandle?.replace(/^@/, "");
+  const instagramUrl = instagramHandle ? `https://www.instagram.com/${instagramHandle}/` : null;
 
   const getMediaAspectClass = (layout?: StorySectionMedia["layout"]) => {
     switch (layout) {
@@ -95,6 +97,25 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
                 <p className="text-white">{currentPost.author}</p>
                 <p>{currentPost.date}</p>
               </div>
+              {instagramUrl ? (
+                <Link
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 font-semibold text-white transition hover:border-white/60 hover:bg-white/20"
+                >
+                  <span className="sr-only">Visit {currentPost.author}’s Instagram</span>
+                  <Image
+                    src="/icons/instagram.svg"
+                    alt="Instagram icon"
+                    width={20}
+                    height={20}
+                    className="h-5 w-5 transition group-hover:scale-105"
+                    priority={false}
+                  />
+                  <span className="text-xs font-semibold">@{instagramHandle}</span>
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>
