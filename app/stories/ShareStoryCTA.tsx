@@ -21,7 +21,7 @@ export default function ShareStoryCTA() {
             <div className="space-y-2 sm:max-w-[70%]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700/80 dark:text-blue-200/80">Editorial submissions</p>
               <h3 className="text-xl font-semibold leading-tight sm:text-2xl">
-                Email your story to <span className="underline decoration-blue-500 decoration-2 underline-offset-4">stories@travelexplorer.com</span>
+                Email your story to <span className="underline decoration-blue-500 decoration-2 underline-offset-4">akshitaandmanik@gmail.com</span>
               </h3>
               <p className="text-sm leading-relaxed text-blue-800/80 dark:text-blue-100/80">
                 We thoughtfully review each submission and typically respond within five business days with next steps.
@@ -29,7 +29,7 @@ export default function ShareStoryCTA() {
             </div>
             <a
               className="inline-flex items-center justify-center rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 sm:w-auto dark:bg-blue-500 dark:hover:bg-blue-400 dark:focus:ring-blue-300"
-              href="mailto:stories@travelexplorer.com"
+              href="mailto:akshitaandmanik@gmail.com"
             >
               Send Email
             </a>
