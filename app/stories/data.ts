@@ -11,6 +11,7 @@ export type StorySummary = {
     title: string;
     excerpt: string;
     author: string;
+    instagramHandle?: string;
     date: string;
     readTime: string;
     category: string;
@@ -94,11 +95,12 @@ export async function getAllStorySummaries(): Promise<StorySummary[]> {
     const stories = await loadStories();
 
     return stories.map(
-        ({ slug, title, excerpt, author, date, readTime, category, city, country, coverImage }) => ({
+        ({ slug, title, excerpt, author, instagramHandle, date, readTime, category, city, country, coverImage }) => ({
             slug,
             title,
             excerpt,
             author,
+            instagramHandle,
             date,
             readTime,
             category,
