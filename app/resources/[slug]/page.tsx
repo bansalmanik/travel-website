@@ -85,8 +85,8 @@ export default async function ResourceDetailPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <article className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-20 lg:py-28">
-        <div className="grid gap-8 lg:grid-cols-[1.1fr,1fr] lg:items-start lg:gap-12">
-          <header className="space-y-6 text-center lg:text-left">
+        <div className="grid gap-8 md:grid-cols-[minmax(0,1.1fr)_minmax(280px,380px)] md:items-start md:gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,440px)] lg:gap-12">
+          <header className="space-y-6 text-center md:text-left">
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Resource</p>
             <h1 className="text-4xl font-semibold text-white sm:text-5xl">{resource.title}</h1>
             <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80 lg:justify-start">
@@ -99,8 +99,8 @@ export default async function ResourceDetailPage({ params }: PageProps) {
             <p className="text-base leading-7 text-slate-200/80">{resource.summary}</p>
           </header>
 
-          <div className="relative w-full overflow-hidden rounded-3xl border border-white/10 lg:h-full">
-            <div className="relative aspect-[4/3] w-full lg:h-full lg:min-h-[320px]">
+          <div className="relative w-full overflow-hidden rounded-3xl border border-white/10 md:justify-self-end lg:h-full">
+            <div className="relative aspect-[4/3] w-full md:max-w-[380px] md:rounded-2xl md:shadow-xl md:shadow-amber-100/10 lg:h-full lg:min-h-[320px] lg:max-w-[440px]">
               <Image
                 src={resource.heroImage.src}
                 alt={resource.heroImage.alt}
