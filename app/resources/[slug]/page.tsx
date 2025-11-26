@@ -84,33 +84,34 @@ export default async function ResourceDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <article className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20 lg:py-28">
-        <header className="space-y-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Resource</p>
-          <h1 className="text-4xl font-semibold text-white sm:text-5xl">{resource.title}</h1>
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80">
-            <span>{resource.displayDate}</span>
-            <span>•</span>
-            <span>{resource.readTime}</span>
-            <span>•</span>
-            <span>{resource.location}</span>
-          </div>
-        </header>
+      <article className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-20 lg:py-28">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr,1fr] lg:items-start lg:gap-12">
+          <header className="space-y-6 text-center lg:text-left">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Resource</p>
+            <h1 className="text-4xl font-semibold text-white sm:text-5xl">{resource.title}</h1>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80 lg:justify-start">
+              <span>{resource.displayDate}</span>
+              <span>•</span>
+              <span>{resource.readTime}</span>
+              <span>•</span>
+              <span>{resource.location}</span>
+            </div>
+            <p className="text-base leading-7 text-slate-200/80">{resource.summary}</p>
+          </header>
 
-        <div className="relative w-full overflow-hidden rounded-3xl border border-white/10">
-          <div className="relative aspect-[16/9] w-full">
-            <Image
-              src={resource.heroImage.src}
-              alt={resource.heroImage.alt}
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 60vw, 100vw"
-              priority
-            />
+          <div className="relative w-full overflow-hidden rounded-3xl border border-white/10 lg:h-full">
+            <div className="relative aspect-[4/3] w-full lg:h-full lg:min-h-[320px]">
+              <Image
+                src={resource.heroImage.src}
+                alt={resource.heroImage.alt}
+                fill
+                className="object-cover"
+                sizes="(min-width: 1280px) 40vw, (min-width: 1024px) 45vw, 100vw"
+                priority
+              />
+            </div>
           </div>
         </div>
-
-        <p className="text-base leading-7 text-slate-200/80">{resource.summary}</p>
 
         <div className="space-y-12 text-base leading-relaxed text-slate-200/90">
           {resource.sections.map((section) => (
