@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllStorySummaries } from "@/app/stories/data";
-import { getJournalEntries } from "@/lib/contentData";
+import { getResourceEntries } from "@/lib/contentData";
 
 const travelWithPointsHighlights = [
   {
@@ -35,11 +35,12 @@ const travelWithPointsHighlights = [
 export default async function Home() {
   const storySummaries = await getAllStorySummaries();
   const featuredStories = storySummaries.slice(0, 3);
-  const journalEntries = await getJournalEntries();
-  const journalHighlights = journalEntries.slice(0, 3).map((entry) => ({
+  const resourceEntries = await getResourceEntries();
+  const resourceHighlights = resourceEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
     date: entry.displayDate,
-    url: `/journals/${entry.slug}`,
+    topic: entry.topic,
+    url: `/resources/${entry.slug}`,
   }));
   const heroImageSrc = "/images/content/cover_1.jpg";
 
@@ -199,30 +200,31 @@ export default async function Home() {
           </div>
         </section>
 
-        <section id="journal" className="space-y-10">
+        <section id="resources" className="space-y-10">
           <div className="flex flex-col gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
             <div className="space-y-2 sm:space-y-0">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500 sm:text-sm sm:tracking-[0.35em]">
-                Latest Journal
+                Latest Resources
               </p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-4xl">
-                Behind-the-scenes notes & resources
+                Destination-ready tips and reviews
               </h2>
             </div>
             <p className="mx-auto max-w-2xl text-balance text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
-              Travel smarter with bite-sized guides, practical tips, and insider ways to stretch every mile and point.
+              Travel smarter with location-specific guides, practical transit notes, and red-flag checklists to avoid scams.
             </p>
           </div>
 
           <ul className="space-y-4 sm:space-y-6">
-            {journalHighlights.map((entry) => (
+            {resourceHighlights.map((entry) => (
               <li key={entry.title}>
                 <a
                   className="flex flex-col gap-2 rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:p-6"
                   href={entry.url}
-                  aria-label={`Read journal entry ${entry.title}`}
+                  aria-label={`Read resource ${entry.title}`}
                 >
                   <span className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-500">{entry.date}</span>
+                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{entry.topic}</span>
                   <span className="text-pretty text-lg font-semibold text-slate-900">{entry.title}</span>
                 </a>
               </li>

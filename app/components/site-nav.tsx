@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const navigationLinks = [
   { href: "/stories", label: "Stories" },
   { href: "/travel-with-points", label: "Travel on points" },
-  { href: "/journals", label: "Journal" },
+  { href: "/resources", label: "Resources" },
 ];
 
 export function SiteNav() {
