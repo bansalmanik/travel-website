@@ -1,0 +1,109 @@
+{
+  "resources": [
+    {
+      "slug": "lisbon-transportation-essentials",
+      "title": "Lisbon Transportation Essentials",
+      "location": "Lisbon, Portugal",
+      "topic": "Transportation",
+      "summary": "Navigate trams, metros, and rideshares in Lisbon with practical tips that keep you moving without draining your budget.",
+      "seoDescription": "Step-by-step advice for using public transit, ferries, and rideshares in Lisbon so you can connect neighborhoods with ease.",
+      "publishedOn": "2024-04-18",
+      "displayDate": "April 18, 2024",
+      "readTime": "6 min read",
+      "heroImage": {
+        "src": "/images/content/20230408_143522.jpg",
+        "alt": "Iconic yellow tram running through a Lisbon street"
+      },
+      "sections": [
+        {
+          "heading": "Metro vs. Tram",
+          "paragraphs": [
+            "The metro is the fastest way to jump between the airport, Parque das Nações, and the historic center. Trams slow down in the tight streets, so save them for scenic rides rather than daily commuting.",
+            "Pick up a Viva Viagem card at any station, load it with zapping credit, and tap in and out to unlock the best fares without juggling paper tickets."
+          ],
+          "images": [
+            {
+              "src": "/images/content/20230408_143854.jpg",
+              "alt": "Viva Viagem transit card on a marble table",
+              "caption": "Reloadable cards keep fares flexible."
+            }
+          ]
+        },
+        {
+          "heading": "Crossing the River",
+          "paragraphs": [
+            "The Cacilhas ferry is the fastest way to reach Almada for sunset views. Ferries accept the same Viva Viagem balance, so you do not need a separate ticket.",
+            "If you are heading to Costa da Caparica beaches, combine the ferry with bus 135 for the quickest transfer."
+          ],
+          "images": [
+            {
+              "src": "/images/content/20230408_132352.jpg",
+              "alt": "Passengers boarding a ferry at golden hour",
+              "caption": "Ferries run every 15–20 minutes during peak times."
+            }
+          ]
+        },
+        {
+          "heading": "When to use rideshare",
+          "paragraphs": [
+            "Uber and Bolt are reliable late at night when tram intervals widen. Expect higher surge pricing on weekend nights around Bairro Alto.",
+            "Request pickup on wider avenues like Avenida da Liberdade to avoid drivers canceling due to narrow alleys."
+          ],
+          "video": {
+            "url": "https://www.youtube.com/embed/2YuFzCkBvUg",
+            "title": "How to navigate Lisbon without overpaying for rides"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bangkok-tourist-scams-to-avoid",
+      "title": "Bangkok Tourist Scams to Avoid",
+      "location": "Bangkok, Thailand",
+      "topic": "Tourist Scams",
+      "summary": "Stay confident in Bangkok by spotting tuk-tuk detours, gem scams, and friendly offers that drain your baht.",
+      "seoDescription": "Actionable tips for avoiding common tourist scams in Bangkok, from rigged tuk-tuk routes to overpriced tailor shops.",
+      "publishedOn": "2024-02-09",
+      "displayDate": "February 9, 2024",
+      "readTime": "5 min read",
+      "heroImage": {
+        "src": "/images/content/20231223_191940.jpg",
+        "alt": "Tuk-tuks lined up under neon lights in Bangkok"
+      },
+      "sections": [
+        {
+          "heading": "Temple is closed myth",
+          "paragraphs": [
+            "If a stranger insists the Grand Palace or Wat Pho is closed, walk to the nearest official entrance. Scammers redirect you to shops where they earn commissions.",
+            "Check hours on official websites or Google Maps updates instead of trusting street pitches."
+          ]
+        },
+        {
+          "heading": "Tuk-tuk detours",
+          "paragraphs": [
+            "Agree on a price before boarding and decline 'free' city tours that include several gem stores. A fair short ride within the old town is usually 60–100 THB.",
+            "If the driver tries to add stops, politely say you are late for a reservation and want to go straight to your destination."
+          ],
+          "images": [
+            {
+              "src": "/images/content/20231223_105939.jpg",
+              "alt": "Busy Bangkok street with tuk-tuks and scooters",
+              "caption": "Busy roads make short, direct routes your best friend."
+            }
+          ]
+        },
+        {
+          "heading": "Fake tailors and gem shops",
+          "paragraphs": [
+            "Shops recommended by unsolicited guides often inflate prices or deliver low-quality materials. Stick to tailors with many recent reviews and ask for fabric photos before deposits.",
+            "If you want genuine stones, buy from dealers certified by the Gem and Jewelry Institute of Thailand (GIT) and always request receipts."
+          ],
+          "video": {
+            "url": "https://www.youtube.com/embed/ffZpqcCFPpg",
+            "title": "Red flags to watch when shopping in Bangkok"
+          }
+        }
+      ]
+    }
+  ]
+}
