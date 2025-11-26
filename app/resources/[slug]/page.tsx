@@ -97,15 +97,17 @@ export default async function ResourceDetailPage({ params }: PageProps) {
           </div>
         </header>
 
-        <div className="relative h-72 w-full overflow-hidden rounded-3xl border border-white/10">
-          <Image
-            src={resource.heroImage.src}
-            alt={resource.heroImage.alt}
-            fill
-            className="object-cover"
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            priority
-          />
+        <div className="relative w-full overflow-hidden rounded-3xl border border-white/10">
+          <div className="relative aspect-[16/9] w-full">
+            <Image
+              src={resource.heroImage.src}
+              alt={resource.heroImage.alt}
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 60vw, 100vw"
+              priority
+            />
+          </div>
         </div>
 
         <p className="text-base leading-7 text-slate-200/80">{resource.summary}</p>
