@@ -62,57 +62,79 @@ export default async function ResourcesPage() {
           </p>
         </header>
 
-        <div className="grid gap-10 md:grid-cols-2">
+        <ul className="divide-y divide-white/10 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur">
           {resources.map((entry) => (
-            <article
-              key={entry.slug}
-              className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur transition hover:-translate-y-1 hover:border-amber-300/40"
-            >
-              <div className="relative h-60 w-full">
-                <Image
-                  src={entry.heroImage.src}
-                  alt={entry.heroImage.alt}
-                  fill
-                  sizes="(min-width: 768px) 50vw, 100vw"
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  priority
-                />
-              </div>
-              <div className="flex flex-1 flex-col gap-4 p-8">
-                <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80">
-                  <span>{entry.displayDate}</span>
-                  <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-amber-100">
-                    {entry.topic}
-                  </span>
+            <li key={entry.slug}>
+              <article className="group grid gap-6 p-6 transition duration-300 hover:bg-white/5 sm:grid-cols-[160px,1fr] sm:gap-8">
+                <div className="relative h-32 w-full overflow-hidden rounded-2xl sm:h-40">
+                  <Image
+                    src={entry.heroImage.src}
+                    alt={entry.heroImage.alt}
+                    fill
+                    sizes="(min-width: 640px) 160px, 100vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                    priority
+                  />
                 </div>
-                <h2 className="text-2xl font-semibold text-white">{entry.title}</h2>
-                <p className="text-sm leading-6 text-slate-200/80">{entry.summary}</p>
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-200/80">{entry.location}</p>
-                <div className="mt-auto pt-4">
-                  <Link
-                    href={`/resources/${entry.slug}`}
-                    className="inline-flex items-center text-sm font-semibold text-amber-300"
-                  >
-                    Read the resource
-                    <svg
-                      aria-hidden
-                      className="ml-2 h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-wrap items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-amber-200/80">
+                    <span>{entry.displayDate}</span>
+                    <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-amber-100">
+                      {entry.topic}
+                    </span>
+                    <span className="text-[10px] tracking-[0.28em] text-amber-200/70">{entry.location}</span>
+                  </div>
+                  <div className="space-y-2">
+                    <h2 className="text-xl font-semibold text-white sm:text-2xl">
+                      <Link
+                        href={`/resources/${entry.slug}`}
+                        className="group inline-flex items-center gap-2 text-white"
+                      >
+                        {entry.title}
+                        <svg
+                          aria-hidden
+                          className="h-4 w-4 opacity-0 transition duration-200 group-hover:translate-x-1 group-hover:opacity-100"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </h2>
+                    <p className="text-sm leading-6 text-slate-200/80">{entry.summary}</p>
+                  </div>
+                  <div className="pt-1">
+                    <Link
+                      href={`/resources/${entry.slug}`}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-amber-200"
+                      aria-label={`Read resource: ${entry.title}`}
                     >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </Link>
+                      Read the resource
+                      <svg
+                        aria-hidden
+                        className="h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </main>
   );
