@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 import { getResourceEntries } from "@/lib/contentData";
@@ -65,17 +64,7 @@ export default async function ResourcesPage() {
         <ul className="flex flex-col gap-6">
           {resources.map((entry) => (
             <li key={entry.slug}>
-              <article className="group grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-amber-200/30 hover:shadow-2xl hover:shadow-amber-200/10 sm:grid-cols-[220px,1fr] sm:gap-8">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
-                  <Image
-                    src={entry.heroImage.src}
-                    alt={entry.heroImage.alt}
-                    fill
-                    sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 100vw"
-                    className="object-cover transition duration-500 group-hover:scale-105"
-                    priority
-                  />
-                </div>
+              <article className="group flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-amber-200/30 hover:shadow-2xl hover:shadow-amber-200/10 sm:flex-row sm:items-start sm:gap-6">
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-wrap items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-amber-200/80">
                     <span>{entry.displayDate}</span>
