@@ -38,3 +38,5 @@ export type ResourceEntry = {
 export type ResourceDataset = {
   resources: ResourceEntry[];
 };
+
+export type ResourceSummary = Omit<ResourceEntry, "sections">;

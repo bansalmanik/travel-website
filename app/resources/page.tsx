@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { getResourceEntries } from "@/lib/contentData";
+import { getResourceSummaries } from "@/lib/contentData";
 
 const pageTitle = "Travel Resource Library | Miles Go Round";
 const pageDescription =
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 export default async function ResourcesPage() {
-  const resources = await getResourceEntries();
+  const resources = await getResourceSummaries();
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",

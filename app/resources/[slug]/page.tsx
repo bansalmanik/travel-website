@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { getResourceEntries } from "@/lib/contentData";
+import { getResourceEntry } from "@/lib/contentData";
 
 export const runtime = "edge";
 
@@ -14,8 +14,7 @@ export type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
-  const resources = await getResourceEntries();
-  const resource = resources.find((entry) => entry.slug === decodedSlug);
+  const resource = await getResourceEntry(decodedSlug);
 
   if (!resource) {
     return {
@@ -55,8 +54,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ResourceDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
-  const resources = await getResourceEntries();
-  const resource = resources.find((entry) => entry.slug === decodedSlug);
+  const resource = await getResourceEntry(decodedSlug);
 
   if (!resource) {
     notFound();

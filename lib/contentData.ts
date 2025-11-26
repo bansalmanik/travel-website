@@ -17,7 +17,7 @@ import type {
     ListSection,
 } from "@/app/travel-with-points/hotel-programs/types";
 import type { JournalDataset, JournalEntry } from "@/app/journals/types";
-import type { ResourceDataset, ResourceEntry } from "@/app/resources/types";
+import type { ResourceDataset, ResourceEntry, ResourceSummary } from "@/app/resources/types";
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
@@ -77,24 +77,51 @@ export async function getJournalEntries(): Promise<JournalEntry[]> {
     );
 }
 
-export async function getResourceEntries(): Promise<ResourceEntry[]> {
+async function getFilteredResources(): Promise<ResourceEntry[]> {
     const data = await loadJsonData<ResourceDataset>("resources.json");
-    const resources = filterEnabled(data.resources).map((entry) =>
-        filterEnabledDeep(entry)
-    );
+    return filterEnabled(data.resources).map((entry) => filterEnabledDeep(entry));
+}
 
-    return Promise.all(
-        resources.map(async (entry) => ({
-            ...entry,
-            heroImage: await resolveImage(entry.heroImage),
-            sections: await Promise.all(
-                entry.sections.map(async (section) => ({
-                    ...section,
-                    images: await resolveImages(section.images),
-                }))
-            ),
-        }))
-    );
+async function resolveResourceEntry(entry: ResourceEntry): Promise<ResourceEntry> {
+    return {
+        ...entry,
+        heroImage: await resolveImage(entry.heroImage),
+        sections: await Promise.all(
+            entry.sections.map(async (section) => ({
+                ...section,
+                images: await resolveImages(section.images),
+            }))
+        ),
+    };
+}
+
+export async function getResourceEntries(): Promise<ResourceEntry[]> {
+    const resources = await getFilteredResources();
+
+    return Promise.all(resources.map((entry) => resolveResourceEntry(entry)));
+}
+
+export async function getResourceSummaries(): Promise<ResourceSummary[]> {
+    const resources = await getFilteredResources();
+
+    return resources.map((resource) => {
+        const { sections, ...rest } = resource;
+
+        void sections;
+
+        return rest;
+    });
+}
+
+export async function getResourceEntry(
+    slug: string
+): Promise<ResourceEntry | undefined> {
+    const resources = await getFilteredResources();
+    const entry = resources.find((resource) => resource.slug === slug);
+
+    if (!entry) return undefined;
+
+    return resolveResourceEntry(entry);
 }
 
 export async function getCreditCardContent(): Promise<{
