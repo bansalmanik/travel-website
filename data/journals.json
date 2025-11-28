@@ -1,3 +1,53 @@
 {
-  "journals": []
+  "journals": [
+    {
+      "slug": "macau-transportation-essentials",
+      "title": "Macau Transportation Essentials",
+      "author": "Ana Santos",
+      "summary": "Practical tips for crossing from Hong Kong, navigating the ferry terminals, and using Macau's public transit without extra fees.",
+      "seoDescription": "Learn how to reach Macau from Hong Kong, choose between ferries or the HZMB shuttle, and ride local buses with contactless payments.",
+      "publishedOn": "2024-05-01",
+      "displayDate": "May 1, 2024",
+      "readTime": "6 minute read",
+      "heroImage": {
+        "src": "/journals/macau-ferry-terminal.jpg",
+        "alt": "Ferry terminal boarding area in Macau",
+        "caption": "Early morning ferries keep border queues short.",
+        "enabled": true
+      },
+      "sections": [
+        {
+          "heading": "Crossing from Hong Kong",
+          "body": [
+            "Two main routes connect Hong Kong to Macau: high-speed ferries from Sheung Wan or Tsim Sha Tsui, and the Hong Kong–Zhuhai–Macau Bridge (HZMB) shuttle buses from the airport or Tung Chung.",
+            "Ferries are reliable in all weather, while the HZMB bus can be faster late at night when traffic is light. Bring your passport and a completed arrival card; immigration happens on both sides of the trip."
+          ],
+          "image": {
+            "src": "/journals/macau-bridge-shuttle.jpg",
+            "alt": "HZMB shuttle bus parked at the terminal",
+            "caption": "HZMB shuttles run 24/7 with departures every 5–10 minutes at peak times.",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Getting around Macau",
+          "body": [
+            "Public buses cover Taipa, Coloane, and the historic peninsula with flat fares that include transfers within 45 minutes. Routes 101X and 102X link the Outer Harbour Ferry Terminal to Cotai in under 20 minutes.",
+            "Taxis are metered but may add small surcharges for luggage. If you stay on the Cotai Strip, most casino resorts run free shuttles to ferry terminals, the HZMB port, and the airport—just follow the shuttle bay signs in each property."
+          ],
+          "enabled": true
+        },
+        {
+          "heading": "Payment & connectivity",
+          "body": [
+            "Macau Pass and bank-issued contactless cards (Visa, Mastercard, UnionPay) work on public buses; tap when boarding and check the screen for fare confirmation.",
+            "eSIM coverage can be spotty around Coloane village. Download offline maps and save bus stop names like \"Praca Ferreira Amaral\" to navigate when signal drops."
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    }
+  ]
 }
