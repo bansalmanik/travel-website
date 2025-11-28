@@ -4,9 +4,9 @@ import Link from "next/link";
 
 import { getJournalEntries } from "@/lib/contentData";
 
-const pageTitle = "Travel Journal Library | Miles Go Round";
+const pageTitle = "Travel Resources Library | Miles Go Round";
 const pageDescription =
-  "Browse Ana's reflective travel journals to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
+  "Browse Ana's reflective travel resources to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -32,7 +32,7 @@ export default async function JournalsPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Travel Journal Library",
+    name: "Travel Resources Library",
     description: pageDescription,
     url: "https://example.com/journals",
     hasPart: journals.map((entry) => ({
@@ -55,7 +55,7 @@ export default async function JournalsPage() {
             Field Notes
           </p>
           <h1 className="text-4xl font-semibold text-white sm:text-5xl">
-            Travel Journal Library
+            Travel Resources Library
           </h1>
           <p className="mx-auto max-w-2xl text-base text-slate-200/80">
             Every entry is a postcard from the road—honest reflections, mindful rituals, and practical tips to make slow travel
@@ -90,7 +90,7 @@ export default async function JournalsPage() {
                     href={`/journals/${entry.slug}`}
                     className="inline-flex items-center text-sm font-semibold text-amber-300"
                   >
-                    Read the journal
+                    View the resource
                     <svg
                       aria-hidden
                       className="ml-2 h-4 w-4"

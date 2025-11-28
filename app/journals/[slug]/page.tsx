@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!journal) {
     return {
-      title: "Journal not found | Miles Go Round",
+      title: "Resource not found | Miles Go Round",
     };
   }
 
@@ -90,7 +90,7 @@ export default async function JournalDetailPage({ params }: PageProps) {
       />
       <article className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20 lg:py-28">
         <header className="space-y-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel Journal</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel Resource</p>
           <h1 className="text-4xl font-semibold text-white sm:text-5xl">{journal.title}</h1>
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80">
             <span>{journal.displayDate}</span>
@@ -163,7 +163,7 @@ export default async function JournalDetailPage({ params }: PageProps) {
               <path d="M19 12H5" />
               <path d="m12 5-7 7 7 7" />
             </svg>
-            Back to journals
+            Back to travel resources
           </Link>
           <a
             href="#top"
