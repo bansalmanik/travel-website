@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllStorySummaries } from "@/app/stories/data";
-import { getJournalEntries } from "@/lib/contentData";
+import { getTravelResourceEntries } from "@/lib/contentData";
 
 const travelWithPointsHighlights = [
   {
@@ -35,11 +35,11 @@ const travelWithPointsHighlights = [
 export default async function Home() {
   const storySummaries = await getAllStorySummaries();
   const featuredStories = storySummaries.slice(0, 3);
-  const journalEntries = await getJournalEntries();
-  const journalHighlights = journalEntries.slice(0, 3).map((entry) => ({
+  const travelResourceEntries = await getTravelResourceEntries();
+  const journalHighlights = travelResourceEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
     date: entry.displayDate,
-    url: `/journals/${entry.slug}`,
+    url: `/travel-resources/${entry.slug}`,
   }));
   const heroImageSrc = "/images/content/cover_1.jpg";
 
@@ -199,11 +199,11 @@ export default async function Home() {
           </div>
         </section>
 
-        <section id="journal" className="space-y-10">
+        <section id="travel-resources" className="space-y-10">
           <div className="flex flex-col gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
             <div className="space-y-2 sm:space-y-0">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500 sm:text-sm sm:tracking-[0.35em]">
-                Latest Journal
+                Latest Travel Resources
               </p>
               <h2 className="mt-2 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-4xl">
                 Behind-the-scenes notes & resources
@@ -220,7 +220,7 @@ export default async function Home() {
                 <a
                   className="flex flex-col gap-2 rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:p-6"
                   href={entry.url}
-                  aria-label={`Read journal entry ${entry.title}`}
+                  aria-label={`View travel resource ${entry.title}`}
                 >
                   <span className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-500">{entry.date}</span>
                   <span className="text-pretty text-lg font-semibold text-slate-900">{entry.title}</span>

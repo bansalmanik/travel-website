@@ -5,14 +5,14 @@ export type SectionImage = {
   enabled?: boolean;
 };
 
-export type JournalSection = {
+export type TravelResourceSection = {
   heading: string;
   body: string[];
   image?: SectionImage;
   enabled?: boolean;
 };
 
-export type JournalEntry = {
+export type TravelResourceEntry = {
   slug: string;
   title: string;
   author: string;
@@ -22,10 +22,10 @@ export type JournalEntry = {
   displayDate: string;
   readTime: string;
   heroImage: SectionImage;
-  sections: JournalSection[];
+  sections: TravelResourceSection[];
   enabled?: boolean;
 };
 
-export type JournalDataset = {
-  journals: JournalEntry[];
+export type TravelResourceDataset = {
+  travelResources: TravelResourceEntry[];
 };

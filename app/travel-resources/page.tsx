@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getJournalEntries } from "@/lib/contentData";
+import { getTravelResourceEntries } from "@/lib/contentData";
 
-const pageTitle = "Travel Journal Library | Miles Go Round";
+const pageTitle = "Travel Resources Library | Miles Go Round";
 const pageDescription =
-  "Browse Ana's reflective travel journals to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
+  "Browse Ana's reflective travel resources to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
 
 export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
   alternates: {
-    canonical: "/journals",
+    canonical: "/travel-resources",
   },
   openGraph: {
     title: pageTitle,
     description: pageDescription,
     type: "website",
-    url: "https://example.com/journals",
+    url: "https://example.com/travel-resources",
   },
   twitter: {
     card: "summary_large_image",
@@ -27,19 +27,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function JournalsPage() {
-  const journals = await getJournalEntries();
+export default async function TravelResourcesPage() {
+  const travelResources = await getTravelResourceEntries();
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Travel Journal Library",
+    name: "Travel Resources Library",
     description: pageDescription,
-    url: "https://example.com/journals",
-    hasPart: journals.map((entry) => ({
+    url: "https://example.com/travel-resources",
+    hasPart: travelResources.map((entry) => ({
       "@type": "Article",
       headline: entry.title,
       datePublished: entry.publishedOn,
-      url: `https://example.com/journals/${entry.slug}`,
+      url: `https://example.com/travel-resources/${entry.slug}`,
     })),
   };
 
@@ -55,7 +55,7 @@ export default async function JournalsPage() {
             Field Notes
           </p>
           <h1 className="text-4xl font-semibold text-white sm:text-5xl">
-            Travel Journal Library
+            Travel Resources Library
           </h1>
           <p className="mx-auto max-w-2xl text-base text-slate-200/80">
             Every entry is a postcard from the road—honest reflections, mindful rituals, and practical tips to make slow travel
@@ -64,11 +64,16 @@ export default async function JournalsPage() {
         </header>
 
         <div className="grid gap-10 md:grid-cols-2">
-          {journals.map((entry) => (
+          {travelResources.map((entry) => (
             <article
               key={entry.slug}
-              className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur transition hover:-translate-y-1 hover:border-amber-300/40"
+              className="group relative flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur transition hover:-translate-y-1 hover:border-amber-300/40 focus-within:-translate-y-1 focus-within:border-amber-300/40"
             >
+              <Link
+                href={`/travel-resources/${entry.slug}`}
+                className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-300 focus-visible:outline-offset-4"
+                aria-label={`Read ${entry.title}`}
+              />
               <div className="relative h-60 w-full">
                 <Image
                   src={entry.heroImage.src}
@@ -85,26 +90,21 @@ export default async function JournalsPage() {
                 </div>
                 <h2 className="text-2xl font-semibold text-white">{entry.title}</h2>
                 <p className="text-sm leading-6 text-slate-200/80">{entry.summary}</p>
-                <div className="mt-auto pt-4">
-                  <Link
-                    href={`/journals/${entry.slug}`}
-                    className="inline-flex items-center text-sm font-semibold text-amber-300"
+                <div className="mt-auto pt-4 flex items-center text-sm font-semibold text-amber-300">
+                  <span>View the resource</span>
+                  <svg
+                    aria-hidden
+                    className="ml-2 h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
                   >
-                    Read the journal
-                    <svg
-                      aria-hidden
-                      className="ml-2 h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </Link>
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
                 </div>
               </div>
             </article>

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Miles Go Round",
     title: "Miles Go Round | Slow Travel Stories & Points Guides",
     description:
-      "Explore mindful travel stories, destination journals, and loyalty program breakdowns to help you travel better for less.",
+      "Explore mindful travel stories, destination travel resources, and loyalty program breakdowns to help you travel better for less.",
     images: [
       {
         url: "/images/content/cover_1.jpg",
