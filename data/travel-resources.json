@@ -1,5 +1,5 @@
 {
-  "journals": [
+  "travelResources": [
     {
       "slug": "macau-transportation-essentials",
       "title": "Macau Transportation Essentials",
@@ -10,7 +10,7 @@
       "displayDate": "May 1, 2024",
       "readTime": "6 minute read",
       "heroImage": {
-        "src": "/journals/macau-ferry-terminal.jpg",
+        "src": "/travel-resources/macau-ferry-terminal.jpg",
         "alt": "Ferry terminal boarding area in Macau",
         "caption": "Early morning ferries keep border queues short.",
         "enabled": true
@@ -23,7 +23,7 @@
             "Ferries are reliable in all weather, while the HZMB bus can be faster late at night when traffic is light. Bring your passport and a completed arrival card; immigration happens on both sides of the trip."
           ],
           "image": {
-            "src": "/journals/macau-bridge-shuttle.jpg",
+            "src": "/travel-resources/macau-bridge-shuttle.jpg",
             "alt": "HZMB shuttle bus parked at the terminal",
             "caption": "HZMB shuttles run 24/7 with departures every 5–10 minutes at peak times.",
             "enabled": true

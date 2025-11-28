@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { getJournalEntries } from "@/lib/contentData";
+import { getTravelResourceEntries } from "@/lib/contentData";
 
 export const runtime = "edge";
 
@@ -15,67 +15,71 @@ export type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
-  const journals = await getJournalEntries();
-  const journal = journals.find((entry) => entry.slug === decodedSlug);
+  const travelResources = await getTravelResourceEntries();
+  const travelResource = travelResources.find(
+    (entry) => entry.slug === decodedSlug
+  );
 
-  if (!journal) {
+  if (!travelResource) {
     return {
       title: "Resource not found | Miles Go Round",
     };
   }
 
-  const pageUrl = `https://example.com/journals/${journal.slug}`;
+  const pageUrl = `https://example.com/travel-resources/${travelResource.slug}`;
 
   return {
-    title: `${journal.title} | Miles Go Round`,
-    description: journal.seoDescription,
+    title: `${travelResource.title} | Miles Go Round`,
+    description: travelResource.seoDescription,
     alternates: {
-      canonical: `/journals/${journal.slug}`,
+      canonical: `/travel-resources/${travelResource.slug}`,
     },
     openGraph: {
-      title: journal.title,
-      description: journal.seoDescription,
+      title: travelResource.title,
+      description: travelResource.seoDescription,
       type: "article",
       url: pageUrl,
       images: [
         {
-          url: journal.heroImage.src,
-          alt: journal.heroImage.alt,
+          url: travelResource.heroImage.src,
+          alt: travelResource.heroImage.alt,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: journal.title,
-      description: journal.seoDescription,
-      images: [journal.heroImage.src],
+      title: travelResource.title,
+      description: travelResource.seoDescription,
+      images: [travelResource.heroImage.src],
     },
   };
 }
 
-export default async function JournalDetailPage({ params }: PageProps) {
+export default async function TravelResourceDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
-  const journals = await getJournalEntries();
-  const journal = journals.find((entry) => entry.slug === decodedSlug);
+  const travelResources = await getTravelResourceEntries();
+  const travelResource = travelResources.find(
+    (entry) => entry.slug === decodedSlug
+  );
 
-  if (!journal) {
+  if (!travelResource) {
     notFound();
   }
 
-  const pageUrl = `https://example.com/journals/${journal.slug}`;
+  const pageUrl = `https://example.com/travel-resources/${travelResource.slug}`;
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: journal.title,
-    description: journal.seoDescription,
-    datePublished: journal.publishedOn,
+    headline: travelResource.title,
+    description: travelResource.seoDescription,
+    datePublished: travelResource.publishedOn,
     author: {
       "@type": "Person",
-      name: journal.author,
+      name: travelResource.author,
     },
-    image: journal.heroImage.src,
+    image: travelResource.heroImage.src,
     url: pageUrl,
   };
 
@@ -91,20 +95,20 @@ export default async function JournalDetailPage({ params }: PageProps) {
       <article className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20 lg:py-28">
         <header className="space-y-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Travel Resource</p>
-          <h1 className="text-4xl font-semibold text-white sm:text-5xl">{journal.title}</h1>
+          <h1 className="text-4xl font-semibold text-white sm:text-5xl">{travelResource.title}</h1>
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80">
-            <span>{journal.displayDate}</span>
+            <span>{travelResource.displayDate}</span>
             <span>•</span>
-            <span>{journal.readTime}</span>
+            <span>{travelResource.readTime}</span>
             <span>•</span>
-            <span>{journal.author}</span>
+            <span>{travelResource.author}</span>
           </div>
         </header>
 
         <div className="relative h-72 w-full overflow-hidden rounded-3xl border border-white/10">
           <Image
-            src={journal.heroImage.src}
-            alt={journal.heroImage.alt}
+            src={travelResource.heroImage.src}
+            alt={travelResource.heroImage.alt}
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"
@@ -112,10 +116,10 @@ export default async function JournalDetailPage({ params }: PageProps) {
           />
         </div>
 
-        <p className="text-base leading-7 text-slate-200/80">{journal.summary}</p>
+        <p className="text-base leading-7 text-slate-200/80">{travelResource.summary}</p>
 
         <div className="space-y-12 text-base leading-relaxed text-slate-200/90">
-          {journal.sections.map((section) => (
+          {travelResource.sections.map((section) => (
             <section
               key={section.heading}
               className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
@@ -149,7 +153,10 @@ export default async function JournalDetailPage({ params }: PageProps) {
         </div>
 
         <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
-          <Link href="/journals" className="inline-flex items-center font-semibold text-amber-300">
+          <Link
+            href="/travel-resources"
+            className="inline-flex items-center font-semibold text-amber-300"
+          >
             <svg
               aria-hidden
               className="mr-2 h-4 w-4"

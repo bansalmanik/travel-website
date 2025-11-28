@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllStorySummaries } from "@/app/stories/data";
-import { getJournalEntries } from "@/lib/contentData";
+import { getTravelResourceEntries } from "@/lib/contentData";
 
 const travelWithPointsHighlights = [
   {
@@ -35,11 +35,11 @@ const travelWithPointsHighlights = [
 export default async function Home() {
   const storySummaries = await getAllStorySummaries();
   const featuredStories = storySummaries.slice(0, 3);
-  const journalEntries = await getJournalEntries();
-  const journalHighlights = journalEntries.slice(0, 3).map((entry) => ({
+  const travelResourceEntries = await getTravelResourceEntries();
+  const journalHighlights = travelResourceEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
     date: entry.displayDate,
-    url: `/journals/${entry.slug}`,
+    url: `/travel-resources/${entry.slug}`,
   }));
   const heroImageSrc = "/images/content/cover_1.jpg";
 

@@ -16,7 +16,10 @@ import type {
     HotelProgram,
     ListSection,
 } from "@/app/travel-with-points/hotel-programs/types";
-import type { JournalDataset, JournalEntry } from "@/app/journals/types";
+import type {
+    TravelResourceDataset,
+    TravelResourceEntry,
+} from "@/app/travel-resources/types";
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
@@ -56,14 +59,16 @@ async function resolveListSection(
     return { ...section, image };
 }
 
-export async function getJournalEntries(): Promise<JournalEntry[]> {
-    const data = await loadJsonData<JournalDataset>("journals.json");
-    const journals = filterEnabled(data.journals).map((entry) =>
+export async function getTravelResourceEntries(): Promise<TravelResourceEntry[]> {
+    const data = await loadJsonData<TravelResourceDataset>(
+        "travel-resources.json"
+    );
+    const travelResources = filterEnabled(data.travelResources).map((entry) =>
         filterEnabledDeep(entry)
     );
 
     return Promise.all(
-        journals.map(async (entry) => ({
+        travelResources.map(async (entry) => ({
             ...entry,
             heroImage: await resolveImage(entry.heroImage),
             sections: await Promise.all(

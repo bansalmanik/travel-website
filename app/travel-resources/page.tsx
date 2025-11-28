@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getJournalEntries } from "@/lib/contentData";
+import { getTravelResourceEntries } from "@/lib/contentData";
 
 const pageTitle = "Travel Resources Library | Miles Go Round";
 const pageDescription =
@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
   alternates: {
-    canonical: "/journals",
+    canonical: "/travel-resources",
   },
   openGraph: {
     title: pageTitle,
     description: pageDescription,
     type: "website",
-    url: "https://example.com/journals",
+    url: "https://example.com/travel-resources",
   },
   twitter: {
     card: "summary_large_image",
@@ -27,19 +27,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function JournalsPage() {
-  const journals = await getJournalEntries();
+export default async function TravelResourcesPage() {
+  const travelResources = await getTravelResourceEntries();
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Travel Resources Library",
     description: pageDescription,
-    url: "https://example.com/journals",
-    hasPart: journals.map((entry) => ({
+    url: "https://example.com/travel-resources",
+    hasPart: travelResources.map((entry) => ({
       "@type": "Article",
       headline: entry.title,
       datePublished: entry.publishedOn,
-      url: `https://example.com/journals/${entry.slug}`,
+      url: `https://example.com/travel-resources/${entry.slug}`,
     })),
   };
 
@@ -64,7 +64,7 @@ export default async function JournalsPage() {
         </header>
 
         <div className="grid gap-10 md:grid-cols-2">
-          {journals.map((entry) => (
+          {travelResources.map((entry) => (
             <article
               key={entry.slug}
               className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur transition hover:-translate-y-1 hover:border-amber-300/40"
@@ -87,7 +87,7 @@ export default async function JournalsPage() {
                 <p className="text-sm leading-6 text-slate-200/80">{entry.summary}</p>
                 <div className="mt-auto pt-4">
                   <Link
-                    href={`/journals/${entry.slug}`}
+                    href={`/travel-resources/${entry.slug}`}
                     className="inline-flex items-center text-sm font-semibold text-amber-300"
                   >
                     View the resource
