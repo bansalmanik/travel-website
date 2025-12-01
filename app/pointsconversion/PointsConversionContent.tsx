@@ -218,16 +218,9 @@ export default function PointsConversionContent({ conversions }: PointsConversio
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <div className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
         <header className="space-y-3 text-center sm:text-left">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-200/80">
-            Points conversion hub
-          </p>
           <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-            Compare transfer partners instantly
+            Points Transfer Calculator
           </h1>
-          <p className="text-sm leading-6 text-slate-200/80 sm:max-w-2xl">
-            Pick your rewards program and originating card to surface a fast, scannable table of every transfer partner,
-            conversion ratio, and insight—optimized for quick answers and search visibility.
-          </p>
         </header>
 
         <section className="rounded-3xl border border-white/10 bg-slate-900/60 p-4 shadow-lg shadow-slate-950/30 sm:p-6">
@@ -253,9 +246,6 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             <label className="space-y-2 sm:col-span-2">
               <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
                 <span>Transfer from</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-amber-100/70">
-                  {fromOptions.length} options
-                </span>
               </div>
               <select
                 value={normalizedSelectedFrom}
@@ -303,9 +293,6 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             <label className="space-y-2 sm:col-span-2">
               <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
                 <span>Transfer points</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-amber-100/70">
-                  Optional calculator
-                </span>
               </div>
               <input
                 type="number"
@@ -319,36 +306,9 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               />
             </label>
           </div>
-
-          <div className="mt-6 grid gap-4 sm:grid-cols-[1fr_auto] sm:items-center">
-            <div className="text-sm text-slate-200/80">
-              <p className="font-semibold text-white">
-                {normalizedSelectedFrom || "Choose a card"}
-              </p>
-              <p className="mt-1 text-xs uppercase tracking-[0.25em] text-slate-300/70">
-                Transfer partner directory
-              </p>
-            </div>
-            <span className="inline-flex items-center justify-center rounded-full border border-amber-300/40 bg-amber-200/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-amber-100/80">
-              {filteredPartnerRows.length} partners
-            </span>
-          </div>
         </section>
 
         <section className="rounded-3xl border border-white/10 bg-slate-900/40 shadow-lg shadow-slate-950/30">
-          <div className="flex items-center justify-between gap-3 border-b border-white/5 px-4 py-3 sm:px-6">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
-                Transfer partners
-              </p>
-              <p className="text-sm text-slate-300/80">
-                Full list of destinations with live ratios and quick notes.
-              </p>
-            </div>
-            <div className="hidden text-xs font-medium uppercase tracking-[0.3em] text-amber-100/70 sm:block">
-              Mobile-first, scannable table
-            </div>
-          </div>
 
           {filteredPartnerRows.length === 0 ? (
             <div className="px-4 py-10 text-center sm:px-6">
