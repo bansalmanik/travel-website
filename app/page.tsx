@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getAllStorySummaries } from "@/app/stories/data";
 import { getTravelResourceEntries } from "@/lib/contentData";
 
 const travelWithPointsHighlights = [
@@ -33,8 +32,6 @@ const travelWithPointsHighlights = [
 ];
 
 export default async function Home() {
-  const storySummaries = await getAllStorySummaries();
-  const featuredStories = storySummaries.slice(0, 3);
   const travelResourceEntries = await getTravelResourceEntries();
   const journalHighlights = travelResourceEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
@@ -78,68 +75,6 @@ export default async function Home() {
       </header>
 
       <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
-        <section id="stories" className="space-y-12">
-          <div className="flex flex-col gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
-            <div className="space-y-2 sm:space-y-0">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500 sm:text-sm sm:tracking-[0.35em]">
-                Featured Stories
-              </p>
-              <h2 className="mt-2 text-2xl font-semibold text-slate-900 sm:mt-4 sm:text-4xl">
-                Recent chapters from life on the road
-              </h2>
-            </div>
-            <p className="mx-auto max-w-2xl text-balance text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
-              Long-form travelogues with practical notes, playlists, and the quieter moments that rarely make it into guidebooks.
-            </p>
-          </div>
-
-          <ul className="-mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 no-scrollbar sm:gap-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:pb-0">
-            {featuredStories.map((story) => (
-              <li key={story.slug} className="min-w-[85%] snap-center sm:min-w-[70%] md:min-w-0">
-                <Link
-                  href={`/stories/${story.slug}`}
-                  aria-label={`Read ${story.title} from ${story.city}, ${story.country}`}
-                  className="group flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
-                >
-                  <div className="relative h-56 w-full overflow-hidden sm:h-64">
-                    <Image
-                      src={story.coverImage.src}
-                      alt={story.coverImage.alt}
-                      fill
-                      className="object-cover transition duration-500 group-hover:scale-105"
-                      sizes="(min-width: 768px) 33vw, 100vw"
-                      priority={story.slug === featuredStories[0]?.slug}
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-3 px-6 py-6">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-500">
-                      {story.city}, {story.country}
-                    </p>
-                    <h3 className="text-xl font-semibold text-slate-900">{story.title}</h3>
-                    <p className="text-balance text-sm leading-6 text-slate-600">{story.excerpt}</p>
-                    <span className="mt-auto inline-flex items-center text-sm font-semibold text-sky-600">
-                      Read the story
-                      <svg
-                        aria-hidden
-                        className="ml-2 h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                      </svg>
-                    </span>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-
         <section
           aria-labelledby="travel-with-points-heading"
           className="overflow-hidden rounded-3xl bg-slate-900/95 px-6 py-10 text-white shadow-xl sm:px-8 sm:py-12"
