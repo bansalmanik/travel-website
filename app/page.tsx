@@ -82,7 +82,7 @@ export default async function Home() {
           <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
             <div className="space-y-5 text-center md:text-left">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.35em]">
-                New Resource Hub
+                Travel With Points
               </p>
               <h2 id="travel-with-points-heading" className="text-2xl font-semibold sm:text-4xl">
                 Travel with points and turn loyalty into long weekends
@@ -90,12 +90,6 @@ export default async function Home() {
               <p className="text-pretty text-sm leading-6 text-slate-100/80 sm:text-base">
                 Earn smarter. Redeem better. Fly further. Miles and points that take you places
               </p>
-              <Link
-                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
-                href="/travel-with-points"
-              >
-                Explore the hub
-              </Link>
             </div>
             <ul className="mt-4 grid gap-4 sm:mt-0 sm:grid-cols-2">
               {travelWithPointsHighlights.map((item) => (
