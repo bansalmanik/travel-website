@@ -6,28 +6,27 @@ import { getTravelResourceEntries } from "@/lib/contentData";
 const travelWithPointsHighlights = [
   {
     title: "Credit Cards",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
+    description: "Build a simple earning plan that fits your everyday spend without spreadsheets.",
     href: "/travel-with-points/credit-cards",
-    accent: "bg-amber-100 text-amber-900",
+    accent: "from-amber-200/60 via-amber-100/80 to-white/70 text-amber-900",
   },
   {
     title: "Hotel Programs",
-    description:
-      "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
+    description: "Decode elite tiers, perks, and free night tricks in minutes, not hours of research.",
     href: "/travel-with-points/hotel-programs",
-    accent: "bg-sky-100 text-sky-900",
+    accent: "from-sky-200/70 via-sky-100/80 to-white/70 text-sky-900",
   },
   {
     title: "Flight Programs",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
+    description: "Map flexible points to airline partners so you can spot sweet spots fast.",
     href: "/travel-with-points/flight-programs",
-    accent: "bg-emerald-100 text-emerald-900",
+    accent: "from-emerald-200/70 via-emerald-100/80 to-white/70 text-emerald-900",
   },
   {
     title: "Points Conversion",
-    description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
+    description: "Quickly compare transfer ratios and see where your flexible points stretch the farthest.",
     href: "/pointsconversion",
-    accent: "bg-purple-100 text-purple-900",
+    accent: "from-purple-200/70 via-purple-100/80 to-white/70 text-purple-900",
   },
 ];
 
@@ -77,60 +76,115 @@ export default async function Home() {
       <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
         <section
           aria-labelledby="travel-with-points-heading"
-          className="overflow-hidden rounded-3xl bg-slate-900/95 px-6 py-10 text-white shadow-xl sm:px-8 sm:py-12"
+          className="overflow-hidden rounded-3xl bg-slate-950/95 px-6 py-10 text-white shadow-xl sm:px-8 sm:py-12"
         >
-          <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
-            <div className="space-y-5 text-center md:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.35em]">
-                New Resource Hub
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+            <div className="space-y-6 text-center lg:text-left">
+              <p className="inline-flex items-center justify-center rounded-full border border-amber-300/50 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.26em] text-amber-200 sm:text-xs sm:tracking-[0.32em]">
+                Travel on points, simplified
               </p>
-              <h2 id="travel-with-points-heading" className="text-2xl font-semibold sm:text-4xl">
-                Travel with points and turn loyalty into long weekends
-              </h2>
-              <p className="text-pretty text-sm leading-6 text-slate-100/80 sm:text-base">
-                Earn smarter. Redeem better. Fly further. Miles and points that take you places
-              </p>
-              <Link
-                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
-                href="/travel-with-points"
-              >
-                Explore the hub
-              </Link>
+              <div className="space-y-3">
+                <h2 id="travel-with-points-heading" className="text-pretty text-2xl font-semibold sm:text-4xl">
+                  Skip the overwhelm. See exactly where your points can take you next.
+                </h2>
+                <p className="text-pretty text-sm leading-6 text-slate-100/85 sm:text-base">
+                  A calm hub for earning, transferring, and booking—so you can plan your next long weekend without tab overload.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
+                <Link
+                  className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-lg shadow-amber-400/30 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
+                  href="/travel-with-points"
+                >
+                  Open the hub
+                </Link>
+                <Link
+                  className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-amber-200 underline-offset-4 transition hover:text-amber-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  href="/travel-with-points/credit-cards"
+                >
+                  Start with cards
+                  <svg aria-hidden className="h-4 w-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+              <div className="grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:grid-cols-3 sm:gap-4">
+                {["10-minute starter guides", "Transfer charts without jargon", "Booking checklists you can save"]
+                  .map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="mt-[2px] inline-flex h-6 w-6 items-center justify-center rounded-full bg-amber-400/20 text-amber-200">
+                        <svg aria-hidden className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path d="m5 13 4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      <p className="text-left text-sm font-medium leading-6 text-slate-100/90">{item}</p>
+                    </div>
+                  ))}
+              </div>
             </div>
-            <ul className="mt-4 grid gap-4 sm:mt-0 sm:grid-cols-2">
-              {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="h-full">
-                  <Link
-                    href={item.href}
-                    aria-label={`Learn more about ${item.title}`}
-                    className="group flex h-full flex-col justify-between gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
-                  >
-                    <span
-                      className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
+
+            <div className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-inner sm:p-6">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-200/80">Jump in fast</p>
+                  <h3 className="text-lg font-semibold text-white sm:text-xl">Pick a track and explore</h3>
+                </div>
+                <span className="rounded-full bg-amber-400/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-amber-200">
+                  4 paths
+                </span>
+              </div>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {travelWithPointsHighlights.map((item) => (
+                  <li key={item.title} className="h-full">
+                    <Link
+                      href={item.href}
+                      aria-label={`Learn more about ${item.title}`}
+                      className="group relative flex h-full flex-col gap-3 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:-translate-y-1 hover:border-amber-200/40 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                     >
-                      {item.title}
-                    </span>
-                    <p className="text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
-                    <span className="inline-flex items-center text-sm font-semibold text-amber-300">
-                      Read more
-                      <svg
-                        aria-hidden
-                        className="ml-2 h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
+                      <span
+                        className={`inline-flex items-center rounded-full bg-gradient-to-br px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
                       >
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                      </svg>
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                        {item.title}
+                      </span>
+                      <p className="text-sm leading-6 text-slate-100/85">{item.description}</p>
+                      <span className="inline-flex items-center text-sm font-semibold text-amber-200">
+                        Explore
+                        <svg
+                          aria-hidden
+                          className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/10 p-4 text-sm text-slate-100/85 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="font-semibold text-white">Only the essentials</p>
+                  <p className="text-slate-100/75">Short reads, mobile-friendly layouts, and quick wins you can save for later.</p>
+                </div>
+                <Link
+                  className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-amber-200 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  href="/travel-with-points"
+                >
+                  View all resources
+                  <svg aria-hidden className="h-4 w-4" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
