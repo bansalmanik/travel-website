@@ -67,30 +67,6 @@ export default function TravelWithPointsPage() {
           <p className="mx-auto max-w-2xl text-sm text-slate-200/80 sm:text-base">
             Compare programs, map transfer routes, and pick the right cards to unlock outsized value on flights and stays. Everything is organized so you can move from idea to booked seat in minutes.
           </p>
-          <div className="mx-auto flex w-full max-w-sm flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-200/90 shadow-lg backdrop-blur sm:flex-row sm:justify-center">
-            <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-300">
-              Fast track your redemption
-            </span>
-            <Link
-              href="/pointsconversion"
-              className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-amber-300"
-            >
-              Open the conversion guide
-              <svg
-                aria-hidden
-                className="h-4 w-4"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
         </header>
 
         <section className="grid gap-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl backdrop-blur sm:gap-8 sm:p-8 lg:grid-cols-3">

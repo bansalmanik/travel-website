@@ -6,27 +6,59 @@ import { getTravelResourceEntries } from "@/lib/contentData";
 const travelWithPointsHighlights = [
   {
     title: "Credit Cards",
+<<<<<<< HEAD
     description: "Build a simple earning plan that fits your everyday spend without spreadsheets.",
+=======
+    description: "Choose the right welcome bonus and start earning flexible points fast.",
+>>>>>>> c841214afd981b1c37733af16c1572ac02423a2b
     href: "/travel-with-points/credit-cards",
     accent: "from-amber-200/60 via-amber-100/80 to-white/70 text-amber-900",
   },
   {
     title: "Hotel Programs",
+<<<<<<< HEAD
     description: "Decode elite tiers, perks, and free night tricks in minutes, not hours of research.",
+=======
+    description:
+      "Unlock free nights, late checkout, and perks that make every stay feel special.",
+>>>>>>> c841214afd981b1c37733af16c1572ac02423a2b
     href: "/travel-with-points/hotel-programs",
     accent: "from-sky-200/70 via-sky-100/80 to-white/70 text-sky-900",
   },
   {
     title: "Flight Programs",
+<<<<<<< HEAD
     description: "Map flexible points to airline partners so you can spot sweet spots fast.",
+=======
+    description: "Earn miles on every trip and redeem them for the cabins and routes you actually want.",
+>>>>>>> c841214afd981b1c37733af16c1572ac02423a2b
     href: "/travel-with-points/flight-programs",
     accent: "from-emerald-200/70 via-emerald-100/80 to-white/70 text-emerald-900",
   },
   {
     title: "Points Conversion",
+<<<<<<< HEAD
     description: "Quickly compare transfer ratios and see where your flexible points stretch the farthest.",
+=======
+    description: "Know which partners to transfer to, current ratios, and the best use-cases at a glance.",
+>>>>>>> c841214afd981b1c37733af16c1572ac02423a2b
     href: "/pointsconversion",
     accent: "from-purple-200/70 via-purple-100/80 to-white/70 text-purple-900",
+  },
+];
+
+const quickWins = [
+  {
+    title: "Pick your starter card",
+    detail: "Match bonuses to your airport and favorite airlines so every swipe builds toward a trip.",
+  },
+  {
+    title: "Redeem with confidence",
+    detail: "Follow step-by-step booking flows to move points and lock in award space without guesswork.",
+  },
+  {
+    title: "Stretch every stay",
+    detail: "Stack elite nights, free-night certs, and promo calendars to cover long weekends for less.",
   },
 ];
 
@@ -76,6 +108,7 @@ export default async function Home() {
       <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
         <section
           aria-labelledby="travel-with-points-heading"
+<<<<<<< HEAD
           className="overflow-hidden rounded-3xl bg-slate-950/95 px-6 py-10 text-white shadow-xl sm:px-8 sm:py-12"
         >
           <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-start">
@@ -153,6 +186,83 @@ export default async function Home() {
                         <svg
                           aria-hidden
                           className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+=======
+          className="overflow-hidden rounded-3xl bg-slate-900/95 px-5 py-10 text-white shadow-xl sm:px-8 sm:py-12"
+        >
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+            <div className="space-y-6">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300 sm:text-sm">Travel with points</p>
+                <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-amber-100">
+                  Built for small screens
+                </span>
+              </div>
+              <div className="space-y-2">
+                <h2 id="travel-with-points-heading" className="text-2xl font-semibold sm:text-4xl">
+                  Turn loyalty points into long weekends—without the clutter
+                </h2>
+                <p className="text-pretty text-sm leading-6 text-slate-100/80 sm:text-base">
+                  Scan the essentials at a glance, then tap into focused guides. Everything is grouped so you can decide fast
+                  and get back to planning the fun parts of your trip.
+                </p>
+              </div>
+              <div className="grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:grid-cols-2">
+                {quickWins.map((item) => (
+                  <div key={item.title} className="flex gap-3 rounded-xl bg-white/5 p-3">
+                    <span className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-full bg-amber-400/90 text-slate-900 shadow-sm">
+                      <svg
+                        aria-hidden
+                        className="h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="m5 12 4 4 10-10" />
+                      </svg>
+                    </span>
+                    <div className="space-y-1">
+                      <p className="text-sm font-semibold text-white">{item.title}</p>
+                      <p className="text-sm leading-5 text-slate-100/80">{item.detail}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-wrap items-center gap-3">
+                <Link
+                  className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  href="/travel-with-points"
+                >
+                  Explore the hub
+                </Link>
+                <p className="text-sm text-amber-100/90">Three-minute skim, then dive deeper by topic.</p>
+              </div>
+            </div>
+
+            <div className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-amber-200">Quick guide cards</p>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {travelWithPointsHighlights.map((item) => (
+                  <li key={item.title} className="h-full">
+                    <Link
+                      href={item.href}
+                      aria-label={`Learn more about ${item.title}`}
+                      className="group flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/40 p-4 transition hover:-translate-y-1 hover:border-amber-200/60 hover:bg-slate-900/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                    >
+                      <span
+                        className={`inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
+                      >
+                        {item.title}
+                      </span>
+                      <p className="text-sm leading-6 text-slate-100/90">{item.description}</p>
+                      <span className="inline-flex items-center text-sm font-semibold text-amber-200">
+                        Open guide
+                        <svg
+                          aria-hidden
+                          className="ml-2 h-4 w-4 transition group-hover:translate-x-1"
+>>>>>>> c841214afd981b1c37733af16c1572ac02423a2b
                           fill="none"
                           stroke="currentColor"
                           strokeLinecap="round"
@@ -168,6 +278,7 @@ export default async function Home() {
                   </li>
                 ))}
               </ul>
+<<<<<<< HEAD
               <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/10 p-4 text-sm text-slate-100/85 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <p className="font-semibold text-white">Only the essentials</p>
@@ -184,6 +295,8 @@ export default async function Home() {
                   </svg>
                 </Link>
               </div>
+=======
+>>>>>>> c841214afd981b1c37733af16c1572ac02423a2b
             </div>
           </div>
         </section>
