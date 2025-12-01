@@ -6,28 +6,45 @@ import { getTravelResourceEntries } from "@/lib/contentData";
 const travelWithPointsHighlights = [
   {
     title: "Credit Cards",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
+    summary: "Starter cards, welcome offers, and no-fee wins.",
     href: "/travel-with-points/credit-cards",
     accent: "bg-amber-100 text-amber-900",
   },
   {
     title: "Hotel Programs",
-    description:
-      "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
+    summary: "Elite perks, free nights, and best-value redemptions.",
     href: "/travel-with-points/hotel-programs",
     accent: "bg-sky-100 text-sky-900",
   },
   {
     title: "Flight Programs",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
+    summary: "Partner charts, sweet spots, and upgrade tricks.",
     href: "/travel-with-points/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
   },
   {
     title: "Points Conversion",
-    description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
+    summary: "Transfer ratios and best matches in seconds.",
     href: "/pointsconversion",
     accent: "bg-purple-100 text-purple-900",
+  },
+];
+
+const quickPathways = [
+  {
+    label: "Pick a path",
+    detail: "Begin with the guide that matches your next trip.",
+    icon: "🧭",
+  },
+  {
+    label: "Collect fast",
+    detail: "Stack bonuses, portals, and everyday spending.",
+    icon: "⚡",
+  },
+  {
+    label: "Redeem smart",
+    detail: "Use point values and transfer charts to avoid waste.",
+    icon: "🎯",
   },
 ];
 
@@ -77,60 +94,93 @@ export default async function Home() {
       <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
         <section
           aria-labelledby="travel-with-points-heading"
-          className="overflow-hidden rounded-3xl bg-slate-900/95 px-6 py-10 text-white shadow-xl sm:px-8 sm:py-12"
+          className="overflow-hidden rounded-3xl bg-white/90 px-6 py-10 shadow-xl ring-1 ring-slate-200 sm:px-8 sm:py-12"
         >
-          <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
-            <div className="space-y-5 text-center md:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.35em]">
-                New Resource Hub
+          <div className="grid gap-10 md:grid-cols-[1.15fr_1fr] md:items-center">
+            <div className="space-y-6 text-center md:text-left">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-500 sm:text-sm sm:tracking-[0.35em]">
+                Travel on Points
               </p>
-              <h2 id="travel-with-points-heading" className="text-2xl font-semibold sm:text-4xl">
-                Travel with points and turn loyalty into long weekends
-              </h2>
-              <p className="text-pretty text-sm leading-6 text-slate-100/80 sm:text-base">
-                Earn smarter. Redeem better. Fly further. Miles and points that take you places
-              </p>
-              <Link
-                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
-                href="/travel-with-points"
-              >
-                Explore the hub
-              </Link>
+              <div className="space-y-3">
+                <h2 id="travel-with-points-heading" className="text-2xl font-semibold text-slate-900 sm:text-4xl">
+                  Your fastest path to stress-free award travel
+                </h2>
+                <p className="text-pretty text-sm leading-6 text-slate-700 sm:text-base">
+                  Three quick moves: choose your lane, collect efficiently, and redeem with clarity. Everything lives in one
+                  calm hub so you can plan without endless scrolling.
+                </p>
+              </div>
+              <div className="grid gap-3 rounded-2xl bg-gradient-to-r from-amber-50 to-sky-50 p-4 sm:grid-cols-3 sm:p-5">
+                {quickPathways.map((item) => (
+                  <div key={item.label} className="flex items-start gap-3 text-left">
+                    <span className="grid h-10 w-10 place-items-center rounded-full bg-white text-lg shadow-sm sm:h-11 sm:w-11">
+                      {item.icon}
+                    </span>
+                    <div className="space-y-1">
+                      <p className="text-sm font-semibold text-slate-900">{item.label}</p>
+                      <p className="text-xs text-slate-600 sm:text-sm">{item.detail}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4">
+                <Link
+                  className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-md shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
+                  href="/travel-with-points"
+                >
+                  Open the hub
+                </Link>
+                <p className="text-xs text-slate-500 sm:text-sm">5-minute skim, no overwhelm.</p>
+              </div>
             </div>
-            <ul className="mt-4 grid gap-4 sm:mt-0 sm:grid-cols-2">
-              {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="h-full">
-                  <Link
-                    href={item.href}
-                    aria-label={`Learn more about ${item.title}`}
-                    className="group flex h-full flex-col justify-between gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
-                  >
-                    <span
-                      className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
+            <div className="space-y-4 rounded-3xl bg-slate-900 px-5 py-6 text-white shadow-lg sm:px-6 sm:py-7">
+              <div className="flex items-center justify-between gap-2 border-b border-white/10 pb-4">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.18em] text-amber-300">Start here</p>
+                  <p className="text-lg font-semibold">Pick a ready-made route</p>
+                </div>
+                <Link
+                  href="/travel-with-points"
+                  className="inline-flex items-center rounded-full bg-white/10 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-amber-200 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                >
+                  See all
+                </Link>
+              </div>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {travelWithPointsHighlights.map((item) => (
+                  <li key={item.title} className="h-full">
+                    <Link
+                      href={item.href}
+                      aria-label={`Learn more about ${item.title}`}
+                      className="group flex h-full flex-col justify-between gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                     >
-                      {item.title}
-                    </span>
-                    <p className="text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
-                    <span className="inline-flex items-center text-sm font-semibold text-amber-300">
-                      Read more
-                      <svg
-                        aria-hidden
-                        className="ml-2 h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
+                      <span
+                        className={`inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
                       >
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                      </svg>
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                        {item.title}
+                      </span>
+                      <p className="text-sm leading-6 text-slate-100/90">{item.summary}</p>
+                      <span className="inline-flex items-center text-sm font-semibold text-amber-300">
+                        Open guide
+                        <svg
+                          aria-hidden
+                          className="ml-2 h-4 w-4"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
 
