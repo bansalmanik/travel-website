@@ -225,7 +225,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             </div>
           ) : (
             <div className="divide-y divide-white/5">
-              <div className="grid grid-cols-2 gap-3 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-300/70 sm:grid-cols-[1.2fr_0.8fr_1fr] sm:px-6">
+              <div className="grid grid-cols-2 gap-3 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-300/70 sm:grid-cols-[1.05fr_0.95fr_1fr] sm:gap-2 sm:px-6">
                 <span>Partner</span>
                 <span>Transfer ratio</span>
                 <span className="hidden sm:block">Notes</span>
@@ -234,7 +234,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               {partnerRows.map((partner) => (
                 <div
                   key={`${partner.to}-${partner.rate}`}
-                  className="grid grid-cols-2 gap-3 px-4 py-3 text-sm text-slate-100 sm:grid-cols-[1.2fr_0.8fr_1fr] sm:px-6"
+                  className="grid grid-cols-2 gap-3 px-4 py-3 text-sm text-slate-100 sm:grid-cols-[1.05fr_0.95fr_1fr] sm:gap-2 sm:px-6"
                 >
                   <div className="space-y-1">
                     <p className="font-semibold text-white">{partner.to}</p>
