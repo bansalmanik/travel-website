@@ -39,6 +39,7 @@ export default async function Home() {
     url: `/travel-resources/${entry.slug}`,
   }));
   const heroImageSrc = "/images/content/cover_1.jpg";
+  const storiesFeatureImageSrc = heroImageSrc;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-sky-50 text-slate-900">
@@ -79,37 +80,56 @@ export default async function Home() {
           aria-labelledby="travel-with-points-heading"
           className="rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-8 sm:py-12"
         >
-          <div className="space-y-8">
-            <div className="space-y-3 text-center md:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-600">Travel on points</p>
-              <h2 id="travel-with-points-heading" className="text-2xl font-semibold text-slate-900 sm:text-4xl">
-                Turn loyalty into weekends away
-              </h2>
-              <p className="text-pretty text-sm leading-6 text-slate-600 sm:text-base">
-                Practical guides to earning, transferring, and redeeming points without the noise.
-              </p>
-              <Link
-                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
-                href="/travel-with-points"
-              >
-                Explore the hub
-              </Link>
+          <div className="grid gap-8 lg:grid-cols-[1.15fr,0.85fr] lg:items-center">
+            <div className="space-y-8">
+              <div className="space-y-3 text-center md:text-left">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-600">Travel on points</p>
+                <h2 id="travel-with-points-heading" className="text-2xl font-semibold text-slate-900 sm:text-4xl">
+                  Turn loyalty into weekends away
+                </h2>
+                <p className="text-pretty text-sm leading-6 text-slate-600 sm:text-base">
+                  Practical guides to earning, transferring, and redeeming points without the noise.
+                </p>
+                <Link
+                  className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
+                  href="/travel-with-points"
+                >
+                  Explore the hub
+                </Link>
+              </div>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {travelWithPointsHighlights.map((item) => (
+                  <li key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-5">
+                    <Link
+                      href={item.href}
+                      aria-label={`Learn more about ${item.title}`}
+                      className="flex flex-col gap-2 text-left transition hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                    >
+                      <span className="text-sm font-semibold text-slate-900">{item.title}</span>
+                      <p className="text-pretty text-sm leading-6 text-slate-600">{item.description}</p>
+                      <span className="text-sm font-semibold text-amber-700">Read more</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="grid gap-3 sm:grid-cols-2">
-              {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-5">
-                  <Link
-                    href={item.href}
-                    aria-label={`Learn more about ${item.title}`}
-                    className="flex flex-col gap-2 text-left transition hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
-                  >
-                    <span className="text-sm font-semibold text-slate-900">{item.title}</span>
-                    <p className="text-pretty text-sm leading-6 text-slate-600">{item.description}</p>
-                    <span className="text-sm font-semibold text-amber-700">Read more</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+
+            <div className="relative -mx-2 overflow-hidden rounded-3xl border border-slate-100 bg-slate-900/90 shadow-lg sm:mx-0">
+              <div className="relative aspect-[5/6]">
+                <Image
+                  src={storiesFeatureImageSrc}
+                  alt="Travel journal cover from the Dive deeper into stories feature"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 space-y-1 rounded-2xl bg-white/10 px-4 py-3 text-white backdrop-blur">
+                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-amber-200">Dive deeper into stories</p>
+                  <p className="text-sm text-amber-50/90">The same visual inspiration guides our travel-with-points playbook.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
