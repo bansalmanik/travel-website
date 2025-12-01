@@ -77,56 +77,35 @@ export default async function Home() {
       <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
         <section
           aria-labelledby="travel-with-points-heading"
-          className="overflow-hidden rounded-3xl bg-slate-900/95 px-6 py-10 text-white shadow-xl sm:px-8 sm:py-12"
+          className="rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-8 sm:py-12"
         >
-          <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
-            <div className="space-y-5 text-center md:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.35em]">
-                New Resource Hub
-              </p>
-              <h2 id="travel-with-points-heading" className="text-2xl font-semibold sm:text-4xl">
-                Travel with points and turn loyalty into long weekends
+          <div className="space-y-8">
+            <div className="space-y-3 text-center md:text-left">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-600">Travel on points</p>
+              <h2 id="travel-with-points-heading" className="text-2xl font-semibold text-slate-900 sm:text-4xl">
+                Turn loyalty into weekends away
               </h2>
-              <p className="text-pretty text-sm leading-6 text-slate-100/80 sm:text-base">
-                Earn smarter. Redeem better. Fly further. Miles and points that take you places
+              <p className="text-pretty text-sm leading-6 text-slate-600 sm:text-base">
+                Practical guides to earning, transferring, and redeeming points without the noise.
               </p>
               <Link
-                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
+                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
                 href="/travel-with-points"
               >
                 Explore the hub
               </Link>
             </div>
-            <ul className="mt-4 grid gap-4 sm:mt-0 sm:grid-cols-2">
+            <ul className="grid gap-3 sm:grid-cols-2">
               {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="h-full">
+                <li key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-5">
                   <Link
                     href={item.href}
                     aria-label={`Learn more about ${item.title}`}
-                    className="group flex h-full flex-col justify-between gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                    className="flex flex-col gap-2 text-left transition hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   >
-                    <span
-                      className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] shadow-sm ${item.accent}`}
-                    >
-                      {item.title}
-                    </span>
-                    <p className="text-pretty text-sm leading-6 text-slate-100/90">{item.description}</p>
-                    <span className="inline-flex items-center text-sm font-semibold text-amber-300">
-                      Read more
-                      <svg
-                        aria-hidden
-                        className="ml-2 h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                      </svg>
-                    </span>
+                    <span className="text-sm font-semibold text-slate-900">{item.title}</span>
+                    <p className="text-pretty text-sm leading-6 text-slate-600">{item.description}</p>
+                    <span className="text-sm font-semibold text-amber-700">Read more</span>
                   </Link>
                 </li>
               ))}
