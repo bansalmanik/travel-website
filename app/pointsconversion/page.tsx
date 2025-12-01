@@ -6,17 +6,17 @@ import { getPointsConversions } from "@/lib/contentData";
 export const metadata: Metadata = {
   title: "Points Conversion Guide | Transfer Rates",
   description:
-    "Search flexible points transfer partners, compare conversion ratios, and send your rewards with confidence.",
+    "Pick a rewards program and originating card to see every partner and transfer ratio in one clean table.",
   openGraph: {
     title: "Points Conversion Guide",
     description:
-      "Search transfer partners, compare conversion ratios, and protect every point you move.",
+      "Filter by program and source card to browse transfer partners, ratios, and guidance in seconds.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Points Conversion Guide",
     description:
-      "Browse loyalty partners, compare conversion ratios, and transfer points with confidence.",
+      "See transfer partners and ratios faster—choose your program and card to get a complete table instantly.",
   },
 };
 
