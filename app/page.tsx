@@ -79,37 +79,49 @@ export default async function Home() {
           aria-labelledby="travel-with-points-heading"
           className="rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-8 sm:py-12"
         >
-          <div className="space-y-8">
-            <div className="space-y-3 text-center md:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-600">Travel on points</p>
-              <h2 id="travel-with-points-heading" className="text-2xl font-semibold text-slate-900 sm:text-4xl">
-                Turn loyalty into weekends away
-              </h2>
-              <p className="text-pretty text-sm leading-6 text-slate-600 sm:text-base">
-                Practical guides to earning, transferring, and redeeming points without the noise.
-              </p>
-              <Link
-                className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
-                href="/travel-with-points"
-              >
-                Explore the hub
-              </Link>
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+            <div className="space-y-8">
+              <div className="space-y-3 text-center md:text-left">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-600">Travel on points</p>
+                <h2 id="travel-with-points-heading" className="text-2xl font-semibold text-slate-900 sm:text-4xl">
+                  Turn loyalty into weekends away
+                </h2>
+                <p className="text-pretty text-sm leading-6 text-slate-600 sm:text-base">
+                  Practical guides to earning, transferring, and redeeming points without the noise.
+                </p>
+                <Link
+                  className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-amber-400/40 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:w-auto"
+                  href="/travel-with-points"
+                >
+                  Explore the hub
+                </Link>
+              </div>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {travelWithPointsHighlights.map((item) => (
+                  <li key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-5">
+                    <Link
+                      href={item.href}
+                      aria-label={`Learn more about ${item.title}`}
+                      className="flex flex-col gap-2 text-left transition hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                    >
+                      <span className="text-sm font-semibold text-slate-900">{item.title}</span>
+                      <p className="text-pretty text-sm leading-6 text-slate-600">{item.description}</p>
+                      <span className="text-sm font-semibold text-amber-700">Read more</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="grid gap-3 sm:grid-cols-2">
-              {travelWithPointsHighlights.map((item) => (
-                <li key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-5">
-                  <Link
-                    href={item.href}
-                    aria-label={`Learn more about ${item.title}`}
-                    className="flex flex-col gap-2 text-left transition hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
-                  >
-                    <span className="text-sm font-semibold text-slate-900">{item.title}</span>
-                    <p className="text-pretty text-sm leading-6 text-slate-600">{item.description}</p>
-                    <span className="text-sm font-semibold text-amber-700">Read more</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+
+            <div className="relative hidden h-full min-h-[280px] overflow-hidden rounded-2xl bg-slate-100 shadow-inner sm:block">
+              <Image
+                src={heroImageSrc}
+                alt="Sunset over mountains and fjords"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 28rem, (min-width: 640px) 20rem, 100vw"
+              />
+            </div>
           </div>
         </section>
 
