@@ -77,8 +77,13 @@ export default async function Home() {
       <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
         <section
           aria-labelledby="travel-with-points-heading"
-          className="rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-8 sm:py-12"
+          className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-8 sm:py-12"
         >
+          <div
+            className="absolute inset-0 -z-10 bg-[url('/images/content/cover_1.jpg')] bg-cover bg-center"
+            aria-hidden
+          />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white via-white/90 to-white/80" aria-hidden />
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div className="space-y-8">
               <div className="space-y-3 text-center md:text-left">
@@ -111,16 +116,6 @@ export default async function Home() {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div className="relative hidden h-full min-h-[280px] overflow-hidden rounded-2xl bg-slate-100 shadow-inner sm:block">
-              <Image
-                src={heroImageSrc}
-                alt="Sunset over mountains and fjords"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 28rem, (min-width: 640px) 20rem, 100vw"
-              />
             </div>
           </div>
         </section>
