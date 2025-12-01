@@ -77,8 +77,18 @@ export default async function Home() {
       <main className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:space-y-24 sm:px-6">
         <section
           aria-labelledby="travel-with-points-heading"
-          className="rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-8 sm:py-12"
+          className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/70 px-6 py-10 shadow-sm sm:px-8 sm:py-12"
         >
+          <div className="absolute inset-0 -z-20">
+            <Image
+              src="/flight-programs/city-hop.svg"
+              alt="Airplane flying above city landmarks"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 1100px, 100vw"
+            />
+          </div>
+          <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white/90 via-white/80 to-amber-50/75" />
           <div className="space-y-8">
             <div className="space-y-3 text-center md:text-left">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-600">Travel on points</p>
