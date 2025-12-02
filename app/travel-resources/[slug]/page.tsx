@@ -94,12 +94,12 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main id="top" className="bg-white text-zinc-900 dark:bg-black dark:text-zinc-100">
+    <main id="top" className="bg-white text-zinc-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <article className="bg-white text-zinc-900 dark:bg-black dark:text-zinc-100">
+      <article className="bg-white text-zinc-900">
         <div className="relative isolate overflow-hidden">
           <div className="relative h-[24rem] w-full">
             <Image
@@ -129,10 +129,10 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
 
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16">
           {travelResource.summary ? (
-            <p className="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">{travelResource.summary}</p>
+            <p className="text-lg leading-relaxed text-zinc-700">{travelResource.summary}</p>
           ) : null}
 
-          <div className="space-y-14 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+          <div className="space-y-14 text-lg leading-relaxed text-zinc-700">
             {travelResource.sections.map((section) => {
               const mediaItems = section.images?.length
                 ? section.images
@@ -143,9 +143,9 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
               return (
                 <section key={section.heading} className="space-y-6">
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">{section.heading}</h2>
+                    <h2 className="text-2xl font-semibold text-zinc-900">{section.heading}</h2>
                   </div>
-                  <div className="space-y-4 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+                  <div className="space-y-4 text-lg leading-relaxed text-zinc-700">
                     {section.body.map((paragraph) => (
                       <p key={paragraph.slice(0, 24)}>{paragraph}</p>
                     ))}
@@ -156,7 +156,7 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
                       {mediaItems.map((image) => (
                         <figure
                           key={`${image.src}-${image.caption ?? image.alt}`}
-                          className="group overflow-hidden rounded-3xl bg-zinc-100 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-200"
+                          className="group overflow-hidden rounded-3xl bg-zinc-100 text-zinc-700"
                         >
                           <div className="relative aspect-[4/3] w-full">
                             <Image
@@ -168,7 +168,7 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
                             />
                           </div>
                           {image.caption ? (
-                            <figcaption className="px-4 py-3 text-sm text-zinc-600 dark:text-zinc-300">
+                            <figcaption className="px-4 py-3 text-sm text-zinc-600">
                               {image.caption}
                             </figcaption>
                           ) : null}
@@ -183,7 +183,7 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
 
           {travelResource.videoUrl ? (
             <section className="space-y-4">
-              <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">Watch the journey</h2>
+              <h2 className="text-2xl font-semibold text-zinc-900">Watch the journey</h2>
               <div className="aspect-video w-full overflow-hidden rounded-2xl bg-zinc-900">
                 <iframe
                   src={travelResource.videoUrl}
@@ -200,12 +200,12 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
 
           {travelResource.gallery?.length ? (
             <section className="space-y-4">
-              <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">Photo highlights</h2>
+              <h2 className="text-2xl font-semibold text-zinc-900">Photo highlights</h2>
               <GallerySlider images={travelResource.gallery} />
             </section>
           ) : null}
 
-          <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-zinc-100 p-6 text-sm text-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 sm:flex-row">
+          <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-zinc-100 p-6 text-sm text-zinc-700 sm:flex-row">
             <p>Looking for more ways to explore? Browse the full resource library.</p>
             <Link
               href="/travel-resources"
