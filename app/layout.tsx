@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SiteNav } from "./components/site-nav";
 import { ImageGuard } from "./components/image-guard";
+import Script from "next/script";
 
 const siteUrl = "https://www.milesgoround.com";
 
@@ -66,6 +67,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-B106KK769W"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-B106KK769W');
+          `}
+        </Script>
+      </head>
       <body className="antialiased bg-zinc-50 text-slate-900">
         <a className="skip-link" href="#main-content">
           Skip to main content
