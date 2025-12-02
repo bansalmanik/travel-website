@@ -15,6 +15,21 @@
         "caption": "Early morning ferries keep border queues short.",
         "enabled": true
       },
+      "gallery": [
+        {
+          "src": "/images/content/20251120_142008.JPG",
+          "alt": "Travelers boarding at Macau's ferry terminal"
+        },
+        {
+          "src": "/images/content/cotai_waterjet.jpg",
+          "alt": "Cotai Water Jet ferry departing Hong Kong"
+        },
+        {
+          "src": "/images/content/20251120_154116.jpg",
+          "alt": "Passengers waiting at a Macau city bus stop"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/AtMUy_bffUY",
       "sections": [
         {
           "heading": "Crossing from Hong Kong",
@@ -24,12 +39,20 @@
             "We booked Feery for 10:30 AM Departure from Sheung Wan but were able to board 10:00 AM ferry because we arrived early. Feery Terminal is located inside Shun Tak Centre and is well connected with the Sheung Wan MTR station",
             "Booking can be made online as well as offline. We booked on Klook and everything worked smoothly. Just show QR code of your online booking at the terminal."
           ],
-          "image": {
-            "src": "/images/content/cotai_waterjet.jpg",
-            "alt": "HZMB shuttle bus parked at the terminal",
-            "caption": "Ferry between Hong Kong and Macau runs every half hour.",
-            "enabled": true
-          },
+          "images": [
+            {
+              "src": "/images/content/cotai_waterjet.jpg",
+              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "caption": "Ferries between Hong Kong and Macau depart every 30 minutes.",
+              "enabled": true
+            },
+            {
+              "src": "/images/content/20251120_142008.JPG",
+              "alt": "Boarding corridor inside the Taipa ferry terminal",
+              "caption": "Arrive early and you can often board an earlier sailing.",
+              "enabled": true
+            }
+          ],
           "enabled": true
         },
         {
