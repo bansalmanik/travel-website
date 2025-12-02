@@ -74,9 +74,13 @@ export async function getTravelResourceEntries(): Promise<TravelResourceEntry[]>
             sections: await Promise.all(
                 entry.sections.map(async (section) => ({
                     ...section,
-                    image: await resolveOptionalImage(section.image),
+                    images: await resolveImages(
+                        section.images ??
+                            (section.image ? [section.image] : undefined)
+                    ),
                 }))
             ),
+            gallery: await resolveImages(entry.gallery),
         }))
     );
 }

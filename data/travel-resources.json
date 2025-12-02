@@ -10,7 +10,7 @@
       "displayDate": "December 1, 2025",
       "readTime": "6 minute read",
       "heroImage": {
-        "src": "/images/content/20251120_142008.JPG",
+        "src": "/images/content/20251120_142008.jpg",
         "alt": "Ferry terminal boarding area in Macau",
         "caption": "Early morning ferries keep border queues short.",
         "enabled": true
@@ -24,12 +24,20 @@
             "We booked Feery for 10:30 AM Departure from Sheung Wan but were able to board 10:00 AM ferry because we arrived early. Feery Terminal is located inside Shun Tak Centre and is well connected with the Sheung Wan MTR station",
             "Booking can be made online as well as offline. We booked on Klook and everything worked smoothly. Just show QR code of your online booking at the terminal."
           ],
-          "image": {
-            "src": "/images/content/cotai_waterjet.jpg",
-            "alt": "HZMB shuttle bus parked at the terminal",
-            "caption": "Ferry between Hong Kong and Macau runs every half hour.",
-            "enabled": true
-          },
+          "images": [
+            {
+              "src": "/images/content/cotai_waterjet.JPG",
+              "alt": "HZMB shuttle bus parked at the terminal",
+              "caption": "Ferry between Hong Kong and Macau runs every half hour.",
+              "enabled": true
+            },
+            {
+              "src": "/images/content/20251120_142008.jpg",
+              "alt": "Travelers queueing for a Macau ferry",
+              "caption": "Arriving early often gets you onto an earlier sailing without fees.",
+              "enabled": true
+            }
+          ],
           "enabled": true
         },
         {
@@ -56,12 +64,20 @@
             "You can use MT1 bus if you want to travel between Taipa Ferry terminal and Macau City Centre(Grand Lisboa or Senardo Square). For travel between Cotai Strip and Outer Harbour Ferry Terminal you can use bus 28A.",
             "We use MT1 bus to travel from Grand Lisboa to Taipa Ferry Terminal. The reason free shuttle was not an option for us was because we had to reach terminal at 10:00 AM while the free shuttle started operationg from 10:00 - 11:00 AM"
           ],
-          "image": {
-            "src": "/images/content/20251120_154116.jpg",
-            "alt": "HZMB shuttle bus parked at the terminal",
-            "caption": "Read the Route carefully to determine which side of the road you have to board the bus from.",
-            "enabled": true
-          },
+          "images": [
+            {
+              "src": "/images/content/20251120_154116.jpg",
+              "alt": "Route map on a Macau bus stop",
+              "caption": "Read the route carefully to determine which side of the road you have to board from.",
+              "enabled": true
+            },
+            {
+              "src": "/images/content/sfo-4.JPG",
+              "alt": "Passengers boarding a city bus in Macau",
+              "caption": "Contactless payments keep the queues moving quickly even during peak hours.",
+              "enabled": true
+            }
+          ],
           "enabled": true
         },
         {
@@ -72,6 +88,21 @@
           "enabled": true
         }
       ],
+      "gallery": [
+        {
+          "src": "/images/content/cotai_waterjet.JPG",
+          "alt": "Cotai Water Jet ferry at the pier"
+        },
+        {
+          "src": "/images/content/20251120_154116.jpg",
+          "alt": "Bus route information board in Macau"
+        },
+        {
+          "src": "/images/content/20231223_105939.jpg",
+          "alt": "Morning skyline view from the Macau waterfront"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/xG9JfGjeYks?si=travel-macau",
       "enabled": true
     }
   ]

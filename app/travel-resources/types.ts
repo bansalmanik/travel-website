@@ -8,6 +8,7 @@ export type SectionImage = {
 export type TravelResourceSection = {
   heading: string;
   body: string[];
+  images?: SectionImage[];
   image?: SectionImage;
   enabled?: boolean;
 };
@@ -23,6 +24,8 @@ export type TravelResourceEntry = {
   readTime: string;
   heroImage: SectionImage;
   sections: TravelResourceSection[];
+  gallery?: SectionImage[];
+  videoUrl?: string;
   enabled?: boolean;
 };
 
