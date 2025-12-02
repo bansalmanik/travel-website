@@ -71,10 +71,12 @@ export async function getTravelResourceEntries(): Promise<TravelResourceEntry[]>
         travelResources.map(async (entry) => ({
             ...entry,
             heroImage: await resolveImage(entry.heroImage),
+            gallery: await resolveImages(entry.gallery),
             sections: await Promise.all(
                 entry.sections.map(async (section) => ({
                     ...section,
                     image: await resolveOptionalImage(section.image),
+                    images: await resolveImages(section.images),
                 }))
             ),
         }))

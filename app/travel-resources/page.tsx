@@ -44,20 +44,20 @@ export default async function TravelResourcesPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 py-20 lg:py-28">
         <header className="space-y-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-600">
             Field Notes
           </p>
-          <h1 className="text-4xl font-semibold text-white sm:text-5xl">
+          <h1 className="text-4xl font-semibold text-slate-900 sm:text-5xl">
             Travel Resources Library
           </h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-200/80">
+          <p className="mx-auto max-w-2xl text-base text-slate-600">
             Every entry is a postcard from the road—honest reflections, mindful rituals, and practical tips to make slow travel
             feel sustainable.
           </p>
@@ -67,11 +67,11 @@ export default async function TravelResourcesPage() {
           {travelResources.map((entry) => (
             <article
               key={entry.slug}
-              className="group relative flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur transition hover:-translate-y-1 hover:border-amber-300/40 focus-within:-translate-y-1 focus-within:border-amber-300/40"
+              className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl focus-within:-translate-y-1 focus-within:shadow-xl"
             >
               <Link
                 href={`/travel-resources/${entry.slug}`}
-                className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-300 focus-visible:outline-offset-4"
+                className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-500 focus-visible:outline-offset-4"
                 aria-label={`Read ${entry.title}`}
               />
               <div className="relative h-60 w-full">
@@ -84,13 +84,13 @@ export default async function TravelResourcesPage() {
                 />
               </div>
               <div className="flex flex-1 flex-col gap-4 p-8">
-                <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-amber-200/80">
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-amber-600">
                   <span>{entry.displayDate}</span>
                   <span>{entry.readTime}</span>
                 </div>
-                <h2 className="text-2xl font-semibold text-white">{entry.title}</h2>
-                <p className="text-sm leading-6 text-slate-200/80">{entry.summary}</p>
-                <div className="mt-auto pt-4 flex items-center text-sm font-semibold text-amber-300">
+                <h2 className="text-2xl font-semibold text-slate-900">{entry.title}</h2>
+                <p className="text-sm leading-6 text-slate-600">{entry.summary}</p>
+                <div className="mt-auto pt-4 flex items-center text-sm font-semibold text-amber-600">
                   <span>View the resource</span>
                   <svg
                     aria-hidden
