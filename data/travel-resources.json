@@ -10,18 +10,18 @@
       "displayDate": "December 1, 2025",
       "readTime": "6 minute read",
       "heroImage": {
-        "src": "/images/content/20251120_142008.JPG",
+        "src": "/images/content/20251120_142008.jpg",
         "alt": "Ferry terminal boarding area in Macau",
         "caption": "Early morning ferries keep border queues short.",
         "enabled": true
       },
       "gallery": [
         {
-          "src": "/images/content/20251120_142008.JPG",
+          "src": "/images/content/20251121_084039.jpg",
           "alt": "Travelers boarding at Macau's ferry terminal"
         },
         {
-          "src": "/images/content/cotai_waterjet.jpg",
+          "src": "/images/content/20251121_082951.JPG",
           "alt": "Cotai Water Jet ferry departing Hong Kong"
         },
         {
@@ -29,7 +29,6 @@
           "alt": "Passengers waiting at a Macau city bus stop"
         }
       ],
-      "videoUrl": "https://www.youtube.com/embed/AtMUy_bffUY",
       "sections": [
         {
           "heading": "Crossing from Hong Kong",
@@ -45,12 +44,6 @@
               "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
               "caption": "Ferries between Hong Kong and Macau depart every 30 minutes.",
               "enabled": true
-            },
-            {
-              "src": "/images/content/20251120_142008.JPG",
-              "alt": "Boarding corridor inside the Taipa ferry terminal",
-              "caption": "Arrive early and you can often board an earlier sailing.",
-              "enabled": true
             }
           ],
           "enabled": true
@@ -61,6 +54,13 @@
             "Macau has two Ferry terminals, Outer Harbour Ferry Terminal and Taipa Ferry Terminal. Almost all major Macau hotels operate free shuttle buses from ferry terminals and even if you are not a guest you can use them. Walk outside the terminal arrival hall and look for hotel shuttle signage: Wynn, Venetian, Galaxy, MGM, Sands, etc. Board the shuttle for the hotel closest to your destination.",
             "Pro Tip - Most Hotels in Cotai Strip run free shuttle only to Taipa Ferry terminal while Hotels in Macau City Centre run shuttles from Outer Harbour Ferry Terminal. If you want to travel from Taipa Ferry terminal to Macau City centre first take Lisboa Palace shuttle bus which will drop you at Lisboa Palace. From Lisboa Palace take free shuttle to Grand Lisboa which is in Macau City Centre. And Don't worry shuttle is free even if you are not staying at the respective hotel. Staff at hotel will guide you and almost everyone uses them.'"
           ],
+          "images": [
+            {
+              "src": "/images/content/20251120_172713.jpg",
+              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "enabled": true
+            }
+          ],
           "enabled": true
         },
         {
@@ -68,6 +68,13 @@
           "body": [
             "Macau’s public bus network is extensive, affordable, and one of the best ways to travel if you're comfortable navigating a local system. Buses connect the major zones — Macau Peninsula, Taipa, Cotai Strip, and Coloane — with frequent services throughout the day. The fare is a simple flat rate of around 6 MOP per ride, regardless of distance. Routes run from early morning until late night, with most tourist routes operating every 5-10 minutes.",
             "You can pay for buses in Hong Kong Dollar with 1 Hong Kong Dollar = 1 Macanese Pataca. Board the bus from front gate, drop your fare in the fare drop box and exit from back gate of bus when you reach your destination. Remember that you will not get any loose change back when you pay in cash. If your fare is 6 MOP/HKD and you only have 10 HKD bill, you will not get 4 HKD back"
+          ],
+          "images": [
+            {
+              "src": "/images/content/20251121_084035.jpg",
+              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "enabled": true
+            }
           ],
           "enabled": true
         },
