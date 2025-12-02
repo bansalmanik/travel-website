@@ -21,7 +21,7 @@
           "alt": "Travelers boarding at Macau's ferry terminal"
         },
         {
-          "src": "/images/content/20251121_082951.JPG",
+          "src": "/images/content/20251121_082951.jpg",
           "alt": "Cotai Water Jet ferry departing Hong Kong"
         },
         {
@@ -40,7 +40,7 @@
           ],
           "images": [
             {
-              "src": "/images/content/cotai_waterjet.jpg",
+              "src": "/images/content/cotai_waterjet.JPG",
               "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
               "caption": "Ferries between Hong Kong and Macau depart every 30 minutes.",
               "enabled": true
