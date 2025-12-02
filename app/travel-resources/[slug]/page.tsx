@@ -129,10 +129,10 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
 
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16">
           {travelResource.summary ? (
-            <p className="text-lg leading-relaxed text-zinc-700 dark:text-zinc-200">{travelResource.summary}</p>
+            <p className="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">{travelResource.summary}</p>
           ) : null}
 
-          <div className="space-y-12 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+          <div className="space-y-14 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
             {travelResource.sections.map((section) => {
               const mediaItems = section.images?.length
                 ? section.images
@@ -145,7 +145,7 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
                   <div className="space-y-2">
                     <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">{section.heading}</h2>
                   </div>
-                  <div className="space-y-4 text-base leading-7 text-zinc-700 dark:text-zinc-300">
+                  <div className="space-y-4 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
                     {section.body.map((paragraph) => (
                       <p key={paragraph.slice(0, 24)}>{paragraph}</p>
                     ))}
@@ -156,19 +156,21 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
                       {mediaItems.map((image) => (
                         <figure
                           key={`${image.src}-${image.caption ?? image.alt}`}
-                          className="overflow-hidden rounded-2xl bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                          className="group overflow-hidden rounded-3xl bg-zinc-100 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-200"
                         >
                           <div className="relative aspect-[4/3] w-full">
                             <Image
                               src={image.src}
                               alt={image.alt}
                               fill
-                              className="object-cover"
+                              className="object-cover transition duration-700 group-hover:scale-105"
                               sizes="(min-width: 1024px) 50vw, (min-width: 640px) 50vw, 100vw"
                             />
                           </div>
                           {image.caption ? (
-                            <figcaption className="px-4 py-3 text-sm">{image.caption}</figcaption>
+                            <figcaption className="px-4 py-3 text-sm text-zinc-600 dark:text-zinc-300">
+                              {image.caption}
+                            </figcaption>
                           ) : null}
                         </figure>
                       ))}
