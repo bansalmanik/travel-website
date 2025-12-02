@@ -141,10 +141,7 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
                   : [];
 
               return (
-                <section
-                  key={section.heading}
-                  className="space-y-6 rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
-                >
+                <section key={section.heading} className="space-y-6">
                   <div className="space-y-2">
                     <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">{section.heading}</h2>
                   </div>
