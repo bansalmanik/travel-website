@@ -10,18 +10,18 @@
       "displayDate": "December 1, 2025",
       "readTime": "6 minute read",
       "heroImage": {
-        "src": "/images/content/20251120_142008.JPG",
+        "src": "/images/content/20251120_142008.jpg",
         "alt": "Ferry terminal boarding area in Macau",
         "caption": "Early morning ferries keep border queues short.",
         "enabled": true
       },
       "gallery": [
         {
-          "src": "/images/content/20251121_084039.JPG",
+          "src": "/images/content/20251121_084039.jpg",
           "alt": "Travelers boarding at Macau's ferry terminal"
         },
         {
-          "src": "/images/content/20251121_082951.jpg",
+          "src": "/images/content/20251121_082951.JPG",
           "alt": "Cotai Water Jet ferry departing Hong Kong"
         },
         {
@@ -29,7 +29,6 @@
           "alt": "Passengers waiting at a Macau city bus stop"
         }
       ],
-      "videoUrl": "https://www.youtube.com/embed/AtMUy_bffUY",
       "sections": [
         {
           "heading": "Crossing from Hong Kong",
@@ -57,7 +56,7 @@
           ],
           "images": [
             {
-              "src": "/images/content/20251120_172713.JPG",
+              "src": "/images/content/20251120_172713.jpg",
               "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
               "enabled": true
             }
@@ -72,7 +71,7 @@
           ],
           "images": [
             {
-              "src": "/images/content/20251121_084035.JPG",
+              "src": "/images/content/20251121_084035.jpg",
               "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
               "enabled": true
             }
