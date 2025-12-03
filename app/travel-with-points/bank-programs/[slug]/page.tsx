@@ -94,56 +94,56 @@ export default async function BankProgramDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <article className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-20 lg:py-28">
-        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex items-center gap-2">
             <li>
-              <Link href="/travel-with-points" className="hover:text-rose-200">
+              <Link href="/travel-with-points" className="hover:text-rose-800">
                 Travel with Points
               </Link>
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href="/travel-with-points/bank-programs" className="hover:text-rose-200">
+              <Link href="/travel-with-points/bank-programs" className="hover:text-rose-800">
                 Bank programs
               </Link>
             </li>
             <li aria-hidden>/</li>
-            <li className="text-rose-200">{program.name}</li>
+            <li className="text-rose-800">{program.name}</li>
           </ol>
         </nav>
 
         <header className="space-y-5">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-rose-300">Bank rewards guide</p>
-          <h1 className="text-4xl font-semibold text-white">{program.name}</h1>
-          <p className="text-base text-slate-200/80">{description}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800">Bank rewards guide</p>
+          <h1 className="text-4xl font-semibold text-slate-900">{program.name}</h1>
+          <p className="text-base text-slate-700">{description}</p>
         </header>
 
-        <section className="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur sm:grid-cols-2">
+        <section className="grid gap-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:grid-cols-2">
           <div className="space-y-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-200/80">Issuer</p>
-            <p className="text-sm font-medium text-white">{program.issuer}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800/80">Issuer</p>
+            <p className="text-sm font-medium text-slate-900">{program.issuer}</p>
           </div>
           <div className="space-y-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-200/80">Program type</p>
-            <p className="text-sm font-medium text-white">{program.programType}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800/80">Program type</p>
+            <p className="text-sm font-medium text-slate-900">{program.programType}</p>
           </div>
           <div className="space-y-2 sm:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-200/80">How to join</p>
-            <p className="text-sm font-medium text-white">{program.joinCost}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800/80">How to join</p>
+            <p className="text-sm font-medium text-slate-900">{program.joinCost}</p>
           </div>
         </section>
 
         <BankProgramSections sections={program.sections} />
 
-        <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-white">Compare more bank portals</p>
-          <Link href="/travel-with-points/bank-programs" className="inline-flex items-center font-semibold text-amber-300">
+        <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold text-slate-900">Compare more bank portals</p>
+          <Link href="/travel-with-points/bank-programs" className="inline-flex items-center font-semibold text-rose-800">
             Back to bank programs hub
             <svg
               aria-hidden

@@ -66,7 +66,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
   };
 
   return (
-    <article className="bg-white text-zinc-900 dark:bg-black dark:text-zinc-100">
+    <article className="bg-white text-zinc-900">
       <div className="relative isolate overflow-hidden">
         <div className="relative h-[26rem] w-full">
           <Image
@@ -123,7 +123,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
 
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16">
         {currentPost.content?.length ? (
-          <div className="space-y-6 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+          <div className="space-y-6 text-lg leading-relaxed text-zinc-700">
             {currentPost.content.map((paragraph) => (
               <p key={paragraph.slice(0, 16)}>{paragraph}</p>
             ))}
@@ -136,17 +136,17 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
               <section key={section.id} id={section.id} className="space-y-6">
                 {section.title ? (
                   <header className="space-y-2">
-                    <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+                    <h2 className="text-2xl font-semibold text-zinc-900">
                       {section.title}
                     </h2>
                     {section.subtitle ? (
-                      <p className="text-base text-zinc-600 dark:text-zinc-300">{section.subtitle}</p>
+                      <p className="text-base text-zinc-600">{section.subtitle}</p>
                     ) : null}
                   </header>
                 ) : null}
 
                 {section.paragraphs?.length ? (
-                  <div className="space-y-4 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+                  <div className="space-y-4 text-lg leading-relaxed text-zinc-700">
                     {section.paragraphs.map((paragraph) => (
                       <p key={paragraph.slice(0, 24)}>{paragraph}</p>
                     ))}
@@ -154,7 +154,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
                 ) : null}
 
                 {section.callout ? (
-                  <blockquote className="rounded-2xl border-l-4 border-blue-400 bg-blue-50/60 p-6 text-lg italic text-blue-900 dark:border-blue-300/60 dark:bg-blue-500/10 dark:text-blue-200">
+                  <blockquote className="rounded-2xl border-l-4 border-blue-400 bg-blue-50/60 p-6 text-lg italic text-blue-900">
                     {section.callout}
                   </blockquote>
                 ) : null}
@@ -166,7 +166,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
                     {section.media.map((media) => (
                         <figure
                             key={`${media.src}-${media.caption ?? media.alt}`}
-                            className={`group overflow-hidden rounded-3xl bg-zinc-100 dark:bg-zinc-900 ${getMediaAspectClass(media.layout)} relative`}
+                            className={`group overflow-hidden rounded-3xl bg-zinc-100 ${getMediaAspectClass(media.layout)} relative`}
                         >
                             <Image
                                 src={media.src}
@@ -187,8 +187,8 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
 
         {currentPost.videoUrl ? (
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">Travel Moments</h2>
-            <div className="aspect-video w-full overflow-hidden rounded-2xl bg-zinc-900">
+            <h2 className="text-2xl font-semibold text-zinc-900">Travel Moments</h2>
+            <div className="aspect-video w-full overflow-hidden rounded-2xl bg-zinc-100">
               <iframe
                 src={currentPost.videoUrl}
                 title={`${currentPost.title} travel video`}
@@ -204,14 +204,14 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
 
         {currentPost.gallery?.length ? (
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">Photo Highlights</h2>
+            <h2 className="text-2xl font-semibold text-zinc-900">Photo Highlights</h2>
             <GallerySlider images={currentPost.gallery} />
           </section>
         ) : null}
 
-        <div className="rounded-3xl border border-blue-100 bg-blue-50/60 p-8 dark:border-blue-500/20 dark:bg-blue-500/10">
-          <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-300">Traveler Highlights</h2>
-          <ul className="mt-4 grid gap-3 text-sm text-blue-900 dark:text-blue-200 sm:grid-cols-2">
+        <div className="rounded-3xl border border-blue-100 bg-blue-50/60 p-8">
+          <h2 className="text-xl font-semibold text-blue-600">Traveler Highlights</h2>
+          <ul className="mt-4 grid gap-3 text-sm text-blue-900 sm:grid-cols-2">
             {currentPost.highlights.map((item) => (
               <li key={item} className="flex items-start gap-2">
                 <span className="mt-1 inline-flex h-2 w-2 flex-shrink-0 rounded-full bg-blue-500" />
@@ -221,7 +221,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
           </ul>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-zinc-100 p-6 text-sm text-zinc-600 dark:bg-zinc-900 dark:text-zinc-300 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-zinc-100 p-6 text-sm text-zinc-600 sm:flex-row">
           <p>Looking for more inspiration? Explore our latest destinations and guides.</p>
           <Link
             href="/stories"

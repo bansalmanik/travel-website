@@ -13,13 +13,13 @@ export default async function StoriesPage() {
   const stories = await getAllStorySummaries();
 
   return (
-    <div className="bg-gradient-to-b from-white via-slate-50 to-slate-100 py-20 text-zinc-900 dark:from-black dark:via-zinc-950 dark:to-black dark:text-zinc-100">
+    <div className="bg-gradient-to-b from-white via-slate-50 to-slate-100 py-20 text-zinc-900">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-6">
         <section className="mx-auto max-w-3xl text-center">
           <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
             Stories to Inspire Your Next Getaway
           </h1>
-          <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-lg text-zinc-600">
                         A collection of our journeys, told in moments and memories, the places we saw, the paths we followed, and the little surprises along the way.
           </p>
         </section>
@@ -30,10 +30,10 @@ export default async function StoriesPage() {
           {stories.map((post) => (
             <article
               key={post.slug}
-              className="group flex h-full flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900"
+              className="group flex h-full flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <Link href={`/stories/${post.slug}`} className="flex h-full flex-col">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-3xl bg-zinc-100 dark:bg-zinc-800">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-3xl bg-zinc-100">
                   <Image
                     src={post.coverImage.src}
                     alt={post.coverImage.alt}
@@ -43,25 +43,25 @@ export default async function StoriesPage() {
                     priority={post.slug === stories[0]?.slug}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" aria-hidden />
-                  <div className="absolute bottom-3 left-3 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-900 shadow-sm dark:bg-zinc-900/80 dark:text-zinc-100">
+                  <div className="absolute bottom-3 left-3 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-900 shadow-sm">
                     {post.city}, {post.country}
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col gap-4 p-6">
-                  <span className="inline-flex w-fit items-center gap-2 rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600 transition-colors group-hover:bg-zinc-900 group-hover:text-zinc-50 dark:bg-zinc-800 dark:text-zinc-300 dark:group-hover:bg-zinc-50 dark:group-hover:text-zinc-900">
+                  <span className="inline-flex w-fit items-center gap-2 rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600 transition-colors group-hover:bg-zinc-900 group-hover:text-zinc-50">
                     {post.category}
                   </span>
-                  <h2 className="text-2xl font-semibold leading-snug transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                  <h2 className="text-2xl font-semibold leading-snug transition-colors group-hover:text-blue-600">
                     {post.title}
                   </h2>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400">{post.excerpt}</p>
-                  <div className="mt-auto flex flex-wrap items-center justify-between gap-3 text-xs font-medium text-zinc-500 dark:text-zinc-400">
+                  <p className="text-sm text-zinc-600">{post.excerpt}</p>
+                  <div className="mt-auto flex flex-wrap items-center justify-between gap-3 text-xs font-medium text-zinc-500">
                     <div className="flex items-center gap-2">
-                      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-sm font-semibold text-blue-600 dark:bg-blue-500/20 dark:text-blue-300">
+                      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-sm font-semibold text-blue-600">
                         {post.author.charAt(0)}
                       </span>
                       <div className="flex flex-col">
-                        <span className="text-sm text-zinc-700 dark:text-zinc-200">{post.author}</span>
+                        <span className="text-sm text-zinc-700">{post.author}</span>
                         <span>{post.date}</span>
                       </div>
                     </div>
