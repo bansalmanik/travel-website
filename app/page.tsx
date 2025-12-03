@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getTravelResourceEntries } from "@/lib/contentData";
+import { getAllStorySummaries } from "./stories/data";
 
 const travelWithPointsHighlights = [
   {
@@ -33,10 +34,18 @@ const travelWithPointsHighlights = [
 
 export default async function Home() {
   const travelResourceEntries = await getTravelResourceEntries();
+  const stories = await getAllStorySummaries();
   const journalHighlights = travelResourceEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
     date: entry.displayDate,
     url: `/travel-resources/${entry.slug}`,
+  }));
+  const storyHighlights = stories.slice(0, 3).map((story) => ({
+    title: story.title,
+    excerpt: story.excerpt,
+    location: `${story.city}, ${story.country}`,
+    category: story.category,
+    url: `/stories/${story.slug}`,
   }));
   const heroImageSrc = "/images/content/cover_1.jpg";
 
@@ -154,6 +163,37 @@ export default async function Home() {
                   <span className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-600">{entry.date}</span>
                   <span className="text-pretty text-lg font-semibold text-slate-900">{entry.title}</span>
                 </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="space-y-8">
+          <div className="flex flex-col gap-5 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
+            <div className="space-y-2">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 sm:text-sm sm:tracking-[0.3em]">
+                Latest Stories
+              </p>
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-4xl">Travel stories to inspire your next trip</h2>
+            </div>
+            <p className="mx-auto max-w-2xl text-pretty text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
+              Field notes, hidden gems, and heartfelt moments from travelers on the road.
+            </p>
+          </div>
+
+          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {storyHighlights.map((story) => (
+              <li key={story.title}>
+                <Link
+                  href={story.url}
+                  aria-label={`Read story ${story.title}`}
+                  className="flex h-full flex-col gap-3 rounded-3xl border border-slate-200 bg-white/80 p-5 text-left shadow-sm transition hover:-translate-y-1 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:p-6"
+                >
+                  <span className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-700">{story.category}</span>
+                  <h3 className="text-pretty text-lg font-semibold text-slate-900">{story.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-700">{story.excerpt}</p>
+                  <span className="text-sm font-semibold text-amber-700">{story.location}</span>
+                </Link>
               </li>
             ))}
           </ul>
