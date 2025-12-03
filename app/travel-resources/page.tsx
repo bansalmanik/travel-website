@@ -49,32 +49,28 @@ export default async function TravelResourcesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 py-20 lg:py-28">
-        <header className="space-y-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-600">
-            Field Notes
-          </p>
-          <h1 className="text-4xl font-semibold text-slate-900 sm:text-5xl">
-            Travel Resources Library
-          </h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-600">
+      <div className="mx-auto flex max-w-5xl flex-col gap-14 px-5 py-16 sm:gap-16 sm:px-6 lg:py-24">
+        <header className="space-y-5 text-left sm:text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-600">Field Notes</p>
+          <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">Travel Resources Library</h1>
+          <p className="mx-auto max-w-2xl text-base text-slate-700 sm:text-lg">
             Every entry is a postcard from the road—honest reflections, mindful rituals, and practical tips to make slow travel
             feel sustainable.
           </p>
         </header>
 
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2">
           {travelResources.map((entry) => (
             <article
               key={entry.slug}
-              className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl focus-within:-translate-y-1 focus-within:shadow-xl"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg focus-within:-translate-y-0.5 focus-within:shadow-lg"
             >
               <Link
                 href={`/travel-resources/${entry.slug}`}
                 className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-500 focus-visible:outline-offset-4"
                 aria-label={`Read ${entry.title}`}
               />
-              <div className="relative h-60 w-full">
+              <div className="relative h-56 w-full">
                 <Image
                   src={entry.heroImage.src}
                   alt={entry.heroImage.alt}
@@ -83,14 +79,14 @@ export default async function TravelResourcesPage() {
                   className="object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="flex flex-1 flex-col gap-4 p-8">
-                <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-amber-600">
+              <div className="flex flex-1 flex-col gap-4 p-6 sm:p-7">
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">
                   <span>{entry.displayDate}</span>
                   <span>{entry.readTime}</span>
                 </div>
-                <h2 className="text-2xl font-semibold text-slate-900">{entry.title}</h2>
-                <p className="text-sm leading-6 text-slate-600">{entry.summary}</p>
-                <div className="mt-auto pt-4 flex items-center text-sm font-semibold text-amber-600">
+                <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">{entry.title}</h2>
+                <p className="text-sm leading-6 text-slate-700 sm:text-base">{entry.summary}</p>
+                <div className="mt-auto inline-flex items-center text-sm font-semibold text-amber-700">
                   <span>View the resource</span>
                   <svg
                     aria-hidden
