@@ -57,15 +57,27 @@ export default async function Home() {
         <div className="mx-auto flex max-w-4xl flex-col gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-100/90 sm:text-base">Travel differently</p>
           <h1 className="text-pretty text-center text-3xl font-bold leading-tight sm:text-left sm:text-5xl sm:leading-tight">
-            Miles Go Round is your compass for soulful journeys and slow travel adventures.
+            Travel with points and miles without losing the wonder of the journey.
           </h1>
           <p className="text-pretty text-center text-base text-amber-50/90 sm:text-left sm:text-lg">
-            Explore immersive guides, heartfelt field notes, and practical tips for transforming every mile into a memorable
-            story. From sunrise hikes to late-night street food, discover the moments that make travel feel alive.
+            Earn smarter, redeem better, and savor every stop along the way. From flexible points strategies to curated
+            itineraries, Miles Go Round shows you how to turn loyalty into unforgettable moments.
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4">
             <Link
               className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-md shadow-amber-300/40 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
+              href="/travel-with-points"
+            >
+              Travel on Points
+            </Link>
+            <Link
+              className="inline-flex w-full items-center justify-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-md shadow-slate-900/20 ring-1 ring-inset ring-white/30 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
+              href="/travel-resources"
+            >
+              Travel Resources
+            </Link>
+            <Link
+              className="inline-flex w-full items-center justify-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-md shadow-slate-900/20 ring-1 ring-inset ring-white/30 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
               href="/stories"
             >
               Dive into Stories
