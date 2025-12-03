@@ -23,19 +23,19 @@ export default async function HotelProgramsPage() {
     await getHotelProgramContent();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-12 px-4 py-16 sm:gap-16 sm:px-6 sm:py-20 lg:py-28">
         <header className="space-y-4 sm:space-y-5">
-          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.4em] text-sky-300 sm:text-xs">Travel with Points</p>
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.4em] text-sky-700 sm:text-xs">Travel with Points</p>
           <h1 className="text-3xl font-semibold sm:text-5xl">Hotel loyalty programs</h1>
-          <p className="text-sm text-slate-200/80 sm:text-base">
+          <p className="text-sm text-slate-700 sm:text-base">
             Elite status brings upgrades, late checkout, and breakfast. Learn which chains reward credit card spending versus
             nights on property so you can focus on the brands that fit your style of travel.
           </p>
         </header>
 
-        <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:p-8">
-          <h2 className="text-2xl font-semibold text-white sm:text-3xl">Featured hotel programs</h2>
+        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Featured hotel programs</h2>
           <div className="grid gap-6 sm:gap-7 md:grid-cols-2">
             {programs.map((program) => {
               const highlight = program.overview?.items?.[0];
@@ -47,30 +47,33 @@ export default async function HotelProgramsPage() {
               return (
                 <article
                   key={program.slug}
-                  className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-5 transition hover:border-sky-300/60 hover:bg-slate-900/80 sm:p-6"
+                  className="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-1 hover:border-sky-300/60 hover:bg-white hover:shadow-md sm:p-6"
                 >
                   <div className="space-y-4">
                     <div className="space-y-2">
-                      <p className="text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-sky-300 sm:text-xs">{program.footprint}</p>
-                      <h3 className="text-lg font-semibold text-white sm:text-xl">
-                        <Link href={`/travel-with-points/hotel-programs/${program.slug}`} className="hover:underline">
+                      <p className="text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-sky-700 sm:text-xs">{program.footprint}</p>
+                      <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
+                        <Link
+                          href={`/travel-with-points/hotel-programs/${program.slug}`}
+                          className="text-slate-900 underline-offset-4 transition hover:text-sky-800 hover:underline"
+                        >
                           {program.name}
                         </Link>
                       </h3>
-                      <p className="text-sm text-slate-200/80 sm:text-base">{program.summary}</p>
+                      <p className="text-sm text-slate-700 sm:text-base">{program.summary}</p>
                     </div>
                     {highlight ? (
-                      <p className="text-sm text-slate-100/70 sm:text-base">
-                        <span className="font-semibold text-white">Snapshot:</span> {highlight}
+                      <p className="text-sm text-slate-700 sm:text-base">
+                        <span className="font-semibold text-slate-900">Snapshot:</span> {highlight}
                       </p>
                     ) : null}
                     {topTier ? (
-                      <p className="text-[0.65rem] uppercase tracking-[0.25em] text-sky-200 sm:text-xs">Top tier • {topTier}</p>
+                      <p className="text-[0.65rem] uppercase tracking-[0.25em] text-sky-700 sm:text-xs">Top tier • {topTier}</p>
                     ) : null}
                   </div>
                   <Link
                     href={`/travel-with-points/hotel-programs/${program.slug}`}
-                    className="mt-6 inline-flex items-center text-sm font-semibold text-sky-300 sm:text-base"
+                    className="mt-6 inline-flex items-center text-sm font-semibold text-sky-800 sm:text-base"
                   >
                     View program guide
                     <svg
@@ -93,24 +96,24 @@ export default async function HotelProgramsPage() {
           </div>
         </section>
 
-        <section className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:p-8">
-          <h2 className="text-2xl font-semibold text-white sm:text-3xl">Paths to elite status</h2>
+        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Paths to elite status</h2>
           <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
             {elitePaths.map((path) => (
-              <article key={path.tier} className="space-y-3 rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-                <h3 className="text-base font-semibold text-white sm:text-lg">{path.tier}</h3>
-                <p className="text-sm leading-6 text-slate-100/80 sm:text-base">{path.highlight}</p>
+              <article key={path.tier} className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{path.tier}</h3>
+                <p className="text-sm leading-6 text-slate-700 sm:text-base">{path.highlight}</p>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:p-8">
-          <h2 className="text-2xl font-semibold text-white sm:text-3xl">Booking checklist</h2>
-          <ul className="space-y-4 text-sm leading-6 text-slate-100/80 sm:text-base">
+        <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Booking checklist</h2>
+          <ul className="space-y-4 text-sm leading-6 text-slate-700 sm:text-base">
             {bookingTips.map((tip) => (
               <li key={tip} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-sky-300 sm:h-2.5 sm:w-2.5" aria-hidden />
+                <span className="mt-1 h-2 w-2 rounded-full bg-sky-700 sm:h-2.5 sm:w-2.5" aria-hidden />
                 <span>{tip}</span>
               </li>
             ))}

@@ -33,7 +33,7 @@ export default function GallerySlider({ images }: GallerySliderProps) {
         {images.map((image) => (
           <figure
             key={image.src}
-            className="snap-start shrink-0 basis-[calc(50%-0.75rem)] overflow-hidden rounded-2xl bg-zinc-100 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
+            className="snap-start shrink-0 basis-[calc(50%-0.75rem)] overflow-hidden rounded-2xl bg-zinc-100 text-zinc-700"
           >
             <div className="relative aspect-[4/3] w-full md:aspect-[16/10]">
               <Image
@@ -56,7 +56,7 @@ export default function GallerySlider({ images }: GallerySliderProps) {
           <button
             type="button"
             onClick={() => handleScroll("left")}
-            className="absolute left-2 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-zinc-800 shadow-md transition hover:bg-white md:flex dark:bg-zinc-900/90 dark:text-zinc-100"
+            className="absolute left-2 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-zinc-800 shadow-md transition hover:bg-white md:flex"
             aria-label="Scroll gallery left"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
@@ -73,7 +73,7 @@ export default function GallerySlider({ images }: GallerySliderProps) {
           <button
             type="button"
             onClick={() => handleScroll("right")}
-            className="absolute right-2 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-zinc-800 shadow-md transition hover:bg-white md:flex dark:bg-zinc-900/90 dark:text-zinc-100"
+            className="absolute right-2 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-zinc-800 shadow-md transition hover:bg-white md:flex"
             aria-label="Scroll gallery right"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">

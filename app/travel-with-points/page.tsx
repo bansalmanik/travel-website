@@ -55,36 +55,34 @@ const quickTips = [
 
 export default function TravelWithPointsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-4 pb-20 pt-16 sm:px-6 lg:gap-20 lg:pb-28 lg:pt-24">
-        <header className="space-y-6 text-center">
-          <p className="text-[0.65rem] font-semibold uppercase tracking-[0.45em] text-amber-300/80 sm:text-xs">
-            Travel with Points
-          </p>
-          <h1 className="text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-4 pb-20 pt-16 sm:px-6 lg:gap-20 lg:pb-24 lg:pt-24">
+        <header className="space-y-5 text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 sm:text-sm">Travel with Points</p>
+          <h1 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
             Turn everyday spending into your next adventure
           </h1>
-          <p className="mx-auto max-w-2xl text-sm text-slate-200/80 sm:text-base">
+          <p className="mx-auto max-w-2xl text-sm text-slate-600 sm:text-base">
             Compare programs, map transfer routes, and pick the right cards to unlock outsized value on flights and stays. Everything is organized so you can move from idea to booked seat in minutes.
           </p>
         </header>
 
-        <section className="grid gap-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl backdrop-blur sm:gap-8 sm:p-8 lg:grid-cols-3">
+        <section className="grid gap-5 rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-sm backdrop-blur sm:gap-6 sm:p-8 lg:grid-cols-3">
           {sections.map((section) => (
             <Link
               key={section.title}
               href={section.href}
-              className="group flex flex-col justify-between rounded-3xl border border-white/10 bg-white/[0.08] p-6 text-left shadow-lg transition hover:-translate-y-1 hover:border-white/30 hover:bg-white/10"
+              className="group flex flex-col gap-4 rounded-3xl border border-slate-100 bg-slate-50/80 p-6 text-left shadow-sm transition hover:-translate-y-1 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <span
-                  className={`inline-flex items-center rounded-full px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] ${section.accent}`}
+                  className={`inline-flex items-center rounded-full px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.18em] ${section.accent}`}
                 >
                   {section.title}
                 </span>
-                <p className="text-sm leading-6 text-slate-100/80 sm:text-base">{section.description}</p>
+                <p className="text-sm leading-relaxed text-slate-700 sm:text-base">{section.description}</p>
               </div>
-              <span className="mt-6 inline-flex items-center text-sm font-semibold text-amber-300">
+              <span className="inline-flex items-center text-sm font-semibold text-amber-700">
                 Dive deeper
                 <svg
                   aria-hidden
@@ -104,12 +102,12 @@ export default function TravelWithPointsPage() {
           ))}
         </section>
 
-        <section className="space-y-6">
-          <div className="flex items-center justify-between gap-4">
-            <h2 className="text-lg font-semibold text-white sm:text-xl">Quick win playbook</h2>
+        <section className="space-y-5">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">Quick win playbook</h2>
             <Link
               href="/travel-with-points/credit-cards"
-              className="hidden text-sm font-semibold text-amber-300 transition hover:text-amber-200 sm:inline-flex"
+              className="hidden text-sm font-semibold text-slate-700 underline-offset-4 transition hover:text-slate-900 sm:inline-flex"
             >
               Browse starter cards →
             </Link>
@@ -118,10 +116,10 @@ export default function TravelWithPointsPage() {
             {quickTips.map((tip) => (
               <div
                 key={tip.title}
-                className="min-w-[70%] snap-center rounded-2xl border border-white/10 bg-white/[0.07] p-5 shadow-lg backdrop-blur sm:min-w-0"
+                className="min-w-[72%] snap-center rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm backdrop-blur sm:min-w-0"
               >
-                <h3 className="text-base font-semibold text-white sm:text-lg">{tip.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-100/80">{tip.detail}</p>
+                <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{tip.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">{tip.detail}</p>
               </div>
             ))}
           </div>

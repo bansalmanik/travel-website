@@ -28,10 +28,10 @@ type SectionWrapperProps = {
 
 function SectionWrapper({ title, description, children }: SectionWrapperProps) {
   return (
-    <section className="space-y-6 rounded-3xl border border-white/5 bg-slate-900/40 p-5 shadow-sm backdrop-blur sm:p-6 lg:p-8">
+    <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-white">{title}</h2>
-        {description ? <p className="text-sm text-slate-100/80">{description}</p> : null}
+        <h2 className="text-xl font-semibold text-slate-900">{title}</h2>
+        {description ? <p className="text-sm text-slate-700">{description}</p> : null}
       </div>
       {children}
     </section>
@@ -124,7 +124,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
   }
 
   return (
-    <div className="space-y-6 text-sm leading-6 text-slate-100/80">
+    <div className="space-y-6 text-sm leading-6 text-slate-700">
       {content.map((block, index) => {
         if (block.type === "paragraphs" && block.paragraphs.length) {
           return (
@@ -141,7 +141,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
             <ul key={`bullets-${index}`} className="space-y-3">
               {block.bullets.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
                   <span>{bullet}</span>
                 </li>
               ))}
@@ -152,9 +152,9 @@ function RichContentBlocks({ content }: { content: RichContent }) {
         if (block.type === "table" && hasTableContent(block)) {
           return (
             <div key={`table-${index}`} className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-white/10">
+              <table className="min-w-full divide-y divide-slate-200">
                 {block.table.caption ? (
-                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-300">
+                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-700">
                     {block.table.caption}
                   </caption>
                 ) : null}
@@ -164,18 +164,18 @@ function RichContentBlocks({ content }: { content: RichContent }) {
                       <th
                         key={column}
                         scope="col"
-                        className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-200"
+                        className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-900"
                       >
                         {column}
                       </th>
                     ))}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/10">
+                <tbody className="divide-y divide-slate-200">
                   {block.table.rows.map((row, rowIndex) => (
                     <tr key={`${row.join("-")}-${rowIndex}`} className="align-top">
                       {row.map((cell, cellIndex) => (
-                        <td key={`${cell}-${cellIndex}`} className="px-4 py-3 text-sm text-slate-100/80">
+                        <td key={`${cell}-${cellIndex}`} className="px-4 py-3 text-sm text-slate-700">
                           {cell || "—"}
                         </td>
                       ))}
@@ -199,11 +199,9 @@ function SubSection({ subsection }: { subsection: CardSubSection }) {
   }
 
   return (
-    <div className="space-y-4 rounded-2xl border border-white/5 bg-slate-900/50 p-5">
-      {subsection.title ? <h3 className="text-base font-semibold text-white">{subsection.title}</h3> : null}
-      {subsection.description ? (
-        <p className="text-sm text-slate-100/70">{subsection.description}</p>
-      ) : null}
+    <div className="space-y-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+      {subsection.title ? <h3 className="text-base font-semibold text-slate-900">{subsection.title}</h3> : null}
+      {subsection.description ? <p className="text-sm text-slate-700">{subsection.description}</p> : null}
       {subsection.content ? <RichContentBlocks content={subsection.content} /> : null}
     </div>
   );
@@ -240,43 +238,43 @@ type CardSnapshotProps = {
 function CardSnapshot({ card }: CardSnapshotProps) {
   return (
     <SectionWrapper title="Card snapshot">
-      <dl className="grid gap-5 text-sm text-slate-100/80 sm:grid-cols-2">
+      <dl className="grid gap-5 text-sm text-slate-700 sm:grid-cols-2">
         <div>
-          <dt className="font-semibold text-white">Issuer</dt>
+          <dt className="font-semibold text-slate-900">Issuer</dt>
           <dd>{card.issuer}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-white">Network</dt>
+          <dt className="font-semibold text-slate-900">Network</dt>
           <dd>{card.network}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-white">Card type</dt>
+          <dt className="font-semibold text-slate-900">Card type</dt>
           <dd>{card.type}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-white">Annual fee</dt>
+          <dt className="font-semibold text-slate-900">Annual fee</dt>
           <dd>{formatAnnualFee(card.annualFee)}</dd>
         </div>
         {card.rewardsCurrency ? (
           <div>
-            <dt className="font-semibold text-white">Rewards currency</dt>
+            <dt className="font-semibold text-slate-900">Rewards currency</dt>
             <dd>{card.rewardsCurrency}</dd>
           </div>
         ) : null}
         {card.conversion ? (
           <div className="sm:col-span-2">
-            <dt className="font-semibold text-white">Conversion</dt>
+            <dt className="font-semibold text-slate-900">Conversion</dt>
             <dd className="mt-1">{card.conversion}</dd>
           </div>
         ) : null}
         {card.keyHighlights?.length ? (
           <div className="sm:col-span-2">
-            <dt className="font-semibold text-white">Highlights</dt>
+            <dt className="font-semibold text-slate-900">Highlights</dt>
             <dd className="mt-2">
               <ul className="space-y-2">
                 {card.keyHighlights.map((highlight) => (
                   <li key={highlight} className="flex items-start gap-3">
-                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
                     <span>{highlight}</span>
                   </li>
                 ))}
@@ -291,9 +289,9 @@ function CardSnapshot({ card }: CardSnapshotProps) {
 
 function CardImageSection({ image }: { image: SectionImage }) {
   return (
-    <section className="rounded-3xl border border-white/5 bg-slate-900/40 p-5 shadow-sm backdrop-blur sm:p-6">
+    <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
       <figure className="space-y-3">
-        <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60">
+        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
           <Image
             src={image.src}
             alt={image.alt}
@@ -304,7 +302,7 @@ function CardImageSection({ image }: { image: SectionImage }) {
           />
         </div>
         {image.caption ? (
-          <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-200/70">{image.caption}</figcaption>
+          <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-500">{image.caption}</figcaption>
         ) : null}
       </figure>
     </section>
@@ -355,15 +353,13 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <a
           href={applyNow.url}
-          className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 transition hover:bg-amber-200 sm:w-auto"
+          className="inline-flex w-full items-center justify-center rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-amber-500 sm:w-auto"
           target="_blank"
           rel="noopener noreferrer"
         >
           {label}
         </a>
-        {applyNow.disclaimer ? (
-          <p className="text-xs text-slate-100/70">{applyNow.disclaimer}</p>
-        ) : null}
+        {applyNow.disclaimer ? <p className="text-xs text-slate-600">{applyNow.disclaimer}</p> : null}
       </div>
     </SectionWrapper>
   );
@@ -490,44 +486,44 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
       />
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:py-28">
-        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link href="/travel-with-points" className="hover:text-amber-300">
+              <Link href="/travel-with-points" className="hover:text-amber-700">
                 Travel with Points
               </Link>
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href="/travel-with-points/credit-cards" className="hover:text-amber-300">
+              <Link href="/travel-with-points/credit-cards" className="hover:text-amber-700">
                 Credit cards
               </Link>
             </li>
             <li aria-hidden>/</li>
-            <li className="text-amber-200">{card.name}</li>
+            <li className="text-amber-700">{card.name}</li>
           </ol>
         </nav>
 
         <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-300">Credit card guide</p>
-          <h1 className="text-3xl font-semibold text-white sm:text-4xl">{card.name}</h1>
-          <p className="text-base text-slate-200/80 sm:text-lg">{card.summary}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Credit card guide</p>
+          <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{card.name}</h1>
+          <p className="text-base text-slate-700 sm:text-lg">{card.summary}</p>
         </header>
 
         {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
 
         <CardDetailSections card={card} />
 
-        <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-white">Ready for more cards?</p>
-          <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-amber-300">
+        <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold text-slate-900">Ready for more cards?</p>
+          <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-amber-700">
             Back to credit cards hub
             <svg
               aria-hidden

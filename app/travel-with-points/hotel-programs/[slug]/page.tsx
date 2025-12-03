@@ -79,7 +79,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     }
 
     return (
-      <div className="overflow-hidden rounded-2xl border border-white/5 bg-black/20">
+      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
         <Image
           src={image.src}
           alt={image.alt}
@@ -109,24 +109,24 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     const title = section.title ?? defaultTitle;
 
     return (
-      <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+      <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">{title}</h2>
+          <h2 className="text-xl font-semibold text-slate-900">{title}</h2>
           {section.description ? (
-            <p className="text-sm leading-6 text-slate-200/80">{section.description}</p>
+            <p className="text-sm leading-6 text-slate-700">{section.description}</p>
           ) : null}
           {section.items && section.items.length > 0 ? (
-            <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
+            <ul className="space-y-3 text-sm leading-6 text-slate-700">
               {section.items.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-300" aria-hidden />
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-sky-700" aria-hidden />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           ) : null}
           {section.note ? (
-            <p className="text-sm text-slate-200/80">{section.note}</p>
+            <p className="text-sm text-slate-700">{section.note}</p>
           ) : null}
         </div>
         {renderSectionImage(section.image)}
@@ -140,19 +140,19 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     }
 
     return (
-      <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+      <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-white">Quick facts</h2>
+          <h2 className="text-xl font-semibold text-slate-900">Quick facts</h2>
           <dl className="grid gap-4 sm:grid-cols-2">
             {facts.map((fact) => (
               <div
                 key={`${fact.label}-${fact.value}`}
-                className="rounded-2xl border border-white/5 bg-black/20 p-4"
+                className="rounded-2xl border border-slate-200 bg-slate-50 p-4"
               >
-                <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-800">
                   {fact.label}
                 </dt>
-                <dd className="mt-2 text-sm font-medium text-slate-100/90">{fact.value}</dd>
+                <dd className="mt-2 text-sm font-medium text-slate-900">{fact.value}</dd>
               </div>
             ))}
           </dl>
@@ -170,7 +170,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
       <ul className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <li key={tag}>
-            <span className="inline-flex items-center rounded-full border border-sky-300/40 bg-sky-300/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-sky-200">
+            <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-sky-800">
               {tag}
             </span>
           </li>
@@ -190,22 +190,22 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     }
 
     return (
-      <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+      <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-xl font-semibold text-white">Status levels</h2>
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-200">
+            <h2 className="text-xl font-semibold text-slate-900">Status levels</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-800">
               Elite benefits by tier
             </p>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[560px] border-separate border-spacing-y-3 text-left text-sm text-slate-100/80">
+            <table className="w-full min-w-[560px] border-separate border-spacing-y-3 text-left text-sm text-slate-700">
               <caption className="sr-only">Elite benefits comparison across loyalty tiers</caption>
               <thead>
                 <tr>
                   <th
                     scope="col"
-                    className="rounded-lg bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-sky-200"
+                    className="rounded-lg bg-slate-50 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-sky-900"
                   >
                     Benefit
                   </th>
@@ -213,7 +213,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
                     <th
                       key={tier}
                       scope="col"
-                      className="rounded-lg bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-sky-200"
+                      className="rounded-lg bg-slate-50 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-sky-900"
                     >
                       {tier}
                     </th>
@@ -225,12 +225,12 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
                   <tr key={row.label} className="align-top">
                     <th
                       scope="row"
-                      className="rounded-lg bg-white/10 px-4 py-4 text-left text-sm font-semibold text-white"
+                      className="rounded-lg bg-slate-50 px-4 py-4 text-left text-sm font-semibold text-slate-900"
                     >
                       <div className="space-y-2">
                         <span>{row.label}</span>
                         {row.description ? (
-                          <p className="max-w-xs text-xs font-normal text-slate-300/80">{row.description}</p>
+                          <p className="max-w-xs text-xs font-normal text-slate-600">{row.description}</p>
                         ) : null}
                       </div>
                     </th>
@@ -241,9 +241,9 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
                       return (
                         <td
                           key={`${row.label}-${index}`}
-                          className="rounded-lg bg-white/5 px-4 py-4 text-slate-100/80"
+                          className="rounded-lg bg-slate-50 px-4 py-4 text-slate-700"
                         >
-                          {hasValue ? value : <span className="text-slate-500/70">—</span>}
+                          {hasValue ? value : <span className="text-slate-400">—</span>}
                         </td>
                       );
                     })}
@@ -252,7 +252,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
               </tbody>
             </table>
           </div>
-          {section.note ? <p className="text-sm text-slate-200/80">{section.note}</p> : null}
+          {section.note ? <p className="text-sm text-slate-700">{section.note}</p> : null}
         </div>
         {renderSectionImage(section.image)}
       </section>
@@ -275,48 +275,48 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <div className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-20 lg:py-28">
-        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex items-center gap-2">
             <li>
-              <Link href="/travel-with-points" className="hover:text-sky-300">
+              <Link href="/travel-with-points" className="hover:text-sky-800">
                 Travel with Points
               </Link>
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href="/travel-with-points/hotel-programs" className="hover:text-sky-300">
+              <Link href="/travel-with-points/hotel-programs" className="hover:text-sky-800">
                 Hotel programs
               </Link>
             </li>
             <li aria-hidden>/</li>
-            <li className="text-sky-200">{program.name}</li>
+            <li className="text-sky-800">{program.name}</li>
           </ol>
         </nav>
 
         <header className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-300">Hotel loyalty guide</p>
-          <h1 className="text-4xl font-semibold text-white">{program.name}</h1>
-          <p className="text-base text-slate-200/80">{program.summary}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-800">Hotel loyalty guide</p>
+          <h1 className="text-4xl font-semibold text-slate-900">{program.name}</h1>
+          <p className="text-base text-slate-700">{program.summary}</p>
           {renderTags(program.tags)}
         </header>
 
-        <section className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <section className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="space-y-2">
-              <h2 className="text-xl font-semibold text-white">Program footprint</h2>
-              <p className="text-sm text-slate-100/80">{program.footprint}</p>
+              <h2 className="text-xl font-semibold text-slate-900">Program footprint</h2>
+              <p className="text-sm text-slate-700">{program.footprint}</p>
             </div>
-            <div className="rounded-full border border-sky-300/40 px-4 py-2 text-xs uppercase tracking-[0.3em] text-sky-200">
+            <div className="rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-xs uppercase tracking-[0.3em] text-sky-800">
               {topTierLabel ?? "Loyalty"}
             </div>
           </div>
-          <p className="text-sm text-slate-200/80">
+          <p className="text-sm text-slate-700">
             Plan your stays to layer elite benefits, smart points earning, and co-branded card perks for outsized travel value.
           </p>
         </section>
@@ -349,9 +349,9 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
 
         {renderListSection("Notes", program.notesSection)}
 
-        <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-white">Research more hotel brands</p>
-          <Link href="/travel-with-points/hotel-programs" className="inline-flex items-center font-semibold text-sky-300">
+        <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold text-slate-900">Research more hotel brands</p>
+          <Link href="/travel-with-points/hotel-programs" className="inline-flex items-center font-semibold text-sky-800">
             Back to hotel programs hub
             <svg
               aria-hidden
