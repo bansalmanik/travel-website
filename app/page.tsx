@@ -57,11 +57,10 @@ export default async function Home() {
         <div className="mx-auto flex max-w-4xl flex-col gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-100/90 sm:text-base">Travel differently</p>
           <h1 className="text-pretty text-center text-3xl font-bold leading-tight sm:text-left sm:text-5xl sm:leading-tight">
-            Travel with points and miles without losing the wonder of the journey.
+            Make Every Mile Meaningful.
           </h1>
           <p className="text-pretty text-center text-base text-amber-50/90 sm:text-left sm:text-lg">
-            Earn smarter, redeem better, and savor every stop along the way. From flexible points strategies to curated
-            itineraries, Miles Go Round shows you how to turn loyalty into unforgettable moments.
+            Blending soulful journeys with smart use of miles and points, so every trip becomes richer, more thoughtful, and far more rewarding.
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4">
             <Link
