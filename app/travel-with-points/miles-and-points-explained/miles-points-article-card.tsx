@@ -16,8 +16,7 @@ export function MilesPointsArticleCard({ article }: { article: MilesPointsArticl
         </h3>
         <p className="text-sm leading-relaxed text-slate-700">{article.excerpt}</p>
       </div>
-      <div className="mt-6 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-        <span>{new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric" }).format(new Date(article.updatedOn ?? article.publishedOn))}</span>
+      <div className="mt-6 flex items-center justify-end text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
         <Link
           href={`/travel-with-points/miles-and-points-explained/${article.slug}`}
           className="inline-flex items-center text-sm font-semibold text-amber-800"
