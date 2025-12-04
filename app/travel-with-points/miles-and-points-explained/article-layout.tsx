@@ -13,9 +13,13 @@ function formatDate(date: string) {
 
 export function ArticleLayout({
   article,
+  previousArticle,
+  nextArticle,
   children,
 }: {
   article: MilesPointsArticle;
+  previousArticle?: MilesPointsArticle;
+  nextArticle?: MilesPointsArticle;
   children: ReactNode;
 }) {
   const published = formatDate(article.publishedOn);
@@ -48,6 +52,38 @@ export function ArticleLayout({
         <article className="space-y-8 rounded-3xl border border-slate-200 bg-white/95 p-6 shadow-sm sm:p-8">
           {children}
         </article>
+
+        {(previousArticle || nextArticle) && (
+          <nav className="grid gap-4 rounded-3xl border border-slate-200 bg-white/95 p-4 shadow-sm sm:grid-cols-2 sm:gap-6 sm:p-6">
+            {previousArticle ? (
+              <Link
+                href={`/travel-with-points/miles-and-points-explained/${previousArticle.slug}`}
+                className="group flex flex-col gap-2 rounded-2xl border border-amber-100/80 bg-amber-50/50 p-4 transition hover:-translate-y-[1px] hover:border-amber-200 hover:bg-amber-50 hover:shadow-sm"
+              >
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-800">Previous</span>
+                <span className="text-lg font-semibold leading-snug text-amber-900 group-hover:text-amber-950">
+                  {previousArticle.title}
+                </span>
+              </Link>
+            ) : (
+              <span className="h-full" aria-hidden />
+            )}
+
+            {nextArticle ? (
+              <Link
+                href={`/travel-with-points/miles-and-points-explained/${nextArticle.slug}`}
+                className="group flex flex-col gap-2 rounded-2xl border border-amber-100/80 bg-amber-50/50 p-4 text-right transition hover:-translate-y-[1px] hover:border-amber-200 hover:bg-amber-50 hover:shadow-sm"
+              >
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-800">Next</span>
+                <span className="text-lg font-semibold leading-snug text-amber-900 group-hover:text-amber-950">
+                  {nextArticle.title}
+                </span>
+              </Link>
+            ) : (
+              <span className="h-full" aria-hidden />
+            )}
+          </nav>
+        )}
       </div>
     </main>
   );
