@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const navigationLinks = [
-  { href: "/stories", label: "Stories" },
   { href: "/travel-with-points", label: "Travel with points" },
   { href: "/travel-resources", label: "Travel Resources" },
+  { href: "/stories", label: "Stories" },
 ];
 
 export function SiteNav() {

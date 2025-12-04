@@ -169,9 +169,30 @@ export default async function Home() {
                 Behind-the-scenes notes & resources
               </h2>
             </div>
-            <p className="mx-auto max-w-2xl text-pretty text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
-              Travel smarter with bite-sized guides, practical tips, and insider ways to stretch every mile and point.
-            </p>
+            <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 sm:mx-0 sm:max-w-xl sm:items-end sm:text-right">
+              <p className="text-pretty text-sm text-slate-600 sm:text-base">
+                Travel smarter with bite-sized guides, practical tips, and insider ways to stretch every mile and point.
+              </p>
+              <Link
+                className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 underline-offset-4 transition hover:text-slate-700 hover:underline"
+                href="/travel-resources"
+              >
+                View all resources
+                <svg
+                  aria-hidden
+                  className="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
 
           <ul className="space-y-4 sm:space-y-5">
