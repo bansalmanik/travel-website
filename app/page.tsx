@@ -100,6 +100,27 @@ export default async function Home() {
               <p className="text-pretty text-sm leading-relaxed text-slate-600 sm:text-base">
                 Earn smarter. Redeem better. Fly further. Miles and points that take you places.
               </p>
+              <div className="flex justify-center md:justify-start">
+                <Link
+                  href="/travel-with-points/miles-and-points-explained"
+                  className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-sm transition hover:-translate-y-[2px] hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:text-sm"
+                >
+                  Miles & Points Explained
+                  <svg
+                    aria-hidden
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
             <ul className="mt-2 grid gap-4 sm:mt-0 sm:grid-cols-2">
               {travelWithPointsHighlights.map((item) => (
