@@ -6,10 +6,6 @@ export function MilesPointsArticleCard({ article }: { article: MilesPointsArticl
   return (
     <article className="flex h-full flex-col justify-between rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
       <div className="space-y-3">
-        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-amber-800">
-          <span className="rounded-full bg-amber-50 px-3 py-1 text-[0.68rem]">{article.category}</span>
-          <span className="text-slate-500">{article.readTime}</span>
-        </div>
         <h3 className="text-xl font-semibold text-slate-900">
           <Link
             href={`/travel-with-points/miles-and-points-explained/${article.slug}`}
