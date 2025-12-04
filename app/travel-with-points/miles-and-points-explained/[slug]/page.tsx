@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArticleLayout } from "@/app/travel-with-points/miles-and-points-explained/article-layout";
 import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
 import {
+  getAdjacentMilesPointsArticles,
   getMilesPointsArticleBySlug,
   getMilesPointsArticleSlugs,
 } from "@/lib/milesPointsArticles";
@@ -68,10 +69,15 @@ export default async function MilesPointsArticlePage({
 }) {
   const { slug } = await params;
   const article = getMilesPointsArticleBySlug(slug);
+  const { previous, next } = getAdjacentMilesPointsArticles(slug);
 
   if (!article) {
     notFound();
   }
 
-  return <ArticleLayout article={article}>{renderSections(article.sections)}</ArticleLayout>;
+  return (
+    <ArticleLayout article={article} previousArticle={previous} nextArticle={next}>
+      {renderSections(article.sections)}
+    </ArticleLayout>
+  );
 }
