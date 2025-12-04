@@ -36,6 +36,13 @@ const sections = [
     href: "/travel-with-points/bank-programs",
     accent: "bg-rose-100 text-rose-900",
   },
+  {
+    title: "Miles & Points Explained",
+    description:
+      "Beginner-friendly guides to how miles and points work, from earning the currencies to redeeming them well.",
+    href: "/travel-with-points/miles-and-points-explained",
+    accent: "bg-blue-100 text-blue-900",
+  },
 ];
 
 const quickTips = [
