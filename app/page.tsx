@@ -174,7 +174,16 @@ export default async function Home() {
 
       <footer className="border-t border-slate-200 bg-white/80 py-10 text-sm text-slate-600">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 sm:text-left">
-          <p className="text-sm text-slate-700">© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+            <Image
+              src="/Logo/MilesGoRound-Logo-Blue.png"
+              alt="Miles Go Round logo"
+              width={1024}
+              height={1024}
+              className="h-12 w-12 rounded-full object-contain shadow-sm"
+            />
+            <p className="text-sm text-slate-700">© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-5 sm:justify-start">
             <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
               Instagram
