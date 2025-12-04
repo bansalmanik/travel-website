@@ -29,6 +29,12 @@ const travelWithPointsHighlights = [
     href: "/pointsconversion",
     accent: "bg-purple-100 text-purple-900",
   },
+  {
+    title: "Miles & Points Basics",
+    description: "Start with the essentials—how miles and points work, why they matter, and where to begin.",
+    href: "/travel-with-points/miles-and-points-explained",
+    accent: "bg-rose-100 text-rose-900",
+  },
 ];
 
 export default async function Home() {
