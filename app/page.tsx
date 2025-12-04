@@ -42,7 +42,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/40 to-sky-50 text-slate-900">
-      <header className="relative isolate overflow-hidden">
+      <header className="relative isolate flex min-h-[60vh] items-center overflow-hidden sm:min-h-[70vh]">
         <div className="absolute inset-0 -z-10">
           <Image
             src={heroImageSrc}
