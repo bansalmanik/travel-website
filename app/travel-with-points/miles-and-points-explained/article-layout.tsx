@@ -13,9 +13,13 @@ function formatDate(date: string) {
 
 export function ArticleLayout({
   article,
+  previousArticle,
+  nextArticle,
   children,
 }: {
   article: MilesPointsArticle;
+  previousArticle?: MilesPointsArticle;
+  nextArticle?: MilesPointsArticle;
   children: ReactNode;
 }) {
   const published = formatDate(article.publishedOn);
@@ -48,6 +52,38 @@ export function ArticleLayout({
         <article className="space-y-8 rounded-3xl border border-slate-200 bg-white/95 p-6 shadow-sm sm:p-8">
           {children}
         </article>
+
+        {(previousArticle || nextArticle) && (
+          <nav className="grid gap-4 rounded-2xl border border-amber-100 bg-white/80 p-4 text-sm text-slate-700 shadow-sm sm:grid-cols-2 sm:gap-5 sm:p-6">
+            {previousArticle ? (
+              <Link
+                href={`/travel-with-points/miles-and-points-explained/${previousArticle.slug}`}
+                className="group flex h-full flex-col gap-2 rounded-xl border border-transparent p-3 transition hover:-translate-y-[1px] hover:border-amber-200 hover:bg-amber-50/60"
+              >
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-amber-800">Previous</span>
+                <span className="text-base font-semibold text-slate-900 group-hover:text-amber-900">{previousArticle.title}</span>
+                <span className="flex items-center gap-2 text-xs font-medium text-amber-800 group-hover:translate-x-0.5">
+                  ← Go to {previousArticle.title}
+                </span>
+              </Link>
+            ) : (
+              <div className="hidden sm:block" aria-hidden />
+            )}
+
+            {nextArticle ? (
+              <Link
+                href={`/travel-with-points/miles-and-points-explained/${nextArticle.slug}`}
+                className="group flex h-full flex-col items-start gap-2 rounded-xl border border-transparent p-3 text-left transition hover:-translate-y-[1px] hover:border-amber-200 hover:bg-amber-50/60 sm:items-end sm:text-right"
+              >
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-amber-800">Next</span>
+                <span className="text-base font-semibold text-slate-900 group-hover:text-amber-900">{nextArticle.title}</span>
+                <span className="flex items-center gap-2 text-xs font-medium text-amber-800 group-hover:-translate-x-0.5 sm:justify-end">
+                  Go to {nextArticle.title} →
+                </span>
+              </Link>
+            ) : null}
+          </nav>
+        )}
       </div>
     </main>
   );

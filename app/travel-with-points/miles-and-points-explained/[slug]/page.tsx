@@ -6,6 +6,7 @@ import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-poin
 import {
   getMilesPointsArticleBySlug,
   getMilesPointsArticleSlugs,
+  getMilesPointsArticleNeighbors,
 } from "@/lib/milesPointsArticles";
 
 export async function generateStaticParams() {
@@ -68,10 +69,15 @@ export default async function MilesPointsArticlePage({
 }) {
   const { slug } = await params;
   const article = getMilesPointsArticleBySlug(slug);
+  const { previous, next } = getMilesPointsArticleNeighbors(slug);
 
   if (!article) {
     notFound();
   }
 
-  return <ArticleLayout article={article}>{renderSections(article.sections)}</ArticleLayout>;
+  return (
+    <ArticleLayout article={article} previousArticle={previous} nextArticle={next}>
+      {renderSections(article.sections)}
+    </ArticleLayout>
+  );
 }
