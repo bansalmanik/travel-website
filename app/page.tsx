@@ -46,7 +46,7 @@ export default async function Home() {
         <div className="absolute inset-0 -z-10">
           <Image
             src={heroImageSrc}
-            alt="Sunset over mountains and fjords"
+            alt="Sunset over mountains"
             fill
             className="object-cover brightness-75"
             priority
@@ -55,9 +55,8 @@ export default async function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/55 to-slate-900/30" />
         </div>
         <div className="mx-auto flex max-w-4xl flex-col gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-100/90 sm:text-base">Travel differently</p>
           <h1 className="text-pretty text-center text-3xl font-bold leading-tight sm:text-left sm:text-5xl sm:leading-tight">
-            Make Every Mile Meaningful.
+            Make Every Mile Meaningful
           </h1>
           <p className="text-pretty text-center text-base text-amber-50/90 sm:text-left sm:text-lg">
             Blending soulful journeys with smart use of miles and points, so every trip becomes richer, more thoughtful, and far more rewarding.
