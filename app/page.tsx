@@ -8,26 +8,94 @@ const travelWithPointsHighlights = [
     title: "Credit Cards",
     description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/credit-cards",
-    accent: "bg-amber-100 text-amber-900",
+    accent: "bg-slate-900 text-white",
+    icon: (
+      <svg
+        aria-hidden
+        className="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
+        <rect width="20" height="14" x="2" y="5" rx="2" />
+        <path d="M2 10h20" />
+        <path d="M7 15h1" />
+        <path d="M9 15h2" />
+      </svg>
+    ),
   },
   {
     title: "Hotel Programs",
     description:
       "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
     href: "/travel-with-points/hotel-programs",
-    accent: "bg-sky-100 text-sky-900",
+    accent: "bg-slate-900 text-white",
+    icon: (
+      <svg
+        aria-hidden
+        className="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
+        <path d="M3 7h18" />
+        <path d="M6 7v9" />
+        <path d="M18 7v9" />
+        <path d="M3 16h18" />
+        <path d="M7 12h10" />
+        <path d="M3 21h18" />
+      </svg>
+    ),
   },
   {
     title: "Flight Programs",
     description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/flight-programs",
-    accent: "bg-emerald-100 text-emerald-900",
+    accent: "bg-slate-900 text-white",
+    icon: (
+      <svg
+        aria-hidden
+        className="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
+        <path d="M2 16l20-5" />
+        <path d="M6 19l3 2 3-4 7-1 1-2-4-2-3 1-3 4-4-2z" />
+      </svg>
+    ),
   },
   {
     title: "Points Conversion",
     description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
     href: "/pointsconversion",
-    accent: "bg-purple-100 text-purple-900",
+    accent: "bg-slate-900 text-white",
+    icon: (
+      <svg
+        aria-hidden
+        className="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
+        <path d="M3 7h13" />
+        <path d="M3 17h13" />
+        <path d="M14 7l3-3 3 3" />
+        <path d="M14 17l3 3 3-3" />
+      </svg>
+    ),
   },
 ];
 
@@ -130,13 +198,18 @@ export default async function Home() {
                     aria-label={`Learn more about ${item.title}`}
                     className="group flex h-full flex-col gap-4 rounded-3xl border border-slate-100 bg-slate-50/80 p-5 text-left shadow-sm transition hover:-translate-y-1 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   >
-                    <span
-                      className={`inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] shadow-sm ${item.accent}`}
-                    >
-                      {item.title}
-                    </span>
+                    <div className="flex items-center gap-3">
+                      <span className={`flex h-11 w-11 items-center justify-center rounded-2xl ${item.accent} shadow-sm`}>
+                        {item.icon}
+                      </span>
+                      <span
+                        className="inline-flex w-fit items-center rounded-full bg-slate-900/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 ring-1 ring-slate-900/10"
+                      >
+                        {item.title}
+                      </span>
+                    </div>
                     <p className="text-pretty text-sm leading-relaxed text-slate-700">{item.description}</p>
-                    <span className="inline-flex items-center text-sm font-semibold text-amber-700">
+                    <span className="inline-flex items-center text-sm font-semibold text-slate-900">
                       Read more
                       <svg
                         aria-hidden
