@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const navigationLinks = [
   { href: "/stories", label: "Stories" },
-  { href: "/travel-with-points", label: "Travel on points" },
+  { href: "/travel-with-points", label: "Travel with points" },
   { href: "/travel-resources", label: "Travel Resources" },
 ];
 

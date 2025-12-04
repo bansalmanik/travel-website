@@ -66,7 +66,7 @@ export default async function Home() {
               className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-md shadow-amber-300/40 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
               href="/travel-with-points"
             >
-              Travel on Points
+              Travel with Points
             </Link>
             <Link
               className="inline-flex w-full items-center justify-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-md shadow-slate-900/20 ring-1 ring-inset ring-white/30 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
