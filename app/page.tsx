@@ -188,6 +188,28 @@ export default async function Home() {
               </li>
             ))}
           </ul>
+
+          <div className="flex justify-center sm:justify-end">
+            <Link
+              href="/travel-resources"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700 transition hover:text-amber-800"
+            >
+              View all resources
+              <svg
+                aria-hidden
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
         </section>
 
       </main>
