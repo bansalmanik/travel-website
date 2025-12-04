@@ -16,6 +16,12 @@ const sections = [
     accent: "bg-amber-100 text-amber-900",
   },
   {
+    title: "Miles & Points Explained",
+    description: "Beginner-friendly guides to how miles and points work.",
+    href: "/travel-with-points/miles-and-points-explained",
+    accent: "bg-lime-100 text-lime-900",
+  },
+  {
     title: "Hotel Programs",
     description:
       "Unlock elite benefits, track milestone rewards, and understand when to redeem points versus paying cash.",
