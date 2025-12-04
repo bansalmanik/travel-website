@@ -10,14 +10,6 @@ const travelWithPointsHighlights = [
     description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/credit-cards",
     accent: "bg-slate-900 text-amber-50",
-    Icon: (props: React.SVGProps<SVGSVGElement>) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-        <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
-        <path d="M3 10h18" />
-        <path d="M7 15h2" />
-        <path d="M11 15h2" />
-      </svg>
-    ),
   },
   {
     title: "Hotel Programs",
@@ -25,42 +17,18 @@ const travelWithPointsHighlights = [
       "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
     href: "/travel-with-points/hotel-programs",
     accent: "bg-slate-900 text-amber-50",
-    Icon: (props: React.SVGProps<SVGSVGElement>) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-        <path d="M3 11h18" />
-        <path d="M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4" />
-        <path d="M5 21v-4h14v4" />
-        <path d="M7 11v4" />
-        <path d="M17 11v4" />
-        <path d="M9 7h6" />
-      </svg>
-    ),
   },
   {
     title: "Flight Programs",
     description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/flight-programs",
     accent: "bg-slate-900 text-amber-50",
-    Icon: (props: React.SVGProps<SVGSVGElement>) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-        <path d="m2.5 19 2.5-2.5L2 10l3 1 4 5 5 2 2 3" />
-        <path d="M14 13l6-6a2.828 2.828 0 0 0-4-4l-6 6" />
-      </svg>
-    ),
   },
   {
     title: "Points Conversion",
     description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
     href: "/pointsconversion",
     accent: "bg-slate-900 text-amber-50",
-    Icon: (props: React.SVGProps<SVGSVGElement>) => (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-        <circle cx="8" cy="8" r="4" />
-        <circle cx="16" cy="16" r="4" />
-        <path d="m4 16 4-4" />
-        <path d="m12 8 4-4" />
-      </svg>
-    ),
   },
 ];
 
@@ -164,9 +132,6 @@ export default async function Home() {
                     className="group flex h-full flex-col gap-4 rounded-3xl border border-slate-100 bg-slate-50/80 p-5 text-left shadow-sm transition hover:-translate-y-1 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-amber-50 shadow-sm transition group-hover:bg-slate-800">
-                        <item.Icon aria-hidden className="h-5 w-5" />
-                      </span>
                       <span
                         className={`inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] shadow-sm ${item.accent}`}
                       >
