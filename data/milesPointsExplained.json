@@ -1,105 +1,445 @@
 [
   {
-    "slug": "what-are-points-and-miles",
-    "title": "What are points and miles?",
-    "excerpt": "A plain-language primer on the loyalty currencies you can earn, transfer, and redeem for travel.",
+    "slug": "miles-and-points-foundations",
+    "title": "Miles & Points Foundations: what they are and how the ecosystem works",
+    "excerpt": "Start here: learn the core vocabulary, who issues points, and how to think about them like travel currency (not cash).",
     "category": "Miles & Points Explained",
-    "readTime": "6 min read",
-    "publishedOn": "2024-04-05",
-    "seoTitle": "What Are Points and Miles? | Miles Go Round",
-    "seoDescription": "Understand the loyalty currencies behind award travel—how they work, why they matter, and where they come from.",
-    "tags": ["beginner", "basics", "points-and-miles"],
+    "readTime": "12 min read",
+    "publishedOn": "2025-12-05",
+    "seoTitle": "Miles & Points Foundations | Miles Go Round",
+    "seoDescription": "A complete beginner-friendly foundation: what points and miles are, who issues them, and the building blocks of award travel.",
+    "tags": [ "beginner", "basics", "glossary", "ecosystem" ],
     "sections": [
       {
-        "heading": "What counts as a loyalty currency?",
+        "heading": "What “points” and “miles” really mean",
         "body": [
-          "Airlines, hotels, and banks issue their own currencies that you can collect through flights, stays, and credit card spend.",
-          "Some currencies are locked to a brand, while others are transferable and can be moved to multiple partners for flexibility."
+          "Points and miles are loyalty currencies. Airlines, hotels, and banks issue them to reward repeat customers and encourage more spending or bookings.",
+          "Despite the name, “miles” are not always based on distance. Many programs award based on ticket price, cabin, or fare type. Similarly, “points” can represent many different types of rewards across banks and hotels.",
+          "The key idea: treat them like a special travel-only currency with rules (availability, fees, expirations, and program pricing). They are not equal to cash, and their value changes depending on how you use them."
         ]
       },
       {
-        "heading": "Why do programs issue them?",
+        "heading": "The 3 buckets: airline, hotel, and bank (transferable) points",
         "body": [
-          "Loyalty programs reward repeat business and gather insights about customer preferences, which is why they offer incentives to keep you active.",
-          "When you redeem for travel, partners reimburse each other behind the scenes, letting you access outsized value compared to cash prices."
+          "Airline miles: usually best for flights (especially long-haul, premium cabins), but can also be used for upgrades, seat fees, or non-flight redemptions (often poor value).",
+          "Hotel points: usually best for hotel nights; value varies a lot based on property/season and the program’s pricing model.",
+          "Bank (transferable) points: points earned from a bank rewards ecosystem that can often be redeemed either through a portal (like “pay with points”) or transferred to airline/hotel partners. These are powerful because they offer flexibility."
+        ]
+      },
+      {
+        "heading": "How programs make money (and why you get points)",
+        "body": [
+          "Points are marketing and retention tools: programs encourage you to keep booking with a brand and keep spending on partner credit cards.",
+          "Programs often sell points to banks and partners (especially via co-branded cards), which is why card welcome bonuses can be so large and why banks invest heavily in points ecosystems.",
+          "This also explains why programs can change: pricing can move, award availability can shrink, and values can drop over time. Flexibility matters."
+        ]
+      },
+      {
+        "heading": "Core terms you must know",
+        "body": [
+          "Award ticket / award night: booking travel using points instead of paying the full cash fare.",
+          "Transfer partner: an airline or hotel program you can move bank points into (usually one-way transfers).",
+          "Award availability: the seats/rooms a program releases for redemption; you might see “sold out” even when cash seats exist.",
+          "Taxes & fees / surcharges: award bookings often still require cash payment for taxes and sometimes extra airline-added fees.",
+          "Cents-per-point (CPP): a simple way to estimate if a redemption is good (you’ll learn the exact formula later)."
         ]
       }
     ]
   },
   {
-    "slug": "ways-to-earn-points-and-miles",
-    "title": "Ways to earn points and miles",
-    "excerpt": "From welcome bonuses to shopping portals, here are the most reliable ways to build balances without overspending.",
+    "slug": "setup-safety-and-rules",
+    "title": "Set up like a pro: accounts, safety, expiry, and the rules that trip beginners",
+    "excerpt": "Before earning aggressively, set up accounts properly, learn expiry rules, and avoid common beginner mistakes.",
     "category": "Miles & Points Explained",
-    "readTime": "7 min read",
-    "publishedOn": "2024-05-12",
-    "updatedOn": "2024-09-18",
-    "tags": ["earning", "bonuses", "shopping-portals"],
+    "readTime": "13 min read",
+    "publishedOn": "2025-12-06",
+    "seoTitle": "Points & Miles Setup, Safety, and Expiry | Miles Go Round",
+    "seoDescription": "How to set up loyalty accounts safely, track balances, prevent expiry, and understand the rules that cause most beginner losses.",
+    "tags": [ "beginner", "account-security", "expiry", "tracking" ],
     "sections": [
       {
-        "heading": "Leverage credit card bonuses",
+        "heading": "Create accounts and standardize your identity",
         "body": [
-          "Welcome offers provide the fastest boost when you meet minimum spend responsibly and on time.",
-          "Pair the right card with your everyday categories—dining, groceries, travel—to earn multipliers without changing your habits."
+          "Create frequent flyer and hotel accounts for the programs you’re likely to use. Use the same legal name (matching your passport), date of birth, and email/phone format wherever possible.",
+          "Small mismatches can create pain when transferring points, requesting missing credits, or merging accounts. Consistency saves hours later."
         ]
       },
       {
-        "heading": "Layer on program bonuses",
+        "heading": "Security basics (this matters more than you think)",
         "body": [
-          "Airlines and hotels run regular promos for elite members, co-branded cardholders, or stays at select properties.",
-          "Stack portal payouts, in-store offers, and dining rewards to keep balances growing even when you are not on the road."
+          "Use a password manager and unique passwords. Loyalty accounts are a real target because stolen points can be redeemed quickly.",
+          "Enable 2FA wherever available. If a program supports account PINs or extra security questions, use them."
+        ]
+      },
+      {
+        "heading": "Expiration and inactivity (how people lose points)",
+        "body": [
+          "Some programs expire points after a period of inactivity, while others (or certain elite/cardholder situations) keep points alive. Always check each program’s policy before you start collecting there.",
+          "A simple habit: set a quarterly reminder to scan your balances and do a small qualifying activity (like a small transfer, a small purchase through a portal, or a tiny redemption) when needed.",
+          "Example: If a program expires after 12 months of inactivity, even a small earning event can reset the clock. But some programs are stricter—so always verify the exact conditions."
+        ]
+      },
+      {
+        "heading": "Devaluations and pricing changes (why flexibility wins)",
+        "body": [
+          "Programs can change award pricing with little notice. This can make the same trip cost more points later.",
+          "That’s why beginners should prefer flexible strategies (transferable points + multiple partner options), and only transfer when you are ready to book."
+        ]
+      },
+      {
+        "heading": "A simple tracking system that doesn’t become a hobby",
+        "body": [
+          "Make one lightweight tracker (Notion/Sheet) with: program name, username/email, current balance, expiration rule, and notes (e.g., “good for domestic flights” or “watch surcharges”).",
+          "Add one “goal” column: what you’re collecting the currency for. You’ll make better decisions when every balance has a purpose."
         ]
       }
     ]
   },
   {
-    "slug": "redeeming-miles-for-flights-and-hotels",
-    "title": "Redeeming miles for flights and hotels",
-    "excerpt": "How to spot high-value redemptions, compare cash prices, and avoid unnecessary fees when booking awards.",
+    "slug": "earning-points-and-miles-without-overspending",
+    "title": "How to earn points and miles (without overspending)",
+    "excerpt": "The complete earning playbook: welcome bonuses, everyday spending, travel, promos, portals, and smart stacking.",
     "category": "Miles & Points Explained",
-    "readTime": "8 min read",
-    "publishedOn": "2024-06-30",
-    "seoDescription": "A practical guide to booking award flights and hotel nights without wasting points or paying surprise surcharges.",
-    "tags": ["redeeming", "awards", "guides"],
+    "readTime": "15 min read",
+    "publishedOn": "2025-12-07",
+    "seoTitle": "How to Earn Points and Miles (Responsibly) | Miles Go Round",
+    "seoDescription": "A detailed guide to building balances: credit card points, airline/hotel earning, portals, promos, and stacking—without changing your life.",
+    "tags": [ "earning", "credit-cards", "portals", "promotions", "beginner" ],
     "sections": [
       {
-        "heading": "Check cash versus points",
+        "heading": "The #1 accelerator: welcome bonuses (used responsibly)",
         "body": [
-          "Always compare the cash rate to the award cost so you only burn points when they beat your personal value per point.",
-          "Factor in taxes, resort fees, and carrier-imposed surcharges, which can make some awards look better than they are."
+          "Welcome bonuses can be the fastest way to build a meaningful balance. The rule: never spend extra just to earn points—time card applications around real expenses (travel, insurance, annual fees, home purchases).",
+          "If you miss a payment or pay high interest, the math breaks. Treat points as a byproduct of good financial habits, not the reason to spend."
         ]
       },
       {
-        "heading": "Use partners to your advantage",
+        "heading": "Everyday spend: earn multipliers by matching cards to habits",
         "body": [
-          "Alliance and hotel partnerships often unlock routes and properties that are cheaper than booking with the primary brand.",
-          "Search flexible dates, nearby airports, and mixed-cabin itineraries to surface extra award seats."
+          "Most rewards systems give higher earn rates in categories (dining, groceries, fuel, travel). The goal isn’t to optimize every rupee/dollar—it’s to pick a small setup that fits your routine.",
+          "Example: If you spend a lot on dining and groceries, prioritize the card that earns best there and use a simple backup card for everything else."
+        ]
+      },
+      {
+        "heading": "Earning from flying and hotel stays (when it matters)",
+        "body": [
+          "Flights and stays can earn points, but the return can be smaller than people expect unless you travel frequently or hold elite status/co-branded cards.",
+          "Always attach your loyalty number to bookings, keep receipts, and know the program’s rules on eligible fares and nights."
+        ]
+      },
+      {
+        "heading": "Portals, dining programs, and promotions: the stacking layer",
+        "body": [
+          "Shopping portals can award extra points for purchases you were already making. Dining programs can do something similar at participating restaurants.",
+          "Promotions can multiply earning drastically, but they come with terms (registration, dates, eligible brands). Use them selectively: chase only what matches your existing plans."
+        ]
+      },
+      {
+        "heading": "A realistic example: building a first “useful” balance",
+        "body": [
+          "Scenario: Over 3–4 months, you earn a welcome bonus plus regular spending points. You now have enough for a short-haul flight redemption or a couple of mid-range hotel nights.",
+          "From here, you switch to goal-based earning: collect the currency that best matches the trips you actually take, not what looks exciting online."
         ]
       }
     ]
   },
   {
-    "slug": "how-points-transfer-partners-work",
-    "title": "How points transfer partners work",
-    "excerpt": "Understand transfer ratios, timing, and bonus windows so you know when to move bank points to airlines or hotels.",
+    "slug": "choose-a-strategy-and-set-goals",
+    "title": "Pick a simple strategy: goals, currencies, and what to collect first",
+    "excerpt": "Stop collecting random balances. Choose a strategy that matches your travel style and keeps your setup simple.",
     "category": "Miles & Points Explained",
-    "readTime": "6 min read",
-    "publishedOn": "2024-08-09",
-    "seoTitle": "How Points Transfer Partners Work | Miles Go Round",
-    "tags": ["transfer-partners", "bank-points"],
+    "readTime": "12 min read",
+    "publishedOn": "2025-12-08",
+    "seoTitle": "Choose a Points Strategy (Simple + Effective) | Miles Go Round",
+    "seoDescription": "How to decide which programs to focus on based on your destinations, travel style, and tolerance for complexity.",
+    "tags": [ "strategy", "beginner", "planning", "simplicity" ],
     "sections": [
       {
-        "heading": "Know your ratios and pools",
+        "heading": "Start with the trip, not the points",
         "body": [
-          "Each bank program sets its own transfer ratios, and some allow household pooling while others only let you move points between your own accounts.",
-          "Keep a simple note with your best 1:1 options, slower partners, and any quirks like expiring bonuses."
+          "Define 1–2 realistic travel goals for the next 12 months: a domestic weekend trip, one international trip, or a family vacation. Your goal determines the best currencies to collect.",
+          "If your goal is mostly short-haul economy travel, simple fixed-value or low-fee options might suit you better than complex premium-cabin strategies."
         ]
       },
       {
-        "heading": "Time transfers carefully",
+        "heading": "Choose 1 primary currency + 1 backup (avoid the collector trap)",
         "body": [
-          "Most transfers are irreversible, so confirm award space before you send points to a partner.",
-          "Watch for limited-time transfer bonuses, but balance them against schedule risk and the possibility of award space disappearing."
+          "A clean beginner setup: one flexible currency (bank points) and one focused program (airline or hotel you will actually use).",
+          "Avoid spreading across 8 programs with tiny balances—that’s how points expire unused."
+        ]
+      },
+      {
+        "heading": "When hotel points make more sense than airline miles",
+        "body": [
+          "If a major cost of your travel is accommodation (and you’re picky about location), hotel points can be more satisfying than flight miles.",
+          "Hotels can also be easier for beginners because award availability is often more straightforward than airline award seats."
+        ]
+      },
+      {
+        "heading": "Simplicity rules: build a setup you can maintain",
+        "body": [
+          "The best strategy is the one you can stick to. A slightly less “optimal” plan that you actually execute beats a complicated plan you abandon.",
+          "If tracking and hunting feels stressful, use fewer programs, transfer only when booking, and prefer predictable redemptions."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "redeeming-basics-and-value",
+    "title": "Redeeming 101: how to get good value (without obsessing)",
+    "excerpt": "Learn the value framework: cash vs points, hidden fees, and a simple method to judge good vs bad redemptions.",
+    "category": "Miles & Points Explained",
+    "readTime": "16 min read",
+    "publishedOn": "2025-12-09",
+    "seoTitle": "Redeeming Points and Miles (Value + Fees) | Miles Go Round",
+    "seoDescription": "A practical redemption framework: compare cash vs points, calculate cents-per-point, and spot fees that ruin value.",
+    "tags": [ "redeeming", "cpp", "fees", "beginner" ],
+    "sections": [
+      {
+        "heading": "Always compare: cash price vs points price",
+        "body": [
+          "Your first filter is simple: is this redemption actually saving meaningful cash (or upgrading your experience) compared to paying cash?",
+          "Points are best used where they replace expensive travel or unlock experiences you wouldn’t comfortably buy with cash."
+        ]
+      },
+      {
+        "heading": "Cents-per-point (CPP): the simple calculation",
+        "body": [
+          "CPP is an estimate of value per point. The common approach: take the cash price you would have paid, subtract unavoidable cash you still pay on the award (taxes/fees), and divide by the points used.",
+          "Example: A ticket costs $500 or 30,000 points + $50 taxes. Your point value estimate is ($500 - $50) / 30,000 = $0.015 = 1.5 CPP.",
+          "CPP is a tool, not a religion. Use it to avoid terrible value and to recognize clear wins."
+        ]
+      },
+      {
+        "heading": "Taxes, fees, and why some “free” tickets aren’t free",
+        "body": [
+          "Award tickets often require taxes and, sometimes, extra airline-added fees. These costs can be small—or surprisingly large—depending on airline and route.",
+          "Before celebrating a redemption, check the cash you still owe and whether it changes the value."
+        ]
+      },
+      {
+        "heading": "When paying cash is smarter",
+        "body": [
+          "Cheap domestic tickets, short hotel stays during low season, or bookings where you need flexibility can be better with cash.",
+          "Save points for high-impact uses: peak season, expensive routes, premium cabins, or multi-night stays that would otherwise strain your budget."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "award-flights-search-and-booking",
+    "title": "Award flights like a pro: searching, availability, and booking step-by-step",
+    "excerpt": "A detailed guide to finding award seats, using flexibility, and booking flights with fewer points and fewer headaches.",
+    "category": "Miles & Points Explained",
+    "readTime": "18 min read",
+    "publishedOn": "2025-12-10",
+    "seoTitle": "How to Book Award Flights (Search + Availability) | Miles Go Round",
+    "seoDescription": "Learn award seat availability, flexible search tactics, and how to book flights with miles without costly mistakes.",
+    "tags": [ "award-flights", "availability", "search", "partners" ],
+    "sections": [
+      {
+        "heading": "What award availability is (and why it confuses people)",
+        "body": [
+          "Airlines may sell many seats for cash but release only a limited subset for award bookings (or price them very high). This is why you can see cash seats but no reasonable award options.",
+          "Some programs expose more seats to their own members than to partners. Others show seats widely but price them dynamically."
+        ]
+      },
+      {
+        "heading": "The flexibility triangle: dates, airports, and cabins",
+        "body": [
+          "If you can flex dates by even 1–3 days, you often find dramatically better pricing or availability.",
+          "Nearby airports can unlock availability: consider alternate departure/arrival airports when practical.",
+          "Cabin flexibility helps too: sometimes premium economy appears when economy is unavailable, or mixed-cabin itineraries reduce cost."
+        ]
+      },
+      {
+        "heading": "Partner bookings and alliances (the hidden superpower)",
+        "body": [
+          "Many programs let you redeem miles for flights on partner airlines. Alliances and partnerships expand your options beyond one airline’s own metal.",
+          "This is where “sweet spots” come from: you might book the same seat through a partner program for fewer miles, depending on the partner’s rules and pricing."
+        ]
+      },
+      {
+        "heading": "Booking workflow that prevents disasters",
+        "body": [
+          "Step 1: Find the exact flight(s) with award space. Save flight numbers, dates, and cabin details.",
+          "Step 2: Confirm the total cash component (taxes, surcharges) before transferring anything.",
+          "Step 3: Only then move transferable points (if required), and complete booking as soon as points arrive."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "transfer-partners-and-when-to-transfer",
+    "title": "Transfer partners: ratios, timing, bonuses, and safe transfer checklists",
+    "excerpt": "Transferable points are powerful—when you transfer correctly. Learn the rules, the timing, and the safety checklist.",
+    "category": "Miles & Points Explained",
+    "readTime": "16 min read",
+    "publishedOn": "2025-12-11",
+    "seoTitle": "Understanding Transfer Partners (Ratios + Timing) | Miles Go Round",
+    "seoDescription": "A complete guide to transfer partners: ratios, transfer times, transfer bonuses, and the checklist to avoid orphaned points.",
+    "tags": [ "transfer-partners", "bank-points", "ratios", "bonuses" ],
+    "sections": [
+      {
+        "heading": "What a transfer partner is (and why it changes everything)",
+        "body": [
+          "Transfer partners let you move bank points into airline/hotel programs. This converts flexible points into a specific currency that can book that partner’s awards.",
+          "Transfers are often one-way. Once you transfer, you generally cannot reverse it—so treat transfers as a booking step, not a storage strategy."
+        ]
+      },
+      {
+        "heading": "Ratios and rounding (small details, big consequences)",
+        "body": [
+          "Transfers can be 1:1, 2:1, 5:4, etc. A worse ratio means you need more bank points to get the same partner balance.",
+          "Watch for rounding rules and minimum transfers. Some programs require transfers in blocks (e.g., 1,000 points). Plan your transfer so you don’t strand leftovers."
+        ]
+      },
+      {
+        "heading": "Transfer time and availability risk",
+        "body": [
+          "Some transfers are instant; others take hours or days. The risk is that award availability can disappear while you wait.",
+          "If you can place an award on hold (some programs allow it), do that first. If not, be ready to book immediately when points arrive."
+        ]
+      },
+      {
+        "heading": "Transfer bonuses (when they help and when they tempt you)",
+        "body": [
+          "A transfer bonus can increase what you receive (e.g., 20% more miles). This can be great if you already have a specific redemption ready.",
+          "Avoid transferring “just because there’s a bonus.” Bonuses don’t matter if you move points into a program you won’t use soon."
+        ]
+      },
+      {
+        "heading": "The safe transfer checklist",
+        "body": [
+          "1) Confirm award space exists for the exact flight/hotel you want.",
+          "2) Confirm the total cost: points + taxes/fees + any surcharges.",
+          "3) Confirm the transfer ratio and minimum increments.",
+          "4) Confirm the expected transfer time.",
+          "5) Transfer only what you need (plus a small buffer if the program rounds up), then book immediately."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "fees-surcharges-and-hidden-costs",
+    "title": "Fees, surcharges, and hidden costs: how to keep awards truly affordable",
+    "excerpt": "Not all awards are created equal. Learn the fees that can ruin redemptions and how to avoid them.",
+    "category": "Miles & Points Explained",
+    "readTime": "14 min read",
+    "publishedOn": "2025-12-12",
+    "seoTitle": "Award Travel Fees & Surcharges Explained | Miles Go Round",
+    "seoDescription": "Understand award taxes, carrier-imposed surcharges, and change/cancel fees so you avoid redemptions that cost almost as much as cash.",
+    "tags": [ "fees", "fuel-surcharges", "award-travel", "beginner" ],
+    "sections": [
+      {
+        "heading": "Taxes vs airline-added surcharges (know the difference)",
+        "body": [
+          "Taxes are typically unavoidable government/airport charges that apply whether you pay cash or points.",
+          "Some airlines also add carrier-imposed surcharges (sometimes called fuel surcharges). On award tickets, these surcharges can appear on top of the miles you redeem, meaning your ‘free’ ticket may still require significant cash."
+        ]
+      },
+      {
+        "heading": "How to spot surcharges before you commit",
+        "body": [
+          "When you price an award, look carefully at the cash breakdown before you transfer points or finalize booking.",
+          "If the cash portion feels unusually high for an award, compare with alternative routings or different partner programs that may not pass on surcharges the same way."
+        ]
+      },
+      {
+        "heading": "Change/cancel rules and why they affect your strategy",
+        "body": [
+          "Some programs offer cheap or free cancellations; others charge fees or impose strict policies.",
+          "If your plans are uncertain, you may prefer currencies/programs known for flexible policies, even if the raw points price is slightly higher."
+        ]
+      },
+      {
+        "heading": "A decision framework: when a surcharge-heavy award is still okay",
+        "body": [
+          "Sometimes a surcharge-heavy premium cabin award still beats paying cash—especially during peak periods when cash prices are extreme.",
+          "Use the value approach you learned earlier: compare cash you’d pay vs points + unavoidable fees. If the award still saves meaningful money (or upgrades your trip massively), it can still be a win."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "dynamic-pricing-award-charts-and-sweet-spots",
+    "title": "Award charts vs dynamic pricing: how pricing really works and how to find sweet spots",
+    "excerpt": "Understand why some bookings swing wildly in points cost—and how experts consistently find better deals.",
+    "category": "Miles & Points Explained",
+    "readTime": "17 min read",
+    "publishedOn": "2025-12-13",
+    "seoTitle": "Dynamic Pricing vs Award Charts (Sweet Spots) | Miles Go Round",
+    "seoDescription": "Learn award charts vs dynamic pricing, how peak periods inflate prices, and how to uncover sweet spots and partner advantages.",
+    "tags": [ "dynamic-pricing", "award-charts", "sweet-spots", "advanced" ],
+    "sections": [
+      {
+        "heading": "Two pricing models: award charts and dynamic pricing",
+        "body": [
+          "Award charts price awards based on zones, distance bands, or categories. You may get predictable pricing if space is available.",
+          "Dynamic pricing ties award costs closer to demand and/or cash price. It can improve “any seat” availability, but prices can spike sharply during peak travel times."
+        ]
+      },
+      {
+        "heading": "Why sweet spots exist (and why they disappear)",
+        "body": [
+          "Sweet spots usually exist because one program’s pricing rules are more generous for certain routes, regions, or partner flights than another’s.",
+          "They can change without warning. The goal isn’t to memorize a thousand sweet spots—it’s to learn the pattern: compare programs, compare partners, compare dates."
+        ]
+      },
+      {
+        "heading": "Practical sweet-spot hunting method (repeatable)",
+        "body": [
+          "Start with your route and dates, then price it in at least two different programs (your primary program + a partner option).",
+          "If you have transferable points, evaluate whether transferring enables the cheaper pricing or better availability—then only transfer when ready to book."
+        ]
+      },
+      {
+        "heading": "Peak vs off-peak behavior (and how to use it)",
+        "body": [
+          "Dynamic programs tend to inflate points costs around holidays, weekends, and major events.",
+          "If you plan early, stay flexible on dates, and consider nearby airports, you often sidestep peak pricing."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "elite-status-and-perks-worth-chasing",
+    "title": "Elite status: perks, qualification, and when it’s actually worth it",
+    "excerpt": "Elite status can unlock real comfort—or become a distraction. Learn the benefits, the costs, and the smart path.",
+    "category": "Miles & Points Explained",
+    "readTime": "14 min read",
+    "publishedOn": "2025-12-14",
+    "seoTitle": "Airline & Hotel Elite Status Explained | Miles Go Round",
+    "seoDescription": "A clear guide to elite status: how it works, typical benefits, qualification paths, and when to pursue status vs just use points.",
+    "tags": [ "elite-status", "airlines", "hotels", "strategy" ],
+    "sections": [
+      {
+        "heading": "What elite status is and what it usually gives",
+        "body": [
+          "Elite status is a tiered loyalty level (airline or hotel) typically earned via flying, stays, or sometimes credit card ownership/spend.",
+          "It can include priority check-in, bonus earning, upgrades, late checkout, lounge access (in some cases), and better customer support.",
+          "Perks vary widely by brand and by region—so treat status like a tool, not a trophy."
+        ]
+      },
+      {
+        "heading": "Status vs points: different goals",
+        "body": [
+          "Points are about free/discounted travel. Status is about better treatment during travel (and sometimes faster earning).",
+          "If you travel only a few times per year, chasing status can cost more than it returns. In that case, focus on points for savings and pay for comfort selectively."
+        ]
+      },
+      {
+        "heading": "When status makes sense (real-world scenarios)",
+        "body": [
+          "If you fly the same airline often for work, status can reduce stress (priority lanes, rebooking help during disruptions).",
+          "If you do many hotel nights, status can materially improve the experience (breakfast, late checkout, room priority). But benefits can vary property-to-property."
+        ]
+      },
+      {
+        "heading": "A beginner-friendly approach to status",
+        "body": [
+          "Don’t chase status in Year 1. First, learn redemptions and build consistency with 1–2 programs.",
+          "If your travel volume naturally qualifies you, great. If not, treat status as optional until your pattern justifies it."
         ]
       }
     ]
