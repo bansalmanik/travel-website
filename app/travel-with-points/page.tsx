@@ -9,6 +9,13 @@ const sections = [
     accent: "bg-violet-100 text-violet-900",
   },
   {
+    title: "Miles & Points Explained",
+    description:
+      "Beginner-friendly guides to how miles and points work, from earning the right currencies to redeeming them on your timeline.",
+    href: "/travel-with-points/miles-and-points-explained",
+    accent: "bg-indigo-100 text-indigo-900",
+  },
+  {
     title: "Credit Cards",
     description:
       "Earn transferable points, maximize category bonuses, and decide when a premium annual fee is worth it.",

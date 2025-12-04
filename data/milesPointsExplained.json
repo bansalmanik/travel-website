@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "what-are-points-and-miles",
+    "title": "What Are Points and Miles?",
+    "excerpt": "Understand the difference between credit card points, airline miles, and hotel currencies so you can choose the right ones for your goals.",
+    "category": "Miles & Points Explained",
+    "readTime": "6 min read",
+    "publishedOn": "2024-01-12",
+    "seoTitle": "What Are Travel Points and Miles? | Miles Go Round",
+    "seoDescription": "A beginner-friendly walkthrough of how travel rewards currencies work across banks, airlines, and hotels.",
+    "tags": ["beginner", "currencies"],
+    "sections": [
+      {
+        "heading": "Points vs. miles",
+        "body": [
+          "Banks issue flexible points that can move to multiple airlines or hotels, while miles are tied to one loyalty program.",
+          "Knowing which currency you have matters because transfer partners and redemption tools vary by issuer."
+        ]
+      },
+      {
+        "heading": "How they are earned",
+        "body": [
+          "Credit card spend, welcome bonuses, and limited-time offers are the primary ways to earn both points and miles.",
+          "Some programs also award miles through shopping portals, dining programs, and travel partners."
+        ]
+      },
+      {
+        "heading": "Why they hold value",
+        "body": [
+          "Redemption rates often beat cash prices when you target premium cabins or aspirational hotels.",
+          "Understanding the currency lets you match the right program to the trip you want to book."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "earning-points-basics",
+    "title": "Earning Points: The Basics",
+    "excerpt": "Set up your wallet so everyday spend builds balances that are easy to move and redeem.",
+    "category": "Miles & Points Explained",
+    "readTime": "5 min read",
+    "publishedOn": "2024-02-02",
+    "updatedOn": "2024-04-15",
+    "tags": ["earning", "strategy"],
+    "sections": [
+      {
+        "heading": "Start with a transferable currency",
+        "body": [
+          "Cards that earn flexible bank points give you multiple airline and hotel transfer partners to choose from.",
+          "This flexibility protects you when a single program devalues or when a specific route lacks award space."
+        ]
+      },
+      {
+        "heading": "Use category bonuses",
+        "body": [
+          "Groceries, dining, and travel often earn higher multipliers. Align your cards to maximize those categories.",
+          "Track which card to use where with a simple note in your wallet or a phone lock screen wallpaper."
+        ]
+      },
+      {
+        "heading": "Stack limited-time offers",
+        "body": [
+          "Transfer bonuses and shopping portal promos can add 10–30% more value to the same purchase.",
+          "Check for targeted offers before big expenses and stack them with category bonuses when possible."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "redeeming-points-with-a-plan",
+    "title": "Redeeming Points With a Plan",
+    "excerpt": "Match the right currency to the trip you want, and you will avoid wasting hard-earned points.",
+    "category": "Miles & Points Explained",
+    "readTime": "7 min read",
+    "publishedOn": "2024-03-22",
+    "seoDescription": "A simple framework to choose the best redemption for flights and hotels without overthinking charts.",
+    "tags": ["redeeming", "flights", "hotels"],
+    "sections": [
+      {
+        "heading": "Define the goal first",
+        "body": [
+          "Pick a destination, cabin, and date range. The clearer your goal, the easier it is to pick the best loyalty program.",
+          "Goals also help you decide whether to transfer points, book through a portal, or pay cash."
+        ]
+      },
+      {
+        "heading": "Check partners before you transfer",
+        "body": [
+          "Many airlines share alliances, letting you book one carrier with another's miles. Verify award space before moving points.",
+          "Look for sweet spots where a partner charges fewer miles than the operating airline for the same seat."
+        ]
+      },
+      {
+        "heading": "Value your points",
+        "body": [
+          "Compare the cash fare to the miles required. If the cents-per-point value is low, save miles for a better opportunity.",
+          "Remember to factor in fees, surcharges, and whether the ticket earns elite-qualifying credit."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "glossary-of-points-terms",
+    "title": "Glossary: Common Points & Miles Terms",
+    "excerpt": "A quick reference for jargon like transfer partner, dynamic pricing, and award chart.",
+    "category": "Miles & Points Explained",
+    "readTime": "4 min read",
+    "publishedOn": "2024-04-30",
+    "updatedOn": "2024-05-10",
+    "seoTitle": "Points & Miles Glossary | Miles Go Round",
+    "tags": ["glossary", "definitions"],
+    "sections": [
+      {
+        "heading": "Transfer partner",
+        "body": [
+          "An airline or hotel program that accepts points from a bank currency, usually at a 1:1 ratio.",
+          "Partners expand your options beyond the bank's own travel portal."
+        ]
+      },
+      {
+        "heading": "Dynamic pricing",
+        "body": [
+          "A system where award prices rise and fall with demand instead of following a fixed chart.",
+          "During off-peak dates, dynamic programs can offer great value; peak travel can be expensive."
+        ]
+      },
+      {
+        "heading": "Award chart",
+        "body": [
+          "A published table that shows how many miles you need for specific regions, cabins, or dates.",
+          "Charts make it easier to spot sweet spots and to know whether a redemption is fair."
+        ]
+      }
+    ]
+  }
+]
