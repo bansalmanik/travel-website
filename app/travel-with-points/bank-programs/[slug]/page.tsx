@@ -94,7 +94,7 @@ export default async function BankProgramDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -120,29 +120,29 @@ export default async function BankProgramDetailPage({ params }: PageProps) {
 
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800">Bank rewards guide</p>
-          <h1 className="text-4xl font-semibold text-slate-900">{program.name}</h1>
+          <h1 className="text-4xl font-semibold text-slate-950">{program.name}</h1>
           <p className="text-base text-slate-700">{description}</p>
         </header>
 
         <section className="grid gap-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:grid-cols-2">
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800/80">Issuer</p>
-            <p className="text-sm font-medium text-slate-900">{program.issuer}</p>
+            <p className="text-sm font-medium text-slate-950">{program.issuer}</p>
           </div>
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800/80">Program type</p>
-            <p className="text-sm font-medium text-slate-900">{program.programType}</p>
+            <p className="text-sm font-medium text-slate-950">{program.programType}</p>
           </div>
           <div className="space-y-2 sm:col-span-2">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800/80">How to join</p>
-            <p className="text-sm font-medium text-slate-900">{program.joinCost}</p>
+            <p className="text-sm font-medium text-slate-950">{program.joinCost}</p>
           </div>
         </section>
 
         <BankProgramSections sections={program.sections} />
 
         <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-slate-900">Compare more bank portals</p>
+          <p className="font-semibold text-slate-950">Compare more bank portals</p>
           <Link href="/travel-with-points/bank-programs" className="inline-flex items-center font-semibold text-rose-800">
             Back to bank programs hub
             <svg

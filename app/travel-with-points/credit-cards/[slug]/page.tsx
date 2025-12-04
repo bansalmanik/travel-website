@@ -30,7 +30,7 @@ function SectionWrapper({ title, description, children }: SectionWrapperProps) {
   return (
     <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-slate-900">{title}</h2>
+        <h2 className="text-xl font-semibold text-slate-950">{title}</h2>
         {description ? <p className="text-sm text-slate-700">{description}</p> : null}
       </div>
       {children}
@@ -164,7 +164,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
                       <th
                         key={column}
                         scope="col"
-                        className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-900"
+                        className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-950"
                       >
                         {column}
                       </th>
@@ -200,7 +200,7 @@ function SubSection({ subsection }: { subsection: CardSubSection }) {
 
   return (
     <div className="space-y-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-      {subsection.title ? <h3 className="text-base font-semibold text-slate-900">{subsection.title}</h3> : null}
+      {subsection.title ? <h3 className="text-base font-semibold text-slate-950">{subsection.title}</h3> : null}
       {subsection.description ? <p className="text-sm text-slate-700">{subsection.description}</p> : null}
       {subsection.content ? <RichContentBlocks content={subsection.content} /> : null}
     </div>
@@ -240,36 +240,36 @@ function CardSnapshot({ card }: CardSnapshotProps) {
     <SectionWrapper title="Card snapshot">
       <dl className="grid gap-5 text-sm text-slate-700 sm:grid-cols-2">
         <div>
-          <dt className="font-semibold text-slate-900">Issuer</dt>
+          <dt className="font-semibold text-slate-950">Issuer</dt>
           <dd>{card.issuer}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-slate-900">Network</dt>
+          <dt className="font-semibold text-slate-950">Network</dt>
           <dd>{card.network}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-slate-900">Card type</dt>
+          <dt className="font-semibold text-slate-950">Card type</dt>
           <dd>{card.type}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-slate-900">Annual fee</dt>
+          <dt className="font-semibold text-slate-950">Annual fee</dt>
           <dd>{formatAnnualFee(card.annualFee)}</dd>
         </div>
         {card.rewardsCurrency ? (
           <div>
-            <dt className="font-semibold text-slate-900">Rewards currency</dt>
+            <dt className="font-semibold text-slate-950">Rewards currency</dt>
             <dd>{card.rewardsCurrency}</dd>
           </div>
         ) : null}
         {card.conversion ? (
           <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Conversion</dt>
+            <dt className="font-semibold text-slate-950">Conversion</dt>
             <dd className="mt-1">{card.conversion}</dd>
           </div>
         ) : null}
         {card.keyHighlights?.length ? (
           <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Highlights</dt>
+            <dt className="font-semibold text-slate-950">Highlights</dt>
             <dd className="mt-2">
               <ul className="space-y-2">
                 {card.keyHighlights.map((highlight) => (
@@ -486,7 +486,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script
         type="application/ld+json"
@@ -513,7 +513,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
 
         <header className="space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Credit card guide</p>
-          <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{card.name}</h1>
+          <h1 className="text-3xl font-semibold text-slate-950 sm:text-4xl">{card.name}</h1>
           <p className="text-base text-slate-700 sm:text-lg">{card.summary}</p>
         </header>
 
@@ -522,7 +522,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         <CardDetailSections card={card} />
 
         <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-slate-900">Ready for more cards?</p>
+          <p className="font-semibold text-slate-950">Ready for more cards?</p>
           <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-amber-700">
             Back to credit cards hub
             <svg

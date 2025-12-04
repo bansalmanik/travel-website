@@ -111,7 +111,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     return (
       <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-slate-900">{title}</h2>
+          <h2 className="text-xl font-semibold text-slate-950">{title}</h2>
           {section.description ? (
             <p className="text-sm leading-6 text-slate-700">{section.description}</p>
           ) : null}
@@ -142,7 +142,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
     return (
       <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-slate-900">Quick facts</h2>
+          <h2 className="text-xl font-semibold text-slate-950">Quick facts</h2>
           <dl className="grid gap-4 sm:grid-cols-2">
             {facts.map((fact) => (
               <div
@@ -152,7 +152,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
                 <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-800">
                   {fact.label}
                 </dt>
-                <dd className="mt-2 text-sm font-medium text-slate-900">{fact.value}</dd>
+                <dd className="mt-2 text-sm font-medium text-slate-950">{fact.value}</dd>
               </div>
             ))}
           </dl>
@@ -193,7 +193,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
       <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-xl font-semibold text-slate-900">Status levels</h2>
+            <h2 className="text-xl font-semibold text-slate-950">Status levels</h2>
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-800">
               Elite benefits by tier
             </p>
@@ -225,7 +225,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
                   <tr key={row.label} className="align-top">
                     <th
                       scope="row"
-                      className="rounded-lg bg-slate-50 px-4 py-4 text-left text-sm font-semibold text-slate-900"
+                      className="rounded-lg bg-slate-50 px-4 py-4 text-left text-sm font-semibold text-slate-950"
                     >
                       <div className="space-y-2">
                         <span>{row.label}</span>
@@ -275,7 +275,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -301,7 +301,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
 
         <header className="space-y-4">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-800">Hotel loyalty guide</p>
-          <h1 className="text-4xl font-semibold text-slate-900">{program.name}</h1>
+          <h1 className="text-4xl font-semibold text-slate-950">{program.name}</h1>
           <p className="text-base text-slate-700">{program.summary}</p>
           {renderTags(program.tags)}
         </header>
@@ -309,7 +309,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
         <section className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="space-y-2">
-              <h2 className="text-xl font-semibold text-slate-900">Program footprint</h2>
+              <h2 className="text-xl font-semibold text-slate-950">Program footprint</h2>
               <p className="text-sm text-slate-700">{program.footprint}</p>
             </div>
             <div className="rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-xs uppercase tracking-[0.3em] text-sky-800">
@@ -350,7 +350,7 @@ export default async function HotelProgramDetailPage({ params }: PageProps) {
         {renderListSection("Notes", program.notesSection)}
 
         <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-slate-900">Research more hotel brands</p>
+          <p className="font-semibold text-slate-950">Research more hotel brands</p>
           <Link href="/travel-with-points/hotel-programs" className="inline-flex items-center font-semibold text-sky-800">
             Back to hotel programs hub
             <svg

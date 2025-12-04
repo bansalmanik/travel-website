@@ -41,7 +41,7 @@ export default async function Home() {
   const heroImageSrc = "/images/content/cover_1.jpg";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/40 to-sky-50 text-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/40 to-sky-50 text-slate-950">
       <header className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
@@ -64,7 +64,7 @@ export default async function Home() {
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4">
             <Link
-              className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-md shadow-amber-300/40 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
+              className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-md shadow-amber-300/40 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
               href="/travel-with-points"
             >
               Travel on Points
@@ -145,7 +145,7 @@ export default async function Home() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 sm:text-sm sm:tracking-[0.3em]">
                 Latest Travel Resources
               </p>
-              <h2 className="text-2xl font-semibold text-slate-900 sm:text-4xl">
+              <h2 className="text-2xl font-semibold text-slate-950 sm:text-4xl">
                 Behind-the-scenes notes & resources
               </h2>
             </div>
@@ -163,7 +163,7 @@ export default async function Home() {
                   aria-label={`View travel resource ${entry.title}`}
                 >
                   <span className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-600">{entry.date}</span>
-                  <span className="text-pretty text-lg font-semibold text-slate-900">{entry.title}</span>
+                  <span className="text-pretty text-lg font-semibold text-slate-950">{entry.title}</span>
                 </a>
               </li>
             ))}
@@ -176,13 +176,13 @@ export default async function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 sm:text-left">
           <p className="text-sm text-slate-700">© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
           <div className="flex flex-wrap items-center justify-center gap-5 sm:justify-start">
-            <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
+            <a className="font-semibold text-slate-700 transition hover:text-slate-950" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
               Instagram
             </a>
-            <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://www.youtube.com/@milesGoRound" target="_blank" rel="noreferrer">
+            <a className="font-semibold text-slate-700 transition hover:text-slate-950" href="https://www.youtube.com/@milesGoRound" target="_blank" rel="noreferrer">
               YouTube
             </a>
-            <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
+            <a className="font-semibold text-slate-700 transition hover:text-slate-950" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
               X/twitter
             </a>
           </div>

@@ -55,7 +55,7 @@ const quickTips = [
 
 export default function TravelWithPointsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-4 pb-20 pt-16 sm:px-6 lg:gap-20 lg:pb-24 lg:pt-24">
         <header className="space-y-5 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 sm:text-sm">Travel with Points</p>
@@ -104,10 +104,10 @@ export default function TravelWithPointsPage() {
 
         <section className="space-y-5">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">Quick win playbook</h2>
+            <h2 className="text-lg font-semibold text-slate-950 sm:text-xl">Quick win playbook</h2>
             <Link
               href="/travel-with-points/credit-cards"
-              className="hidden text-sm font-semibold text-slate-700 underline-offset-4 transition hover:text-slate-900 sm:inline-flex"
+              className="hidden text-sm font-semibold text-slate-700 underline-offset-4 transition hover:text-slate-950 sm:inline-flex"
             >
               Browse starter cards →
             </Link>
@@ -118,7 +118,7 @@ export default function TravelWithPointsPage() {
                 key={tip.title}
                 className="min-w-[72%] snap-center rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm backdrop-blur sm:min-w-0"
               >
-                <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{tip.title}</h3>
+                <h3 className="text-base font-semibold text-slate-950 sm:text-lg">{tip.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-700">{tip.detail}</p>
               </div>
             ))}

@@ -39,7 +39,7 @@ export default async function BankProgramsPage() {
   const programs = await getPrograms();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <div className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-24 lg:py-32">
         <span className="inline-flex items-center self-center rounded-full border border-rose-200 bg-rose-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-rose-800">
           Bank Programs
@@ -62,7 +62,7 @@ export default async function BankProgramsPage() {
                   <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800">
                     {program.issuer}
                   </p>
-                  <h2 className="text-xl font-semibold text-slate-900">{program.name}</h2>
+                  <h2 className="text-xl font-semibold text-slate-950">{program.name}</h2>
                 </div>
                 <dl className="grid gap-3 text-xs uppercase tracking-[0.25em] text-rose-800/80">
                   <div className="flex flex-col gap-1 text-[0.7rem]">

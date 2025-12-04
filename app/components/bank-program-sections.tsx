@@ -52,7 +52,7 @@ function renderKeyValueSection(section: KeyValueSection) {
       className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-950">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
       <dl className="grid gap-4 text-sm text-slate-700 sm:grid-cols-2">
@@ -66,7 +66,7 @@ function renderKeyValueSection(section: KeyValueSection) {
               <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">
                 {item.label}
               </dt>
-              <dd className="mt-2 text-sm font-medium text-slate-900">{item.value}</dd>
+              <dd className="mt-2 text-sm font-medium text-slate-950">{item.value}</dd>
             </div>
           ))}
       </dl>
@@ -85,7 +85,7 @@ function renderBulletSection(section: BulletSection) {
       className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-950">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
       <ul className="space-y-3 text-sm leading-6 text-slate-700">
@@ -127,7 +127,7 @@ function renderContentBlocksSection(section: ContentBlocksSection) {
       className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-950">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
       <div className="space-y-4">
@@ -171,7 +171,7 @@ function renderTableSection(section: TableSection) {
       className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-950">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
       <div className="overflow-x-auto">

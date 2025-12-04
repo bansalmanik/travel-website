@@ -44,7 +44,7 @@ export default async function TravelResourcesPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-950">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -54,7 +54,7 @@ export default async function TravelResourcesPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-600">
             Field Notes
           </p>
-          <h1 className="text-4xl font-semibold text-slate-900 sm:text-5xl">
+          <h1 className="text-4xl font-semibold text-slate-950 sm:text-5xl">
             Travel Resources Library
           </h1>
           <p className="mx-auto max-w-2xl text-base text-slate-600">
@@ -88,7 +88,7 @@ export default async function TravelResourcesPage() {
                   <span>{entry.displayDate}</span>
                   <span>{entry.readTime}</span>
                 </div>
-                <h2 className="text-2xl font-semibold text-slate-900">{entry.title}</h2>
+                <h2 className="text-2xl font-semibold text-slate-950">{entry.title}</h2>
                 <p className="text-sm leading-6 text-slate-600">{entry.summary}</p>
                 <div className="mt-auto pt-4 flex items-center text-sm font-semibold text-amber-600">
                   <span>View the resource</span>

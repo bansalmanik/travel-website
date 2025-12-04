@@ -83,7 +83,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="antialiased bg-zinc-50 text-slate-900">
+      <body className="antialiased bg-zinc-50 text-slate-950">
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>

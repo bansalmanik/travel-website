@@ -43,7 +43,7 @@ export default async function CreditCardsPage() {
     await getCreditCardContent();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Travel with Points</p>
@@ -57,7 +57,7 @@ export default async function CreditCardsPage() {
         </header>
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Featured travel credit cards</h2>
+          <h2 className="text-2xl font-semibold text-slate-950">Featured travel credit cards</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {cards.map((card) => (
               <article
@@ -67,10 +67,10 @@ export default async function CreditCardsPage() {
                 <div className="space-y-4">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
-                    <h3 className="mt-2 text-xl font-semibold text-slate-900">
+                    <h3 className="mt-2 text-xl font-semibold text-slate-950">
                       <Link
                         href={`/travel-with-points/credit-cards/${card.slug}`}
-                        className="text-slate-900 underline-offset-4 transition hover:text-amber-700 hover:underline"
+                        className="text-slate-950 underline-offset-4 transition hover:text-amber-700 hover:underline"
                       >
                         {card.name}
                       </Link>
@@ -79,13 +79,13 @@ export default async function CreditCardsPage() {
                   </div>
                   <dl className="grid gap-3 text-sm text-slate-700">
                     <div>
-                      <dt className="font-semibold text-slate-900">Annual fee</dt>
+                      <dt className="font-semibold text-slate-950">Annual fee</dt>
                       <dd>{formatAnnualFee(card.annualFee)}</dd>
                     </div>
                   </dl>
                   {card.keyHighlights?.length ? (
                     <p className="text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">Standout highlight:</span> {card.keyHighlights[0]}
+                      <span className="font-semibold text-slate-950">Standout highlight:</span> {card.keyHighlights[0]}
                     </p>
                   ) : null}
                 </div>
@@ -114,11 +114,11 @@ export default async function CreditCardsPage() {
         </section>
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Core principles</h2>
+          <h2 className="text-2xl font-semibold text-slate-950">Core principles</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {cardStrategies.map((strategy) => (
               <article key={strategy.title} className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-lg font-semibold text-slate-900">{strategy.title}</h3>
+                <h3 className="text-lg font-semibold text-slate-950">{strategy.title}</h3>
                 <p className="text-sm leading-6 text-slate-700">{strategy.description}</p>
               </article>
             ))}
@@ -126,11 +126,11 @@ export default async function CreditCardsPage() {
         </section>
 
         <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Starter card pairings</h2>
+          <h2 className="text-2xl font-semibold text-slate-950">Starter card pairings</h2>
           <div className="space-y-6">
             {favoriteCombos.map((combo) => (
               <article key={combo.name} className="space-y-2 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                <h3 className="text-lg font-semibold text-slate-900">{combo.name}</h3>
+                <h3 className="text-lg font-semibold text-slate-950">{combo.name}</h3>
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">
                   {combo.cards.join(" + ")}
                 </p>

@@ -35,7 +35,7 @@ export default async function FlightProgramsPage() {
   } = await getFlightProgramContent();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-700">Travel with Points</p>
@@ -47,7 +47,7 @@ export default async function FlightProgramsPage() {
         </header>
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Featured airline loyalty programs</h2>
+          <h2 className="text-2xl font-semibold text-slate-950">Featured airline loyalty programs</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {programs.map((program) => {
               const signatureSweetSpotSection = program.sections?.find(
@@ -67,10 +67,10 @@ export default async function FlightProgramsPage() {
                   <div className="space-y-4">
                     <div className="space-y-2">
                       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-700">{program.alliance}</p>
-                      <h3 className="text-xl font-semibold text-slate-900">
+                      <h3 className="text-xl font-semibold text-slate-950">
                         <Link
                           href={`/travel-with-points/flight-programs/${program.slug}`}
-                          className="text-slate-900 underline-offset-4 transition hover:text-emerald-800 hover:underline"
+                          className="text-slate-950 underline-offset-4 transition hover:text-emerald-800 hover:underline"
                         >
                           {program.name}
                         </Link>
@@ -79,13 +79,13 @@ export default async function FlightProgramsPage() {
                     </div>
                     <dl className="grid gap-3 text-sm text-slate-700">
                       <div>
-                        <dt className="font-semibold text-slate-900">Primary hubs</dt>
+                        <dt className="font-semibold text-slate-950">Primary hubs</dt>
                         <dd>{program.hub}</dd>
                       </div>
                     </dl>
                     {signatureSweetSpot ? (
                       <p className="text-sm text-slate-700">
-                        <span className="font-semibold text-slate-900">Signature sweet spot:</span> {signatureSweetSpot}
+                        <span className="font-semibold text-slate-950">Signature sweet spot:</span> {signatureSweetSpot}
                       </p>
                     ) : null}
                   </div>
@@ -115,11 +115,11 @@ export default async function FlightProgramsPage() {
         </section>
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Award booking playbook</h2>
+          <h2 className="text-2xl font-semibold text-slate-950">Award booking playbook</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {awardPlaybook.map((item) => (
               <article key={item.title} className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                <h3 className="text-lg font-semibold text-slate-950">{item.title}</h3>
                 <p className="text-sm leading-6 text-slate-700">{item.detail}</p>
               </article>
             ))}
@@ -127,12 +127,12 @@ export default async function FlightProgramsPage() {
         </section>
 
         <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Favorite sweet spots</h2>
+          <h2 className="text-2xl font-semibold text-slate-950">Favorite sweet spots</h2>
           <div className="space-y-6">
             {favoriteRoutes.map((route) => (
               <article key={route.route} className="space-y-2 rounded-2xl border border-slate-200 bg-slate-50 p-6">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-lg font-semibold text-slate-900">{route.route}</h3>
+                  <h3 className="text-lg font-semibold text-slate-950">{route.route}</h3>
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-800">{route.program}</p>
                 </div>
                 <p className="text-sm leading-6 text-slate-700">{route.highlight}</p>

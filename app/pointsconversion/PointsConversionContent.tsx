@@ -215,7 +215,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <div className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
         <header className="space-y-3 text-center sm:text-left">
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
@@ -235,7 +235,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               <select
                 value={selectedProgramName}
                 onChange={handleProgramChange}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-950 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Select the card program"
               >
                 {programOptions.map((option) => (
@@ -253,7 +253,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               <select
                 value={normalizedSelectedFrom}
                 onChange={handleFromChange}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-950 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Select the points program you are transferring from"
                 disabled={fromOptions.length === 0}
               >
@@ -280,7 +280,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               <select
                 value={normalizedSelectedTo}
                 onChange={handleToChange}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-950 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Select the partner you are transferring to"
                 disabled={toOptions.length === 0}
               >
@@ -304,7 +304,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 value={transferPoints}
                 onChange={handleTransferPointsChange}
                 placeholder="Enter points to transfer"
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-950 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Enter the number of points you want to transfer"
               />
             </label>
@@ -315,7 +315,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
 
           {filteredPartnerRows.length === 0 ? (
             <div className="px-4 py-10 text-center sm:px-6">
-              <p className="text-base font-semibold text-slate-900">No partners to show yet</p>
+              <p className="text-base font-semibold text-slate-950">No partners to show yet</p>
               <p className="mt-2 text-sm text-slate-600">
                 Pick a program and card to instantly see available transfer partners and ratios.
               </p>
@@ -336,10 +336,10 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 return (
                   <div
                     key={`${partner.to}-${partner.rate}`}
-                    className="grid grid-cols-2 gap-3 px-4 py-3 text-sm text-slate-900 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6"
+                    className="grid grid-cols-2 gap-3 px-4 py-3 text-sm text-slate-950 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6"
                   >
                     <div className="space-y-1">
-                      <p className="font-semibold text-slate-900">{partner.to}</p>
+                      <p className="font-semibold text-slate-950">{partner.to}</p>
                       <p className="text-xs uppercase tracking-[0.22em] text-slate-500 sm:hidden">Notes</p>
                       <p className="text-xs text-slate-600 sm:hidden">{partner.insight}</p>
                     </div>

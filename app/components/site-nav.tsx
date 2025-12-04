@@ -51,7 +51,7 @@ export function SiteNav() {
   return (
     <nav
       aria-label="Primary navigation"
-      className="safe-area-top sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 text-slate-900 backdrop-blur supports-[backdrop-filter]:bg-white/90"
+      className="safe-area-top sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 text-slate-950 backdrop-blur supports-[backdrop-filter]:bg-white/90"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 pb-3 pt-3 md:flex-row md:items-center md:justify-between md:px-6 md:pb-4 md:pt-4">
         <div className="flex items-center justify-between gap-4">

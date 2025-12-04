@@ -23,7 +23,7 @@ export default async function HotelProgramsPage() {
     await getHotelProgramContent();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-950">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-12 px-4 py-16 sm:gap-16 sm:px-6 sm:py-20 lg:py-28">
         <header className="space-y-4 sm:space-y-5">
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.4em] text-sky-700 sm:text-xs">Travel with Points</p>
@@ -35,7 +35,7 @@ export default async function HotelProgramsPage() {
         </header>
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Featured hotel programs</h2>
+          <h2 className="text-2xl font-semibold text-slate-950 sm:text-3xl">Featured hotel programs</h2>
           <div className="grid gap-6 sm:gap-7 md:grid-cols-2">
             {programs.map((program) => {
               const highlight = program.overview?.items?.[0];
@@ -52,10 +52,10 @@ export default async function HotelProgramsPage() {
                   <div className="space-y-4">
                     <div className="space-y-2">
                       <p className="text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-sky-700 sm:text-xs">{program.footprint}</p>
-                      <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
+                      <h3 className="text-lg font-semibold text-slate-950 sm:text-xl">
                         <Link
                           href={`/travel-with-points/hotel-programs/${program.slug}`}
-                          className="text-slate-900 underline-offset-4 transition hover:text-sky-800 hover:underline"
+                          className="text-slate-950 underline-offset-4 transition hover:text-sky-800 hover:underline"
                         >
                           {program.name}
                         </Link>
@@ -64,7 +64,7 @@ export default async function HotelProgramsPage() {
                     </div>
                     {highlight ? (
                       <p className="text-sm text-slate-700 sm:text-base">
-                        <span className="font-semibold text-slate-900">Snapshot:</span> {highlight}
+                        <span className="font-semibold text-slate-950">Snapshot:</span> {highlight}
                       </p>
                     ) : null}
                     {topTier ? (
@@ -97,11 +97,11 @@ export default async function HotelProgramsPage() {
         </section>
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Paths to elite status</h2>
+          <h2 className="text-2xl font-semibold text-slate-950 sm:text-3xl">Paths to elite status</h2>
           <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
             {elitePaths.map((path) => (
               <article key={path.tier} className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{path.tier}</h3>
+                <h3 className="text-base font-semibold text-slate-950 sm:text-lg">{path.tier}</h3>
                 <p className="text-sm leading-6 text-slate-700 sm:text-base">{path.highlight}</p>
               </article>
             ))}
@@ -109,7 +109,7 @@ export default async function HotelProgramsPage() {
         </section>
 
         <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Booking checklist</h2>
+          <h2 className="text-2xl font-semibold text-slate-950 sm:text-3xl">Booking checklist</h2>
           <ul className="space-y-4 text-sm leading-6 text-slate-700 sm:text-base">
             {bookingTips.map((tip) => (
               <li key={tip} className="flex items-start gap-3">
