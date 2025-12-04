@@ -54,7 +54,7 @@ export default async function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/55 to-slate-900/30" />
         </div>
-        <div className="mx-auto flex max-w-4xl flex-col gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20">
+        <div className="mx-auto flex min-h-[70vh] max-w-4xl flex-col justify-center gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20 lg:min-h-[60vh]">
           <h1 className="text-pretty text-center text-3xl font-bold leading-tight sm:text-left sm:text-5xl sm:leading-tight">
             Make Every Mile Meaningful
           </h1>
