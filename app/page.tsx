@@ -42,7 +42,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/40 to-sky-50 text-slate-900">
-      <header className="relative isolate overflow-hidden">
+      <header className="relative isolate overflow-hidden min-h-[60vh] sm:min-h-[70vh]">
         <div className="absolute inset-0 -z-10">
           <Image
             src={heroImageSrc}
@@ -54,7 +54,7 @@ export default async function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/55 to-slate-900/30" />
         </div>
-        <div className="mx-auto flex max-w-4xl flex-col gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20">
+        <div className="mx-auto flex h-full max-w-4xl flex-col justify-end gap-6 px-4 pb-16 pt-14 text-white sm:justify-center sm:px-6 sm:pb-24 sm:pt-20">
           <h1 className="text-pretty text-center text-3xl font-bold leading-tight sm:text-left sm:text-5xl sm:leading-tight">
             Make Every Mile Meaningful
           </h1>
