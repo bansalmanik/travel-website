@@ -40,8 +40,7 @@
           "Award ticket / award night: booking travel using points instead of paying the full cash fare.",
           "Transfer partner: an airline or hotel program you can move bank points into (usually one-way transfers).",
           "Award availability: the seats/rooms a program releases for redemption; you might see “sold out” even when cash seats exist.",
-          "Taxes & fees / surcharges: award bookings often still require cash payment for taxes and sometimes extra airline-added fees.",
-          "Cents-per-point (CPP): a simple way to estimate if a redemption is good (you’ll learn the exact formula later)."
+          "Taxes & fees / surcharges: award bookings often still require cash payment for taxes and sometimes extra airline-added fees."
         ]
       }
     ]
@@ -85,13 +84,6 @@
           "Programs can change award pricing with little notice. This can make the same trip cost more points later.",
           "That’s why beginners should prefer flexible strategies (transferable points + multiple partner options), and only transfer when you are ready to book."
         ]
-      },
-      {
-        "heading": "A simple tracking system that doesn’t become a hobby",
-        "body": [
-          "Make one lightweight tracker (Notion/Sheet) with: program name, username/email, current balance, expiration rule, and notes (e.g., “good for domestic flights” or “watch surcharges”).",
-          "Add one “goal” column: what you’re collecting the currency for. You’ll make better decisions when every balance has a purpose."
-        ]
       }
     ]
   },
@@ -107,79 +99,32 @@
     "tags": [ "earning", "credit-cards", "portals", "promotions", "beginner" ],
     "sections": [
       {
-        "heading": "The #1 accelerator: welcome bonuses (used responsibly)",
-        "body": [
-          "Welcome bonuses can be the fastest way to build a meaningful balance. The rule: never spend extra just to earn points—time card applications around real expenses (travel, insurance, annual fees, home purchases).",
-          "If you miss a payment or pay high interest, the math breaks. Treat points as a byproduct of good financial habits, not the reason to spend."
-        ]
-      },
-      {
         "heading": "Everyday spend: earn multipliers by matching cards to habits",
         "body": [
-          "Most rewards systems give higher earn rates in categories (dining, groceries, fuel, travel). The goal isn’t to optimize every rupee/dollar—it’s to pick a small setup that fits your routine.",
+          "Most rewards systems give higher earn rates in specific categories (dining, groceries, fuel, travel). Figure out where you spend the most in a month and pick a card accordingly.",
           "Example: If you spend a lot on dining and groceries, prioritize the card that earns best there and use a simple backup card for everything else."
         ]
       },
       {
-        "heading": "Earning from flying and hotel stays (when it matters)",
+        "heading": "Use Bank Portals like HDFC SmartBuy and ICIC IShop",
         "body": [
-          "Flights and stays can earn points, but the return can be smaller than people expect unless you travel frequently or hold elite status/co-branded cards.",
-          "Always attach your loyalty number to bookings, keep receipts, and know the program’s rules on eligible fares and nights."
+          "Instead of spending money directly on a merchant like BigBasket or Swiggy, check weather you can buy vouchers from bank portal which will give you 5x-10x more points.",
+          "Similarly booking Flights and Hotels directly from these bank Portals give accelerated points.",
+          "Alwyas do the maths and see what is beast payment option"
         ]
       },
       {
-        "heading": "Portals, dining programs, and promotions: the stacking layer",
+        "heading": "Start Using Amazon Pay (It's a game changer)",
         "body": [
-          "Shopping portals can award extra points for purchases you were already making. Dining programs can do something similar at participating restaurants.",
-          "Promotions can multiply earning drastically, but they come with terms (registration, dates, eligible brands). Use them selectively: chase only what matches your existing plans."
+          "Many spends like Insurance and Utility payments can be part of excluded categories but you can often use Amazon Pay blance to make such payment.",
+          "Buy Amazon Pay vouchers using your bank portal or uisng the best cashback card you have and load them in your Amazon Pay account."
         ]
       },
       {
-        "heading": "A realistic example: building a first “useful” balance",
+        "heading": "Spend Carefully",
         "body": [
-          "Scenario: Over 3–4 months, you earn a welcome bonus plus regular spending points. You now have enough for a short-haul flight redemption or a couple of mid-range hotel nights.",
-          "From here, you switch to goal-based earning: collect the currency that best matches the trips you actually take, not what looks exciting online."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "choose-a-strategy-and-set-goals",
-    "title": "Pick a simple strategy: goals, currencies, and what to collect first",
-    "excerpt": "Stop collecting random balances. Choose a strategy that matches your travel style and keeps your setup simple.",
-    "category": "Miles & Points Explained",
-    "readTime": "12 min read",
-    "publishedOn": "2025-12-08",
-    "seoTitle": "Choose a Points Strategy (Simple + Effective) | Miles Go Round",
-    "seoDescription": "How to decide which programs to focus on based on your destinations, travel style, and tolerance for complexity.",
-    "tags": [ "strategy", "beginner", "planning", "simplicity" ],
-    "sections": [
-      {
-        "heading": "Start with the trip, not the points",
-        "body": [
-          "Define 1–2 realistic travel goals for the next 12 months: a domestic weekend trip, one international trip, or a family vacation. Your goal determines the best currencies to collect.",
-          "If your goal is mostly short-haul economy travel, simple fixed-value or low-fee options might suit you better than complex premium-cabin strategies."
-        ]
-      },
-      {
-        "heading": "Choose 1 primary currency + 1 backup (avoid the collector trap)",
-        "body": [
-          "A clean beginner setup: one flexible currency (bank points) and one focused program (airline or hotel you will actually use).",
-          "Avoid spreading across 8 programs with tiny balances—that’s how points expire unused."
-        ]
-      },
-      {
-        "heading": "When hotel points make more sense than airline miles",
-        "body": [
-          "If a major cost of your travel is accommodation (and you’re picky about location), hotel points can be more satisfying than flight miles.",
-          "Hotels can also be easier for beginners because award availability is often more straightforward than airline award seats."
-        ]
-      },
-      {
-        "heading": "Simplicity rules: build a setup you can maintain",
-        "body": [
-          "The best strategy is the one you can stick to. A slightly less “optimal” plan that you actually execute beats a complicated plan you abandon.",
-          "If tracking and hunting feels stressful, use fewer programs, transfer only when booking, and prefer predictable redemptions."
+          "Never spend a dime just because you are getting good rewards. Always treat points and miles as extra benefit that yoou got while make the usual spend that were anyways going to do.",
+          "If you think grocery is cheaper at your local Kiryana shop even after factoring in points and miles then by all mean get grocery from your local store. thCredit Cards are only rewarding if used correctly."
         ]
       }
     ]
@@ -200,14 +145,6 @@
         "body": [
           "Your first filter is simple: is this redemption actually saving meaningful cash (or upgrading your experience) compared to paying cash?",
           "Points are best used where they replace expensive travel or unlock experiences you wouldn’t comfortably buy with cash."
-        ]
-      },
-      {
-        "heading": "Cents-per-point (CPP): the simple calculation",
-        "body": [
-          "CPP is an estimate of value per point. The common approach: take the cash price you would have paid, subtract unavoidable cash you still pay on the award (taxes/fees), and divide by the points used.",
-          "Example: A ticket costs $500 or 30,000 points + $50 taxes. Your point value estimate is ($500 - $50) / 30,000 = $0.015 = 1.5 CPP.",
-          "CPP is a tool, not a religion. Use it to avoid terrible value and to recognize clear wins."
         ]
       },
       {
@@ -248,7 +185,6 @@
         "heading": "The flexibility triangle: dates, airports, and cabins",
         "body": [
           "If you can flex dates by even 1–3 days, you often find dramatically better pricing or availability.",
-          "Nearby airports can unlock availability: consider alternate departure/arrival airports when practical.",
           "Cabin flexibility helps too: sometimes premium economy appears when economy is unavailable, or mixed-cabin itineraries reduce cost."
         ]
       },
@@ -256,7 +192,8 @@
         "heading": "Partner bookings and alliances (the hidden superpower)",
         "body": [
           "Many programs let you redeem miles for flights on partner airlines. Alliances and partnerships expand your options beyond one airline’s own metal.",
-          "This is where “sweet spots” come from: you might book the same seat through a partner program for fewer miles, depending on the partner’s rules and pricing."
+          "This is where “sweet spots” come from: you might book the same seat through a partner program for fewer miles, depending on the partner’s rules and pricing.",
+          "Example : The cheapest option to buy Cathay Pacific award ticket is not through Cathay Pacific directly, but using Qatar Airwayas Avios(both are one world alliance partners)"
         ]
       },
       {
@@ -429,7 +366,7 @@
         ]
       },
       {
-        "heading": "When status makes sense (real-world scenarios)",
+        "heading": "When status makes sense",
         "body": [
           "If you fly the same airline often for work, status can reduce stress (priority lanes, rebooking help during disruptions).",
           "If you do many hotel nights, status can materially improve the experience (breakfast, late checkout, room priority). But benefits can vary property-to-property."
