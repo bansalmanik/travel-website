@@ -1,21 +1,35 @@
 [
   {
-    "slug": "miles-and-points-foundations",
-    "title": "Miles & Points Foundations: what they are and how the ecosystem works",
+    "slug": "what-are-points-and-miles",
+    "title": "Points & Miles : What are they?",
     "excerpt": "Start here: learn the core vocabulary, who issues points, and how to think about them like travel currency (not cash).",
     "category": "Miles & Points Explained",
     "readTime": "12 min read",
     "publishedOn": "2025-12-05",
     "seoTitle": "Miles & Points Foundations | Miles Go Round",
-    "seoDescription": "A complete beginner-friendly foundation: what points and miles are, who issues them, and the building blocks of award travel.",
+    "seoDescription": "A beginner's guide to points and miles: what points and miles are, who issues them, and the building blocks of award travel.",
     "tags": [ "beginner", "basics", "glossary", "ecosystem" ],
     "sections": [
       {
-        "heading": "What “points” and “miles” really mean",
+        "heading": "What “Points” and “Miles” really mean",
         "body": [
-          "Points and miles are loyalty currencies. Airlines, hotels, and banks issue them to reward repeat customers and encourage more spending or bookings.",
-          "Despite the name, “miles” are not always based on distance. Many programs award based on ticket price, cabin, or fare type. Similarly, “points” can represent many different types of rewards across banks and hotels.",
-          "The key idea: treat them like a special travel-only currency with rules (availability, fees, expirations, and program pricing). They are not equal to cash, and their value changes depending on how you use them."
+          "Points and miles are loyalty currencies. Airlines, Hotels, and Banks issue them to reward repeat customers and encourage more spending or bookings.",
+          "Airline Miles are specific to that airline. Despite the name, “miles” are not always based on distance. Think of Miles as just a fancy term for reward points. Most airline don't even call their reward points “miles” anymore. Example : Air India use terminology “Maharaja Points” while Indigo uses “BluChips”",
+          "Like Airlines, popular Hotel chains like Marriot and Hilton issue Hotel Points. These Points can be used to book Hotels Stays. Most Hotel chains also provide option to partially pay using points and remaining by cash/card",
+          "Bank Points likewise are issued by banks and are really powerfull as in most cases they can be transfered to Airlines Miles or Hotel points with certian Terms and Conditions."
+        ]
+      },
+      {
+        "heading": "Core terms you must know",
+        "body": [
+          "Program : Airline, Hotel or Bank Loyalty programs.",
+          "Award ticket: Booking Airline ticket using Points and Miles.",
+          "Award night: Booking Hotel stay using Points and Miles.",
+          "Transfer partner: An airline or Hotel program you can move bank points into.",
+          "Award availability: seats/rooms a program releases for redemption using points and miles.",
+          "Cabin : Class of service (Economy, Business, First).",
+          "Sweet spot : Redemption that offers exceptional value",
+          "Status/Tier : Your loyalty level with a given program"
         ]
       },
       {
@@ -27,27 +41,19 @@
         ]
       },
       {
-        "heading": "How programs make money (and why you get points)",
+        "heading": "What is the value of 1 Point/Mile?",
         "body": [
-          "Points are marketing and retention tools: programs encourage you to keep booking with a brand and keep spending on partner credit cards.",
-          "Programs often sell points to banks and partners (especially via co-branded cards), which is why card welcome bonuses can be so large and why banks invest heavily in points ecosystems.",
-          "This also explains why programs can change: pricing can move, award availability can shrink, and values can drop over time. Flexibility matters."
-        ]
-      },
-      {
-        "heading": "Core terms you must know",
-        "body": [
-          "Award ticket / award night: booking travel using points instead of paying the full cash fare.",
-          "Transfer partner: an airline or hotel program you can move bank points into (usually one-way transfers).",
-          "Award availability: the seats/rooms a program releases for redemption; you might see “sold out” even when cash seats exist.",
-          "Taxes & fees / surcharges: award bookings often still require cash payment for taxes and sometimes extra airline-added fees."
+          "1 Point/Mile is not equal to ₹1. Value varies from pragram to program and redemption to redemption.",
+          "Some programs provide upfornt pricing/value of each point/mile and that value always remain fixed. Example : Accor Hotels where 2000 Accor Points equals 40 Euros",
+          "Some programs provide fixed redemption pricing for a ticket/stay but the prices in cash for that ticket/stay is dynamic. Example Wyndham hotel has divided it's hotels/rooms in 3 categories and you need 7,500 or 15,000 or 30,000 points to book each catgory room respectivly. Now a room booked with 30,000 points may be priced at ₹40,000 or ₹25,000",
+          "Other programs may have dynamic points pricing as well as cash pricing where prices in points as well as cash is determined by demand and supply"
         ]
       }
     ]
   },
   {
     "slug": "setup-safety-and-rules",
-    "title": "Set up like a pro: accounts, safety, expiry, and the rules that trip beginners",
+    "title": "Points and Miles : How to begin?",
     "excerpt": "Before earning aggressively, set up accounts properly, learn expiry rules, and avoid common beginner mistakes.",
     "category": "Miles & Points Explained",
     "readTime": "13 min read",
@@ -71,18 +77,52 @@
         ]
       },
       {
-        "heading": "Expiration and inactivity (how people lose points)",
+        "heading": "Hotel Redemptions are comparitivly easier",
         "body": [
-          "Some programs expire points after a period of inactivity, while others (or certain elite/cardholder situations) keep points alive. Always check each program’s policy before you start collecting there.",
-          "A simple habit: set a quarterly reminder to scan your balances and do a small qualifying activity (like a small transfer, a small purchase through a portal, or a tiny redemption) when needed.",
-          "Example: If a program expires after 12 months of inactivity, even a small earning event can reset the clock. But some programs are stricter—so always verify the exact conditions."
+          "Almost all popular tourist destinations have multiple hotels from multiple hotel brands. There are a lot of hotels/rooms you can choose from.",
+          "While there myabe only a few airlines that fly from your city to your preffered destination making it tougher to get award tickets as a beginer"
         ]
       },
       {
-        "heading": "Devaluations and pricing changes (why flexibility wins)",
+        "heading": "Select a Credit Card that suits your need",
         "body": [
-          "Programs can change award pricing with little notice. This can make the same trip cost more points later.",
-          "That’s why beginners should prefer flexible strategies (transferable points + multiple partner options), and only transfer when you are ready to book."
+          "As a begginer you will have 0 hotel points and airline miles. Credit card are the most powerful way to start earning points that can later be transfered to Airline miles or hotel points",
+          "Choose the card that fits your spending patterns. If your main monthly expense is grocery you will want to take a card that rewards you on grocery"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "choose-right-credit-card",
+    "title": "Credit Card : Which one is right for you?",
+    "excerpt": "Choosing right credit card is the fundamental step towards a good points and mile strategy.",
+    "category": "Miles & Points Explained",
+    "readTime": "13 min read",
+    "publishedOn": "2025-12-06",
+    "seoTitle": "Choose right credit card based on your spending patterns | Miles Go Round",
+    "seoDescription": "How to choose right credit card, who should not get a credit card, understand your spending patterns.",
+    "tags": [ "beginner", "account-security", "expiry", "tracking" ],
+    "sections": [
+      {
+        "heading": "Who should not get a credit card?",
+        "body": [
+          "Don’t get a credit card if you’re planning to “pay later” with money you don’t have.",
+          "Don’t get a credit card if you can’t pay the full statement every month(no exceptions).",
+          "Don’t get a credit card if you struggle with impulse spending"
+        ]
+      },
+      {
+        "heading": "Type of Cards?",
+        "body": [
+          "The answer to this question depends on your spending pattern. If you spend more on grocery look for a card that give high return on groceries. If you dine out frequently get a card that gives you higher return on dining.",
+          "But remember a dining or grocery specific card may have good returns but there maybe a generic c"
+        ]
+      },
+      {
+        "heading": "How to pick the right credit card?",
+        "body": [
+          "The answer to this question depends on your spending pattern. If you spend more on grocery look for a card that give high return on groceries. If you dine out frequently get a card that gives you higher return on dining.",
+          "But remember a dining or grocery specific card may have good returns but there maybe a generic c"
         ]
       }
     ]
