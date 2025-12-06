@@ -8,34 +8,13 @@ export function MilesPointsArticleCard({ article }: { article: MilesPointsArticl
       <div className="space-y-3">
         <h3 className="text-xl font-semibold text-slate-900">
           <Link
-            href={`/travel-with-points/miles-and-points-explained/${article.slug}`}
+            href={`/learning/${article.slug}`}
             className="underline-offset-4 transition hover:text-amber-800 hover:underline"
           >
             {article.title}
           </Link>
         </h3>
         <p className="text-sm leading-relaxed text-slate-700">{article.excerpt}</p>
-      </div>
-      <div className="mt-6 flex items-center justify-end text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-        <Link
-          href={`/travel-with-points/miles-and-points-explained/${article.slug}`}
-          className="inline-flex items-center text-sm font-semibold text-amber-800"
-        >
-          Read more
-          <svg
-            aria-hidden
-            className="ml-2 h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-          </svg>
-        </Link>
       </div>
     </article>
   );
