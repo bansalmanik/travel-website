@@ -21,15 +21,15 @@
       },
       {
         "heading": "Core terms you must know",
-        "body": [
-          "Program : Airline, Hotel or Bank Loyalty programs.",
-          "Award ticket: Booking Airline ticket using Points and Miles.",
-          "Award night: Booking Hotel stay using Points and Miles.",
-          "Transfer partner: An airline or Hotel program you can move bank points into.",
-          "Award availability: seats/rooms a program releases for redemption using points and miles.",
-          "Cabin : Class of service (Economy, Business, First).",
-          "Sweet spot : Redemption that offers exceptional value",
-          "Status/Tier : Your loyalty level with a given program"
+        "bulletPoints": [
+          "**Program** : Airline, Hotel or Bank Loyalty programs.",
+          "**Award ticket**: Booking Airline ticket using Points and Miles.",
+          "**Award night**: Booking Hotel stay using Points and Miles.",
+          "**Transfer partner**: An airline or Hotel program you can move bank points into.",
+          "**Award availability**: seats/rooms a program releases for redemption using points and miles.",
+          "**Cabin** : Class of service (Economy, Business, First).",
+          "**Sweet spot** : Redemption that offers exceptional value",
+          "**Status/Tier** : Your loyalty level with a given program"
         ]
       },
       {

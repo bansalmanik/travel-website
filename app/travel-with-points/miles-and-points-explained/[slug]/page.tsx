@@ -48,15 +48,53 @@ export async function generateMetadata({
 }
 
 function renderSections(sections: MilesPointsArticle["sections"]) {
+  function renderFormattedText(text: string) {
+    const boldRegex = /\*\*(.+?)\*\*/g;
+    const segments: Array<string | { bold: string }> = [];
+    let lastIndex = 0;
+    let match: RegExpExecArray | null;
+
+    while ((match = boldRegex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        segments.push(text.slice(lastIndex, match.index));
+      }
+      segments.push({ bold: match[1] });
+      lastIndex = match.index + match[0].length;
+    }
+
+    if (lastIndex < text.length) {
+      segments.push(text.slice(lastIndex));
+    }
+
+    return segments.map((segment, index) => {
+      if (typeof segment === "string") {
+        return <span key={`text-${index}`}>{segment}</span>;
+      }
+
+      return (
+        <strong key={`bold-${index}`} className="font-semibold">
+          {segment.bold}
+        </strong>
+      );
+    });
+  }
+
   return sections.map((section, index) => (
     <section key={`${section.heading ?? "section"}-${index}`} className="space-y-3">
       {section.heading ? (
         <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">{section.heading}</h2>
       ) : null}
       <div className="space-y-3 text-base leading-7 text-slate-700">
-        {section.body.map((paragraph, bodyIndex) => (
-          <p key={bodyIndex}>{paragraph}</p>
+        {section.body?.map((paragraph, bodyIndex) => (
+          <p key={`paragraph-${bodyIndex}`}>{renderFormattedText(paragraph)}</p>
         ))}
+        {section.bulletPoints ? (
+          <ul className="list-disc space-y-2 pl-5 text-slate-700">
+            {section.bulletPoints.map((item, bulletIndex) => (
+              <li key={`bullet-${bulletIndex}`}>{renderFormattedText(item)}</li>
+            ))}
+          </ul>
+        ) : null}
       </div>
     </section>
   ));

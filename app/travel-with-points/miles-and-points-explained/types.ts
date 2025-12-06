@@ -1,6 +1,7 @@
 export type MilesPointsArticleSection = {
   heading?: string;
-  body: string[];
+  body?: string[];
+  bulletPoints?: string[];
 };
 
 export type MilesPointsArticle = {
