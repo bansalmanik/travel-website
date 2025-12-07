@@ -64,11 +64,27 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate", "Return Rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Return Rate"
+                ],
                 "rows": [
-                  [ "UPI payments", "5% Scapia Coins", "1%" ],
-                  [ "Online & offline spends", "10% Scapia Coins", "2%" ],
-                  [ "Scapia app bookings", "20 % Scapia Coins", "4%" ]
+                  [
+                    "UPI payments",
+                    "5% Scapia Coins",
+                    "1%"
+                  ],
+                  [
+                    "Online & offline spends",
+                    "10% Scapia Coins",
+                    "2%"
+                  ],
+                  [
+                    "Scapia app bookings",
+                    "20 % Scapia Coins",
+                    "4%"
+                  ]
                 ]
               }
             },
@@ -107,14 +123,14 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "If you spend ₹10,000 in a month you unlock the following benefits for the next month."
+                "If you spend \u20b910,000 in a month you unlock the following benefits for the next month."
               ]
             },
             {
               "type": "bullets",
               "bullets": [
                 "Unlimited lounge access.",
-                "100% cashback on shopping/dining at airports up to ₹1,000 per airport visit.",
+                "100% cashback on shopping/dining at airports up to \u20b91,000 per airport visit.",
                 "You can also choose to get a spa at the airport.",
                 "Please note that you can choose only one of the above-listed benefits per airport departure."
               ]
@@ -140,7 +156,7 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "If you have more than one airport trip coming up in a month then you can extract extraordinary value out of this card. For example, if you have two airport visits coming up in a month then you can get ₹2,000 (16%) back by spending ₹12,000 (₹10,000 for unlocking airport privileges plus ₹1,000 each time at the airport). Similarly, if you have three visits coming up this jumps to ₹3,000 (23%) back for ₹13,000 spend. You get the gist, right?"
+                "If you have more than one airport trip coming up in a month then you can extract extraordinary value out of this card. For example, if you have two airport visits coming up in a month then you can get \u20b92,000 (16%) back by spending \u20b912,000 (\u20b910,000 for unlocking airport privileges plus \u20b91,000 each time at the airport). Similarly, if you have three visits coming up this jumps to \u20b93,000 (23%) back for \u20b913,000 spend. You get the gist, right?"
               ]
             },
             {
@@ -202,7 +218,6 @@
         }
       ],
       "enabled": true
-
     },
     {
       "slug": "axis-bank-atlas-credit-card",
@@ -226,8 +241,8 @@
         "High Rewards on Travel"
       ],
       "keyHighlights": [
-        "4% value back on everyday spending (≈8% via Accor)",
-        "10% value back when booking direct with hotels & airlines or Axis Travel EDGE (≈20% via Accor)",
+        "4% value back on everyday spending (\u22488% via Accor)",
+        "10% value back when booking direct with hotels & airlines or Axis Travel EDGE (\u224820% via Accor)",
         "Strong milestone perks for high spenders"
       ],
       "media": {
@@ -251,7 +266,7 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "2,500 EDGE Miles are valued at a minimum ₹5,000. If transferred to Accor the value jumps to ₹10,000. This more than compensates for the joining fee."
+                "2,500 EDGE Miles are valued at a minimum \u20b95,000. If transferred to Accor the value jumps to \u20b910,000. This more than compensates for the joining fee."
               ]
             }
           ],
@@ -293,7 +308,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "Annual Income greater than ₹12,00,000"
+                "Annual Income greater than \u20b912,00,000"
               ]
             }
           ]
@@ -319,12 +334,12 @@
                 "rows": [
                   [
                     "Axis Travel EDGE, airlines & hotels",
-                    "5 EDGE Miles / ₹100",
-                    "Bonus applies up to ₹2,00,000 spend per month; thereafter 2 Miles / ₹100"
+                    "5 EDGE Miles / \u20b9100",
+                    "Bonus applies up to \u20b92,00,000 spend per month; thereafter 2 Miles / \u20b9100"
                   ],
                   [
                     "Other eligible domestic & international spends",
-                    "2 EDGE Miles / ₹100",
+                    "2 EDGE Miles / \u20b9100",
                     "Standard earn rate"
                   ]
                 ]
@@ -351,7 +366,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "Redeem on Travel Edge portal: 1 Edge Mile = ₹1",
+                "Redeem on Travel Edge portal: 1 Edge Mile = \u20b91",
                 "Transfer to airline miles at 1 Edge Mile = 2 airline miles",
                 "Transfer to hotel points at 1 Edge Mile = 2 hotel points (except Marriott, which is 2:1)"
               ]
@@ -406,15 +421,15 @@
                 ],
                 "rows": [
                   [
-                    "₹3,00,000",
+                    "\u20b93,00,000",
                     "2,500 EDGE Miles"
                   ],
                   [
-                    "₹7,50,000",
+                    "\u20b97,50,000",
                     "Additional 2,500 EDGE Miles"
                   ],
                   [
-                    "₹15,00,000",
+                    "\u20b915,00,000",
                     "Additional 5,000 EDGE Miles"
                   ]
                 ]
@@ -452,11 +467,11 @@
                   ],
                   [
                     "Gold",
-                    "₹7,50,000"
+                    "\u20b97,50,000"
                   ],
                   [
                     "Platinum",
-                    "₹15,00,000"
+                    "\u20b915,00,000"
                   ]
                 ]
               }
@@ -467,7 +482,6 @@
           "id": "lounge-access",
           "title": "Lounge access",
           "content": [
-
             {
               "type": "table",
               "table": {
@@ -518,7 +532,7 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "Joining fee of ₹5000 is completly justified and welcome benefits easily compensates for it. Annual Milestone benefits have also been setup very nicely."
+                "Joining fee of \u20b95000 is completly justified and welcome benefits easily compensates for it. Annual Milestone benefits have also been setup very nicely."
               ]
             },
             {
@@ -573,10 +587,10 @@
         "5X Shopping Rewards",
         "Swiggy One & MMT Benefits"
       ],
-        "keyHighlights": [
-          "Unlock Swiggy One and MMT Black Gold after ₹1 lakh spend in 90 days.",
-          "Earn 5X rewards on Myntra, flight bookings, and gift vouchers through SmartBuy.",
-          "Earn 10X rewards on PharmEasy, hotel bookings, and IGP through SmartBuy."
+      "keyHighlights": [
+        "Unlock Swiggy One and MMT Black Gold after \u20b91 lakh spend in 90 days.",
+        "Earn 5X rewards on Myntra, flight bookings, and gift vouchers through SmartBuy.",
+        "Earn 10X rewards on PharmEasy, hotel bookings, and IGP through SmartBuy."
       ],
       "media": {
         "cardImage": {
@@ -605,19 +619,19 @@
                 "rows": [
                   [
                     "Welcome memberships",
-                    "Swiggy One and MMT Black Gold after ₹1,00,000 spend in 90 days"
+                    "Swiggy One and MMT Black Gold after \u20b91,00,000 spend in 90 days"
                   ],
                   [
                     "Joining voucher",
-                    "₹2,500 travel voucher issued after the joining fee posts"
+                    "\u20b92,500 travel voucher issued after the joining fee posts"
                   ],
                   [
                     "Annual fee",
-                    "₹2,500 + GST (charged yearly)"
+                    "\u20b92,500 + GST (charged yearly)"
                   ],
                   [
                     "Renewal fee waiver",
-                    "₹4,00,000 in a membership year"
+                    "\u20b94,00,000 in a membership year"
                   ]
                 ]
               }
@@ -631,7 +645,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "Monthly Income greater than ₹1,50,000"
+                "Monthly Income greater than \u20b91,50,000"
               ]
             }
           ]
@@ -658,31 +672,31 @@
                 "rows": [
                   [
                     "Regular spends",
-                    "4 RP / ₹150",
+                    "4 RP / \u20b9150",
                     "1.3%",
                     "2.6%"
                   ],
                   [
                     "Smartbuy Flights",
-                    "20 RP / ₹150",
+                    "20 RP / \u20b9150",
                     "6.6%",
                     "13.2%"
                   ],
                   [
                     "Smartbuy Hotels",
-                    "40 RP / ₹150",
+                    "40 RP / \u20b9150",
                     "13.2%",
                     "26.4%"
                   ],
                   [
                     "Smartbuy Gyftr",
-                    "20 RP / ₹150",
+                    "20 RP / \u20b9150",
                     "6.6%",
                     "13.2%"
                   ],
                   [
                     "Smartbuy Train",
-                    "12 RP / ₹150",
+                    "12 RP / \u20b9150",
                     "4%",
                     "8%"
                   ]
@@ -716,7 +730,7 @@
               "bullets": [
                 "Airline partners convert at up to 1 RP : 0.5 air mile.",
                 "You can cover up to 70% of a booking's value with Reward Points.",
-                "Accor is the sweet spot as it gives 1 RP = ₹1 value."
+                "Accor is the sweet spot as it gives 1 RP = \u20b91 value."
               ]
             },
             {
@@ -729,19 +743,19 @@
                 "rows": [
                   [
                     "SmartBuy exclusive catalog",
-                    "1 RP = ₹0.65"
+                    "1 RP = \u20b90.65"
                   ],
                   [
                     "SmartBuy flights & hotels",
-                    "1 RP = ₹0.50 (up to 50,000 RP/month)"
+                    "1 RP = \u20b90.50 (up to 50,000 RP/month)"
                   ],
                   [
                     "Products & vouchers",
-                    "Up to ₹0.35 per RP"
+                    "Up to \u20b90.35 per RP"
                   ],
                   [
                     "Statement credit",
-                    "₹0.20 per RP (cap 50,000 RP/month)"
+                    "\u20b90.20 per RP (cap 50,000 RP/month)"
                   ]
                 ]
               }
@@ -767,16 +781,16 @@
                 ],
                 "rows": [
                   [
-                    "₹1,50,000 spend each quarter",
-                    "₹1,500 voucher from brands like Marriott, Myntra, MMT, Marks & Spencer, Reliance Digital"
+                    "\u20b91,50,000 spend each quarter",
+                    "\u20b91,500 voucher from brands like Marriott, Myntra, MMT, Marks & Spencer, Reliance Digital"
                   ],
                   [
-                    "₹5,00,000 annual spend",
-                    "₹5,000 flight voucher"
+                    "\u20b95,00,000 annual spend",
+                    "\u20b95,000 flight voucher"
                   ],
                   [
-                    "₹7,50,000 annual spend",
-                    "Additional ₹5,000 flight voucher"
+                    "\u20b97,50,000 annual spend",
+                    "Additional \u20b95,000 flight voucher"
                   ]
                 ]
               }
@@ -849,7 +863,6 @@
         }
       ],
       "enabled": true
-
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -872,8 +885,8 @@
         "Airport Lounge Access"
       ],
       "keyHighlights": [
-        "₹1,000 cashback, ₹3,000 postcard hotel voucher and EazyDiner Prime after ₹10K spend in 30 days.",
-        "Earn up to 4 Reward Points per ₹100 on travel and overseas purchases with a 1:1 partner transfer ratio.",
+        "\u20b91,000 cashback, \u20b93,000 postcard hotel voucher and EazyDiner Prime after \u20b910K spend in 30 days.",
+        "Earn up to 4 Reward Points per \u20b9100 on travel and overseas purchases with a 1:1 partner transfer ratio.",
         "Access 6 domestic and 4 international lounges plus golf and lifestyle privileges."
       ],
       "media": {
@@ -890,7 +903,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "Welcome bonus of 3,000 Reward Points also triggers on the first ₹1,00,000 spent within 90 days."
+                "Welcome bonus of 3,000 Reward Points also triggers on the first \u20b91,00,000 spent within 90 days."
               ]
             },
             {
@@ -902,16 +915,16 @@
                 ],
                 "rows": [
                   [
-                    "Spend ₹10,000 in 30 days",
-                    "₹1,000 cashback + ₹3,000 Postcard Hotel voucher + 3-month EazyDiner Prime"
+                    "Spend \u20b910,000 in 30 days",
+                    "\u20b91,000 cashback + \u20b93,000 Postcard Hotel voucher + 3-month EazyDiner Prime"
                   ],
                   [
-                    "Spend ₹1,00,000 in 90 days",
+                    "Spend \u20b91,00,000 in 90 days",
                     "3,000 bonus Reward Points"
                   ],
                   [
                     "Annual fee",
-                    "₹4,999 + GST (waived on ₹8,00,000 annual spend)"
+                    "\u20b94,999 + GST (waived on \u20b98,00,000 annual spend)"
                   ]
                 ]
               }
@@ -925,7 +938,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "Annual Income greater than ₹4,00,000"
+                "Annual Income greater than \u20b94,00,000"
               ]
             }
           ]
@@ -946,25 +959,25 @@
                 "rows": [
                   [
                     "Flights through HSBC Market Place",
-                    "16 RP / ₹100",
+                    "16 RP / \u20b9100",
                     "16%",
                     "32%"
                   ],
                   [
                     "Hotels through HSBC Market Place",
-                    "24 RP / ₹100",
+                    "24 RP / \u20b9100",
                     "24%",
                     "48%"
                   ],
                   [
                     "Flights & OTAs + foreign currency",
-                    "4 RP / ₹100",
-                    "Accelerated earn up to ₹50,000 equivalent each month"
+                    "4 RP / \u20b9100",
+                    "Accelerated earn up to \u20b950,000 equivalent each month"
                   ],
                   [
                     "All other eligible spends",
-                    "2 RP / ₹100",
-                    "Reward Points accrue at 1 RP per ₹50"
+                    "2 RP / \u20b9100",
+                    "Reward Points accrue at 1 RP per \u20b950"
                   ]
                 ]
               }
@@ -972,8 +985,8 @@
             {
               "type": "bullets",
               "bullets": [
-                "HSBC Market Place has a price guarantee up to ₹1,500 per booking.",
-                "15% off up to ₹5,000 on flight bookings via Paytm Flights and ClearTrip",
+                "HSBC Market Place has a price guarantee up to \u20b91,500 per booking.",
+                "15% off up to \u20b95,000 on flight bookings via Paytm Flights and ClearTrip",
                 "20% off on select duty free stores",
                 "Prices on HSBC Marketplace tend to be higher than other OTAs, which dampens the reward rate"
               ]
@@ -1032,11 +1045,11 @@
                 ],
                 "rows": [
                   [
-                    "₹1,00,000 spend in the first 90 days",
+                    "\u20b91,00,000 spend in the first 90 days",
                     "3,000 bonus Reward Points"
                   ],
                   [
-                    "₹12,00,000 spend each anniversary year",
+                    "\u20b912,00,000 spend each anniversary year",
                     "10,000 bonus Reward Points"
                   ]
                 ]
@@ -1053,7 +1066,7 @@
               "bullets": [
                 "Six domestic and four international lounge visits per year included in the base fee.",
                 "Four complimentary golf rounds and twelve lessons annually (one free benefit per month).",
-                "Holiday partner offers: 15% off with Yatra, EaseMyTrip, Paytm Travel, Cleartrip, plus 11% off StayVista (max ₹3,000).",
+                "Holiday partner offers: 15% off with Yatra, EaseMyTrip, Paytm Travel, Cleartrip, plus 11% off StayVista (max \u20b93,000).",
                 "Duty-free savings up to 20% at select outlets."
               ]
             }
@@ -1096,11 +1109,10 @@
         }
       ],
       "enabled": true
-
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
-      "name": "American Express® Platinum Travel Credit Card",
+      "name": "American Express\u00ae Platinum Travel Credit Card",
       "issuer": "American Express Banking Corp.",
       "network": "American Express",
       "type": "Milestone Card",
@@ -1111,14 +1123,14 @@
         "currency": "INR",
         "gstApplicable": true
       },
-      "rewardsCurrency": "Membership Rewards® points",
+      "rewardsCurrency": "Membership Rewards\u00ae points",
       "websiteDisplayTags": [
         "Travel Vouchers",
         "Milestone Rewards",
         "Domestic Lounge Access"
       ],
       "keyHighlights": [
-        "₹10,000 Taj Experiences e-gift card plus 40K MR after ₹4 lakh annual milestone",
+        "\u20b910,000 Taj Experiences e-gift card plus 40K MR after \u20b94 lakh annual milestone",
         "Membership Rewards never expire while the account remains in good standing"
       ],
       "media": {
@@ -1147,7 +1159,7 @@
                 ],
                 "rows": [
                   [
-                    "Spend ₹15,000 within 90 days",
+                    "Spend \u20b915,000 within 90 days",
                     "10,000 Membership Rewards points"
                   ]
                 ]
@@ -1173,12 +1185,12 @@
                     ],
                     "rows": [
                       [
-                        "₹1,90,000",
+                        "\u20b91,90,000",
                         "15,000 Membership Rewards points"
                       ],
                       [
-                        "₹4,00,000",
-                        "25,000 Membership Rewards points + ₹10,000 Taj Experiences e-gift card"
+                        "\u20b94,00,000",
+                        "25,000 Membership Rewards points + \u20b910,000 Taj Experiences e-gift card"
                       ]
                     ]
                   }
@@ -1194,7 +1206,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "Annual Income greater than ₹6,00,000"
+                "Annual Income greater than \u20b96,00,000"
               ]
             }
           ]
@@ -1213,11 +1225,11 @@
                 "rows": [
                   [
                     "Eligible card purchases",
-                    "1 MR / ₹50"
+                    "1 MR / \u20b950"
                   ],
                   [
                     "Amex Reward Multiplier",
-                    "3 MR / ₹50"
+                    "3 MR / \u20b950"
                   ]
                 ]
               }
@@ -1225,7 +1237,7 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "Most people treat this as a milestone card to spend ₹4,00,000 in the card anniversary year."
+                "Most people treat this as a milestone card to spend \u20b94,00,000 in the card anniversary year."
               ]
             },
             {
@@ -1336,9 +1348,2557 @@
         }
       ],
       "enabled": true
-
+    },
+    {
+      "slug": "horizon-pro-1",
+      "name": "Horizon Pro Card 1",
+      "issuer": "MetroTrust",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "Horizon Pro Card 1 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Horizon Pro Card 1 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Horizon Pro Card 1.",
+        "Delayed baggage insurance every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/horizon-pro-1.png",
+          "alt": "Horizon Pro Card 1"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Horizon Pro Card 1.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-go-2",
+      "name": "Trailblazer Go Card 2",
+      "issuer": "BluePeak",
+      "network": "Discover",
+      "type": "Business Travel Card",
+      "summary": "Trailblazer Go Card 2 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Go Card 2 from BluePeak. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Go Card 2.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-go-2.png",
+          "alt": "Trailblazer Go Card 2"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Go Card 2.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "navigator-pro-3",
+      "name": "Navigator Pro Card 3",
+      "issuer": "Aurora Bank",
+      "network": "Mastercard",
+      "type": "Student Travel Card",
+      "summary": "Navigator Pro Card 3 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Navigator Pro Card 3 from Aurora Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Navigator Pro Card 3.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/navigator-pro-3.png",
+          "alt": "Navigator Pro Card 3"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Navigator Pro Card 3.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "odyssey-infinity-4",
+      "name": "Odyssey Infinity Card 4",
+      "issuer": "Global First",
+      "network": "RuPay",
+      "type": "Travel Rewards Card",
+      "summary": "Odyssey Infinity Card 4 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Odyssey Infinity Card 4 from Global First. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Odyssey Infinity Card 4.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/odyssey-infinity-4.png",
+          "alt": "Odyssey Infinity Card 4"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Odyssey Infinity Card 4.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "expedition-select-5",
+      "name": "Expedition Select Card 5",
+      "issuer": "MetroTrust",
+      "network": "Mastercard",
+      "type": "Business Travel Card",
+      "summary": "Expedition Select Card 5 keeps trips simple with annual airline fee waivers and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Expedition Select Card 5 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Expedition Select Card 5.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/expedition-select-5.png",
+          "alt": "Expedition Select Card 5"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Expedition Select Card 5.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "jetstream-pro-6",
+      "name": "Jetstream Pro Card 6",
+      "issuer": "Stellar Finance",
+      "network": "Visa",
+      "type": "Cashback Travel Card",
+      "summary": "Jetstream Pro Card 6 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Jetstream Pro Card 6 from Stellar Finance. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Jetstream Pro Card 6.",
+        "Hotel late checkout guarantees every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/jetstream-pro-6.png",
+          "alt": "Jetstream Pro Card 6"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Jetstream Pro Card 6.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-go-7",
+      "name": "Compass Go Card 7",
+      "issuer": "Pinecrest Credit",
+      "network": "RuPay",
+      "type": "Cashback Travel Card",
+      "summary": "Compass Go Card 7 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Go Card 7 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Go Card 7.",
+        "Delayed baggage insurance every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-go-7.png",
+          "alt": "Compass Go Card 7"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Go Card 7.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-infinity-8",
+      "name": "Compass Infinity Card 8",
+      "issuer": "MetroTrust",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "Compass Infinity Card 8 keeps trips simple with dining cashback at airports and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Infinity Card 8 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Infinity Card 8.",
+        "Delayed baggage insurance every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-infinity-8.png",
+          "alt": "Compass Infinity Card 8"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Infinity Card 8.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "odyssey-lite-9",
+      "name": "Odyssey Lite Card 9",
+      "issuer": "Pinecrest Credit",
+      "network": "Mastercard",
+      "type": "Premium Travel Card",
+      "summary": "Odyssey Lite Card 9 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Odyssey Lite Card 9 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Odyssey Lite Card 9.",
+        "Delayed baggage insurance every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/odyssey-lite-9.png",
+          "alt": "Odyssey Lite Card 9"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Odyssey Lite Card 9.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "horizon-reserve-10",
+      "name": "Horizon Reserve Card 10",
+      "issuer": "Stellar Finance",
+      "network": "American Express",
+      "type": "Business Travel Card",
+      "summary": "Horizon Reserve Card 10 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Horizon Reserve Card 10 from Stellar Finance. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Horizon Reserve Card 10.",
+        "Hotel late checkout guarantees every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/horizon-reserve-10.png",
+          "alt": "Horizon Reserve Card 10"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Horizon Reserve Card 10.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "expedition-infinity-11",
+      "name": "Expedition Infinity Card 11",
+      "issuer": "MetroTrust",
+      "network": "American Express",
+      "type": "Business Travel Card",
+      "summary": "Expedition Infinity Card 11 keeps trips simple with delayed baggage insurance and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Expedition Infinity Card 11 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Expedition Infinity Card 11.",
+        "Dining cashback at airports every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/expedition-infinity-11.png",
+          "alt": "Expedition Infinity Card 11"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Expedition Infinity Card 11.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "voyager-elite-12",
+      "name": "Voyager Elite Card 12",
+      "issuer": "Summit Bank",
+      "network": "American Express",
+      "type": "Premium Travel Card",
+      "summary": "Voyager Elite Card 12 keeps trips simple with dining cashback at airports and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Voyager Elite Card 12 from Summit Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Voyager Elite Card 12.",
+        "Dining cashback at airports every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/voyager-elite-12.png",
+          "alt": "Voyager Elite Card 12"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Voyager Elite Card 12.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "navigator-select-13",
+      "name": "Navigator Select Card 13",
+      "issuer": "Aurora Bank",
+      "network": "American Express",
+      "type": "Cashback Travel Card",
+      "summary": "Navigator Select Card 13 keeps trips simple with delayed baggage insurance and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Navigator Select Card 13 from Aurora Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Navigator Select Card 13.",
+        "Hotel late checkout guarantees every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/navigator-select-13.png",
+          "alt": "Navigator Select Card 13"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Navigator Select Card 13.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "altitude-flex-14",
+      "name": "Altitude Flex Card 14",
+      "issuer": "Pinecrest Credit",
+      "network": "Discover",
+      "type": "Cashback Travel Card",
+      "summary": "Altitude Flex Card 14 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Altitude Flex Card 14 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Altitude Flex Card 14.",
+        "Annual airline fee waivers every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/altitude-flex-14.png",
+          "alt": "Altitude Flex Card 14"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Altitude Flex Card 14.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-flex-15",
+      "name": "Compass Flex Card 15",
+      "issuer": "MetroTrust",
+      "network": "American Express",
+      "type": "Premium Travel Card",
+      "summary": "Compass Flex Card 15 keeps trips simple with complimentary airport lounge visits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Flex Card 15 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Flex Card 15.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-flex-15.png",
+          "alt": "Compass Flex Card 15"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Flex Card 15.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "expedition-lite-16",
+      "name": "Expedition Lite Card 16",
+      "issuer": "Stellar Finance",
+      "network": "Visa",
+      "type": "Student Travel Card",
+      "summary": "Expedition Lite Card 16 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Expedition Lite Card 16 from Stellar Finance. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Expedition Lite Card 16.",
+        "Dining cashback at airports every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/expedition-lite-16.png",
+          "alt": "Expedition Lite Card 16"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Expedition Lite Card 16.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "globetrotter-elite-17",
+      "name": "Globetrotter Elite Card 17",
+      "issuer": "Summit Bank",
+      "network": "RuPay",
+      "type": "Student Travel Card",
+      "summary": "Globetrotter Elite Card 17 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Globetrotter Elite Card 17 from Summit Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Globetrotter Elite Card 17.",
+        "Delayed baggage insurance every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/globetrotter-elite-17.png",
+          "alt": "Globetrotter Elite Card 17"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Globetrotter Elite Card 17.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-select-18",
+      "name": "Trailblazer Select Card 18",
+      "issuer": "MetroTrust",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "Trailblazer Select Card 18 keeps trips simple with complimentary airport lounge visits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Select Card 18 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Select Card 18.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-select-18.png",
+          "alt": "Trailblazer Select Card 18"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Select Card 18.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "navigator-go-19",
+      "name": "Navigator Go Card 19",
+      "issuer": "MetroTrust",
+      "network": "Visa",
+      "type": "Premium Travel Card",
+      "summary": "Navigator Go Card 19 keeps trips simple with delayed baggage insurance and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Navigator Go Card 19 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Navigator Go Card 19.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/navigator-go-19.png",
+          "alt": "Navigator Go Card 19"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Navigator Go Card 19.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-lite-20",
+      "name": "Trailblazer Lite Card 20",
+      "issuer": "Pinecrest Credit",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "Trailblazer Lite Card 20 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Lite Card 20 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Lite Card 20.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-lite-20.png",
+          "alt": "Trailblazer Lite Card 20"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Lite Card 20.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "expedition-pro-21",
+      "name": "Expedition Pro Card 21",
+      "issuer": "Harborline",
+      "network": "Mastercard",
+      "type": "Travel Rewards Card",
+      "summary": "Expedition Pro Card 21 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Expedition Pro Card 21 from Harborline. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Expedition Pro Card 21.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/expedition-pro-21.png",
+          "alt": "Expedition Pro Card 21"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Expedition Pro Card 21.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-infinity-22",
+      "name": "Trailblazer Infinity Card 22",
+      "issuer": "MetroTrust",
+      "network": "American Express",
+      "type": "Business Travel Card",
+      "summary": "Trailblazer Infinity Card 22 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Infinity Card 22 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Infinity Card 22.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-infinity-22.png",
+          "alt": "Trailblazer Infinity Card 22"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Infinity Card 22.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "altitude-edge-23",
+      "name": "Altitude Edge Card 23",
+      "issuer": "MetroTrust",
+      "network": "Discover",
+      "type": "Business Travel Card",
+      "summary": "Altitude Edge Card 23 keeps trips simple with complimentary airport lounge visits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Altitude Edge Card 23 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Altitude Edge Card 23.",
+        "Annual airline fee waivers every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/altitude-edge-23.png",
+          "alt": "Altitude Edge Card 23"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Altitude Edge Card 23.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-reserve-24",
+      "name": "Trailblazer Reserve Card 24",
+      "issuer": "Everbright",
+      "network": "Mastercard",
+      "type": "Travel Rewards Card",
+      "summary": "Trailblazer Reserve Card 24 keeps trips simple with dining cashback at airports and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Reserve Card 24 from Everbright. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Reserve Card 24.",
+        "Hotel late checkout guarantees every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-reserve-24.png",
+          "alt": "Trailblazer Reserve Card 24"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Reserve Card 24.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "altitude-flex-25",
+      "name": "Altitude Flex Card 25",
+      "issuer": "Everbright",
+      "network": "Mastercard",
+      "type": "Student Travel Card",
+      "summary": "Altitude Flex Card 25 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Altitude Flex Card 25 from Everbright. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Altitude Flex Card 25.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/altitude-flex-25.png",
+          "alt": "Altitude Flex Card 25"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Altitude Flex Card 25.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "expedition-prime-26",
+      "name": "Expedition Prime Card 26",
+      "issuer": "Pinecrest Credit",
+      "network": "RuPay",
+      "type": "Travel Rewards Card",
+      "summary": "Expedition Prime Card 26 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Expedition Prime Card 26 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Expedition Prime Card 26.",
+        "Dining cashback at airports every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/expedition-prime-26.png",
+          "alt": "Expedition Prime Card 26"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Expedition Prime Card 26.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "voyager-infinity-27",
+      "name": "Voyager Infinity Card 27",
+      "issuer": "Stellar Finance",
+      "network": "Mastercard",
+      "type": "Cashback Travel Card",
+      "summary": "Voyager Infinity Card 27 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Voyager Infinity Card 27 from Stellar Finance. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Voyager Infinity Card 27.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/voyager-infinity-27.png",
+          "alt": "Voyager Infinity Card 27"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Voyager Infinity Card 27.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "odyssey-reserve-28",
+      "name": "Odyssey Reserve Card 28",
+      "issuer": "Aurora Bank",
+      "network": "RuPay",
+      "type": "Travel Rewards Card",
+      "summary": "Odyssey Reserve Card 28 keeps trips simple with annual airline fee waivers and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Odyssey Reserve Card 28 from Aurora Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Odyssey Reserve Card 28.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/odyssey-reserve-28.png",
+          "alt": "Odyssey Reserve Card 28"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Odyssey Reserve Card 28.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-flex-29",
+      "name": "Trailblazer Flex Card 29",
+      "issuer": "Global First",
+      "network": "RuPay",
+      "type": "Student Travel Card",
+      "summary": "Trailblazer Flex Card 29 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Flex Card 29 from Global First. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Flex Card 29.",
+        "Hotel late checkout guarantees every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-flex-29.png",
+          "alt": "Trailblazer Flex Card 29"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Flex Card 29.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-select-30",
+      "name": "Trailblazer Select Card 30",
+      "issuer": "Aurora Bank",
+      "network": "Mastercard",
+      "type": "Premium Travel Card",
+      "summary": "Trailblazer Select Card 30 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Select Card 30 from Aurora Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Select Card 30.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-select-30.png",
+          "alt": "Trailblazer Select Card 30"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Select Card 30.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "horizon-flex-31",
+      "name": "Horizon Flex Card 31",
+      "issuer": "MetroTrust",
+      "network": "Discover",
+      "type": "Student Travel Card",
+      "summary": "Horizon Flex Card 31 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Horizon Flex Card 31 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Horizon Flex Card 31.",
+        "Delayed baggage insurance every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/horizon-flex-31.png",
+          "alt": "Horizon Flex Card 31"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Horizon Flex Card 31.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "horizon-lite-32",
+      "name": "Horizon Lite Card 32",
+      "issuer": "Aurora Bank",
+      "network": "Visa",
+      "type": "Student Travel Card",
+      "summary": "Horizon Lite Card 32 keeps trips simple with complimentary airport lounge visits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Horizon Lite Card 32 from Aurora Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Horizon Lite Card 32.",
+        "Annual airline fee waivers every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/horizon-lite-32.png",
+          "alt": "Horizon Lite Card 32"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Horizon Lite Card 32.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-elite-33",
+      "name": "Compass Elite Card 33",
+      "issuer": "Stellar Finance",
+      "network": "Discover",
+      "type": "Travel Rewards Card",
+      "summary": "Compass Elite Card 33 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Elite Card 33 from Stellar Finance. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Elite Card 33.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-elite-33.png",
+          "alt": "Compass Elite Card 33"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Elite Card 33.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-infinity-34",
+      "name": "Compass Infinity Card 34",
+      "issuer": "Summit Bank",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "Compass Infinity Card 34 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Infinity Card 34 from Summit Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Infinity Card 34.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-infinity-34.png",
+          "alt": "Compass Infinity Card 34"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Infinity Card 34.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "odyssey-lite-35",
+      "name": "Odyssey Lite Card 35",
+      "issuer": "Riverstone",
+      "network": "Discover",
+      "type": "Student Travel Card",
+      "summary": "Odyssey Lite Card 35 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Odyssey Lite Card 35 from Riverstone. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Odyssey Lite Card 35.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/odyssey-lite-35.png",
+          "alt": "Odyssey Lite Card 35"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Odyssey Lite Card 35.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "navigator-lite-36",
+      "name": "Navigator Lite Card 36",
+      "issuer": "Pinecrest Credit",
+      "network": "RuPay",
+      "type": "Premium Travel Card",
+      "summary": "Navigator Lite Card 36 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Navigator Lite Card 36 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Navigator Lite Card 36.",
+        "Annual airline fee waivers every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/navigator-lite-36.png",
+          "alt": "Navigator Lite Card 36"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Navigator Lite Card 36.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-reserve-37",
+      "name": "Compass Reserve Card 37",
+      "issuer": "Riverstone",
+      "network": "Visa",
+      "type": "Student Travel Card",
+      "summary": "Compass Reserve Card 37 keeps trips simple with complimentary airport lounge visits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Reserve Card 37 from Riverstone. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Reserve Card 37.",
+        "Dining cashback at airports every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-reserve-37.png",
+          "alt": "Compass Reserve Card 37"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Reserve Card 37.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-select-38",
+      "name": "Compass Select Card 38",
+      "issuer": "Aurora Bank",
+      "network": "Discover",
+      "type": "Premium Travel Card",
+      "summary": "Compass Select Card 38 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Select Card 38 from Aurora Bank. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Select Card 38.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-select-38.png",
+          "alt": "Compass Select Card 38"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Select Card 38.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "odyssey-reserve-39",
+      "name": "Odyssey Reserve Card 39",
+      "issuer": "MetroTrust",
+      "network": "RuPay",
+      "type": "Premium Travel Card",
+      "summary": "Odyssey Reserve Card 39 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Odyssey Reserve Card 39 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Odyssey Reserve Card 39.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/odyssey-reserve-39.png",
+          "alt": "Odyssey Reserve Card 39"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Odyssey Reserve Card 39.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-prime-40",
+      "name": "Compass Prime Card 40",
+      "issuer": "MetroTrust",
+      "network": "Visa",
+      "type": "Travel Rewards Card",
+      "summary": "Compass Prime Card 40 keeps trips simple with complimentary airport lounge visits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Prime Card 40 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Prime Card 40.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-prime-40.png",
+          "alt": "Compass Prime Card 40"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Prime Card 40.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "expedition-pro-41",
+      "name": "Expedition Pro Card 41",
+      "issuer": "MetroTrust",
+      "network": "Visa",
+      "type": "Student Travel Card",
+      "summary": "Expedition Pro Card 41 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Expedition Pro Card 41 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Expedition Pro Card 41.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/expedition-pro-41.png",
+          "alt": "Expedition Pro Card 41"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Expedition Pro Card 41.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "globetrotter-prime-42",
+      "name": "Globetrotter Prime Card 42",
+      "issuer": "Pinecrest Credit",
+      "network": "American Express",
+      "type": "Travel Rewards Card",
+      "summary": "Globetrotter Prime Card 42 keeps trips simple with dining cashback at airports and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Globetrotter Prime Card 42 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Globetrotter Prime Card 42.",
+        "Ride-hailing statement credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/globetrotter-prime-42.png",
+          "alt": "Globetrotter Prime Card 42"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Globetrotter Prime Card 42.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-lite-43",
+      "name": "Trailblazer Lite Card 43",
+      "issuer": "Pinecrest Credit",
+      "network": "RuPay",
+      "type": "Cashback Travel Card",
+      "summary": "Trailblazer Lite Card 43 keeps trips simple with delayed baggage insurance and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Lite Card 43 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Lite Card 43.",
+        "Annual airline fee waivers every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-lite-43.png",
+          "alt": "Trailblazer Lite Card 43"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Lite Card 43.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-select-44",
+      "name": "Compass Select Card 44",
+      "issuer": "Harborline",
+      "network": "American Express",
+      "type": "Travel Rewards Card",
+      "summary": "Compass Select Card 44 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Select Card 44 from Harborline. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Select Card 44.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-select-44.png",
+          "alt": "Compass Select Card 44"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Select Card 44.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "compass-infinity-45",
+      "name": "Compass Infinity Card 45",
+      "issuer": "Stellar Finance",
+      "network": "American Express",
+      "type": "Cashback Travel Card",
+      "summary": "Compass Infinity Card 45 keeps trips simple with airport ride credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Compass Infinity Card 45 from Stellar Finance. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Compass Infinity Card 45.",
+        "Complimentary airport lounge visits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/compass-infinity-45.png",
+          "alt": "Compass Infinity Card 45"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Compass Infinity Card 45.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "horizon-flex-46",
+      "name": "Horizon Flex Card 46",
+      "issuer": "Global First",
+      "network": "American Express",
+      "type": "Cashback Travel Card",
+      "summary": "Horizon Flex Card 46 keeps trips simple with hotel late checkout guarantees and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Horizon Flex Card 46 from Global First. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Horizon Flex Card 46.",
+        "Hotel late checkout guarantees every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/horizon-flex-46.png",
+          "alt": "Horizon Flex Card 46"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Horizon Flex Card 46.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "horizon-elite-47",
+      "name": "Horizon Elite Card 47",
+      "issuer": "MetroTrust",
+      "network": "Mastercard",
+      "type": "Cashback Travel Card",
+      "summary": "Horizon Elite Card 47 keeps trips simple with ride-hailing statement credits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Horizon Elite Card 47 from MetroTrust. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 49,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Points",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Horizon Elite Card 47.",
+        "Delayed baggage insurance every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/horizon-elite-47.png",
+          "alt": "Horizon Elite Card 47"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Horizon Elite Card 47.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "trailblazer-elite-48",
+      "name": "Trailblazer Elite Card 48",
+      "issuer": "Harborline",
+      "network": "American Express",
+      "type": "Student Travel Card",
+      "summary": "Trailblazer Elite Card 48 keeps trips simple with annual airline fee waivers and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Trailblazer Elite Card 48 from Harborline. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 0,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Trailblazer Elite Card 48.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/trailblazer-elite-48.png",
+          "alt": "Trailblazer Elite Card 48"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Trailblazer Elite Card 48.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "jetstream-prime-49",
+      "name": "Jetstream Prime Card 49",
+      "issuer": "Pinecrest Credit",
+      "network": "Mastercard",
+      "type": "Student Travel Card",
+      "summary": "Jetstream Prime Card 49 keeps trips simple with dining cashback at airports and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Jetstream Prime Card 49 from Pinecrest Credit. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 150,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Jetstream Prime Card 49.",
+        "Hotel late checkout guarantees every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/jetstream-prime-49.png",
+          "alt": "Jetstream Prime Card 49"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Jetstream Prime Card 49.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "jetstream-flex-50",
+      "name": "Jetstream Flex Card 50",
+      "issuer": "Stellar Finance",
+      "network": "Visa",
+      "type": "Cashback Travel Card",
+      "summary": "Jetstream Flex Card 50 keeps trips simple with complimentary airport lounge visits and steady rewards on travel bookings.",
+      "seoDescription": "Earn easy travel rewards with the Jetstream Flex Card 50 from Stellar Finance. Built for quick redemptions and straightforward perks.",
+      "annualFee": {
+        "amount": 95,
+        "currency": "USD",
+        "gstApplicable": false
+      },
+      "rewardsCurrency": "Cashback Miles",
+      "websiteDisplayTags": [
+        "Travel Bonus",
+        "Easy Approvals",
+        "No Foreign ATM"
+      ],
+      "keyHighlights": [
+        "Automatic bonus on online travel portals with the Jetstream Flex Card 50.",
+        "Airport ride credits every year you renew.",
+        "Mobile wallet compatibility for tap payments abroad."
+      ],
+      "media": {
+        "cardImage": {
+          "src": "/images/cards/jetstream-flex-50.png",
+          "alt": "Jetstream Flex Card 50"
+        }
+      },
+      "detailSections": [
+        {
+          "component": "section",
+          "heading": "Why this card",
+          "body": [
+            "Earn boosted rewards on flights and hotels booked directly with partners when you pay with Jetstream Flex Card 50.",
+            "Statement credits post automatically within one billing cycle."
+          ],
+          "enabled": true
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://example.com/apply",
+            "label": "Apply Now",
+            "disclaimer": "Sample application link for demo data."
+          },
+          "enabled": true
+        }
+      ],
+      "enabled": true
     }
-
   ],
   "cardStrategies": [
     {
@@ -1372,9 +3932,9 @@
     {
       "name": "Best Starter Card for non travellers",
       "cards": [
-        "American Express® Platinum Travel Credit Card"
+        "American Express\u00ae Platinum Travel Credit Card"
       ],
-      "note": "Amex Platinum Travel gives 40,000 points and a ₹10,000 Taj voucher on spending ₹4,00,000 in a year. If you don't spend on travel too much but still want to earn good points in everyday spending then this is the card for you.",
+      "note": "Amex Platinum Travel gives 40,000 points and a \u20b910,000 Taj voucher on spending \u20b94,00,000 in a year. If you don't spend on travel too much but still want to earn good points in everyday spending then this is the card for you.",
       "enabled": true
     }
   ]
