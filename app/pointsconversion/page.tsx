@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import PointsConversionContent from "./PointsConversionContent";
 import { getPointsConversions } from "@/lib/contentData";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Points Conversion Guide | Transfer Rates",
   description:

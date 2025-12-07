@@ -1,5 +1,6 @@
-import { headers } from "next/headers";
 import { cache } from "react";
+
+import { fetchPublicJson } from "@/lib/publicDataUrl";
 
 export type StoryImage = {
     src: string;
@@ -44,31 +45,8 @@ export type Story = StorySummary & {
 
 const STORIES_PATH = "/data/stories.json";
 
-async function getPublicDataUrl() {
-    const headerList = await headers();
-    const configuredBase = process.env.NEXT_PUBLIC_SITE_URL;
-
-    if (configuredBase) {
-        return new URL(STORIES_PATH, configuredBase).toString();
-    }
-
-    const host = headerList.get("host");
-    const protocol = headerList.get("x-forwarded-proto") ?? "https";
-
-    return host ? `${protocol}://${host}${STORIES_PATH}` : `http://localhost:3000${STORIES_PATH}`;
-}
-
 async function loadJsonStories(): Promise<Story[]> {
-    const dataUrl = await getPublicDataUrl();
-    const response = await fetch(dataUrl, {
-        next: { revalidate: 60 * 60 },
-    });
-
-    if (!response.ok) {
-        throw new Error(`Failed to load stories: ${response.status}`);
-    }
-
-    return (await response.json()) as Story[];
+    return fetchPublicJson<Story[]>(STORIES_PATH, { next: { revalidate: 60 * 60 } });
 }
 
 // ---------- image helpers ---------- //

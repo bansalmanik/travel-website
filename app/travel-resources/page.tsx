@@ -4,6 +4,8 @@ import Link from "next/link";
 
 import { getTravelResourceEntries } from "@/lib/contentData";
 
+export const dynamic = "force-dynamic";
+
 const pageTitle = "Travel Resources Library | Miles Go Round";
 const pageDescription =
   "Browse Ana's reflective travel resources to uncover remote-work routines, lightweight packing tips, and community-focused stories.";

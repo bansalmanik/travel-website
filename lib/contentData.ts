@@ -22,11 +22,13 @@ import type {
 } from "@/app/travel-resources/types";
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
+import { fetchPublicJson } from "./publicDataUrl";
 
+
+const DATA_PATH = "/data/";
 
 async function loadJsonData<T>(fileName: string): Promise<T> {
-    const data = await import(`@/data/${fileName}`);
-    return data.default as T;
+    return fetchPublicJson<T>(`${DATA_PATH}${fileName}`, { next: { revalidate: 60 * 60 } });
 }
 
 type ImageLike = { src: string };

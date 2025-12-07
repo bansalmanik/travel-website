@@ -17,6 +17,7 @@ async function getPrograms(): Promise<BankProgram[]> {
 }
 
 export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

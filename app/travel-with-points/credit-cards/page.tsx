@@ -4,6 +4,8 @@ import Link from "next/link";
 import type { AnnualFee } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
+export const dynamic = "force-dynamic";
+
 function formatAnnualFee(annualFee: AnnualFee) {
   const locale = annualFee.currency === "INR" ? "en-IN" : "en-US";
   const hasFraction = !Number.isInteger(annualFee.amount);

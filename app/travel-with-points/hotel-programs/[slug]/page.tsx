@@ -12,6 +12,9 @@ import type {
 } from "@/app/travel-with-points/hotel-programs/types";
 import { getHotelProgramContent } from "@/lib/contentData";
 
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
+
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -21,8 +24,6 @@ async function getPrograms(): Promise<HotelProgram[]> {
 
   return programs;
 }
-
-export const runtime = "edge";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

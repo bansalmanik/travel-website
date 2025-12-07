@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { getHotelProgramContent } from "@/lib/contentData";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Hotel loyalty programs guide | Travel with Points",
   description:

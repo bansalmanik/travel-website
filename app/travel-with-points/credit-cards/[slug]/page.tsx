@@ -19,6 +19,7 @@ import type {
 import { getCreditCardContent } from "@/lib/contentData";
 
 export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 type SectionWrapperProps = {
   title: string;

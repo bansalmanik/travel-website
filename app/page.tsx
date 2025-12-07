@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { getTravelResourceEntries } from "@/lib/contentData";
 
+export const dynamic = "force-dynamic";
+
 const travelWithPointsHighlights = [
   {
     title: "Credit Cards",

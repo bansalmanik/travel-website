@@ -8,6 +8,8 @@ import type {
 } from "@/app/travel-with-points/flight-programs/types";
 import { getFlightProgramContent } from "@/lib/contentData";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Flight loyalty program sweet spots | Travel with Points",
   description:

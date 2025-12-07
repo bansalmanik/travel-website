@@ -7,6 +7,7 @@ import GallerySlider from "@/app/components/gallery-slider";
 import { getTravelResourceEntries } from "@/lib/contentData";
 
 export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 export type PageProps = {
   params: Promise<{ slug: string }>;
