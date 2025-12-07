@@ -6,6 +6,8 @@ import Script from "next/script";
 
 const siteUrl = "https://www.milesgoround.com";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
