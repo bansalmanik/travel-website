@@ -16,3 +16,5 @@ export type MilesPointsArticle = {
   tags?: string[];
   sections: MilesPointsArticleSection[];
 };
+
+export type MilesPointsArticleSummary = Omit<MilesPointsArticle, "sections">;

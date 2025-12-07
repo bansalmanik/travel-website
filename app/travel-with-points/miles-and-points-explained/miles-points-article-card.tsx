@@ -1,8 +1,12 @@
 import Link from "next/link";
 
-import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
+import type { MilesPointsArticleSummary } from "@/app/travel-with-points/miles-and-points-explained/types";
 
-export function MilesPointsArticleCard({ article }: { article: MilesPointsArticle }) {
+export function MilesPointsArticleCard({
+  article,
+}: {
+  article: MilesPointsArticleSummary;
+}) {
   return (
     <article className="flex h-full flex-col justify-between rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
       <div className="space-y-3">
