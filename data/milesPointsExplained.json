@@ -103,5 +103,110 @@
         ]
       }
     ]
+  },
+    {
+    "slug": "what-are-points-and-miles-1",
+    "title": "What are points and miles?",
+    "excerpt": "A plain-language primer on the loyalty currencies you can earn, transfer, and redeem for travel.",
+    "category": "Miles & Points Explained",
+    "readTime": "6 min read",
+    "publishedOn": "2024-04-05",
+    "seoTitle": "What Are Points and Miles? | Miles Go Round",
+    "seoDescription": "Understand the loyalty currencies behind award travel—how they work, why they matter, and where they come from.",
+    "tags": ["beginner", "basics", "points-and-miles"],
+    "sections": [
+      {
+        "heading": "What counts as a loyalty currency?",
+        "body": [
+          "Airlines, hotels, and banks issue their own currencies that you can collect through flights, stays, and credit card spend.",
+          "Some currencies are locked to a brand, while others are transferable and can be moved to multiple partners for flexibility."
+        ]
+      },
+      {
+        "heading": "Why do programs issue them?",
+        "body": [
+          "Loyalty programs reward repeat business and gather insights about customer preferences, which is why they offer incentives to keep you active.",
+          "When you redeem for travel, partners reimburse each other behind the scenes, letting you access outsized value compared to cash prices."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ways-to-earn-points-and-miles-1",
+    "title": "Ways to earn points and miles",
+    "excerpt": "From welcome bonuses to shopping portals, here are the most reliable ways to build balances without overspending.",
+    "category": "Miles & Points Explained",
+    "readTime": "7 min read",
+    "publishedOn": "2024-05-12",
+    "updatedOn": "2024-09-18",
+    "tags": ["earning", "bonuses", "shopping-portals"],
+    "sections": [
+      {
+        "heading": "Leverage credit card bonuses",
+        "body": [
+          "Welcome offers provide the fastest boost when you meet minimum spend responsibly and on time.",
+          "Pair the right card with your everyday categories—dining, groceries, travel—to earn multipliers without changing your habits."
+        ]
+      },
+      {
+        "heading": "Layer on program bonuses",
+        "body": [
+          "Airlines and hotels run regular promos for elite members, co-branded cardholders, or stays at select properties.",
+          "Stack portal payouts, in-store offers, and dining rewards to keep balances growing even when you are not on the road."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "redeeming-miles-for-flights-and-hotels-1",
+    "title": "Redeeming miles for flights and hotels",
+    "excerpt": "How to spot high-value redemptions, compare cash prices, and avoid unnecessary fees when booking awards.",
+    "category": "Miles & Points Explained",
+    "readTime": "8 min read",
+    "publishedOn": "2024-06-30",
+    "seoDescription": "A practical guide to booking award flights and hotel nights without wasting points or paying surprise surcharges.",
+    "tags": ["redeeming", "awards", "guides"],
+    "sections": [
+      {
+        "heading": "Check cash versus points",
+        "body": [
+          "Always compare the cash rate to the award cost so you only burn points when they beat your personal value per point.",
+          "Factor in taxes, resort fees, and carrier-imposed surcharges, which can make some awards look better than they are."
+        ]
+      },
+      {
+        "heading": "Use partners to your advantage",
+        "body": [
+          "Alliance and hotel partnerships often unlock routes and properties that are cheaper than booking with the primary brand.",
+          "Search flexible dates, nearby airports, and mixed-cabin itineraries to surface extra award seats."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "how-points-transfer-partners-work-1",
+    "title": "How points transfer partners work",
+    "excerpt": "Understand transfer ratios, timing, and bonus windows so you know when to move bank points to airlines or hotels.",
+    "category": "Miles & Points Explained",
+    "readTime": "6 min read",
+    "publishedOn": "2024-08-09",
+    "seoTitle": "How Points Transfer Partners Work | Miles Go Round",
+    "tags": ["transfer-partners", "bank-points"],
+    "sections": [
+      {
+        "heading": "Know your ratios and pools",
+        "body": [
+          "Each bank program sets its own transfer ratios, and some allow household pooling while others only let you move points between your own accounts.",
+          "Keep a simple note with your best 1:1 options, slower partners, and any quirks like expiring bonuses."
+        ]
+      },
+      {
+        "heading": "Time transfers carefully",
+        "body": [
+          "Most transfers are irreversible, so confirm award space before you send points to a partner.",
+          "Watch for limited-time transfer bonuses, but balance them against schedule risk and the possibility of award space disappearing."
+        ]
+      }
+    ]
   }
 ]
