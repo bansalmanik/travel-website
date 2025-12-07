@@ -102,7 +102,7 @@ export default async function Home() {
               </p>
               <div className="flex justify-center md:justify-start">
                 <Link
-                  href="/travel-with-points/miles-and-points-explained"
+                  href="/miles-and-points-explained"
                   className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-sm transition hover:-translate-y-[2px] hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:text-sm"
                 >
                   Miles & Points Explained
