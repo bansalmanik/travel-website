@@ -5,12 +5,9 @@ import { ArticleLayout } from "@/app/travel-with-points/miles-and-points-explain
 import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
 import {
   getMilesPointsArticleBySlug,
-  getMilesPointsArticleSlugs,
 } from "@/lib/milesPointsArticles";
 
-export async function generateStaticParams() {
-  return getMilesPointsArticleSlugs().map((slug) => ({ slug }));
-}
+export const runtime = "edge";
 
 export async function generateMetadata({
   params,
@@ -18,7 +15,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = getMilesPointsArticleBySlug(slug);
+  const article = await getMilesPointsArticleBySlug(slug);
 
   if (!article) {
     return {
@@ -67,7 +64,7 @@ export default async function MilesPointsArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = getMilesPointsArticleBySlug(slug);
+  const article = await getMilesPointsArticleBySlug(slug);
 
   if (!article) {
     notFound();

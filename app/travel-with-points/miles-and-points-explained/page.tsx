@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { MilesPointsArticleCard } from "@/app/travel-with-points/miles-and-points-explained/miles-points-article-card";
 import { getAllMilesPointsArticles } from "@/lib/milesPointsArticles";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Miles & Points Explained | Miles Go Round",
   description:
@@ -23,8 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MilesPointsExplainedPage() {
-  const articles = getAllMilesPointsArticles();
+export default async function MilesPointsExplainedPage() {
+  const articles = await getAllMilesPointsArticles();
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">

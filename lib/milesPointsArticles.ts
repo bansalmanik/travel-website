@@ -1,18 +1,27 @@
-import rawArticles from "@/data/milesPointsExplained.json";
+import { cache } from "react";
+
 import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
 
-const articles = rawArticles as MilesPointsArticle[];
+async function loadJsonArticles(): Promise<MilesPointsArticle[]> {
+  const data = await import("@/data/milesPointsExplained.json");
+  return data.default as MilesPointsArticle[];
+}
 
-export function getAllMilesPointsArticles(): MilesPointsArticle[] {
+const loadArticles = cache(loadJsonArticles);
+
+export async function getAllMilesPointsArticles(): Promise<MilesPointsArticle[]> {
+  const articles = await loadArticles();
   return [...articles];
 }
 
-export function getMilesPointsArticleBySlug(
+export async function getMilesPointsArticleBySlug(
   slug: string,
-): MilesPointsArticle | undefined {
+): Promise<MilesPointsArticle | undefined> {
+  const articles = await loadArticles();
   return articles.find((article) => article.slug === slug);
 }
 
-export function getMilesPointsArticleSlugs(): string[] {
+export async function getMilesPointsArticleSlugs(): Promise<string[]> {
+  const articles = await loadArticles();
   return articles.map((article) => article.slug);
 }
