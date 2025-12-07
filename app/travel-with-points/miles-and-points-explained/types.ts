@@ -1,6 +1,7 @@
-export type MilesPointsArticleSection = {
+export type MilesPointsSection = {
   heading?: string;
-  body: string[];
+  body?: string[];
+  bulletPoints?: string[];
 };
 
 export type MilesPointsArticle = {
@@ -10,9 +11,8 @@ export type MilesPointsArticle = {
   category: string;
   readTime: string;
   publishedOn: string;
-  updatedOn?: string;
   seoTitle?: string;
   seoDescription?: string;
   tags?: string[];
-  sections: MilesPointsArticleSection[];
+  sections: MilesPointsSection[];
 };
