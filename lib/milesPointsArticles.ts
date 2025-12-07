@@ -1,18 +1,60 @@
-import rawArticles from "@/data/milesPointsExplained.json";
-import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
+import { cache } from "react";
 
-const articles = rawArticles as MilesPointsArticle[];
+import type {
+  MilesPointsArticle,
+  MilesPointsArticleSummary,
+} from "@/app/travel-with-points/miles-and-points-explained/types";
 
-export function getAllMilesPointsArticles(): MilesPointsArticle[] {
-  return [...articles];
+async function loadJsonArticles(): Promise<MilesPointsArticle[]> {
+  const data = await import("@/data/milesPointsExplained.json");
+  return data.default as MilesPointsArticle[];
 }
 
-export function getMilesPointsArticleBySlug(
+const loadArticles = cache(async () => {
+  const articles = await loadJsonArticles();
+  return articles;
+});
+
+export async function getAllMilesPointsArticles(): Promise<
+  MilesPointsArticleSummary[]
+> {
+  const articles = await loadArticles();
+
+  return articles.map(
+    ({
+      slug,
+      title,
+      excerpt,
+      category,
+      readTime,
+      publishedOn,
+      updatedOn,
+      seoTitle,
+      seoDescription,
+      tags,
+    }) => ({
+      slug,
+      title,
+      excerpt,
+      category,
+      readTime,
+      publishedOn,
+      updatedOn,
+      seoTitle,
+      seoDescription,
+      tags,
+    }),
+  );
+}
+
+export async function getMilesPointsArticleBySlug(
   slug: string,
-): MilesPointsArticle | undefined {
-  return articles.find((article) => article.slug === slug);
+): Promise<MilesPointsArticle | null> {
+  const articles = await loadArticles();
+  return articles.find((article) => article.slug === slug) ?? null;
 }
 
-export function getMilesPointsArticleSlugs(): string[] {
+export async function getMilesPointsArticleSlugs(): Promise<string[]> {
+  const articles = await loadArticles();
   return articles.map((article) => article.slug);
 }

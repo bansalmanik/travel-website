@@ -16,3 +16,17 @@ export type MilesPointsArticle = {
   tags?: string[];
   sections: MilesPointsArticleSection[];
 };
+
+export type MilesPointsArticleSummary = Pick<
+  MilesPointsArticle,
+  | "slug"
+  | "title"
+  | "excerpt"
+  | "category"
+  | "readTime"
+  | "publishedOn"
+  | "updatedOn"
+  | "seoTitle"
+  | "seoDescription"
+  | "tags"
+>;
