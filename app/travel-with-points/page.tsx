@@ -26,7 +26,7 @@ const sections = [
     title: "Miles & Points Explained",
     description:
       "Beginner-friendly guides to how miles and points work, when to earn them, and how to redeem with confidence.",
-    href: "/travel-with-points/miles-and-points-explained",
+    href: "/miles-and-points-explained",
     accent: "bg-indigo-100 text-indigo-900",
   },
   {
