@@ -9,6 +9,8 @@ export const metadata = {
   description: "Discover travel inspiration, itineraries, and stories from around the globe.",
 };
 
+export const runtime = "edge";
+
 export default async function StoriesPage() {
   const stories = await getAllStorySummaries();
 
