@@ -52,3 +52,26 @@ export function ArticleLayout({
     </main>
   );
 }
+
+export function ArticleSections({
+  sections,
+}: {
+  sections: MilesPointsArticle["sections"];
+}) {
+  return (
+    <div className="space-y-8">
+      {sections.map((section, index) => (
+        <section key={`${section.heading ?? "section"}-${index}`} className="space-y-3">
+          {section.heading ? (
+            <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">{section.heading}</h2>
+          ) : null}
+          <div className="space-y-3 text-base leading-7 text-slate-700">
+            {section.body.map((paragraph, bodyIndex) => (
+              <p key={bodyIndex}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  );
+}
