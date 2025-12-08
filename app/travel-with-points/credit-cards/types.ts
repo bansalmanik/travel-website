@@ -74,7 +74,6 @@ export type Card = {
   slug: string;
   name: string;
   issuer: string;
-  network: string;
   type: string;
   summary: string;
   seoDescription: string;
