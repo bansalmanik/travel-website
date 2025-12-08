@@ -20,7 +20,7 @@
         "layout": "portrait"
       },
       {
-        "src": "/images/content/maldives_2.JPG",
+        "src": "/images/content/maldives_2.jpg",
         "alt": "Couple snorkeling above coral reef",
         "layout": "landscape"
       },
@@ -30,11 +30,11 @@
         "layout": "portrait"
       },
       {
-        "src": "/images/content/deck.JPG",
+        "src": "/images/content/deck.jpg",
         "alt": "Spa cabana facing a calm lagoon"
       },
       {
-        "src": "/images/content/villa-nautica-1.JPG",
+        "src": "/images/content/villa-nautica-1.jpg",
         "alt": "Sunset sailboat gliding past an overwater villa"
       },
       {
@@ -52,12 +52,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/christmas_tree.JPG",
+            "src": "/images/content/christmas_tree.jpg",
             "alt": "Palm trees wrapped in fairy lights framing a Christmas tree on a tropical boardwalk at night",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/speed_boat.JPG",
+            "src": "/images/content/speed_boat.jpg",
             "alt": "Festive breakfast table set under palm shade on a bright island morning",
             "layout": "portrait"
           }
@@ -71,7 +71,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/Maldives-1.JPG",
+            "src": "/images/content/Maldives-1.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
@@ -90,7 +90,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/private_beach.JPG",
+            "src": "/images/content/private_beach.jpg",
             "alt": "Lagoon lookout tower rising above palm trees at Villa Nautica",
             "layout": "landscape"
           }
@@ -138,7 +138,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/sandbank.JPG",
+            "src": "/images/content/sandbank.jpg",
             "alt": "Seagull standing on a wooden railing near the beach",
             "layout": "landscape"
           }
@@ -152,7 +152,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/maldives_3.JPG",
+            "src": "/images/content/maldives_3.jpg",
             "alt": "Festive breakfast table set under palm shade on a bright island morning",
             "layout": "landscape"
           }
@@ -166,7 +166,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/hulhumale_1.JPG",
+            "src": "/images/content/hulhumale_1.jpg",
             "alt": "Festive breakfast table set under palm shade on a bright island morning",
             "layout": "landscape"
           }
@@ -192,42 +192,42 @@
     "city": "San Francisco",
     "country": "USA",
     "coverImage": {
-      "src": "/images/content/GoldenGate.JPG",
+      "src": "/images/content/GoldenGate.jpg",
       "alt": "Golden Gate Bridge emerging from morning fog"
     },
     "gallery": [
       {
-        "src": "/images/content/goldengate-sfo.JPG",
+        "src": "/images/content/goldengate-sfo.jpg",
         "alt": "People walking through colorful Mission District alleyway",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/citizenM-sfo.JPG",
+        "src": "/images/content/citizenM-sfo.jpg",
         "alt": "Picnic on the grass at Alamo Square Park",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/sfo-3.JPG",
+        "src": "/images/content/sfo-3.jpg",
         "alt": "Golden hour light hitting the Palace of Fine Arts",
         "layout": "portrait" 
       },
       {
-        "src": "/images/content/sfo-5.JPG",
+        "src": "/images/content/sfo-5.jpg",
         "alt": "Cyclist looking out over the Marin Headlands",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/sfo-6.JPG",
+        "src": "/images/content/sfo-6.jpg",
         "alt": "Picnic on the grass at Alamo Square Park",
         "layout": "portrait"
       },
       {
-        "src": "/images/content/sfo-7.JPG",
+        "src": "/images/content/sfo-7.jpg",
         "alt": "Golden hour light hitting the Palace of Fine Arts",
         "layout": "portrait" 
       },
       {
-        "src": "/images/content/sfo-4.JPG",
+        "src": "/images/content/sfo-4.jpg",
         "alt": "Cyclist looking out over the Marin Headlands",
         "layout": "portrait"
       }
@@ -258,7 +258,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/GoldenGate.JPG",
+            "src": "/images/content/GoldenGate.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -271,7 +271,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/skyline.JPG",
+            "src": "/images/content/skyline.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -284,12 +284,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/applebees-sfo.JPG",
+            "src": "/images/content/applebees-sfo.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/lunch-sfo.JPG",
+            "src": "/images/content/lunch-sfo.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }          
@@ -302,12 +302,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/hopon-2-sfo.JPG",
+            "src": "/images/content/hopon-2-sfo.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/hopon-1-sfo.JPG",
+            "src": "/images/content/hopon-1-sfo.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }          
@@ -320,12 +320,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/sfo-1.JPG",
+            "src": "/images/content/sfo-1.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/sfo-2.JPG",
+            "src": "/images/content/sfo-2.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }          
@@ -350,32 +350,32 @@
     "city": "Annecy",
     "country": "France",
     "coverImage": {
-      "src": "/images/content/anncy-cover.JPG",
+      "src": "/images/content/anncy-cover.jpg",
       "alt": "Colorful houses lining a canal in Annecy"
     },
     "gallery": [
       {
-        "src": "/images/content/france-1-6.JPG",
+        "src": "/images/content/france-1-6.jpg",
         "alt": "Cyclists on a path beside Lake Annecy"
       },
       {
-        "src": "/images/content/france-1-3.JPG",
+        "src": "/images/content/france-1-3.jpg",
         "alt": "Outdoor café with cheese fondue in Annecy"
       },
       {
-        "src": "/images/content/france-1-4.JPG",
+        "src": "/images/content/france-1-4.jpg",
         "alt": "Pastel sunset over Lake Annecy with boats anchored nearby"
       },
       {
-        "src": "/images/content/france-1-5.JPG",
+        "src": "/images/content/france-1-5.jpg",
         "alt": "Traveler walking through stone archway in Annecy old town"
       },
       {
-        "src": "/images/content/france-1-2.JPG",
+        "src": "/images/content/france-1-2.jpg",
         "alt": "Pastel sunset over Lake Annecy with boats anchored nearby"
       },
       {
-        "src": "/images/content/france-1-1.JPG",
+        "src": "/images/content/france-1-1.jpg",
         "alt": "Traveler walking through stone archway in Annecy old town"
       }
     ],
@@ -387,7 +387,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/grenoble-2.JPG",
+            "src": "/images/content/grenoble-2.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -400,7 +400,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/grenoble-cover.JPG",
+            "src": "/images/content/grenoble-cover.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -414,7 +414,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/annecy1.JPG",
+            "src": "/images/content/annecy1.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -427,7 +427,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/annecy-2.JPG",
+            "src": "/images/content/annecy-2.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -440,12 +440,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/annecy-sardin.JPG",
+            "src": "/images/content/annecy-sardin.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/annecy-gelato.JPG",
+            "src": "/images/content/annecy-gelato.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }
@@ -458,12 +458,12 @@
         ],
         "media": [
           {
-            "src": "/images/content/chambery-1.JPG",
+            "src": "/images/content/chambery-1.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           },
           {
-            "src": "/images/content/chambery-2.JPG",
+            "src": "/images/content/chambery-2.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "portrait"
           }
@@ -477,7 +477,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/chambery-3.JPG",
+            "src": "/images/content/chambery-3.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }
@@ -491,7 +491,7 @@
         ],
         "media": [
           {
-            "src": "/images/content/chambery-4.JPG",
+            "src": "/images/content/chambery-4.jpg",
             "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
             "layout": "landscape"
           }

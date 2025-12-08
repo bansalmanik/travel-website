@@ -90,22 +90,6 @@ export default async function TravelResourcesPage() {
                 </div>
                 <h2 className="text-2xl font-semibold text-slate-900">{entry.title}</h2>
                 <p className="text-sm leading-6 text-slate-600">{entry.summary}</p>
-                <div className="mt-auto pt-4 flex items-center text-sm font-semibold text-amber-600">
-                  <span>View the resource</span>
-                  <svg
-                    aria-hidden
-                    className="ml-2 h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </div>
               </div>
             </article>
           ))}

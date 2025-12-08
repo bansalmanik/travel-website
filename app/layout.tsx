@@ -52,6 +52,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Miles Go Round" }],
   creator: "Miles Go Round",
   publisher: "Miles Go Round",
+  icons: {
+    icon: "/Logo/MilesGoRound-Logo-Blue.png",
+    shortcut: "/Logo/MilesGoRound-Logo-Blue.png",
+    apple: "/Logo/MilesGoRound-Logo-Blue.png",
+  },
 };
 
 export const viewport: Viewport = {
