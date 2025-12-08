@@ -26,7 +26,7 @@
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/scapia.avif",
+          "src": "/images/cards/Federal-Scapia-Credit-Card.webp",
           "alt": "Scapia Credit Card"
         }
       },
@@ -36,7 +36,7 @@
           "applyNow": {
             "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
             "label": "Apply Now",
-            "disclaimer": "Get 1000 Scapia Coins on joining using our referral by clicking Apply Now."
+            "disclaimer": "Get 1000 Scapia Coins and 1000 discount on 1st Flight booking on joining by clicking Apply Now."
           }
         },
         {
@@ -197,7 +197,7 @@
           "applyNow": {
             "url": "https://apply.scapia.cards/landing_page?referral_code=qdq34f",
             "label": "Apply Now",
-            "disclaimer": "Get 1000 Scapia Coins on joining using our referral by clicking Apply Now."
+            "disclaimer": "Get 1000 Scapia Coins and 1000 discount on 1st Flight booking on joining by clicking Apply Now."
           }
         }
       ],

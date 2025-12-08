@@ -249,10 +249,6 @@ function CardSnapshot({ card }: CardSnapshotProps) {
           <dd>{card.issuer}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-slate-900">Network</dt>
-          <dd>{card.network}</dd>
-        </div>
-        <div>
           <dt className="font-semibold text-slate-900">Card type</dt>
           <dd>{card.type}</dd>
         </div>
@@ -296,12 +292,12 @@ function CardImageSection({ image }: { image: SectionImage }) {
   return (
     <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
       <figure className="space-y-3">
-        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
           <Image
             src={image.src}
             alt={image.alt}
-            width={640}
-            height={400}
+            width={320}
+            height={200}
             className="h-auto w-full object-cover"
             priority
           />
