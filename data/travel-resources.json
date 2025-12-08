@@ -2,7 +2,7 @@
   "travelResources": [
     {
       "slug": "macau-transportation-essentials",
-      "title": "Macau Travel Guide: Ferry, Bus, & Casino Shuttles",
+      "title": "Macau Public Transport",
       "author": "Manik",
       "summary": "Practical tips for traversing from Hong Kong to Macau, navigating the ferry terminals, and using Macau's public transit without paying hefty dollars.",
       "seoDescription": "Macau transportation guide: Hong Kong to Macau ferry vs HZMB, free casino shuttle bus routes, and how to pay for public buses.",
@@ -106,7 +106,7 @@
     },
     {
       "slug": "hongkong-transportation-essentials",
-      "title": "Hong Kong Public Transport Guide: MTR, Octopus & Trams",
+      "title": "Hong Kong Public Transport Guide",
       "author": "Manik",
       "summary": "Hong Kong is one of those cities where getting around is surprisingly easy, even on your very first trip. The moment you land at Hong Kong International Airport, signs in English and Chinese clearly guide you towards “Trains to City” or “Public Transport”. Before you leave the terminal, it’s worth picking up an Octopus card.",
       "seoDescription": "The essential guide to Hong Kong public transport: MTR, Airport Express, Octopus Card, ding ding trams, and bus navigation tips.",
