@@ -40,7 +40,7 @@
           ],
           "images": [
             {
-              "src": "/images/content/cotai_waterjet.JPG",
+              "src": "/images/content/cotai_waterjet.jpg",
               "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
               "caption": "Ferries between Hong Kong and Macau depart every 30 minutes.",
               "enabled": true
@@ -129,7 +129,7 @@
           ],
           "images": [
             {
-              "src": "/images/content/octopus-card-1.JPG",
+              "src": "/images/content/octopus-card-1.jpg",
               "alt": "Tourist Octopus Cards",
               "caption": "Tourist Octopus Cards",
               "enabled": true
@@ -151,7 +151,7 @@
               "enabled": true
             },
             {
-              "src": "/images/content/MTR-Airport-7.PNG",
+              "src": "/images/content/MTR-Airport-7.png",
               "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
               "enabled": true
             }
