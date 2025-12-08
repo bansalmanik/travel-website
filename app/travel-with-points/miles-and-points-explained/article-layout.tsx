@@ -24,6 +24,8 @@ export function ArticleLayout({
 }) {
   const published = formatDate(article.publishedOn);
   const updated = article.updatedOn ? formatDate(article.updatedOn) : undefined;
+  const categoryLabel = article.category?.trim();
+  const showCategory = categoryLabel && categoryLabel.toLowerCase() !== "miles & points explained";
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
@@ -35,8 +37,12 @@ export function ArticleLayout({
           >
             Miles &amp; Points Explained
           </Link>
-          <span className="text-slate-400">/</span>
-          <span className="text-slate-600">{article.category}</span>
+                  {showCategory ? (
+                      <>
+                          <span className="text-slate-400">/</span>
+                          <span className="text-slate-600">{categoryLabel}</span>
+                      </>
+                  ) : null}
         </div>
 
         <header className="space-y-4">
