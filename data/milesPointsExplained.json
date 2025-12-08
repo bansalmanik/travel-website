@@ -1,439 +1,254 @@
 [
   {
     "slug": "what-are-points-and-miles",
-    "title": "Points & Miles : What are they?",
-    "excerpt": "Start here: learn the core vocabulary, who issues points, and how to think about them like travel currency (not cash).",
+    "title": "Points & Miles: What Are They?",
+    "excerpt": "Start here: learn the core vocabulary, who issues points, and how to view them as a travel currency rather than cash.",
     "category": "Miles & Points Explained",
     "readTime": "12 min read",
     "publishedOn": "2025-12-05",
     "seoTitle": "Miles & Points Foundations | Miles Go Round",
-    "seoDescription": "A beginner's guide to points and miles: what points and miles are, who issues them, and the building blocks of award travel.",
-    "tags": [ "beginner", "basics", "glossary", "ecosystem" ],
+    "seoDescription": "A beginner's guide to points and miles: what they are, who issues them, and the building blocks of award travel.",
+    "tags": [
+      "beginner",
+      "basics",
+      "glossary",
+      "ecosystem"
+    ],
     "sections": [
       {
         "heading": "What “Points” and “Miles” really mean",
         "body": [
-          "Points and miles are loyalty currencies. Airlines, Hotels, and Banks issue them to reward repeat customers and encourage more spending or bookings.",
-          "Airline Miles are specific to that airline. Despite the name, “miles” are not always based on distance. Think of Miles as just a fancy term for reward points. Most airline don't even call their reward points “miles” anymore. Example : Air India use terminology “Maharaja Points” while Indigo uses “BluChips”",
-          "Like Airlines, popular Hotel chains like Marriot and Hilton issue Hotel Points. These Points can be used to book Hotels Stays. Most Hotel chains also provide option to partially pay using points and remaining by cash/card",
-          "Bank Points likewise are issued by banks and are really powerfull as in most cases they can be transfered to Airlines Miles or Hotel points with certian Terms and Conditions."
+          "Points and miles are loyalty currencies. Airlines, hotels, and banks issue them to reward repeat customers and encourage spending or bookings.",
+          "Airline miles are specific to that airline. Despite the name, “miles” are not always based on distance flown; think of miles simply as a term for reward points. In fact, most airlines don't even call their currency “miles” anymore. Example: Air India uses the terminology “Maharaja Points,” while IndiGo uses “BluChips.”",
+          "Similar to airlines, popular hotel chains like Marriott and Hilton issue hotel points. These points can be used to book hotel stays. Most hotel chains also provide an option to pay partially using points and the remainder via cash or card.",
+          "Bank points are issued directly by banks. These are incredibly powerful because, in most cases, they can be transferred to airline miles or hotel points subject to certain terms and conditions."
         ]
       },
       {
         "heading": "Core terms you must know",
         "bulletPoints": [
-          "**Program** : Airline, Hotel or Bank Loyalty programs.",
-          "**Award ticket**: Booking Airline ticket using Points and Miles.",
-          "**Award night**: Booking Hotel stay using Points and Miles.",
-          "**Transfer partner**: An airline or Hotel program you can move bank points into.",
-          "**Award availability**: seats/rooms a program releases for redemption using points and miles.",
-          "**Cabin** : Class of service (Economy, Business, First).",
-          "**Sweet spot** : Redemption that offers exceptional value",
-          "**Status/Tier** : Your loyalty level with a given program",
-          "**Revenue Booking** : A travel booking for which you pay out of your own pocket."
+          "**Program**: The loyalty scheme of an airline, hotel, or bank.",
+          "**Award Ticket**: An airline ticket booked using points or miles.",
+          "**Award Night**: A hotel stay booked using points.",
+          "**Transfer Partner**: An airline or hotel program into which you can move your bank points.",
+          "**Award Availability**: The inventory (seats/rooms) a program releases for redemption using points.",
+          "**Cabin**: The class of service (Economy, Business, First).",
+          "**Sweet Spot**: A specific redemption that offers exceptional value compared to the cash price.",
+          "**Status/Tier**: Your loyalty level within a given program (e.g., Silver, Gold, Platinum).",
+          "**Revenue Booking**: A standard travel booking paid for out-of-pocket using cash or card."
         ]
       },
       {
-        "heading": "The 3 buckets: airline, hotel, and bank (transferable) points",
+        "heading": "The 3 buckets: Airline, Hotel, and Bank (Transferable) Points",
         "body": [
-          "Airline miles: usually best for flights (especially long-haul, premium cabins), but can also be used for upgrades, seat fees, or non-flight redemptions (often poor value).",
-          "Hotel points: usually best for hotel nights; value varies a lot based on property/season and the program’s pricing model.",
-          "Bank (transferable) points: points earned from a bank rewards ecosystem that can often be redeemed either through a portal (like “pay with points”) or transferred to airline/hotel partners. These are powerful because they offer flexibility."
+          "**Airline Miles**: Usually best for flights (especially long-haul and premium cabins), but can also be used for upgrades, seat fees, or non-flight redemptions (though these often offer poor value).",
+          "**Hotel Points**: Usually best for hotel nights. The value varies significantly based on the property, season, and the program’s pricing model.",
+          "**Bank (Transferable) Points**: Points earned within a bank's rewards ecosystem. These can often be redeemed through a travel portal (like “pay with points”) or transferred to airline/hotel partners. These are the most powerful currency because they offer flexibility."
         ]
       },
       {
         "heading": "What is the value of 1 Point/Mile?",
         "body": [
-          "1 Point/Mile is not equal to ₹1. Value varies from pragram to program and redemption to redemption.",
-          "Some programs provide upfornt pricing/value of each point/mile and that value always remain fixed. Example : Accor Hotels where 2000 Accor Points equals 40 Euros",
-          "Some programs provide fixed redemption pricing for a ticket/stay but the prices in cash for that ticket/stay is dynamic. Example Wyndham hotel has divided it's hotels/rooms in 3 categories and you need 7,500 or 15,000 or 30,000 points to book each catgory room respectivly. Now a room booked with 30,000 points may be priced at ₹40,000 or ₹25,000 in revenue.",
-          "Other programs may have dynamic points pricing as well as cash pricing where prices in points as well as revenue is determined by demand and supply."
+          "One Point/Mile is not equal to ₹1. The value varies from program to program and redemption to redemption.",
+          "Some programs provide upfront pricing or a fixed value for each point/mile. Example: Accor Live Limitless, where 2,000 Accor Points always equals €40.",
+          "Some programs use fixed redemption charts (points required) while the cash price is dynamic. Example: Wyndham Rewards divides its hotels into three tiers, costing 7,500, 15,000, or 30,000 points respectively. A room costing 30,000 points might be priced at ₹40,000 or ₹25,000 in cash depending on the date.",
+          "Other programs utilize dynamic pricing for both points and cash, where the redemption cost is determined by supply and demand."
         ]
       }
     ]
   },
   {
     "slug": "setup-safety-and-rules",
-    "title": "Points and Miles : How to begin?",
+    "title": "Points and Miles: How to Begin?",
     "excerpt": "Before earning aggressively, set up accounts properly, learn expiry rules, and avoid common beginner mistakes.",
     "category": "Miles & Points Explained",
     "readTime": "13 min read",
     "publishedOn": "2025-12-06",
     "seoTitle": "Points & Miles Setup, Safety, and Expiry | Miles Go Round",
     "seoDescription": "How to set up loyalty accounts safely, track balances, prevent expiry, and understand the rules that cause most beginner losses.",
-    "tags": [ "beginner", "account-security", "expiry", "tracking" ],
+    "tags": [
+      "beginner",
+      "account-security",
+      "expiry",
+      "tracking"
+    ],
     "sections": [
       {
         "heading": "Create accounts and standardize your identity",
         "body": [
-          "Create frequent flyer and hotel accounts for the programs you’re likely to use. Use the same legal name (matching your passport), date of birth, and email/phone format wherever possible.",
-          "Small mismatches can create pain when transferring points, requesting missing credits, or merging accounts. Consistency saves hours later."
+          "Create frequent flyer and hotel loyalty accounts for the programs you are likely to use. Ensure you use the same legal name (matching your passport), date of birth, and email/phone format everywhere.",
+          "Small mismatches can create significant administrative headaches when transferring points, requesting missing credits, or merging accounts. Consistency saves hours of troubleshooting later."
         ]
       },
       {
         "heading": "Security basics (this matters more than you think)",
         "body": [
-          "Use a password manager and unique passwords. Loyalty accounts are a real target because stolen points can be redeemed quickly.",
-          "Enable 2FA wherever available. If a program supports account PINs or extra security questions, use them."
+          "Use a password manager and unique passwords for every program. Loyalty accounts are a frequent target for hackers because stolen points can be redeemed quickly.",
+          "Enable Two-Factor Authentication (2FA) wherever available. If a program supports account PINs or extra security questions, use them."
         ]
       },
       {
-        "heading": "Hotel Redemptions are comparitivly easier",
+        "heading": "Hotel redemptions are comparatively easier",
         "body": [
-          "Almost all popular tourist destinations have multiple hotels from multiple hotel brands. There are a lot of hotels/rooms you can choose from.",
-          "While there myabe only a few airlines that fly from your city to your preffered destination making it tougher to get award tickets as a beginer"
+          "Almost all popular tourist destinations host multiple hotels from various brands, giving you a wide range of hotels and rooms to choose from.",
+          "Conversely, there may be only a few airlines that fly from your city to your preferred destination, making it tougher for beginners to find available award tickets."
         ]
       },
       {
-        "heading": "Select a Credit Card that suits your need",
+        "heading": "Select a credit card that suits your needs",
         "body": [
-          "As a begginer you will have 0 hotel points and airline miles. Credit card are the most powerful way to start earning points that can later be transfered to Airline miles or hotel points",
-          "Choose the card that fits your spending patterns. If your main monthly expense is grocery you will want to take a card that rewards you on grocery"
+          "As a beginner, you start with zero hotel points and airline miles. Credit cards are the most powerful tool to jumpstart your balance, earning points that can later be transferred to partners.",
+          "Choose a card that aligns with your spending patterns. For instance, if your primary monthly expense is groceries, you should prioritize a card that offers high rewards on grocery spend."
         ]
       }
     ]
   },
   {
     "slug": "who-should-get-credit-card",
-    "title": "Credit Card : Who Should not get it?",
-    "excerpt": "Choosing right credit card is the fundamental step towards a good points and mile strategy.",
+    "title": "Credit Cards: Who Should Avoid Them?",
+    "excerpt": "Choosing the right credit card is the fundamental step toward a good points and miles strategy, but they aren't for everyone.",
     "category": "Miles & Points Explained",
     "readTime": "13 min read",
     "publishedOn": "2025-12-06",
-    "seoTitle": "Choose right credit card based on your spending patterns | Miles Go Round",
-    "seoDescription": "How to choose right credit card, who should not get a credit card, understand your spending patterns.",
-    "tags": [ "beginner", "account-security", "expiry", "tracking" ],
+    "seoTitle": "Choose the right credit card based on your spending patterns | Miles Go Round",
+    "seoDescription": "How to choose the right credit card, who should not get a credit card, and understanding your spending patterns.",
+    "tags": [
+      "beginner",
+      "finance",
+      "strategy"
+    ],
     "sections": [
       {
         "heading": "Who should not get a credit card?",
         "bulletPoints": [
-          "Don’t get a credit card if you’re planning to “pay later” with money you don’t have.",
-          "Don’t get a credit card if you can’t pay the full statement every month(no exceptions).",
-          "Don’t get a credit card if you struggle with impulse spending"
+          "Don’t get a credit card if you plan to “pay later” with money you don’t currently have.",
+          "Don’t get a credit card if you cannot pay the full statement balance every month (no exceptions).",
+          "Don’t get a credit card if you struggle with impulse spending."
         ]
       },
       {
-        "heading": "Why take a credit card?",
+        "heading": "Why get a credit card?",
         "body": [
-          "If you do not fall in above mentioned categories and then good news you have enough reason to get a credit card."
+          "If you do not fall into the categories mentioned above, there are compelling reasons to acquire a credit card."
         ],
         "bulletPoints": [
           "To earn rewards on spending you already do.",
-          "To unlock travel perks like lounge access.",
-          "To access offers and discounts",
-          "To get purchase protection"
+          "To unlock travel perks like airport lounge access.",
+          "To access merchant offers and discounts.",
+          "To benefit from purchase protection and insurance."
         ]
       }
     ]
   },
   {
     "slug": "credit-card-types",
-    "title": "Credit Card : Types of credit cards",
+    "title": "Credit Cards: Understanding the Types",
     "excerpt": "The complete earning playbook: welcome bonuses, everyday spending, travel, promos, portals, and smart stacking.",
     "category": "Miles & Points Explained",
     "readTime": "15 min read",
     "publishedOn": "2025-12-07",
     "seoTitle": "How to Earn Points and Miles (Responsibly) | Miles Go Round",
     "seoDescription": "A detailed guide to building balances: credit card points, airline/hotel earning, portals, promos, and stacking—without changing your life.",
-    "tags": [ "earning", "credit-cards", "portals", "promotions", "beginner" ],
+    "tags": [
+      "earning",
+      "credit-cards",
+      "portals",
+      "promotions",
+      "beginner"
+    ],
     "sections": [
       {
         "body": [
-          "Credit cards are categorized by their primary benefit (Discount, Cashback, Points), Spend Category (Travel, Feul, Grocery), or affiliation (Co-branded with airlines/stores). Then there are some generic cards which can generally be used for all the purposes",
-          "Do note that a credit card can fit in more than 1 category also like Axis Airtel Card is co-branded card that gives straight cashback on specific merchants like Airtel, Swiggy and Zomato."
+          "Credit cards are generally categorized by their primary benefit (Discount, Cashback, Points), Spend Category (Travel, Fuel, Grocery), or affiliation (Co-branded with airlines/stores). Additionally, there are generic cards designed for general-purpose spending.",
+          "Note that a single credit card can fit into more than one category. For instance, the Axis Airtel Card is a co-branded card, but it functions as a cashback card for specific merchants like Airtel, Swiggy, and Zomato."
         ]
       },
       {
-        "heading": "Cash Back Credit Cards",
+        "heading": "Cashback Credit Cards",
         "body": [
-          "Simplest of all the caard tpes, these cards simply gives you a percentage of you spending back as cashback. Do note that every card has exclusionsa where certain transactions might not be eligible.",
-          "Example: SBI Cashback cards is the most popular cashback card in India right now. It gives straight 5% back on all online transactions. There are many other cashback cards like Axis Airtel Card and HDFC Swiggy card.",
-          "Because of simple and straight forward reward structure of a cashback card, this is the first card of majority of people"
+          "The simplest of all card types, these cards return a percentage of your spending as cashback. Note that every card has exclusions where certain transactions (like rent or government payments) may not be eligible.",
+          "Example: The SBI Cashback Card is currently the most popular choice in India. It offers a flat 5% cashback on all online transactions. Other examples include the Axis Airtel Card and the HDFC Swiggy Card.",
+          "Due to the simple and straightforward reward structure, a cashback card is often the first choice for the majority of users."
         ]
       },
       {
-        "heading": "Co-branded credit card",
+        "heading": "Co-branded Credit Cards",
         "body": [
-          "These cards are issued by bank in partnership with a particular brand. You get extra benefits while spending on that specific brand",
-          "These are also very popular cards as people know beforehand that they spend heavily on a specific brand so they can take added advantage.",
-          "Airtel Axis Credit card is a solid example. If you have any Airtel connection then this card gives you straight 25% cashback on the bill. Straight forward easy savings."
+          "These cards are issued by a bank in partnership with a specific brand. You receive accelerated benefits when spending with that partner.",
+          "These are popular because users who know they spend heavily on a specific brand can maximize their returns.",
+          "The Airtel Axis Credit Card is a solid example. If you have an Airtel connection, this card gives you a flat 25% cashback on the bill. It offers straightforward savings."
         ]
       },
       {
-        "heading": "Category Based Crdit Cards",
+        "heading": "Category-Based Credit Cards",
         "body": [
-          "These cards are desighned by banks to attract people who shop heavily on a specific category like feul or grocery or dining",
-          "If you shop heavily on a certain category then these cards are for you. Like is you spend on travel then get a travel credit card or if you spend heavily on grocery then get a card that gives good rewards on grocery.",
-          "Example - HSBS Live+ is card that gives you 10% cashback on ding, food delivery and grocery spends"
+          "These cards are designed by banks to attract customers who shop heavily in specific categories, such as fuel, grocery, or dining.",
+          "If your budget skews heavily toward a certain category, these cards are for you. If you spend on travel, get a travel card; if you spend on groceries, get a grocery card.",
+          "Example: The HSBC Live+ is a card that gives you 10% cashback on dining, food delivery, and grocery spending."
         ]
       },
       {
         "heading": "Rewards Cards",
         "body": [
-          "Instead og giving cashback or discounts these cards give you reward points. Now how good a rewards card is depends on how much value can you extract fromeach reward points and how easy it is use to use those reward points",
-          "Example - HDFC Regalia Gold gives you reward points everytime you use that card. Now you can use these reward points in f=different ways like buy a voucher or transfer them to any other program or even adjust them against your credit card bill(This is never recomended)"
+          "Instead of giving cashback or discounts, these cards issue reward points. The quality of a rewards card depends on the monetary value you can extract from each point and the ease of redemption.",
+          "Example: The HDFC Regalia Gold awards points every time you use the card. You can utilize these points in various ways, such as buying vouchers or transferring them to loyalty programs. You can also adjust them against your credit card bill, though this typically offers the lowest value and is not recommended."
         ]
       }
     ]
   },
   {
     "slug": "choosing-right-credit-card",
-    "title": "Credit Card : Which one is right for you?",
-    "excerpt": "Learn the value framework: cash vs points, hidden fees, and a simple method to judge good vs bad redemptions.",
+    "title": "Credit Cards: Which One is Right for You?",
+    "excerpt": "Learn the value framework: cash vs. points, hidden fees, and a simple method to judge good vs. bad redemptions.",
     "category": "Miles & Points Explained",
     "readTime": "16 min read",
     "publishedOn": "2025-12-09",
     "seoTitle": "Redeeming Points and Miles (Value + Fees) | Miles Go Round",
     "seoDescription": "A practical redemption framework: compare cash vs points, calculate cents-per-point, and spot fees that ruin value.",
-    "tags": [ "redeeming", "cpp", "fees", "beginner" ],
+    "tags": [
+      "redeeming",
+      "cpp",
+      "fees",
+      "beginner"
+    ],
     "sections": [
       {
         "body": [
-          "There are two things you have to keep in mind when choosing a credit card"
+          "There are two primary factors to keep in mind when choosing a credit card:"
         ],
         "bulletPoints": [
-          "**Spending pattern** : Choose a card based on categoty where you spend the most.",
-          "**Redemption prefrence** : If you like traight cashback choose a cashback card or maybe a co-branded card that gives good discounts. If you want flexibility in your redemption choose a card that gives reward points.",
-          "**Spending pattern** : Compare return rate on spending keeping redemption prefrence in mind."
+          "**Spending Pattern**: Choose a card based on the category where you spend the most money.",
+          "**Redemption Preference**: If you prefer direct savings, choose a cashback card or a co-branded card with good discounts. If you want flexibility for luxury travel, choose a card that earns transferable reward points.",
+          "**Return on Spend**: Compare the return rate on your spending while keeping your redemption preference in mind."
         ]
       },
       {
         "heading": "How to choose a credit card?",
         "body": [
-          "Among all the avaiable card filter out cards based on your spending pattern and then based on how you want to redeem choose the best avaiable card.",
-          "Now as example we are going to mention some scenarios and how to choose cards for thois scenarios."
+          "Filter the available cards based on your spending pattern, and then select the best option based on your preferred redemption method.",
+          "Let's look at some specific scenarios to illustrate how to choose the right card."
         ],
         "bulletPoints": [
-          "**High Grocery spends with prefrence for straight cashabck** : For this use case there are few cards that can be considered. First is HSBC Live+ which gives 10% cahback upto 1000 in a month on all grocery spends including offline Kiryana stores. Another option can be HDFC Swiggy card if you use swiggy instamart.",
-          "**High Grocery spends with prefrence for travel redemption** : First step reamins the same that you choose credit card based on your spending category that is goricey in this case. No since your prefrnce is travel redemtion you would want to take a credit card which gives reward points which can then be used for travel booking. But this is not straight forward sometimes the card that you are eleigible for might have lower return rate compared to a cashback card in smae categoty. In those cases alwayd choose a cashabck card"
+          "**High Grocery Spends + Cashback Preference**: For this use case, consider the HSBC Live+, which gives 10% cashback (up to ₹1,000/month) on grocery spends, including offline Kirana stores. Another option is the HDFC Swiggy card if you primarily use Swiggy Instamart.",
+          "**High Grocery Spends + Travel Redemption Preference**: The first step remains the same: identify that your main category is groceries. However, since you want travel redemptions, you need a card that earns reward points. Be careful here—sometimes the rewards card you are eligible for has a lower return rate than a cashback card in the same category. in those cases, it is often mathematically better to choose the cashback card."
         ]
       },
       {
-        "heading": "How to calculate return rate of a card?",
+        "heading": "How to calculate the return rate of a card?",
         "body": [
-          "For cashback or discount cards this is simple as you can compare the cashback or discount percentage among all the cards that fit your sepnding criterion.",
-          "For credit cards that give reward points it is sometime not straight forward. First you have to assighn a safe average value that you can extract out of each point and then check how much points you earn per 100 spent which will give you your rate of return.",
-          "Also do note that many reward credit cards give acclerated/higher reward points when yoi make purchases from a certain platform and some of these platforms have options to buy shopping voucher for grocery, fashion, dining etc.",
-          "For example you have HDFC Regalia credit card and it gives 4 rewatd points per 150 spent so you assumed you will get 4 points every time you spend 150 on BigBasket using this card. But then you hear about HDFC SmartBuy where you can buy BigBasket voucher which gives you 5 times the original point. So now for same 150 BigBasket order you got 20 ponts.",
-          "Now you might be getting confused about what HDFC Smartbuy is and what not. Stay with us our aim is to provide you all the information. Navigate to Travel on Points Section and you will find eveything there."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "award-flights-search-and-booking",
-    "title": "Award flights like a pro: searching, availability, and booking step-by-step",
-    "excerpt": "A detailed guide to finding award seats, using flexibility, and booking flights with fewer points and fewer headaches.",
-    "category": "Miles & Points Explained",
-    "readTime": "18 min read",
-    "publishedOn": "2025-12-10",
-    "seoTitle": "How to Book Award Flights (Search + Availability) | Miles Go Round",
-    "seoDescription": "Learn award seat availability, flexible search tactics, and how to book flights with miles without costly mistakes.",
-    "tags": [ "award-flights", "availability", "search", "partners" ],
-    "sections": [
-      {
-        "heading": "What award availability is (and why it confuses people)",
-        "body": [
-          "Airlines may sell many seats for cash but release only a limited subset for award bookings (or price them very high). This is why you can see cash seats but no reasonable award options.",
-          "Some programs expose more seats to their own members than to partners. Others show seats widely but price them dynamically."
+          "For cashback or discount cards, this is simple: compare the cashback percentage across cards that fit your spending criteria.",
+          "For credit cards that earn reward points, it is less straightforward. First, you must assign a safe, average monetary value to each point. Then, calculate how many points you earn per ₹100 spent to derive your rate of return.",
+          "Note that many reward cards give accelerated (higher) points when you make purchases via specific platforms. Some of these platforms also sell shopping vouchers for grocery, fashion, and dining.",
+          "For example, suppose the HDFC Regalia Gold Credit Card gives 4 reward points per ₹150 spent. You might assume you will get 4 points when spending ₹150 on BigBasket. However, via the 'HDFC SmartBuy' portal, you can buy a BigBasket voucher that gives you 5x points. Suddenly, for that same ₹150 spend, you earn 20 points.",
+          "If you are confused about HDFC SmartBuy or similar portals, don't worry. Navigate to our 'Travel on Points' section, where we explain these accelerators in detail."
         ]
       },
       {
-        "heading": "The flexibility triangle: dates, airports, and cabins",
+        "heading": "The \"Net Effective Return\" (Don't ignore the fee!)",
         "body": [
-          "If you can flex dates by even 1–3 days, you often find dramatically better pricing or availability.",
-          "Cabin flexibility helps too: sometimes premium economy appears when economy is unavailable, or mixed-cabin itineraries reduce cost."
-        ]
-      },
-      {
-        "heading": "Partner bookings and alliances (the hidden superpower)",
-        "body": [
-          "Many programs let you redeem miles for flights on partner airlines. Alliances and partnerships expand your options beyond one airline’s own metal.",
-          "This is where “sweet spots” come from: you might book the same seat through a partner program for fewer miles, depending on the partner’s rules and pricing.",
-          "Example : The cheapest option to buy Cathay Pacific award ticket is not through Cathay Pacific directly, but using Qatar Airwayas Avios(both are one world alliance partners)"
-        ]
-      },
-      {
-        "heading": "Booking workflow that prevents disasters",
-        "body": [
-          "Step 1: Find the exact flight(s) with award space. Save flight numbers, dates, and cabin details.",
-          "Step 2: Confirm the total cash component (taxes, surcharges) before transferring anything.",
-          "Step 3: Only then move transferable points (if required), and complete booking as soon as points arrive."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "transfer-partners-and-when-to-transfer",
-    "title": "Transfer partners: ratios, timing, bonuses, and safe transfer checklists",
-    "excerpt": "Transferable points are powerful—when you transfer correctly. Learn the rules, the timing, and the safety checklist.",
-    "category": "Miles & Points Explained",
-    "readTime": "16 min read",
-    "publishedOn": "2025-12-11",
-    "seoTitle": "Understanding Transfer Partners (Ratios + Timing) | Miles Go Round",
-    "seoDescription": "A complete guide to transfer partners: ratios, transfer times, transfer bonuses, and the checklist to avoid orphaned points.",
-    "tags": [ "transfer-partners", "bank-points", "ratios", "bonuses" ],
-    "sections": [
-      {
-        "heading": "What a transfer partner is (and why it changes everything)",
-        "body": [
-          "Transfer partners let you move bank points into airline/hotel programs. This converts flexible points into a specific currency that can book that partner’s awards.",
-          "Transfers are often one-way. Once you transfer, you generally cannot reverse it—so treat transfers as a booking step, not a storage strategy."
-        ]
-      },
-      {
-        "heading": "Ratios and rounding (small details, big consequences)",
-        "body": [
-          "Transfers can be 1:1, 2:1, 5:4, etc. A worse ratio means you need more bank points to get the same partner balance.",
-          "Watch for rounding rules and minimum transfers. Some programs require transfers in blocks (e.g., 1,000 points). Plan your transfer so you don’t strand leftovers."
-        ]
-      },
-      {
-        "heading": "Transfer time and availability risk",
-        "body": [
-          "Some transfers are instant; others take hours or days. The risk is that award availability can disappear while you wait.",
-          "If you can place an award on hold (some programs allow it), do that first. If not, be ready to book immediately when points arrive."
-        ]
-      },
-      {
-        "heading": "Transfer bonuses (when they help and when they tempt you)",
-        "body": [
-          "A transfer bonus can increase what you receive (e.g., 20% more miles). This can be great if you already have a specific redemption ready.",
-          "Avoid transferring “just because there’s a bonus.” Bonuses don’t matter if you move points into a program you won’t use soon."
-        ]
-      },
-      {
-        "heading": "The safe transfer checklist",
-        "body": [
-          "1) Confirm award space exists for the exact flight/hotel you want.",
-          "2) Confirm the total cost: points + taxes/fees + any surcharges.",
-          "3) Confirm the transfer ratio and minimum increments.",
-          "4) Confirm the expected transfer time.",
-          "5) Transfer only what you need (plus a small buffer if the program rounds up), then book immediately."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "fees-surcharges-and-hidden-costs",
-    "title": "Fees, surcharges, and hidden costs: how to keep awards truly affordable",
-    "excerpt": "Not all awards are created equal. Learn the fees that can ruin redemptions and how to avoid them.",
-    "category": "Miles & Points Explained",
-    "readTime": "14 min read",
-    "publishedOn": "2025-12-12",
-    "seoTitle": "Award Travel Fees & Surcharges Explained | Miles Go Round",
-    "seoDescription": "Understand award taxes, carrier-imposed surcharges, and change/cancel fees so you avoid redemptions that cost almost as much as cash.",
-    "tags": [ "fees", "fuel-surcharges", "award-travel", "beginner" ],
-    "sections": [
-      {
-        "heading": "Taxes vs airline-added surcharges (know the difference)",
-        "body": [
-          "Taxes are typically unavoidable government/airport charges that apply whether you pay cash or points.",
-          "Some airlines also add carrier-imposed surcharges (sometimes called fuel surcharges). On award tickets, these surcharges can appear on top of the miles you redeem, meaning your ‘free’ ticket may still require significant cash."
-        ]
-      },
-      {
-        "heading": "How to spot surcharges before you commit",
-        "body": [
-          "When you price an award, look carefully at the cash breakdown before you transfer points or finalize booking.",
-          "If the cash portion feels unusually high for an award, compare with alternative routings or different partner programs that may not pass on surcharges the same way."
-        ]
-      },
-      {
-        "heading": "Change/cancel rules and why they affect your strategy",
-        "body": [
-          "Some programs offer cheap or free cancellations; others charge fees or impose strict policies.",
-          "If your plans are uncertain, you may prefer currencies/programs known for flexible policies, even if the raw points price is slightly higher."
-        ]
-      },
-      {
-        "heading": "A decision framework: when a surcharge-heavy award is still okay",
-        "body": [
-          "Sometimes a surcharge-heavy premium cabin award still beats paying cash—especially during peak periods when cash prices are extreme.",
-          "Use the value approach you learned earlier: compare cash you’d pay vs points + unavoidable fees. If the award still saves meaningful money (or upgrades your trip massively), it can still be a win."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "dynamic-pricing-award-charts-and-sweet-spots",
-    "title": "Award charts vs dynamic pricing: how pricing really works and how to find sweet spots",
-    "excerpt": "Understand why some bookings swing wildly in points cost—and how experts consistently find better deals.",
-    "category": "Miles & Points Explained",
-    "readTime": "17 min read",
-    "publishedOn": "2025-12-13",
-    "seoTitle": "Dynamic Pricing vs Award Charts (Sweet Spots) | Miles Go Round",
-    "seoDescription": "Learn award charts vs dynamic pricing, how peak periods inflate prices, and how to uncover sweet spots and partner advantages.",
-    "tags": [ "dynamic-pricing", "award-charts", "sweet-spots", "advanced" ],
-    "sections": [
-      {
-        "heading": "Two pricing models: award charts and dynamic pricing",
-        "body": [
-          "Award charts price awards based on zones, distance bands, or categories. You may get predictable pricing if space is available.",
-          "Dynamic pricing ties award costs closer to demand and/or cash price. It can improve “any seat” availability, but prices can spike sharply during peak travel times."
-        ]
-      },
-      {
-        "heading": "Why sweet spots exist (and why they disappear)",
-        "body": [
-          "Sweet spots usually exist because one program’s pricing rules are more generous for certain routes, regions, or partner flights than another’s.",
-          "They can change without warning. The goal isn’t to memorize a thousand sweet spots—it’s to learn the pattern: compare programs, compare partners, compare dates."
-        ]
-      },
-      {
-        "heading": "Practical sweet-spot hunting method (repeatable)",
-        "body": [
-          "Start with your route and dates, then price it in at least two different programs (your primary program + a partner option).",
-          "If you have transferable points, evaluate whether transferring enables the cheaper pricing or better availability—then only transfer when ready to book."
-        ]
-      },
-      {
-        "heading": "Peak vs off-peak behavior (and how to use it)",
-        "body": [
-          "Dynamic programs tend to inflate points costs around holidays, weekends, and major events.",
-          "If you plan early, stay flexible on dates, and consider nearby airports, you often sidestep peak pricing."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "elite-status-and-perks-worth-chasing",
-    "title": "Elite status: perks, qualification, and when it’s actually worth it",
-    "excerpt": "Elite status can unlock real comfort—or become a distraction. Learn the benefits, the costs, and the smart path.",
-    "category": "Miles & Points Explained",
-    "readTime": "14 min read",
-    "publishedOn": "2025-12-14",
-    "seoTitle": "Airline & Hotel Elite Status Explained | Miles Go Round",
-    "seoDescription": "A clear guide to elite status: how it works, typical benefits, qualification paths, and when to pursue status vs just use points.",
-    "tags": [ "elite-status", "airlines", "hotels", "strategy" ],
-    "sections": [
-      {
-        "heading": "What elite status is and what it usually gives",
-        "body": [
-          "Elite status is a tiered loyalty level (airline or hotel) typically earned via flying, stays, or sometimes credit card ownership/spend.",
-          "It can include priority check-in, bonus earning, upgrades, late checkout, lounge access (in some cases), and better customer support.",
-          "Perks vary widely by brand and by region—so treat status like a tool, not a trophy."
-        ]
-      },
-      {
-        "heading": "Status vs points: different goals",
-        "body": [
-          "Points are about free/discounted travel. Status is about better treatment during travel (and sometimes faster earning).",
-          "If you travel only a few times per year, chasing status can cost more than it returns. In that case, focus on points for savings and pay for comfort selectively."
-        ]
-      },
-      {
-        "heading": "When status makes sense",
-        "body": [
-          "If you fly the same airline often for work, status can reduce stress (priority lanes, rebooking help during disruptions).",
-          "If you do many hotel nights, status can materially improve the experience (breakfast, late checkout, room priority). But benefits can vary property-to-property."
-        ]
-      },
-      {
-        "heading": "A beginner-friendly approach to status",
-        "body": [
-          "Don’t chase status in Year 1. First, learn redemptions and build consistency with 1–2 programs.",
-          "If your travel volume naturally qualifies you, great. If not, treat status as optional until your pattern justifies it."
+          "A card might offer a high 4% return, but if it comes with a high annual fee, your *actual* profit could be lower than a free card.",
+          "To see if a fee-based card is worth it, subtract the annual fee from the total value of rewards you expect to earn in a year.",
+          "**The Breakeven Calculation**: Ask yourself, 'How much do I need to spend just to earn back the fee?' For example, if a card costs ₹3,000 and earns a 2% return, you must spend ₹1.5 Lakhs just to break even (return to ₹0 profit). Only spending *above* that amount generates real value."
         ]
       }
     ]
