@@ -2,31 +2,31 @@
   "travelResources": [
     {
       "slug": "macau-transportation-essentials",
-      "title": "Macau Transportation Essentials",
+      "title": "Macau Travel Guide: Ferry, Bus, & Casino Shuttles",
       "author": "Manik",
       "summary": "Practical tips for traversing from Hong Kong to Macau, navigating the ferry terminals, and using Macau's public transit without paying hefty dollars.",
-      "seoDescription": "Learn how to reach Macau from Hong Kong, choose between ferries or the HZMB shuttle, and ride local buses with contactless payments.",
+      "seoDescription": "Macau transportation guide: Hong Kong to Macau ferry vs HZMB, free casino shuttle bus routes, and how to pay for public buses.",
       "publishedOn": "2025-12-01",
       "displayDate": "December 1, 2025",
-      "readTime": "6 minute read",
+      "readTime": "5 minute read",
       "heroImage": {
         "src": "/images/content/20251120_142008.jpg",
-        "alt": "Ferry terminal boarding area in Macau",
+        "alt": "High-speed ferry terminal boarding gate in Macau, connecting to Hong Kong.",
         "caption": "Early morning ferries keep border queues short.",
         "enabled": true
       },
       "gallery": [
         {
           "src": "/images/content/20251121_084039.jpg",
-          "alt": "Travelers boarding at Macau's ferry terminal"
+          "alt": "Tourists and commuters boarding a ferry at the Macau terminal"
         },
         {
           "src": "/images/content/20251121_082951.jpg",
-          "alt": "Cotai Water Jet ferry departing Hong Kong"
+          "alt": "Cotai Water Jet high-speed ferry departing Hong Kong for Macau."
         },
         {
           "src": "/images/content/20251120_154116.jpg",
-          "alt": "Passengers waiting at a Macau city bus stop"
+          "alt": "Passengers waiting at a public city bus stop in Macau Peninsula."
         }
       ],
       "sections": [
@@ -34,14 +34,14 @@
           "heading": "Travel from Hong Kong to Macau",
           "body": [
             "Two main routes connect Hong Kong to Macau: high-speed ferries from Sheung Wan, and the Hong Kong–Zhuhai–Macau Bridge (HZMB) shuttle buses from the airport.",
-            "Ferries are a convenient and easy mode of transport. They generally run all year round but suspend service under severe conditions like Typhoon Signal No. 8 or higher. On the other hand, the HZMB bus can be a faster mode of transport late at night when traffic is light, or when there’s no other option.  There’s provision to stow away your luggage safely in both modes of transport, so if you want you can carry your suitcase.",
+            "Ferries are a convenient and easy mode of transport. They generally run all year round but suspend service under severe conditions like Typhoon Signal No. 8 or higher. On the other hand, the HZMB bus can be a faster mode of transport late at night when traffic is light, or when there’s no other option.  There’s provision to stow away your luggage safely in both modes of transport, so if you want you can carry your suitcase.",
             "We booked Ferry for 10:30 AM Departure from Sheung Wan but were able to board 10:00 AM ferry because we arrived early. Ferry Terminal is located inside Shun Tak Centre and is well connected with the Sheung Wan MTR station.",
             "Booking can be made online as well as offline. We booked on Klook and everything worked smoothly. Just show QR code of your online booking at the terminal. Remember to bring your passport and a completed arrival card; immigration happens on both sides of the trip."
           ],
           "images": [
             {
               "src": "/images/content/cotai_waterjet.jpg",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "alt": "Cotai Water Jet ferry docked at Sheung Wan Terminal, Hong Kong.",
               "caption": "Ferries between Hong Kong and Macau depart every 30 minutes.",
               "enabled": true
             }
@@ -57,7 +57,7 @@
           "images": [
             {
               "src": "/images/content/macau_lisboa_Bus.jpg",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "alt": "Free shuttle bus for Lisboa Palace outside the Macau Ferry Terminal.",
               "enabled": true
             }
           ],
@@ -72,7 +72,7 @@
           "images": [
             {
               "src": "/images/content/20251121_084035.jpg",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "alt": "Macau public bus driving on a street in Taipa or Macau Peninsula.",
               "enabled": true
             }
           ],
@@ -88,7 +88,7 @@
           ],
           "image": {
             "src": "/images/content/20251120_154116.jpg",
-            "alt": "HZMB shuttle bus parked at the terminal",
+            "alt": "Posters detailing bus routes and stops at a Macau public bus station.",
             "caption": "Read the Route carefully to determine which side of the road you have to board the bus from.",
             "enabled": true
           },
@@ -106,17 +106,17 @@
     },
     {
       "slug": "hongkong-transportation-essentials",
-      "title": "Hong Kong Transportation Essentials",
+      "title": "Hong Kong Public Transport Guide: MTR, Octopus & Trams",
       "author": "Manik",
       "summary": "Hong Kong is one of those cities where getting around is surprisingly easy, even on your very first trip. The moment you land at Hong Kong International Airport, signs in English and Chinese clearly guide you towards “Trains to City” or “Public Transport”. Before you leave the terminal, it’s worth picking up an Octopus card.",
-      "seoDescription": "Guide on how to explpore Hong Kong using public transport and taxis. Tips on Hong Kong Octopus card. MTR trains, Buses and ding ding trams.",
+      "seoDescription": "The essential guide to Hong Kong public transport: MTR, Airport Express, Octopus Card, ding ding trams, and bus navigation tips.",
       "publishedOn": "2025-12-01",
       "displayDate": "December 7, 2025",
-      "readTime": "6 minute read",
+      "readTime": "8 minute read",
       "heroImage": {
         "src": "/images/content/HKG-SkyLine.jpg",
-        "alt": "Ferry terminal boarding area in Macau",
-        "caption": "Early morning ferries keep border queues short.",
+        "alt": "Hong Kong Island skyline overlooking Victoria Harbour at sunset.",
+        "caption": "The efficient MTR and diverse public transit make HK easy to navigate.",
         "enabled": true
       },
       "sections": [
@@ -130,8 +130,8 @@
           "images": [
             {
               "src": "/images/content/octopus-card-1.jpg",
-              "alt": "Tourist Octopus Cards",
-              "caption": "Tourist Octopus Cards",
+              "alt": "A collection of colorful Hong Kong Tourist Octopus Cards.",
+              "caption": "The Octopus card is essential for MTR, buses, ferries, and most convenience stores.",
               "enabled": true
             }
           ],
@@ -147,12 +147,12 @@
           "images": [
             {
               "src": "/images/content/hong-kong-fast-pass.jpg",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "alt": "Airport Express Fast Pass ticket dispenser at Hong Kong International Airport.",
               "enabled": true
             },
             {
               "src": "/images/content/MTR-Airport-7.png",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "alt": "Airport Express train platform sign pointing towards the city center.",
               "enabled": true
             }
           ],
@@ -167,7 +167,7 @@
           "images": [
             {
               "src": "/images/content/MTR_routemap.jpg",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "alt": "Official MTR route map showing all train lines crisscrossing Hong Kong.",
               "enabled": true
             }
           ],
@@ -182,8 +182,8 @@
           ],
           "image": {
             "src": "/images/content/ding-ding-tram.jpg",
-            "alt": "HZMB shuttle bus parked at the terminal",
-            "caption": "Read the Route carefully to determine which side of the road you have to board the bus from.",
+            "alt": "Historic Hong Kong 'Ding Ding' double-decker tram traveling through the city.",
+            "caption": "The slow, flat-rate 'Ding Ding' tram is the most scenic way to explore Hong Kong Island.",
             "enabled": true
           },
           "enabled": true
@@ -195,8 +195,8 @@
           ],
           "image": {
             "src": "/images/content/HKG-Taxi.jpg",
-            "alt": "HZMB shuttle bus parked at the terminal",
-            "caption": "Read the Route carefully to determine which side of the road you have to board the bus from.",
+            "alt": "A red Hong Kong taxi driving on a street in Kowloon or Hong Kong Island.",
+            "caption": "Taxis are readily available but are often unnecessary due to superior public transport.",
             "enabled": true
           },
           "enabled": true
