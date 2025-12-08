@@ -232,7 +232,7 @@ export default async function Home() {
             <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://www.youtube.com/@milesGoRound" target="_blank" rel="noreferrer">
               YouTube
             </a>
-            <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
+                      <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://x.com/milesGoRound" target="_blank" rel="noreferrer">
               X/twitter
             </a>
           </div>
