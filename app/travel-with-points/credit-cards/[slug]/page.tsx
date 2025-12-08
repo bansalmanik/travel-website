@@ -351,16 +351,16 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
 
   return (
     <SectionWrapper title="Apply now">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
         <a
           href={applyNow.url}
-          className="inline-flex w-full items-center justify-center rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-amber-500 sm:w-auto"
+          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-amber-500 whitespace-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
           {label}
         </a>
-        {applyNow.disclaimer ? <p className="text-xs text-slate-600">{applyNow.disclaimer}</p> : null}
+        {applyNow.disclaimer ? <p className="text-xs text-slate-600 pt-1">{applyNow.disclaimer}</p> : null}
       </div>
     </SectionWrapper>
   );
