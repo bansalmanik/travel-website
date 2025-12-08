@@ -6,12 +6,16 @@ import { notFound } from "next/navigation";
 import GallerySlider from "@/app/components/gallery-slider";
 import { getTravelResourceEntries } from "@/lib/contentData";
 
-export const runtime = "edge";
-
 export type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  const resources = await getTravelResourceEntries();
+  return resources.map((resource) => ({
+    slug: resource.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

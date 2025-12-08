@@ -4,15 +4,19 @@ import { notFound } from "next/navigation";
 
 import GallerySlider from "@/app/components/gallery-slider";
 
-import { getStoryBySlug } from "../data";
+import { getAllStorySummaries, getStoryBySlug } from "../data";
 import type { StorySectionMedia } from "../data";
-
-export const runtime = "edge";
 
 type StoryPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  const stories = await getAllStorySummaries();
+  return stories.map((story) => ({
+    slug: story.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: StoryPageProps) {
   const { slug } = await params;
