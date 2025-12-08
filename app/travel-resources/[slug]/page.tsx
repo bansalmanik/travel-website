@@ -6,12 +6,16 @@ import { notFound } from "next/navigation";
 import GallerySlider from "@/app/components/gallery-slider";
 import { getTravelResourceEntries } from "@/lib/contentData";
 
-export const runtime = "edge";
-
 export type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  const resources = await getTravelResourceEntries();
+  return resources.map((resource) => ({
+    slug: resource.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -114,12 +118,9 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
           </div>
           <div className="absolute inset-0 flex items-end justify-center pb-14">
             <div className="mx-auto flex w-full max-w-4xl flex-col gap-4 px-6 text-center text-white">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">Travel Resource</p>
               <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">{travelResource.title}</h1>
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
                 <span>{travelResource.displayDate}</span>
-                <span className="hidden sm:inline">•</span>
-                <span>{travelResource.readTime}</span>
                 <span className="hidden sm:inline">•</span>
                 <span>{travelResource.author}</span>
               </div>

@@ -42,11 +42,11 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/40 to-sky-50 text-slate-900">
-      <header className="relative isolate overflow-hidden">
+      <header className="relative isolate flex min-h-[60vh] items-center overflow-hidden sm:min-h-[70vh]">
         <div className="absolute inset-0 -z-10">
           <Image
             src={heroImageSrc}
-            alt="Sunset over mountains and fjords"
+            alt="Sunset over mountains"
             fill
             className="object-cover brightness-75"
             priority
@@ -55,11 +55,10 @@ export default async function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/55 to-slate-900/30" />
         </div>
         <div className="mx-auto flex max-w-4xl flex-col gap-6 px-4 pb-16 pt-14 text-white sm:px-6 sm:pb-24 sm:pt-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-100/90 sm:text-base">Travel differently</p>
-          <h1 className="text-pretty text-center text-3xl font-bold leading-tight sm:text-left sm:text-5xl sm:leading-tight">
-            Make Every Mile Meaningful.
+          <h1 className="text-pretty text-center text-4xl font-bold leading-tight sm:text-left sm:text-6xl sm:leading-tight">
+            Make Every Mile Meaningful
           </h1>
-          <p className="text-pretty text-center text-base text-amber-50/90 sm:text-left sm:text-lg">
+          <p className="text-pretty text-center text-lg text-amber-50/90 sm:text-left sm:text-xl">
             Blending soulful journeys with smart use of miles and points, so every trip becomes richer, more thoughtful, and far more rewarding.
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4">
@@ -67,7 +66,7 @@ export default async function Home() {
               className="inline-flex w-full items-center justify-center rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-md shadow-amber-300/40 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
               href="/travel-with-points"
             >
-              Travel on Points
+              Travel with Points
             </Link>
             <Link
               className="inline-flex w-full items-center justify-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-md shadow-slate-900/20 ring-1 ring-inset ring-white/30 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-100 sm:w-auto sm:text-base"
@@ -101,6 +100,27 @@ export default async function Home() {
               <p className="text-pretty text-sm leading-relaxed text-slate-600 sm:text-base">
                 Earn smarter. Redeem better. Fly further. Miles and points that take you places.
               </p>
+              <div className="flex justify-center md:justify-start">
+                <Link
+                  href="/travel-with-points/miles-and-points-explained"
+                  className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-sm transition hover:-translate-y-[2px] hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 sm:text-sm"
+                >
+                  Miles & Points Explained
+                  <svg
+                    aria-hidden
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
             <ul className="mt-2 grid gap-4 sm:mt-0 sm:grid-cols-2">
               {travelWithPointsHighlights.map((item) => (
@@ -149,9 +169,30 @@ export default async function Home() {
                 Behind-the-scenes notes & resources
               </h2>
             </div>
-            <p className="mx-auto max-w-2xl text-pretty text-sm text-slate-600 sm:mx-0 sm:max-w-xl sm:text-base">
-              Travel smarter with bite-sized guides, practical tips, and insider ways to stretch every mile and point.
-            </p>
+            <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 sm:mx-0 sm:max-w-xl sm:items-end sm:text-right">
+              <p className="text-pretty text-sm text-slate-600 sm:text-base">
+                Travel smarter with bite-sized guides, practical tips, and insider ways to stretch every mile and point.
+              </p>
+              <Link
+                className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 underline-offset-4 transition hover:text-slate-700 hover:underline"
+                href="/travel-resources"
+              >
+                View all resources
+                <svg
+                  aria-hidden
+                  className="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
 
           <ul className="space-y-4 sm:space-y-5">
@@ -174,7 +215,16 @@ export default async function Home() {
 
       <footer className="border-t border-slate-200 bg-white/80 py-10 text-sm text-slate-600">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 sm:text-left">
-          <p className="text-sm text-slate-700">© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+            <Image
+              src="/Logo/MilesGoRound-Logo-Blue.png"
+              alt="Miles Go Round logo"
+              width={1024}
+              height={1024}
+              className="h-12 w-12 rounded-full object-contain shadow-sm"
+            />
+            <p className="text-sm text-slate-700">© {new Date().getFullYear()} Miles Go Round. Stories from a life in motion.</p>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-5 sm:justify-start">
             <a className="font-semibold text-slate-700 transition hover:text-slate-900" href="https://www.instagram.com/milesgoround/" target="_blank" rel="noreferrer">
               Instagram

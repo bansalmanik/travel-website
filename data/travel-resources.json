@@ -2,46 +2,46 @@
   "travelResources": [
     {
       "slug": "macau-transportation-essentials",
-      "title": "Macau Transportation Essentials",
+      "title": "Macau Travel Guide: Ferry, Bus, & Casino Shuttles",
       "author": "Manik",
-      "summary": "Practical tips for crossing from Hong Kong, navigating the ferry terminals, and using Macau's public transit without extra fees.",
-      "seoDescription": "Learn how to reach Macau from Hong Kong, choose between ferries or the HZMB shuttle, and ride local buses with contactless payments.",
+      "summary": "Practical tips for traversing from Hong Kong to Macau, navigating the ferry terminals, and using Macau's public transit without paying hefty dollars.",
+      "seoDescription": "Macau transportation guide: Hong Kong to Macau ferry vs HZMB, free casino shuttle bus routes, and how to pay for public buses.",
       "publishedOn": "2025-12-01",
       "displayDate": "December 1, 2025",
-      "readTime": "6 minute read",
+      "readTime": "5 minute read",
       "heroImage": {
         "src": "/images/content/20251120_142008.jpg",
-        "alt": "Ferry terminal boarding area in Macau",
+        "alt": "High-speed ferry terminal boarding gate in Macau, connecting to Hong Kong.",
         "caption": "Early morning ferries keep border queues short.",
         "enabled": true
       },
       "gallery": [
         {
           "src": "/images/content/20251121_084039.jpg",
-          "alt": "Travelers boarding at Macau's ferry terminal"
+          "alt": "Tourists and commuters boarding a ferry at the Macau terminal"
         },
         {
           "src": "/images/content/20251121_082951.jpg",
-          "alt": "Cotai Water Jet ferry departing Hong Kong"
+          "alt": "Cotai Water Jet high-speed ferry departing Hong Kong for Macau."
         },
         {
           "src": "/images/content/20251120_154116.jpg",
-          "alt": "Passengers waiting at a Macau city bus stop"
+          "alt": "Passengers waiting at a public city bus stop in Macau Peninsula."
         }
       ],
       "sections": [
         {
-          "heading": "Crossing from Hong Kong",
+          "heading": "Travel from Hong Kong to Macau",
           "body": [
             "Two main routes connect Hong Kong to Macau: high-speed ferries from Sheung Wan, and the Hong Kong–Zhuhai–Macau Bridge (HZMB) shuttle buses from the airport.",
-            "Ferries are reliable in all weather, while the HZMB bus can be faster late at night when traffic is light. Bring your passport and a completed arrival card; immigration happens on both sides of the trip.",
-            "We booked Feery for 10:30 AM Departure from Sheung Wan but were able to board 10:00 AM ferry because we arrived early. Feery Terminal is located inside Shun Tak Centre and is well connected with the Sheung Wan MTR station",
-            "Booking can be made online as well as offline. We booked on Klook and everything worked smoothly. Just show QR code of your online booking at the terminal."
+            "Ferries are a convenient and easy mode of transport. They generally run all year round but suspend service under severe conditions like Typhoon Signal No. 8 or higher. On the other hand, the HZMB bus can be a faster mode of transport late at night when traffic is light, or when there’s no other option.  There’s provision to stow away your luggage safely in both modes of transport, so if you want you can carry your suitcase.",
+            "We booked Ferry for 10:30 AM Departure from Sheung Wan but were able to board 10:00 AM ferry because we arrived early. Ferry Terminal is located inside Shun Tak Centre and is well connected with the Sheung Wan MTR station.",
+            "Booking can be made online as well as offline. We booked on Klook and everything worked smoothly. Just show QR code of your online booking at the terminal. Remember to bring your passport and a completed arrival card; immigration happens on both sides of the trip."
           ],
           "images": [
             {
-              "src": "/images/content/cotai_waterjet.JPG",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "src": "/images/content/cotai_waterjet.jpg",
+              "alt": "Cotai Water Jet ferry docked at Sheung Wan Terminal, Hong Kong.",
               "caption": "Ferries between Hong Kong and Macau depart every 30 minutes.",
               "enabled": true
             }
@@ -51,13 +51,13 @@
         {
           "heading": "Free Shuttle from Ferry Terminal",
           "body": [
-            "Macau has two Ferry terminals, Outer Harbour Ferry Terminal and Taipa Ferry Terminal. Almost all major Macau hotels operate free shuttle buses from ferry terminals and even if you are not a guest you can use them. Walk outside the terminal arrival hall and look for hotel shuttle signage: Wynn, Venetian, Galaxy, MGM, Sands, etc. Board the shuttle for the hotel closest to your destination.",
-            "Pro Tip - Most Hotels in Cotai Strip run free shuttle only to Taipa Ferry terminal while Hotels in Macau City Centre run shuttles from Outer Harbour Ferry Terminal. If you want to travel from Taipa Ferry terminal to Macau City centre first take Lisboa Palace shuttle bus which will drop you at Lisboa Palace. From Lisboa Palace take free shuttle to Grand Lisboa which is in Macau City Centre. And Don't worry shuttle is free even if you are not staying at the respective hotel. Staff at hotel will guide you and almost everyone uses them.'"
+            "Macau has two Ferry terminals, Outer Harbour Ferry Terminal and Taipa Ferry Terminal. Almost all major Macau Casino Hotels operate free shuttle buses from ferry terminals and you can use them even if you don’t stay at them. Walk outside the terminal arrival hall and look for hotel shuttle signage: Wynn, Venetian, Galaxy, MGM, Sands, etc. Board the shuttle for the hotel closest to your destination. There’s also interchange available to different hotels of same Franchise. So if you know your hotels, you can navigate the city for free!",
+            "Pro Tip - Most Hotels in Cotai Strip run free shuttle only to Taipa Ferry terminal while Hotels in Macau City Centre run shuttles from Outer Harbour Ferry Terminal. If you want to travel from Taipa Ferry terminal to Macau City centre first take Lisboa Palace shuttle bus which will drop you at Lisboa Palace. From Lisboa Palace take free shuttle to Grand Lisboa which is in Macau City Centre. And don't worry, as we said, shuttle is free even if you are not staying at the respective hotel. You will easily find an English-speaking staff at hotel who will happily guide you. As everyone uses these shuttles, expect some waiting in line to board these buses."
           ],
           "images": [
             {
-              "src": "/images/content/20251120_172713.jpg",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "src": "/images/content/macau_lisboa_Bus.jpg",
+              "alt": "Free shuttle bus for Lisboa Palace outside the Macau Ferry Terminal.",
               "enabled": true
             }
           ],
@@ -67,12 +67,12 @@
           "heading": "Public Buses",
           "body": [
             "Macau’s public bus network is extensive, affordable, and one of the best ways to travel if you're comfortable navigating a local system. Buses connect the major zones — Macau Peninsula, Taipa, Cotai Strip, and Coloane — with frequent services throughout the day. The fare is a simple flat rate of around 6 MOP per ride, regardless of distance. Routes run from early morning until late night, with most tourist routes operating every 5-10 minutes.",
-            "You can pay for buses in Hong Kong Dollar with 1 Hong Kong Dollar = 1 Macanese Pataca. Board the bus from front gate, drop your fare in the fare drop box and exit from back gate of bus when you reach your destination. Remember that you will not get any loose change back when you pay in cash. If your fare is 6 MOP/HKD and you only have 10 HKD bill, you will not get 4 HKD back"
+            "You can pay for buses in Hong Kong Dollar with 1 Hong Kong Dollar = 1 Macanese Pataca. Board the bus from front gate, drop your fare in the fare drop box and exit from back gate of bus when you reach your destination. Remember that you will not get any loose change back when you pay in cash. If your fare is 6 MOP/HKD and you only have 10 HKD bill, you will not get 4 HKD back."
           ],
           "images": [
             {
               "src": "/images/content/20251121_084035.jpg",
-              "alt": "Cotai Water Jet ferry waiting at Sheung Wan harbor",
+              "alt": "Macau public bus driving on a street in Taipa or Macau Peninsula.",
               "enabled": true
             }
           ],
@@ -81,14 +81,14 @@
         {
           "heading": "How to Navigate Public Buses",
           "body": [
-            "Easiest way to Navigate public buses is using Google Maps. Just open the app and select your destination and google maps will show you where to board the bus and where to deboard it. If your journey involves interchanging buses it will show you taht also..",
-            "At every Bus station in Macau you will see posters which will show which buses arrive at that stop and their respective routes.",
+            "Easiest way to Navigate public buses is using Google Maps. Just open the app and select your destination and google maps will show you where to board the bus and where to deboard it. If your journey involves interchanging buses, map will show you that as well.",
+            "At every Bus station in Macau you will see posters which will detail the route of all the buses coming at that stop. You can also refer to Macau Government official web page for bus route information : https://www.dsat.gov.mo/dsat/bus_route.aspx . You can translate this page to English on your web browser.",
             "You can use MT1 bus if you want to travel between Taipa Ferry terminal and Macau City Centre(Grand Lisboa or Senardo Square). For travel between Cotai Strip and Outer Harbour Ferry Terminal you can use bus 28A.",
-            "We use MT1 bus to travel from Grand Lisboa to Taipa Ferry Terminal. The reason free shuttle was not an option for us was because we had to reach terminal at 10:00 AM while the free shuttle started operationg from 10:00 - 11:00 AM"
+            "We used MT1 bus to travel from Grand Lisboa to Taipa Ferry Terminal. The reason free shuttle was not an option for us was because we had to reach terminal at 10:00 AM while the free shuttle started operating from 10:00 - 11:00 AM."
           ],
           "image": {
             "src": "/images/content/20251120_154116.jpg",
-            "alt": "HZMB shuttle bus parked at the terminal",
+            "alt": "Posters detailing bus routes and stops at a Macau public bus station.",
             "caption": "Read the Route carefully to determine which side of the road you have to board the bus from.",
             "enabled": true
           },
@@ -97,7 +97,113 @@
         {
           "heading": "Taxi",
           "body": [
-            "Taxi are easily available in Macau. Expect them to pricier compared to public transport. Uber does not work in Macau. We did not use Taxi at all in Macau so cannot provide more info."
+            "Taxis are easily available in Macau, but not through Uber app, which doesn’t work here. Expect them to be much pricier compared to public transport. We did not use Taxi at all in Macau so cannot provide more information."
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "hongkong-transportation-essentials",
+      "title": "Hong Kong Public Transport Guide: MTR, Octopus & Trams",
+      "author": "Manik",
+      "summary": "Hong Kong is one of those cities where getting around is surprisingly easy, even on your very first trip. The moment you land at Hong Kong International Airport, signs in English and Chinese clearly guide you towards “Trains to City” or “Public Transport”. Before you leave the terminal, it’s worth picking up an Octopus card.",
+      "seoDescription": "The essential guide to Hong Kong public transport: MTR, Airport Express, Octopus Card, ding ding trams, and bus navigation tips.",
+      "publishedOn": "2025-12-01",
+      "displayDate": "December 7, 2025",
+      "readTime": "8 minute read",
+      "heroImage": {
+        "src": "/images/content/HKG-SkyLine.jpg",
+        "alt": "Hong Kong Island skyline overlooking Victoria Harbour at sunset.",
+        "caption": "The efficient MTR and diverse public transit make HK easy to navigate.",
+        "enabled": true
+      },
+      "sections": [
+        {
+          "heading": "Octopus Card",
+          "body": [
+            "For any tourist in Hong Kong, the Octopus card is the single most useful thing to have. Think of it as a reusable, rechargeable travel wallet that you simply tap to pay. You can use it on the MTR (metro), Airport Express, buses, trams, many ferries and light rail, and also for everyday purchases at convenience stores, some supermarkets, fast-food chains, cafés and vending machines. In practice, you can go through an entire day in Hong Kong without taking out your wallet—your Octopus card will pay for almost everything from metro rides and ding ding trams to a coffee at Starbucks.",
+            "You can get an Octopus card issued for HK$39, this amount is not refundable, and then top it up with stored value. Either way, you can buy and top up Octopus cards at MTR and Airport Express counters, 7-Elevens, and other locations all over the city.",
+            "Octopus card is also forgiving if your balance dips low. The system allows your balance to go slightly negative (up to a small limit) to let you complete a journey, after which you must top up before using it again. The minimum recharge is of HKD $50, you can get it topped up at nearest 7-elevent outlet, which is easy to find and nearly everywhere in Hong Kong."
+          ],
+          "images": [
+            {
+              "src": "/images/content/octopus-card-1.jpg",
+              "alt": "A collection of colorful Hong Kong Tourist Octopus Cards.",
+              "caption": "The Octopus card is essential for MTR, buses, ferries, and most convenience stores.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "heading": "Airport to City and Back",
+          "body": [
+            "Once you have your Octopus, the next decision is how to get from the airport into the city. The fastest option is the Airport Express, a dedicated train line connecting the airport to Tsing Yi, Kowloon and Hong Kong MTR stations. The ride from the airport to Hong Kong Station takes under half an hour, with trains running roughly every 10 minutes. The trains are modern, air-conditioned and comfortable, usually with free Wi-Fi and charging points. Fares are distance-based, but the airport to Hong Kong Station journey is a fixed, higher fare compared to normal MTR lines. Journeey from Airport to Hong Kong station costs HK$120 if using Octopus card.",
+            "We paid HK$170 for 2 people when travelling from Airport to Hong Kong station using Fast Pass. A Fast Pass provides you discount on Airport express if you are travelling in group of 2 or more.",
+            "You’ll find MTR and Airport Express customer service counters as well as convenience stores like 7-Eleven right in the arrivals area, and the airport offers free Wi-Fi so you can quickly check routes on the MTR app or Google Maps."
+          ],
+          "images": [
+            {
+              "src": "/images/content/hong-kong-fast-pass.jpg",
+              "alt": "Airport Express Fast Pass ticket dispenser at Hong Kong International Airport.",
+              "enabled": true
+            },
+            {
+              "src": "/images/content/MTR-Airport-7.png",
+              "alt": "Airport Express train platform sign pointing towards the city center.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "heading": "MTR Hong Kong",
+          "body": [
+            "Once you’re in the city, the MTR becomes your main mode of transport. Wherever you are in city, you can always find an MTR station within walkable distance. The network covers most of the areas visitors care about, with lines criss-crossing Hong Kong Island, Kowloon and parts of the New Territories. Trains generally run from early morning to past midnight, and frequency is high—every two to five minutes at busy times, slightly longer late at night. Stations and trains have clear signage and announcements in Cantonese, English and Mandarin, so it’s hard to get completely lost. Fares are distance-based and usually fall in the HK$5–HK$20 range for typical trips within the urban areas.",
+            "Using the MTR with an Octopus card is straightforward: tap your card at the entry gate, ride to your destination, and tap again when you exit. The system automatically calculates the exact fare for the distance travelled. This is cheaper and far more convenient than buying single-journey tickets every time. When we travelled to Disneyland from Sheung Wan, we took the Island Line one stop to Central, walked indoors to Hong Kong Station, boarded the Tung Chung Line towards Tung Chung, got off at Sunny Bay, and then took the Disneyland Resort Line train with its Disney-themed carriages. All the way, we just followed signs and tapped the same Octopus card at the start and end of each journey."
+          ],
+          "images": [
+            {
+              "src": "/images/content/MTR_routemap.jpg",
+              "alt": "Official MTR route map showing all train lines crisscrossing Hong Kong.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "heading": "Buses and Tram",
+          "body": [
+            "Beyond the MTR, buses fill in the gaps and can be both scenic and practical. Several companies operate routes that reach hilly residential areas, beaches, and neighbourhoods without MTR stations—for example, much of the south side of Hong Kong Island and deeper parts of the New Territories. To ride a bus, you typically board at the front, tap your Octopus on the reader once, then find a seat. On most routes, you pay a fixed fare when boarding. If you pay cash instead of Octopus, you need exact change because drivers do not return change.",
+            "One of the most charming and uniquely Hong Kong ways to get around is the Ding Ding tram on Hong Kong Island. This historic double-decker tram system runs along the island’s northern shore, from Kennedy Town in the west to Shau Kei Wan in the east, with a loop down to Happy Valley. It passes through important districts like Sheung Wan, Central, Admiralty, Wan Chai and Causeway Bay. The trams are best if you want to explore the city at leisurely pace: you sit upstairs, open a window and watch the city glide by at street level. The fare is very low—a flat amount for adults, with reduced fares for children and seniors—and it doesn’t matter how far you go. You board from the rear, ride until your stop, then walk to the front and tap your Octopus or drop exact coins into the fare box as you get off."
+
+          ],
+          "image": {
+            "src": "/images/content/ding-ding-tram.jpg",
+            "alt": "Historic Hong Kong 'Ding Ding' double-decker tram traveling through the city.",
+            "caption": "The slow, flat-rate 'Ding Ding' tram is the most scenic way to explore Hong Kong Island.",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "heading": "Taxi and Uber",
+          "body": [
+            "Taxis are readily availaible in Hong Kong. You can use Uber App to book a taxi and some taxis will even accept octopus cards. Honestly on our 7 day trip to Hong Kong we did not use Taxi even once because the public transport system is so good."
+          ],
+          "image": {
+            "src": "/images/content/HKG-Taxi.jpg",
+            "alt": "A red Hong Kong taxi driving on a street in Kowloon or Hong Kong Island.",
+            "caption": "Taxis are readily available but are often unnecessary due to superior public transport.",
+            "enabled": true
+          },
+          "enabled": true
+        },
+        {
+          "body": [
+            "A first-time visitor’s transport strategy in Hong Kong is simple. At the airport, get an Octopus card immediately. Choose between the fast but slightly pricier Airport Express and the slower but cheaper airport buses depending on your budget and hotel location. Once you are in the city, rely on the MTR as your main mode of travel, use buses to reach places not covered by the metro or when you want a scenic double-decker ride, and hop on the Ding Ding tram to explore Hong Kong Island at a slower, more cinematic pace. With that combination and one little Octopus card in your pocket, Hong Kong’s transport network becomes intuitive, efficient and almost fun to navigate—even on your very first visit."
           ],
           "enabled": true
         }
