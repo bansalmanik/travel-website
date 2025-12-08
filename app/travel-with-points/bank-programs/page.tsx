@@ -27,8 +27,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const runtime = "edge";
-
 async function getPrograms(): Promise<BankProgram[]> {
   const { programs } = await getBankProgramContent();
 
