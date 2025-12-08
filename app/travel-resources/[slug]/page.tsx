@@ -184,7 +184,7 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
           {travelResource.videoUrl ? (
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-zinc-900">Watch the journey</h2>
-              <div className="aspect-video w-full overflow-hidden rounded-2xl bg-zinc-900">
+              <div className="aspect-video w-full overflow-hidden rounded-2xl bg-zinc-100">
                 <iframe
                   src={travelResource.videoUrl}
                   title={`${travelResource.title} travel video`}

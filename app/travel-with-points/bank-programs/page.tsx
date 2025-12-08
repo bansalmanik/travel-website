@@ -39,14 +39,14 @@ export default async function BankProgramsPage() {
   const programs = await getPrograms();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <div className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-24 lg:py-32">
-        <span className="inline-flex items-center self-center rounded-full border border-rose-200/40 bg-rose-100/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-rose-200">
+        <span className="inline-flex items-center self-center rounded-full border border-rose-200 bg-rose-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-rose-800">
           Bank Programs
         </span>
         <div className="space-y-5 text-center">
           <h1 className="text-4xl font-semibold sm:text-5xl">Bank portals & reward ecosystems</h1>
-          <p className="mx-auto max-w-2xl text-base leading-7 text-slate-200/80">
+          <p className="mx-auto max-w-2xl text-base leading-7 text-slate-700">
             Decode accelerated earn rates, portal quirks, and redemption rules for India’s most popular bank reward platforms before you lock in your next travel booking or voucher spree.
           </p>
         </div>
@@ -55,32 +55,32 @@ export default async function BankProgramsPage() {
             <Link
               key={program.slug}
               href={`/travel-with-points/bank-programs/${program.slug}`}
-              className="group flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/10"
+              className="group flex h-full flex-col gap-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-md"
             >
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-200/90">
+                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-800">
                     {program.issuer}
                   </p>
-                  <h2 className="text-xl font-semibold text-white">{program.name}</h2>
+                  <h2 className="text-xl font-semibold text-slate-900">{program.name}</h2>
                 </div>
-                <dl className="grid gap-3 text-xs uppercase tracking-[0.25em] text-rose-100/70">
+                <dl className="grid gap-3 text-xs uppercase tracking-[0.25em] text-rose-800/80">
                   <div className="flex flex-col gap-1 text-[0.7rem]">
-                    <dt className="font-semibold text-rose-100/60">Program type</dt>
-                    <dd className="text-[0.75rem] normal-case tracking-normal text-slate-100/80">
+                    <dt className="font-semibold text-rose-900/70">Program type</dt>
+                    <dd className="text-[0.75rem] normal-case tracking-normal text-slate-700">
                       {program.programType}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-1 text-[0.7rem]">
-                    <dt className="font-semibold text-rose-100/60">Join cost</dt>
-                    <dd className="text-[0.75rem] normal-case tracking-normal text-slate-100/80">
+                    <dt className="font-semibold text-rose-900/70">Join cost</dt>
+                    <dd className="text-[0.75rem] normal-case tracking-normal text-slate-700">
                       {program.joinCost}
                     </dd>
                   </div>
                 </dl>
-                <p className="text-sm leading-6 text-slate-100/80">{program.summary}</p>
+                <p className="text-sm leading-6 text-slate-700">{program.summary}</p>
               </div>
-              <span className="inline-flex items-center text-sm font-semibold text-amber-300">
+              <span className="inline-flex items-center text-sm font-semibold text-rose-800">
                 Explore program
                 <svg
                   aria-hidden
@@ -97,9 +97,9 @@ export default async function BankProgramsPage() {
                 </svg>
               </span>
             </Link>
-          ))}
+            ))}
         </div>
-        <Link href="/travel-with-points" className="inline-flex items-center self-center text-sm font-semibold text-amber-300">
+        <Link href="/travel-with-points" className="inline-flex items-center self-center text-sm font-semibold text-rose-800">
           <svg
             aria-hidden
             className="mr-2 h-4 w-4"

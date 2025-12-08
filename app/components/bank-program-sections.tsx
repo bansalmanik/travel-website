@@ -38,7 +38,7 @@ function renderIntro(intro?: string) {
     return null;
   }
 
-  return <p className="text-sm leading-6 text-slate-200/80">{intro}</p>;
+  return <p className="text-sm leading-6 text-slate-700">{intro}</p>;
 }
 
 function renderKeyValueSection(section: KeyValueSection) {
@@ -49,24 +49,24 @@ function renderKeyValueSection(section: KeyValueSection) {
   return (
     <section
       key={section.id}
-      className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+      className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-white">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
-      <dl className="grid gap-4 text-sm text-slate-100/80 sm:grid-cols-2">
+      <dl className="grid gap-4 text-sm text-slate-700 sm:grid-cols-2">
         {section.items
           ?.filter((item) => item.value?.trim().length)
           .map((item) => (
             <div
               key={`${section.id}-${item.label}-${item.value}`}
-              className="rounded-2xl border border-white/5 bg-black/25 p-4"
+              className="rounded-2xl border border-slate-200 bg-slate-50 p-4"
             >
-              <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+              <dt className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">
                 {item.label}
               </dt>
-              <dd className="mt-2 text-sm font-medium text-white/90">{item.value}</dd>
+              <dd className="mt-2 text-sm font-medium text-slate-900">{item.value}</dd>
             </div>
           ))}
       </dl>
@@ -82,16 +82,16 @@ function renderBulletSection(section: BulletSection) {
   return (
     <section
       key={section.id}
-      className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+      className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-white">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
-      <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
+      <ul className="space-y-3 text-sm leading-6 text-slate-700">
         {section.bullets?.map((bullet, index) => (
           <li key={`${section.id}-bullet-${index}`} className="flex items-start gap-3">
-            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-300" aria-hidden />
+            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
             <span>{bullet}</span>
           </li>
         ))}
@@ -107,7 +107,7 @@ function renderBlock(block: ContentBlock, index: number) {
     }
 
     return (
-      <p key={`paragraph-${index}`} className="text-sm leading-6 text-slate-200/85">
+      <p key={`paragraph-${index}`} className="text-sm leading-6 text-slate-700">
         {block.text}
       </p>
     );
@@ -124,10 +124,10 @@ function renderContentBlocksSection(section: ContentBlocksSection) {
   return (
     <section
       key={section.id}
-      className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+      className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-white">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
       <div className="space-y-4">
@@ -151,7 +151,7 @@ function renderTableRow(row: TableRow, index: number): ReactElement | null {
       {row.cells.map((cell, cellIndex) => (
         <td
           key={`cell-${index}-${cellIndex}`}
-          className="border-t border-white/10 px-4 py-3 text-left align-top text-sm text-slate-100/80"
+          className="border-t border-slate-200 px-4 py-3 text-left align-top text-sm text-slate-700"
         >
           {cell}
         </td>
@@ -168,28 +168,28 @@ function renderTableSection(section: TableSection) {
   return (
     <section
       key={section.id}
-      className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+      className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
     >
       <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-white">{section.title}</h2>
+        <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
         {renderIntro(section.intro)}
       </div>
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-white/10 text-sm">
+        <table className="min-w-full divide-y divide-slate-200 text-sm">
           <thead>
             <tr>
               {section.table?.columns.map((column) => (
                 <th
                   key={column}
                   scope="col"
-                  className="px-4 py-2 text-left text-xs font-semibold uppercase tracking-[0.35em] text-amber-200"
+                  className="px-4 py-2 text-left text-xs font-semibold uppercase tracking-[0.35em] text-amber-700"
                 >
                   {column}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody className="divide-y divide-white/5">
+          <tbody className="divide-y divide-slate-200">
             {section.table?.rows
               .map((row, index) => renderTableRow(row, index))
               .filter((row): row is ReactElement => row !== null)}

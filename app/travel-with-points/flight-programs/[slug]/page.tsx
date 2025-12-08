@@ -99,45 +99,45 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <article className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-20 lg:py-28">
-        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex items-center gap-2">
             <li>
-              <Link href="/travel-with-points" className="hover:text-emerald-300">
+              <Link href="/travel-with-points" className="hover:text-emerald-800">
                 Travel with Points
               </Link>
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href="/travel-with-points/flight-programs" className="hover:text-emerald-300">
+              <Link href="/travel-with-points/flight-programs" className="hover:text-emerald-800">
                 Flight programs
               </Link>
             </li>
             <li aria-hidden>/</li>
-            <li className="text-emerald-200">{program.name}</li>
+            <li className="text-emerald-800">{program.name}</li>
           </ol>
         </nav>
 
         <header className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-300">Flight loyalty guide</p>
-          <h1 className="text-4xl font-semibold text-white">{program.name}</h1>
-          <p className="text-base text-slate-200/80">{program.summary}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-700">Flight loyalty guide</p>
+          <h1 className="text-4xl font-semibold text-slate-900">{program.name}</h1>
+          <p className="text-base text-slate-700">{program.summary}</p>
         </header>
 
-        <section className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-xl font-semibold text-white">Alliance & hubs</h2>
-          <dl className="grid gap-6 text-sm text-slate-100/80 sm:grid-cols-2">
+        <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-xl font-semibold text-slate-900">Alliance & hubs</h2>
+          <dl className="grid gap-6 text-sm text-slate-700 sm:grid-cols-2">
             <div>
-              <dt className="font-semibold text-white">Alliance</dt>
+              <dt className="font-semibold text-slate-900">Alliance</dt>
               <dd>{program.alliance}</dd>
             </div>
             <div>
-              <dt className="font-semibold text-white">Primary hubs</dt>
+              <dt className="font-semibold text-slate-900">Primary hubs</dt>
               <dd>{program.hub}</dd>
             </div>
           </dl>
@@ -145,9 +145,12 @@ export default async function FlightProgramDetailPage({ params }: PageProps) {
 
         <FlightProgramSections sections={program.sections} />
 
-        <footer className="flex flex-col gap-3 text-sm text-slate-200/80 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-white">Compare more airline programs</p>
-          <Link href="/travel-with-points/flight-programs" className="inline-flex items-center font-semibold text-emerald-300">
+        <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold text-slate-900">Compare more airline programs</p>
+          <Link
+            href="/travel-with-points/flight-programs"
+            className="inline-flex items-center font-semibold text-emerald-800"
+          >
             Back to flight programs hub
             <svg
               aria-hidden

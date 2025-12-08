@@ -215,24 +215,27 @@ export default function PointsConversionContent({ conversions }: PointsConversio
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <div className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
         <header className="space-y-3 text-center sm:text-left">
-          <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
             Points Transfer Calculator
           </h1>
+          <p className="text-sm text-slate-600 sm:text-base">
+            Check transfer partners, ratios, and projected points without leaving the page.
+          </p>
         </header>
 
-        <section className="rounded-3xl border border-white/10 bg-slate-900/60 p-4 shadow-lg shadow-slate-950/30 sm:p-6">
+        <section className="rounded-3xl border border-slate-200 bg-white/90 p-4 shadow-sm backdrop-blur sm:p-6">
           <div className="grid gap-4 sm:grid-cols-3 sm:items-end">
             <label className="space-y-2">
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+              <span className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
                 Program
               </span>
               <select
                 value={selectedProgramName}
                 onChange={handleProgramChange}
-                className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Select the card program"
               >
                 {programOptions.map((option) => (
@@ -244,13 +247,13 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             </label>
 
             <label className="space-y-2 sm:col-span-2">
-              <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+              <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
                 <span>Transfer from</span>
               </div>
               <select
                 value={normalizedSelectedFrom}
                 onChange={handleFromChange}
-                className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Select the points program you are transferring from"
                 disabled={fromOptions.length === 0}
               >
@@ -271,13 +274,13 @@ export default function PointsConversionContent({ conversions }: PointsConversio
 
           <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:items-end">
             <label className="space-y-2">
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+              <span className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
                 Transfer to
               </span>
               <select
                 value={normalizedSelectedTo}
                 onChange={handleToChange}
-                className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Select the partner you are transferring to"
                 disabled={toOptions.length === 0}
               >
@@ -291,7 +294,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             </label>
 
             <label className="space-y-2 sm:col-span-2">
-              <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.25em] text-slate-200/70">
+              <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
                 <span>Transfer points</span>
               </div>
               <input
@@ -301,25 +304,25 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 value={transferPoints}
                 onChange={handleTransferPointsChange}
                 placeholder="Enter points to transfer"
-                className="w-full rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 transition focus:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
                 aria-label="Enter the number of points you want to transfer"
               />
             </label>
           </div>
         </section>
 
-        <section className="rounded-3xl border border-white/10 bg-slate-900/40 shadow-lg shadow-slate-950/30">
+        <section className="rounded-3xl border border-slate-200 bg-white/90 shadow-sm backdrop-blur">
 
           {filteredPartnerRows.length === 0 ? (
             <div className="px-4 py-10 text-center sm:px-6">
-              <p className="text-base font-semibold text-white">No partners to show yet</p>
-              <p className="mt-2 text-sm text-slate-200/80">
+              <p className="text-base font-semibold text-slate-900">No partners to show yet</p>
+              <p className="mt-2 text-sm text-slate-600">
                 Pick a program and card to instantly see available transfer partners and ratios.
               </p>
             </div>
           ) : (
-            <div className="divide-y divide-white/5">
-              <div className="grid grid-cols-2 gap-3 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-300/70 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6">
+            <div className="divide-y divide-slate-200">
+              <div className="grid grid-cols-2 gap-3 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-600 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6">
                 <span>Partner</span>
                 <span>Transfer ratio</span>
                 <span className="hidden sm:block">Notes</span>
@@ -333,24 +336,24 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 return (
                   <div
                     key={`${partner.to}-${partner.rate}`}
-                    className="grid grid-cols-2 gap-3 px-4 py-3 text-sm text-slate-100 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6"
+                    className="grid grid-cols-2 gap-3 px-4 py-3 text-sm text-slate-900 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6"
                   >
                     <div className="space-y-1">
-                      <p className="font-semibold text-white">{partner.to}</p>
-                      <p className="text-xs uppercase tracking-[0.25em] text-slate-300/70 sm:hidden">Notes</p>
-                      <p className="text-xs text-slate-200/80 sm:hidden">{partner.insight}</p>
+                      <p className="font-semibold text-slate-900">{partner.to}</p>
+                      <p className="text-xs uppercase tracking-[0.22em] text-slate-500 sm:hidden">Notes</p>
+                      <p className="text-xs text-slate-600 sm:hidden">{partner.insight}</p>
                     </div>
-                    <div className="flex flex-col gap-1 text-amber-100 sm:flex-row sm:items-center">
-                      <span className="w-fit rounded-lg bg-amber-200/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-50">
+                    <div className="flex flex-col gap-1 text-amber-800 sm:flex-row sm:items-center">
+                      <span className="w-fit rounded-lg bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-900">
                         {partner.rate}
                       </span>
                       {projectedPoints ? (
-                        <span className="w-fit rounded-full bg-emerald-200/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-100">
+                        <span className="w-fit rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-900">
                           ≈ {projectedPoints} points
                         </span>
                       ) : null}
                     </div>
-                    <p className="hidden text-sm leading-6 text-slate-200/80 sm:block">{partner.insight}</p>
+                    <p className="hidden text-sm leading-relaxed text-slate-600 sm:block">{partner.insight}</p>
                   </div>
                 );
               })}
