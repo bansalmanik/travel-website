@@ -18,8 +18,6 @@ import type {
 } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
-export const runtime = "edge";
-
 type SectionWrapperProps = {
   title: string;
   description?: string;
@@ -42,6 +40,13 @@ async function getCards(): Promise<Card[]> {
   const { cards } = await getCreditCardContent();
 
   return cards;
+}
+
+export async function generateStaticParams() {
+  const cards = await getCards();
+  return cards.map((card) => ({
+    slug: card.slug,
+  }));
 }
 
 function formatAnnualFee(annualFee: AnnualFee) {

@@ -57,7 +57,7 @@ export function ArticleLayout({
           <nav className="grid gap-4 rounded-3xl border border-slate-200 bg-white/95 p-4 shadow-sm sm:grid-cols-2 sm:gap-6 sm:p-6">
             {previousArticle ? (
               <Link
-                href={`/travel-with-points/miles-and-points-explained/${previousArticle.slug}`}
+                href={`/learning/${previousArticle.slug}`}
                 className="group flex flex-col gap-2 rounded-2xl border border-amber-100/80 bg-amber-50/50 p-4 transition hover:-translate-y-[1px] hover:border-amber-200 hover:bg-amber-50 hover:shadow-sm"
               >
                 <span className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-800">Previous</span>
@@ -71,7 +71,7 @@ export function ArticleLayout({
 
             {nextArticle ? (
               <Link
-                href={`/travel-with-points/miles-and-points-explained/${nextArticle.slug}`}
+                href={`/learning/${nextArticle.slug}`}
                 className="group flex flex-col gap-2 rounded-2xl border border-amber-100/80 bg-amber-50/50 p-4 text-right transition hover:-translate-y-[1px] hover:border-amber-200 hover:bg-amber-50 hover:shadow-sm"
               >
                 <span className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-800">Next</span>

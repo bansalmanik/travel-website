@@ -29,7 +29,8 @@
           "**Award availability**: seats/rooms a program releases for redemption using points and miles.",
           "**Cabin** : Class of service (Economy, Business, First).",
           "**Sweet spot** : Redemption that offers exceptional value",
-          "**Status/Tier** : Your loyalty level with a given program"
+          "**Status/Tier** : Your loyalty level with a given program",
+          "**Revenue Booking** : A travel booking for which you pay out of your own pocket."
         ]
       },
       {
@@ -45,8 +46,8 @@
         "body": [
           "1 Point/Mile is not equal to ₹1. Value varies from pragram to program and redemption to redemption.",
           "Some programs provide upfornt pricing/value of each point/mile and that value always remain fixed. Example : Accor Hotels where 2000 Accor Points equals 40 Euros",
-          "Some programs provide fixed redemption pricing for a ticket/stay but the prices in cash for that ticket/stay is dynamic. Example Wyndham hotel has divided it's hotels/rooms in 3 categories and you need 7,500 or 15,000 or 30,000 points to book each catgory room respectivly. Now a room booked with 30,000 points may be priced at ₹40,000 or ₹25,000",
-          "Other programs may have dynamic points pricing as well as cash pricing where prices in points as well as cash is determined by demand and supply"
+          "Some programs provide fixed redemption pricing for a ticket/stay but the prices in cash for that ticket/stay is dynamic. Example Wyndham hotel has divided it's hotels/rooms in 3 categories and you need 7,500 or 15,000 or 30,000 points to book each catgory room respectivly. Now a room booked with 30,000 points may be priced at ₹40,000 or ₹25,000 in revenue.",
+          "Other programs may have dynamic points pricing as well as cash pricing where prices in points as well as revenue is determined by demand and supply."
         ]
       }
     ]
@@ -93,8 +94,8 @@
     ]
   },
   {
-    "slug": "choose-right-credit-card",
-    "title": "Credit Card : Which one is right for you?",
+    "slug": "who-should-get-credit-card",
+    "title": "Credit Card : Who Should not get it?",
     "excerpt": "Choosing right credit card is the fundamental step towards a good points and mile strategy.",
     "category": "Miles & Points Explained",
     "readTime": "13 min read",
@@ -105,31 +106,29 @@
     "sections": [
       {
         "heading": "Who should not get a credit card?",
-        "body": [
+        "bulletPoints": [
           "Don’t get a credit card if you’re planning to “pay later” with money you don’t have.",
           "Don’t get a credit card if you can’t pay the full statement every month(no exceptions).",
           "Don’t get a credit card if you struggle with impulse spending"
         ]
       },
       {
-        "heading": "Type of Cards?",
+        "heading": "Why take a credit card?",
         "body": [
-          "The answer to this question depends on your spending pattern. If you spend more on grocery look for a card that give high return on groceries. If you dine out frequently get a card that gives you higher return on dining.",
-          "But remember a dining or grocery specific card may have good returns but there maybe a generic c"
-        ]
-      },
-      {
-        "heading": "How to pick the right credit card?",
-        "body": [
-          "The answer to this question depends on your spending pattern. If you spend more on grocery look for a card that give high return on groceries. If you dine out frequently get a card that gives you higher return on dining.",
-          "But remember a dining or grocery specific card may have good returns but there maybe a generic c"
+          "If you do not fall in above mentioned categories and then good news you have enough reason to get a credit card."
+        ],
+        "bulletPoints": [
+          "To earn rewards on spending you already do.",
+          "To unlock travel perks like lounge access.",
+          "To access offers and discounts",
+          "To get purchase protection"
         ]
       }
     ]
   },
   {
-    "slug": "earning-points-and-miles-without-overspending",
-    "title": "How to earn points and miles (without overspending)",
+    "slug": "credit-card-types",
+    "title": "Credit Card : Types of credit cards",
     "excerpt": "The complete earning playbook: welcome bonuses, everyday spending, travel, promos, portals, and smart stacking.",
     "category": "Miles & Points Explained",
     "readTime": "15 min read",
@@ -139,39 +138,47 @@
     "tags": [ "earning", "credit-cards", "portals", "promotions", "beginner" ],
     "sections": [
       {
-        "heading": "Everyday spend: earn multipliers by matching cards to habits",
         "body": [
-          "Most rewards systems give higher earn rates in specific categories (dining, groceries, fuel, travel). Figure out where you spend the most in a month and pick a card accordingly.",
-          "Example: If you spend a lot on dining and groceries, prioritize the card that earns best there and use a simple backup card for everything else."
+          "Credit cards are categorized by their primary benefit (Discount, Cashback, Points), Spend Category (Travel, Feul, Grocery), or affiliation (Co-branded with airlines/stores). Then there are some generic cards which can generally be used for all the purposes",
+          "Do note that a credit card can fit in more than 1 category also like Axis Airtel Card is co-branded card that gives straight cashback on specific merchants like Airtel, Swiggy and Zomato."
         ]
       },
       {
-        "heading": "Use Bank Portals like HDFC SmartBuy and ICIC IShop",
+        "heading": "Cash Back Credit Cards",
         "body": [
-          "Instead of spending money directly on a merchant like BigBasket or Swiggy, check weather you can buy vouchers from bank portal which will give you 5x-10x more points.",
-          "Similarly booking Flights and Hotels directly from these bank Portals give accelerated points.",
-          "Alwyas do the maths and see what is beast payment option"
+          "Simplest of all the caard tpes, these cards simply gives you a percentage of you spending back as cashback. Do note that every card has exclusionsa where certain transactions might not be eligible.",
+          "Example: SBI Cashback cards is the most popular cashback card in India right now. It gives straight 5% back on all online transactions. There are many other cashback cards like Axis Airtel Card and HDFC Swiggy card.",
+          "Because of simple and straight forward reward structure of a cashback card, this is the first card of majority of people"
         ]
       },
       {
-        "heading": "Start Using Amazon Pay (It's a game changer)",
+        "heading": "Co-branded credit card",
         "body": [
-          "Many spends like Insurance and Utility payments can be part of excluded categories but you can often use Amazon Pay blance to make such payment.",
-          "Buy Amazon Pay vouchers using your bank portal or uisng the best cashback card you have and load them in your Amazon Pay account."
+          "These cards are issued by bank in partnership with a particular brand. You get extra benefits while spending on that specific brand",
+          "These are also very popular cards as people know beforehand that they spend heavily on a specific brand so they can take added advantage.",
+          "Airtel Axis Credit card is a solid example. If you have any Airtel connection then this card gives you straight 25% cashback on the bill. Straight forward easy savings."
         ]
       },
       {
-        "heading": "Spend Carefully",
+        "heading": "Category Based Crdit Cards",
         "body": [
-          "Never spend a dime just because you are getting good rewards. Always treat points and miles as extra benefit that yoou got while make the usual spend that were anyways going to do.",
-          "If you think grocery is cheaper at your local Kiryana shop even after factoring in points and miles then by all mean get grocery from your local store. thCredit Cards are only rewarding if used correctly."
+          "These cards are desighned by banks to attract people who shop heavily on a specific category like feul or grocery or dining",
+          "If you shop heavily on a certain category then these cards are for you. Like is you spend on travel then get a travel credit card or if you spend heavily on grocery then get a card that gives good rewards on grocery.",
+          "Example - HSBS Live+ is card that gives you 10% cashback on ding, food delivery and grocery spends"
+        ]
+      },
+      {
+        "heading": "Rewards Cards",
+        "body": [
+          "Instead og giving cashback or discounts these cards give you reward points. Now how good a rewards card is depends on how much value can you extract fromeach reward points and how easy it is use to use those reward points",
+          "Example - HDFC Regalia Gold gives you reward points everytime you use that card. Now you can use these reward points in f=different ways like buy a voucher or transfer them to any other program or even adjust them against your credit card bill(This is never recomended)"
         ]
       }
     ]
   },
   {
-    "slug": "redeeming-basics-and-value",
-    "title": "Redeeming 101: how to get good value (without obsessing)",
+    "slug": "choosing-right-credit-card",
+    "title": "Credit Card : Which one is right for you?",
     "excerpt": "Learn the value framework: cash vs points, hidden fees, and a simple method to judge good vs bad redemptions.",
     "category": "Miles & Points Explained",
     "readTime": "16 min read",
@@ -181,24 +188,34 @@
     "tags": [ "redeeming", "cpp", "fees", "beginner" ],
     "sections": [
       {
-        "heading": "Always compare: cash price vs points price",
         "body": [
-          "Your first filter is simple: is this redemption actually saving meaningful cash (or upgrading your experience) compared to paying cash?",
-          "Points are best used where they replace expensive travel or unlock experiences you wouldn’t comfortably buy with cash."
+          "There are two things you have to keep in mind when choosing a credit card"
+        ],
+        "bulletPoints": [
+          "**Spending pattern** : Choose a card based on categoty where you spend the most.",
+          "**Redemption prefrence** : If you like traight cashback choose a cashback card or maybe a co-branded card that gives good discounts. If you want flexibility in your redemption choose a card that gives reward points.",
+          "**Spending pattern** : Compare return rate on spending keeping redemption prefrence in mind."
         ]
       },
       {
-        "heading": "Taxes, fees, and why some “free” tickets aren’t free",
+        "heading": "How to choose a credit card?",
         "body": [
-          "Award tickets often require taxes and, sometimes, extra airline-added fees. These costs can be small—or surprisingly large—depending on airline and route.",
-          "Before celebrating a redemption, check the cash you still owe and whether it changes the value."
+          "Among all the avaiable card filter out cards based on your spending pattern and then based on how you want to redeem choose the best avaiable card.",
+          "Now as example we are going to mention some scenarios and how to choose cards for thois scenarios."
+        ],
+        "bulletPoints": [
+          "**High Grocery spends with prefrence for straight cashabck** : For this use case there are few cards that can be considered. First is HSBC Live+ which gives 10% cahback upto 1000 in a month on all grocery spends including offline Kiryana stores. Another option can be HDFC Swiggy card if you use swiggy instamart.",
+          "**High Grocery spends with prefrence for travel redemption** : First step reamins the same that you choose credit card based on your spending category that is goricey in this case. No since your prefrnce is travel redemtion you would want to take a credit card which gives reward points which can then be used for travel booking. But this is not straight forward sometimes the card that you are eleigible for might have lower return rate compared to a cashback card in smae categoty. In those cases alwayd choose a cashabck card"
         ]
       },
       {
-        "heading": "When paying cash is smarter",
+        "heading": "How to calculate return rate of a card?",
         "body": [
-          "Cheap domestic tickets, short hotel stays during low season, or bookings where you need flexibility can be better with cash.",
-          "Save points for high-impact uses: peak season, expensive routes, premium cabins, or multi-night stays that would otherwise strain your budget."
+          "For cashback or discount cards this is simple as you can compare the cashback or discount percentage among all the cards that fit your sepnding criterion.",
+          "For credit cards that give reward points it is sometime not straight forward. First you have to assighn a safe average value that you can extract out of each point and then check how much points you earn per 100 spent which will give you your rate of return.",
+          "Also do note that many reward credit cards give acclerated/higher reward points when yoi make purchases from a certain platform and some of these platforms have options to buy shopping voucher for grocery, fashion, dining etc.",
+          "For example you have HDFC Regalia credit card and it gives 4 rewatd points per 150 spent so you assumed you will get 4 points every time you spend 150 on BigBasket using this card. But then you hear about HDFC SmartBuy where you can buy BigBasket voucher which gives you 5 times the original point. So now for same 150 BigBasket order you got 20 ponts.",
+          "Now you might be getting confused about what HDFC Smartbuy is and what not. Stay with us our aim is to provide you all the information. Navigate to Travel on Points Section and you will find eveything there."
         ]
       }
     ]
