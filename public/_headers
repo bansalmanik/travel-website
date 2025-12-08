@@ -1,0 +1,15 @@
+# Block indexing of private assets
+/private-assets/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-cache
+
+# Prevent hotlinking of all images
+/images/*
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Security headers for all pages
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin

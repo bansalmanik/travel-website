@@ -1,0 +1,2 @@
+# Block access to private assets
+/private-assets/* /404.html 404
