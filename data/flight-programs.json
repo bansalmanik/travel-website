@@ -34,7 +34,7 @@
             },
             {
               "label": "Earning basis",
-              "value": "6–10 Maharaja Points per ₹100 spent on base fare + fuel surcharge; 6 Tier Points/₹100 on Air India flights",
+              "value": "6–10 Maharaja Points per ₹100 spent on base fare + fuel surcharge, 6 Tier Points/₹100 on Air India flights",
               "enabled": true
             },
             {
@@ -69,7 +69,7 @@
               "items": [
                 "Air India‑operated flights booked with cash or Cash + Points (no points earned on reward tickets).",
                 "Flights operated by Star Alliance partners when crediting to your Maharaja account.",
-                "Partner flights do not earn Tier Points on a one‑to‑one basis; instead you earn 1 Tier Point for every 2 Maharaja Points."
+                "Partner flights do not earn Tier Points on a one‑to‑one basis, instead you earn 1 Tier Point for every 2 Maharaja Points."
               ],
               "enabled": true
             },
@@ -95,7 +95,7 @@
                   "Red (Entry)",
                   "Automatic on enrollment",
                   "No annual qualification required",
-                  "6 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 when booking on airindia.com or app",
+                  "6 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 when booking on airindia.com or app",
                   "1,000‑point enrolment bonus after your first paid Air India flight · Earn and redeem on Air India & Star Alliance flights · Access to Family Pool for pooling points with up to 9 members"
                 ],
                 "enabled": true
@@ -105,7 +105,7 @@
                   "Silver",
                   "15,000 Tier Points (incl. 4,500 on Air India) OR 30 flights with 4 Air India flights in 12 months",
                   "15,000 Tier Points (4,500 AI) OR 30 flights with 4 AI flights each membership year",
-                  "8 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings",
+                  "8 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 for direct bookings",
                   "Priority Connect helpline for booking/itinerary changes · Flat fee (≈₹1,180) for one domestic itinerary change up to 24 hours before departure · 1 cabin upgrade voucher valid 6 months · Complimentary 5 kg extra baggage allowance on Air India flights · Priority check‑in, waitlist clearance and boarding services"
                 ],
                 "enabled": true
@@ -115,7 +115,7 @@
                   "Gold",
                   "30,000 Tier Points (incl. 9,000 on Air India) OR 60 flights with 8 Air India flights in 12 months",
                   "30,000 Tier Points (9,000 AI) OR 60 flights with 8 AI flights each year",
-                  "9 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings",
+                  "9 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 for direct bookings",
                   "Free itinerary change (1x) up to 24h before departure on domestic flights and up to 72h on international flights · 2 cabin upgrade vouchers valid 9 months · Fee waiver for domestic flight cancellation up to 24h (INR 1,199 + GST) · Complimentary standard seat selection · Fly Prior service (switch to an earlier domestic flight within 12h) · Lounge access with one guest and excess baggage allowance of 20 kg or 1 piece up to 23 kg on AI/Star Alliance flights · Priority check‑in, boarding and waitlist clearance"
                 ],
                 "enabled": true
@@ -125,7 +125,7 @@
                   "Platinum",
                   "45,000 Tier Points (incl. 13,500 on Air India) OR 90 flights with 12 Air India flights in 12 months",
                   "45,000 Tier Points (13,500 AI) OR 90 flights with 12 AI flights each year",
-                  "10 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings",
+                  "10 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 for direct bookings",
                   "Two free itinerary changes per ticket on domestic and international flights · 3 cabin upgrade vouchers valid 12 months · Domestic cancellation fee waiver up to 24h before departure · Complimentary seat selection on all seats, including exit‑row and bulkhead · Fly Prior and priority services · Excess baggage allowance of 20 kg or 1 extra piece (Air India & Star Alliance) · Lounge access with a guest"
                 ],
                 "enabled": true
@@ -148,9 +148,9 @@
               "type": "bullets",
               "items": [
                 "Tier Points are earned only on Air India flights (6 Tier Points per ₹100) and on partner flights at 1 Tier Point per 2 Maharaja Points.",
-                "Status evaluations happen continuously; once your Tier Points or flight count crosses the threshold, your account is upgraded automatically.",
-                "Retention requires meeting the same Tier Points or flight count in the following membership year; otherwise, your status will be downgraded.",
-                "Points cannot be used to buy status; only earning flights and partner activities qualify for Tier Points."
+                "Status evaluations happen continuously, once your Tier Points or flight count crosses the threshold, your account is upgraded automatically.",
+                "Retention requires meeting the same Tier Points or flight count in the following membership year, otherwise, your status will be downgraded.",
+                "Points cannot be used to buy status, only earning flights and partner activities qualify for Tier Points."
               ],
               "enabled": true
             }
@@ -166,7 +166,7 @@
             "Priority Connect hotline gives Silver, Gold and Platinum members fast access to customer support for bookings, ticket changes and account issues.",
             "Fee waivers for itinerary changes scale with your tier — a discounted change fee for Silver, free domestic/international changes for Gold and multiple free changes for Platinum.",
             "Cabin upgrade vouchers (1–3 per year depending on tier) allow domestic cabin upgrades subject to seat availability.",
-            "Complimentary extra baggage: Silver members receive +5 kg on Air India flights; Gold and Platinum receive +20 kg or one extra 23‑kg piece on Air India and Star Alliance flights.",
+            "Complimentary extra baggage: Silver members receive +5 kg on Air India flights, Gold and Platinum receive +20 kg or one extra 23‑kg piece on Air India and Star Alliance flights.",
             "Lounge access for Gold and Platinum members, including one guest, at Air India and Star Alliance lounges.",
             "Fly Prior service lets Gold and Platinum members travel on an earlier domestic flight within 12 hours of their original departure (same route, cabin and day) without fees."
           ],
@@ -188,7 +188,7 @@
                 "Cabin upgrade vouchers are awarded on tier upgrade/renewal: 1 for Silver (valid 6 months), 2 for Gold (valid 9 months) and 3 for Platinum (valid 12 months), usable on domestic flights subject to availability.",
                 "Family Pool feature lets you add up to nine family members and choose how much of their earning is pooled (100%, 75% or 50%). Pooling simplifies award redemptions by combining points in one account.",
                 "Cash + Points booking allows you to pay part of a ticket in cash and part in points, helpful when your balance is low.",
-                "You can buy Maharaja Points for ₹1.50 each to top up your balance when needed; purchased points carry a 24‑month validity."
+                "You can buy Maharaja Points for ₹1.50 each to top up your balance when needed, purchased points carry a 24‑month validity."
               ],
               "enabled": true
             }
@@ -207,7 +207,7 @@
             "No points are awarded on codeshare or interline flights or on award tickets.",
             "Claim missing points up to 12 months after Air India travel or within six to twelve months for Star Alliance partners, depending on the airline.",
             "Purchases from non‑airline partners and co‑branded credit cards earn Maharaja Points but not Tier Points.",
-            "Maharaja Points can be transferred from select bank credit cards; transfer ratios vary by issuer."
+            "Maharaja Points can be transferred from select bank credit cards, transfer ratios vary by issuer."
           ],
           "enabled": true
         }
@@ -459,7 +459,7 @@
             },
             {
               "label": "Earning basis",
-              "value": "Miles earned based on fare paid, route and cabin class; Tier Miles accrue at the same rate as Skywards Miles on Emirates, flydubai and Emirates‑marketed flights",
+              "value": "Miles earned based on fare paid, route and cabin class, Tier Miles accrue at the same rate as Skywards Miles on Emirates, flydubai and Emirates‑marketed flights",
               "enabled": true
             },
             {
@@ -518,7 +518,7 @@
                   "Blue (Entry)",
                   "Automatic on enrolment",
                   "N/A",
-                  "Earn Skywards Miles according to fare, route and cabin; no mileage bonus",
+                  "Earn Skywards Miles according to fare, route and cabin, no mileage bonus",
                   "Access to Cash + Miles redemptions · Ability to upgrade at check‑in or onboard using miles · Complimentary unlimited Wi‑Fi when travelling in Business or First Class · Basic waitlist priority"
                 ],
                 "enabled": true
@@ -570,8 +570,8 @@
             {
               "type": "bullets",
               "items": [
-                "Status evaluations are continuous; once your Tier Miles or flight count crosses the threshold, your status is upgraded and a new 12‑month membership year begins.",
-                "To retain your status, you must meet the same Tier Mile or flight threshold during the following membership year; otherwise, you will be downgraded one tier.",
+                "Status evaluations are continuous, once your Tier Miles or flight count crosses the threshold, your status is upgraded and a new 12‑month membership year begins.",
+                "To retain your status, you must meet the same Tier Mile or flight threshold during the following membership year, otherwise, you will be downgraded one tier.",
                 "A qualifying flight for Platinum must be in Business or First Class on Emirates or flydubai.",
                 "Tier Miles reset to zero at the start of each membership year."
               ],
@@ -587,11 +587,11 @@
           "intro": "Skywards status comes with mileage bonuses, priority services and valuable travel benefits.",
           "bullets": [
             "Mileage bonuses: Silver members earn 30% bonus Miles, Gold 75% and Platinum 100% on Emirates and flydubai flights.",
-            "Seat selection and upgrades: Gold and Platinum members can select complimentary Economy seats for themselves and companions; upgrades using Miles are available at check‑in and on board.",
-            "Lounge access: Silver members enjoy Business Class lounge access in Dubai; Gold and Platinum members receive worldwide lounge access with guest privileges.",
+            "Seat selection and upgrades: Gold and Platinum members can select complimentary Economy seats for themselves and companions, upgrades using Miles are available at check‑in and on board.",
+            "Lounge access: Silver members enjoy Business Class lounge access in Dubai, Gold and Platinum members receive worldwide lounge access with guest privileges.",
             "Priority services: Elites enjoy priority check‑in, boarding and baggage handling, as well as guaranteed Economy seats (Gold and above) and access to dedicated service hotlines.",
             "Extra baggage: Silver, Gold and Platinum members receive additional checked baggage allowance on Emirates flights.",
-            "Complimentary Wi‑Fi: All members travelling in Business or First Class enjoy unlimited Wi‑Fi; selected co‑branded credit card holders and Platinum members enjoy free Wi‑Fi in all cabins."
+            "Complimentary Wi‑Fi: All members travelling in Business or First Class enjoy unlimited Wi‑Fi, selected co‑branded credit card holders and Platinum members enjoy free Wi‑Fi in all cabins."
           ],
           "enabled": true
         },
@@ -655,7 +655,7 @@
             },
             {
               "label": "Earning basis",
-              "value": "Avios earned based on fare, cabin and distance; Qpoints earned per sector and cabin with at least 20% of Qpoints from Qatar Airways flights.",
+              "value": "Avios earned based on fare, cabin and distance, Qpoints earned per sector and cabin with at least 20% of Qpoints from Qatar Airways flights.",
               "enabled": true
             },
             {
@@ -689,7 +689,7 @@
             },
             {
               "type": "paragraph",
-              "text": "Avios expire after 36 months of inactivity; any account activity (earning or redemption) extends the validity of your entire balance. Avios do not expire for Platinum members and can be reinstated for a fee if they lapse.",
+              "text": "Avios expire after 36 months of inactivity, any account activity (earning or redemption) extends the validity of your entire balance. Avios do not expire for Platinum members and can be reinstated for a fee if they lapse.",
               "enabled": true
             }
           ],
@@ -709,7 +709,7 @@
                   "Burgundy (Entry)",
                   "Automatic on enrolment",
                   "N/A",
-                  "Earn Avios at base rates; no tier bonus",
+                  "Earn Avios at base rates, no tier bonus",
                   "Ability to pool Avios with family members via the Family Programme · Access to member offers and promotions · Earn and redeem on Qatar Airways and Oneworld partners"
                 ],
                 "enabled": true
@@ -761,9 +761,9 @@
             {
               "type": "bullets",
               "items": [
-                "Qcredits can be used to upgrade a paid ticket to the next cabin or to pay for excess baggage; they are valid for two years and are awarded annually (40 for Gold, 60 for Platinum).",
-                "Family Programme allows you to add up to nine family members and pool Avios for faster redemptions; Avios earned by nominated members automatically credit to the head member’s account.",
-                "Silver members receive two single‑use lounge passes per membership year; Gold members receive four passes and Platinum members receive five passes to invite additional guests into Qatar Airways lounges.",
+                "Qcredits can be used to upgrade a paid ticket to the next cabin or to pay for excess baggage, they are valid for two years and are awarded annually (40 for Gold, 60 for Platinum).",
+                "Family Programme allows you to add up to nine family members and pool Avios for faster redemptions, Avios earned by nominated members automatically credit to the head member’s account.",
+                "Silver members receive two single‑use lounge passes per membership year, Gold members receive four passes and Platinum members receive five passes to invite additional guests into Qatar Airways lounges.",
                 "Platinum members enjoy priority telephone assistance and can nominate one adult to receive Gold tier status for a year."
               ],
               "enabled": true
@@ -777,8 +777,8 @@
           "style": "bullets",
           "intro": "Keep your Avios and Qpoints active by understanding expiry and transfer rules.",
           "bullets": [
-            "Avios expire after 36 consecutive months of inactivity; earning or redeeming any Avios resets the validity of your entire balance.",
-            "Platinum members’ Avios never expire; expired Avios can be reinstated for a fee within a limited period.",
+            "Avios expire after 36 consecutive months of inactivity, earning or redeeming any Avios resets the validity of your entire balance.",
+            "Platinum members’ Avios never expire, expired Avios can be reinstated for a fee within a limited period.",
             "Qpoints expire at the end of your rolling 12‑ or 24‑month qualification period and cannot be extended, transferred or purchased.",
             "Avios can be transferred between British Airways Executive Club, Iberia Plus, Aer Lingus AerClub and other Avios programmes, but Qpoints remain within Privilege Club.",
             "No Avios or Qpoints are awarded on award tickets or upgrade awards.",
@@ -823,7 +823,7 @@
             },
             {
               "label": "Earning basis",
-              "value": "Miles earned based on distance flown and booking class; Elite miles accrue at the same rate on Singapore Airlines and Star Alliance partners, while Scoot flights earn 2.5 Elite miles for every KrisFlyer mile. PPS Value accrues at 1 Singapore dollar spent on eligible Business or First Class fares and surcharges",
+              "value": "Miles earned based on distance flown and booking class, Elite miles accrue at the same rate on Singapore Airlines and Star Alliance partners, while Scoot flights earn 2.5 Elite miles for every KrisFlyer mile. PPS Value accrues at 1 Singapore dollar spent on eligible Business or First Class fares and surcharges",
               "enabled": true
             },
             {
@@ -849,8 +849,8 @@
               "type": "bullets",
               "title": "Earning metrics",
               "items": [
-                "KrisFlyer miles accrue based on distance flown and booking class on Singapore Airlines and Star Alliance carriers; discounted fares earn fewer miles, while premium cabins earn up to 200% of flown distance.",
-                "Elite miles accrue on the same flights and determine your Elite Silver or Elite Gold status; Scoot flights earn 2.5 Elite miles per KrisFlyer mile.",
+                "KrisFlyer miles accrue based on distance flown and booking class on Singapore Airlines and Star Alliance carriers, discounted fares earn fewer miles, while premium cabins earn up to 200% of flown distance.",
+                "Elite miles accrue on the same flights and determine your Elite Silver or Elite Gold status, Scoot flights earn 2.5 Elite miles per KrisFlyer mile.",
                 "PPS Value accrues only when flying Singapore Airlines or Scoot in Suites, First or Business Class at 1 PPS Value per Singapore dollar spent on airfare and eligible surcharges."
               ],
               "enabled": true
@@ -862,7 +862,7 @@
             },
             {
               "type": "paragraph",
-              "text": "KrisFlyer miles expire 36 months after they are credited. You can extend expiring miles for a fee; however, miles never expire for PPS Club and Solitaire PPS Club members while they hold that status. Elite miles and PPS Value reset at the start of each membership year and cannot be transferred.",
+              "text": "KrisFlyer miles expire 36 months after they are credited. You can extend expiring miles for a fee, however, miles never expire for PPS Club and Solitaire PPS Club members while they hold that status. Elite miles and PPS Value reset at the start of each membership year and cannot be transferred.",
               "enabled": true
             }
           ],
@@ -882,7 +882,7 @@
                   "KrisFlyer (Entry)",
                   "Automatic on enrolment",
                   "N/A",
-                  "Earn KrisFlyer miles at base rates; no bonus",
+                  "Earn KrisFlyer miles at base rates, no bonus",
                   "Redeem miles for flights, upgrades and lifestyle rewards · Access to KrisShop and Kris+ deals · Ability to create a Family Account to pool miles with up to five relatives"
                 ],
                 "enabled": true
@@ -939,9 +939,9 @@
           "bullets": [
             "Bonus miles: Elite Silver and Elite Gold members receive a 25% mileage bonus on Singapore Airlines and Scoot flights, while PPS members earn a 25% bonus on most paid fare classes.",
             "Seat privileges: Elite Silver members receive complimentary standard seat selection in Economy, while Elite Gold and PPS members enjoy complimentary forward or Extra Legroom seat selection (depending on fare class).",
-            "Lounge access: Elite Gold members access Star Alliance lounges worldwide for themselves and one guest; PPS Club members access SilverKris Business Class lounges with a guest; Solitaire PPS members access First Class lounges for themselves and one guest.",
+            "Lounge access: Elite Gold members access Star Alliance lounges worldwide for themselves and one guest, PPS Club members access SilverKris Business Class lounges with a guest, Solitaire PPS members access First Class lounges for themselves and one guest.",
             "Priority services: Elite and PPS members enjoy priority check‑in, boarding, baggage handling, security screening (where available) and priority waitlisting on sold‑out flights.",
-            "Extra baggage: Elite Silver members receive an additional checked baggage allowance; Elite Gold, PPS and Solitaire PPS members receive even greater allowances across Singapore Airlines, Scoot and Star Alliance airlines.",
+            "Extra baggage: Elite Silver members receive an additional checked baggage allowance, Elite Gold, PPS and Solitaire PPS members receive even greater allowances across Singapore Airlines, Scoot and Star Alliance airlines.",
             "Waived or discounted service fees: Elite and PPS members may receive waived change fees, priority refund processing and access to dedicated call centres.",
             "Wi‑Fi perks: PPS and Solitaire PPS members receive complimentary in‑flight Wi‑Fi in Suites, First and Business Class and discounted plans in other cabins."
           ],
@@ -1007,7 +1007,7 @@
             },
             {
               "label": "Earning basis",
-              "value": "Asia Miles earned based on fare class, distance and cabin on Cathay Pacific, Oneworld and partner flights; Status Points earned on flights",
+              "value": "Asia Miles earned based on fare class, distance and cabin on Cathay Pacific, Oneworld and partner flights, Status Points earned on flights",
               "enabled": true
             },
             {
@@ -1066,7 +1066,7 @@
                   "Green (Entry)",
                   "Automatic on enrolment",
                   "",
-                  "Base Asia Miles earn rate; no mileage bonus",
+                  "Base Asia Miles earn rate, no mileage bonus",
                   "Priority online check‑in up to 48 h before departure· Redeem Asia Miles for extra‑legroom seats and extra baggage· Access to exclusive flight offers and 24‑hour free cancellation within 24 h of booking (conditions apply)· Two‑day PressReader access on every trip"
                 ],
                 "enabled": true
@@ -1076,7 +1076,7 @@
                   "Silver",
                   "300 Status Points within a membership year",
                   "300 Status Points each membership year",
-                  "Base Asia Miles earn rate; no mileage bonus",
+                  "Base Asia Miles earn rate, no mileage bonus",
                   "Business Class check‑in and priority boarding· Priority baggage handling and preferred seating · Complimentary access to Cathay Pacific and Air New Zealand Business Class lounges when flying Cathay Pacific (no guest)· Mid‑status benefit at 450 Status Points: two additional lounge passes"
                 ],
                 "enabled": true
@@ -1086,7 +1086,7 @@
                   "Gold",
                   "600 Status Points within a membership year",
                   "600 Status Points each membership year",
-                  "Base Asia Miles earn rate; no mileage bonus",
+                  "Base Asia Miles earn rate, no mileage bonus",
                   "All Silver benefits · Guaranteed Economy Class seat on Cathay Pacific flights · One extra checked bag and 10 kg more cabin allowance · Business Class lounge access for the member and one guest · Mid‑status benefits at 800 and 1,000 Status Points (additional lounge passes and one‑way upgrade certificates) · Partner perks such as hotel upgrades and car rental discounts"
                 ],
                 "enabled": true
@@ -1096,7 +1096,7 @@
                   "Diamond",
                   "1,200 Status Points within a membership year",
                   "1,200 Status Points each membership year",
-                  "Base Asia Miles earn rate; no mileage bonus",
+                  "Base Asia Miles earn rate, no mileage bonus",
                   "All Gold benefits · First Class check‑in and boarding · First Class lounge access for the member and two guests· Guaranteed Premium Economy and Business Class seats on Cathay Pacific flights · Extra checked baggage allowance and heavier cabin baggage · Mid‑status benefits at 1,400 and 1,600 Status Points including lounge passes and bookable upgrades"
                 ],
                 "enabled": true
@@ -1111,8 +1111,8 @@
           "style": "bullets",
           "intro": "Cathay membership tiers unlock a range of travel and lifestyle benefits.",
           "bullets": [
-            "Seat privileges: Silver members receive preferred seat selection; Gold and Diamond members enjoy guaranteed seats (Economy for Gold, Premium Economy and Business for Diamond) on Cathay Pacific flights.",
-            "Lounge access: Silver members access business lounges when flying Cathay Pacific; Gold members can invite one guest; Diamond members access first‑class lounges with two guests.",
+            "Seat privileges: Silver members receive preferred seat selection, Gold and Diamond members enjoy guaranteed seats (Economy for Gold, Premium Economy and Business for Diamond) on Cathay Pacific flights.",
+            "Lounge access: Silver members access business lounges when flying Cathay Pacific, Gold members can invite one guest, Diamond members access first‑class lounges with two guests.",
             "Priority services: Silver, Gold and Diamond members benefit from priority check‑in, boarding and baggage handling, as well as dedicated service hotlines and priority stand‑by.",
             "Extra baggage: Each tier from Silver upwards includes heavier checked and cabin baggage allowances and priority baggage delivery.",
             "Mid‑status rewards: At 450, 800, 1,000, 1,400 and 1,600 Status Points you receive lounge passes and bookable one‑way upgrade certificates.",
@@ -1134,7 +1134,7 @@
               "type": "bullets",
               "items": [
                 "Green members unlock one Business Class lounge pass at 200 Status Points, which can be used by the member or a companion.",
-                "Silver members receive two lounge passes at 450 Status Points; Gold and Diamond members earn extra lounge passes and one‑way upgrade certificates at 800, 1,000, 1,400 and 1,600 points respectively.",
+                "Silver members receive two lounge passes at 450 Status Points, Gold and Diamond members earn extra lounge passes and one‑way upgrade certificates at 800, 1,000, 1,400 and 1,600 points respectively.",
                 "Lounge passes must be claimed online before travel and are valid for one year. One‑way upgrade certificates can be redeemed for a confirmed upgrade on eligible Cathay Pacific flights, subject to availability.",
                 "Members can purchase additional lounge access or redeem Asia Miles for extra legroom seats, extra baggage or flight upgrades when award space is available."
               ],
