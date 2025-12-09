@@ -49,30 +49,6 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
 
   return (
     <div className="space-y-10">
-      <div className="flex justify-end">
-        <button
-          type="button"
-          onClick={() => setShowImages((previous) => !previous)}
-          className="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-emerald-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-800 transition hover:border-emerald-400 hover:bg-emerald-100"
-          aria-pressed={showImages}
-        >
-          <span>{showImages ? "Hide visuals" : "Show visuals"}</span>
-          <svg
-            aria-hidden
-            className={`h-4 w-4 transition ${showImages ? "rotate-0" : "-rotate-90"}`}
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-
       {sections.map((section) => {
         const shouldDisplayImages = section.displayImages ?? true;
         const gridColumnsClass = (() => {

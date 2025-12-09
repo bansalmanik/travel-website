@@ -1,330 +1,6 @@
 {
   "programs": [
     {
-      "slug": "singapore-krisflyer",
-      "name": "Singapore Airlines KrisFlyer",
-      "alliance": "Star Alliance",
-      "hub": "Singapore (SIN)",
-      "summary": "Unlock Singapore Airlines' world-class cabins and a deep partner network with region-based award charts and reasonable surcharges.",
-      "seoDescription": "Master the Singapore KrisFlyer program with transfer partners, saver award strategies, and elite tier shortcuts for premium cabin travel.",
-      "sections": [
-        {
-          "id": "overview",
-          "title": "Program overview",
-          "style": "bullets",
-          "intro": "KrisFlyer remains one of the most versatile Star Alliance programs thanks to flexible transfer partners and exclusive Singapore Airlines premium cabin access.",
-          "paragraphs": [
-            "Saver and Advantage award levels provide built-in pricing transparency while regular Spontaneous Escapes promotions slash rates on select routes.",
-            "Mileage pooling across family accounts and seamless integration with Scoot make the program useful for both aspirational and everyday travel."
-          ],
-          "bullets": [
-            "Region-based award charts with incremental add-on pricing for mixed-cabin itineraries.",
-            "Access to Singapore Airlines premium cabins that partners rarely release.",
-            "Ability to hold awards for up to 3 days when booked through the call center.",
-            "Nominate up to five redemption nominees for easier household bookings."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/cabin-experience.svg",
-              "alt": "Singapore Airlines Suites cabin",
-              "caption": "Saver awards unlock Singapore's flagship Suites experience.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "status-levels",
-          "title": "Status levels & benefits",
-          "style": "table",
-          "intro": "Qualify for KrisFlyer elite status by earning Elite miles on paid flights within a 12-month period.",
-          "paragraphs": [
-            "Progress resets every 12 months, so plan major trips within the same membership year to climb faster.",
-            "Holding a co-branded credit card in Singapore can grant shortcuts such as double elite miles offers."
-          ],
-          "table": {
-            "caption": "KrisFlyer elite tiers at a glance",
-            "columns": [
-              "Tier",
-              "Qualification",
-              "Signature perks"
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "KrisFlyer Elite Silver",
-                  "25,000 Elite miles",
-                  "25% bonus miles on Singapore Airlines, priority waitlisting, complimentary standard seat selection"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "KrisFlyer Elite Gold",
-                  "50,000 Elite miles",
-                  "Star Alliance Gold lounge access, extra baggage, priority check-in and boarding"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "PPS Club",
-                  "S$25,000 in PPS Value",
-                  "Access to The Private Room, priority award waitlist, dedicated PPS phone support"
-                ],
-                "enabled": true
-              }
-            ]
-          },
-          "images": [
-            {
-              "src": "/flight-programs/status-lounge.svg",
-              "alt": "Traveler relaxing in a lounge",
-              "caption": "Star Alliance Gold unlocks premium lounge spaces worldwide.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "earn-rate",
-          "title": "How to earn KrisFlyer miles",
-          "style": "bullets",
-          "intro": "Build balances quickly through a mix of flights, bank transfers, and partners across Asia-Pacific.",
-          "paragraphs": [
-            "Most major transferable bank currencies move into KrisFlyer at a 1:1 ratio, usually within 12 to 24 hours.",
-            "Monitor transfer bonus promotions during seasonal sales to supercharge your balance."
-          ],
-          "bullets": [
-            "Earn 100% of miles flown on Singapore Airlines economy fare classes Y, B, and E—with bonuses for premium cabins.",
-            "Transfer points from American Express, Chase, Citi, Capital One, and Bilt in the U.S. (plus regional partners in Asia).",
-            "Credit hotel stays with partners like Marriott Bonvoy and Shangri-La Circle at 3,000-mile conversion blocks.",
-            "Use co-branded KrisFlyer UOB or American Express cards in Singapore for everyday spending multipliers."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/points-transfer.svg",
-              "alt": "Illustration of points flowing between loyalty programs",
-              "caption": "Instant bank transfers keep saver award seats within reach.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "sweet-spots",
-          "title": "Award sweet spots",
-          "style": "bullets",
-          "intro": "Redeem KrisFlyer miles strategically to unlock outsized cabin experiences.",
-          "paragraphs": [
-            "Saver availability ebbs and flows—set alerts with partner search engines and be ready to transfer when seats appear."
-          ],
-          "bullets": [
-            "Book Singapore Suites from New York to Frankfurt for 97,000 miles with saver availability.",
-            "Intra-Asia business class flights start at just 21,500 miles one-way.",
-            "Spontaneous Escapes promotions discount select routes by 30% every month.",
-            "Add a stopover on a round-trip award for only 15,000 extra miles."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/route-map.svg",
-              "alt": "Stylized route map from New York to Singapore",
-              "caption": "Premium cabin bargains center on long-haul routes via Singapore.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "usp",
-          "title": "Why travelers love KrisFlyer",
-          "style": "bullets",
-          "intro": "Beyond aspirational redemptions, KrisFlyer delivers daily-life utility for loyal flyers.",
-          "paragraphs": [
-            "Elite tiers integrate seamlessly with Scoot Insider, providing consistent benefits across the Singapore Airlines Group."
-          ],
-          "bullets": [
-            "Star Alliance Gold recognition ensures priority services on dozens of partners.",
-            "Miles never expire if you hold PPS Club status and continue qualifying annually.",
-            "Waitlist confirmations often clear within two weeks thanks to capacity management.",
-            "A robust stopover policy enables creative round-the-world itineraries."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/globetrotter.svg",
-              "alt": "Traveler planning an around-the-world trip",
-              "caption": "Plan multi-stop adventures with generous routing rules.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        }
-      ],
-      "enabled": false
-    },
-    {
-      "slug": "avios",
-      "name": "Avios (British Airways, Qatar Airways, Iberia)",
-      "alliance": "oneworld",
-      "hub": "Multiple hubs including London-Heathrow and Doha",
-      "summary": "Distance-based pricing makes Avios perfect for short-haul flights and for leveraging Qatar’s premium cabins when booked through partner portals.",
-      "seoDescription": "Learn how to pool, transfer, and redeem Avios across partner airlines for incredible short-haul and Qsuite awards.",
-      "sections": [
-        {
-          "id": "overview",
-          "title": "Program overview",
-          "style": "bullets",
-          "intro": "Avios acts as a shared currency across several airlines, letting you move balances to the partner with the best chart.",
-          "paragraphs": [
-            "Household accounts make family travel easier while Reward Flight Saver pricing keeps taxes low on select routes.",
-            "Use the Qatar Airways portal for long-haul premium cabin space while keeping the Iberia chart for cheap off-peak business awards to Europe."
-          ],
-          "bullets": [
-            "Distance-based award charts mean short hops can be under 6,000 Avios round-trip.",
-            "Combine Avios between British Airways, Iberia, Aer Lingus, and Qatar with no fee.",
-            "Household accounts allow up to seven members to share balances.",
-            "Reward Flight Saver pricing caps carrier surcharges on many British Airways routes."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/city-hop.svg",
-              "alt": "Airplane connecting European cities",
-              "caption": "Avios excel on short-haul hops across Europe and Asia.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "status-levels",
-          "title": "Executive Club status tiers",
-          "style": "table",
-          "intro": "Earn Tier Points on cash tickets to unlock elite privileges across the oneworld alliance.",
-          "paragraphs": [
-            "Tier Points reset every membership year; plan positioning flights and partner itineraries to cross thresholds.",
-            "Qatar Airways Privilege Club uses the same Avios currency but retains its own elite charts with lounge-heavy perks."
-          ],
-          "table": {
-            "caption": "British Airways Executive Club status requirements",
-            "columns": [
-              "Tier",
-              "Tier Points",
-              "Key benefits"
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "Bronze",
-                  "300 Tier Points",
-                  "Priority check-in, business-class seat selection, 25% Avios bonus"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "Silver",
-                  "600 Tier Points",
-                  "oneworld Sapphire status, lounge access, 50% Avios bonus"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "Gold",
-                  "1,500 Tier Points",
-                  "oneworld Emerald status, First Wing access, 100% Avios bonus"
-                ],
-                "enabled": true
-              }
-            ]
-          },
-          "images": [
-            {
-              "src": "/flight-programs/status-lounge.svg",
-              "alt": "Frequent flyer enjoying a lounge",
-              "caption": "oneworld elite status smooths every stage of travel.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "earn-rate",
-          "title": "How to earn Avios",
-          "style": "bullets",
-          "intro": "Accumulate Avios quickly with credit card partners, dining programs, and limited-time transfer bonuses.",
-          "paragraphs": [
-            "U.S., U.K., and EU banking partners frequently offer 30% transfer bonuses into Avios programs.",
-            "Earn on-ground through British Airways eStore shopping offers and Iberia Plus hotel partners."
-          ],
-          "bullets": [
-            "Collect Avios via Chase, Amex, Capital One, Bilt, and Citi transfers to British Airways or Iberia.",
-            "Credit oneworld flights to the program with the highest Tier Point earning.",
-            "Use Qatar Airways Avios cards in select markets for boosted earnings on travel and dining.",
-            "Participate in British Airways dining and shopping portals for stackable bonuses."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/points-transfer.svg",
-              "alt": "Avios flowing from credit cards to airlines",
-              "caption": "Transfer bonuses can supercharge Avios balances.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "sweet-spots",
-          "title": "Avios sweet spots",
-          "style": "bullets",
-          "intro": "Use the right partner portal to minimize surcharges and maximize distance-based value.",
-          "paragraphs": [
-            "Remember that each program prices awards separately—compare British Airways, Iberia, and Qatar before booking."
-          ],
-          "bullets": [
-            "4,000 Avios + low fees for economy flights under 650 miles in Europe.",
-            "Use 70,000 Avios for Qatar Qsuite from the U.S. to the Middle East.",
-            "Transfer Avios between programs to access off-peak Iberia business class for 34,000 Avios each way.",
-            "Redeem Aer Lingus-operated flights via Avios.com to avoid London surcharges."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/route-map.svg",
-              "alt": "Map showing Doha and London connections",
-              "caption": "Qsuite awards shine when booked through Qatar Privilege Club.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "usp",
-          "title": "What makes Avios unique",
-          "style": "bullets",
-          "intro": "Flexible transfers and regional portals put you in control of pricing and surcharges.",
-          "paragraphs": [
-            "Linking your British Airways and Qatar accounts takes minutes and opens premium cabin access that rarely appears elsewhere."
-          ],
-          "bullets": [
-            "Combine Avios balances freely across partner programs with no loss of value.",
-            "Reward Flight Saver caps taxes on many European itineraries.",
-            "Household accounts support pooled redemptions without transfer delays.",
-            "Qatar Privilege Club regularly releases additional Qsuite seats to its own elites."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/globetrotter.svg",
-              "alt": "Traveler moving loyalty points between programs",
-              "caption": "Shift Avios where award space and surcharges are most favorable.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        }
-      ],
-      "enabled": false
-    },
-    {
       "slug": "air-india-maharaja-club",
       "name": "Air India Maharaja Club",
       "alliance": "Star Alliance (AI)",
@@ -347,16 +23,6 @@
           "columns": 2,
           "items": [
             {
-              "label": "Issuer",
-              "value": "Air India (AI) – Star Alliance member",
-              "enabled": true
-            },
-            {
-              "label": "Program type",
-              "value": "Airline frequent‑flyer programme",
-              "enabled": true
-            },
-            {
               "label": "Join cost",
               "value": "Complimentary membership",
               "enabled": true
@@ -368,7 +34,7 @@
             },
             {
               "label": "Earning basis",
-              "value": "6–10 Maharaja Points per ₹100 spent on base fare + fuel surcharge; 6 Tier Points/₹100 on Air India flights",
+              "value": "6–10 Maharaja Points per ₹100 spent on base fare + fuel surcharge, 6 Tier Points/₹100 on Air India flights",
               "enabled": true
             },
             {
@@ -403,7 +69,7 @@
               "items": [
                 "Air India‑operated flights booked with cash or Cash + Points (no points earned on reward tickets).",
                 "Flights operated by Star Alliance partners when crediting to your Maharaja account.",
-                "Partner flights do not earn Tier Points on a one‑to‑one basis; instead you earn 1 Tier Point for every 2 Maharaja Points."
+                "Partner flights do not earn Tier Points on a one‑to‑one basis, instead you earn 1 Tier Point for every 2 Maharaja Points."
               ],
               "enabled": true
             },
@@ -429,7 +95,7 @@
                   "Red (Entry)",
                   "Automatic on enrollment",
                   "No annual qualification required",
-                  "6 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 when booking on airindia.com or app",
+                  "6 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 when booking on airindia.com or app",
                   "1,000‑point enrolment bonus after your first paid Air India flight · Earn and redeem on Air India & Star Alliance flights · Access to Family Pool for pooling points with up to 9 members"
                 ],
                 "enabled": true
@@ -439,7 +105,7 @@
                   "Silver",
                   "15,000 Tier Points (incl. 4,500 on Air India) OR 30 flights with 4 Air India flights in 12 months",
                   "15,000 Tier Points (4,500 AI) OR 30 flights with 4 AI flights each membership year",
-                  "8 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings",
+                  "8 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 for direct bookings",
                   "Priority Connect helpline for booking/itinerary changes · Flat fee (≈₹1,180) for one domestic itinerary change up to 24 hours before departure · 1 cabin upgrade voucher valid 6 months · Complimentary 5 kg extra baggage allowance on Air India flights · Priority check‑in, waitlist clearance and boarding services"
                 ],
                 "enabled": true
@@ -449,7 +115,7 @@
                   "Gold",
                   "30,000 Tier Points (incl. 9,000 on Air India) OR 60 flights with 8 Air India flights in 12 months",
                   "30,000 Tier Points (9,000 AI) OR 60 flights with 8 AI flights each year",
-                  "9 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings",
+                  "9 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 for direct bookings",
                   "Free itinerary change (1x) up to 24h before departure on domestic flights and up to 72h on international flights · 2 cabin upgrade vouchers valid 9 months · Fee waiver for domestic flight cancellation up to 24h (INR 1,199 + GST) · Complimentary standard seat selection · Fly Prior service (switch to an earlier domestic flight within 12h) · Lounge access with one guest and excess baggage allowance of 20 kg or 1 piece up to 23 kg on AI/Star Alliance flights · Priority check‑in, boarding and waitlist clearance"
                 ],
                 "enabled": true
@@ -459,7 +125,7 @@
                   "Platinum",
                   "45,000 Tier Points (incl. 13,500 on Air India) OR 90 flights with 12 Air India flights in 12 months",
                   "45,000 Tier Points (13,500 AI) OR 90 flights with 12 AI flights each year",
-                  "10 Maharaja Points / ₹100 + 6 Tier Points / ₹100; +2 points/₹100 for direct bookings",
+                  "10 Maharaja Points / ₹100 + 6 Tier Points / ₹100, +2 points/₹100 for direct bookings",
                   "Two free itinerary changes per ticket on domestic and international flights · 3 cabin upgrade vouchers valid 12 months · Domestic cancellation fee waiver up to 24h before departure · Complimentary seat selection on all seats, including exit‑row and bulkhead · Fly Prior and priority services · Excess baggage allowance of 20 kg or 1 extra piece (Air India & Star Alliance) · Lounge access with a guest"
                 ],
                 "enabled": true
@@ -482,9 +148,9 @@
               "type": "bullets",
               "items": [
                 "Tier Points are earned only on Air India flights (6 Tier Points per ₹100) and on partner flights at 1 Tier Point per 2 Maharaja Points.",
-                "Status evaluations happen continuously; once your Tier Points or flight count crosses the threshold, your account is upgraded automatically.",
-                "Retention requires meeting the same Tier Points or flight count in the following membership year; otherwise, your status will be downgraded.",
-                "Points cannot be used to buy status; only earning flights and partner activities qualify for Tier Points."
+                "Status evaluations happen continuously, once your Tier Points or flight count crosses the threshold, your account is upgraded automatically.",
+                "Retention requires meeting the same Tier Points or flight count in the following membership year, otherwise, your status will be downgraded.",
+                "Points cannot be used to buy status, only earning flights and partner activities qualify for Tier Points."
               ],
               "enabled": true
             }
@@ -500,7 +166,7 @@
             "Priority Connect hotline gives Silver, Gold and Platinum members fast access to customer support for bookings, ticket changes and account issues.",
             "Fee waivers for itinerary changes scale with your tier — a discounted change fee for Silver, free domestic/international changes for Gold and multiple free changes for Platinum.",
             "Cabin upgrade vouchers (1–3 per year depending on tier) allow domestic cabin upgrades subject to seat availability.",
-            "Complimentary extra baggage: Silver members receive +5 kg on Air India flights; Gold and Platinum receive +20 kg or one extra 23‑kg piece on Air India and Star Alliance flights.",
+            "Complimentary extra baggage: Silver members receive +5 kg on Air India flights, Gold and Platinum receive +20 kg or one extra 23‑kg piece on Air India and Star Alliance flights.",
             "Lounge access for Gold and Platinum members, including one guest, at Air India and Star Alliance lounges.",
             "Fly Prior service lets Gold and Platinum members travel on an earlier domestic flight within 12 hours of their original departure (same route, cabin and day) without fees."
           ],
@@ -522,7 +188,7 @@
                 "Cabin upgrade vouchers are awarded on tier upgrade/renewal: 1 for Silver (valid 6 months), 2 for Gold (valid 9 months) and 3 for Platinum (valid 12 months), usable on domestic flights subject to availability.",
                 "Family Pool feature lets you add up to nine family members and choose how much of their earning is pooled (100%, 75% or 50%). Pooling simplifies award redemptions by combining points in one account.",
                 "Cash + Points booking allows you to pay part of a ticket in cash and part in points, helpful when your balance is low.",
-                "You can buy Maharaja Points for ₹1.50 each to top up your balance when needed; purchased points carry a 24‑month validity."
+                "You can buy Maharaja Points for ₹1.50 each to top up your balance when needed, purchased points carry a 24‑month validity."
               ],
               "enabled": true
             }
@@ -541,175 +207,12 @@
             "No points are awarded on codeshare or interline flights or on award tickets.",
             "Claim missing points up to 12 months after Air India travel or within six to twelve months for Star Alliance partners, depending on the airline.",
             "Purchases from non‑airline partners and co‑branded credit cards earn Maharaja Points but not Tier Points.",
-            "Maharaja Points can be transferred from select bank credit cards; transfer ratios vary by issuer."
+            "Maharaja Points can be transferred from select bank credit cards, transfer ratios vary by issuer."
           ],
           "enabled": true
         }
       ],
       "enabled": true
-    }
-,
-    {
-      "slug": "air-canada-aeroplan",
-      "name": "Air Canada Aeroplan",
-      "alliance": "Star Alliance",
-      "hub": "Toronto (YYZ)",
-      "summary": "Aeroplan’s hybrid award chart and dozens of non-alliance partners create outsized value with low surcharges and generous routing rules.",
-      "seoDescription": "Dive into Air Canada Aeroplan sweet spots, stopover policies, and partner list to stretch your transferable points further.",
-      "sections": [
-        {
-          "id": "overview",
-          "title": "Program overview",
-          "style": "bullets",
-          "intro": "Aeroplan blends dynamic pricing on Air Canada flights with fixed partner charts, offering predictable value.",
-          "paragraphs": [
-            "Family Sharing pools points among up to eight members, while cash + points options keep award seats within reach.",
-            "More than 45 airline partners, including Emirates and Etihad, extend far beyond the Star Alliance network."
-          ],
-          "bullets": [
-            "Hybrid award chart with distance-based partner pricing.",
-            "Stopovers permitted on one-way awards for 5,000 points.",
-            "Extensive partner list covers all six inhabited continents.",
-            "No fuel surcharges on partner awards, even for carriers that normally add them."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/cabin-experience.svg",
-              "alt": "Premium cabin seat with ambient lighting",
-              "caption": "Aeroplan unlocks aspirational cabins on partners like ANA and Emirates.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "status-levels",
-          "title": "Aeroplan elite status tiers",
-          "style": "table",
-          "intro": "Aeroplan Elite Status (formerly Altitude) relies on Status Qualifying Miles (SQM), Segments (SQS), and Dollars (SQD).",
-          "paragraphs": [
-            "Select Benefits at each tier let you choose between eUpgrade credits, bonus points, or lounge passes.",
-            "Fly Premium Economy or Business on paid tickets to boost SQD quickly."
-          ],
-          "table": {
-            "caption": "Core Aeroplan status requirements",
-            "columns": [
-              "Tier",
-              "Qualification",
-              "Benefits"
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "25K",
-                  "25,000 SQM or 25 SQS + $3,000 SQD",
-                  "Two Maple Leaf Lounge passes, 25% bonus points"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "50K",
-                  "50,000 SQM or 50 SQS + $6,000 SQD",
-                  "Star Alliance Gold, eUpgrade credits, preferred pricing"
-                ],
-                "enabled": true
-              },
-              {
-                "cells": [
-                  "Super Elite 100K",
-                  "100,000 SQM or 100 SQS + $20,000 SQD",
-                  "Concierge service, unlimited lounge access, highest upgrade priority"
-                ],
-                "enabled": true
-              }
-            ]
-          },
-          "images": [
-            {
-              "src": "/flight-programs/status-lounge.svg",
-              "alt": "Traveler reviewing benefits at an airport lounge",
-              "caption": "Higher tiers unlock concierge-style service and upgrades.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "earn-rate",
-          "title": "How to earn Aeroplan points",
-          "style": "bullets",
-          "intro": "Aeroplan is one of the easiest programs to top up thanks to bank transfers and co-branded cards in multiple countries.",
-          "paragraphs": [
-            "Amex, Chase, Capital One, Bilt, and Wells Fargo all transfer to Aeroplan at 1:1 ratios in North America.",
-            "Aeroplan Visa cards provide elevated earn on Air Canada purchases plus annual Status Qualifying boosts."
-          ],
-          "bullets": [
-            "Earn up to 3 points per CA$1 on Air Canada co-branded credit cards.",
-            "Transfer Marriott Bonvoy points at 3:1 with a 5,000-point bonus per 60,000 transferred.",
-            "Credit flights on more than 45 partners to Aeroplan for both SQM and redeemable points.",
-            "Shop through the Aeroplan eStore to collect bonus points on everyday purchases."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/points-transfer.svg",
-              "alt": "Aeroplan points flowing from various partners",
-              "caption": "Multiple transferable currencies keep Aeroplan balances flush.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "sweet-spots",
-          "title": "Aeroplan sweet spots",
-          "style": "bullets",
-          "intro": "Leveraging the hybrid chart unlocks incredible value on aspirational cabins and multi-stop journeys.",
-          "paragraphs": [
-            "Partner awards price by total distance; use the stopover rule to string together two long segments for minimal extra points."
-          ],
-          "bullets": [
-            "Add a stopover on a one-way award for just 5,000 extra points.",
-            "Fly ANA first class from the U.S. to Tokyo for 110,000 points.",
-            "Use Family Sharing to combine points across household accounts.",
-            "Redeem for Emirates business class via Aeroplan at competitive rates with no fuel surcharges."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/route-map.svg",
-              "alt": "Map of Aeroplan partner routes",
-              "caption": "Stopovers turn one-way redemptions into globe-spanning itineraries.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "usp",
-          "title": "Why Aeroplan is a favorite",
-          "style": "bullets",
-          "intro": "From elite benefits to ease of earning, Aeroplan provides exceptional day-to-day value.",
-          "paragraphs": [
-            "Aeroplan’s Points + Cash slider lets you conserve balances when award availability is scarce."
-          ],
-          "bullets": [
-            "No close-in booking fees or fuel surcharges on partner awards.",
-            "Family Sharing allows pooled balances without transfer fees.",
-            "eUpgrade credits convert paid economy fares into lie-flat seats when paired with Latitude Attitude fares.",
-            "Aeroplan credit cards offer rollover SQM and eUpgrades for Elite members."
-          ],
-          "images": [
-            {
-              "src": "/flight-programs/globetrotter.svg",
-              "alt": "Traveler planning an Aeroplan redemption",
-              "caption": "Aeroplan balances stretch further thanks to flexible redemption tools.",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        }
-      ],
-      "enabled": false
     },
     {
       "slug": "indigo-bluchip",
@@ -733,16 +236,6 @@
           "intro": "Key facts to get started with IndiGo BluChip.",
           "columns": 2,
           "items": [
-            {
-              "label": "Issuer",
-              "value": "IndiGo Airlines (6E)",
-              "enabled": true
-            },
-            {
-              "label": "Program type",
-              "value": "Airline loyalty program",
-              "enabled": true
-            },
             {
               "label": "Join cost",
               "value": "Free to join",
@@ -926,6 +419,727 @@
             "BluChips do not expire as long as you record activity at least once every 24 months.",
             "All earn calculations follow Base + Tier Bonus + Channel Bonus for clear tracking.",
             "Monitor the activity log in your account to confirm credits from flights and add-ons."
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "emirates-skywards",
+      "name": "Emirates Skywards",
+      "alliance": "Independent (EK)",
+      "hub": "Dubai (DXB)",
+      "summary": "Emirates Skywards is the frequent‑flyer programme for Emirates and flydubai. Members earn Skywards Miles and separate Tier Miles on paid flights and through credit cards, hotels and retail partners. Tier Miles unlock higher status levels, while Skywards Miles can be redeemed for flights, upgrades and other rewards across Emirates’ global network.",
+      "seoDescription": "Discover how Emirates Skywards works: earn Skywards Miles and Tier Miles on Emirates and flydubai flights, climb through Blue, Silver, Gold and Platinum status, and enjoy bonus miles, lounge access, extra baggage, priority services and exclusive perks.",
+      "tags": [
+        "Airline Loyalty",
+        "Flight Rewards",
+        "Tiered Benefits",
+        "Lounge Access",
+        "Priority Services"
+      ],
+      "sections": [
+        {
+          "id": "program-essentials",
+          "title": "Program essentials",
+          "style": "key-values",
+          "intro": "Key facts to get started with Emirates Skywards.",
+          "columns": 2,
+          "items": [
+            {
+              "label": "Join cost",
+              "value": "Free membership",
+              "enabled": true
+            },
+            {
+              "label": "Earn currency",
+              "value": "Skywards Miles (reward miles) & Tier Miles (status miles)",
+              "enabled": true
+            },
+            {
+              "label": "Earning basis",
+              "value": "Miles earned based on fare paid, route and cabin class, Tier Miles accrue at the same rate as Skywards Miles on Emirates, flydubai and Emirates‑marketed flights",
+              "enabled": true
+            },
+            {
+              "label": "Tiers",
+              "value": "Blue • Silver • Gold • Platinum",
+              "enabled": true
+            }
+          ],
+          "images": [],
+          "enabled": true
+        },
+        {
+          "id": "overview",
+          "title": "How Emirates Skywards works",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Members earn two types of currency: Skywards Miles, which can be redeemed for reward flights, upgrades, hotel stays and other experiences, and Tier Miles, which determine your status level. Skywards Miles and Tier Miles accrue when you fly with Emirates or flydubai, book through Emirates‑marketed codeshare flights, or spend with hundreds of partners such as hotels, car hire companies and co‑branded credit cards.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "title": "Ways to earn Miles",
+              "items": [
+                "Paid flights operated by Emirates or flydubai, including Cash + Miles tickets (no miles earned on award tickets).",
+                "Emirates‑marketed flights operated by partner airlines – these earn Skywards Miles and Tier Miles at the same rates as Emirates flights.",
+                "Spend with non‑airline partners such as hotels, car rentals, shopping portals and co‑branded credit cards (these only earn Skywards Miles, not Tier Miles)."
+              ],
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Your tier is based on the Tier Miles or qualifying flights you earn during a rolling 12‑month period. Silver status requires 25,000 Tier Miles or 25 qualifying flights, Gold requires 50,000 Tier Miles or 50 flights, and Platinum requires 150,000 Tier Miles plus at least one qualifying Business or First Class flight. Tier status is valid for 14 months and you must meet the same requirements during the subsequent membership year to retain your level.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Skywards Miles remain valid for three years and expire at the end of the month of your birth in the calendar year they are due to expire. Expiry dates are not extended by account activity, however, miles do not expire for Platinum members and holders of co‑branded Emirates credit cards.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "tier-benefits",
+          "title": "Skywards tier breakdown",
+          "style": "table",
+          "intro": "Four status tiers unlock progressively richer mileage bonuses, lounge privileges, seat selection and baggage benefits.",
+          "table": {
+            "caption": "Emirates Skywards tiers at a glance",
+            "columns": [ "Tier", "Qualification", "Retention", "Earn & bonuses", "Signature perks" ],
+            "rows": [
+              {
+                "cells": [
+                  "Blue (Entry)",
+                  "Automatic on enrolment",
+                  "N/A",
+                  "Earn Skywards Miles according to fare, route and cabin, no mileage bonus",
+                  "Access to Cash + Miles redemptions · Ability to upgrade at check‑in or onboard using miles · Complimentary unlimited Wi‑Fi when travelling in Business or First Class · Basic waitlist priority"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Silver",
+                  "25,000 Tier Miles or 25 qualifying flights in a 12‑month period",
+                  "25,000 Tier Miles or 25 flights each membership year",
+                  "30% bonus Miles on Emirates and flydubai flights",
+                  "Complimentary access to the Emirates Business Class lounge in Dubai for the member · Extra checked baggage allowance · Priority check‑in and boarding · Higher waitlist priority"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Gold",
+                  "50,000 Tier Miles or 50 qualifying flights in a 12‑month period",
+                  "50,000 Tier Miles or 50 flights each membership year",
+                  "75% bonus Miles on Emirates and flydubai flights",
+                  "Free Economy seat selection for the member and companions · Complimentary lounge access worldwide for the member and one guest · Guaranteed Economy Class seat when flights are sold out · Priority services and baggage delivery"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Platinum",
+                  "150,000 Tier Miles and at least one qualifying Business or First Class flight in a 12‑month period",
+                  "150,000 Tier Miles and 1 qualifying flight each membership year",
+                  "100% bonus Miles on Emirates and flydubai flights",
+                  "First Class check‑in and baggage delivery · Home check‑in service in Dubai · Worldwide First Class lounge access for the member and guests · Ability to gift one Gold membership · Highest priority services and baggage handling"
+                ],
+                "enabled": true
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "tier-rules",
+          "title": "Tier tracking rules",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Tier Miles are awarded only on flights operated by Emirates or flydubai, and on Emirates‑marketed codeshare flights. Tier Miles match the number of Skywards Miles earned on those flights and cannot be earned through partners or non‑flight transactions.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Status evaluations are continuous, once your Tier Miles or flight count crosses the threshold, your status is upgraded and a new 12‑month membership year begins.",
+                "To retain your status, you must meet the same Tier Mile or flight threshold during the following membership year, otherwise, you will be downgraded one tier.",
+                "A qualifying flight for Platinum must be in Business or First Class on Emirates or flydubai.",
+                "Tier Miles reset to zero at the start of each membership year."
+              ],
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "discounts-and-perks",
+          "title": "Discounts & perks",
+          "style": "bullets",
+          "intro": "Skywards status comes with mileage bonuses, priority services and valuable travel benefits.",
+          "bullets": [
+            "Mileage bonuses: Silver members earn 30% bonus Miles, Gold 75% and Platinum 100% on Emirates and flydubai flights.",
+            "Seat selection and upgrades: Gold and Platinum members can select complimentary Economy seats for themselves and companions, upgrades using Miles are available at check‑in and on board.",
+            "Lounge access: Silver members enjoy Business Class lounge access in Dubai, Gold and Platinum members receive worldwide lounge access with guest privileges.",
+            "Priority services: Elites enjoy priority check‑in, boarding and baggage handling, as well as guaranteed Economy seats (Gold and above) and access to dedicated service hotlines.",
+            "Extra baggage: Silver, Gold and Platinum members receive additional checked baggage allowance on Emirates flights.",
+            "Complimentary Wi‑Fi: All members travelling in Business or First Class enjoy unlimited Wi‑Fi, selected co‑branded credit card holders and Platinum members enjoy free Wi‑Fi in all cabins."
+          ],
+          "enabled": true
+        },
+        {
+          "id": "passes-and-benefits",
+          "title": "Exclusive passes & gifts",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Higher tiers come with passes and benefits that extend beyond your own travel.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Gold and Platinum members can invite one or more guests into Emirates and partner lounges worldwide (number of guests depends on lounge policy).",
+                "Platinum members may gift a Gold tier membership to one nominated spouse or companion during each membership year.",
+                "Members can pool Skywards Miles with family via the My Family account, allowing up to eight family members to combine earnings for faster redemptions.",
+                "Cash + Miles redemptions enable members to pay part of the fare in cash and part in Miles, increasing flexibility when your balance is low."
+              ],
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "qatar-privilege-club",
+      "name": "Qatar Airways Privilege Club",
+      "alliance": "Oneworld (QR)",
+      "hub": "Doha (DOH)",
+      "summary": "Privilege Club is the loyalty programme of Qatar Airways. Members earn Avios on Qatar Airways, Oneworld carriers and partners, while Qpoints track elite status from Burgundy to Platinum. Higher tiers enjoy bonus Avios, lounge access, Qcredits for upgrades, extra baggage and priority services across Qatar’s growing network.",
+      "seoDescription": "Learn about Qatar Airways Privilege Club: earn Avios and Qpoints on flights and partners, qualify for Silver, Gold and Platinum status, and enjoy Qcredits, bonus Avios, lounge access and priority services.",
+      "tags": [
+        "Airline Loyalty",
+        "Flight Rewards",
+        "Oneworld Alliance",
+        "Tiered Benefits",
+        "Lounge Access"
+      ],
+      "sections": [
+        {
+          "id": "program-essentials",
+          "title": "Program essentials",
+          "style": "key-values",
+          "intro": "Key facts to get started with Qatar Airways Privilege Club.",
+          "columns": 2,
+          "items": [
+            {
+              "label": "Join cost",
+              "value": "Free membership",
+              "enabled": true
+            },
+            {
+              "label": "Earn currency",
+              "value": "Avios (reward points) & Qpoints (status points)",
+              "enabled": true
+            },
+            {
+              "label": "Earning basis",
+              "value": "Avios earned based on fare, cabin and distance, Qpoints earned per sector and cabin with at least 20% of Qpoints from Qatar Airways flights.",
+              "enabled": true
+            },
+            {
+              "label": "Tiers",
+              "value": "Burgundy • Silver • Gold • Platinum",
+              "enabled": true
+            }
+          ],
+          "images": [],
+          "enabled": true
+        },
+        {
+          "id": "overview",
+          "title": "How Privilege Club works",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Privilege Club members earn Avios by flying Qatar Airways and Oneworld partner airlines, as well as through hotel stays, car rentals, shopping and co‑branded credit cards. Avios can be redeemed for award flights, upgrades, excess baggage and lifestyle rewards. Separate Qpoints measure your progress towards elite status and are awarded based on flight distance, cabin and booking class. at least 20% of your Qpoints must come from Qatar‑operated flights or you must fly at least 4 (within 12 months prior to retention) or 8 sectors (within 24 months prior to retention) on flights marketed and operated by Qatar Airways.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "title": "Ways to earn Avios and Qpoints",
+              "items": [
+                "Flights marketed and operated by Qatar Airways, Oneworld airlines and select partners.",
+                "Everyday spend with partners including hotels, car rentals, shopping portals and co‑branded credit cards (these earn Avios but no Qpoints).",
+                "Promotions and points transfers from other Avios programmes (British Airways, Iberia Plus and Finnair)."
+              ],
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Avios expire after 36 months of inactivity, any account activity (earning or redemption) extends the validity of your entire balance. Avios do not expire for Platinum members and can be reinstated for a fee if they lapse.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "tier-benefits",
+          "title": "Privilege Club tier breakdown",
+          "style": "table",
+          "intro": "Four elite tiers unlock increasing Avios bonuses, lounge access, Qcredits and travel privileges.",
+          "table": {
+            "caption": "Qatar Airways Privilege Club tiers at a glance",
+            "columns": [ "Tier", "Qualification", "Retention", "Earn & bonuses", "Signature perks" ],
+            "rows": [
+              {
+                "cells": [
+                  "Burgundy (Entry)",
+                  "Automatic on enrolment",
+                  "N/A",
+                  "Earn Avios at base rates, no tier bonus",
+                  "Ability to pool Avios with family members via the Family Programme · Access to member offers and promotions · Earn and redeem on Qatar Airways and Oneworld partners"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Silver",
+                  "150 Qpoints in 12 months with at least 20% earned on Qatar Airways flights or four Qatar segments",
+                  "135 Qpoints in 12 months or 270 Qpoints in 24 months with the same Qatar flights requirement",
+                  "25% bonus Avios on Qatar Airways and Oneworld flights",
+                  "Two complimentary lounge passes per membership year · Complimentary lounge access at Hamad International Airport when flying Qatar Airways · Priority check‑in, boarding and standby · Free extra baggage allowance (up to 15 kg or 1 piece) · 10% discount on excess baggage · Priority baggage handling"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Gold",
+                  "300 Qpoints in 12 months with at least 20% earned on Qatar Airways flights",
+                  "270 Qpoints in 12 months or 540 Qpoints in 24 months with the same Qatar flights requirement",
+                  "75% bonus Avios on Qatar Airways and Oneworld flights",
+                  "Access to Qatar Airways and partner Business Class lounges for the member and one guest · Four additional lounge guest passes per year · Guaranteed Economy Class awards on sold‑out flights · 5% discount on Avios redemptions · Waived award fees for booking or changes · Preferred seats and priority seat selection · 40 Qcredits annually for upgrades or excess baggage · Additional baggage allowance (up to 25 kg or 2 pieces) and priority baggage delivery"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Platinum",
+                  "600 Qpoints in 12 months with at least 20% earned on Qatar Airways flights",
+                  "540 Qpoints in 12 months or 1,080 Qpoints in 24 months with the same Qatar flights requirement",
+                  "100% bonus Avios on Qatar Airways and Oneworld flights",
+                  "First Class and Business Class lounge access with two guests (including Al Mourjan & Al Safwa lounges when flying on Qatar Airways) · Five guest lounge passes per year · Guaranteed Economy and Business Class seats on sold‑out flights · 60 Qcredits per year for upgrades or excess baggage · Priority services at every airport touchpoint and highest baggage allowance (up to 50 kg or two pieces) · Membership Avios never expire and Platinum members enjoy priority call handling"
+                ],
+                "enabled": true
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "passes-and-benefits",
+          "title": "Qcredits & family privileges",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beyond lounge access, Qatar Airways offers additional benefits and the ability to share rewards.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Qcredits can be used to upgrade a paid ticket to the next cabin or to pay for excess baggage, they are valid for two years and are awarded annually (40 for Gold, 60 for Platinum).",
+                "Family Programme allows you to add up to nine family members and pool Avios for faster redemptions, Avios earned by nominated members automatically credit to the head member’s account.",
+                "Silver members receive two single‑use lounge passes per membership year, Gold members receive four passes and Platinum members receive five passes to invite additional guests into Qatar Airways lounges.",
+                "Platinum members enjoy priority telephone assistance and can nominate one adult to receive Gold tier status for a year."
+              ],
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "points-policy",
+          "title": "Avios & Qpoints policy",
+          "style": "bullets",
+          "intro": "Keep your Avios and Qpoints active by understanding expiry and transfer rules.",
+          "bullets": [
+            "Avios expire after 36 consecutive months of inactivity, earning or redeeming any Avios resets the validity of your entire balance.",
+            "Platinum members’ Avios never expire, expired Avios can be reinstated for a fee within a limited period.",
+            "Qpoints expire at the end of your rolling 12‑ or 24‑month qualification period and cannot be extended, transferred or purchased.",
+            "Avios can be transferred between British Airways Executive Club, Iberia Plus, Aer Lingus AerClub and other Avios programmes, but Qpoints remain within Privilege Club.",
+            "No Avios or Qpoints are awarded on award tickets or upgrade awards.",
+            "Family members’ Avios pool into the head account, but Qpoints earned by family members remain in their own accounts and count toward their own status."
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "singapore-krisflyer",
+      "name": "Singapore Airlines KrisFlyer",
+      "alliance": "Star Alliance (SQ)",
+      "hub": "Singapore Changi (SIN)",
+      "summary": "KrisFlyer is the loyalty programme of Singapore Airlines and Scoot. Members earn KrisFlyer miles, Elite miles and PPS Value across flights and everyday spending. Elite miles unlock Silver and Gold status, while PPS Value unlocks the PPS Club and Solitaire PPS Club for premium cabin flyers. Higher tiers deliver bonus miles, lounge access, priority services and generous baggage allowances across the Star Alliance network.",
+      "seoDescription": "Understand Singapore Airlines’ KrisFlyer: earn miles on flights and partner spend, qualify for Elite Silver and Elite Gold tiers or the PPS Club, and enjoy lounge access, priority services and enhanced redemption value.",
+      "tags": [
+        "Airline Loyalty",
+        "Flight Rewards",
+        "Star Alliance",
+        "Tiered Benefits",
+        "Premium Services"
+      ],
+      "sections": [
+        {
+          "id": "program-essentials",
+          "title": "Program essentials",
+          "style": "key-values",
+          "intro": "Key facts to get started with KrisFlyer.",
+          "columns": 2,
+          "items": [
+            {
+              "label": "Join cost",
+              "value": "Free membership",
+              "enabled": true
+            },
+            {
+              "label": "Earn currency",
+              "value": "KrisFlyer miles (reward currency), Elite miles & PPS Value (status metrics)",
+              "enabled": true
+            },
+            {
+              "label": "Earning basis",
+              "value": "Miles earned based on distance flown and booking class, Elite miles accrue at the same rate on Singapore Airlines and Star Alliance partners, while Scoot flights earn 2.5 Elite miles for every KrisFlyer mile. PPS Value accrues at 1 Singapore dollar spent on eligible Business or First Class fares and surcharges",
+              "enabled": true
+            },
+            {
+              "label": "Tiers",
+              "value": "KrisFlyer • KrisFlyer Elite Silver • KrisFlyer Elite Gold • PPS Club • Solitaire PPS Club",
+              "enabled": true
+            }
+          ],
+          "images": [],
+          "enabled": true
+        },
+        {
+          "id": "overview",
+          "title": "How KrisFlyer works",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "KrisFlyer members earn KrisFlyer miles on flights with Singapore Airlines, Scoot, Star Alliance and other partner airlines. Miles can also be earned via co‑branded credit cards, hotels, dining and online shopping through Kris+, KrisShop and Pelago. KrisFlyer miles can be redeemed for award flights, flight upgrades and a range of lifestyle rewards.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "title": "Earning metrics",
+              "items": [
+                "KrisFlyer miles accrue based on distance flown and booking class on Singapore Airlines and Star Alliance carriers, discounted fares earn fewer miles, while premium cabins earn up to 200% of flown distance.",
+                "Elite miles accrue on the same flights and determine your Elite Silver or Elite Gold status, Scoot flights earn 2.5 Elite miles per KrisFlyer mile.",
+                "PPS Value accrues only when flying Singapore Airlines or Scoot in Suites, First or Business Class at 1 PPS Value per Singapore dollar spent on airfare and eligible surcharges."
+              ],
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Elite tiers are achieved by earning Elite miles within a 12‑month period: Elite Silver requires 25,000 Elite miles and Elite Gold requires 50,000 Elite miles. PPS Club status requires 25,000 PPS Value and Solitaire PPS Club requires 50,000 PPS Value in a 12‑month period. Your membership year restarts on the date you qualify, and you must meet the same thresholds to retain your tier.",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "KrisFlyer miles expire 36 months after they are credited. You can extend expiring miles for a fee, however, miles never expire for PPS Club and Solitaire PPS Club members while they hold that status. Elite miles and PPS Value reset at the start of each membership year and cannot be transferred.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "tier-benefits",
+          "title": "KrisFlyer tier breakdown",
+          "style": "table",
+          "intro": "KrisFlyer and PPS status levels unlock progressive mileage bonuses, seat privileges, baggage allowances, lounge access and priority services.",
+          "table": {
+            "caption": "Singapore Airlines KrisFlyer and PPS tiers at a glance",
+            "columns": [ "Tier", "Qualification", "Retention", "Earn & bonuses", "Signature perks" ],
+            "rows": [
+              {
+                "cells": [
+                  "KrisFlyer (Entry)",
+                  "Automatic on enrolment",
+                  "N/A",
+                  "Earn KrisFlyer miles at base rates, no bonus",
+                  "Redeem miles for flights, upgrades and lifestyle rewards · Access to KrisShop and Kris+ deals · Ability to create a Family Account to pool miles with up to five relatives"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "KrisFlyer Elite Silver",
+                  "25,000 Elite miles in any consecutive 12‑month period",
+                  "25,000 Elite miles each membership year",
+                  "25% bonus KrisFlyer miles on Singapore Airlines and Scoot flights",
+                  "Complimentary standard seat selection in Economy Class · Priority reservation waitlist and airport standby· Priority check‑in and boarding· Extra checked baggage allowance and Star Alliance Silver status"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "KrisFlyer Elite Gold",
+                  "50,000 Elite miles in any consecutive 12‑month period",
+                  "50,000 Elite miles each membership year",
+                  "25% bonus KrisFlyer miles on Singapore Airlines and Scoot flights",
+                  "Access to more than 1,000 Star Alliance and partner lounges worldwide for the member and one guest· Priority check‑in, boarding and baggage handling · Extra checked and cabin baggage allowances · Star Alliance Gold benefits including lounge access, extra baggage and priority services · All Elite Silver benefits"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "PPS Club",
+                  "S$25,000 PPS Value from eligible Business or First Class fares and surcharges in a 12‑month period",
+                  "S$25,000 PPS Value each membership year",
+                  "25% bonus KrisFlyer miles on most paid fare classes",
+                  "Access to SilverKris Business Class lounges worldwide for the member and a guest· Dedicated First Class and Business Class check‑in counters · Priority boarding and baggage delivery · Complimentary seat selection including forward Zone seats · Guaranteed Economy Class reservation on Singapore Airlines · Priority service hotline and enhanced baggage allowances"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Solitaire PPS Club",
+                  "S$50,000 PPS Value from eligible Business or First Class fares and surcharges in a 12‑month period",
+                  "S$50,000 PPS Value each membership year",
+                  "25% bonus KrisFlyer miles on most paid fare classes",
+                  "First Class lounge access worldwide for the member and one guest· First Class check‑in, boarding and baggage delivery · Guaranteed reservations in Economy, Premium Economy and Business Class · Ability to gift a PPS Club supplementary membership to a spouse or nominated partner · Highest priority waitlisting and complimentary seat selection across all cabins"
+                ],
+                "enabled": true
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "discounts-and-perks",
+          "title": "Discounts & perks",
+          "style": "bullets",
+          "intro": "KrisFlyer and PPS status unlock a variety of travel benefits.",
+          "bullets": [
+            "Bonus miles: Elite Silver and Elite Gold members receive a 25% mileage bonus on Singapore Airlines and Scoot flights, while PPS members earn a 25% bonus on most paid fare classes.",
+            "Seat privileges: Elite Silver members receive complimentary standard seat selection in Economy, while Elite Gold and PPS members enjoy complimentary forward or Extra Legroom seat selection (depending on fare class).",
+            "Lounge access: Elite Gold members access Star Alliance lounges worldwide for themselves and one guest, PPS Club members access SilverKris Business Class lounges with a guest, Solitaire PPS members access First Class lounges for themselves and one guest.",
+            "Priority services: Elite and PPS members enjoy priority check‑in, boarding, baggage handling, security screening (where available) and priority waitlisting on sold‑out flights.",
+            "Extra baggage: Elite Silver members receive an additional checked baggage allowance, Elite Gold, PPS and Solitaire PPS members receive even greater allowances across Singapore Airlines, Scoot and Star Alliance airlines.",
+            "Waived or discounted service fees: Elite and PPS members may receive waived change fees, priority refund processing and access to dedicated call centres.",
+            "Wi‑Fi perks: PPS and Solitaire PPS members receive complimentary in‑flight Wi‑Fi in Suites, First and Business Class and discounted plans in other cabins."
+          ],
+          "enabled": true
+        },
+        {
+          "id": "passes-and-benefits",
+          "title": "Milestone rewards & supplementary memberships",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Beyond status tiers, KrisFlyer offers milestone rewards and the ability to share benefits.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "KrisFlyer Milestone Rewards grant bonus miles, flight upgrade certificates and lounge passes at specific Elite mile thresholds (e.g., 20,000, 40,000 and 60,000 Elite miles).",
+                "PPS Club and Solitaire PPS Club members may gift a PPS Club supplementary membership to a spouse or nominated partner, conferring lounge access and priority services.",
+                "Members can create a KrisFlyer Family Account to pool miles across up to five family members for faster redemptions.",
+                "Elite and PPS members receive special offers through KrisShop, KrisFlyer Spontaneous Escapes and partner promotions."
+              ],
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "cathay-membership",
+      "name": "Cathay membership",
+      "alliance": "Oneworld (CX)",
+      "hub": "Hong Kong (HKG)",
+      "summary": "Cathay membership is the loyalty programme of Cathay Pacific, rewarding members with Asia Miles and Status Points. Members start at Green and can progress through Silver, Gold and Diamond tiers by earning Status Points on flights and everyday spend. Higher tiers provide lounge access, priority check‑in, extra baggage, guaranteed seats and other exclusive privileges.",
+      "seoDescription": "Explore Cathay’s loyalty programme: earn Asia Miles and Status Points, climb from Green to Silver, Gold and Diamond, and enjoy seat upgrades, business and first‑class lounge access, and travel perks across Cathay Pacific and Oneworld partners.",
+      "tags": [
+        "Airline Loyalty",
+        "Flight Rewards",
+        "Oneworld Alliance",
+        "Tiered Benefits",
+        "Lounge Access"
+      ],
+      "sections": [
+        {
+          "id": "program-essentials",
+          "title": "Program essentials",
+          "style": "key-values",
+          "intro": "Key facts to get started with Cathay membership.",
+          "columns": 2,
+          "items": [
+            {
+              "label": "Join cost",
+              "value": "Free membership",
+              "enabled": true
+            },
+            {
+              "label": "Earn currency",
+              "value": "Asia Miles (reward currency) & Status Points (status metric)",
+              "enabled": true
+            },
+            {
+              "label": "Earning basis",
+              "value": "Asia Miles earned based on fare class, distance and cabin on Cathay Pacific, Oneworld and partner flights, Status Points earned on flights",
+              "enabled": true
+            },
+            {
+              "label": "Tiers",
+              "value": "Green • Silver • Gold • Diamond",
+              "enabled": true
+            }
+          ],
+          "images": [],
+          "enabled": true
+        },
+        {
+          "id": "overview",
+          "title": "How Cathay membership works",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Cathay membership allows you to earn Asia Miles on flights with Cathay Pacific, Oneworld airlines and selected partners, as well as through hotel stays, dining, shopping and co‑branded credit cards. Asia Miles can be redeemed for award flights, upgrades, extra‑legroom seats and a host of lifestyle rewards. Status Points determine your tier and are earned on flights based on airline, cabin and fare.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "title": "Ways to earn Asia Miles & Status Points",
+              "items": [
+                "Paid flights operated by Cathay Pacific, Oneworld carriers and selected partners (earn Asia Miles and Status Points).",
+                "Spending on hotels, car rentals, dining and shopping with Asia Miles partners (earn Asia Miles).",
+                "Promotions, purchase or transfer of Asia Miles and partner credit card offers."
+              ],
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Status levels are achieved by earning Status Points within a membership year: Silver requires 300 Status Points, Gold 600 and Diamond 1,200. Mid‑status benefits unlock additional lounge passes and upgrade certificates at various thresholds (e.g., 200, 450, 800, 1,000, 1,400 and 1,600 points).",
+              "enabled": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Asia Miles follow an activity‑based expiry system: earning or redeeming at least one mile every 18 months keeps your miles active. Status Points reset at the end of each membership year and cannot be extended or purchased.",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "tier-benefits",
+          "title": "Cathay tier breakdown",
+          "style": "table",
+          "intro": "Four tiers unlock progressively greater seat privileges, lounge access, baggage allowances and guaranteed seats.",
+          "table": {
+            "caption": "Cathay membership tiers at a glance",
+            "columns": [ "Tier", "Qualification", "Retention", "Earn & bonuses", "Signature perks" ],
+            "rows": [
+              {
+                "cells": [
+                  "Green (Entry)",
+                  "Automatic on enrolment",
+                  "",
+                  "Base Asia Miles earn rate, no mileage bonus",
+                  "Priority online check‑in up to 48 h before departure· Redeem Asia Miles for extra‑legroom seats and extra baggage· Access to exclusive flight offers and 24‑hour free cancellation within 24 h of booking (conditions apply)· Two‑day PressReader access on every trip"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Silver",
+                  "300 Status Points within a membership year",
+                  "300 Status Points each membership year",
+                  "Base Asia Miles earn rate, no mileage bonus",
+                  "Business Class check‑in and priority boarding· Priority baggage handling and preferred seating · Complimentary access to Cathay Pacific and Air New Zealand Business Class lounges when flying Cathay Pacific (no guest)· Mid‑status benefit at 450 Status Points: two additional lounge passes"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Gold",
+                  "600 Status Points within a membership year",
+                  "600 Status Points each membership year",
+                  "Base Asia Miles earn rate, no mileage bonus",
+                  "All Silver benefits · Guaranteed Economy Class seat on Cathay Pacific flights · One extra checked bag and 10 kg more cabin allowance · Business Class lounge access for the member and one guest · Mid‑status benefits at 800 and 1,000 Status Points (additional lounge passes and one‑way upgrade certificates) · Partner perks such as hotel upgrades and car rental discounts"
+                ],
+                "enabled": true
+              },
+              {
+                "cells": [
+                  "Diamond",
+                  "1,200 Status Points within a membership year",
+                  "1,200 Status Points each membership year",
+                  "Base Asia Miles earn rate, no mileage bonus",
+                  "All Gold benefits · First Class check‑in and boarding · First Class lounge access for the member and two guests· Guaranteed Premium Economy and Business Class seats on Cathay Pacific flights · Extra checked baggage allowance and heavier cabin baggage · Mid‑status benefits at 1,400 and 1,600 Status Points including lounge passes and bookable upgrades"
+                ],
+                "enabled": true
+              }
+            ]
+          },
+          "enabled": true
+        },
+        {
+          "id": "discounts-and-perks",
+          "title": "Discounts & perks",
+          "style": "bullets",
+          "intro": "Cathay membership tiers unlock a range of travel and lifestyle benefits.",
+          "bullets": [
+            "Seat privileges: Silver members receive preferred seat selection, Gold and Diamond members enjoy guaranteed seats (Economy for Gold, Premium Economy and Business for Diamond) on Cathay Pacific flights.",
+            "Lounge access: Silver members access business lounges when flying Cathay Pacific, Gold members can invite one guest, Diamond members access first‑class lounges with two guests.",
+            "Priority services: Silver, Gold and Diamond members benefit from priority check‑in, boarding and baggage handling, as well as dedicated service hotlines and priority stand‑by.",
+            "Extra baggage: Each tier from Silver upwards includes heavier checked and cabin baggage allowances and priority baggage delivery.",
+            "Mid‑status rewards: At 450, 800, 1,000, 1,400 and 1,600 Status Points you receive lounge passes and bookable one‑way upgrade certificates.",
+            "Partner perks: Gold and Diamond members enjoy room upgrades and dining discounts at partner hotels, and car rental upgrades and discounts through Hertz and other partners."
+          ],
+          "enabled": true
+        },
+        {
+          "id": "passes-and-benefits",
+          "title": "Lounge passes & mid‑status gifts",
+          "style": "content-blocks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Cathay rewards you with additional perks as you earn more Status Points.",
+              "enabled": true
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Green members unlock one Business Class lounge pass at 200 Status Points, which can be used by the member or a companion.",
+                "Silver members receive two lounge passes at 450 Status Points, Gold and Diamond members earn extra lounge passes and one‑way upgrade certificates at 800, 1,000, 1,400 and 1,600 points respectively.",
+                "Lounge passes must be claimed online before travel and are valid for one year. One‑way upgrade certificates can be redeemed for a confirmed upgrade on eligible Cathay Pacific flights, subject to availability.",
+                "Members can purchase additional lounge access or redeem Asia Miles for extra legroom seats, extra baggage or flight upgrades when award space is available."
+              ],
+              "enabled": true
+            }
           ],
           "enabled": true
         }
