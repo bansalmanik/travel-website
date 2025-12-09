@@ -320,7 +320,7 @@
                   [
                     "Axis Travel EDGE, airlines & hotels",
                     "5 EDGE Miles / ₹100",
-                    "Bonus applies up to ₹2,00,000 spend per month; thereafter 2 Miles / ₹100"
+                    "Bonus applies up to ₹2,00,000 spend per month, thereafter 2 Miles / ₹100"
                   ],
                   [
                     "Other eligible domestic & international spends",
@@ -811,7 +811,7 @@
                   [
                     "International lounges (Priority Pass)",
                     "6 visits / year",
-                    "Usage within India is chargeable; add-on cards need their own Priority Pass"
+                    "Usage within India is chargeable, add-on cards need their own Priority Pass"
                   ]
                 ]
               }
@@ -1351,6 +1351,11 @@
         "currency": "INR",
         "gstApplicable": true
       },
+      "joiningFee": {
+        "amount": 5000,
+        "currency": "INR",
+        "gstApplicable": true
+      },
       "rewardsCurrency": "Avios",
       "websiteDisplayTags": [
         "Avios Rewards",
@@ -1359,14 +1364,13 @@
       ],
       "keyHighlights": [
         "20,000 Avios welcome bonus on paying the joining fee.",
-        "Earn 6 Avios per ₹200 on point‑of‑sale spends in your selected preferred international destination and 5 Avios per ₹200 on Qatar Airways/British Airways websites; 3 Avios on most other spends and 1 Avios on utilities/government payments.",
+        "Earn 6 Avios per ₹200 on point‑of‑sale spends in your selected preferred international destination and 5 Avios per ₹200 on Qatar Airways/British Airways websites, 3 Avios on most other spends and 1 Avios on utilities/government payments.",
         "Milestone bonuses of 18,000 Avios at ₹8 lakh and additional 18,000 Avios at ₹16 lakh annual spend.",
-        "Low 1.5 % forex markup at the chosen international destination.",
-        "Complimentary domestic & international lounge access twice per quarter and two airport meet‑and‑greet services per year."
+        "Low 1.5 % forex markup at the chosen international destination."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/Indusind-Avios-Credit-Card.webp",
+          "src": "/images/cards/Indusind_Qatar.jpg",
           "alt": "IndusInd Qatar Airways Avios Credit Card"
         }
       },
@@ -1568,7 +1572,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -1690,7 +1694,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -1733,7 +1737,7 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "The card charges a joining fee of ₹10,000 + taxes and the same renewal fee each year. Renewal fee waiver details are not explicitly published; however, membership benefits renew on achieving ₹8 lakh annual spend.",
+                "The card charges a joining fee of ₹10,000 + taxes and the same renewal fee each year. Renewal fee waiver details are not explicitly published, however, membership benefits renew on achieving ₹8 lakh annual spend.",
                 "On spending ₹1.5 lakh within 90 days of card issuance or on fee realisation, you receive complimentary memberships of Club Marriott, Times Prime, Amazon Prime, MakeMyTrip Black, Swiggy One and Forbes digital."
               ]
             }
@@ -1793,7 +1797,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -1817,7 +1821,7 @@
       ],
       "keyHighlights": [
         "5 RP per ₹150 on select business spends with up to 5× RP on SmartBuy purchases.",
-        "Joining fee waived on spending ₹1.5 lakh within 90 days; renewal fee waived on spending ₹7.5 lakh in the previous year.",
+        "Joining fee waived on spending ₹1.5 lakh within 90 days, renewal fee waived on spending ₹7.5 lakh in the previous year.",
         "Club Marriott membership and Taj stay voucher upon spending ₹1.5 lakh in the first 90 days.",
         "Flight or Taj stay voucher worth ₹5,000 on every ₹5 lakh spend.",
         "Unlimited domestic and international lounge access with six complimentary golf games per quarter."
@@ -1909,7 +1913,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -1953,7 +1957,7 @@
               "type": "paragraphs",
               "paragraphs": [
                 "For a joining fee of ₹3,000 + taxes (same renewal fee), cardholders receive a free night award worth up to 15,000 Marriott Bonvoy points on the first eligible transaction, complimentary Silver Elite status and 10 elite night credits.",
-                "No annual fee waiver is specified; renewal benefits mirror the welcome offer in subsequent years through milestone spends."
+                "No annual fee waiver is specified, renewal benefits mirror the welcome offer in subsequent years through milestone spends."
               ]
             }
           ]
@@ -2011,7 +2015,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -2113,7 +2117,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -2156,7 +2160,7 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "A joining and annual fee of ₹30,000 + taxes applies; spending ₹30 lakh in the previous year waives the renewal fee.",
+                "A joining and annual fee of ₹30,000 + taxes applies, spending ₹30 lakh in the previous year waives the renewal fee.",
                 "Cardholders receive a ₹5,000 welcome voucher choice of Luxe gift card, Postcard hotels voucher or Yatra gift voucher."
               ]
             }
@@ -2216,7 +2220,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -2260,7 +2264,7 @@
               "type": "paragraphs",
               "paragraphs": [
                 "The card has an annual fee of ₹3,000 + taxes with no spend‑based waiver.",
-                "There are no specific welcome vouchers; the card focuses on straightforward earn and burn of EDGE Miles."
+                "There are no specific welcome vouchers, the card focuses on straightforward earn and burn of EDGE Miles."
               ]
             }
           ]
@@ -2297,7 +2301,7 @@
               "bullets": [
                 "Up to 32 lounge visits per year across domestic and international airports.",
                 "Access EDGE Miles redemption partners grouped into categories (Group A & Group B) offering a broad choice of airlines and hotels.",
-                "No annual fee waiver; cardholders must pay the fee each year."
+                "No annual fee waiver, cardholders must pay the fee each year."
               ]
             }
           ]
@@ -2316,7 +2320,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     },
 
     {
@@ -2360,7 +2364,7 @@
               "type": "paragraphs",
               "paragraphs": [
                 "A joining fee of ₹5,999 + taxes provides a welcome offer of ₹4,000 cashback (₹1,000 on four transactions of ₹1,000 or more within 60 days) and 5,000 bonus reward points on card issuance.",
-                "The annual fee of ₹5,999 + taxes has no waiver; instead, cardholders can earn milestone bonus points on high spends."
+                "The annual fee of ₹5,999 + taxes has no waiver, instead, cardholders can earn milestone bonus points on high spends."
               ]
             }
           ]
@@ -2385,7 +2389,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "1 Reward Point = ₹0.25 when redeemed; points never expire while the card is active.",
+                "1 Reward Point = ₹0.25 when redeemed, points never expire while the card is active.",
                 "No reward points on fuel and EMI transactions."
               ]
             }
@@ -2434,7 +2438,7 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": false
     }
 
   ],
