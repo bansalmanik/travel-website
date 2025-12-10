@@ -23,6 +23,13 @@ const sections = [
     accent: "bg-sky-100 text-sky-900",
   },
   {
+    title: "Miles & Points Explained",
+    description:
+      "Beginner-friendly guides to how miles and points work, when to earn them, and how to redeem with confidence.",
+    href: "/travel-with-points/miles-and-points-explained",
+    accent: "bg-indigo-100 text-indigo-900",
+  },
+  {
     title: "Flight Programs",
     description:
       "Use partner awards, alliances, and transfer bonuses to sit up front without paying full fare.",

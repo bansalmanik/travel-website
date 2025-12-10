@@ -13,10 +13,10 @@ type FlightProgramSectionsProps = {
 };
 
 const renderBulletList = (items: string[], id: string) => (
-  <ul className="space-y-3 text-sm leading-6 text-slate-100/80">
+  <ul className="space-y-3 text-sm leading-6 text-slate-700">
     {items.map((item, index) => (
       <li key={`${id}-bullet-${index}`} className="flex items-start gap-3">
-        <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-300" aria-hidden />
+        <span className="mt-1 h-2 w-2 flex-none rounded-full bg-emerald-600" aria-hidden />
         <span>{item}</span>
       </li>
     ))}
@@ -26,7 +26,7 @@ const renderBulletList = (items: string[], id: string) => (
 const renderContentBlock = (block: ContentBlock, sectionId: string, index: number) => {
   if (block.type === "paragraph") {
     return (
-      <p key={`${sectionId}-paragraph-${index}`} className="text-sm text-slate-100/80">
+      <p key={`${sectionId}-paragraph-${index}`} className="text-sm text-slate-700">
         {block.text}
       </p>
     );
@@ -35,7 +35,7 @@ const renderContentBlock = (block: ContentBlock, sectionId: string, index: numbe
   return (
     <div key={`${sectionId}-block-bullets-${index}`} className="space-y-3">
       {block.title ? (
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-800">
           {block.title}
         </p>
       ) : null}
@@ -49,30 +49,6 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
 
   return (
     <div className="space-y-10">
-      <div className="flex justify-end">
-        <button
-          type="button"
-          onClick={() => setShowImages((previous) => !previous)}
-          className="inline-flex items-center gap-2 rounded-full border border-emerald-300/60 bg-emerald-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200 transition hover:border-emerald-200 hover:bg-emerald-300/20"
-          aria-pressed={showImages}
-        >
-          <span>{showImages ? "Hide visuals" : "Show visuals"}</span>
-          <svg
-            aria-hidden
-            className={`h-4 w-4 transition ${showImages ? "rotate-0" : "-rotate-90"}`}
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-
       {sections.map((section) => {
         const shouldDisplayImages = section.displayImages ?? true;
         const gridColumnsClass = (() => {
@@ -86,18 +62,18 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
         return (
           <section
             key={section.id}
-            className="space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+            className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
             aria-labelledby={`${section.id}-heading`}
           >
             <div className="space-y-4">
-              <h2 id={`${section.id}-heading`} className="text-xl font-semibold text-white">
+              <h2 id={`${section.id}-heading`} className="text-xl font-semibold text-slate-900">
                 {section.title}
               </h2>
               {section.intro ? (
-                <p className="text-sm text-slate-100/80">{section.intro}</p>
+                <p className="text-sm text-slate-700">{section.intro}</p>
               ) : null}
               {section.paragraphs?.map((paragraph, index) => (
-                <p key={`${section.id}-intro-paragraph-${index}`} className="text-sm text-slate-100/80">
+                <p key={`${section.id}-intro-paragraph-${index}`} className="text-sm text-slate-700">
                   {paragraph}
                 </p>
               ))}
@@ -105,9 +81,9 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
               {section.style === "table" ? (
                 <div className="space-y-6">
                   <div className="overflow-x-auto">
-                    <table className="w-full min-w-[340px] border-separate border-spacing-y-2 text-left text-sm text-slate-100/80">
+                    <table className="w-full min-w-[340px] border-separate border-spacing-y-2 text-left text-sm text-slate-700">
                       {section.table.caption ? (
-                        <caption className="pb-2 text-left text-xs uppercase tracking-[0.2em] text-emerald-300">
+                        <caption className="pb-2 text-left text-xs uppercase tracking-[0.2em] text-emerald-700">
                           {section.table.caption}
                         </caption>
                       ) : null}
@@ -117,7 +93,7 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
                             <th
                               key={`${section.id}-${column}`}
                               scope="col"
-                              className="rounded-lg bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-emerald-200"
+                              className="rounded-lg bg-slate-100 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-emerald-800"
                             >
                               {column}
                             </th>
@@ -128,7 +104,7 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
                         {section.table.rows.map((row, rowIndex) => (
                           <tr key={`${section.id}-${rowIndex}`} className="align-top">
                             {row.cells.map((cell, cellIndex) => (
-                              <td key={`${section.id}-${rowIndex}-${cellIndex}`} className="rounded-lg bg-white/5 px-4 py-3">
+                              <td key={`${section.id}-${rowIndex}-${cellIndex}`} className="rounded-lg bg-slate-50 px-4 py-3">
                                 {cell}
                               </td>
                             ))}
@@ -143,13 +119,13 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
               {section.style === "bullets" ? renderBulletList(section.bullets, section.id) : null}
 
               {section.style === "key-values" ? (
-                <dl className={`grid gap-4 text-sm text-slate-100/80 ${gridColumnsClass}`}>
+                <dl className={`grid gap-4 text-sm text-slate-700 ${gridColumnsClass}`}>
                   {section.items.map((item) => (
-                    <div key={`${section.id}-${item.label}`} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                      <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200">
+                    <div key={`${section.id}-${item.label}`} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                      <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-800">
                         {item.label}
                       </dt>
-                      <dd className="mt-2 text-sm text-slate-100/90">{item.value}</dd>
+                      <dd className="mt-2 text-sm text-slate-900">{item.value}</dd>
                     </div>
                   ))}
                 </dl>
@@ -169,7 +145,7 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
                 {section.images.map((image) => (
                   <figure
                     key={`${section.id}-${image.src}`}
-                    className="overflow-hidden rounded-2xl border border-white/10 bg-white/10"
+                    className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50"
                   >
                     <div className="relative aspect-[4/3] w-full">
                       <Image
@@ -181,7 +157,7 @@ export function FlightProgramSections({ sections }: FlightProgramSectionsProps) 
                       />
                     </div>
                     {image.caption ? (
-                      <figcaption className="px-4 py-3 text-xs uppercase tracking-[0.2em] text-slate-200/70">
+                      <figcaption className="px-4 py-3 text-xs uppercase tracking-[0.2em] text-slate-600">
                         {image.caption}
                       </figcaption>
                     ) : null}

@@ -3,11 +3,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const navigationLinks = [
-  { href: "/stories", label: "Stories" },
-  { href: "/travel-with-points", label: "Travel on points" },
+  { href: "/travel-with-points", label: "Travel with points" },
   { href: "/travel-resources", label: "Travel Resources" },
+  { href: "/stories", label: "Stories" },
 ];
 
 export function SiteNav() {
@@ -57,10 +58,18 @@ export function SiteNav() {
         <div className="flex items-center justify-between gap-4">
           <Link
             href="/"
-            className="text-lg font-semibold tracking-tight transition-colors hover:text-slate-600 md:text-xl"
+            className="flex items-center gap-3 text-lg font-semibold tracking-tight transition-colors hover:text-slate-600 md:text-xl"
             onClick={closeMenu}
           >
-            Miles Go Round
+            <Image
+              src="/Logo/MilesGoRound-Logo-Blue.png"
+              alt="Miles Go Round logo"
+              width={1024}
+              height={1024}
+              className="h-12 w-12 rounded-full object-contain shadow-sm"
+              priority
+            />
+            <span>Miles Go Round</span>
           </Link>
           <button
             type="button"
