@@ -1603,7 +1603,7 @@
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/ICICI-Emeralde-Private-Metal.webp",
+          "src": "/images/cards/emaralde-private.webp",
           "alt": "ICICI Emeralde Private Metal Credit Card"
         }
       },
@@ -1616,14 +1616,7 @@
               "type": "paragraphs",
               "paragraphs": [
                 "The invite‑only card charges a joining fee of ₹12,499 + taxes and the same amount annually. Spending ₹10 lakh in a membership year reverses the renewal fee.",
-                "On joining or renewal, cardholders receive a Taj Epicure membership and 12,500 bonus reward points."
-              ]
-            },
-            {
-              "type": "bullets",
-              "bullets": [
-                "The card is invite‑only and targets high net‑worth individuals.",
-                "Renewal benefits mirror the welcome package with Taj membership and points."
+                "On paying joining or renewal fee, cardholders receive 12,500 bonus reward points."
               ]
             }
           ]
@@ -1635,11 +1628,12 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [ "Spend type", "Earn rate", "Cap" ],
                 "rows": [
-                  [ "General spends", "6 RP / ₹200" ],
-                  [ "Utility, education, insurance", "Capped earn rate" ],
-                  [ "Other eligible spends", "6 RP / ₹200" ]
+                  [ "General spends", "6 RP / ₹200", "None" ],
+                  [ "Flight Bookings via iShop", "36 RP / ₹200", "18,000 Bonus Points" ],
+                  [ "Gift Vouchers via iShop", "36 RP / ₹200", "18,000 Bonus Points" ],
+                  [ "Hotel Bookings via iShop", "72 RP / ₹200", "18,000 Bonus Points" ]
                 ]
               }
             },
@@ -1647,8 +1641,55 @@
               "type": "bullets",
               "bullets": [
                 "Reward points worth roughly 3 % can be redeemed for flights, hotels or merchandise.",
-                "Caps apply on reward accumulation for utilities, education, insurance and government transactions."
+                "1000 RP/statement cap applies on reward accumulation for utilities, education and grocery transactions.",
+                "5000 RP/statement cap applies on reward accumulation for utilities, education and grocery transactions.",
+                "No rewards on Fuel"
               ]
+            }
+          ]
+        },
+        {
+          "id": "redemption-options",
+          "title": "Redemption options",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem via iShop for maximum value."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Transfer points to Air India Maharaja Cluba att 1 RP : 0.5 air mile ratio."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Channel",
+                  "Value"
+                ],
+                "rows": [
+                  [
+                    "SmartBuy exclusive catalog",
+                    "1 RP = ₹0.65"
+                  ],
+                  [
+                    "iShop flights & hotels",
+                    "1 RP = ₹1"
+                  ],
+                  [
+                    "Luxury Brand Vouchers",
+                    "1 RP = ₹1"
+                  ],
+                  [
+                    "Statement credit",
+                    "1 RP = ₹0.40"
+                  ]
+                ]
+              }
             }
           ]
         },
@@ -1667,39 +1708,47 @@
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge, Travel & Lifestyle",
           "content": [
             {
               "type": "bullets",
               "bullets": [
                 "Unlimited domestic and international lounge access via Priority Pass and DreamFolks for primary and add‑on cardholders.",
                 "Unlimited golf rounds and lessons across premium courses.",
-                "Low 2 % forex markup on international transactions (per official sources)."
+                "Low 2 % forex markup on international transactions (per official sources).",
+                "Complimentary movie tickets and dining privileges through BookMyShow and partner restaurants."
               ]
             }
           ]
         },
         {
-          "id": "other-benefits",
-          "title": "Other features",
+          "id": "icici-emerald-private-metal-review",
+          "title": "Review",
           "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Emerald Private Metal(EPM) is one of the most super premium card that ICICI Bank issues. You would have easily guessed by now that it mostly copies HDFC Infinia. Reward rate of EPM for multiplier category is slightly higher than Infinia with more generous cappings. But we are still waiting for transfer partners to arrive. Nevertheless one should get this card if they are elegible."
+              ]
+            },
             {
               "type": "bullets",
               "bullets": [
-                "Complimentary movie tickets and dining privileges through BookMyShow and partner restaurants.",
-                "Comprehensive insurance cover including air accident insurance up to ₹3 crore, credit shield and medical emergency support.",
-                "24×7 concierge service for travel bookings, dining and lifestyle requests."
+                "18% return rate on fligts and voucher through iShop.",
+                "36% return rate on fligts and voucher through iShop.",
+                "Good Annaual and renewal benefits.",
+                "iShop has lower conv. fee on Amazon vouchers compared to what HDFC charges on smartbuy"
               ]
             }
           ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
-      "slug": "hdfc-diners-club-black-credit-card",
-      "name": "HDFC Bank Diners Club Black Credit Card",
+      "slug": "hdfc-diners-club-black-metal-credit-card",
+      "name": "HDFC Bank Diners Club Black Metal Credit Card",
       "issuer": "HDFC Bank",
       "network": "Diners Club",
       "type": "Premium Metal Travel Card",
@@ -1719,14 +1768,13 @@
       "keyHighlights": [
         "5 reward points per ₹150 on regular spends with up to 10× points on SmartBuy purchases.",
         "Complimentary memberships (Club Marriott, Times Prime, Amazon Prime, MakeMyTrip Black, Swiggy One and Forbes) on spending ₹1.5 lakh within 90 days or upon fee realisation.",
-        "Monthly milestone: vouchers worth ₹500 on spending ₹80,000 in a month.",
         "Unlimited domestic and international lounge access for primary and add‑on cardholders.",
         "2 % foreign currency markup and six complimentary golf games per quarter."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/HDFC-Diners-Club-Black-Metal.webp",
-          "alt": "HDFC Diners Club Black Credit Card"
+          "src": "/images/cards/HDFC-Diners-Club-Black-Credit-Card.png.webp",
+          "alt": "HDFC Diners Club Black Metal Credit Card"
         }
       },
       "detailSections": [
@@ -1737,8 +1785,42 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "The card charges a joining fee of ₹10,000 + taxes and the same renewal fee each year. Renewal fee waiver details are not explicitly published, however, membership benefits renew on achieving ₹8 lakh annual spend.",
-                "On spending ₹1.5 lakh within 90 days of card issuance or on fee realisation, you receive complimentary memberships of Club Marriott, Times Prime, Amazon Prime, MakeMyTrip Black, Swiggy One and Forbes digital."
+                "Diners Club Black Metal unlocks lifestyle memberships and a joining voucher when you meet the initial spend requirement."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Benefit",
+                  "Details"
+                ],
+                "rows": [
+                  [
+                    "Welcome memberships",
+                    "Swiggy One, Amazon Prime and Club Marriot after ₹1,50,000 spend in 90 days of card issuance"
+                  ],
+                  [
+                    "Annual fee",
+                    "₹10,00 + GST (charged yearly)"
+                  ],
+                  [
+                    "Renewal fee waiver",
+                    "₹8,00,000 in a membership year"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "Eligibility",
+          "title": "Eligibility",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Monthly Income greater than ₹2,50,000"
               ]
             }
           ]
@@ -1748,56 +1830,145 @@
           "title": "Reward earning",
           "content": [
             {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Build a healthy Reward Points balance on every purchase and supercharge partner merchant spends."
+              ]
+            },
+            {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Reward Rate"
+                ],
                 "rows": [
-                  [ "Regular spends", "5 RP / ₹150" ],
-                  [ "SmartBuy purchases", "up to 10× RP" ],
-                  [ "Flights & hotels via SmartBuy", "10× RP" ],
-                  [ "Other categories", "5 RP / ₹150" ]
+                  [
+                    "Regular spends",
+                    "5 RP / ₹150",
+                    "3.3%"
+                  ],
+                  [
+                    "Smartbuy Flights",
+                    "25 RP / ₹150",
+                    "16.6%"
+                  ],
+                  [
+                    "Smartbuy Hotels",
+                    "50 RP / ₹150",
+                    "33.2%"
+                  ],
+                  [
+                    "Smartbuy Gyftr",
+                    "15 RP / ₹150",
+                    "10%"
+                  ]
                 ]
               }
             },
             {
               "type": "bullets",
               "bullets": [
-                "Reward points redeem at ₹1 per point for flights and hotels or convert to air miles at 1:1 ratio.",
-                "No reward points on fuel, rent, wallet loads or government transactions (per HDFC policy)."
+                "5X points partner on SmartBuy - Myntra, MakeMyTrip Holiday, Redbus and others",
+                "10X points partner on SmartBuy - PharmEasy, Jockey and more",
+                "A maximum of 10,000 accelerated RPs can be earned in 1 day or 1 month",
+                "Exclusions - fuel, wallet, rent and tax payments."
               ]
             }
           ]
         },
         {
-          "id": "milestone-benefits",
-          "title": "Milestone benefits",
+          "id": "redemption-options",
+          "title": "Redemption options",
           "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem via HDFC SmartBuy for maximum value or move points to airline partners when conversions align with your itinerary."
+              ]
+            },
             {
               "type": "bullets",
               "bullets": [
-                "Voucher worth ₹500 on spending ₹80,000 in a calendar month.",
-                "Complimentary memberships renewed every year on achieving ₹8 lakh spend."
+                "Airline partners convert at up to 1 RP : 1 air mile.",
+                "You can cover up to 70% of a booking's value with Reward Points."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Channel",
+                  "Value"
+                ],
+                "rows": [
+                  [
+                    "SmartBuy exclusive catalog",
+                    "1 RP = ₹0.65"
+                  ],
+                  [
+                    "SmartBuy flights & hotels",
+                    "1 RP = ₹1 (up to 75,000 RP/month)"
+                  ],
+                  [
+                    "Products & vouchers",
+                    "Up to ₹0.5 per RP"
+                  ],
+                  [
+                    "Statement credit",
+                    "₹0.30 per RP (cap 50,000 RP/month)"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "milestone-bonuses",
+          "title": "Milestone bonuses",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Get 10000 bonus Reward Points on Rs 4 Lakh spend in a calendar quarter."
               ]
             }
           ]
         },
         {
-          "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "id": "lounge-and-travel",
+          "title": "Lounge & travel comforts",
           "content": [
             {
               "type": "bullets",
               "bullets": [
-                "Unlimited domestic and international airport lounge access for primary and add‑on cardholders.",
-                "Six complimentary golf games per quarter.",
-                "2 % foreign currency markup on overseas transactions.",
-                "Dining discounts via Swiggy Dineout and comprehensive insurance covers."
+                "Unlimited Domestic and International Lounge Access."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diners-club-black-metal-review",
+          "title": "Review",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Some consider Diners Club Metal at par with Infinia. Yes Reward rate on voucher is lower but you get 10,000 bonus RPs on spending 4,00,000 a quarter."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Very good base reward rate of 3.3%.",
+                "SmartBuy offers very good return specifically for Flights and Hotels."
               ]
             }
           ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
@@ -1940,11 +2111,11 @@
         "Earn 8 Marriott Bonvoy points per ₹150 spent at Marriott hotels, 4 points per ₹150 on travel/dining/entertainment and 2 points per ₹150 on other spends.",
         "Milestone free night awards at ₹6 lakh, ₹9 lakh and ₹15 lakh annual spends.",
         "12 domestic and 12 international lounge visits per year plus two complimentary golf rounds per quarter.",
-        "Annual fee of ₹3,000 + taxes with no waiver specified."
+        "Annual fee of ₹3,000 + taxes."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/HDFC-Marriott-Bonvoy-Card.webp",
+          "src": "/images/cards/hdfc-marriot.png",
           "alt": "HDFC Marriott Bonvoy Credit Card"
         }
       },
@@ -1957,7 +2128,20 @@
               "type": "paragraphs",
               "paragraphs": [
                 "For a joining fee of ₹3,000 + taxes (same renewal fee), cardholders receive a free night award worth up to 15,000 Marriott Bonvoy points on the first eligible transaction, complimentary Silver Elite status and 10 elite night credits.",
-                "No annual fee waiver is specified, renewal benefits mirror the welcome offer in subsequent years through milestone spends."
+                "No annual fee waiver, renewal benefits mirror the welcome offer in subsequent years."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Eligibility",
+          "title": "Eligibility",
+          "content": [
+            {
+              "type": "bullets",
+              "bullets": [
+                "Monthly Income greater than ₹1,00,000 for salaried Individual",
+                "Income Tax Return (ITR) > ₹15 lakh per annum for Self-employed"
               ]
             }
           ]
@@ -1980,8 +2164,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "Points are redeemable through the Marriott Bonvoy programme for hotel stays, room upgrades and experiences.",
-                "Points can also be transferred to over 40 airline partners (conversion rates vary)."
+                "Points are redeemable through the Marriott Bonvoy programme for hotel stays, room upgrades and experiences."
               ]
             }
           ]
@@ -2001,7 +2184,7 @@
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge, Travel & lifestyle",
           "content": [
             {
               "type": "bullets",
@@ -2013,9 +2196,28 @@
               ]
             }
           ]
+        },
+        {
+          "id": "hdfc-marriot-bonvoy-review",
+          "title": "Review",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "This is a great card just for getting that 1 free Night stay at Marriot poperties. Also you get good Lounge Access quota. Although do note that if you don't already have core HDFC credit card getting a co-branded card like Marriot Bonvoy card can impact your elegibility to get a core HDFC card like Regalia or Infinia in future.'"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Great for 1 Free night at Marriot Hotels, valued upto 15,000 points.",
+                "Good paid lounge access card."
+              ]
+            }
+          ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
