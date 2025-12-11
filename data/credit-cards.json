@@ -2243,12 +2243,11 @@
         "12,500 reward points on paying the joining fee and on renewal.",
         "Earn 5 reward points per ₹150 on all spends and up to 10× points on SmartBuy purchases.",
         "Annual fee waived on spending ₹10 lakh in the previous year.",
-        "Unlimited domestic and international lounge access for primary and add‑on cardholders.",
-        "Club Marriott membership, premium hotel & dining vouchers and unlimited golf games."
+        "Unlimited domestic and international lounge access for primary and add‑on cardholders."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/HDFC-Infinia-Metal-Credit-Card.webp",
+          "src": "/images/cards/HDFC-Bank-INFINIA-Metal-Credit-Card.webp",
           "alt": "HDFC Infinia Metal Credit Card"
         }
       },
@@ -2258,8 +2257,8 @@
           "title": "Welcome, annual & renewal benefits",
           "content": [
             {
-              "type": "paragraphs",
-              "paragraphs": [
+              "type": "bullets",
+              "bullets": [
                 "The joining and renewal fee is ₹12,500 + taxes, but spending ₹10 lakh in the previous year waives the renewal fee.",
                 "Paying the joining or renewal fee earns 12,500 bonus reward points."
               ]
@@ -2271,55 +2270,116 @@
           "title": "Reward earning",
           "content": [
             {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Build a healthy Reward Points balance on every purchase and supercharge partner merchant spends."
+              ]
+            },
+            {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Reward Rate"
+                ],
                 "rows": [
-                  [ "Regular spends", "5 RP / ₹150" ],
-                  [ "SmartBuy bookings", "up to 10× RP" ],
-                  [ "Other eligible spends", "5 RP / ₹150" ]
+                  [
+                    "Regular spends",
+                    "5 RP / ₹150",
+                    "3.3%"
+                  ],
+                  [
+                    "Smartbuy Flights",
+                    "25 RP / ₹150",
+                    "16.6%"
+                  ],
+                  [
+                    "Smartbuy Hotels",
+                    "50 RP / ₹150",
+                    "33.2%"
+                  ],
+                  [
+                    "Smartbuy Gyftr",
+                    "25 RP / ₹150",
+                    "16.6%"
+                  ]
                 ]
               }
             },
             {
               "type": "bullets",
               "bullets": [
-                "Reward points can be redeemed at ₹1 per point for flights/hotels on SmartBuy or transferred to airline partners.",
-                "No expiry on reward points while the card account remains active."
+                "5X points partner on SmartBuy - Myntra, MakeMyTrip Holiday, Redbus and others",
+                "10X points partner on SmartBuy - PharmEasy, Jockey and more",
+                "A maximum of 15,000 accelerated RPs can be earned in 1 day or 1 month",
+                "Exclusions - fuel, wallet, rent and tax payments."
               ]
+            }
+          ]
+        },
+        {
+          "id": "redemption-options",
+          "title": "Redemption options",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem via HDFC SmartBuy for maximum value or move points to airline partners when conversions align with your itinerary."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Airline partners convert at up to 1 RP : 1 air mile.",
+                "You can cover up to 70% of a booking's value with Reward Points."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Channel",
+                  "Value"
+                ],
+                "rows": [
+                  [
+                    "SmartBuy exclusive catalog",
+                    "1 RP = ₹0.65"
+                  ],
+                  [
+                    "SmartBuy flights & hotels",
+                    "1 RP = ₹1 (up to 75,000 RP/month)"
+                  ],
+                  [
+                    "Products & vouchers",
+                    "Up to ₹0.5 per RP"
+                  ],
+                  [
+                    "Statement credit",
+                    "₹0.30 per RP (cap 50,000 RP/month)"
+                  ]
+                ]
+              }
             }
           ]
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge, Travel & lifestyle",
           "content": [
             {
               "type": "bullets",
               "bullets": [
                 "Unlimited domestic and international airport lounge access via Priority Pass for primary and add‑on cardholders.",
-                "Club Marriott membership in the first year providing dining and hotel stay discounts.",
                 "Low 2 % forex markup on international transactions.",
                 "Unlimited complimentary golf games at select courses."
               ]
             }
           ]
-        },
-        {
-          "id": "other-benefits",
-          "title": "Other features",
-          "content": [
-            {
-              "type": "bullets",
-              "bullets": [
-                "Concierge services for travel bookings and reservations, and 15 % dining discount via Swiggy Dineout.",
-                "Comprehensive insurance coverage including air accident cover and emergency medical assistance."
-              ]
-            }
-          ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
@@ -2342,15 +2402,13 @@
         "Unlimited Lounge Access"
       ],
       "keyHighlights": [
-        "12 EDGE Miles per ₹200 up to ₹1.5 lakh monthly spend, 35 miles per ₹200 beyond and 60 miles per ₹200 on Travel EDGE portal up to ₹2 lakh monthly.",
-        "5:4 transfer ratio to airline and hotel partners with an annual redemption cap of 10 lakh miles (2 lakh on group A partners, 8 lakh on group B).",
-        "₹5,000 welcome voucher choice (Luxe gift card/Postcard hotels/Yatra).",
-        "Unlimited domestic and international lounge access with four guest visits and four airport meet‑and‑greet services per year.",
-        "Annual fee waived on spending ₹30 lakh in the previous year."
+        "12 EDGE Miles per ₹200 up to ₹1.5 lakh monthly spend.",
+        "35 miles per ₹200 beyond ₹1.5 lakh monthly spend.",
+        "60 miles per ₹200 on Travel EDGE portal up to ₹2 lakh monthly."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/Axis-Magnus-Burgundy-Card.webp",
+          "src": "/images/cards/mahnus_for_burgandy.jpg",
           "alt": "Axis Magnus for Burgundy Credit Card"
         }
       },
@@ -2360,10 +2418,10 @@
           "title": "Welcome, annual & renewal benefits",
           "content": [
             {
-              "type": "paragraphs",
-              "paragraphs": [
-                "A joining and annual fee of ₹30,000 + taxes applies, spending ₹30 lakh in the previous year waives the renewal fee.",
-                "Cardholders receive a ₹5,000 welcome voucher choice of Luxe gift card, Postcard hotels voucher or Yatra gift voucher."
+              "type": "bullets",
+              "bullets": [
+                "A joining and annual fee of ₹30,000 + taxes applies.",
+                "Spending ₹30 lakh in the previous year waives the renewal fee."
               ]
             }
           ]
@@ -2379,8 +2437,7 @@
                 "rows": [
                   [ "Spends up to ₹1.5 L/month", "12 EDGE Miles / ₹200" ],
                   [ "Spends above ₹1.5 L/month", "35 EDGE Miles / ₹200" ],
-                  [ "Travel EDGE portal spends up to ₹2 L/month", "60 EDGE Miles / ₹200" ],
-                  [ "Travel EDGE spends beyond ₹2 L/month", "35 EDGE Miles / ₹200" ]
+                  [ "Travel EDGE portal spends up to ₹2 L/month", "60 EDGE Miles / ₹200" ]
                 ]
               }
             },
@@ -2395,34 +2452,35 @@
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge,Travel & lifestyle",
           "content": [
             {
               "type": "bullets",
               "bullets": [
                 "Unlimited domestic and international airport lounge access with four guest visits per year.",
                 "Four airport meet‑and‑greet services annually.",
-                "Low 2 % forex markup on international spends.",
-                "Dining discounts up to 30 % at partner restaurants and comprehensive travel insurance coverage."
+                "Low 2 % forex markup on international spends."
               ]
             }
           ]
         },
         {
-          "id": "other-benefits",
-          "title": "Other features",
+          "id": "burgandy-eligibility",
+          "title": "Axis Bank Burgundy Relationship Eligibility",
           "content": [
             {
               "type": "bullets",
               "bullets": [
-                "Fuel surcharge waiver and dedicated concierge service.",
-                "Access to exclusive Burgundy privileges and lifestyle events."
+                "Average Quarterly Balance(AQB) of Rs 10 Lakh in savings account or",
+                "Total Relationship Value(TRV) of Rs 30 Lakh which can include PPF and all other kinfd of deposits or",
+                "Total Relationship Value(TRV) of Rs 1 Crore if including Demat holdings or",
+                "3 Lakh Monthly Salary Credit"
               ]
             }
           ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
@@ -2446,14 +2504,11 @@
       ],
       "keyHighlights": [
         "Earn 5 EDGE Miles per ₹100 on Travel EDGE portal bookings and direct airline purchases and 2 miles per ₹100 on other spends.",
-        "Miles redeem at 1:1 ratio with over 15 airline and hotel partners.",
-        "Up to 32 airport lounge visits per year across domestic and international lounges.",
-        "Annual fee of ₹3,000 with no waiver.",
-        "EDGE Miles never expire, providing long‑term flexibility for travel redemptions."
+        "Miles redeem at 1:1 ratio with airline and hotel partners."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/Axis-Horizon-Credit-Card.webp",
+          "src": "/images/cards/Horizon.jpg",
           "alt": "Axis Horizon Credit Card"
         }
       },
@@ -2463,10 +2518,12 @@
           "title": "Welcome, annual & renewal benefits",
           "content": [
             {
-              "type": "paragraphs",
-              "paragraphs": [
-                "The card has an annual fee of ₹3,000 + taxes with no spend‑based waiver.",
-                "There are no specific welcome vouchers, the card focuses on straightforward earn and burn of EDGE Miles."
+              "type": "bullets",
+              "bullets": [
+                "The card has an joining and annual fee of ₹3,000 + taxes",
+                "Welcome benefit of 5,000 EDGE Miles when you pay the joining fee and make the first transaction",
+                "Annual benefit of 1,500 EDGE Miles on payment of annual fees",
+                "There is no renewal fee waiver"
               ]
             }
           ]
@@ -2496,33 +2553,43 @@
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge Access",
           "content": [
             {
               "type": "bullets",
               "bullets": [
-                "Up to 32 lounge visits per year across domestic and international airports.",
-                "Access EDGE Miles redemption partners grouped into categories (Group A & Group B) offering a broad choice of airlines and hotels.",
-                "No annual fee waiver, cardholders must pay the fee each year."
+                "Axis Horizon Mastercard World gives 6 domestic lounge access while Visa variant gives 8 domestic lounge access.",
+                "2 International lounge access per qurter."
               ]
             }
           ]
         },
         {
-          "id": "other-benefits",
-          "title": "Other features",
+          "id": "horizon-review",
+          "title": "Review",
           "content": [
             {
-              "type": "bullets",
-              "bullets": [
-                "EDGE Miles never expire, allowing long‑term accumulation and strategic redemptions.",
-                "Travel insurance and concierge services for bookings and itinerary planning (per Axis policy)."
+              "type": "paragraphs",
+              "paragraphs": [
+                "Toned down version of Atlas Card. 2% bases reward rate(~4% accor) is good for a mid range card."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Joining fee of ₹000 is completly offset by joining benefit of 5000 EDGE Miles. Annual fee is somewhat offset by annual benefit of 1,500 EDGE Miles."
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "This is a good mid range card but we feel that HSBC Travel One is a better Travel Card although it comes with higher fees."
               ]
             }
           ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
