@@ -14,7 +14,6 @@ import type {
   CardApplyNowBlock,
   RichContent,
   RichContentBlock,
-  SectionImage
 } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
@@ -243,70 +242,74 @@ type CardSnapshotProps = {
 function CardSnapshot({ card }: CardSnapshotProps) {
   return (
     <SectionWrapper title="Card snapshot">
-      <dl className="grid gap-5 text-sm text-slate-700 sm:grid-cols-2">
-        <div>
-          <dt className="font-semibold text-slate-900">Issuer</dt>
-          <dd>{card.issuer}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Card type</dt>
-          <dd>{card.type}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Annual fee</dt>
-          <dd>{formatAnnualFee(card.annualFee)}</dd>
-        </div>
-        {card.rewardsCurrency ? (
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+        {card.media?.cardImage ? (
+          <figure className="flex w-full flex-col items-center sm:w-auto sm:items-start">
+            <div className="w-full max-w-[240px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+              <Image
+                src={card.media.cardImage.src}
+                alt={card.media.cardImage.alt}
+                width={260}
+                height={160}
+                className="h-auto w-full object-contain"
+                priority
+              />
+            </div>
+            {card.media.cardImage.caption ? (
+              <figcaption className="mt-2 text-center text-xs uppercase tracking-[0.2em] text-slate-500 sm:text-left">
+                {card.media.cardImage.caption}
+              </figcaption>
+            ) : null}
+          </figure>
+        ) : null}
+
+        <dl className="grid flex-1 gap-5 text-sm text-slate-700 sm:grid-cols-2">
           <div>
-            <dt className="font-semibold text-slate-900">Rewards currency</dt>
-            <dd>{card.rewardsCurrency}</dd>
+            <dt className="font-semibold text-slate-900">Issuer</dt>
+            <dd>{card.issuer}</dd>
           </div>
-        ) : null}
-        {card.conversion ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Conversion</dt>
-            <dd className="mt-1">{card.conversion}</dd>
+          <div>
+            <dt className="font-semibold text-slate-900">Card type</dt>
+            <dd>{card.type}</dd>
           </div>
-        ) : null}
-        {card.keyHighlights?.length ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Highlights</dt>
-            <dd className="mt-2">
-              <ul className="space-y-2">
-                {card.keyHighlights.map((highlight) => (
-                  <li key={highlight} className="flex items-start gap-3">
-                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600" aria-hidden />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            </dd>
+          <div>
+            <dt className="font-semibold text-slate-900">Annual fee</dt>
+            <dd>{formatAnnualFee(card.annualFee)}</dd>
           </div>
-        ) : null}
-      </dl>
+          {card.rewardsCurrency ? (
+            <div>
+              <dt className="font-semibold text-slate-900">Rewards currency</dt>
+              <dd>{card.rewardsCurrency}</dd>
+            </div>
+          ) : null}
+          {card.conversion ? (
+            <div className="sm:col-span-2">
+              <dt className="font-semibold text-slate-900">Conversion</dt>
+              <dd className="mt-1">{card.conversion}</dd>
+            </div>
+          ) : null}
+        </dl>
+      </div>
     </SectionWrapper>
   );
 }
 
-function CardImageSection({ image }: { image: SectionImage }) {
+function CardHighlights({ highlights }: { highlights: string[] }) {
+  if (!highlights.length) {
+    return null;
+  }
+
   return (
-    <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-      <figure className="space-y-3">
-        <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={320}
-            height={200}
-            className="h-auto w-full object-cover"
-            priority
-          />
-        </div>
-        {image.caption ? (
-          <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-500">{image.caption}</figcaption>
-        ) : null}
-      </figure>
-    </section>
+    <SectionWrapper title="Key highlights">
+      <ul className="space-y-3 text-sm text-slate-700">
+        {highlights.map((highlight) => (
+          <li key={highlight} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
+            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600" aria-hidden />
+            <span>{highlight}</span>
+          </li>
+        ))}
+      </ul>
+    </SectionWrapper>
   );
 }
 
@@ -326,6 +329,7 @@ function CardDetailSections({ card }: { card: Card }) {
   return (
     <div className="flex flex-col gap-6 sm:gap-8">
       <CardSnapshot card={card} />
+      {card.keyHighlights?.length ? <CardHighlights highlights={card.keyHighlights} /> : null}
       {card.detailSections.map((section, index) => {
         if (isApplyNowBlock(section)) {
           return (
@@ -517,8 +521,6 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
           <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{card.name}</h1>
           <p className="text-base text-slate-700 sm:text-lg">{card.summary}</p>
         </header>
-
-        {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
 
         <CardDetailSections card={card} />
 
