@@ -1486,7 +1486,7 @@
         "Low Forex Markup"
       ],
       "keyHighlights": [
-        "₹10,000 luxury stay voucher and other welcome privileges including international visa assistance and Zomato Gold membership.",
+        "₹10,000 EaseMyTrip Hotel Voucher and other welcome privileges Zomato Gold membership.",
         "Value back of ~2 % on domestic spends and 2.5 % on international spends with 1 % fuel surcharge waiver.",
         "Milestone benefits worth ₹10,000 each for Klook experiences, airport transfers and Tata CLiQ vouchers, plus a complimentary night at Ayatana Resorts on high spend.",
         "Annual fee waived when you spend ₹25 lakh in a membership year.",
@@ -1494,7 +1494,7 @@
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/ICICI-Times-Black-Card.webp",
+          "src": "/images/cards/icici-times-black.jpg",
           "alt": "ICICI Bank Times Black Credit Card"
         }
       },
@@ -1504,17 +1504,12 @@
           "title": "Welcome, annual & renewal benefits",
           "content": [
             {
-              "type": "paragraphs",
-              "paragraphs": [
-                "The card charges a joining and renewal fee of ₹20,000 + GST. Spending ₹25 lakh in the membership year waives the renewal fee.",
-                "New cardholders receive a luxury stay gift voucher worth ₹10,000, complimentary visa assistance, airport transfers and access to the Quorum Club."
-              ]
-            },
-            {
               "type": "bullets",
               "bullets": [
-                "Zomato Gold membership is included as a welcome benefit.",
-                "CribLife concierge service and travel insurance coverage provide personalised support."
+                "The card charges a joining and renewal fee of ₹20,000 + GST.",
+                "Spending ₹25 lakh in the membership year waives the renewal fee",
+                "As joining benefit you get ₹10,000 EaseMyTrip Hotel Voucher, ₹3,000 Toni & Guy Voucher and Zomato Gold Membership",
+                "You also get some more vouchers but they are not worth counting as real benefits"
               ]
             }
           ]
@@ -1526,53 +1521,115 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Value back" ],
+                "columns": [ "Spend type", "Earn rate", "Cap"],
                 "rows": [
-                  [ "Domestic spends", "≈2 %" ],
-                  [ "International spends", "≈2.5 %" ],
-                  [ "Fuel", "1 % surcharge waived" ]
+                  [ "General spends", "2% Reward Points", "-" ],
+                  [ "Flight Bookings via iShop", "12% Reward Points", "15,000 Reward Points" ],
+                  [ "Gift Vouchers via iShop", "12% Reward Points", "15,000 Reward Points" ],
+                  [ "Hotel Bookings via iShop", "24% Reward Points", "15,000 Reward Points" ],
+                  [ "Forex spends", "2.5% Reward Points", "-" ]
                 ]
               }
             },
             {
               "type": "bullets",
               "bullets": [
-                "The card offers unlimited complimentary access to domestic and international airport lounges.",
-                "1.49 % forex markup on overseas transactions."
+                "Reward points worth roughly 3 % can be redeemed for flights, hotels or merchandise.",
+                "5000 RP/statement cap applies on reward accumulation for utilities, education and grocery transactions.",
+                "No rewards on Fuel"
               ]
             }
           ]
         },
         {
+          "id": "redemption-options",
+          "title": "Redemption options",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem via iShop for maximum value."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Transfer points to Air India Maharaja Cluba att 1 RP : 1 air mile ratio."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Channel",
+                  "Value"
+                ],
+                "rows": [
+                  [
+                    "iShop flights & hotels",
+                    "1 RP = ₹1"
+                  ],
+                  [
+                    "Statement credit",
+                    "1 RP = ₹0.40"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
           "id": "milestone-benefits",
-          "title": "Milestone & lifestyle benefits",
+          "title": "Milestone benefits",
           "content": [
             {
               "type": "bullets",
               "bullets": [
-                "₹10,000 worth of Klook experiences and airport shuttle vouchers and a ₹10,000 Tata CLiQ gift card when you reach spend thresholds.",
-                "Free one‑night stay at Ayatana Resorts worth ₹20,000 on achieving high spend milestones."
+                "₹10,000 Klook voucher on annual spend of ₹2 Lac.",
+                "₹Luxury sedan airport transfers spend of ₹5 Lac.",
+                "₹10,000 Tata CLiQ Luxury voucher on annual spend of ₹10 Lac.",
+                "₹20,000 Stay Voucher from Ayatana spend of ₹20 Lac."
               ]
             }
           ]
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge, Travel & lifestyle",
           "content": [
             {
               "type": "bullets",
               "bullets": [
                 "Unlimited domestic and international lounge access for cardholder and companions.",
-                "Complimentary travel insurance, concierge support and visa assistance.",
                 "Low forex markup of 1.49 % for overseas purchases.",
                 "1 % fuel surcharge waiver up to ₹500 per month."
               ]
             }
           ]
+        },
+        {
+          "id": "icici-times-black-review",
+          "title": "Review",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "For those who are not elegible for other premium cards may consider this but fees seems too high for the benefits you get. Yes it gives a lot of voucher to offset the fee but is that enough? Maybe.'"
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Reward rate of 2% is too low for a ₹20,000 fee card.",
+                "24% return rate on Hotels and 12% on fligts and voucher through iShop.",
+                "Low forex markup of 1.49%",
+                "iShop has lower conv. fee on Amazon vouchers compared to what HDFC charges on smartbuy"
+              ]
+            }
+          ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
@@ -1631,17 +1688,15 @@
                 "columns": [ "Spend type", "Earn rate", "Cap" ],
                 "rows": [
                   [ "General spends", "6 RP / ₹200", "None" ],
-                  [ "Flight Bookings via iShop", "36 RP / ₹200", "18,000 Bonus Points" ],
-                  [ "Gift Vouchers via iShop", "36 RP / ₹200", "18,000 Bonus Points" ],
-                  [ "Hotel Bookings via iShop", "72 RP / ₹200", "18,000 Bonus Points" ]
+                  [ "Flight Bookings via iShop", "36 RP / ₹200", "18,000 Reward Points" ],
+                  [ "Gift Vouchers via iShop", "36 RP / ₹200", "18,000 Reward Points" ],
+                  [ "Hotel Bookings via iShop", "72 RP / ₹200", "18,000 Reward Points" ]
                 ]
               }
             },
             {
               "type": "bullets",
               "bullets": [
-                "Reward points worth roughly 3 % can be redeemed for flights, hotels or merchandise.",
-                "1000 RP/statement cap applies on reward accumulation for utilities, education and grocery transactions.",
                 "5000 RP/statement cap applies on reward accumulation for utilities, education and grocery transactions.",
                 "No rewards on Fuel"
               ]
@@ -1672,10 +1727,6 @@
                   "Value"
                 ],
                 "rows": [
-                  [
-                    "SmartBuy exclusive catalog",
-                    "1 RP = ₹0.65"
-                  ],
                   [
                     "iShop flights & hotels",
                     "1 RP = ₹1"
@@ -1991,15 +2042,15 @@
         "SmartBuy Rewards"
       ],
       "keyHighlights": [
-        "5 RP per ₹150 on select business spends with up to 5× RP on SmartBuy purchases.",
-        "Joining fee waived on spending ₹1.5 lakh within 90 days, renewal fee waived on spending ₹7.5 lakh in the previous year.",
+        "5 RP per ₹150 on select business spends.",
+        "Renewal fee waiver on spending ₹7.5 in the previous year.",
         "Club Marriott membership and Taj stay voucher upon spending ₹1.5 lakh in the first 90 days.",
-        "Flight or Taj stay voucher worth ₹5,000 on every ₹5 lakh spend.",
+        "Flight or Taj stay voucher worth ₹5,000 on ₹5 lakh spend.",
         "Unlimited domestic and international lounge access with six complimentary golf games per quarter."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/HDFC-Biz-Black-Credit-Card.webp",
+          "src": "/images/cards/biz-black.jpg",
           "alt": "HDFC Biz Black Credit Card"
         }
       },
@@ -2009,9 +2060,10 @@
           "title": "Welcome, annual & renewal benefits",
           "content": [
             {
-              "type": "paragraphs",
-              "paragraphs": [
-                "The card has a joining fee of ₹10,000 + taxes and the same renewal fee annually. Spending ₹1.5 lakh within 90 days waives the joining fee and spending ₹7.5 lakh in the previous year waives the renewal fee.",
+              "type": "bullets",
+              "bullets": [
+                "Joining and Renewal fee of ₹10,000 + taxes.",
+                "Spending ₹1.5 lakh within 90 days waives the joining fee and spending ₹7.5 lakh in the previous year waives the renewal fee.",
                 "Upon spending ₹1.5 lakh within 90 days, cardholders receive Club Marriott membership and a complimentary Taj stay voucher."
               ]
             }
@@ -2026,7 +2078,7 @@
               "table": {
                 "columns": [ "Spend type", "Earn rate" ],
                 "rows": [
-                  [ "Select business spends", "5 RP / ₹150" ],
+                  [ "Select business spends", "25 RP / ₹150" ],
                   [ "SmartBuy partners", "up to 5× RP" ],
                   [ "Other eligible spends", "5 RP / ₹150" ]
                 ]
@@ -2035,10 +2087,59 @@
             {
               "type": "bullets",
               "bullets": [
-                "Reward points capped at 1.5 lakh points per month.",
+                "5x points on bussiness spends are applicable only on a spend of more than Rs.50,000 per statement cycle.",
+                "Bussiness spends elegible for accelerated spends include Income Tax and GST payments, Utility bills through PayZapp and other business productivity tools like office 365. ",
+                "Accelerated earn for business spends capped at 7500 RP",
+                "Total Reward points capped at 1.5 lakh points per month.",
                 "Points redeem at ₹1 per point for travel bookings via SmartBuy, business catalogue or statement credit.",
                 "No reward points on fuel, rent, wallet loads and government payments."
               ]
+            }
+          ]
+        },
+        {
+          "id": "redemption-options",
+          "title": "Redemption options",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Redeem via HDFC SmartBuy for maximum value or move points to airline partners when conversions align with your itinerary."
+              ]
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                "Airline partners convert at up to 1 RP : 1 air mile (KrisFlyer only).",
+                "You can cover up to 50% of a booking's value with Reward Points."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Channel",
+                  "Value"
+                ],
+                "rows": [
+                  [
+                    "SmartBuy exclusive catalog",
+                    "1 RP = ₹0.5"
+                  ],
+                  [
+                    "SmartBuy flights & hotels",
+                    "1 RP = ₹1 (up to 1,05,000 RP/month)"
+                  ],
+                  [
+                    "Products & vouchers",
+                    "Up to ₹0.5 per RP"
+                  ],
+                  [
+                    "Statement credit",
+                    "₹0.30 per RP (cap 50,000 RP/month)"
+                  ]
+                ]
+              }
             }
           ]
         },
@@ -2057,12 +2158,12 @@
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge, Travel & lifestyle",
           "content": [
             {
               "type": "bullets",
               "bullets": [
-                "Unlimited domestic and international lounge access for cardholders and employees.",
+                "Unlimited domestic and international lounge access.",
                 "Six complimentary golf games per quarter.",
                 "Club Marriott dining, stay and spa discounts up to 20 %.",
                 "SmartBuy BizDeals and merchant offers for corporate purchases."
@@ -2071,20 +2172,26 @@
           ]
         },
         {
-          "id": "other-benefits",
-          "title": "Other features",
+          "id": "biz-black--review",
+          "title": "Review",
           "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "This is a must have card if you own/run a business and have tax payments. 16% back on Tax payments is too good to miss out on."
+              ]
+            },
             {
               "type": "bullets",
               "bullets": [
-                "1 % fuel surcharge waiver up to ₹500 per month.",
-                "Comprehensive insurance coverage including air accident cover, lost card liability and purchase protection."
+                "Very good base reward rate of 3.3%.",
+                "Accelerated reward rate of 16.6% on Tax payments and certain business spends."
               ]
             }
           ]
         }
       ],
-      "enabled": false
+      "enabled": true
     },
 
     {
@@ -2612,15 +2719,14 @@
         "Lounge & Golf Benefits"
       ],
       "keyHighlights": [
-        "₹4,000 welcome cashback (₹1,000 each on four transactions of ₹1,000+) and 5,000 bonus points on card issuance.",
-        "Tiered rewards: 10× points on monthly spends above ₹20,000 and on birthdays, 5× points on spends below ₹20,000, 3× points on FIRST Digital Card spends (rent, wallet loads, education, government) and 1× point on small & utility spends.",
+        "Tiered rewards: 10× points on monthly spends above ₹20,000 and on birthdays, 5× points on spends below ₹20,000, 3× points on rent, wallet loads, education, government.",
         "Zero forex markup and up to 16 domestic & 16 international lounge visits plus 16 railway lounge visits annually.",
         "Milestone bonus: 7,500 points on spending ₹8 lakh in a year or 15,000 points on spending ₹15 lakh.",
         "Up to 24 golf rounds/lessons per year, buy‑one‑get‑one movie ticket offer and trip cancellation protection up to ₹50,000."
       ],
       "media": {
         "cardImage": {
-          "src": "/images/cards/IDFC-Mayura-Credit-Card.webp",
+          "src": "/images/cards/idfc_mayura.jpg",
           "alt": "IDFC FIRST Mayura Credit Card"
         }
       },
@@ -2630,10 +2736,15 @@
           "title": "Welcome, annual & renewal benefits",
           "content": [
             {
-              "type": "paragraphs",
-              "paragraphs": [
-                "A joining fee of ₹5,999 + taxes provides a welcome offer of ₹4,000 cashback (₹1,000 on four transactions of ₹1,000 or more within 60 days) and 5,000 bonus reward points on card issuance.",
-                "The annual fee of ₹5,999 + taxes has no waiver, instead, cardholders can earn milestone bonus points on high spends."
+              "type": "bullets",
+              "bullets": [
+                "Joining fee and Annual fee of ₹5,999 + taxes.",
+                "The annual fee of ₹5,999 + taxes has no waiver, instead, cardholders can earn milestone bonus points on high spends.",
+                "Earn 4,000 Reward Points on payment of joining fee.",
+                "Earn 4,000 Reward Points on spends over ₹20,000 in the second statement cycle.",
+                "Earn another 4,000 Reward Points on spends over ₹20,000 in the third statement cycle.",
+                "Spend minimum ₹8 Lakhs in the previous card anniversary year and get 7,500 Reward Points (worth up to ₹3,750).",
+                "Spend minimum ₹15 Lakhs in the previous card anniversary year and get 15,000 Reward Points (worth up to ₹7,500)"
               ]
             }
           ]
@@ -2647,19 +2758,22 @@
               "table": {
                 "columns": [ "Spend type", "Earn rate" ],
                 "rows": [
-                  [ "Monthly spends above ₹20,000 & birthday spends", "10× points" ],
-                  [ "Monthly spends below ₹20,000", "5× points" ],
-                  [ "FIRST Digital Card (rent, wallet load, education, government)", "3× points" ],
-                  [ "Utilities & insurance, spends below ₹2,000", "1× point" ],
-                  [ "Other eligible spends", "Standard earn rate" ]
+                  [ "Base Reward", "5 RP / ₹150" ],
+                  [ "Monthly spends > ₹20,000", "10 RP / ₹150" ],
+                  [ "Flights(in IDFC App)", "30 RP / ₹150" ],
+                  [ "Hotels(in IDFC App)", "60 RP / ₹150" ],
+                  [ "UPI", "3 RP / ₹150" ]
                 ]
               }
             },
             {
               "type": "bullets",
               "bullets": [
-                "1 Reward Point = ₹0.25 when redeemed, points never expire while the card is active.",
-                "No reward points on fuel and EMI transactions."
+                "Earning cap of 25,000 bonus points per month",
+                "Points never expire.",
+                "1 Reward Point = ₹0.25 / 1 Reward Point = ₹0.50 on IDFC Travel.",
+                "Redemption Charges of ₹99 + GST",
+                "Redemption Cap of 3 Lac points/Yr and 1.5 Lac points/month"
               ]
             }
           ]
@@ -2671,16 +2785,14 @@
             {
               "type": "bullets",
               "bullets": [
-                "Earn 7,500 reward points worth ₹1,875 on spending ₹8 lakh in a year or 15,000 points worth ₹3,750 on spending ₹15 lakh.",
-                "1 % fuel surcharge waiver up to ₹300 per month.",
-                "Buy‑one‑get‑one movie ticket offer twice a month on BookMyShow."
+                "Earn 7,500 reward points worth ₹1,875 on spending ₹8 lakh in a year or 15,000 points worth ₹3,750 on spending ₹15 lakh."
               ]
             }
           ]
         },
         {
           "id": "travel-benefits",
-          "title": "Travel & lifestyle",
+          "title": "Lounge, Travel & lifestyle",
           "content": [
             {
               "type": "bullets",
@@ -2707,7 +2819,7 @@
           ]
         }
       ],
-      "enabled": false
+      "enabled": true
     }
 
   ],
