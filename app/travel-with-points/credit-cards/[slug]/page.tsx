@@ -26,10 +26,10 @@ type SectionWrapperProps = {
 
 function SectionWrapper({ title, description, children }: SectionWrapperProps) {
   return (
-    <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
-      <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-slate-900">{title}</h2>
-        {description ? <p className="text-sm text-slate-700">{description}</p> : null}
+    <section className="space-y-7 rounded-3xl border border-slate-200/80 bg-white/95 p-6 shadow-[0_20px_60px_-28px_rgba(15,23,42,0.45)] backdrop-blur-sm sm:p-7 lg:p-9">
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">{title}</h2>
+        {description ? <p className="text-sm leading-6 text-slate-700 sm:text-base">{description}</p> : null}
       </div>
       {children}
     </section>
@@ -129,13 +129,15 @@ function RichContentBlocks({ content }: { content: RichContent }) {
   }
 
   return (
-    <div className="space-y-6 text-sm leading-6 text-slate-700">
+    <div className="space-y-8 text-base leading-7 text-slate-800">
       {content.map((block, index) => {
         if (block.type === "paragraphs" && block.paragraphs.length) {
           return (
-            <div key={`paragraphs-${index}`} className="space-y-3">
+            <div key={`paragraphs-${index}`} className="space-y-4">
               {block.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
+                <p key={paragraph} className="text-slate-700">
+                  {paragraph}
+                </p>
               ))}
             </div>
           );
@@ -145,8 +147,11 @@ function RichContentBlocks({ content }: { content: RichContent }) {
           return (
             <ul key={`bullets-${index}`} className="space-y-3">
               {block.bullets.map((bullet) => (
-                <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
+                <li key={bullet} className="flex items-start gap-3 rounded-2xl bg-slate-50/80 p-3 shadow-inner shadow-slate-100">
+                  <span
+                    className="mt-1 h-2.5 w-2.5 flex-none rounded-full bg-gradient-to-br from-amber-500 to-amber-600 shadow-[0_0_0_4px_rgba(251,191,36,0.18)]"
+                    aria-hidden
+                  />
                   <span>{bullet}</span>
                 </li>
               ))}
@@ -156,10 +161,10 @@ function RichContentBlocks({ content }: { content: RichContent }) {
 
         if (block.type === "table" && hasTableContent(block)) {
           return (
-            <div key={`table-${index}`} className="overflow-x-auto">
+            <div key={`table-${index}`} className="overflow-hidden rounded-2xl border border-slate-200/80 shadow-sm">
               <table className="min-w-full divide-y divide-slate-200">
                 {block.table.caption ? (
-                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-700">
+                  <caption className="caption-top bg-slate-50 px-4 pb-4 pt-3 text-left text-xs uppercase tracking-[0.3em] text-amber-700">
                     {block.table.caption}
                   </caption>
                 ) : null}
@@ -169,14 +174,14 @@ function RichContentBlocks({ content }: { content: RichContent }) {
                       <th
                         key={column}
                         scope="col"
-                        className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-900"
+                        className="bg-slate-50 px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-900"
                       >
                         {column}
                       </th>
                     ))}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-slate-200 bg-white">
                   {block.table.rows.map((row, rowIndex) => (
                     <tr key={`${row.join("-")}-${rowIndex}`} className="align-top">
                       {row.map((cell, cellIndex) => (
@@ -204,9 +209,9 @@ function SubSection({ subsection }: { subsection: CardSubSection }) {
   }
 
   return (
-    <div className="space-y-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-      {subsection.title ? <h3 className="text-base font-semibold text-slate-900">{subsection.title}</h3> : null}
-      {subsection.description ? <p className="text-sm text-slate-700">{subsection.description}</p> : null}
+    <div className="space-y-4 rounded-2xl border border-slate-200/80 bg-slate-50/80 p-5 shadow-inner shadow-slate-100">
+      {subsection.title ? <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{subsection.title}</h3> : null}
+      {subsection.description ? <p className="text-sm text-slate-700 sm:text-base">{subsection.description}</p> : null}
       {subsection.content ? <RichContentBlocks content={subsection.content} /> : null}
     </div>
   );
@@ -243,39 +248,21 @@ type CardSnapshotProps = {
 function CardSnapshot({ card }: CardSnapshotProps) {
   return (
     <SectionWrapper title="Card snapshot">
-      <dl className="grid gap-5 text-sm text-slate-700 sm:grid-cols-2">
-        <div>
-          <dt className="font-semibold text-slate-900">Issuer</dt>
-          <dd>{card.issuer}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Card type</dt>
-          <dd>{card.type}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Annual fee</dt>
-          <dd>{formatAnnualFee(card.annualFee)}</dd>
-        </div>
-        {card.rewardsCurrency ? (
-          <div>
-            <dt className="font-semibold text-slate-900">Rewards currency</dt>
-            <dd>{card.rewardsCurrency}</dd>
-          </div>
-        ) : null}
-        {card.conversion ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Conversion</dt>
-            <dd className="mt-1">{card.conversion}</dd>
-          </div>
-        ) : null}
+      <div className="space-y-6">
         {card.keyHighlights?.length ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Highlights</dt>
-            <dd className="mt-2">
-              <ul className="space-y-2">
+          <div className="rounded-2xl border border-amber-100 bg-amber-50/70 p-5 shadow-[0_12px_30px_-20px_rgba(251,191,36,0.7)]">
+            <div className="mb-4 flex items-center gap-2">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-amber-600 text-white shadow-lg shadow-amber-200">★</span>
+              <dt className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Highlights</dt>
+            </div>
+            <dd>
+              <ul className="space-y-3 text-base text-slate-900">
                 {card.keyHighlights.map((highlight) => (
                   <li key={highlight} className="flex items-start gap-3">
-                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
+                    <span
+                      className="mt-1 h-2.5 w-2.5 flex-none rounded-full bg-gradient-to-br from-amber-500 to-amber-600 shadow-[0_0_0_4px_rgba(251,191,36,0.18)]"
+                      aria-hidden
+                    />
                     <span>{highlight}</span>
                   </li>
                 ))}
@@ -283,27 +270,56 @@ function CardSnapshot({ card }: CardSnapshotProps) {
             </dd>
           </div>
         ) : null}
-      </dl>
+        <dl className="grid gap-5 text-sm text-slate-700 sm:grid-cols-2">
+          <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-4 shadow-inner shadow-slate-100">
+            <dt className="font-semibold text-slate-900">Issuer</dt>
+            <dd className="mt-1 text-base">{card.issuer}</dd>
+          </div>
+          <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-4 shadow-inner shadow-slate-100">
+            <dt className="font-semibold text-slate-900">Card type</dt>
+            <dd className="mt-1 text-base">{card.type}</dd>
+          </div>
+          <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-4 shadow-inner shadow-slate-100">
+            <dt className="font-semibold text-slate-900">Annual fee</dt>
+            <dd className="mt-1 text-base">{formatAnnualFee(card.annualFee)}</dd>
+          </div>
+          {card.rewardsCurrency ? (
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-4 shadow-inner shadow-slate-100">
+              <dt className="font-semibold text-slate-900">Rewards currency</dt>
+              <dd className="mt-1 text-base">{card.rewardsCurrency}</dd>
+            </div>
+          ) : null}
+          {card.conversion ? (
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-4 shadow-inner shadow-slate-100 sm:col-span-2">
+              <dt className="font-semibold text-slate-900">Conversion</dt>
+              <dd className="mt-2 text-base leading-7">{card.conversion}</dd>
+            </div>
+          ) : null}
+        </dl>
+      </div>
     </SectionWrapper>
   );
 }
 
 function CardImageSection({ image }: { image: SectionImage }) {
   return (
-    <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-      <figure className="space-y-3">
-        <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={320}
-            height={200}
-            className="h-auto w-full object-cover"
-            priority
-          />
+    <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-[0_20px_60px_-28px_rgba(15,23,42,0.45)] sm:p-8">
+      <figure className="space-y-4">
+        <div className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 p-4 shadow-[0_30px_70px_-45px_rgba(8,47,73,0.7)] sm:p-6">
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-amber-400/10 via-white/5 to-amber-500/10" aria-hidden />
+          <div className="relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl border border-white/10 shadow-[0_25px_60px_-35px_rgba(251,191,36,0.6)]">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={640}
+              height={360}
+              className="h-full w-full object-cover"
+              priority
+            />
+          </div>
         </div>
         {image.caption ? (
-          <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-500">{image.caption}</figcaption>
+          <figcaption className="text-center text-xs uppercase tracking-[0.25em] text-slate-500">{image.caption}</figcaption>
         ) : null}
       </figure>
     </section>
@@ -351,16 +367,22 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
 
   return (
     <SectionWrapper title="Apply now">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
-        <a
-          href={applyNow.url}
-          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-amber-500 whitespace-nowrap"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {label}
-        </a>
-        {applyNow.disclaimer ? <p className="text-xs text-slate-600 pt-1">{applyNow.disclaimer}</p> : null}
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="space-y-2">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Ready to apply?</p>
+          <p className="text-base text-slate-700 sm:text-lg">Jump to the issuer site to complete your application.</p>
+        </div>
+        <div className="flex flex-col items-start gap-3 sm:items-end">
+          <a
+            href={applyNow.url}
+            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-amber-600 via-amber-500 to-amber-400 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.35em] text-white shadow-[0_18px_38px_-18px_rgba(251,191,36,0.8)] transition duration-200 hover:translate-y-[-1px] hover:shadow-[0_22px_50px_-22px_rgba(251,191,36,0.9)] whitespace-nowrap"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {label}
+          </a>
+          {applyNow.disclaimer ? <p className="max-w-lg text-xs leading-5 text-slate-600">{applyNow.disclaimer}</p> : null}
+        </div>
       </div>
     </SectionWrapper>
   );
@@ -493,7 +515,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
       />
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:py-28">
+      <div className="mx-auto flex w-full max-w-4xl flex-col gap-12 px-4 py-16 sm:gap-14 sm:px-6 sm:py-20 lg:gap-16 lg:py-28">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
