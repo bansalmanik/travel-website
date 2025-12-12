@@ -44,7 +44,7 @@ export default async function CreditCardsPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
-      <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
+      <div className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-8 lg:py-12">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Travel with Points</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">Credit card strategy</h1>
