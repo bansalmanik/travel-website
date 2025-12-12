@@ -241,6 +241,15 @@ type CardSnapshotProps = {
 
 function CardSnapshot({ card }: CardSnapshotProps) {
   const cardImage = card.media?.cardImage;
+  const annualFeeDisplay = card.annualFees?.trim() || formatAnnualFee(card.annualFee);
+  const detailItems = [
+    { label: "Issuer", value: card.issuer },
+    { label: "Card type", value: card.type },
+    { label: "Category", value: card.category ?? card.type },
+    { label: "Joining fee", value: card.joiningFee ?? "—" },
+    { label: "Annual fee", value: annualFeeDisplay },
+    { label: "Rewards currency", value: card.rewardsCurrency ?? "—" }
+  ];
 
   return (
     <SectionWrapper title="Card snapshot">
@@ -266,24 +275,12 @@ function CardSnapshot({ card }: CardSnapshotProps) {
         ) : null}
 
         <dl className="grid flex-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
-          <div>
-            <dt className="font-semibold text-slate-900">Issuer</dt>
-            <dd>{card.issuer}</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-slate-900">Card type</dt>
-            <dd>{card.type}</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-slate-900">Annual fee</dt>
-            <dd>{formatAnnualFee(card.annualFee)}</dd>
-          </div>
-          {card.rewardsCurrency ? (
-            <div>
-              <dt className="font-semibold text-slate-900">Rewards currency</dt>
-              <dd>{card.rewardsCurrency}</dd>
+          {detailItems.map((item) => (
+            <div key={item.label} className="rounded-xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+              <dt className="font-semibold text-slate-900">{item.label}</dt>
+              <dd className="mt-1 text-slate-800">{item.value}</dd>
             </div>
-          ) : null}
+          ))}
           {card.conversion ? (
             <div className="sm:col-span-2">
               <dt className="font-semibold text-slate-900">Conversion</dt>

@@ -95,9 +95,17 @@ export async function getCreditCardContent(): Promise<{
     const cardsWithImages = await Promise.all(
         cards.map(async (card) => {
             const cardImage = await resolveOptionalImage(card.media?.cardImage);
+            const cardWithExtras = card as Card & {
+                AnnualFees?: string;
+                JoiningFee?: string;
+                Category?: string;
+            };
 
             return {
                 ...card,
+                category: card.category ?? cardWithExtras.Category ?? card.type,
+                annualFees: card.annualFees ?? cardWithExtras.AnnualFees,
+                joiningFee: card.joiningFee ?? cardWithExtras.JoiningFee,
                 media: card.media
                     ? { ...card.media, cardImage }
                     : cardImage
