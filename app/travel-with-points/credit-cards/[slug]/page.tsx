@@ -509,7 +509,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
       />
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:py-28">
+      <div className="mx-auto flex w-full max-w-3xl flex-col gap-6 px-4 py-12 sm:gap-8 sm:px-6 sm:py-12">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
@@ -529,7 +529,6 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         </nav>
 
         <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-blue-700">Credit card guide</p>
           <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{card.name}</h1>
           <p className="text-base text-slate-700 sm:text-lg">{card.summary}</p>
         </header>
