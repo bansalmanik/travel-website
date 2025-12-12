@@ -247,7 +247,7 @@ function CardSnapshot({ card }: CardSnapshotProps) {
     card.annualFees ?? card.AnnualFees ?? formatAnnualFee(card.annualFee);
 
   return (
-    <SectionWrapper title="Card snapshot">
+    <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
         {cardImage ? (
           <figure className="mx-auto w-full max-w-[240px] flex-shrink-0 sm:mx-0">
@@ -304,7 +304,7 @@ function CardSnapshot({ card }: CardSnapshotProps) {
           ) : null}
         </dl>
       </div>
-    </SectionWrapper>
+    </section>
   );
 }
 
