@@ -64,11 +64,27 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate", "Return Rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Return Rate"
+                ],
                 "rows": [
-                  [ "UPI payments", "5% Scapia Coins", "1%" ],
-                  [ "Online & offline spends", "10% Scapia Coins", "2%" ],
-                  [ "Scapia app bookings", "20 % Scapia Coins", "4%" ]
+                  [
+                    "UPI payments",
+                    "5% Scapia Coins",
+                    "1%"
+                  ],
+                  [
+                    "Online & offline spends",
+                    "10% Scapia Coins",
+                    "2%"
+                  ],
+                  [
+                    "Scapia app bookings",
+                    "20 % Scapia Coins",
+                    "4%"
+                  ]
                 ]
               }
             },
@@ -201,8 +217,10 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
     {
       "slug": "axis-bank-atlas-credit-card",
@@ -467,7 +485,6 @@
           "id": "lounge-access",
           "title": "Lounge access",
           "content": [
-
             {
               "type": "table",
               "table": {
@@ -551,7 +568,10 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -848,8 +868,10 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -1095,8 +1117,10 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -1335,8 +1359,10 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
     {
       "slug": "indusind-qatar-avios-credit-card",
@@ -1402,14 +1428,35 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Selected preferred international destination (POS)", "6 Avios / ₹200" ],
-                  [ "Qatar Airways & British Airways websites/apps", "5 Avios / ₹200" ],
-                  [ "Domestic & international spends (most categories)", "3 Avios / ₹200" ],
-                  [ "Online spends at preferred destination", "3 Avios / ₹200" ],
-                  [ "Utilities, government, education, insurance", "1 Avios / ₹200" ],
-                  [ "Other spends", "3 Avios / ₹200" ]
+                  [
+                    "Selected preferred international destination (POS)",
+                    "6 Avios / ₹200"
+                  ],
+                  [
+                    "Qatar Airways & British Airways websites/apps",
+                    "5 Avios / ₹200"
+                  ],
+                  [
+                    "Domestic & international spends (most categories)",
+                    "3 Avios / ₹200"
+                  ],
+                  [
+                    "Online spends at preferred destination",
+                    "3 Avios / ₹200"
+                  ],
+                  [
+                    "Utilities, government, education, insurance",
+                    "1 Avios / ₹200"
+                  ],
+                  [
+                    "Other spends",
+                    "3 Avios / ₹200"
+                  ]
                 ]
               }
             },
@@ -1463,9 +1510,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "icici-times-black-credit-card",
       "name": "ICICI Bank Times Black Credit Card",
@@ -1521,13 +1570,37 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate", "Cap"],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Cap"
+                ],
                 "rows": [
-                  [ "General spends", "2% Reward Points", "-" ],
-                  [ "Flight Bookings via iShop", "12% Reward Points", "15,000 Reward Points" ],
-                  [ "Gift Vouchers via iShop", "12% Reward Points", "15,000 Reward Points" ],
-                  [ "Hotel Bookings via iShop", "24% Reward Points", "15,000 Reward Points" ],
-                  [ "Forex spends", "2.5% Reward Points", "-" ]
+                  [
+                    "General spends",
+                    "2% Reward Points",
+                    "-"
+                  ],
+                  [
+                    "Flight Bookings via iShop",
+                    "12% Reward Points",
+                    "15,000 Reward Points"
+                  ],
+                  [
+                    "Gift Vouchers via iShop",
+                    "12% Reward Points",
+                    "15,000 Reward Points"
+                  ],
+                  [
+                    "Hotel Bookings via iShop",
+                    "24% Reward Points",
+                    "15,000 Reward Points"
+                  ],
+                  [
+                    "Forex spends",
+                    "2.5% Reward Points",
+                    "-"
+                  ]
                 ]
               }
             },
@@ -1629,9 +1702,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "icici-emeralde-private-metal-credit-card",
       "name": "ICICI Bank Emeralde Private Metal Credit Card",
@@ -1685,12 +1760,32 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate", "Cap" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Cap"
+                ],
                 "rows": [
-                  [ "General spends", "6 RP / ₹200", "None" ],
-                  [ "Flight Bookings via iShop", "36 RP / ₹200", "18,000 Reward Points" ],
-                  [ "Gift Vouchers via iShop", "36 RP / ₹200", "18,000 Reward Points" ],
-                  [ "Hotel Bookings via iShop", "72 RP / ₹200", "18,000 Reward Points" ]
+                  [
+                    "General spends",
+                    "6 RP / ₹200",
+                    "None"
+                  ],
+                  [
+                    "Flight Bookings via iShop",
+                    "36 RP / ₹200",
+                    "18,000 Reward Points"
+                  ],
+                  [
+                    "Gift Vouchers via iShop",
+                    "36 RP / ₹200",
+                    "18,000 Reward Points"
+                  ],
+                  [
+                    "Hotel Bookings via iShop",
+                    "72 RP / ₹200",
+                    "18,000 Reward Points"
+                  ]
                 ]
               }
             },
@@ -1794,9 +1889,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "hdfc-diners-club-black-metal-credit-card",
       "name": "HDFC Bank Diners Club Black Metal Credit Card",
@@ -2019,9 +2116,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "hdfc-biz-black-credit-card",
       "name": "HDFC Bank Biz Black Credit Card",
@@ -2076,11 +2175,23 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Select business spends", "25 RP / ₹150" ],
-                  [ "SmartBuy partners", "up to 25 RP" ],
-                  [ "Other eligible spends", "5 RP / ₹150" ]
+                  [
+                    "Select business spends",
+                    "25 RP / ₹150"
+                  ],
+                  [
+                    "SmartBuy partners",
+                    "up to 25 RP"
+                  ],
+                  [
+                    "Other eligible spends",
+                    "5 RP / ₹150"
+                  ]
                 ]
               }
             },
@@ -2191,9 +2302,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "hdfc-marriott-bonvoy-credit-card",
       "name": "HDFC Bank Marriott Bonvoy Credit Card",
@@ -2260,11 +2373,23 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Stays at Marriott hotels", "8 MB points / ₹150" ],
-                  [ "Travel, dining & entertainment", "4 MB points / ₹150" ],
-                  [ "Other purchases", "2 MB points / ₹150" ]
+                  [
+                    "Stays at Marriott hotels",
+                    "8 MB points / ₹150"
+                  ],
+                  [
+                    "Travel, dining & entertainment",
+                    "4 MB points / ₹150"
+                  ],
+                  [
+                    "Other purchases",
+                    "2 MB points / ₹150"
+                  ]
                 ]
               }
             },
@@ -2324,9 +2449,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "hdfc-infinia-metal-credit-card",
       "name": "HDFC Bank Infinia Metal Credit Card",
@@ -2486,9 +2613,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "axis-magnus-for-burgundy-credit-card",
       "name": "Axis Bank Magnus for Burgundy Credit Card",
@@ -2540,11 +2669,23 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Spends up to ₹1.5 L/month", "12 EDGE Miles / ₹200" ],
-                  [ "Spends above ₹1.5 L/month", "35 EDGE Miles / ₹200" ],
-                  [ "Travel EDGE portal spends up to ₹2 L/month", "60 EDGE Miles / ₹200" ]
+                  [
+                    "Spends up to ₹1.5 L/month",
+                    "12 EDGE Miles / ₹200"
+                  ],
+                  [
+                    "Spends above ₹1.5 L/month",
+                    "35 EDGE Miles / ₹200"
+                  ],
+                  [
+                    "Travel EDGE portal spends up to ₹2 L/month",
+                    "60 EDGE Miles / ₹200"
+                  ]
                 ]
               }
             },
@@ -2587,9 +2728,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "axis-horizon-credit-card",
       "name": "Axis Bank Horizon Credit Card",
@@ -2642,10 +2785,19 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Travel EDGE portal & direct airline bookings", "5 EDGE Miles / ₹100" ],
-                  [ "All other spends", "2 EDGE Miles / ₹100" ]
+                  [
+                    "Travel EDGE portal & direct airline bookings",
+                    "5 EDGE Miles / ₹100"
+                  ],
+                  [
+                    "All other spends",
+                    "2 EDGE Miles / ₹100"
+                  ]
                 ]
               }
             },
@@ -2696,9 +2848,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     },
-
     {
       "slug": "idfc-first-mayura-credit-card",
       "name": "IDFC FIRST Mayura Credit Card",
@@ -2756,13 +2910,31 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Base Reward", "5 RP / ₹150" ],
-                  [ "Monthly spends > ₹20,000", "10 RP / ₹150" ],
-                  [ "Flights(in IDFC App)", "30 RP / ₹150" ],
-                  [ "Hotels(in IDFC App)", "60 RP / ₹150" ],
-                  [ "UPI", "3 RP / ₹150" ]
+                  [
+                    "Base Reward",
+                    "5 RP / ₹150"
+                  ],
+                  [
+                    "Monthly spends > ₹20,000",
+                    "10 RP / ₹150"
+                  ],
+                  [
+                    "Flights(in IDFC App)",
+                    "30 RP / ₹150"
+                  ],
+                  [
+                    "Hotels(in IDFC App)",
+                    "60 RP / ₹150"
+                  ],
+                  [
+                    "UPI",
+                    "3 RP / ₹150"
+                  ]
                 ]
               }
             },
@@ -2819,9 +2991,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "",
+      "AnnualFees": "",
+      "Category": ""
     }
-
   ],
   "cardStrategies": [
     {
@@ -2862,4 +3036,3 @@
     }
   ]
 }
-
