@@ -43,10 +43,10 @@ export default async function CreditCardsPage() {
     await getCreditCardContent();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 text-slate-900">
       <div className="mx-auto flex max-w-4xl flex-col gap-12 px-6 py-8 lg:py-12">
         <header className="space-y-5">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Travel with Points</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-blue-700">Travel with Points</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">Credit card strategy</h1>
           <p className="text-base text-slate-700">
             Focus on cards that earn flexible currencies, pair perks with your lifestyle, and keep an eye on welcome bonus rules.
@@ -60,7 +60,7 @@ export default async function CreditCardsPage() {
               <Link
                 key={card.slug}
                 href={`/travel-with-points/credit-cards/${card.slug}`}
-                className="group flex flex-col rounded-xl border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
+                className="group flex flex-col rounded-xl border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-1 hover:border-blue-300/60 hover:bg-white hover:shadow-md"
               >
                 {/* Card Image */}
                 {card.media?.cardImage && (
@@ -74,12 +74,12 @@ export default async function CreditCardsPage() {
                 )}
 
                 {/* Issuer */}
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-amber-700">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-blue-700">
                   {card.issuer}
                 </p>
 
                 {/* Card Name */}
-                <h3 className="mb-4 text-lg font-semibold leading-tight text-slate-900 group-hover:text-amber-700">
+                <h3 className="mb-4 text-lg font-semibold leading-tight text-slate-900 group-hover:text-blue-700">
                   {card.name}
                 </h3>
 
@@ -131,7 +131,7 @@ export default async function CreditCardsPage() {
             {favoriteCombos.map((combo) => (
               <article key={combo.name} className="space-y-2 rounded-2xl border border-slate-200 bg-slate-50 p-6">
                 <h3 className="text-lg font-semibold text-slate-900">{combo.name}</h3>
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">
                   {combo.cards.join(" + ")}
                 </p>
                 <p className="text-sm leading-6 text-slate-700">{combo.note}</p>
