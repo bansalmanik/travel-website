@@ -241,6 +241,10 @@ type CardSnapshotProps = {
 
 function CardSnapshot({ card }: CardSnapshotProps) {
   const cardImage = card.media?.cardImage;
+  const category = card.category ?? card.Category;
+  const joiningFee = card.joiningFee ?? card.JoiningFee;
+  const annualFeeDisplay =
+    card.annualFees ?? card.AnnualFees ?? formatAnnualFee(card.annualFee);
 
   return (
     <SectionWrapper title="Card snapshot">
@@ -275,8 +279,16 @@ function CardSnapshot({ card }: CardSnapshotProps) {
             <dd>{card.type}</dd>
           </div>
           <div>
+            <dt className="font-semibold text-slate-900">Category</dt>
+            <dd>{category ?? "—"}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-slate-900">Joining fee</dt>
+            <dd>{joiningFee ?? "—"}</dd>
+          </div>
+          <div>
             <dt className="font-semibold text-slate-900">Annual fee</dt>
-            <dd>{formatAnnualFee(card.annualFee)}</dd>
+            <dd>{annualFeeDisplay}</dd>
           </div>
           {card.rewardsCurrency ? (
             <div>
