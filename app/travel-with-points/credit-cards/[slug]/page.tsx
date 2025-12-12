@@ -146,7 +146,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
             <ul key={`bullets-${index}`} className="space-y-3">
               {block.bullets.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600" aria-hidden />
                   <span>{bullet}</span>
                 </li>
               ))}
@@ -159,7 +159,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
             <div key={`table-${index}`} className="overflow-x-auto">
               <table className="min-w-full divide-y divide-slate-200">
                 {block.table.caption ? (
-                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-700">
+                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-blue-700">
                     {block.table.caption}
                   </caption>
                 ) : null}
@@ -275,7 +275,7 @@ function CardSnapshot({ card }: CardSnapshotProps) {
               <ul className="space-y-2">
                 {card.keyHighlights.map((highlight) => (
                   <li key={highlight} className="flex items-start gap-3">
-                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
+                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600" aria-hidden />
                     <span>{highlight}</span>
                   </li>
                 ))}
@@ -354,7 +354,7 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
         <a
           href={applyNow.url}
-          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-amber-500 whitespace-nowrap"
+          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-blue-500 whitespace-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -487,7 +487,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 text-slate-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script
         type="application/ld+json"
@@ -497,23 +497,23 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link href="/travel-with-points" className="hover:text-amber-700">
+              <Link href="/travel-with-points" className="hover:text-blue-700">
                 Travel with Points
               </Link>
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href="/travel-with-points/credit-cards" className="hover:text-amber-700">
+              <Link href="/travel-with-points/credit-cards" className="hover:text-blue-700">
                 Credit cards
               </Link>
             </li>
             <li aria-hidden>/</li>
-            <li className="text-amber-700">{card.name}</li>
+            <li className="text-blue-700">{card.name}</li>
           </ol>
         </nav>
 
         <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Credit card guide</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-blue-700">Credit card guide</p>
           <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{card.name}</h1>
           <p className="text-base text-slate-700 sm:text-lg">{card.summary}</p>
         </header>
@@ -524,7 +524,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
 
         <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-slate-900">Ready for more cards?</p>
-          <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-amber-700">
+          <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-blue-700">
             Back to credit cards hub
             <svg
               aria-hidden
