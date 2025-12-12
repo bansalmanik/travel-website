@@ -26,10 +26,10 @@ type SectionWrapperProps = {
 
 function SectionWrapper({ title, description, children }: SectionWrapperProps) {
   return (
-    <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
-      <div className="space-y-3">
-        <h2 className="text-xl font-semibold text-slate-900">{title}</h2>
-        {description ? <p className="text-sm text-slate-700">{description}</p> : null}
+    <section className="space-y-7 rounded-3xl border border-slate-200/80 bg-white p-6 shadow-[0_18px_55px_rgba(15,23,42,0.08)] ring-1 ring-slate-100 sm:p-8">
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-900">{title}</h2>
+        {description ? <p className="text-sm leading-6 text-slate-700">{description}</p> : null}
       </div>
       {children}
     </section>
@@ -129,11 +129,11 @@ function RichContentBlocks({ content }: { content: RichContent }) {
   }
 
   return (
-    <div className="space-y-6 text-sm leading-6 text-slate-700">
+    <div className="space-y-7 text-sm leading-7 text-slate-700">
       {content.map((block, index) => {
         if (block.type === "paragraphs" && block.paragraphs.length) {
           return (
-            <div key={`paragraphs-${index}`} className="space-y-3">
+            <div key={`paragraphs-${index}`} className="space-y-3 text-base leading-7 text-slate-800">
               {block.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -143,10 +143,13 @@ function RichContentBlocks({ content }: { content: RichContent }) {
 
         if (block.type === "bullets" && block.bullets.length) {
           return (
-            <ul key={`bullets-${index}`} className="space-y-3">
+            <ul key={`bullets-${index}`} className="space-y-3 text-base text-slate-800">
               {block.bullets.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
+                  <span
+                    className="mt-1 inline-flex h-2.5 w-2.5 flex-none items-center justify-center rounded-full bg-amber-600 shadow-[0_0_0_4px_rgba(251,191,36,0.2)]"
+                    aria-hidden
+                  />
                   <span>{bullet}</span>
                 </li>
               ))}
@@ -157,9 +160,9 @@ function RichContentBlocks({ content }: { content: RichContent }) {
         if (block.type === "table" && hasTableContent(block)) {
           return (
             <div key={`table-${index}`} className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-slate-200">
+              <table className="min-w-full divide-y divide-slate-200 rounded-2xl border border-slate-200/80 bg-gradient-to-b from-white to-slate-50 shadow-inner">
                 {block.table.caption ? (
-                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-700">
+                  <caption className="caption-top pb-4 text-left text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">
                     {block.table.caption}
                   </caption>
                 ) : null}
@@ -169,7 +172,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
                       <th
                         key={column}
                         scope="col"
-                        className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.3em] text-slate-900"
+                        className="bg-slate-900/5 px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-[0.35em] text-slate-900"
                       >
                         {column}
                       </th>
@@ -178,9 +181,12 @@ function RichContentBlocks({ content }: { content: RichContent }) {
                 </thead>
                 <tbody className="divide-y divide-slate-200">
                   {block.table.rows.map((row, rowIndex) => (
-                    <tr key={`${row.join("-")}-${rowIndex}`} className="align-top">
+                    <tr
+                      key={`${row.join("-")}-${rowIndex}`}
+                      className={rowIndex % 2 === 0 ? "bg-white" : "bg-slate-50/70"}
+                    >
                       {row.map((cell, cellIndex) => (
-                        <td key={`${cell}-${cellIndex}`} className="px-4 py-3 text-sm text-slate-700">
+                        <td key={`${cell}-${cellIndex}`} className="px-4 py-3 text-sm text-slate-800">
                           {cell || "—"}
                         </td>
                       ))}
@@ -204,9 +210,9 @@ function SubSection({ subsection }: { subsection: CardSubSection }) {
   }
 
   return (
-    <div className="space-y-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+    <div className="space-y-4 rounded-2xl border border-slate-200/80 bg-slate-50/80 p-5 shadow-sm">
       {subsection.title ? <h3 className="text-base font-semibold text-slate-900">{subsection.title}</h3> : null}
-      {subsection.description ? <p className="text-sm text-slate-700">{subsection.description}</p> : null}
+      {subsection.description ? <p className="text-sm leading-6 text-slate-700">{subsection.description}</p> : null}
       {subsection.content ? <RichContentBlocks content={subsection.content} /> : null}
     </div>
   );
@@ -243,67 +249,78 @@ type CardSnapshotProps = {
 function CardSnapshot({ card }: CardSnapshotProps) {
   return (
     <SectionWrapper title="Card snapshot">
-      <dl className="grid gap-5 text-sm text-slate-700 sm:grid-cols-2">
-        <div>
-          <dt className="font-semibold text-slate-900">Issuer</dt>
-          <dd>{card.issuer}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Card type</dt>
-          <dd>{card.type}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Annual fee</dt>
-          <dd>{formatAnnualFee(card.annualFee)}</dd>
-        </div>
-        {card.rewardsCurrency ? (
-          <div>
-            <dt className="font-semibold text-slate-900">Rewards currency</dt>
-            <dd>{card.rewardsCurrency}</dd>
-          </div>
-        ) : null}
-        {card.conversion ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Conversion</dt>
-            <dd className="mt-1">{card.conversion}</dd>
-          </div>
-        ) : null}
+      <div className="space-y-6">
         {card.keyHighlights?.length ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Highlights</dt>
-            <dd className="mt-2">
-              <ul className="space-y-2">
-                {card.keyHighlights.map((highlight) => (
-                  <li key={highlight} className="flex items-start gap-3">
-                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            </dd>
+          <div className="rounded-2xl border border-amber-100 bg-gradient-to-br from-amber-50 via-white to-amber-100/60 p-5 shadow-[0_15px_35px_rgba(251,191,36,0.25)]">
+            <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-amber-800">
+              <span className="h-2 w-2 rounded-full bg-amber-600" aria-hidden /> Highlights
+            </div>
+            <ul className="space-y-3 text-base text-slate-900 sm:grid sm:grid-cols-2 sm:gap-4 sm:space-y-0">
+              {card.keyHighlights.map((highlight) => (
+                <li key={highlight} className="flex items-start gap-3 rounded-xl bg-white/70 p-3 shadow-sm ring-1 ring-amber-100">
+                  <span
+                    className="mt-1 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full bg-amber-600 text-[11px] font-bold uppercase tracking-tight text-white shadow-lg"
+                    aria-hidden
+                  >
+                    ★
+                  </span>
+                  <span className="leading-6">{highlight}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         ) : null}
-      </dl>
+
+        <dl className="grid gap-5 text-sm leading-6 text-slate-700 sm:grid-cols-2">
+          <div className="space-y-1 rounded-xl border border-slate-200/80 bg-slate-50/60 p-4">
+            <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">Issuer</dt>
+            <dd className="text-base font-semibold text-slate-900">{card.issuer}</dd>
+          </div>
+          <div className="space-y-1 rounded-xl border border-slate-200/80 bg-slate-50/60 p-4">
+            <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">Card type</dt>
+            <dd className="text-base font-semibold text-slate-900">{card.type}</dd>
+          </div>
+          <div className="space-y-1 rounded-xl border border-slate-200/80 bg-slate-50/60 p-4">
+            <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">Annual fee</dt>
+            <dd className="text-base font-semibold text-slate-900">{formatAnnualFee(card.annualFee)}</dd>
+          </div>
+          {card.rewardsCurrency ? (
+            <div className="space-y-1 rounded-xl border border-slate-200/80 bg-slate-50/60 p-4">
+              <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">Rewards currency</dt>
+              <dd className="text-base font-semibold text-slate-900">{card.rewardsCurrency}</dd>
+            </div>
+          ) : null}
+          {card.conversion ? (
+            <div className="space-y-1 rounded-xl border border-slate-200/80 bg-slate-50/60 p-4 sm:col-span-2">
+              <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">Conversion</dt>
+              <dd className="text-base font-semibold text-slate-900">{card.conversion}</dd>
+            </div>
+          ) : null}
+        </dl>
+      </div>
     </SectionWrapper>
   );
 }
 
 function CardImageSection({ image }: { image: SectionImage }) {
   return (
-    <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-      <figure className="space-y-3">
-        <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={320}
-            height={200}
-            className="h-auto w-full object-cover"
-            priority
-          />
+    <section className="rounded-3xl border border-slate-200/80 bg-gradient-to-br from-white via-slate-50 to-amber-50 p-6 shadow-[0_22px_60px_rgba(15,23,42,0.12)] ring-1 ring-slate-100 sm:p-8">
+      <figure className="space-y-4">
+        <div className="relative mx-auto max-w-2xl overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 shadow-[0_30px_70px_rgba(15,23,42,0.35)] sm:p-6">
+          <div className="absolute inset-x-10 top-6 h-1/2 rounded-full bg-gradient-to-r from-amber-500/20 via-white/10 to-amber-600/20 blur-3xl" aria-hidden />
+          <div className="relative overflow-hidden rounded-2xl bg-white/5 shadow-[0_15px_40px_rgba(0,0,0,0.25)] ring-1 ring-white/30">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={640}
+              height={380}
+              className="h-full w-full object-contain"
+              priority
+            />
+          </div>
         </div>
         {image.caption ? (
-          <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-500">{image.caption}</figcaption>
+          <figcaption className="text-center text-xs uppercase tracking-[0.28em] text-slate-600">{image.caption}</figcaption>
         ) : null}
       </figure>
     </section>
@@ -324,7 +341,7 @@ function CardDetailSections({ card }: { card: Card }) {
   }
 
   return (
-    <div className="flex flex-col gap-6 sm:gap-8">
+    <div className="flex flex-col gap-7 sm:gap-9">
       <CardSnapshot card={card} />
       {card.detailSections.map((section, index) => {
         if (isApplyNowBlock(section)) {
@@ -351,16 +368,19 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
 
   return (
     <SectionWrapper title="Apply now">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+        <div className="space-y-2 text-sm text-slate-700">
+          <p className="text-base font-semibold text-slate-900">Secure your welcome offer</p>
+          {applyNow.disclaimer ? <p className="text-xs leading-5 text-slate-600">{applyNow.disclaimer}</p> : null}
+        </div>
         <a
           href={applyNow.url}
-          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-amber-500 whitespace-nowrap"
+          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 px-7 py-4 text-sm font-semibold uppercase tracking-[0.32em] text-white shadow-[0_16px_35px_rgba(251,191,36,0.45)] transition hover:translate-y-[-1px] hover:shadow-[0_18px_40px_rgba(251,191,36,0.55)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 whitespace-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
           {label}
         </a>
-        {applyNow.disclaimer ? <p className="text-xs text-slate-600 pt-1">{applyNow.disclaimer}</p> : null}
       </div>
     </SectionWrapper>
   );
@@ -493,7 +513,7 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
       />
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:py-28">
+      <div className="mx-auto flex w-full max-w-4xl flex-col gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:py-28">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
