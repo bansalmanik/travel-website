@@ -218,9 +218,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹0",
+      "AnnualFees": "₹0",
+      "Category": "Travel Rewards Card"
     },
     {
       "slug": "axis-bank-atlas-credit-card",
@@ -569,9 +569,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹5,000 + GST",
+      "AnnualFees": "₹5,000 + GST",
+      "Category": "Travel Rewards Credit Card"
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
@@ -869,9 +869,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹2,500 + GST",
+      "AnnualFees": "₹2,500 + GST",
+      "Category": "Premium Travel & Lifestyle Rewards Card"
     },
     {
       "slug": "hsbc-travelone-credit-card",
@@ -1118,9 +1118,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹4,999 + GST",
+      "AnnualFees": "₹4,999 + GST",
+      "Category": "Premium Travel Credit Card"
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
@@ -1360,9 +1360,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹5,000 + GST",
+      "AnnualFees": "₹5,000 + GST",
+      "Category": "Milestone Card"
     },
     {
       "slug": "indusind-qatar-avios-credit-card",
@@ -1511,9 +1511,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹5,000 + GST",
+      "AnnualFees": "₹5,000 + GST",
+      "Category": "Premium Travel Card"
     },
     {
       "slug": "icici-times-black-credit-card",
@@ -1703,9 +1703,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹20,000 + GST",
+      "AnnualFees": "₹20,000 + GST",
+      "Category": "Luxury Travel & Lifestyle Card"
     },
     {
       "slug": "icici-emeralde-private-metal-credit-card",
@@ -1890,9 +1890,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹12,499 + GST",
+      "AnnualFees": "₹12,499 + GST",
+      "Category": "Invite‑Only Super Premium Card"
     },
     {
       "slug": "hdfc-diners-club-black-metal-credit-card",
@@ -2117,9 +2117,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹10,000 + GST",
+      "AnnualFees": "₹10,000 + GST",
+      "Category": "Premium Metal Travel Card"
     },
     {
       "slug": "hdfc-biz-black-credit-card",
@@ -2303,9 +2303,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹10,000 + GST",
+      "AnnualFees": "₹10,000 + GST",
+      "Category": "Premium Business Card"
     },
     {
       "slug": "hdfc-marriott-bonvoy-credit-card",
@@ -2450,9 +2450,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹3,000 + GST",
+      "AnnualFees": "₹3,000 + GST",
+      "Category": "Hotel Co‑Branded Card"
     },
     {
       "slug": "hdfc-infinia-metal-credit-card",
@@ -2614,9 +2614,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹12,500 + GST",
+      "AnnualFees": "₹12,500 + GST",
+      "Category": "Super Premium Card"
     },
     {
       "slug": "axis-magnus-for-burgundy-credit-card",
@@ -2729,9 +2729,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹30,000 + GST",
+      "AnnualFees": "₹30,000 + GST",
+      "Category": "Ultra Premium Card"
     },
     {
       "slug": "axis-horizon-credit-card",
@@ -2849,9 +2849,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹3,000 + GST",
+      "AnnualFees": "₹3,000 + GST",
+      "Category": "Travel Credit Card"
     },
     {
       "slug": "idfc-first-mayura-credit-card",
@@ -2992,9 +2992,9 @@
         }
       ],
       "enabled": true,
-      "JoiningFee": "",
-      "AnnualFees": "",
-      "Category": ""
+      "JoiningFee": "₹5,999 + GST",
+      "AnnualFees": "₹5,999 + GST",
+      "Category": "Premium Metal Card"
     }
   ],
   "cardStrategies": [
