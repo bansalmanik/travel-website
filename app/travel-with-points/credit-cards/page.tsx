@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import type { AnnualFee } from "@/app/travel-with-points/credit-cards/types";
@@ -58,58 +59,69 @@ export default async function CreditCardsPage() {
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
           <h2 className="text-2xl font-semibold text-slate-900">Featured travel credit cards</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {cards.map((card) => (
-              <article
-                key={card.slug}
-                className="group flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
-              >
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
-                    <h3 className="mt-2 text-xl font-semibold text-slate-900">
-                      <Link
-                        href={`/travel-with-points/credit-cards/${card.slug}`}
-                        className="text-slate-900 underline-offset-4 transition hover:text-amber-700 hover:underline"
-                      >
-                        {card.name}
-                      </Link>
-                    </h3>
-                    <p className="mt-1 text-sm text-slate-700">{card.summary}</p>
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+            {cards.map((card) => {
+              const joiningFee = card.joiningFee ?? card.JoiningFee;
+              const category = card.category ?? card.Category ?? card.type;
+
+              return (
+                <article
+                  key={card.slug}
+                  className="group flex flex-col gap-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-amber-300/60 hover:shadow-md"
+                >
+                  <div className="flex items-start gap-4 sm:items-center">
+                    {card.media?.cardImage ? (
+                      <div className="flex h-20 w-28 flex-none items-center justify-center rounded-xl bg-slate-50 p-2 shadow-inner">
+                        <Image
+                          src={card.media.cardImage.src}
+                          alt={card.media.cardImage.alt || card.name}
+                          width={168}
+                          height={120}
+                          className="h-full w-auto object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <div className="flex h-20 w-28 flex-none items-center justify-center rounded-xl bg-slate-100 text-sm font-semibold text-slate-500">
+                        No image
+                      </div>
+                    )}
+                    <div className="space-y-1">
+                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
+                      <h3 className="text-lg font-semibold text-slate-900">
+                        <Link
+                          href={`/travel-with-points/credit-cards/${card.slug}`}
+                          className="text-slate-900 underline-offset-4 transition hover:text-amber-700 hover:underline"
+                        >
+                          {card.name}
+                        </Link>
+                      </h3>
+                      {category ? (
+                        <p className="text-sm text-slate-600">{category}</p>
+                      ) : null}
+                    </div>
                   </div>
-                  <dl className="grid gap-3 text-sm text-slate-700">
-                    <div>
-                      <dt className="font-semibold text-slate-900">Annual fee</dt>
-                      <dd>{formatAnnualFee(card.annualFee)}</dd>
+
+                  <dl className="grid grid-cols-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
+                    <div className="rounded-xl bg-slate-50 p-3">
+                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Joining fee</dt>
+                      <dd className="mt-1 text-base font-semibold text-slate-900">{joiningFee ?? "N/A"}</dd>
+                    </div>
+                    <div className="rounded-xl bg-slate-50 p-3">
+                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Annual fee</dt>
+                      <dd className="mt-1 text-base font-semibold text-slate-900">{formatAnnualFee(card.annualFee)}</dd>
+                    </div>
+                    <div className="rounded-xl bg-slate-50 p-3">
+                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Issuer</dt>
+                      <dd className="mt-1 text-base font-semibold text-slate-900">{card.issuer}</dd>
+                    </div>
+                    <div className="rounded-xl bg-slate-50 p-3">
+                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Rewards currency</dt>
+                      <dd className="mt-1 text-base font-semibold text-slate-900">{card.rewardsCurrency ?? "N/A"}</dd>
                     </div>
                   </dl>
-                  {card.keyHighlights?.length ? (
-                    <p className="text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">Standout highlight:</span> {card.keyHighlights[0]}
-                    </p>
-                  ) : null}
-                </div>
-                <Link
-                  href={`/travel-with-points/credit-cards/${card.slug}`}
-                  className="mt-6 inline-flex items-center text-sm font-semibold text-amber-700"
-                >
-                  View full details
-                  <svg
-                    aria-hidden
-                    className="ml-2 h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
-              </article>
-            ))}
+                </article>
+              );
+            })}
           </div>
         </section>
 
