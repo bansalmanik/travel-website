@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -44,7 +45,7 @@ export default async function CreditCardsPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
-      <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-20 lg:py-28">
+      <div className="mx-auto flex max-w-4xl flex-col gap-16 px-6 py-16 sm:py-20 lg:py-28">
         <header className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Travel with Points</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">Credit card strategy</h1>
@@ -56,57 +57,60 @@ export default async function CreditCardsPage() {
           </p>
         </header>
 
-        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <h2 className="text-2xl font-semibold text-slate-900">Featured travel credit cards</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
             {cards.map((card) => (
               <article
                 key={card.slug}
-                className="group flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
+                className="group rounded-2xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
               >
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
-                    <h3 className="mt-2 text-xl font-semibold text-slate-900">
-                      <Link
-                        href={`/travel-with-points/credit-cards/${card.slug}`}
-                        className="text-slate-900 underline-offset-4 transition hover:text-amber-700 hover:underline"
-                      >
-                        {card.name}
-                      </Link>
-                    </h3>
-                    <p className="mt-1 text-sm text-slate-700">{card.summary}</p>
-                  </div>
-                  <dl className="grid gap-3 text-sm text-slate-700">
-                    <div>
-                      <dt className="font-semibold text-slate-900">Annual fee</dt>
-                      <dd>{formatAnnualFee(card.annualFee)}</dd>
-                    </div>
-                  </dl>
-                  {card.keyHighlights?.length ? (
-                    <p className="text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">Standout highlight:</span> {card.keyHighlights[0]}
-                    </p>
-                  ) : null}
-                </div>
                 <Link
                   href={`/travel-with-points/credit-cards/${card.slug}`}
-                  className="mt-6 inline-flex items-center text-sm font-semibold text-amber-700"
+                  className="flex h-full flex-col gap-4 p-5 sm:flex-row sm:items-center sm:p-6"
                 >
-                  View full details
-                  <svg
-                    aria-hidden
-                    className="ml-2 h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
+                  <div className="flex w-full items-center justify-center rounded-xl bg-white/80 p-4 shadow-inner sm:w-36">
+                    {card.media?.cardImage ? (
+                      <Image
+                        src={card.media.cardImage.src}
+                        alt={card.media.cardImage.alt}
+                        width={240}
+                        height={140}
+                        className="h-24 w-auto max-w-full object-contain sm:h-28"
+                        priority={false}
+                      />
+                    ) : (
+                      <div className="flex h-24 w-full items-center justify-center text-sm text-slate-500 sm:h-28">Image coming soon</div>
+                    )}
+                  </div>
+                  <div className="flex flex-1 flex-col gap-3">
+                    <div className="space-y-1">
+                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
+                      <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">{card.name}</h3>
+                    </div>
+                    <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-slate-700 sm:grid-cols-3">
+                      <div className="space-y-1">
+                        <dt className="font-semibold text-slate-900">Joining fee</dt>
+                        <dd>{card.JoiningFee ?? card.joiningFee ?? "See details"}</dd>
+                      </div>
+                      <div className="space-y-1">
+                        <dt className="font-semibold text-slate-900">Annual fee</dt>
+                        <dd>{formatAnnualFee(card.annualFee)}</dd>
+                      </div>
+                      <div className="space-y-1">
+                        <dt className="font-semibold text-slate-900">Rewards currency</dt>
+                        <dd>{card.rewardsCurrency ?? "See details"}</dd>
+                      </div>
+                      <div className="space-y-1">
+                        <dt className="font-semibold text-slate-900">Category</dt>
+                        <dd>{card.Category ?? card.category ?? card.type}</dd>
+                      </div>
+                      <div className="space-y-1">
+                        <dt className="font-semibold text-slate-900">Issuer</dt>
+                        <dd>{card.issuer}</dd>
+                      </div>
+                    </dl>
+                  </div>
                 </Link>
               </article>
             ))}
