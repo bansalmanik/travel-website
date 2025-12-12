@@ -21,7 +21,7 @@ export default function ShareStoryCTA() {
             <div className="space-y-2 sm:max-w-[70%]">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-600">Editorial submissions</p>
               <h3 className="text-xl font-semibold leading-tight text-slate-900 sm:text-2xl">
-                Email your story to <span className="underline decoration-amber-400 decoration-2 underline-offset-4">akshitaandmanik@gmail.com</span>
+                Email your story to <span className="underline decoration-amber-400 decoration-2 underline-offset-4">info@milesgoround.com</span>
               </h3>
               <p className="text-sm leading-relaxed text-slate-600">
                 We thoughtfully review each submission and typically respond within five business days with next steps.
@@ -29,7 +29,7 @@ export default function ShareStoryCTA() {
             </div>
             <a
               className="inline-flex items-center justify-center rounded-full bg-blue-700 px-5 py-2 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
-              href="mailto:akshitaandmanik@gmail.com"
+              href="mailto:info@milesgoround.com"
             >
               Send Email
             </a>
