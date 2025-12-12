@@ -75,9 +75,15 @@ export type Card = {
   name: string;
   issuer: string;
   type: string;
+  category?: string;
+  Category?: string;
   summary: string;
   seoDescription: string;
   annualFee: AnnualFee;
+  annualFees?: string;
+  AnnualFees?: string;
+  joiningFee?: string;
+  JoiningFee?: string;
   rewardsCurrency?: string;
   conversion?: string;
   websiteDisplayTags?: string[];

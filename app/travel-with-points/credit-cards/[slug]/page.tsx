@@ -14,7 +14,6 @@ import type {
   CardApplyNowBlock,
   RichContent,
   RichContentBlock,
-  SectionImage
 } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
@@ -146,7 +145,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
             <ul key={`bullets-${index}`} className="space-y-3">
               {block.bullets.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600" aria-hidden />
                   <span>{bullet}</span>
                 </li>
               ))}
@@ -159,7 +158,7 @@ function RichContentBlocks({ content }: { content: RichContent }) {
             <div key={`table-${index}`} className="overflow-x-auto">
               <table className="min-w-full divide-y divide-slate-200">
                 {block.table.caption ? (
-                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-amber-700">
+                  <caption className="caption-top pb-3 text-left text-xs uppercase tracking-[0.3em] text-blue-700">
                     {block.table.caption}
                   </caption>
                 ) : null}
@@ -241,72 +240,88 @@ type CardSnapshotProps = {
 };
 
 function CardSnapshot({ card }: CardSnapshotProps) {
+  const cardImage = card.media?.cardImage;
+  const category = card.category ?? card.Category;
+  const joiningFee = card.joiningFee ?? card.JoiningFee;
+  const annualFeeDisplay =
+    card.annualFees ?? card.AnnualFees ?? formatAnnualFee(card.annualFee);
+
   return (
-    <SectionWrapper title="Card snapshot">
-      <dl className="grid gap-5 text-sm text-slate-700 sm:grid-cols-2">
-        <div>
-          <dt className="font-semibold text-slate-900">Issuer</dt>
-          <dd>{card.issuer}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Card type</dt>
-          <dd>{card.type}</dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-slate-900">Annual fee</dt>
-          <dd>{formatAnnualFee(card.annualFee)}</dd>
-        </div>
-        {card.rewardsCurrency ? (
+    <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+        {cardImage ? (
+          <figure className="mx-auto w-full max-w-[240px] flex-shrink-0 sm:mx-0">
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-inner">
+              <Image
+                src={cardImage.src}
+                alt={cardImage.alt}
+                width={280}
+                height={180}
+                className="h-auto w-full object-contain"
+                priority
+              />
+            </div>
+            {cardImage.caption ? (
+              <figcaption className="pt-2 text-center text-xs uppercase tracking-[0.2em] text-slate-500">
+                {cardImage.caption}
+              </figcaption>
+            ) : null}
+          </figure>
+        ) : null}
+
+        <dl className="grid flex-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
           <div>
-            <dt className="font-semibold text-slate-900">Rewards currency</dt>
-            <dd>{card.rewardsCurrency}</dd>
+            <dt className="font-semibold text-slate-900">Issuer</dt>
+            <dd>{card.issuer}</dd>
           </div>
-        ) : null}
-        {card.conversion ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Conversion</dt>
-            <dd className="mt-1">{card.conversion}</dd>
+          <div>
+            <dt className="font-semibold text-slate-900">Card type</dt>
+            <dd>{card.type}</dd>
           </div>
-        ) : null}
-        {card.keyHighlights?.length ? (
-          <div className="sm:col-span-2">
-            <dt className="font-semibold text-slate-900">Highlights</dt>
-            <dd className="mt-2">
-              <ul className="space-y-2">
-                {card.keyHighlights.map((highlight) => (
-                  <li key={highlight} className="flex items-start gap-3">
-                    <span className="mt-1 h-2 w-2 flex-none rounded-full bg-amber-600" aria-hidden />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            </dd>
+          <div>
+            <dt className="font-semibold text-slate-900">Category</dt>
+            <dd>{category ?? "—"}</dd>
           </div>
-        ) : null}
-      </dl>
-    </SectionWrapper>
+          <div>
+            <dt className="font-semibold text-slate-900">Joining fee</dt>
+            <dd>{joiningFee ?? "—"}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-slate-900">Annual fee</dt>
+            <dd>{annualFeeDisplay}</dd>
+          </div>
+          {card.rewardsCurrency ? (
+            <div>
+              <dt className="font-semibold text-slate-900">Rewards currency</dt>
+              <dd>{card.rewardsCurrency}</dd>
+            </div>
+          ) : null}
+          {card.conversion ? (
+            <div className="sm:col-span-2">
+              <dt className="font-semibold text-slate-900">Conversion</dt>
+              <dd className="mt-1">{card.conversion}</dd>
+            </div>
+          ) : null}
+        </dl>
+      </div>
+    </section>
   );
 }
 
-function CardImageSection({ image }: { image: SectionImage }) {
+function CardHighlights({ highlights }: { highlights: string[] }) {
+  if (!highlights.length) return null;
+
   return (
-    <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-      <figure className="space-y-3">
-        <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={320}
-            height={200}
-            className="h-auto w-full object-cover"
-            priority
-          />
-        </div>
-        {image.caption ? (
-          <figcaption className="text-xs uppercase tracking-[0.2em] text-slate-500">{image.caption}</figcaption>
-        ) : null}
-      </figure>
-    </section>
+    <SectionWrapper title="Highlights">
+      <ul className="space-y-3 text-sm text-slate-700">
+        {highlights.map((highlight) => (
+          <li key={highlight} className="flex items-start gap-3">
+            <span className="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600" aria-hidden />
+            <span>{highlight}</span>
+          </li>
+        ))}
+      </ul>
+    </SectionWrapper>
   );
 }
 
@@ -326,6 +341,7 @@ function CardDetailSections({ card }: { card: Card }) {
   return (
     <div className="flex flex-col gap-6 sm:gap-8">
       <CardSnapshot card={card} />
+      {card.keyHighlights?.length ? <CardHighlights highlights={card.keyHighlights} /> : null}
       {card.detailSections.map((section, index) => {
         if (isApplyNowBlock(section)) {
           return (
@@ -354,7 +370,7 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
         <a
           href={applyNow.url}
-          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-amber-500 whitespace-nowrap"
+          className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-blue-500 whitespace-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -487,44 +503,41 @@ export default async function CreditCardDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 text-slate-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
       />
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:py-28">
+      <div className="mx-auto flex w-full max-w-3xl flex-col gap-6 px-4 py-12 sm:gap-8 sm:px-6 sm:py-12">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link href="/travel-with-points" className="hover:text-amber-700">
+              <Link href="/travel-with-points" className="hover:text-blue-700">
                 Travel with Points
               </Link>
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href="/travel-with-points/credit-cards" className="hover:text-amber-700">
+              <Link href="/travel-with-points/credit-cards" className="hover:text-blue-700">
                 Credit cards
               </Link>
             </li>
             <li aria-hidden>/</li>
-            <li className="text-amber-700">{card.name}</li>
+            <li className="text-blue-700">{card.name}</li>
           </ol>
         </nav>
 
         <header className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-700">Credit card guide</p>
           <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{card.name}</h1>
           <p className="text-base text-slate-700 sm:text-lg">{card.summary}</p>
         </header>
-
-        {card.media?.cardImage ? <CardImageSection image={card.media.cardImage} /> : null}
 
         <CardDetailSections card={card} />
 
         <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-slate-900">Ready for more cards?</p>
-          <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-amber-700">
+          <Link href="/travel-with-points/credit-cards" className="inline-flex items-center font-semibold text-blue-700">
             Back to credit cards hub
             <svg
               aria-hidden

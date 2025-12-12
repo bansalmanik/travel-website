@@ -5,8 +5,8 @@
       "name": "Scapia Credit Card",
       "issuer": "Federal Bank",
       "network": "Visa",
-      "type": "Travel Rewards Card",
-      "summary": "A zero-forex, UPI-friendly travel card that earns Scapia Coins on every spend and converts them into flight and hotel discounts.",
+      "type": "Rewards Card",
+      "summary": "Scapia is a zero-forex travel credit card that lets you earn Scapia Coins on all spends, including UPI and international transactions. The coins can be redeemed for flight and hotel bookings.",
       "seoDescription": "Make travel more rewarding with the Scapia Credit Card by Federal Bank. Earn Scapia Coins on UPI, flights, hotels, and daily spends while enjoying zero-forex markup and milestone vouchers.",
       "annualFee": {
         "amount": 0,
@@ -64,11 +64,27 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate", "Return Rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Return Rate"
+                ],
                 "rows": [
-                  [ "UPI payments", "5% Scapia Coins", "1%" ],
-                  [ "Online & offline spends", "10% Scapia Coins", "2%" ],
-                  [ "Scapia app bookings", "20 % Scapia Coins", "4%" ]
+                  [
+                    "UPI payments",
+                    "5% Scapia Coins",
+                    "1%"
+                  ],
+                  [
+                    "Online & offline spends",
+                    "10% Scapia Coins",
+                    "2%"
+                  ],
+                  [
+                    "Scapia app bookings",
+                    "20 % Scapia Coins",
+                    "4%"
+                  ]
                 ]
               }
             },
@@ -201,16 +217,18 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "₹0",
+      "AnnualFees": "₹0",
+      "Category": "Travel"
     },
     {
       "slug": "axis-bank-atlas-credit-card",
       "name": "Axis Bank Atlas Credit Card",
       "issuer": "Axis Bank",
       "network": "Visa",
-      "type": "Travel Rewards Credit Card",
-      "summary": "Premium EDGE Miles card with tiered rewards, lounge visits, and milestone bonuses tailored for frequent travellers.",
+      "type": "Rewards Card",
+      "summary": "Axis Atlas is a premium travel-focused credit card that rewards you with Edge Miles on everyday spends and accelerated earnings on travel bookings. These miles can be transferred to leading airline and hotel loyalty programs, making it ideal for frequent travelers who want flexibility and premium travel benefits.",
       "seoDescription": "Explore the Axis Bank Atlas Credit Card welcome benefits, EDGE Miles earning structure, lounge access, and tier upgrades to plan your travel strategy.",
       "annualFee": {
         "amount": 5000,
@@ -218,7 +236,6 @@
         "gstApplicable": true
       },
       "rewardsCurrency": "EDGE Miles",
-      "conversion": "1 EDGE Mile = 2 partner miles (2:1 for Marriott Bonvoy)",
       "websiteDisplayTags": [
         "Premium Travel Card",
         "Airport Lounge Access",
@@ -226,6 +243,7 @@
         "High Rewards on Travel"
       ],
       "keyHighlights": [
+        "1 EDGE Mile = 2 partner miles (2:1 for Marriott Bonvoy)",
         "4% value back on everyday spending (≈8% via Accor)",
         "10% value back when booking direct with hotels & airlines or Axis Travel EDGE (≈20% via Accor)",
         "Strong milestone perks for high spenders"
@@ -467,7 +485,6 @@
           "id": "lounge-access",
           "title": "Lounge access",
           "content": [
-
             {
               "type": "table",
               "table": {
@@ -551,15 +568,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹5,000 + GST",
+      "AnnualFees": "₹5,000 + GST",
+      "Category": "Travel"
     },
     {
       "slug": "hdfc-bank-regalia-gold-credit-card",
       "name": "HDFC Bank Regalia Gold Credit Card",
       "issuer": "HDFC Bank",
       "network": "Visa/Mastercard",
-      "type": "Premium Travel & Lifestyle Rewards Card",
-      "summary": "Premium lifestyle card bundling Swiggy One, MMT Black Gold, quarterly vouchers, and lounge visits for frequent travellers.",
+      "type": "Rewards Card",
+      "summary": "HDFC Regalia Gold is a premium all-round rewards card offering accelerated points on travel and online spends via vouchers. Reward points can be redeemed for flights and hotles, making it a strong option for frequent domestic and international travelers.",
       "seoDescription": "Review the HDFC Bank Regalia Gold Credit Card welcome memberships, 5X partner rewards, milestone flight vouchers, and lounge access before you apply.",
       "annualFee": {
         "amount": 2500,
@@ -567,13 +587,13 @@
         "gstApplicable": true
       },
       "rewardsCurrency": "Reward Points",
-      "conversion": "1 RP = up to 0.5 air mile via airline partners",
       "websiteDisplayTags": [
         "Airport Lounge Access",
         "5X Shopping Rewards",
         "Swiggy One & MMT Benefits"
       ],
       "keyHighlights": [
+        "1 RP = up to 0.5 air mile via airline partners",
         "Unlock Swiggy One and MMT Black Gold after ₹1 lakh spend in 90 days.",
         "Earn 5X rewards on Myntra, flight bookings, and gift vouchers through SmartBuy.",
         "Earn 10X rewards on PharmEasy, hotel bookings, and IGP through SmartBuy."
@@ -848,16 +868,18 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "₹2,500 + GST",
+      "AnnualFees": "₹2,500 + GST",
+      "Category": "Travel & Lifestyle"
     },
     {
       "slug": "hsbc-travelone-credit-card",
       "name": "HSBC TravelOne Credit Card",
       "issuer": "HSBC Bank",
       "network": "Mastercard World",
-      "type": "Premium Travel Credit Card",
-      "summary": "Premium travel card with instant airline transfers, rich lounge access, and milestone bonuses for heavy travellers.",
+      "type": "Rewards Card",
+      "summary": "HSBC TravelOne is a travel-focused credit card that earns reward points transferable to multiple airline and hotel loyalty programs. It also offers international lounge access and travel privileges, making it suitable for frequent international travelers.",
       "seoDescription": "Review the HSBC TravelOne Credit Card welcome bonuses, 1:1 airline and hotel transfers, lounge visits, and milestone rewards before you apply.",
       "annualFee": {
         "amount": 4999,
@@ -865,7 +887,6 @@
         "gstApplicable": true
       },
       "rewardsCurrency": "Reward Points",
-      "conversion": "1 RP = 1 airline mile or hotel point with select partners",
       "websiteDisplayTags": [
         "Premium Travel Card",
         "Instant Miles Transfer",
@@ -873,7 +894,8 @@
       ],
       "keyHighlights": [
         "₹1,000 cashback, ₹3,000 postcard hotel voucher and EazyDiner Prime after ₹10K spend in 30 days.",
-        "Earn up to 4 Reward Points per ₹100 on travel and overseas purchases with a 1:1 partner transfer ratio.",
+        "Earn up to 4 Reward Points per ₹100 on travel and overseas purchases.",
+        "1 RP = 1 airline mile or hotel point with select partners",
         "Access 6 domestic and 4 international lounges plus golf and lifestyle privileges."
       ],
       "media": {
@@ -1095,23 +1117,25 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "₹4,999 + GST",
+      "AnnualFees": "₹4,999 + GST",
+      "Category": "Travel"
     },
     {
       "slug": "american-express-platinum-travel-credit-card",
       "name": "American Express® Platinum Travel Credit Card",
       "issuer": "American Express Banking Corp.",
       "network": "American Express",
-      "type": "Milestone Card",
-      "summary": "Milestone-driven Membership Rewards card that unlocks Taj travel vouchers, domestic lounge visits, and concierge-backed support for frequent flyers.",
+      "type": "Rewards Card",
+      "summary": "Amex Platinum Travel is a rewards-focused travel card that offers milestone-based bonus points and accelerated earnings on travel spends. Points can be redeemed for flights, hotels, or transferred to airline and hotel partners, making it popular among points enthusiasts.",
       "seoDescription": "Maximize Membership Rewards with the American Express Platinum Travel Credit Card. Learn how milestone bonuses, Taj vouchers, and lounge access combine to elevate your travel strategy.",
       "annualFee": {
         "amount": 5000,
         "currency": "INR",
         "gstApplicable": true
       },
-      "rewardsCurrency": "Membership Rewards® points",
+      "rewardsCurrency": "Membership Rewards points",
       "websiteDisplayTags": [
         "Travel Vouchers",
         "Milestone Rewards",
@@ -1335,23 +1359,20 @@
           }
         }
       ],
-      "enabled": true
-
+      "enabled": true,
+      "JoiningFee": "₹5,000 + GST",
+      "AnnualFees": "₹5,000 + GST",
+      "Category": "Milestone"
     },
     {
       "slug": "indusind-qatar-avios-credit-card",
       "name": "IndusInd Qatar Airways Avios Credit Card",
       "issuer": "IndusInd Bank",
       "network": "Visa Infinite",
-      "type": "Premium Travel Card",
-      "summary": "Premium co‑branded travel card that lets cardholders earn Avios with high multipliers on international spends, enjoy milestone bonuses and receive low forex markup along with lounge and meet‑and‑greet privileges.",
+      "type": "Rewards Card",
+      "summary": "This co-branded travel card lets you earn Qatar Airways Avios on everyday spends and accelerated rewards on Qatar Airways bookings. Avios can be redeemed for flights and upgrades across Qatar Airways and oneworld partners, making it ideal for international travelers and Avios collectors.",
       "seoDescription": "Review the IndusInd Qatar Airways Avios Credit Card: 20k Avios welcome bonus, up to 6 Avios per ₹200 on select spends, milestone bonuses at ₹8 lakh and ₹16 lakh, low 1.5 % forex markup and complimentary lounge access.",
       "annualFee": {
-        "amount": 5000,
-        "currency": "INR",
-        "gstApplicable": true
-      },
-      "joiningFee": {
         "amount": 5000,
         "currency": "INR",
         "gstApplicable": true
@@ -1402,14 +1423,35 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Selected preferred international destination (POS)", "6 Avios / ₹200" ],
-                  [ "Qatar Airways & British Airways websites/apps", "5 Avios / ₹200" ],
-                  [ "Domestic & international spends (most categories)", "3 Avios / ₹200" ],
-                  [ "Online spends at preferred destination", "3 Avios / ₹200" ],
-                  [ "Utilities, government, education, insurance", "1 Avios / ₹200" ],
-                  [ "Other spends", "3 Avios / ₹200" ]
+                  [
+                    "Selected preferred international destination (POS)",
+                    "6 Avios / ₹200"
+                  ],
+                  [
+                    "Qatar Airways & British Airways websites/apps",
+                    "5 Avios / ₹200"
+                  ],
+                  [
+                    "Domestic & international spends (most categories)",
+                    "3 Avios / ₹200"
+                  ],
+                  [
+                    "Online spends at preferred destination",
+                    "3 Avios / ₹200"
+                  ],
+                  [
+                    "Utilities, government, education, insurance",
+                    "1 Avios / ₹200"
+                  ],
+                  [
+                    "Other spends",
+                    "3 Avios / ₹200"
+                  ]
                 ]
               }
             },
@@ -1463,16 +1505,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹10,000 + GST",
+      "AnnualFees": "₹5,000 + GST",
+      "Category": "Travel"
     },
-
     {
       "slug": "icici-times-black-credit-card",
       "name": "ICICI Bank Times Black Credit Card",
       "issuer": "ICICI Bank",
       "network": "Visa",
-      "type": "Luxury Travel & Lifestyle Card",
-      "summary": "Super‑premium card with high annual fee that offers generous welcome vouchers, milestone travel packages and unlimited lounge access for frequent travellers.",
+      "type": "Rewards Card",
+      "summary": "ICICI Times Black is a luxury lifestyle card focused on premium dining, entertainment, and curated experiences. It also offers travel privileges, lounge access, and premium concierge services for high-net-worth customers.",
       "seoDescription": "Discover the ICICI Times Black Credit Card: ₹10,000 luxury stay gift voucher, 2 % to 2.5 % value back, milestone travel experiences, annual fee waiver at ₹25 lakh spend and unlimited lounge access.",
       "annualFee": {
         "amount": 20000,
@@ -1521,13 +1565,37 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate", "Cap"],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Cap"
+                ],
                 "rows": [
-                  [ "General spends", "2% Reward Points", "-" ],
-                  [ "Flight Bookings via iShop", "12% Reward Points", "15,000 Reward Points" ],
-                  [ "Gift Vouchers via iShop", "12% Reward Points", "15,000 Reward Points" ],
-                  [ "Hotel Bookings via iShop", "24% Reward Points", "15,000 Reward Points" ],
-                  [ "Forex spends", "2.5% Reward Points", "-" ]
+                  [
+                    "General spends",
+                    "2% Reward Points",
+                    "-"
+                  ],
+                  [
+                    "Flight Bookings via iShop",
+                    "12% Reward Points",
+                    "15,000 Reward Points"
+                  ],
+                  [
+                    "Gift Vouchers via iShop",
+                    "12% Reward Points",
+                    "15,000 Reward Points"
+                  ],
+                  [
+                    "Hotel Bookings via iShop",
+                    "24% Reward Points",
+                    "15,000 Reward Points"
+                  ],
+                  [
+                    "Forex spends",
+                    "2.5% Reward Points",
+                    "-"
+                  ]
                 ]
               }
             },
@@ -1629,16 +1697,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹20,000 + GST",
+      "AnnualFees": "₹20,000 + GST",
+      "Category": "Luxury, Travel & Lifestyle"
     },
-
     {
       "slug": "icici-emeralde-private-metal-credit-card",
       "name": "ICICI Bank Emeralde Private Metal Credit Card",
       "issuer": "ICICI Bank",
       "network": "Visa Infinite",
-      "type": "Invite‑Only Super Premium Card",
-      "summary": "Invite‑only metal card offering ~3 % value back, Taj Epicure membership, unlimited lounge and golf access plus milestone travel vouchers and insurance protections.",
+      "type": "Rewards Card",
+      "summary": "ICICI Emeralde Private Metal is an invite-only ultra-premium card offering accelerated rewards, unlimited lounge access, and exclusive lifestyle privileges. This is the best voucher card in India right now.",
       "seoDescription": "Explore the ICICI Emeralde Private Metal Credit Card: 12,500 point welcome bonus, Taj Epicure membership, 6 RP per ₹200 spend (~3 % return), EaseMyTrip vouchers at ₹4 lakh & ₹8 lakh, unlimited lounge & golf access and fee waiver at ₹10 lakh spend.",
       "annualFee": {
         "amount": 12499,
@@ -1685,12 +1755,32 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate", "Cap" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate",
+                  "Cap"
+                ],
                 "rows": [
-                  [ "General spends", "6 RP / ₹200", "None" ],
-                  [ "Flight Bookings via iShop", "36 RP / ₹200", "18,000 Reward Points" ],
-                  [ "Gift Vouchers via iShop", "36 RP / ₹200", "18,000 Reward Points" ],
-                  [ "Hotel Bookings via iShop", "72 RP / ₹200", "18,000 Reward Points" ]
+                  [
+                    "General spends",
+                    "6 RP / ₹200",
+                    "None"
+                  ],
+                  [
+                    "Flight Bookings via iShop",
+                    "36 RP / ₹200",
+                    "18,000 Reward Points"
+                  ],
+                  [
+                    "Gift Vouchers via iShop",
+                    "36 RP / ₹200",
+                    "18,000 Reward Points"
+                  ],
+                  [
+                    "Hotel Bookings via iShop",
+                    "72 RP / ₹200",
+                    "18,000 Reward Points"
+                  ]
                 ]
               }
             },
@@ -1794,16 +1884,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹12,499 + GST",
+      "AnnualFees": "₹12,499 + GST",
+      "Category": "Travel and lifestyle"
     },
-
     {
       "slug": "hdfc-diners-club-black-metal-credit-card",
       "name": "HDFC Bank Diners Club Black Metal Credit Card",
       "issuer": "HDFC Bank",
       "network": "Diners Club",
-      "type": "Premium Metal Travel Card",
-      "summary": "Top‑tier Diners Club card offering 5 RP per ₹150 on all spends, 10× points on SmartBuy, complimentary premium memberships, unlimited lounge and golf access and a 2 % forex markup.",
+      "type": "Rewards Card",
+      "summary": "HDFC Diners Club Black Metal is a top-tier travel and lifestyle card that earns high reward points on most spends and offers unlimited airport lounge access worldwide. Points can be redeemed for flights, hotels, or transferred to partner programs, making it ideal for high spenders.",
       "seoDescription": "Learn about the HDFC Diners Club Black Credit Card: 5 RP per ₹150, 10× SmartBuy rewards, complimentary subscriptions (Club Marriott, Times Prime, Amazon Prime, etc.), monthly vouchers for ₹80k spend, unlimited lounge access and 2 % forex markup.",
       "annualFee": {
         "amount": 10000,
@@ -1921,7 +2013,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "5X points partner on SmartBuy - Myntra, MakeMyTrip Holiday, Redbus and others",
+                "3X points partner on SmartBuy - Myntra, MakeMyTrip Holiday, Redbus and others",
                 "10X points partner on SmartBuy - PharmEasy, Jockey and more",
                 "A maximum of 10,000 accelerated RPs can be earned in 1 day or 1 month",
                 "Exclusions - fuel, wallet, rent and tax payments."
@@ -2019,16 +2111,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹10,000 + GST",
+      "AnnualFees": "₹10,000 + GST",
+      "Category": "Travel & lifestyle"
     },
-
     {
       "slug": "hdfc-biz-black-credit-card",
       "name": "HDFC Bank Biz Black Credit Card",
       "issuer": "HDFC Bank",
       "network": "Visa",
-      "type": "Premium Business Card",
-      "summary": "Premium business card offering 5 RP per ₹150 on select spends, accelerated rewards via SmartBuy, unlimited lounge access, golf benefits and Club Marriott membership with milestone vouchers.",
+      "type": "Rewards Card",
+      "summary": "HDFC BizBlack is a premium business credit card offering high reward rates on business expenses such as travel, advertising, and utilities. It includes milestone-based benefits, lounge access, and flexible redemption options, making it suitable for entrepreneurs and professionals.",
       "seoDescription": "Discover the HDFC Biz Black Credit Card: 5 RP per ₹150, up to 5× points on SmartBuy, Club Marriott membership and Taj stay voucher, flight/Taj voucher at every ₹5 lakh spend, unlimited lounge access and fee waiver at ₹7.5 lakh spend.",
       "annualFee": {
         "amount": 10000,
@@ -2076,11 +2170,23 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Select business spends", "25 RP / ₹150" ],
-                  [ "SmartBuy partners", "up to 5× RP" ],
-                  [ "Other eligible spends", "5 RP / ₹150" ]
+                  [
+                    "Select business spends",
+                    "25 RP / ₹150"
+                  ],
+                  [
+                    "SmartBuy partners",
+                    "up to 25 RP"
+                  ],
+                  [
+                    "Other eligible spends",
+                    "5 RP / ₹150"
+                  ]
                 ]
               }
             },
@@ -2128,7 +2234,7 @@
                   ],
                   [
                     "SmartBuy flights & hotels",
-                    "1 RP = ₹1 (up to 1,05,000 RP/month)"
+                    "1 RP = ₹1 (up to 1,50,000 RP/month)"
                   ],
                   [
                     "Products & vouchers",
@@ -2191,16 +2297,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹10,000 + GST",
+      "AnnualFees": "₹10,000 + GST",
+      "Category": "Businesss"
     },
-
     {
       "slug": "hdfc-marriott-bonvoy-credit-card",
       "name": "HDFC Bank Marriott Bonvoy Credit Card",
       "issuer": "HDFC Bank",
       "network": "Mastercard World",
-      "type": "Hotel Co‑Branded Card",
-      "summary": "Co‑branded card with Marriott Bonvoy that offers a free night award on first transaction, Silver Elite status, high earning rates at Marriott properties, milestone free nights and travel benefits.",
+      "type": "Rewards Card",
+      "summary": "This co-branded card is designed for Marriott loyalists, allowing you to earn Marriott Bonvoy points on every spend along with bonus points on Marriott stays. It also offers complimentary night awards and elite status benefits.",
       "seoDescription": "Explore the HDFC Marriott Bonvoy Credit Card: free night on activation, Silver Elite status with 10 elite night credits, 8 points per ₹150 at Marriott hotels, milestone free night awards on ₹6L/₹9L/₹15L spends, lounge & golf benefits and annual fee of ₹3,000.",
       "annualFee": {
         "amount": 3000,
@@ -2260,11 +2368,23 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Stays at Marriott hotels", "8 MB points / ₹150" ],
-                  [ "Travel, dining & entertainment", "4 MB points / ₹150" ],
-                  [ "Other purchases", "2 MB points / ₹150" ]
+                  [
+                    "Stays at Marriott hotels",
+                    "8 MB points / ₹150"
+                  ],
+                  [
+                    "Travel, dining & entertainment",
+                    "4 MB points / ₹150"
+                  ],
+                  [
+                    "Other purchases",
+                    "2 MB points / ₹150"
+                  ]
                 ]
               }
             },
@@ -2324,16 +2444,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹3,000 + GST",
+      "AnnualFees": "₹3,000 + GST",
+      "Category": "Travel"
     },
-
     {
       "slug": "hdfc-infinia-metal-credit-card",
       "name": "HDFC Bank Infinia Metal Credit Card",
       "issuer": "HDFC Bank",
       "network": "Visa Infinite",
-      "type": "Super Premium Card",
-      "summary": "HDFC’s flagship metal card that offers high reward points on all spending, 10× points on SmartBuy, unlimited lounge and golf access, hotel and dining privileges and an annual fee waiver at ₹10 lakh spend.",
+      "type": "Rewards Card",
+      "summary": "HDFC Infinia Metal is an invite-only super-premium credit card offering high reward rates on most spends along with unlimited airport lounge access worldwide. Reward points can be redeemed for flights and hotels.",
       "seoDescription": "Review the HDFC Infinia Metal Credit Card: 12,500 bonus points on joining & renewal, 5 RP per ₹150 with 10× SmartBuy multipliers, unlimited lounge & golf access, hotel & dining benefits via Club Marriott and fee waiver at ₹10 lakh spend.",
       "annualFee": {
         "amount": 12500,
@@ -2486,32 +2608,34 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹12,500 + GST",
+      "AnnualFees": "₹12,500 + GST",
+      "Category": "Travel & Lifestyle"
     },
-
     {
       "slug": "axis-magnus-for-burgundy-credit-card",
       "name": "Axis Bank Magnus for Burgundy Credit Card",
       "issuer": "Axis Bank",
       "network": "Visa Infinite",
-      "type": "Ultra Premium Card",
-      "summary": "Exclusive Magnus variant for Axis Burgundy customers offering elevated EDGE Miles, high transfer ratios, unlimited lounge access with guest passes, airport meet‑and‑greet services and dining discounts.",
+      "type": "Rewards Card",
+      "summary": "This is the best credit card in the country or maybe in world right now. 14% return on spend above 1.5 Lac a month is just too good. Don't think and just get this card if you have high spend.",
       "seoDescription": "Review the Axis Magnus for Burgundy Credit Card: earn up to 60 EDGE Miles per ₹200, transfer miles at 5:4 ratio, enjoy unlimited lounge access with guest visits, airport meet‑and‑greet, ₹5,000 welcome voucher and fee waiver at ₹30 lakh spend.",
       "annualFee": {
         "amount": 30000,
         "currency": "INR",
         "gstApplicable": true
       },
-      "rewardsCurrency": "EDGE Miles",
+      "rewardsCurrency": "EDGE Reward points",
       "websiteDisplayTags": [
         "Ultra Premium Card",
-        "High EDGE Miles",
+        "High EDGE Reward points",
         "Unlimited Lounge Access"
       ],
       "keyHighlights": [
-        "12 EDGE Miles per ₹200 up to ₹1.5 lakh monthly spend.",
-        "35 miles per ₹200 beyond ₹1.5 lakh monthly spend.",
-        "60 miles per ₹200 on Travel EDGE portal up to ₹2 lakh monthly."
+        "12 EDGE Reward points per ₹200 up to ₹1.5 lakh monthly spend.",
+        "35 EDGE Reward points per ₹200 beyond ₹1.5 lakh monthly spend.",
+        "60 EDGE Reward points per ₹200 on Travel EDGE portal up to ₹2 lakh monthly."
       ],
       "media": {
         "cardImage": {
@@ -2540,19 +2664,31 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Spends up to ₹1.5 L/month", "12 EDGE Miles / ₹200" ],
-                  [ "Spends above ₹1.5 L/month", "35 EDGE Miles / ₹200" ],
-                  [ "Travel EDGE portal spends up to ₹2 L/month", "60 EDGE Miles / ₹200" ]
+                  [
+                    "Spends up to ₹1.5 L/month",
+                    "12 EDGE Reward points / ₹200"
+                  ],
+                  [
+                    "Spends above ₹1.5 L/month",
+                    "35 EDGE Reward points / ₹200"
+                  ],
+                  [
+                    "Travel EDGE portal spends up to ₹2 L/month",
+                    "60 EDGE Reward points / ₹200"
+                  ]
                 ]
               }
             },
             {
               "type": "bullets",
               "bullets": [
-                "Miles can be transferred to airline and hotel partners at a 5:4 ratio.",
-                "Annual redemption cap of 10 lakh miles: 2 lakh for group A partners and 8 lakh for group B partners."
+                "EDGE Reward points can be transferred to airline and hotel partners at a 5:4 ratio.",
+                "Annual redemption cap of 10 lakh EDGE Reward points: 2 lakh for group A partners and 8 lakh for group B partners."
               ]
             }
           ]
@@ -2587,16 +2723,18 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹30,000 + GST",
+      "AnnualFees": "₹30,000 + GST",
+      "Category": "Travel and Lifestyle"
     },
-
     {
       "slug": "axis-horizon-credit-card",
       "name": "Axis Bank Horizon Credit Card",
       "issuer": "Axis Bank",
       "network": "Visa Signature",
-      "type": "Travel Credit Card",
-      "summary": "Airline‑agnostic travel card offering EDGE Miles on travel and everyday spends, 1:1 redemption with more than 15 travel partners and generous lounge access without an annual fee waiver option.",
+      "type": "Rewards Card",
+      "summary": "Axis Horizon is a travel-oriented credit card offering reward points on everyday spends and enhanced benefits on travel bookings. It includes airport lounge access and travel-related privileges, making it a good mid-range option for frequent flyers.",
       "seoDescription": "Learn about the Axis Bank Horizon Credit Card: earn 5 EDGE Miles per ₹100 on Travel EDGE bookings and airline spends, 2 miles per ₹100 on other spends, redeem miles 1:1 with 15+ airline and hotel partners, enjoy up to 32 lounge visits per year and pay an annual fee of ₹3,000.",
       "annualFee": {
         "amount": 3000,
@@ -2642,10 +2780,19 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Travel EDGE portal & direct airline bookings", "5 EDGE Miles / ₹100" ],
-                  [ "All other spends", "2 EDGE Miles / ₹100" ]
+                  [
+                    "Travel EDGE portal & direct airline bookings",
+                    "5 EDGE Miles / ₹100"
+                  ],
+                  [
+                    "All other spends",
+                    "2 EDGE Miles / ₹100"
+                  ]
                 ]
               }
             },
@@ -2684,28 +2831,30 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "Joining fee of ₹000 is completly offset by joining benefit of 5000 EDGE Miles. Annual fee is somewhat offset by annual benefit of 1,500 EDGE Miles."
+                "Joining fee of ₹3000 is completly offset by joining benefit of 5000 EDGE Miles. Annual fee is somewhat offset by annual benefit of 1,500 EDGE Miles."
               ]
             },
             {
               "type": "paragraphs",
               "paragraphs": [
-                "This is a good mid range card but we feel that HSBC Travel One is a better Travel Card although it comes with higher fees."
+                "This is a good mid range card but we feel that HSBC Travel One is a better Travel Card although it comes with a higher fees."
               ]
             }
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹3,000 + GST",
+      "AnnualFees": "₹3,000 + GST",
+      "Category": "Travel"
     },
-
     {
       "slug": "idfc-first-mayura-credit-card",
       "name": "IDFC FIRST Mayura Credit Card",
       "issuer": "IDFC FIRST Bank",
       "network": "Mastercard World",
-      "type": "Premium Metal Card",
-      "summary": "All‑rounder metal card providing tiered reward multipliers, zero forex markup, generous lounge & golf benefits, milestone bonus points and comprehensive travel insurance.",
+      "type": "Rewards Card",
+      "summary": "IDFC First Mayura is a super-premium credit card offering high reward rates, unlimited domestic and international lounge access, and premium travel benefits. Reward points do not expire, making it a strong long-term card for high spenders.",
       "seoDescription": "Get to know the IDFC FIRST Mayura Credit Card: up to 10× reward points above ₹20,000 monthly spend, ₹4,000 cashback welcome benefit and 5,000 bonus points, zero forex markup, 16 domestic & 16 international lounge visits, golf rounds and milestone points at ₹8L & ₹15L spends.",
       "annualFee": {
         "amount": 5999,
@@ -2756,13 +2905,31 @@
             {
               "type": "table",
               "table": {
-                "columns": [ "Spend type", "Earn rate" ],
+                "columns": [
+                  "Spend type",
+                  "Earn rate"
+                ],
                 "rows": [
-                  [ "Base Reward", "5 RP / ₹150" ],
-                  [ "Monthly spends > ₹20,000", "10 RP / ₹150" ],
-                  [ "Flights(in IDFC App)", "30 RP / ₹150" ],
-                  [ "Hotels(in IDFC App)", "60 RP / ₹150" ],
-                  [ "UPI", "3 RP / ₹150" ]
+                  [
+                    "Base Reward",
+                    "5 RP / ₹150"
+                  ],
+                  [
+                    "Monthly spends > ₹20,000",
+                    "10 RP / ₹150"
+                  ],
+                  [
+                    "Flights(in IDFC App)",
+                    "30 RP / ₹150"
+                  ],
+                  [
+                    "Hotels(in IDFC App)",
+                    "60 RP / ₹150"
+                  ],
+                  [
+                    "UPI",
+                    "3 RP / ₹150"
+                  ]
                 ]
               }
             },
@@ -2780,7 +2947,7 @@
         },
         {
           "id": "milestone-benefits",
-          "title": "Milestone & lifestyle benefits",
+          "title": "Milestone benefits",
           "content": [
             {
               "type": "bullets",
@@ -2819,9 +2986,11 @@
           ]
         }
       ],
-      "enabled": true
+      "enabled": true,
+      "JoiningFee": "₹5,999 + GST",
+      "AnnualFees": "₹5,999 + GST",
+      "Category": "Travel & Lifestyle"
     }
-
   ],
   "cardStrategies": [
     {
@@ -2862,4 +3031,3 @@
     }
   ]
 }
-
