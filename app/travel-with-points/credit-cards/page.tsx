@@ -57,69 +57,65 @@ export default async function CreditCardsPage() {
           </p>
         </header>
 
-        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-8">
           <h2 className="text-2xl font-semibold text-slate-900">Featured travel credit cards</h2>
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+          <div className="grid gap-3 sm:gap-4">
             {cards.map((card) => {
               const joiningFee = card.joiningFee ?? card.JoiningFee;
               const category = card.category ?? card.Category ?? card.type;
 
               return (
-                <article
+                <Link
                   key={card.slug}
-                  className="group flex flex-col gap-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-amber-300/60 hover:shadow-md"
+                  href={`/travel-with-points/credit-cards/${card.slug}`}
+                  className="group block rounded-xl border border-slate-200 bg-white p-3 shadow-sm transition hover:border-amber-300/60 hover:shadow-md sm:p-4"
                 >
-                  <div className="flex items-start gap-4 sm:items-center">
+                  <article className="flex gap-3 sm:gap-4">
                     {card.media?.cardImage ? (
-                      <div className="flex h-20 w-28 flex-none items-center justify-center rounded-xl bg-slate-50 p-2 shadow-inner">
+                      <div className="flex h-12 w-16 flex-none items-center justify-center rounded-lg bg-slate-50 p-1 shadow-inner sm:h-14 sm:w-20">
                         <Image
                           src={card.media.cardImage.src}
                           alt={card.media.cardImage.alt || card.name}
-                          width={168}
-                          height={120}
+                          width={80}
+                          height={56}
                           className="h-full w-auto object-contain"
                         />
                       </div>
                     ) : (
-                      <div className="flex h-20 w-28 flex-none items-center justify-center rounded-xl bg-slate-100 text-sm font-semibold text-slate-500">
+                      <div className="flex h-12 w-16 flex-none items-center justify-center rounded-lg bg-slate-100 text-xs font-semibold text-slate-500 sm:h-14 sm:w-20">
                         No image
                       </div>
                     )}
-                    <div className="space-y-1">
-                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
-                      <h3 className="text-lg font-semibold text-slate-900">
-                        <Link
-                          href={`/travel-with-points/credit-cards/${card.slug}`}
-                          className="text-slate-900 underline-offset-4 transition hover:text-amber-700 hover:underline"
-                        >
+                    <div className="flex min-w-0 flex-1 flex-col gap-2">
+                      <div className="space-y-0.5">
+                        <h3 className="text-sm font-semibold text-slate-900 transition group-hover:text-amber-700 sm:text-base">
                           {card.name}
-                        </Link>
-                      </h3>
-                      {category ? (
-                        <p className="text-sm text-slate-600">{category}</p>
-                      ) : null}
+                        </h3>
+                        <p className="text-xs text-slate-600">{card.issuer}</p>
+                      </div>
+                      <dl className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs sm:text-sm">
+                        <div>
+                          <dt className="text-slate-500">Joining fee</dt>
+                          <dd className="font-semibold text-slate-900">{joiningFee ?? "N/A"}</dd>
+                        </div>
+                        <div>
+                          <dt className="text-slate-500">Annual fee</dt>
+                          <dd className="font-semibold text-slate-900">{formatAnnualFee(card.annualFee)}</dd>
+                        </div>
+                        <div>
+                          <dt className="text-slate-500">Rewards</dt>
+                          <dd className="font-semibold text-slate-900">{card.rewardsCurrency ?? "N/A"}</dd>
+                        </div>
+                        {category ? (
+                          <div>
+                            <dt className="text-slate-500">Category</dt>
+                            <dd className="font-semibold text-slate-900">{category}</dd>
+                          </div>
+                        ) : null}
+                      </dl>
                     </div>
-                  </div>
-
-                  <dl className="grid grid-cols-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
-                    <div className="rounded-xl bg-slate-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Joining fee</dt>
-                      <dd className="mt-1 text-base font-semibold text-slate-900">{joiningFee ?? "N/A"}</dd>
-                    </div>
-                    <div className="rounded-xl bg-slate-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Annual fee</dt>
-                      <dd className="mt-1 text-base font-semibold text-slate-900">{formatAnnualFee(card.annualFee)}</dd>
-                    </div>
-                    <div className="rounded-xl bg-slate-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Issuer</dt>
-                      <dd className="mt-1 text-base font-semibold text-slate-900">{card.issuer}</dd>
-                    </div>
-                    <div className="rounded-xl bg-slate-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Rewards currency</dt>
-                      <dd className="mt-1 text-base font-semibold text-slate-900">{card.rewardsCurrency ?? "N/A"}</dd>
-                    </div>
-                  </dl>
-                </article>
+                  </article>
+                </Link>
               );
             })}
           </div>
