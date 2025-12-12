@@ -1921,7 +1921,7 @@
             {
               "type": "bullets",
               "bullets": [
-                "5X points partner on SmartBuy - Myntra, MakeMyTrip Holiday, Redbus and others",
+                "3X points partner on SmartBuy - Myntra, MakeMyTrip Holiday, Redbus and others",
                 "10X points partner on SmartBuy - PharmEasy, Jockey and more",
                 "A maximum of 10,000 accelerated RPs can be earned in 1 day or 1 month",
                 "Exclusions - fuel, wallet, rent and tax payments."
@@ -2079,7 +2079,7 @@
                 "columns": [ "Spend type", "Earn rate" ],
                 "rows": [
                   [ "Select business spends", "25 RP / ₹150" ],
-                  [ "SmartBuy partners", "up to 5× RP" ],
+                  [ "SmartBuy partners", "up to 25 RP" ],
                   [ "Other eligible spends", "5 RP / ₹150" ]
                 ]
               }
@@ -2128,7 +2128,7 @@
                   ],
                   [
                     "SmartBuy flights & hotels",
-                    "1 RP = ₹1 (up to 1,05,000 RP/month)"
+                    "1 RP = ₹1 (up to 1,50,000 RP/month)"
                   ],
                   [
                     "Products & vouchers",
@@ -2684,13 +2684,13 @@
             {
               "type": "paragraphs",
               "paragraphs": [
-                "Joining fee of ₹000 is completly offset by joining benefit of 5000 EDGE Miles. Annual fee is somewhat offset by annual benefit of 1,500 EDGE Miles."
+                "Joining fee of ₹3000 is completly offset by joining benefit of 5000 EDGE Miles. Annual fee is somewhat offset by annual benefit of 1,500 EDGE Miles."
               ]
             },
             {
               "type": "paragraphs",
               "paragraphs": [
-                "This is a good mid range card but we feel that HSBC Travel One is a better Travel Card although it comes with higher fees."
+                "This is a good mid range card but we feel that HSBC Travel One is a better Travel Card although it comes with a higher fees."
               ]
             }
           ]
@@ -2780,7 +2780,7 @@
         },
         {
           "id": "milestone-benefits",
-          "title": "Milestone & lifestyle benefits",
+          "title": "Milestone benefits",
           "content": [
             {
               "type": "bullets",
