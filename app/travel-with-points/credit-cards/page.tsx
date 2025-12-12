@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import type { AnnualFee } from "@/app/travel-with-points/credit-cards/types";
+import Image from "next/image";
+
+import type { AnnualFee, Card } from "@/app/travel-with-points/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 
 function formatAnnualFee(annualFee: AnnualFee) {
@@ -20,6 +22,20 @@ function formatAnnualFee(annualFee: AnnualFee) {
   }
 
   return fee;
+}
+
+function getJoiningFee(card: Card) {
+  return (
+    card.joiningFee ||
+    card.JoiningFee ||
+    card.annualFees ||
+    card.AnnualFees ||
+    "See card details"
+  );
+}
+
+function getCardCategory(card: Card) {
+  return card.category || card.Category || card.type || "Credit card";
 }
 
 export const metadata: Metadata = {
@@ -56,16 +72,16 @@ export default async function CreditCardsPage() {
           </p>
         </header>
 
-        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <h2 className="text-2xl font-semibold text-slate-900">Featured travel credit cards</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-5 sm:grid-cols-2">
             {cards.map((card) => (
               <article
                 key={card.slug}
-                className="group flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
+                className="group flex flex-col gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
               >
-                <div className="space-y-4">
-                  <div>
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex-1">
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
                     <h3 className="mt-2 text-xl font-semibold text-slate-900">
                       <Link
@@ -75,39 +91,42 @@ export default async function CreditCardsPage() {
                         {card.name}
                       </Link>
                     </h3>
-                    <p className="mt-1 text-sm text-slate-700">{card.summary}</p>
                   </div>
-                  <dl className="grid gap-3 text-sm text-slate-700">
-                    <div>
-                      <dt className="font-semibold text-slate-900">Annual fee</dt>
-                      <dd>{formatAnnualFee(card.annualFee)}</dd>
+                  {card.media?.cardImage?.src ? (
+                    <div className="flex shrink-0 items-center justify-center rounded-xl bg-white/80 p-3 shadow-inner">
+                      <Image
+                        src={card.media.cardImage.src}
+                        alt={card.media.cardImage.alt || card.name}
+                        width={200}
+                        height={125}
+                        className="h-auto w-full max-w-[180px] object-contain"
+                      />
                     </div>
-                  </dl>
-                  {card.keyHighlights?.length ? (
-                    <p className="text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">Standout highlight:</span> {card.keyHighlights[0]}
-                    </p>
                   ) : null}
                 </div>
-                <Link
-                  href={`/travel-with-points/credit-cards/${card.slug}`}
-                  className="mt-6 inline-flex items-center text-sm font-semibold text-amber-700"
-                >
-                  View full details
-                  <svg
-                    aria-hidden
-                    className="ml-2 h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
+
+                <dl className="grid grid-cols-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
+                  <div className="space-y-1 rounded-xl bg-white px-4 py-3 shadow-sm">
+                    <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Joining fee</dt>
+                    <dd className="text-base font-semibold text-slate-900">{getJoiningFee(card)}</dd>
+                  </div>
+                  <div className="space-y-1 rounded-xl bg-white px-4 py-3 shadow-sm">
+                    <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Annual fee</dt>
+                    <dd className="text-base font-semibold text-slate-900">{formatAnnualFee(card.annualFee)}</dd>
+                  </div>
+                  <div className="space-y-1 rounded-xl bg-white px-4 py-3 shadow-sm">
+                    <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Issuer</dt>
+                    <dd className="text-base font-semibold text-slate-900">{card.issuer}</dd>
+                  </div>
+                  <div className="space-y-1 rounded-xl bg-white px-4 py-3 shadow-sm">
+                    <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Rewards currency</dt>
+                    <dd className="text-base font-semibold text-slate-900">{card.rewardsCurrency || "Varies"}</dd>
+                  </div>
+                  <div className="space-y-1 rounded-xl bg-white px-4 py-3 shadow-sm sm:col-span-2">
+                    <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Category</dt>
+                    <dd className="text-base font-semibold text-slate-900">{getCardCategory(card)}</dd>
+                  </div>
+                </dl>
               </article>
             ))}
           </div>
