@@ -242,6 +242,18 @@ type CardSnapshotProps = {
 function CardSnapshot({ card }: CardSnapshotProps) {
   const cardImage = card.media?.cardImage;
 
+  const snapshotItems = [
+    { label: "Issuer", value: card.issuer },
+    { label: "Card type", value: card.type },
+    { label: "Category", value: card.Category },
+    { label: "Joining fee", value: card.JoiningFee },
+    {
+      label: "Annual fee",
+      value: card.AnnualFees ? card.AnnualFees : formatAnnualFee(card.annualFee)
+    },
+    { label: "Rewards currency", value: card.rewardsCurrency }
+  ].filter((item) => Boolean(item.value));
+
   return (
     <SectionWrapper title="Card snapshot">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
@@ -265,25 +277,16 @@ function CardSnapshot({ card }: CardSnapshotProps) {
           </figure>
         ) : null}
 
-        <dl className="grid flex-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
-          <div>
-            <dt className="font-semibold text-slate-900">Issuer</dt>
-            <dd>{card.issuer}</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-slate-900">Card type</dt>
-            <dd>{card.type}</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-slate-900">Annual fee</dt>
-            <dd>{formatAnnualFee(card.annualFee)}</dd>
-          </div>
-          {card.rewardsCurrency ? (
-            <div>
-              <dt className="font-semibold text-slate-900">Rewards currency</dt>
-              <dd>{card.rewardsCurrency}</dd>
+        <dl className="grid flex-1 grid-cols-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
+          {snapshotItems.map((item) => (
+            <div
+              key={item.label}
+              className="rounded-2xl border border-slate-200 bg-slate-50 p-4"
+            >
+              <dt className="font-semibold text-slate-900">{item.label}</dt>
+              <dd className="mt-1 text-base text-slate-800">{item.value}</dd>
             </div>
-          ) : null}
+          ))}
           {card.conversion ? (
             <div className="sm:col-span-2">
               <dt className="font-semibold text-slate-900">Conversion</dt>
