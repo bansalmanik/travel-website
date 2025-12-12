@@ -51,64 +51,64 @@ export default async function CreditCardsPage() {
           <p className="text-base text-slate-700">
             Focus on cards that earn flexible currencies, pair perks with your lifestyle, and keep an eye on welcome bonus rules.
           </p>
-          <p className="text-base text-slate-700">
-            A focused setup earns faster, redeems better, and avoids orphaned points.
-          </p>
         </header>
 
-        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-4 sm:p-8 shadow-sm">
           <h2 className="text-2xl font-semibold text-slate-900">Featured travel credit cards</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2">
             {cards.map((card) => (
-              <article
+              <Link
                 key={card.slug}
-                className="group flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
+                href={`/travel-with-points/credit-cards/${card.slug}`}
+                className="group flex flex-col rounded-xl border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-1 hover:border-amber-300/60 hover:bg-white hover:shadow-md"
               >
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">{card.issuer}</p>
-                    <h3 className="mt-2 text-xl font-semibold text-slate-900">
-                      <Link
-                        href={`/travel-with-points/credit-cards/${card.slug}`}
-                        className="text-slate-900 underline-offset-4 transition hover:text-amber-700 hover:underline"
-                      >
-                        {card.name}
-                      </Link>
-                    </h3>
-                    <p className="mt-1 text-sm text-slate-700">{card.summary}</p>
+                {/* Card Image */}
+                {card.media?.cardImage && (
+                  <div className="mb-4 flex justify-center">
+                    <img
+                      src={card.media.cardImage.src}
+                      alt={card.media.cardImage.alt}
+                      className="h-24 w-auto object-contain"
+                    />
                   </div>
-                  <dl className="grid gap-3 text-sm text-slate-700">
-                    <div>
-                      <dt className="font-semibold text-slate-900">Annual fee</dt>
-                      <dd>{formatAnnualFee(card.annualFee)}</dd>
+                )}
+
+                {/* Issuer */}
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-amber-700">
+                  {card.issuer}
+                </p>
+
+                {/* Card Name */}
+                <h3 className="mb-4 text-lg font-semibold leading-tight text-slate-900 group-hover:text-amber-700">
+                  {card.name}
+                </h3>
+
+                {/* Card Details */}
+                <dl className="space-y-2.5 text-sm text-slate-700">
+                  {card.JoiningFee && (
+                    <div className="flex justify-between">
+                      <dt className="font-medium text-slate-600">Joining Fee</dt>
+                      <dd className="font-semibold text-slate-900">{card.JoiningFee}</dd>
                     </div>
-                  </dl>
-                  {card.keyHighlights?.length ? (
-                    <p className="text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">Standout highlight:</span> {card.keyHighlights[0]}
-                    </p>
-                  ) : null}
-                </div>
-                <Link
-                  href={`/travel-with-points/credit-cards/${card.slug}`}
-                  className="mt-6 inline-flex items-center text-sm font-semibold text-amber-700"
-                >
-                  View full details
-                  <svg
-                    aria-hidden
-                    className="ml-2 h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
-              </article>
+                  )}
+                  <div className="flex justify-between">
+                    <dt className="font-medium text-slate-600">Annual Fee</dt>
+                    <dd className="font-semibold text-slate-900">{formatAnnualFee(card.annualFee)}</dd>
+                  </div>
+                  {card.rewardsCurrency && (
+                    <div className="flex justify-between">
+                      <dt className="font-medium text-slate-600">Rewards</dt>
+                      <dd className="font-semibold text-slate-900">{card.rewardsCurrency}</dd>
+                    </div>
+                  )}
+                  {card.Category && (
+                    <div className="flex justify-between">
+                      <dt className="font-medium text-slate-600">Category</dt>
+                      <dd className="font-semibold text-slate-900">{card.Category}</dd>
+                    </div>
+                  )}
+                </dl>
+              </Link>
             ))}
           </div>
         </section>
