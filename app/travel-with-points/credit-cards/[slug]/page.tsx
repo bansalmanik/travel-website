@@ -241,6 +241,15 @@ type CardSnapshotProps = {
 
 function CardSnapshot({ card }: CardSnapshotProps) {
   const cardImage = card.media?.cardImage;
+  const annualFeeDisplay = card.AnnualFees?.trim() || formatAnnualFee(card.annualFee);
+  const snapshotItems = [
+    { label: "Issuer", value: card.issuer },
+    { label: "Card type", value: card.type },
+    { label: "Category", value: card.Category },
+    { label: "Joining fee", value: card.JoiningFee },
+    { label: "Annual fee", value: annualFeeDisplay },
+    { label: "Rewards currency", value: card.rewardsCurrency }
+  ].filter((item) => Boolean(item.value));
 
   return (
     <SectionWrapper title="Card snapshot">
@@ -265,32 +274,22 @@ function CardSnapshot({ card }: CardSnapshotProps) {
           </figure>
         ) : null}
 
-        <dl className="grid flex-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
-          <div>
-            <dt className="font-semibold text-slate-900">Issuer</dt>
-            <dd>{card.issuer}</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-slate-900">Card type</dt>
-            <dd>{card.type}</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-slate-900">Annual fee</dt>
-            <dd>{formatAnnualFee(card.annualFee)}</dd>
-          </div>
-          {card.rewardsCurrency ? (
-            <div>
-              <dt className="font-semibold text-slate-900">Rewards currency</dt>
-              <dd>{card.rewardsCurrency}</dd>
-            </div>
-          ) : null}
+        <div className="flex-1 space-y-4">
+          <dl className="grid grid-cols-1 gap-4 text-sm text-slate-700 sm:grid-cols-2">
+            {snapshotItems.map((item) => (
+              <div key={item.label} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-inner">
+                <dt className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-900">{item.label}</dt>
+                <dd className="mt-2 text-base font-medium text-slate-900">{item.value}</dd>
+              </div>
+            ))}
+          </dl>
           {card.conversion ? (
-            <div className="sm:col-span-2">
-              <dt className="font-semibold text-slate-900">Conversion</dt>
-              <dd className="mt-1">{card.conversion}</dd>
+            <div className="rounded-2xl border border-slate-200 bg-blue-50/60 p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-800">Conversion</p>
+              <p className="mt-2 text-sm text-slate-800">{card.conversion}</p>
             </div>
           ) : null}
-        </dl>
+        </div>
       </div>
     </SectionWrapper>
   );
