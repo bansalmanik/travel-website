@@ -112,16 +112,16 @@ export default async function Home() {
             </div>
 
             {/* Quick Links - Integrated below CTAs */}
-            <div className="mx-auto max-w-md rounded-2xl border border-white/10 bg-slate-900/40 p-2 backdrop-blur-sm sm:max-w-2xl sm:p-3">
-              <div className="grid grid-cols-4 gap-1 sm:gap-2">
+            <div className="mx-auto max-w-md rounded-2xl border border-white/10 bg-slate-900/40 p-2.5 backdrop-blur-sm sm:max-w-2xl sm:p-3">
+              <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
                 {quickLinks.map((link) => (
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="group flex flex-col items-center gap-1 rounded-xl p-2 text-center transition-all duration-200 hover:bg-white/10 sm:flex-row sm:justify-center sm:gap-2 sm:p-3"
+                    className="group flex min-h-[68px] flex-col items-center justify-center gap-1.5 rounded-xl p-2.5 text-center transition-all duration-200 hover:bg-white/10 sm:min-h-0 sm:flex-row sm:gap-2 sm:p-3"
                   >
-                    <span className="text-lg sm:text-xl">{link.icon}</span>
-                    <span className="text-[10px] font-medium leading-tight text-white/70 transition-colors group-hover:text-white sm:text-xs">
+                    <span className="text-xl sm:text-xl">{link.icon}</span>
+                    <span className="text-[11px] font-medium leading-tight text-white/70 transition-colors group-hover:text-white sm:text-xs">
                       {link.label}
                     </span>
                   </Link>
