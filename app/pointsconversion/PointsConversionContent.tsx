@@ -215,28 +215,29 @@ export default function PointsConversionContent({ conversions }: PointsConversio
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
-      <div className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
-        <header className="space-y-3 text-center sm:text-left">
-          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-amber-50/30">
+      <div className="mx-auto max-w-4xl px-4 py-6 sm:px-6 sm:py-10">
+        {/* Header */}
+        <div className="mb-6 sm:mb-8">
+          <h1 className="text-xl font-bold text-slate-900 sm:text-2xl">
             Points Transfer Calculator
           </h1>
-          <p className="text-sm text-slate-600 sm:text-base">
-            Check transfer partners, ratios, and projected points without leaving the page.
+          <p className="mt-1 text-xs text-slate-500 sm:text-sm">
+            Calculate transfer ratios instantly
           </p>
-        </header>
+        </div>
 
-        <section className="rounded-3xl border border-slate-200 bg-white/90 p-4 shadow-sm backdrop-blur sm:p-6">
-          <div className="grid gap-4 sm:grid-cols-3 sm:items-end">
-            <label className="space-y-2">
-              <span className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
+        {/* Filters Card */}
+        <div className="mb-4 rounded-xl bg-white p-4 shadow-sm sm:mb-6 sm:p-5">
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div>
+              <label className="mb-1.5 block text-[11px] font-medium text-slate-600 sm:text-xs">
                 Program
-              </span>
+              </label>
               <select
                 value={selectedProgramName}
                 onChange={handleProgramChange}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
-                aria-label="Select the card program"
+                className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 transition hover:border-slate-300 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20"
               >
                 {programOptions.map((option) => (
                   <option key={option} value={option}>
@@ -244,17 +245,16 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   </option>
                 ))}
               </select>
-            </label>
+            </div>
 
-            <label className="space-y-2 sm:col-span-2">
-              <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
-                <span>Transfer from</span>
-              </div>
+            <div>
+              <label className="mb-1.5 block text-[11px] font-medium text-slate-600 sm:text-xs">
+                Card
+              </label>
               <select
                 value={normalizedSelectedFrom}
                 onChange={handleFromChange}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
-                aria-label="Select the points program you are transferring from"
+                className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 transition hover:border-slate-300 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20"
                 disabled={fromOptions.length === 0}
               >
                 {fromOptions.length === 0 ? (
@@ -269,19 +269,16 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   ))
                 )}
               </select>
-            </label>
-          </div>
+            </div>
 
-          <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:items-end">
-            <label className="space-y-2">
-              <span className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
-                Transfer to
-              </span>
+            <div>
+              <label className="mb-1.5 block text-[11px] font-medium text-slate-600 sm:text-xs">
+                Partner (optional)
+              </label>
               <select
                 value={normalizedSelectedTo}
                 onChange={handleToChange}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
-                aria-label="Select the partner you are transferring to"
+                className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 transition hover:border-slate-300 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20"
                 disabled={toOptions.length === 0}
               >
                 <option value="">All partners</option>
@@ -291,75 +288,77 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   </option>
                 ))}
               </select>
-            </label>
+            </div>
 
-            <label className="space-y-2 sm:col-span-2">
-              <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.22em] text-slate-700">
-                <span>Transfer points</span>
-              </div>
+            <div>
+              <label className="mb-1.5 block text-[11px] font-medium text-slate-600 sm:text-xs">
+                Points to transfer
+              </label>
               <input
                 type="number"
                 min={0}
                 inputMode="numeric"
                 value={transferPoints}
                 onChange={handleTransferPointsChange}
-                placeholder="Enter points to transfer"
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
-                aria-label="Enter the number of points you want to transfer"
+                placeholder="e.g. 50000"
+                className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 transition hover:border-slate-300 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20"
               />
-            </label>
+            </div>
           </div>
-        </section>
+        </div>
 
-        <section className="rounded-3xl border border-slate-200 bg-white/90 shadow-sm backdrop-blur">
-
-          {filteredPartnerRows.length === 0 ? (
-            <div className="px-4 py-10 text-center sm:px-6">
-              <p className="text-base font-semibold text-slate-900">No partners to show yet</p>
-              <p className="mt-2 text-sm text-slate-600">
-                Pick a program and card to instantly see available transfer partners and ratios.
+        {/* Results */}
+        {filteredPartnerRows.length === 0 ? (
+          <div className="rounded-xl bg-white p-8 text-center shadow-sm sm:p-12">
+            <div className="mx-auto max-w-sm">
+              <p className="text-sm font-medium text-slate-900">No partners available</p>
+              <p className="mt-1 text-xs text-slate-500">
+                Select a program and card to see transfer options
               </p>
             </div>
-          ) : (
-            <div className="divide-y divide-slate-200">
-              <div className="grid grid-cols-2 gap-3 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-600 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6">
-                <span>Partner</span>
-                <span>Transfer ratio</span>
-                <span className="hidden sm:block">Notes</span>
-              </div>
+          </div>
+        ) : (
+          <div className="space-y-2">
+            {filteredPartnerRows.map((partner) => {
+              const projectedPoints = formatProjectedPoints(
+                calculateProjectedPoints(partner.rate)
+              );
 
-              {filteredPartnerRows.map((partner) => {
-                const projectedPoints = formatProjectedPoints(
-                  calculateProjectedPoints(partner.rate)
-                );
-
-                return (
-                  <div
-                    key={`${partner.to}-${partner.rate}`}
-                    className="grid grid-cols-2 gap-3 px-4 py-3 text-sm text-slate-900 sm:grid-cols-[1fr_1.1fr_1fr] sm:px-6"
-                  >
-                    <div className="space-y-1">
-                      <p className="font-semibold text-slate-900">{partner.to}</p>
-                      <p className="text-xs uppercase tracking-[0.22em] text-slate-500 sm:hidden">Notes</p>
-                      <p className="text-xs text-slate-600 sm:hidden">{partner.insight}</p>
+              return (
+                <div
+                  key={`${partner.to}-${partner.rate}`}
+                  className="rounded-lg bg-white p-3 shadow-sm transition hover:shadow-md sm:p-4"
+                >
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex-1">
+                      <h3 className="text-sm font-semibold text-slate-900 sm:text-base">
+                        {partner.to}
+                      </h3>
+                      <p className="mt-0.5 text-xs text-slate-500 sm:hidden">
+                        {partner.insight}
+                      </p>
                     </div>
-                    <div className="flex flex-col gap-1 text-amber-800 sm:flex-row sm:items-center">
-                      <span className="w-fit rounded-lg bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-900">
+
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="inline-flex items-center rounded-md bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-900 ring-1 ring-inset ring-amber-600/20">
                         {partner.rate}
                       </span>
-                      {projectedPoints ? (
-                        <span className="w-fit rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-900">
-                          ≈ {projectedPoints} points
+                      {projectedPoints && (
+                        <span className="inline-flex items-center rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-900 ring-1 ring-inset ring-emerald-600/20">
+                          → {projectedPoints}
                         </span>
-                      ) : null}
+                      )}
                     </div>
-                    <p className="hidden text-sm leading-relaxed text-slate-600 sm:block">{partner.insight}</p>
                   </div>
-                );
-              })}
-            </div>
-          )}
-        </section>
+                  
+                  <p className="mt-2 hidden text-xs leading-relaxed text-slate-500 sm:block">
+                    {partner.insight}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
