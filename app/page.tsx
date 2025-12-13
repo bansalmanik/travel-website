@@ -82,7 +82,7 @@ export default async function Home() {
             </h1>
 
             {/* Subheadline */}
-            <p className="mx-auto mb-5 max-w-2xl text-sm leading-relaxed text-slate-200/90 sm:mb-7 sm:text-lg md:text-xl">
+            <p className="mx-auto mb-5 max-w-2xl text-sm leading-relaxed text-slate-100 sm:mb-7 sm:text-lg md:text-xl">
               Blending soulful journeys with smart use of miles and points, so every trip becomes richer and more rewarding.
             </p>
 
