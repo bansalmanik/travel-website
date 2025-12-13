@@ -220,8 +220,8 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               inputMode="numeric"
               value={transferPoints}
               onChange={handleTransferPointsChange}
-              placeholder="Enter points (e.g. 5000)"
-              className="w-full rounded-lg bg-slate-50 px-3 py-2.5 text-center text-lg font-bold text-indigo-600 placeholder:text-sm placeholder:font-normal placeholder:text-slate-300 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              placeholder="5000"
+              className="w-full rounded-lg bg-slate-50 px-3 py-2.5 text-center text-lg font-bold text-indigo-600 placeholder:text-lg placeholder:font-bold placeholder:text-slate-400 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
           </div>
         </div>
@@ -259,7 +259,12 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 >
                   <div className="flex items-center justify-between gap-3">
                     <div className="min-w-0 flex-1">
-                      <p className="truncate text-sm font-semibold text-slate-800">{partner.to}</p>
+                      <div className="flex items-center gap-2">
+                        <p className="truncate text-sm font-semibold text-slate-800">{partner.to}</p>
+                        <span className="flex-shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[9px] font-medium text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600">
+                          {isExpanded ? "tap to hide" : "tap for details"}
+                        </span>
+                      </div>
                       <p className="mt-0.5 text-[11px] text-slate-400">{partner.rate}</p>
                     </div>
                     
@@ -268,7 +273,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                         <p className="text-sm font-bold text-white">{formattedProjected}</p>
                       </div>
                     ) : (
-                      <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-50 text-slate-300 group-hover:bg-slate-100">
+                      <div className={`flex h-7 w-7 items-center justify-center rounded-lg transition-colors ${isExpanded ? "bg-emerald-100 text-emerald-600" : "bg-slate-50 text-slate-400 group-hover:bg-indigo-100 group-hover:text-indigo-500"}`}>
                         <svg className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
@@ -277,9 +282,11 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   </div>
 
                   {isExpanded && (
-                    <p className="mt-2 border-t border-slate-100 pt-2 text-[11px] leading-relaxed text-slate-500">
-                      {partner.insight}
-                    </p>
+                    <div className="mt-2 rounded-lg bg-slate-50 p-2.5">
+                      <p className="text-[11px] leading-relaxed text-slate-600">
+                        💡 {partner.insight}
+                      </p>
+                    </div>
                   )}
                 </div>
               );
