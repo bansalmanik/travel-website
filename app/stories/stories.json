@@ -503,5 +503,210 @@
       "Sample mission-style burritos and third-wave coffee on Valencia Street",
       "Time Lands End hike with sunset for golden light over the bridge"
     ]
+  },
+  {
+    "slug": "Grand-Macau",
+    "title": "Grand Macau",
+    "excerpt": "We only had one night in Macau—but it felt like we squeezed in three countries, a history lesson, and a casino movie set into those 24 hours..",
+    "author": "Akshita",
+    "instagramHandle": "milesgoround",
+    "readTime": "6 min read",
+    "category": "Macau",
+    "city": "Macau",
+    "country": "ASIA",
+    "coverImage": {
+      "src": "/images/content/anncy-cover.jpg",
+      "alt": "Colorful houses lining a canal in Annecy"
+    },
+    "gallery": [
+      {
+        "src": "/images/content/france-1-6.jpg",
+        "alt": "Cyclists on a path beside Lake Annecy"
+      },
+      {
+        "src": "/images/content/france-1-3.jpg",
+        "alt": "Outdoor café with cheese fondue in Annecy"
+      },
+      {
+        "src": "/images/content/france-1-4.jpg",
+        "alt": "Pastel sunset over Lake Annecy with boats anchored nearby"
+      },
+      {
+        "src": "/images/content/france-1-5.jpg",
+        "alt": "Traveler walking through stone archway in Annecy old town"
+      },
+      {
+        "src": "/images/content/france-1-2.jpg",
+        "alt": "Pastel sunset over Lake Annecy with boats anchored nearby"
+      },
+      {
+        "src": "/images/content/france-1-1.jpg",
+        "alt": "Traveler walking through stone archway in Annecy old town"
+      }
+    ],
+    "sections": [
+      {
+        "id": "grenoble",
+        "paragraphs": [
+          "We started from Hong Kong, boarding the ferry with that buzzing feeling you get when you’re heading somewhere new. The sea breeze, the hum of conversations in different languages, and the sight of Hong Kong slowly shrinking behind us set the tone perfectly."
+        ],
+        "media": [
+          {
+            "src": "/images/content/macau-ferry-1.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "grenoble-cafe",
+        "paragraphs": [
+          "When we docked in Macau, it instantly felt different. We went through immigration, picked up our bags, and stepped out into a city that runs on shuttles and buses.We hopped onto the Grand Lisboa Palace shuttle, thinking we were sorted. Halfway through, we realised we actually needed another shuttle—the one going to Grand Lisboa Macau—to get closer to the city centre. Classic travel confusion, but in the fun way.From there, it was just a 5–10 minute walk to our hotel. Luggage rolling on the pavement, neon signs flickering on, and that mix of old-meets-new architecture—it was all “easy peasy” and strangely cinematic."
+        ],
+        "media": [
+          {
+            "src": "/images/content/casino-grand-lisboa.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "anecy",
+        "paragraphs": [
+          "Once we had dropped our bags, we walked towards Senado Square, one of the most iconic spots in Macau. The moment we reached, it felt like stepping into a European plaza that had somehow drifted into Asia and stayed."
+        ],
+        "media": [
+          {
+            "src": "/images/content/annecy1.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "annecy",
+        "paragraphs": [
+          "From the tiled wave-patterned ground to the pastel buildings with arches and balconies, everything felt both grand and comfortably worn-in. Narrow lanes branched off the square, lined with shops, bakeries, and snack counters.",
+          "We followed the gentle uphill path that led us to the Ruins of St. Paul—probably the most famous sight in Macau. All that remains of the old church is its intricate stone façade standing tall at the top of a broad flight of steps. But that façade alone is a story"
+        ],
+        "media": [
+          {
+            "src": "/images/content/annecy-2.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "ice-cream",
+        "paragraphs": [
+          "We climbed the steps slowly, stopping to soak in the view: tourists with umbrellas, locals weaving through the crowd, little shops selling snacks and souvenirs. The closer we got, the more detailed the carvings on the façade appeared—saints, symbols, and stonework that whispered of centuries past.",
+          "At the top, we explored the museum that preserves the history of Macau in a time capsule. The stained glass windows and paintings from 18th century painted a very different picture from what we experienced in streets."
+        ],
+        "media": [
+          {
+            "src": "/images/content/annecy-sardin.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/annecy-gelato.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }
+        ]
+      },
+      {
+        "id": "shopping",
+        "paragraphs": [
+          "No visit to Macau is complete without trying its legendary egg tarts, and we were absolutely not going to skip that. We found a bakery near Senado Square, the kind where the glass display is packed with freshly baked pastries. The egg tarts sat there, golden and glossy, just asking to be picked.",
+          "The first bite was a quiet little revelation: flaky, buttery crust; silky, slightly caramelised custard; warm and just sweet enough. There’s a reason these are famous. It’s one of those simple things that somehow stamps a place in your memory forever"
+        ],
+        "media": [
+          {
+            "src": "/images/content/chambery-1.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          },
+          {
+            "src": "/images/content/chambery-2.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "portrait"
+          }
+        ]
+      },
+
+      {
+        "id": "chambery - 2",
+        "paragraphs": [
+          "One of the most unexpectedly fun parts of our Macau trip was… the transport.The bus and shuttle network turned out to be the city’s lifeline. Free hotel shuttles zipped between ferry terminals, hotels, and major points in the city, and public buses connected the rest. For us, figuring them out became a mini-adventure of its own.We caught a bus from near Senado Square and headed out towards the island of Cotai, where all the big themed casino hotels are. The moment we got on, we felt that familiar rush of exploring a new place “like a local” — standing by the door, watching stop names flash by, and trying not to miss our stop"
+        ],
+        "media": [
+          {
+            "src": "/images/content/chambery-3.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+
+      {
+        "id": "cotai-strip",
+        "paragraphs": [
+          "The Cotai Strip is where Macau goes all out with its themes—think over-the-top, dramatic, and honestly, very fun.Our first stop: The Venetian.From the outside, it already looked like a movie set. Inside, it was something else entirely. They had built canals indoors, complete with arched bridges, painted “sky” ceilings, and gondolas gently gliding past luxury shopfronts.We didn’t take a gondola ride, but just watching them pass under the faux bridges while the gondoliers sang felt surreal—as if Venice had been packed into an air-conditioned box and lit perfectly for photos.",
+          "Next up was The Parisian. Right at the entrance stood a life-sized Eiffel Tower replica, rising dramatically into the night sky. It looked as grand as the real one inspiring awe in us as we watched.",
+          "And the world tour didn’t stop there. A short walk away was The Londoner, complete with its own Big Ben-style clock tower. It was like someone had taken a world map, picked a few iconic cities, and dropped their highlights into one long, walkable strip of light and glass"
+        ],
+        "media": [
+          {
+            "src": "/images/content/macau-perisian-eifel.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          },
+          {
+            "src": "/images/content/macau-perisian-eifel.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "macau-casino",
+        "paragraphs": [
+          "All these hotels are, at their core, casino hotels. Once you step inside the main halls, the mood shifts. Plush carpets, gold accents, endless rows of slot machines, gaming tables, and that particular casino soundscape—soft chimes, clicks, muffled conversations, and the occasional cheer.",
+          "We couldn’t take photos inside the gaming areas (no photography allowed in the casinos), but maybe that made us pay more attention. The interiors were luxurious and grand, every corner glowing with warm light, reflective surfaces, and carefully designed opulence.",
+          "Even if you’re not there to gamble, walking through those spaces feels like stepping into a movie set where every detail has been staged for maximum drama."
+        ],
+        "media": [
+          {
+            "src": "/images/content/macau-casino.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      },
+      {
+        "id": "chambery - 5",
+        "paragraphs": [
+          "By the time we made our way back to the hotel, the city was glowing—signs lit up, buses still running, shuttles humming past, and tourists still streaming in and out of hotels.",
+          "We’d arrived by ferry from Hong Kong, passed through immigration, hopped buses and shuttles, walked centuries-old streets, climbed up to the Ruins of St. Paul, tasted famous egg tarts, and then—just like that—done a mini world tour of Venice, Paris, and London on the Cotai Strip.",
+          "For an overnight stay, Macau delivered way more than we expected. Not just casinos and lights—but layers of history, flavours, and a transport system that quietly keeps it all moving.",
+          "If there’s one thing we took away from this trip, it’s this: In Macau, buses, shuttles, and your own curiosity are the real jackpots"
+        ],
+        "media": [
+          {
+            "src": "/images/content/chambery-4.jpg",
+            "alt": "Overwater villas stretching across a translucent lagoon at Villa Nautica",
+            "layout": "landscape"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Ride a cable car early to avoid lines and catch the best views",
+      "Sample mission-style burritos and third-wave coffee on Valencia Street",
+      "Time Lands End hike with sunset for golden light over the bridge"
+    ]
   }
 ]
