@@ -53,10 +53,8 @@ export const metadata: Metadata = {
   creator: "Miles Go Round",
   publisher: "Miles Go Round",
   icons: {
-    icon: [
-      { url: "/Logo/MilesGoRound-Logo-Blue.png", type: "image/png" },
-    ],
-    apple: "/Logo/MilesGoRound-Logo-Blue.png",
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    apple: "/favicon.png",
   },
 };
 
