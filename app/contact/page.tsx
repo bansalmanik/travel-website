@@ -27,8 +27,8 @@ export default function ContactPage() {
               <p className="text-slate-600">
                 Send us an email and we'll get back to you as soon as possible.
               </p>
-              <a href="mailto:hello@milesgoround.com" className="mt-4 inline-block text-sm font-medium text-slate-900 hover:underline">
-                hello@milesgoround.com
+              <a href="mailto:info@milesgoround.com" className="mt-4 inline-block text-sm font-medium text-slate-900 hover:underline">
+                info@milesgoround.com
               </a>
             </div>
 

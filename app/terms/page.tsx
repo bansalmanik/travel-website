@@ -47,6 +47,26 @@ export default function TermsPage() {
             Credit card offers, loyalty program terms, and travel rewards are subject to change without notice. Always verify current terms and conditions with the respective financial institutions or loyalty programs.
           </p>
 
+          <h2 className="mt-8 text-2xl font-semibold text-slate-900">Not Financial or Professional Advice</h2>
+          <p>
+            <strong>Important:</strong> The content on Miles Go Round is for informational and educational purposes only and does not constitute financial, legal, tax, or professional advice. We are not financial advisors, and nothing on this website should be construed as personalized financial advice or recommendations.
+          </p>
+          <p>
+            You should not rely solely on the information provided on this website when making financial decisions. Before applying for credit cards, making travel bookings, or making any financial decisions:
+          </p>
+          <ul>
+            <li>Consult with qualified financial, legal, or tax professionals</li>
+            <li>Review all terms and conditions directly with financial institutions</li>
+            <li>Consider your personal financial situation and goals</li>
+            <li>Understand that credit card approvals and offers are not guaranteed</li>
+          </ul>
+          <p>
+            <strong>Credit Card Approvals:</strong> Credit card approvals are subject to the issuer's review of your credit history, income, and other factors. We cannot guarantee approval for any credit card or financial product. Terms, rates, fees, and rewards are determined by the issuing financial institution and may vary based on your creditworthiness.
+          </p>
+          <p>
+            Any actions you take based on information from this website are at your own risk. We are not liable for any financial losses, damages, or consequences resulting from your use of this information.
+          </p>
+
           <h2 className="mt-8 text-2xl font-semibold text-slate-900">Affiliate Relationships</h2>
           <p>
             Miles Go Round may contain affiliate links. If you click on these links and make a purchase or sign up for a service, we may receive a commission at no additional cost to you. This helps support our website and allows us to continue providing valuable content.
@@ -79,7 +99,7 @@ export default function TermsPage() {
 
           <h2 className="mt-8 text-2xl font-semibold text-slate-900">Contact Information</h2>
           <p>
-            If you have any questions about these Terms and Conditions, please contact us at hello@milesgoround.com.
+            If you have any questions about these Terms and Conditions, please contact us at info@milesgoround.com.
           </p>
         </div>
       </div>

@@ -50,6 +50,20 @@ export default function PrivacyPage() {
             We may use cookies and similar tracking technologies to enhance your experience on our website. You can control cookies through your browser settings.
           </p>
 
+          <h2 className="mt-8 text-2xl font-semibold text-slate-900">Affiliate Tracking and Third-Party Cookies</h2>
+          <p>
+            Our website contains affiliate links to credit card issuers, travel companies, and other partners. When you click on these affiliate links, third-party partners may use cookies, pixels, and other tracking technologies to:
+          </p>
+          <ul>
+            <li>Track your activity and purchases</li>
+            <li>Attribute referrals to our website</li>
+            <li>Process affiliate commissions</li>
+            <li>Provide targeted advertising</li>
+          </ul>
+          <p>
+            These third-party partners have their own privacy policies governing the use of your information. We do not control and are not responsible for their tracking practices. We encourage you to review the privacy policies of any third-party sites you visit through our affiliate links.
+          </p>
+
           <h2 className="mt-8 text-2xl font-semibold text-slate-900">Third-Party Services</h2>
           <p>
             Our website may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies.
@@ -72,7 +86,7 @@ export default function PrivacyPage() {
 
           <h2 className="mt-8 text-2xl font-semibold text-slate-900">Contact Us</h2>
           <p>
-            If you have any questions about this Privacy Policy, please contact us at hello@milesgoround.com.
+            If you have any questions about this Privacy Policy, please contact us at info@milesgoround.com.
           </p>
         </div>
       </div>
