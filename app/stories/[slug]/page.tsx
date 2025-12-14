@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import GallerySlider from "@/app/components/gallery-slider";
+import ScrollDownButton from "@/app/components/scroll-down-button";
 
 import { getAllStorySummaries, getStoryBySlug } from "../data";
 import type { StorySectionMedia } from "../data";
@@ -72,7 +73,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
   return (
     <article className="bg-white text-zinc-900">
       <div className="relative isolate overflow-hidden">
-        <div className="relative h-[26rem] w-full">
+        <div className="relative h-[26rem] w-full lg:h-[36rem]">
           <Image
             src={currentPost.coverImage.src}
             alt={currentPost.coverImage.alt}
@@ -83,7 +84,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" aria-hidden />
         </div>
-        <div className="absolute inset-0 flex items-end justify-center pb-16">
+        <div className="absolute inset-0 flex items-end justify-center pb-16 lg:pb-24">
           <div className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-6 text-center text-white">
             <div className="flex flex-wrap justify-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-white/80">
               <span className="rounded-full bg-white/10 px-4 py-1 text-white">{currentPost.city}, {currentPost.country}</span>
@@ -123,9 +124,10 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
             </div>
           </div>
         </div>
+        <ScrollDownButton />
       </div>
 
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16">
+      <div id="story-content" className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16">
         {currentPost.content?.length ? (
           <div className="space-y-6 text-lg leading-relaxed text-zinc-700">
             {currentPost.content.map((paragraph) => (
