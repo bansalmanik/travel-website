@@ -9,6 +9,7 @@ const travelWithPointsHighlights = [
     description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/credit-cards",
     accent: "bg-amber-100 text-amber-900",
+    icon: "💳",
   },
   {
     title: "Hotel Programs",
@@ -16,18 +17,57 @@ const travelWithPointsHighlights = [
       "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
     href: "/travel-with-points/hotel-programs",
     accent: "bg-sky-100 text-sky-900",
+    icon: "🏨",
   },
   {
     title: "Flight Programs",
     description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
     href: "/travel-with-points/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
+    icon: "✈️",
   },
   {
     title: "Points Conversion",
     description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
     href: "/pointsconversion",
     accent: "bg-purple-100 text-purple-900",
+    icon: "🔄",
+  },
+];
+
+const travelSystems = [
+  {
+    title: "Earn smarter, not harder",
+    copy: "Pair welcome bonuses with everyday spend categories to accelerate free trips.",
+    highlight: "Fast-track earning",
+  },
+  {
+    title: "Book seats you actually want",
+    copy: "Use alliances and sweet spots to turn miles into lie-flat flights and fewer connections.",
+    highlight: "Upgrade your cabin",
+  },
+  {
+    title: "Stretch points for dreamy stays",
+    copy: "Lean on program quirks, free-night certs, and status boosts to live well for less.",
+    highlight: "Luxury on a budget",
+  },
+];
+
+const travelEssentials = [
+  {
+    title: "Miles & Points basics",
+    description: "A concise playbook on earning, redeeming, and keeping your balances healthy.",
+    href: "/travel-with-points/miles-and-points-explained",
+  },
+  {
+    title: "Transfer cheat sheet",
+    description: "Know which partners are worth your flexible points before you hit transfer.",
+    href: "/pointsconversion",
+  },
+  {
+    title: "Favorite starter cards",
+    description: "Cards that balance welcome offers, perks, and realistic annual fees.",
+    href: "/travel-with-points/credit-cards",
   },
 ];
 
@@ -147,55 +187,136 @@ export default async function Home() {
         <section aria-labelledby="travel-with-points-heading" className="py-16 sm:py-24">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             {/* Section Header */}
-            <div className="mb-12 text-center">
-              <p className="mb-3 text-xs font-medium uppercase tracking-widest text-amber-600">
-                Travel With Points
-              </p>
-              <h2 id="travel-with-points-heading" className="mb-4 text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">
-                Turn loyalty into adventures
-              </h2>
-              <p className="mx-auto max-w-2xl text-slate-600">
-                Earn smarter. Redeem better. Fly further.
-              </p>
-            </div>
-
-            {/* Cards Grid */}
-            <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {travelWithPointsHighlights.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            <div className="mb-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="mb-2 text-xs font-medium uppercase tracking-[0.3em] text-amber-600">
+                  Travel With Points
+                </p>
+                <h2
+                  id="travel-with-points-heading"
+                  className="text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl"
                 >
-                  <div className="mb-4">
-                    <span className={`inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-semibold ${item.accent}`}>
-                      {item.title}
-                    </span>
-                  </div>
-                  <p className="mb-4 text-sm leading-relaxed text-slate-600">
-                    {item.description}
-                  </p>
-                  <span className="inline-flex items-center text-sm font-medium text-slate-900 transition-colors group-hover:text-amber-600">
-                    Learn more
-                    <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </Link>
-              ))}
+                  Build a travel system that feels effortless
+                </h2>
+              </div>
+              <div className="flex flex-wrap gap-2 text-sm text-slate-500 sm:justify-end">
+                <span className="rounded-full bg-white px-3 py-1 shadow-sm">Thoughtful design</span>
+                <span className="rounded-full bg-white px-3 py-1 shadow-sm">Real traveler tips</span>
+                <span className="rounded-full bg-white px-3 py-1 shadow-sm">Action-first guides</span>
+              </div>
             </div>
 
-            {/* CTA */}
-            <div className="text-center">
-              <Link
-                href="/travel-with-points/miles-and-points-explained"
-                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-lg"
-              >
-                Miles & Points Explained
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
+            {/* Modern Content Split */}
+            <div className="grid gap-8 lg:grid-cols-[1.25fr_0.9fr]">
+              <div className="space-y-4">
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white via-amber-50 to-sky-50 p-6 shadow-sm ring-1 ring-slate-100 sm:p-8">
+                  <div className="mb-5 flex items-center justify-between gap-4">
+                    <div>
+                      <p className="text-sm font-medium text-amber-700">Choose your lane</p>
+                      <p className="text-base text-slate-600">
+                        Pick the path that fits your next trip and jump straight into the details.
+                      </p>
+                    </div>
+                    <div className="hidden rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-100 sm:block">
+                      Curated
+                    </div>
+                  </div>
+
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {travelWithPointsHighlights.map((item) => (
+                      <Link
+                        key={item.title}
+                        href={item.href}
+                        className="group flex items-start gap-3 rounded-2xl bg-white/80 p-4 shadow-sm ring-1 ring-slate-100 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-md"
+                      >
+                        <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl text-lg shadow-inner ${item.accent}`}>
+                          {item.icon}
+                        </span>
+                        <div className="space-y-1">
+                          <div className="flex items-center gap-2">
+                            <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
+                            <span className="text-[11px] font-semibold uppercase tracking-wide text-amber-600 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                              Open
+                            </span>
+                          </div>
+                          <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
+                        </div>
+                        <svg
+                          className="ml-auto mt-1 h-4 w-4 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-3">
+                  {travelSystems.map((system) => (
+                    <div
+                      key={system.title}
+                      className="group flex flex-col justify-between rounded-2xl bg-slate-900 px-5 py-6 text-white shadow-md transition-transform duration-200 hover:-translate-y-1"
+                    >
+                      <div className="space-y-3">
+                        <span className="inline-flex w-fit rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-amber-200">
+                          {system.highlight}
+                        </span>
+                        <h3 className="text-lg font-semibold leading-tight">{system.title}</h3>
+                        <p className="text-sm text-slate-200">{system.copy}</p>
+                      </div>
+                      <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-amber-200">
+                        <span>Build this system</span>
+                        <svg className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-4 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-100 sm:p-8">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">Shortcuts</p>
+                    <h3 className="mt-2 text-xl font-semibold text-slate-900">Streamlined starting points</h3>
+                    <p className="mt-2 text-sm text-slate-600">
+                      Jump into the guides that answer the most common questions from new and seasoned travelers alike.
+                    </p>
+                  </div>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">5–10 min reads</span>
+                </div>
+
+                <div className="space-y-3">
+                  {travelEssentials.map((item) => (
+                    <Link
+                      key={item.title}
+                      href={item.href}
+                      className="group flex items-start gap-3 rounded-2xl border border-slate-100 px-4 py-3 transition-all duration-200 hover:-translate-y-0.5 hover:border-amber-200 hover:bg-amber-50/50"
+                    >
+                      <div className="mt-1 h-2 w-2 rounded-full bg-amber-500" />
+                      <div className="flex-1">
+                        <h4 className="text-base font-semibold text-slate-900 group-hover:text-amber-700">{item.title}</h4>
+                        <p className="text-sm text-slate-600">{item.description}</p>
+                      </div>
+                      <svg className="h-4 w-4 text-slate-300 transition-transform duration-200 group-hover:translate-x-1 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  ))}
+                </div>
+
+                <div className="mt-2 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                  <span className="rounded-full bg-amber-50 px-3 py-1 text-amber-800">Beginners</span>
+                  <span className="rounded-full bg-sky-50 px-3 py-1 text-sky-800">Status chasers</span>
+                  <span className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-800">Luxury on points</span>
+                  <span className="rounded-full bg-indigo-50 px-3 py-1 text-indigo-800">Family trips</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
