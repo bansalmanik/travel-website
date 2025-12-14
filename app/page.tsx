@@ -17,6 +17,7 @@ export default async function Home() {
     title: entry.title,
     date: entry.displayDate,
     url: `/travel-resources/${entry.slug}`,
+    heroImage: entry.heroImage,
   }));
   
   const allStories = await getAllStorySummaries();
@@ -181,33 +182,36 @@ export default async function Home() {
 
         {/* Latest Resources Section */}
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="mb-6 text-center sm:mb-8">
-              <h2 className="mb-2 text-2xl font-semibold text-slate-900 sm:text-3xl">
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
                 Latest Resources
               </h2>
-              <p className="text-sm text-slate-600 sm:text-base">
-                Guides and tips to help you travel smarter
-              </p>
             </div>
 
-            <div className="space-y-3">
+            <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
               {journalHighlights.map((entry) => (
                 <Link
                   key={entry.title}
                   href={entry.url}
-                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-amber-300 hover:shadow-lg sm:p-6"
+                  className="group relative overflow-hidden rounded-lg bg-slate-100 transition-transform hover:scale-[1.02]"
+                  style={{ aspectRatio: '4/3' }}
                 >
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex-1">
-                      <p className="mb-1 text-xs font-medium text-amber-600 sm:text-sm">{entry.date}</p>
-                      <h3 className="text-base font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:text-lg">
-                        {entry.title}
-                      </h3>
-                    </div>
-                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                  {entry.heroImage?.src && (
+                    <Image
+                      src={entry.heroImage.src}
+                      alt={entry.heroImage.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5">
+                    <p className="mb-1 text-xs font-medium text-amber-400">{entry.date}</p>
+                    <h3 className="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-amber-300 sm:text-base">
+                      {entry.title}
+                    </h3>
                   </div>
                 </Link>
               ))}
@@ -216,9 +220,9 @@ export default async function Home() {
             <div className="mt-6 text-center sm:mt-8">
               <Link
                 href="/travel-resources"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-6 py-2.5 text-sm font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white sm:px-8 sm:py-3"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
               >
-                View All Resources
+                View all resources
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -229,38 +233,41 @@ export default async function Home() {
 
         {/* Stories Section */}
         <section className="border-t border-slate-100 py-10 sm:py-14">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="mb-6 text-center sm:mb-8">
-              <h2 className="mb-2 text-2xl font-semibold text-slate-900 sm:text-3xl">
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
                 Latest Stories
               </h2>
-              <p className="text-sm text-slate-600 sm:text-base">
-                Travel experiences from around the world
-              </p>
             </div>
 
-            <div className="space-y-3">
+            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
               {latestStories.map((story) => (
                 <Link
                   key={story.slug}
                   href={`/stories/${story.slug}`}
-                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-amber-300 hover:shadow-lg sm:p-6"
+                  className="group relative overflow-hidden rounded-lg bg-slate-100 transition-transform hover:scale-[1.02]"
+                  style={{ aspectRatio: '16/9' }}
                 >
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex-1">
-                      <div className="mb-1 flex flex-wrap items-center gap-1.5 text-xs sm:gap-2 sm:text-sm">
-                        <span className="font-medium text-amber-600">{story.city}, {story.country}</span>
-                        <span className="text-slate-300">•</span>
-                        <span className="text-slate-500">{story.date}</span>
-                      </div>
-                      <h3 className="mb-1 text-base font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:mb-2 sm:text-lg">
-                        {story.title}
-                      </h3>
-                      <p className="text-sm text-slate-600 line-clamp-2">{story.excerpt}</p>
+                  {story.coverImage?.src && (
+                    <Image
+                      src={story.coverImage.src}
+                      alt={story.coverImage.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-6">
+                    <div className="mb-2 flex items-center gap-2 text-xs text-amber-400">
+                      <span className="font-medium">{story.city}, {story.country}</span>
+                      <span className="text-white/50">•</span>
+                      <span className="text-white/70">{story.date}</span>
                     </div>
-                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                    <h3 className="mb-2 text-base font-semibold leading-snug text-white transition-colors group-hover:text-amber-300 sm:text-lg">
+                      {story.title}
+                    </h3>
+                    <p className="text-xs text-white/80 line-clamp-2 sm:text-sm">{story.excerpt}</p>
                   </div>
                 </Link>
               ))}
@@ -269,9 +276,9 @@ export default async function Home() {
             <div className="mt-6 text-center sm:mt-8">
               <Link
                 href="/stories"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-6 py-2.5 text-sm font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white sm:px-8 sm:py-3"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
               >
-                View All Stories
+                View all stories
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
