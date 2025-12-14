@@ -3,39 +3,55 @@ import Link from "next/link";
 
 import { getTravelResourceEntries } from "@/lib/contentData";
 
-const travelWithPointsHighlights = [
-  {
-    title: "Credit Cards",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
-    href: "/travel-with-points/credit-cards",
-    accent: "bg-amber-100 text-amber-900",
-  },
-  {
-    title: "Hotel Programs",
-    description:
-      "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
-    href: "/travel-with-points/hotel-programs",
-    accent: "bg-sky-100 text-sky-900",
-  },
-  {
-    title: "Flight Programs",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
-    href: "/travel-with-points/flight-programs",
-    accent: "bg-emerald-100 text-emerald-900",
-  },
-  {
-    title: "Points Conversion",
-    description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
-    href: "/pointsconversion",
-    accent: "bg-purple-100 text-purple-900",
-  },
-];
-
 const quickLinks = [
   { label: "Credit Cards", href: "/travel-with-points/credit-cards", icon: "💳" },
   { label: "Hotels", href: "/travel-with-points/hotel-programs", icon: "🏨" },
   { label: "Flights", href: "/travel-with-points/flight-programs", icon: "✈️" },
   { label: "Convert Points", href: "/pointsconversion", icon: "🔄" },
+];
+
+const journeyTracks = [
+  {
+    title: "Earn like a pro",
+    description: "Curate the right cards, stack bonuses, and keep your wallet working while you live life.",
+    href: "/travel-with-points/credit-cards",
+    pill: "Start with your goals",
+    gradient: "from-amber-100 via-amber-50 to-white",
+    icon: "✨",
+  },
+  {
+    title: "Fly further",
+    description: "Decode airline partners, position for sweet spots, and turn miles into unforgettable cabins.",
+    href: "/travel-with-points/flight-programs",
+    pill: "Route-perfect advice",
+    gradient: "from-sky-100 via-white to-white",
+    icon: "🛫",
+  },
+  {
+    title: "Stay elevated",
+    description: "Match hotels to your trip vibe—elite perks, breakfast, and upgrades without the guesswork.",
+    href: "/travel-with-points/hotel-programs",
+    pill: "Perks over price",
+    gradient: "from-emerald-100 via-white to-white",
+    icon: "🏝️",
+  },
+];
+
+const studioTiles = [
+  {
+    title: "Points Conversion Studio",
+    description: "Compare transfer partners, forecast balances, and move flexible currencies with intent.",
+    href: "/pointsconversion",
+    accent: "from-violet-500 via-purple-500 to-amber-400",
+    eyebrow: "Tools",
+  },
+  {
+    title: "Travel With Points Hub",
+    description: "Your playbook for earning smarter, redeeming cleaner, and stitching flights with stays.",
+    href: "/travel-with-points",
+    accent: "from-slate-900 via-slate-800 to-sky-700",
+    eyebrow: "Guides",
+  },
 ];
 
 export default async function Home() {
@@ -143,64 +159,133 @@ export default async function Home() {
 
       {/* Main Content */}
       <main className="bg-slate-50">
-        {/* Travel With Points Section */}
-        <section aria-labelledby="travel-with-points-heading" className="py-16 sm:py-24">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            {/* Section Header */}
-            <div className="mb-12 text-center">
-              <p className="mb-3 text-xs font-medium uppercase tracking-widest text-amber-600">
-                Travel With Points
+        <section className="relative isolate overflow-hidden py-16 sm:py-24">
+          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-amber-50/60 to-sky-50" />
+          <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 sm:px-6">
+            <div className="flex flex-col gap-3 text-center sm:gap-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-600">
+                Travel, reimagined
               </p>
-              <h2 id="travel-with-points-heading" className="mb-4 text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">
-                Turn loyalty into adventures
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">
+                Build a points-powered trip without the clutter
               </h2>
-              <p className="mx-auto max-w-2xl text-slate-600">
-                Earn smarter. Redeem better. Fly further.
+              <p className="mx-auto max-w-2xl text-sm text-slate-600 sm:text-base">
+                Move from spark to booked with curated paths, a modern toolset, and guides that put clarity first.
               </p>
             </div>
 
-            {/* Cards Grid */}
-            <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {travelWithPointsHighlights.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="mb-4">
-                    <span className={`inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-semibold ${item.accent}`}>
-                      {item.title}
-                    </span>
+            <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+              <div className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-[0_15px_45px_-25px_rgba(15,23,42,0.3)] sm:p-8">
+                <div className="mb-6 flex items-center justify-between gap-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                      Curated tracks
+                    </p>
+                    <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">Start from where you are</h3>
+                    <p className="mt-2 max-w-xl text-sm text-slate-600">
+                      Three proven paths that keep your wallet, flights, and stays working together instead of repeating the hero quick links.
+                    </p>
                   </div>
-                  <p className="mb-4 text-sm leading-relaxed text-slate-600">
-                    {item.description}
-                  </p>
-                  <span className="inline-flex items-center text-sm font-medium text-slate-900 transition-colors group-hover:text-amber-600">
-                    Learn more
-                    <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </Link>
-              ))}
-            </div>
+                  <div className="hidden h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-xl sm:flex">🌍</div>
+                </div>
 
-            {/* CTA */}
-            <div className="text-center">
-              <Link
-                href="/travel-with-points/miles-and-points-explained"
-                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-lg"
-              >
-                Miles & Points Explained
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {journeyTracks.map((track) => (
+                    <Link
+                      key={track.title}
+                      href={track.href}
+                      className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-gradient-to-br p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                      style={{ backgroundImage: `linear-gradient(135deg, ${track.gradient})` }}
+                    >
+                      <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-700">
+                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white/70 text-base shadow-sm">
+                          {track.icon}
+                        </span>
+                        {track.pill}
+                      </div>
+                      <h3 className="mb-2 text-lg font-semibold text-slate-900">{track.title}</h3>
+                      <p className="text-sm text-slate-700/80">{track.description}</p>
+                      <span className="mt-3 inline-flex items-center text-sm font-semibold text-slate-900 transition-colors group-hover:text-amber-700">
+                        Open playbook
+                        <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+
+                <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-dashed border-amber-200 bg-amber-50/60 p-4 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">New readers</p>
+                    <h4 className="text-lg font-semibold text-slate-900">Miles & Points, explained without jargon</h4>
+                    <p className="text-sm text-slate-600">
+                      A concise primer on how loyalty ecosystems fit together, from earning to redemption sequencing.
+                    </p>
+                  </div>
+                  <Link
+                    href="/travel-with-points/miles-and-points-explained"
+                    className="inline-flex items-center justify-center rounded-full bg-amber-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-amber-500/30 transition hover:-translate-y-0.5 hover:bg-amber-500"
+                  >
+                    Read the primer
+                    <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-4">
+                {studioTiles.map((tile) => (
+                  <Link
+                    key={tile.title}
+                    href={tile.href}
+                    className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-[0_15px_45px_-25px_rgba(15,23,42,0.35)] transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
+                  >
+                    <div className="absolute inset-0 opacity-80">
+                      <div className={`absolute inset-0 bg-gradient-to-br ${tile.accent}`} />
+                      <div className="absolute inset-0 bg-white/75 backdrop-blur-[2px]" />
+                    </div>
+                    <div className="relative flex flex-col gap-3">
+                      <p className="inline-flex w-fit items-center rounded-full bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-slate-700">
+                        {tile.eyebrow}
+                      </p>
+                      <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">{tile.title}</h3>
+                      <p className="text-sm text-slate-700 sm:text-base">{tile.description}</p>
+                      <span className="inline-flex items-center text-sm font-semibold text-slate-900 transition-colors group-hover:text-amber-700">
+                        Launch now
+                        <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+
+                <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-900 px-6 py-8 text-white shadow-[0_15px_45px_-25px_rgba(15,23,42,0.5)]">
+                  <div className="absolute right-0 top-0 h-36 w-36 rounded-full bg-amber-400/20 blur-3xl" />
+                  <div className="relative flex flex-col gap-3">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-200">Better planning</p>
+                    <h3 className="text-xl font-semibold sm:text-2xl">Save a seat for inspiration</h3>
+                    <p className="text-sm text-white/70 sm:text-base">
+                      Longform stories and tactical guides blend here. Subscribe to get the next drop of routes, hotels, and loyalty moves before they trend.
+                    </p>
+                    <Link
+                      href="/stories"
+                      className="inline-flex w-fit items-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-amber-100"
+                    >
+                      Explore stories
+                      <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Divider */}
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
         </div>
@@ -208,49 +293,48 @@ export default async function Home() {
         {/* Travel Resources Section */}
         <section id="travel-resources" className="py-16 sm:py-24">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            {/* Section Header */}
-            <div className="mb-10 flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-end">
-              <div className="text-center sm:text-left">
-                <p className="mb-3 text-xs font-medium uppercase tracking-widest text-amber-600">
-                  Resources
+            <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-600">Resources</p>
+                <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Latest guides & journal entries</h2>
+                <p className="max-w-2xl text-sm text-slate-600 sm:text-base">
+                  Bite-sized updates on routes, hotels, redemptions, and mindsets that keep you moving with intent.
                 </p>
-                <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
-                  Latest guides & tips
-                </h2>
               </div>
               <Link
                 href="/travel-resources"
-                className="group inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition-colors hover:text-slate-900"
+                className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
               >
-                View all
+                View all resources
                 <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
             </div>
 
-            {/* Resources List */}
-            <div className="space-y-3">
+            <div className="grid gap-4 sm:grid-cols-2">
               {journalHighlights.map((entry, index) => (
                 <a
                   key={entry.title}
                   href={entry.url}
-                  className="group flex items-center justify-between rounded-xl bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md sm:p-5"
+                  className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <div className="flex items-center gap-4">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-sm font-semibold text-slate-500">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <span className="text-xs font-medium text-amber-600">{entry.date}</span>
-                      <h3 className="text-sm font-medium text-slate-900 transition-colors group-hover:text-amber-600 sm:text-base">
-                        {entry.title}
-                      </h3>
-                    </div>
+                  <div className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-amber-50 text-xs font-semibold text-amber-700">
+                    {String(index + 1).padStart(2, "0")}
                   </div>
-                  <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
+                  <span className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-600">{entry.date}</span>
+                  <h3 className="mt-2 text-lg font-semibold text-slate-900 transition-colors group-hover:text-amber-700">
+                    {entry.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-600">
+                    Pull insights, routes, and practical steps without wading through another set of repeated quick links.
+                  </p>
+                  <span className="mt-4 inline-flex items-center text-sm font-semibold text-slate-900 transition-colors group-hover:text-amber-700">
+                    Read entry
+                    <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
                 </a>
               ))}
             </div>
