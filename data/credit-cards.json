@@ -1177,38 +1177,6 @@
                 ]
               }
             }
-          ],
-          "subsections": [
-            {
-              "title": "Renewal milestones",
-              "content": [
-                {
-                  "type": "bullets",
-                  "bullets": [
-                    "Bonus MR split between automatic posting and a quick call or chat with Amex support."
-                  ]
-                },
-                {
-                  "type": "table",
-                  "table": {
-                    "columns": [
-                      "Membership year spend",
-                      "Benefit"
-                    ],
-                    "rows": [
-                      [
-                        "₹1,90,000",
-                        "15,000 Membership Rewards points"
-                      ],
-                      [
-                        "₹4,00,000",
-                        "25,000 Membership Rewards points + ₹10,000 Taj Experiences e-gift card"
-                      ]
-                    ]
-                  }
-                }
-              ]
-            }
           ]
         },
         {
@@ -1257,6 +1225,37 @@
               "bullets": [
                 "Exclusions: fuel, insurance, utilities, cash transactions, and in-store EMI conversions."
               ]
+            }
+          ]
+        },
+        {
+          "id": "milestone-bonuses",
+          "title": "Milestone bonuses",
+          "content": [
+            {
+              "type": "paragraphs",
+              "paragraphs": [
+                "Stay on track each quarter and anniversary year to scoop extra travel value."
+              ]
+            },
+            {
+              "type": "table",
+              "table": {
+                "columns": [
+                  "Milestone",
+                  "Reward"
+                ],
+                "rows": [
+                  [
+                    "₹1,90,000 spend in a card year",
+                    "15,000 MR Points"
+                  ],
+                  [
+                    "₹4,00,000 annual spend",
+                    "25,000 MR Points + ₹10,000 Taj Voucher"
+                  ]
+                ]
+              }
             }
           ]
         },
