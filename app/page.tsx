@@ -25,7 +25,7 @@ export default async function Home() {
   const heroImageSrc = "/images/content/cover_1.jpg";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/40 to-sky-50 text-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-100 to-slate-200 text-slate-900">
       {/* Hero Section - Exact viewport height */}
       <header className="relative isolate flex h-[100svh] flex-col overflow-hidden">
         {/* Background Image with Ken Burns effect */}
@@ -38,14 +38,14 @@ export default async function Home() {
             priority
             sizes="100vw"
           />
-          {/* Professional gradient overlay - deeper with subtle warmth */}
+          {/* Professional gradient overlay - deep monochrome */}
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-900/50 to-slate-950/90" />
-          <div className="absolute inset-0 bg-gradient-to-tr from-indigo-950/30 via-transparent to-amber-950/20" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/40 via-transparent to-slate-950/30" />
         </div>
 
         {/* Subtle decorative accents */}
-        <div className="absolute top-1/4 left-0 h-64 w-64 rounded-full bg-indigo-500/5 blur-3xl" />
-        <div className="absolute bottom-1/4 right-0 h-72 w-72 rounded-full bg-amber-500/5 blur-3xl" />
+        <div className="absolute top-1/4 left-0 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+        <div className="absolute bottom-1/4 right-0 h-72 w-72 rounded-full bg-slate-200/10 blur-3xl" />
 
         {/* Main Hero Content - All content centered */}
         <div className="relative flex flex-1 flex-col items-center justify-center px-4 py-8 sm:px-6">
@@ -53,7 +53,7 @@ export default async function Home() {
             {/* Main headline */}
             <h1 className="mb-3 text-3xl font-bold leading-[1.1] tracking-tight text-white sm:mb-5 sm:text-5xl md:text-6xl">
               Make Every Mile
-              <span className="mt-1 block bg-gradient-to-r from-amber-200 via-amber-300 to-amber-200 bg-clip-text text-transparent sm:mt-2">
+              <span className="mt-1 block bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent sm:mt-2">
                 Meaningful
               </span>
             </h1>
@@ -68,7 +68,7 @@ export default async function Home() {
               {/* Primary CTA */}
               <Link
                 href="/travel-with-points"
-                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-amber-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-amber-500/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
+                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               >
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
                 <span className="relative">Start Exploring</span>
@@ -133,9 +133,9 @@ export default async function Home() {
               {/* Miles & Points Explained */}
               <Link
                 href="/travel-with-points/miles-and-points-explained"
-                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-amber-300 sm:hover:shadow-lg"
+                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-slate-500 sm:hover:shadow-lg"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-500 sm:h-12 sm:w-12">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-slate-900 sm:h-12 sm:w-12">
                   <svg className="h-5 w-5 text-white sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
@@ -158,7 +158,7 @@ export default async function Home() {
                 href="/travel-with-points"
                 className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-sky-300 sm:hover:shadow-lg"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-sky-500 sm:h-12 sm:w-12">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-slate-800 sm:h-12 sm:w-12">
                   <svg className="h-5 w-5 text-white sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -196,16 +196,16 @@ export default async function Home() {
                 <Link
                   key={entry.title}
                   href={entry.url}
-                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-amber-300 hover:shadow-lg sm:p-6"
+                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-slate-500 hover:shadow-lg sm:p-6"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex-1">
-                      <p className="mb-1 text-xs font-medium text-amber-600 sm:text-sm">{entry.date}</p>
-                      <h3 className="text-base font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:text-lg">
+                      <p className="mb-1 text-xs font-medium text-slate-500 sm:text-sm">{entry.date}</p>
+                      <h3 className="text-base font-semibold text-slate-900 transition-colors group-hover:text-slate-600 sm:text-lg">
                         {entry.title}
                       </h3>
                     </div>
-                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-slate-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
@@ -244,21 +244,21 @@ export default async function Home() {
                 <Link
                   key={story.slug}
                   href={`/stories/${story.slug}`}
-                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-amber-300 hover:shadow-lg sm:p-6"
+                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-slate-500 hover:shadow-lg sm:p-6"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex-1">
                       <div className="mb-1 flex flex-wrap items-center gap-1.5 text-xs sm:gap-2 sm:text-sm">
-                        <span className="font-medium text-amber-600">{story.city}, {story.country}</span>
+                        <span className="font-medium text-slate-700">{story.city}, {story.country}</span>
                         <span className="text-slate-300">•</span>
                         <span className="text-slate-500">{story.date}</span>
                       </div>
-                      <h3 className="mb-1 text-base font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:mb-2 sm:text-lg">
+                      <h3 className="mb-1 text-base font-semibold text-slate-900 transition-colors group-hover:text-slate-600 sm:mb-2 sm:text-lg">
                         {story.title}
                       </h3>
                       <p className="text-sm text-slate-600 line-clamp-2">{story.excerpt}</p>
                     </div>
-                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-slate-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
