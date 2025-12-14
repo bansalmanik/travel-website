@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Miles Go Round",
   },
   description:
-    "Miles Go Round shares immersive travel stories, soulful itineraries, and practical guides for stretching every mile and point.",
+    "Miles Go Round shares immersive travel stories, soulful itineraries, and practical guides for stretching every point and mile.",
   keywords: [
     "slow travel",
     "travel stories",
@@ -21,9 +21,31 @@ export const metadata: Metadata = {
     "miles and points",
     "travel guides",
     "loyalty programs",
+    "credit card rewards",
+    "airline miles",
+    "hotel points",
   ],
+  applicationName: "Miles Go Round",
+  category: "travel",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: siteUrl,
+    types: {
+      "application/rss+xml": `${siteUrl}/rss.xml`,
+    },
+  },
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
   },
   openGraph: {
     type: "website",
@@ -32,29 +54,44 @@ export const metadata: Metadata = {
     title: "Miles Go Round | Slow Travel Stories & Points Guides",
     description:
       "Explore mindful travel stories, destination travel resources, and loyalty program breakdowns to help you travel better for less.",
+    locale: "en_US",
     images: [
       {
         url: "/images/content/cover_1.jpg",
         width: 1200,
         height: 630,
         alt: "Sunset over mountains and fjords",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@milesgoround",
     creator: "@milesgoround",
     title: "Miles Go Round | Slow Travel Stories & Points Guides",
     description:
       "Discover immersive travelogues, practical travel tips, and how to turn loyalty points into real adventures.",
     images: ["/images/content/cover_1.jpg"],
   },
-  authors: [{ name: "Miles Go Round" }],
+  authors: [{ name: "Miles Go Round", url: siteUrl }],
   creator: "Miles Go Round",
   publisher: "Miles Go Round",
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/png" }],
-    apple: "/favicon.png",
+    icon: [
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  other: {
+    "google-site-verification": "your-google-verification-code",
   },
 };
 
@@ -70,8 +107,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-B106KK769W"
@@ -103,14 +142,44 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 '@context': 'https://schema.org',
-                '@type': 'WebSite',
-                name: 'Miles Go Round',
-                url: siteUrl,
-                potentialAction: {
-                  '@type': 'SearchAction',
-                  target: `${siteUrl}/search?q={search_term_string}`,
-                  'query-input': 'required name=search_term_string',
-                },
+                '@graph': [
+                  {
+                    '@type': 'WebSite',
+                    '@id': `${siteUrl}/#website`,
+                    name: 'Miles Go Round',
+                    url: siteUrl,
+                    description: 'Miles Go Round shares immersive travel stories, soulful itineraries, and practical guides for stretching every point and mile.',
+                    inLanguage: 'en-US',
+                    potentialAction: {
+                      '@type': 'SearchAction',
+                      target: `${siteUrl}/search?q={search_term_string}`,
+                      'query-input': 'required name=search_term_string',
+                    },
+                  },
+                  {
+                    '@type': 'Organization',
+                    '@id': `${siteUrl}/#organization`,
+                    name: 'Miles Go Round',
+                    url: siteUrl,
+                    logo: {
+                      '@type': 'ImageObject',
+                      url: `${siteUrl}/Logo/MilesGoRound-Logo-Blue.png`,
+                      width: 512,
+                      height: 512,
+                    },
+                    sameAs: [
+                      'https://www.instagram.com/milesgoround/',
+                      'https://www.youtube.com/@milesGoRound',
+                      'https://x.com/milesGoRound',
+                    ],
+                    contactPoint: {
+                      '@type': 'ContactPoint',
+                      email: 'info@milesgoround.com',
+                      contactType: 'customer service',
+                      availableLanguage: 'English',
+                    },
+                  },
+                ],
               }),
             }}
           />
