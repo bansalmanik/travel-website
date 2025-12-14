@@ -335,11 +335,27 @@ export default async function Home() {
             </div>
           </div>
 
-          {/* Copyright */}
-          <div className="mt-6 border-t border-slate-100 pt-6 text-center">
-            <p className="text-xs text-slate-500 sm:text-sm">
-              © {new Date().getFullYear()} Miles Go Round. All rights reserved.
-            </p>
+          {/* Copyright and Links */}
+          <div className="mt-6 border-t border-slate-100 pt-6">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+              <p className="text-xs text-slate-500">
+                © {new Date().getFullYear()} Miles Go Round. All rights reserved.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500">
+                <Link href="/about" className="transition-colors hover:text-slate-900">
+                  About
+                </Link>
+                <Link href="/contact" className="transition-colors hover:text-slate-900">
+                  Contact
+                </Link>
+                <Link href="/privacy" className="transition-colors hover:text-slate-900">
+                  Privacy Policy
+                </Link>
+                <Link href="/terms" className="transition-colors hover:text-slate-900">
+                  Terms & Conditions
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
