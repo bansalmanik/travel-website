@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getTravelResourceEntries } from "@/lib/contentData";
+import { getAllStorySummaries } from "@/app/stories/data";
 
 const quickLinks = [
   { label: "Credit Cards", href: "/travel-with-points/credit-cards", icon: "💳" },
@@ -17,6 +18,10 @@ export default async function Home() {
     date: entry.displayDate,
     url: `/travel-resources/${entry.slug}`,
   }));
+  
+  const allStories = await getAllStorySummaries();
+  const latestStories = allStories.slice(0, 2);
+  
   const heroImageSrc = "/images/content/cover_1.jpg";
 
   return (
@@ -214,6 +219,59 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-8 py-3 font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white"
               >
                 View All Resources
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Stories Section */}
+        <section className="border-t border-slate-100 py-20 sm:py-28">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <div className="mb-12 text-center">
+              <h2 className="mb-3 text-3xl font-semibold text-slate-900 sm:text-4xl">
+                Latest Stories
+              </h2>
+              <p className="text-slate-600">
+                Travel experiences and adventures from around the world
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {latestStories.map((story) => (
+                <Link
+                  key={story.slug}
+                  href={`/stories/${story.slug}`}
+                  className="group block rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-amber-300 hover:shadow-lg sm:p-8"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <div className="mb-2 flex flex-wrap items-center gap-2 text-sm">
+                        <span className="font-medium text-amber-600">{story.city}, {story.country}</span>
+                        <span className="text-slate-300">•</span>
+                        <span className="text-slate-500">{story.date}</span>
+                      </div>
+                      <h3 className="mb-2 text-xl font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:text-2xl">
+                        {story.title}
+                      </h3>
+                      <p className="text-slate-600">{story.excerpt}</p>
+                    </div>
+                    <svg className="h-6 w-6 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-10 text-center">
+              <Link
+                href="/stories"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-8 py-3 font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white"
+              >
+                View All Stories
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
