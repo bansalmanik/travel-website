@@ -116,57 +116,59 @@ export default async function Home() {
       {/* Main Content */}
       <main className="bg-white">
         {/* Getting Started Section */}
-        <section className="border-b border-slate-100 py-16 sm:py-20">
+        <section className="border-b border-slate-100 py-12 sm:py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
-            <div className="mb-10 text-center">
-              <h2 className="mb-3 text-2xl font-semibold text-slate-900 sm:text-3xl">
+            <div className="mb-8 text-center">
+              <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">
                 Start Your Journey
               </h2>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="space-y-3 sm:grid sm:grid-cols-2 sm:gap-4 sm:space-y-0">
               {/* Miles & Points Explained */}
               <Link
                 href="/travel-with-points/miles-and-points-explained"
-                className="group rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-amber-50 to-white p-8 transition-all hover:border-amber-400 hover:shadow-xl"
+                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-amber-300 sm:hover:shadow-lg"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500 text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-500 sm:h-12 sm:w-12">
+                  <svg className="h-5 w-5 text-white sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-slate-900">Miles & Points Explained</h3>
-                <p className="mb-4 text-slate-600">
-                  New to miles and points? Start here to learn the basics
-                </p>
-                <span className="inline-flex items-center text-sm font-medium text-amber-600 transition-transform group-hover:translate-x-1">
-                  Learn the basics
-                  <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
+                <div className="flex-1 sm:mt-3">
+                  <h3 className="mb-1 text-base font-semibold text-slate-900 sm:text-lg">
+                    Miles & Points Explained
+                  </h3>
+                  <p className="text-sm text-slate-600 sm:mb-2">
+                    Learn the basics
+                  </p>
+                </div>
+                <svg className="h-5 w-5 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </Link>
 
               {/* Travel With Points */}
               <Link
                 href="/travel-with-points"
-                className="group rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-sky-50 to-white p-8 transition-all hover:border-sky-400 hover:shadow-xl"
+                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-sky-300 sm:hover:shadow-lg"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500 text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-sky-500 sm:h-12 sm:w-12">
+                  <svg className="h-5 w-5 text-white sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-slate-900">Travel With Points</h3>
-                <p className="mb-4 text-slate-600">
-                  Explore credit cards, hotel programs, flights, and more
-                </p>
-                <span className="inline-flex items-center text-sm font-medium text-sky-600 transition-transform group-hover:translate-x-1">
-                  Explore programs
-                  <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
+                <div className="flex-1 sm:mt-3">
+                  <h3 className="mb-1 text-base font-semibold text-slate-900 sm:text-lg">
+                    Travel With Points
+                  </h3>
+                  <p className="text-sm text-slate-600 sm:mb-2">
+                    Explore programs
+                  </p>
+                </div>
+                <svg className="h-5 w-5 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </Link>
             </div>
           </div>
