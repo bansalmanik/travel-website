@@ -505,8 +505,8 @@
     "city": "Macau",
     "country": "ASIA",
     "coverImage": {
-      "src": "/images/content/macau-cover.jpg",
-      "alt": "Galazy hotel Macau"
+      "src": "/images/content/macau-cover.JPG",
+      "alt": "Galaxy hotel Macau"
     },
     "gallery": [
       {
@@ -662,7 +662,7 @@
             "layout": "portrait"
           },
           {
-            "src": "/images/content/macau-londoner-1.jpg",
+            "src": "/images/content/macau-londoner-1.JPG",
             "alt": "Londoner Macau",
             "layout": "portrait"
           }
