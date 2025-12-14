@@ -73,7 +73,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
   return (
     <article className="bg-white text-zinc-900">
       <div className="relative isolate overflow-hidden">
-        <div className="relative h-[26rem] w-full lg:h-[36rem]">
+        <div className="relative h-[32rem] w-full lg:h-[36rem]">
           <Image
             src={currentPost.coverImage.src}
             alt={currentPost.coverImage.alt}

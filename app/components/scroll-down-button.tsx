@@ -8,7 +8,7 @@ export default function ScrollDownButton() {
   return (
     <button
       onClick={handleScroll}
-      className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer text-white/80 transition hover:text-white"
+      className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 animate-bounce cursor-pointer text-white/80 transition hover:text-white lg:block"
       aria-label="Scroll to content"
     >
       <svg
