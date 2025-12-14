@@ -107,15 +107,6 @@ export default async function Home() {
             </div>
           </div>
         </div>
-
-        {/* Scroll indicator at bottom */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 sm:bottom-6">
-          <div className="flex flex-col items-center gap-1 text-white/40">
-            <div className="h-6 w-4 rounded-full border border-white/30 p-0.5">
-              <div className="h-1.5 w-1 animate-bounce rounded-full bg-white/50" />
-            </div>
-          </div>
-        </div>
       </header>
 
       {/* Main Content */}
