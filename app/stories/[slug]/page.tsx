@@ -213,17 +213,19 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
           </section>
         ) : null}
 
-        <div className="rounded-3xl border border-blue-100 bg-blue-50/60 p-8">
-          <h2 className="text-xl font-semibold text-blue-600">Traveler Highlights</h2>
-          <ul className="mt-4 grid gap-3 text-sm text-blue-900 sm:grid-cols-2">
-            {currentPost.highlights.map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1 inline-flex h-2 w-2 flex-shrink-0 rounded-full bg-blue-500" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {currentPost.highlights?.length ? (
+          <div className="rounded-3xl border border-blue-100 bg-blue-50/60 p-8">
+            <h2 className="text-xl font-semibold text-blue-600">Traveler Highlights</h2>
+            <ul className="mt-4 grid gap-3 text-sm text-blue-900 sm:grid-cols-2">
+              {currentPost.highlights.map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="mt-1 inline-flex h-2 w-2 flex-shrink-0 rounded-full bg-blue-500" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
         <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-zinc-100 p-6 text-sm text-zinc-600 sm:flex-row">
           <p>Looking for more inspiration? Explore our latest destinations and guides.</p>
