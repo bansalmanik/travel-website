@@ -26,7 +26,7 @@ export default async function Home() {
   const heroImageSrc = "/images/content/cover_1.jpg";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/40 to-sky-50 text-slate-900">
+    <div className="min-h-screen bg-white text-slate-900">
       {/* Hero Section - Exact viewport height */}
       <header className="relative isolate flex h-[100svh] flex-col overflow-hidden">
         {/* Background Image with Ken Burns effect */}
@@ -54,7 +54,7 @@ export default async function Home() {
             {/* Main headline */}
             <h1 className="mb-3 text-3xl font-bold leading-[1.1] tracking-tight text-white sm:mb-5 sm:text-5xl md:text-6xl">
               Make Every Mile
-              <span className="mt-1 block bg-gradient-to-r from-amber-200 via-amber-300 to-amber-200 bg-clip-text text-transparent sm:mt-2">
+              <span className="mt-1 block text-white sm:mt-2">
                 Meaningful
               </span>
             </h1>
@@ -69,9 +69,8 @@ export default async function Home() {
               {/* Primary CTA */}
               <Link
                 href="/travel-with-points"
-                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-amber-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-amber-500/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
+                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-black/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-xl hover:shadow-black/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               >
-                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
                 <span className="relative">Start Exploring</span>
                 <svg className="relative h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -134,9 +133,9 @@ export default async function Home() {
               {/* Miles & Points Explained */}
               <Link
                 href="/travel-with-points/miles-and-points-explained"
-                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-amber-300 sm:hover:shadow-lg"
+                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-slate-900 sm:hover:shadow-lg"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-500 sm:h-12 sm:w-12">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-slate-900 sm:h-12 sm:w-12">
                   <svg className="h-5 w-5 text-white sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
@@ -208,8 +207,8 @@ export default async function Home() {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5">
-                    <p className="mb-1 text-xs font-medium text-amber-400">{entry.date}</p>
-                    <h3 className="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-amber-300 sm:text-base">
+                    <p className="mb-1 text-xs font-medium text-white/70">{entry.date}</p>
+                    <h3 className="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-white/90 sm:text-base">
                       {entry.title}
                     </h3>
                   </div>
@@ -259,12 +258,12 @@ export default async function Home() {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-6">
-                    <div className="mb-2 flex items-center gap-2 text-xs text-amber-400">
+                    <div className="mb-2 flex items-center gap-2 text-xs text-white/70">
                       <span className="font-medium">{story.city}, {story.country}</span>
                       <span className="text-white/50">•</span>
                       <span className="text-white/70">{story.date}</span>
                     </div>
-                    <h3 className="mb-2 text-base font-semibold leading-snug text-white transition-colors group-hover:text-amber-300 sm:text-lg">
+                    <h3 className="mb-2 text-base font-semibold leading-snug text-white transition-colors group-hover:text-white/90 sm:text-lg">
                       {story.title}
                     </h3>
                     <p className="text-xs text-white/80 line-clamp-2 sm:text-sm">{story.excerpt}</p>
