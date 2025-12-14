@@ -3,34 +3,6 @@ import Link from "next/link";
 
 import { getTravelResourceEntries } from "@/lib/contentData";
 
-const travelWithPointsHighlights = [
-  {
-    title: "Credit Cards",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
-    href: "/travel-with-points/credit-cards",
-    accent: "bg-amber-100 text-amber-900",
-  },
-  {
-    title: "Hotel Programs",
-    description:
-      "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
-    href: "/travel-with-points/hotel-programs",
-    accent: "bg-sky-100 text-sky-900",
-  },
-  {
-    title: "Flight Programs",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
-    href: "/travel-with-points/flight-programs",
-    accent: "bg-emerald-100 text-emerald-900",
-  },
-  {
-    title: "Points Conversion",
-    description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
-    href: "/pointsconversion",
-    accent: "bg-purple-100 text-purple-900",
-  },
-];
-
 const quickLinks = [
   { label: "Credit Cards", href: "/travel-with-points/credit-cards", icon: "💳" },
   { label: "Hotels", href: "/travel-with-points/hotel-programs", icon: "🏨" },
@@ -142,117 +114,108 @@ export default async function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="bg-slate-50">
-        {/* Travel With Points Section */}
-        <section aria-labelledby="travel-with-points-heading" className="py-16 sm:py-24">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            {/* Section Header */}
-            <div className="mb-12 text-center">
-              <p className="mb-3 text-xs font-medium uppercase tracking-widest text-amber-600">
-                Travel With Points
-              </p>
-              <h2 id="travel-with-points-heading" className="mb-4 text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">
-                Turn loyalty into adventures
+      <main className="bg-white">
+        {/* Getting Started Section */}
+        <section className="border-b border-slate-100 py-16 sm:py-20">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <div className="mb-10 text-center">
+              <h2 className="mb-3 text-2xl font-semibold text-slate-900 sm:text-3xl">
+                Start Your Journey
               </h2>
-              <p className="mx-auto max-w-2xl text-slate-600">
-                Earn smarter. Redeem better. Fly further.
-              </p>
             </div>
 
-            {/* Cards Grid */}
-            <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {travelWithPointsHighlights.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="mb-4">
-                    <span className={`inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-semibold ${item.accent}`}>
-                      {item.title}
-                    </span>
-                  </div>
-                  <p className="mb-4 text-sm leading-relaxed text-slate-600">
-                    {item.description}
-                  </p>
-                  <span className="inline-flex items-center text-sm font-medium text-slate-900 transition-colors group-hover:text-amber-600">
-                    Learn more
-                    <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </Link>
-              ))}
-            </div>
-
-            {/* CTA */}
-            <div className="text-center">
+            <div className="grid gap-6 sm:grid-cols-2">
+              {/* Miles & Points Explained */}
               <Link
                 href="/travel-with-points/miles-and-points-explained"
-                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-lg"
+                className="group rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-amber-50 to-white p-8 transition-all hover:border-amber-400 hover:shadow-xl"
               >
-                Miles & Points Explained
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500 text-white">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-slate-900">Miles & Points Explained</h3>
+                <p className="mb-4 text-slate-600">
+                  New to miles and points? Start here to learn the basics
+                </p>
+                <span className="inline-flex items-center text-sm font-medium text-amber-600 transition-transform group-hover:translate-x-1">
+                  Learn the basics
+                  <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </Link>
+
+              {/* Travel With Points */}
+              <Link
+                href="/travel-with-points"
+                className="group rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-sky-50 to-white p-8 transition-all hover:border-sky-400 hover:shadow-xl"
+              >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500 text-white">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-slate-900">Travel With Points</h3>
+                <p className="mb-4 text-slate-600">
+                  Explore credit cards, hotel programs, flights, and more
+                </p>
+                <span className="inline-flex items-center text-sm font-medium text-sky-600 transition-transform group-hover:translate-x-1">
+                  Explore programs
+                  <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Divider */}
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
-        </div>
-
-        {/* Travel Resources Section */}
-        <section id="travel-resources" className="py-16 sm:py-24">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            {/* Section Header */}
-            <div className="mb-10 flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-end">
-              <div className="text-center sm:text-left">
-                <p className="mb-3 text-xs font-medium uppercase tracking-widest text-amber-600">
-                  Resources
-                </p>
-                <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
-                  Latest guides & tips
-                </h2>
-              </div>
-              <Link
-                href="/travel-resources"
-                className="group inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition-colors hover:text-slate-900"
-              >
-                View all
-                <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+        {/* Latest Resources Section */}
+        <section className="py-20 sm:py-28">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <div className="mb-12 text-center">
+              <h2 className="mb-3 text-3xl font-semibold text-slate-900 sm:text-4xl">
+                Latest Resources
+              </h2>
+              <p className="text-slate-600">
+                Guides and tips to help you travel smarter
+              </p>
             </div>
 
-            {/* Resources List */}
-            <div className="space-y-3">
-              {journalHighlights.map((entry, index) => (
-                <a
+            <div className="space-y-4">
+              {journalHighlights.map((entry) => (
+                <Link
                   key={entry.title}
                   href={entry.url}
-                  className="group flex items-center justify-between rounded-xl bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md sm:p-5"
+                  className="group block rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-amber-300 hover:shadow-lg sm:p-8"
                 >
-                  <div className="flex items-center gap-4">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-sm font-semibold text-slate-500">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <span className="text-xs font-medium text-amber-600">{entry.date}</span>
-                      <h3 className="text-sm font-medium text-slate-900 transition-colors group-hover:text-amber-600 sm:text-base">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <p className="mb-2 text-sm font-medium text-amber-600">{entry.date}</p>
+                      <h3 className="text-xl font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:text-2xl">
                         {entry.title}
                       </h3>
                     </div>
+                    <svg className="h-6 w-6 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </div>
-                  <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
+                </Link>
               ))}
+            </div>
+
+            <div className="mt-10 text-center">
+              <Link
+                href="/travel-resources"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-8 py-3 font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white"
+              >
+                View All Resources
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           </div>
         </section>
