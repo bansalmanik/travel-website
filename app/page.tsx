@@ -121,10 +121,10 @@ export default async function Home() {
       {/* Main Content */}
       <main className="bg-white">
         {/* Getting Started Section */}
-        <section className="border-b border-slate-100 py-12 sm:py-16">
+        <section className="border-b border-slate-100 py-8 sm:py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
-            <div className="mb-8 text-center">
-              <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">
+            <div className="mb-6 text-center">
+              <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">
                 Start Your Journey
               </h2>
             </div>
@@ -180,32 +180,32 @@ export default async function Home() {
         </section>
 
         {/* Latest Resources Section */}
-        <section className="py-20 sm:py-28">
+        <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
-            <div className="mb-12 text-center">
-              <h2 className="mb-3 text-3xl font-semibold text-slate-900 sm:text-4xl">
+            <div className="mb-6 text-center sm:mb-8">
+              <h2 className="mb-2 text-2xl font-semibold text-slate-900 sm:text-3xl">
                 Latest Resources
               </h2>
-              <p className="text-slate-600">
+              <p className="text-sm text-slate-600 sm:text-base">
                 Guides and tips to help you travel smarter
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {journalHighlights.map((entry) => (
                 <Link
                   key={entry.title}
                   href={entry.url}
-                  className="group block rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-amber-300 hover:shadow-lg sm:p-8"
+                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-amber-300 hover:shadow-lg sm:p-6"
                 >
-                  <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-start justify-between gap-3">
                     <div className="flex-1">
-                      <p className="mb-2 text-sm font-medium text-amber-600">{entry.date}</p>
-                      <h3 className="text-xl font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:text-2xl">
+                      <p className="mb-1 text-xs font-medium text-amber-600 sm:text-sm">{entry.date}</p>
+                      <h3 className="text-base font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:text-lg">
                         {entry.title}
                       </h3>
                     </div>
-                    <svg className="h-6 w-6 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
@@ -213,10 +213,10 @@ export default async function Home() {
               ))}
             </div>
 
-            <div className="mt-10 text-center">
+            <div className="mt-6 text-center sm:mt-8">
               <Link
                 href="/travel-resources"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-8 py-3 font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-6 py-2.5 text-sm font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white sm:px-8 sm:py-3"
               >
                 View All Resources
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -228,37 +228,37 @@ export default async function Home() {
         </section>
 
         {/* Stories Section */}
-        <section className="border-t border-slate-100 py-20 sm:py-28">
+        <section className="border-t border-slate-100 py-10 sm:py-14">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
-            <div className="mb-12 text-center">
-              <h2 className="mb-3 text-3xl font-semibold text-slate-900 sm:text-4xl">
+            <div className="mb-6 text-center sm:mb-8">
+              <h2 className="mb-2 text-2xl font-semibold text-slate-900 sm:text-3xl">
                 Latest Stories
               </h2>
-              <p className="text-slate-600">
-                Travel experiences and adventures from around the world
+              <p className="text-sm text-slate-600 sm:text-base">
+                Travel experiences from around the world
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {latestStories.map((story) => (
                 <Link
                   key={story.slug}
                   href={`/stories/${story.slug}`}
-                  className="group block rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-amber-300 hover:shadow-lg sm:p-8"
+                  className="group block rounded-xl border border-slate-200 bg-white p-4 transition-all hover:border-amber-300 hover:shadow-lg sm:p-6"
                 >
-                  <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-start justify-between gap-3">
                     <div className="flex-1">
-                      <div className="mb-2 flex flex-wrap items-center gap-2 text-sm">
+                      <div className="mb-1 flex flex-wrap items-center gap-1.5 text-xs sm:gap-2 sm:text-sm">
                         <span className="font-medium text-amber-600">{story.city}, {story.country}</span>
                         <span className="text-slate-300">•</span>
                         <span className="text-slate-500">{story.date}</span>
                       </div>
-                      <h3 className="mb-2 text-xl font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:text-2xl">
+                      <h3 className="mb-1 text-base font-semibold text-slate-900 transition-colors group-hover:text-amber-600 sm:mb-2 sm:text-lg">
                         {story.title}
                       </h3>
-                      <p className="text-slate-600">{story.excerpt}</p>
+                      <p className="text-sm text-slate-600 line-clamp-2">{story.excerpt}</p>
                     </div>
-                    <svg className="h-6 w-6 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-amber-500 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
@@ -266,10 +266,10 @@ export default async function Home() {
               ))}
             </div>
 
-            <div className="mt-10 text-center">
+            <div className="mt-6 text-center sm:mt-8">
               <Link
                 href="/stories"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-8 py-3 font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-6 py-2.5 text-sm font-medium text-slate-900 transition-all hover:bg-slate-900 hover:text-white sm:px-8 sm:py-3"
               >
                 View All Stories
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -283,7 +283,7 @@ export default async function Home() {
 
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
           <div className="flex flex-col items-center justify-between gap-8 sm:flex-row">
             {/* Brand */}
             <div className="flex items-center gap-3">
@@ -339,8 +339,8 @@ export default async function Home() {
           </div>
 
           {/* Copyright */}
-          <div className="mt-8 border-t border-slate-100 pt-8 text-center">
-            <p className="text-sm text-slate-500">
+          <div className="mt-6 border-t border-slate-100 pt-6 text-center">
+            <p className="text-xs text-slate-500 sm:text-sm">
               © {new Date().getFullYear()} Miles Go Round. All rights reserved.
             </p>
           </div>
