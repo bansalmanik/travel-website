@@ -5,29 +5,52 @@ import { getTravelResourceEntries } from "@/lib/contentData";
 
 const travelWithPointsHighlights = [
   {
-    title: "Credit Cards",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
+    title: "Start with the right card",
+    description: "Build a starter wallet, unlock welcome bonuses, and set up autopay habits that earn quietly.",
     href: "/travel-with-points/credit-cards",
-    accent: "bg-amber-100 text-amber-900",
+    accent: "from-amber-500/80 via-amber-400/60 to-amber-300/50",
   },
   {
-    title: "Hotel Programs",
+    title: "Lock in luxe stays",
     description:
-      "Discover how each hotel loyalty program works—earn points, unlock elite perks, and stay in luxury for less.",
+      "Pick the best hotel partners for your style, stack elite perks, and stretch points for longer getaways.",
     href: "/travel-with-points/hotel-programs",
-    accent: "bg-sky-100 text-sky-900",
+    accent: "from-sky-500/80 via-sky-400/60 to-cyan-300/50",
   },
   {
-    title: "Flight Programs",
-    description: "Learn how to earn miles, redeem flights, and fly better without spending more.",
+    title: "Fly further for less",
+    description: "Route-shop like a pro, pair alliances with transferrable points, and turn miles into better cabins.",
     href: "/travel-with-points/flight-programs",
-    accent: "bg-emerald-100 text-emerald-900",
+    accent: "from-emerald-500/80 via-emerald-400/60 to-lime-300/50",
   },
   {
-    title: "Points Conversion",
-    description: "Compare transfer partners, conversion ratios, and send flexible points with confidence.",
+    title: "Move points with intent",
+    description: "Translate currencies, compare partner ratios, and transfer only when the sweet spot is ready.",
     href: "/pointsconversion",
-    accent: "bg-purple-100 text-purple-900",
+    accent: "from-purple-500/80 via-fuchsia-400/60 to-violet-300/50",
+  },
+];
+
+const travelTools = [
+  {
+    title: "Trip blueprints",
+    description: "Weekend hops, honeymoons, and annual family trips—mix cash and points with confidence.",
+    icon: "🧭",
+  },
+  {
+    title: "Status ladder",
+    description: "See which elite tiers are worth chasing, and how to shortcut with perks and partners.",
+    icon: "📈",
+  },
+  {
+    title: "Stacking recipes",
+    description: "Combine airline promos, hotel promos, and card offers into one smooth booking flow.",
+    icon: "🧪",
+  },
+  {
+    title: "Conversion radar",
+    description: "Real-time transfer tips that highlight bonuses so you move points only when it matters.",
+    icon: "📡",
   },
 ];
 
@@ -147,55 +170,125 @@ export default async function Home() {
         <section aria-labelledby="travel-with-points-heading" className="py-16 sm:py-24">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             {/* Section Header */}
-            <div className="mb-12 text-center">
-              <p className="mb-3 text-xs font-medium uppercase tracking-widest text-amber-600">
-                Travel With Points
-              </p>
-              <h2 id="travel-with-points-heading" className="mb-4 text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">
-                Turn loyalty into adventures
-              </h2>
-              <p className="mx-auto max-w-2xl text-slate-600">
-                Earn smarter. Redeem better. Fly further.
-              </p>
+            <div className="mb-12 flex flex-col gap-6 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-900 to-slate-800 px-6 py-8 text-center text-white shadow-xl ring-1 ring-white/10 sm:px-10 sm:text-left lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-amber-200/90">
+                  Travel With Points
+                </p>
+                <h2 id="travel-with-points-heading" className="mb-3 text-2xl font-semibold sm:text-3xl md:text-4xl">
+                  Build a sleek travel stack
+                </h2>
+                <p className="max-w-2xl text-sm text-slate-100 sm:text-base">
+                  Skip the redundancy and jump straight into the systems that make modern trips feel effortless—earn, transfer, and redeem without the clutter.
+                </p>
+              </div>
+              <div className="grid w-full max-w-xl grid-cols-2 gap-3 text-left sm:grid-cols-2 lg:max-w-lg">
+                {travelTools.map((tool) => (
+                  <div key={tool.title} className="flex gap-3 rounded-2xl bg-white/10 p-4 backdrop-blur-sm ring-1 ring-white/15">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-xl">{tool.icon}</span>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{tool.title}</p>
+                      <p className="text-xs text-slate-200/80">{tool.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Cards Grid */}
-            <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {travelWithPointsHighlights.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="mb-4">
-                    <span className={`inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-semibold ${item.accent}`}>
-                      {item.title}
-                    </span>
+            <div className="mb-12 grid gap-6 lg:grid-cols-[1.1fr_1fr]">
+              <div className="flex flex-col gap-4 rounded-3xl bg-white p-6 shadow-lg ring-1 ring-slate-100 sm:p-8">
+                <p className="inline-flex w-fit items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700 ring-1 ring-amber-100">
+                  Modern journey design
+                </p>
+                <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">From the first card swipe to the cabin seat</h3>
+                <p className="text-sm text-slate-600 sm:text-base">
+                  Curated flows show you the sequence that actually works: earn with the right card, funnel rewards into the most generous partners, and redeem only when the sweet spot is live. No duplicate links—just the steps that matter.
+                </p>
+                <div className="mt-2 space-y-3">
+                  {travelWithPointsHighlights.map((item, index) => (
+                    <Link
+                      key={item.title}
+                      href={item.href}
+                      className="group flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50/70 p-4 transition-all hover:-translate-y-0.5 hover:border-slate-200 hover:bg-white"
+                    >
+                      <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-xs font-bold text-white">
+                        0{index + 1}
+                      </span>
+                      <div className="flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-sm font-semibold text-slate-900">{item.title}</span>
+                          <span
+                            className={`flex h-6 items-center rounded-full bg-gradient-to-r px-2 text-[11px] font-semibold uppercase tracking-wide text-slate-900 ${item.accent}`}
+                          >
+                            Step {index + 1}
+                          </span>
+                        </div>
+                        <p className="text-sm text-slate-600">{item.description}</p>
+                        <span className="mt-1 inline-flex items-center text-xs font-semibold text-amber-600 transition-colors group-hover:text-amber-700">
+                          View the play
+                          <svg className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 rounded-3xl bg-slate-900 p-6 text-white shadow-lg ring-1 ring-slate-800/60 sm:p-8">
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-amber-200/80">Signals</p>
+                    <h3 className="text-xl font-semibold sm:text-2xl">Live-ready moves</h3>
                   </div>
-                  <p className="mb-4 text-sm leading-relaxed text-slate-600">
-                    {item.description}
-                  </p>
-                  <span className="inline-flex items-center text-sm font-medium text-slate-900 transition-colors group-hover:text-amber-600">
-                    Learn more
-                    <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  <Link
+                    href="/travel-with-points/miles-and-points-explained"
+                    className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold text-white transition hover:bg-white/15"
+                  >
+                    Miles & Points 101
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </span>
-                </Link>
-              ))}
-            </div>
+                  </Link>
+                </div>
 
-            {/* CTA */}
-            <div className="text-center">
-              <Link
-                href="/travel-with-points/miles-and-points-explained"
-                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-lg"
-              >
-                Miles & Points Explained
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {travelWithPointsHighlights.map((item) => (
+                    <Link
+                      key={`${item.title}-badge`}
+                      href={item.href}
+                      className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br p-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-amber-200/10 ${item.accent}`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="rounded-full bg-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
+                          {item.title.split(" ")[0]}
+                        </span>
+                        <svg className="h-4 w-4 text-white/80 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                      <p className="mt-3 text-sm text-white/90">{item.description}</p>
+                    </Link>
+                  ))}
+                </div>
+
+                <div className="mt-auto flex flex-col gap-3 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="text-sm font-semibold text-white">Plan once, reuse forever</p>
+                    <p className="text-xs text-slate-200/80">Save your favorite routes and transfer partners so every booking takes fewer taps.</p>
+                  </div>
+                  <Link
+                    href="/pointsconversion"
+                    className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-xs font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:shadow-lg"
+                  >
+                    Open converter
+                    <svg className="ml-1.5 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
