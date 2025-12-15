@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { getTravelResourceEntries } from "@/lib/contentData";
 import { getAllStorySummaries } from "@/app/stories/data";
+import { getAllBlogPosts } from "@/lib/blog";
 
 const quickLinks = [
   { label: "Credit Cards", href: "/travel-with-points/credit-cards", icon: "💳" },
@@ -19,9 +20,12 @@ export default async function Home() {
     url: `/travel-resources/${entry.slug}`,
     heroImage: entry.heroImage,
   }));
-  
+
   const allStories = await getAllStorySummaries();
   const latestStories = allStories.slice(0, 2);
+
+  const allBlogPosts = await getAllBlogPosts();
+  const latestBlogPosts = allBlogPosts.slice(0, 3);
   
   const heroImageSrc = "/images/content/cover_1.jpg";
 
@@ -269,6 +273,61 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
               >
                 View all stories
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Blog Section */}
+        <section className="border-t border-slate-100 py-10 sm:py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="mb-6 text-center sm:mb-8">
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Latest from Blog</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Fresh guides on credit cards, hotels, airlines, and travel tips to maximize your rewards.
+              </p>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
+              {latestBlogPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={post.url}
+                  className="group overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-lg"
+                  style={{ aspectRatio: "4/3" }}
+                >
+                  <div className="relative h-full w-full">
+                    {post.heroImage?.src && (
+                      <Image
+                        src={post.heroImage.src}
+                        alt={post.heroImage.alt}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 640px) 100vw, 33vw"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                    <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5">
+                      <p className="mb-1 text-xs font-medium uppercase tracking-wide text-white/70">
+                        {post.category.replace("-", " ")}
+                      </p>
+                      <h3 className="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-white/90 sm:text-base">
+                        {post.title}
+                      </h3>
+                      <p className="mt-1 text-xs text-white/80 line-clamp-2">{post.excerpt}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-6 text-center sm:mt-8">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+              >
+                View all articles
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
