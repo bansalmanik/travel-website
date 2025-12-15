@@ -1198,7 +1198,7 @@
             "enabled": true
           },
           {
-            "to": "ALL – Accor Live Limitless",
+            "to": "Accor Live Limitless",
             "insight": "Standard hotel transfer at 1 RP = 0.5 point.",
             "enabled": true
           },
@@ -1324,7 +1324,7 @@
         "rate": "2 Points : 1 Partner Point (Hotels)",
         "partners": [
           {
-            "to": "ALL – Accor Live Limitless",
+            "to": "Accor Live Limitless",
             "insight": "Devalued 2:1 hotel transfer.",
             "enabled": true
           },
@@ -1450,7 +1450,7 @@
         "rate": "2 Points : 1 Partner Point (Hotels)",
         "partners": [
           {
-            "to": "ALL – Accor Live Limitless",
+            "to": "Accor Live Limitless",
             "insight": "Devalued 2:1 hotel transfer.",
             "enabled": true
           },
@@ -2347,7 +2347,7 @@
   },
   {
     "program": "Accor",
-    "from": "ALL – Accor Live Limitless",
+    "from": "Accor Live Limitless",
     "rates": [
       {
         "rate": "2000 ALL Points : 1000 Miles",

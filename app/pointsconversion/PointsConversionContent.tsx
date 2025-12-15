@@ -12,6 +12,19 @@ const ALL_PROGRAMS_OPTION = "All Programs";
 const getProgramName = (conversion: Conversion) =>
   conversion.program ?? "Other";
 
+// Program logo mapping - maps program names to their logo paths
+const PROGRAM_LOGOS: Record<string, string> = {
+  "Axis": "/Logo/axis_logo.webp",
+  "HDFC": "/Logo/hdfc_logo.webp",
+  "ICICI": "/Logo/icici_logo.webp",
+  "IndusInd": "/Logo/indusind_logo.webp",
+  "IDFC": "/Logo/idfc_logo.webp",
+  "American Express": "/Logo/amex_logo.webp",
+  "Marriott Bonvoy": "/Logo/marriott_bonvoy_logo.webp",
+  "Accor Live Limitless": "/Logo/accor_live_limitless.webp",
+    "Air India": "/Logo/maharaja_club_logo.webp",
+};
+
 type PartnerRow = {
   to: string;
   rate: string;
@@ -169,15 +182,28 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           <div className="flex gap-2">
             <div className="flex-1">
               <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-slate-400">Program</p>
-              <select
-                value={selectedProgramName}
-                onChange={handleProgramChange}
-                className="w-full cursor-pointer rounded-lg bg-slate-50 px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              >
-                {programOptions.map((option) => (
-                  <option key={option} value={option}>{option}</option>
-                ))}
-              </select>
+              <div className="relative">
+                {selectedProgramName && selectedProgramName !== ALL_PROGRAMS_OPTION && PROGRAM_LOGOS[selectedProgramName] && (
+                  <div className="pointer-events-none absolute left-2 top-1/2 z-10 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
+                    <img
+                      src={PROGRAM_LOGOS[selectedProgramName]}
+                      alt={selectedProgramName}
+                      className="h-5 w-5 rounded-full object-cover"
+                    />
+                  </div>
+                )}
+                <select
+                  value={selectedProgramName}
+                  onChange={handleProgramChange}
+                  className={`w-full cursor-pointer rounded-lg bg-slate-50 py-2 text-sm font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                    selectedProgramName && selectedProgramName !== ALL_PROGRAMS_OPTION && PROGRAM_LOGOS[selectedProgramName] ? 'pl-10 pr-3' : 'px-3'
+                  }`}
+                >
+                  {programOptions.map((option) => (
+                    <option key={option} value={option}>{option}</option>
+                  ))}
+                </select>
+              </div>
             </div>
 
             <div className="flex-1">
@@ -202,17 +228,30 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           {/* Transfer To */}
           <div className="mt-3">
             <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-slate-400">Transfer To</p>
-            <select
-              value={normalizedSelectedTo}
-              onChange={handleToChange}
-              className="w-full cursor-pointer rounded-lg bg-slate-50 px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              disabled={toOptions.length === 0}
-            >
-              <option value="">All Partners</option>
-              {toOptions.map((option) => (
-                <option key={option} value={option}>{option}</option>
-              ))}
-            </select>
+            <div className="relative">
+              {normalizedSelectedTo && PROGRAM_LOGOS[normalizedSelectedTo] && (
+                <div className="pointer-events-none absolute left-2 top-1/2 z-10 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
+                  <img
+                    src={PROGRAM_LOGOS[normalizedSelectedTo]}
+                    alt={normalizedSelectedTo}
+                    className="h-5 w-5 rounded-full object-cover"
+                  />
+                </div>
+              )}
+              <select
+                value={normalizedSelectedTo}
+                onChange={handleToChange}
+                className={`w-full cursor-pointer rounded-lg bg-slate-50 py-2 text-sm font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                  normalizedSelectedTo && PROGRAM_LOGOS[normalizedSelectedTo] ? 'pl-10 pr-3' : 'px-3'
+                }`}
+                disabled={toOptions.length === 0}
+              >
+                <option value="">All Partners</option>
+                {toOptions.map((option) => (
+                  <option key={option} value={option}>{option}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {/* Points Input Below */}
@@ -277,6 +316,15 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   <div className="flex items-center justify-between gap-3">
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2">
+                        {PROGRAM_LOGOS[partner.to] && (
+                          <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-slate-100 p-1">
+                            <img
+                              src={PROGRAM_LOGOS[partner.to]}
+                              alt={partner.to}
+                              className="h-full w-full rounded-full object-cover"
+                            />
+                          </div>
+                        )}
                         <p className="truncate text-sm font-semibold text-slate-800">{partner.to}</p>
                         <span className="flex-shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[9px] font-medium text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600">
                           {isExpanded ? "tap to hide" : "tap for details"}
