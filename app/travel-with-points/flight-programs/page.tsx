@@ -69,7 +69,7 @@ export default async function FlightProgramsPage() {
                       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-700">{program.alliance}</p>
                       <h3 className="text-xl font-semibold text-slate-900">
                         <Link
-                          href={`/travel-with-points/flight-programs/${program.slug}`}
+                          href={`/${program.slug}`}
                           className="text-slate-900 underline-offset-4 transition hover:text-emerald-800 hover:underline"
                         >
                           {program.name}
@@ -90,7 +90,7 @@ export default async function FlightProgramsPage() {
                     ) : null}
                   </div>
                   <Link
-                    href={`/travel-with-points/flight-programs/${program.slug}`}
+                    href={`/${program.slug}`}
                     className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-800"
                   >
                     Explore loyalty guide

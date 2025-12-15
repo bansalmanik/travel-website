@@ -54,7 +54,7 @@ export default async function HotelProgramsPage() {
                       <p className="text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-sky-700 sm:text-xs">{program.footprint}</p>
                       <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
                         <Link
-                          href={`/travel-with-points/hotel-programs/${program.slug}`}
+                          href={`/${program.slug}`}
                           className="text-slate-900 underline-offset-4 transition hover:text-sky-800 hover:underline"
                         >
                           {program.name}
@@ -72,7 +72,7 @@ export default async function HotelProgramsPage() {
                     ) : null}
                   </div>
                   <Link
-                    href={`/travel-with-points/hotel-programs/${program.slug}`}
+                    href={`/${program.slug}`}
                     className="mt-6 inline-flex items-center text-sm font-semibold text-sky-800 sm:text-base"
                   >
                     View program guide

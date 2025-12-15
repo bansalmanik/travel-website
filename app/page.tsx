@@ -16,7 +16,7 @@ export default async function Home() {
   const journalHighlights = travelResourceEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
     date: entry.displayDate,
-    url: `/travel-resources/${entry.slug}`,
+    url: `/${entry.slug}`,
     heroImage: entry.heroImage,
   }));
   
@@ -329,7 +329,7 @@ export default async function Home() {
               {latestStories.map((story) => (
                 <Link
                   key={story.slug}
-                  href={`/stories/${story.slug}`}
+                  href={`/${story.slug}`}
                   className="group relative overflow-hidden rounded-lg bg-slate-100 transition-transform hover:scale-[1.02]"
                   style={{ aspectRatio: '16/9' }}
                 >

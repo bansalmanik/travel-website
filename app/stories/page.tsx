@@ -32,7 +32,7 @@ export default async function StoriesPage() {
               key={post.slug}
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <Link href={`/stories/${post.slug}`} className="flex h-full flex-col">
+              <Link href={`/${post.slug}`} className="flex h-full flex-col">
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-3xl bg-zinc-100">
                   <Image
                     src={post.coverImage.src}

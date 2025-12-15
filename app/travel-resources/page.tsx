@@ -70,7 +70,7 @@ export default async function TravelResourcesPage() {
               className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl focus-within:-translate-y-1 focus-within:shadow-xl"
             >
               <Link
-                href={`/travel-resources/${entry.slug}`}
+                href={`/${entry.slug}`}
                 className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-500 focus-visible:outline-offset-4"
                 aria-label={`Read ${entry.title}`}
               />

@@ -1,114 +1,38 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 
 import GallerySlider from "@/app/components/gallery-slider";
-import { getTravelResourceEntries } from "@/lib/contentData";
 
-export type PageProps = {
-  params: Promise<{ slug: string }>;
+type TravelResource = {
+  slug: string;
+  title: string;
+  seoDescription: string;
+  heroImage: { src: string; alt: string };
+  displayDate: string;
+  author: string;
+  summary?: string;
+  sections: Array<{
+    heading: string;
+    body: string[];
+    images?: Array<{ src: string; alt: string; caption?: string }>;
+    image?: { src: string; alt: string; caption?: string };
+  }>;
+  videoUrl?: string;
+  gallery?: Array<{ src: string; alt: string; caption?: string }>;
+  publishedOn: string;
 };
 
-export async function generateStaticParams() {
-  const resources = await getTravelResourceEntries();
-  return resources.map((resource) => ({
-    slug: resource.slug,
-  }));
-}
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const decodedSlug = decodeURIComponent(slug);
-  const travelResources = await getTravelResourceEntries();
-  const travelResource = travelResources.find(
-    (entry) => entry.slug === decodedSlug
-  );
-
-  if (!travelResource) {
-    return {
-      title: "Resource not found | Miles Go Round",
-    };
-  }
-
-  const pageUrl = `https://example.com/travel-resources/${travelResource.slug}`;
-  const ogImages = [travelResource.heroImage, ...(travelResource.gallery ?? [])];
-
-  return {
-    title: `${travelResource.title} | Miles Go Round`,
-    description: travelResource.seoDescription,
-    alternates: {
-      canonical: `/travel-resources/${travelResource.slug}`,
-    },
-    openGraph: {
-      title: travelResource.title,
-      description: travelResource.seoDescription,
-      type: "article",
-      url: pageUrl,
-      images: ogImages.map((image) => ({
-        url: image.src,
-        alt: image.alt,
-      })),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: travelResource.title,
-      description: travelResource.seoDescription,
-      images: ogImages.map((image) => image.src),
-    },
-  };
-}
-
-export default async function TravelResourceDetailPage({ params }: PageProps) {
-  const { slug } = await params;
-  const decodedSlug = decodeURIComponent(slug);
-  const travelResources = await getTravelResourceEntries();
-  const travelResource = travelResources.find(
-    (entry) => entry.slug === decodedSlug
-  );
-
-  if (!travelResource) {
-    notFound();
-  }
-
-  const pageUrl = `https://example.com/travel-resources/${travelResource.slug}`;
-
-  const imageList = [travelResource.heroImage, ...(travelResource.gallery ?? [])];
-
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: travelResource.title,
-    description: travelResource.seoDescription,
-    datePublished: travelResource.publishedOn,
-    author: {
-      "@type": "Person",
-      name: travelResource.author,
-    },
-    image: imageList.map((image) => image.src),
-    url: pageUrl,
-    video: travelResource.videoUrl
-      ? {
-          "@type": "VideoObject",
-          name: `${travelResource.title} travel resource video`,
-          embedUrl: travelResource.videoUrl,
-          thumbnailUrl: imageList[0]?.src,
-        }
-      : undefined,
-  };
+export default function TravelResourceContent({ resource }: { resource: TravelResource }) {
+  const imageList = [resource.heroImage, ...(resource.gallery ?? [])];
 
   return (
     <main id="top" className="bg-white text-zinc-900">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
       <article className="bg-white text-zinc-900">
         <div className="relative isolate overflow-hidden">
           <div className="relative h-[24rem] w-full">
             <Image
-              src={travelResource.heroImage.src}
-              alt={travelResource.heroImage.alt}
+              src={resource.heroImage.src}
+              alt={resource.heroImage.alt}
               fill
               priority
               className="object-cover"
@@ -118,23 +42,23 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
           </div>
           <div className="absolute inset-0 flex items-end justify-center pb-14">
             <div className="mx-auto flex w-full max-w-4xl flex-col gap-4 px-6 text-center text-white">
-              <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">{travelResource.title}</h1>
+              <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">{resource.title}</h1>
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
-                <span>{travelResource.displayDate}</span>
+                <span>{resource.displayDate}</span>
                 <span className="hidden sm:inline">•</span>
-                <span>{travelResource.author}</span>
+                <span>{resource.author}</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16">
-          {travelResource.summary ? (
-            <p className="text-lg leading-relaxed text-zinc-700">{travelResource.summary}</p>
+          {resource.summary ? (
+            <p className="text-lg leading-relaxed text-zinc-700">{resource.summary}</p>
           ) : null}
 
           <div className="space-y-14 text-lg leading-relaxed text-zinc-700">
-            {travelResource.sections.map((section) => {
+            {resource.sections.map((section) => {
               const mediaItems = section.images?.length
                 ? section.images
                 : section.image
@@ -182,13 +106,13 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
             })}
           </div>
 
-          {travelResource.videoUrl ? (
+          {resource.videoUrl ? (
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-zinc-900">Watch the journey</h2>
               <div className="aspect-video w-full overflow-hidden rounded-2xl bg-zinc-100">
                 <iframe
-                  src={travelResource.videoUrl}
-                  title={`${travelResource.title} travel video`}
+                  src={resource.videoUrl}
+                  title={`${resource.title} travel video`}
                   className="h-full w-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -199,10 +123,10 @@ export default async function TravelResourceDetailPage({ params }: PageProps) {
             </section>
           ) : null}
 
-          {travelResource.gallery?.length ? (
+          {resource.gallery?.length ? (
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-zinc-900">Photo highlights</h2>
-              <GallerySlider images={travelResource.gallery} />
+              <GallerySlider images={resource.gallery} />
             </section>
           ) : null}
 

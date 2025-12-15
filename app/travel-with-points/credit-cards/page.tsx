@@ -59,7 +59,7 @@ export default async function CreditCardsPage() {
             {cards.map((card) => (
               <Link
                 key={card.slug}
-                href={`/travel-with-points/credit-cards/${card.slug}`}
+                href={`/${card.slug}`}
                 className="group flex flex-col rounded-xl border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-1 hover:border-blue-300/60 hover:bg-white hover:shadow-md"
               >
                 {/* Card Image */}

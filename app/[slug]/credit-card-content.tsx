@@ -1,8 +1,6 @@
-import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import type { ReactNode } from "react";
 
 import type {
   AnnualFee,
@@ -15,7 +13,6 @@ import type {
   RichContent,
   RichContentBlock,
 } from "@/app/travel-with-points/credit-cards/types";
-import { getCreditCardContent } from "@/lib/contentData";
 
 type SectionWrapperProps = {
   title: string;
@@ -33,19 +30,6 @@ function SectionWrapper({ title, description, children }: SectionWrapperProps) {
       {children}
     </section>
   );
-}
-
-async function getCards(): Promise<Card[]> {
-  const { cards } = await getCreditCardContent();
-
-  return cards;
-}
-
-export async function generateStaticParams() {
-  const cards = await getCards();
-  return cards.map((card) => ({
-    slug: card.slug,
-  }));
 }
 
 function formatAnnualFee(annualFee: AnnualFee) {
@@ -94,32 +78,6 @@ function hasRichContent(content?: RichContent) {
 
     return false;
   });
-}
-
-function summarizeContent(content?: RichContent) {
-  if (!content) return "";
-
-  const parts: string[] = [];
-
-  content.forEach((block) => {
-    if (block.type === "paragraphs" && block.paragraphs.length) {
-      parts.push(block.paragraphs.join(" "));
-    }
-
-    if (block.type === "bullets" && block.bullets.length) {
-      parts.push(block.bullets.join("; "));
-    }
-
-    if (block.type === "table" && hasTableContent(block)) {
-      parts.push(
-        block.table.rows
-          .map((row) => row.filter(Boolean).join(" - "))
-          .join("; ")
-      );
-    }
-  });
-
-  return parts.join(" ").trim();
 }
 
 function RichContentBlocks({ content }: { content: RichContent }) {
@@ -382,133 +340,9 @@ function ApplyNowSection({ applyNow }: { applyNow: CardApplyNow }) {
   );
 }
 
-type PageProps = {
-  params: Promise<{ slug: string }>;
-};
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const decodedSlug = decodeURIComponent(slug);
-  const cards = await getCards();
-  const card = cards.find((item) => item.slug === decodedSlug);
-
-  if (!card) {
-    return {
-      title: "Credit card not found | Travel with Points"
-    };
-  }
-
-  const imageSrc = card.media?.cardImage?.src
-    ? `https://example.com${card.media.cardImage.src}`
-    : undefined;
-
-  return {
-    title: `${card.name} travel rewards guide | Travel with Points`,
-    description: card.seoDescription,
-    keywords: [
-      card.name,
-      `${card.issuer} credit card`,
-      "travel credit card review",
-      "points strategy",
-      "reward card benefits"
-    ],
-    alternates: {
-      canonical: `/travel-with-points/credit-cards/${card.slug}`
-    },
-    openGraph: {
-      title: `${card.name} travel rewards guide`,
-      description: card.seoDescription,
-      type: "article",
-      url: `https://example.com/travel-with-points/credit-cards/${card.slug}`,
-      images: imageSrc
-        ? [
-            {
-              url: imageSrc,
-              alt: card.media?.cardImage?.alt ?? card.name
-            }
-          ]
-        : undefined
-    },
-    twitter: {
-      card: imageSrc ? "summary_large_image" : "summary",
-      title: `${card.name} travel rewards guide`,
-      description: card.seoDescription,
-      images: imageSrc ? [imageSrc] : undefined
-    }
-  };
-}
-
-export default async function CreditCardDetailPage({ params }: PageProps) {
-  const { slug } = await params;
-  const decodedSlug = decodeURIComponent(slug);
-  const cards = await getCards();
-  const card = cards.find((item) => item.slug === decodedSlug);
-
-  if (!card) {
-    notFound();
-  }
-
-  const welcomeSection = card.detailSections?.find(
-    (section): section is CardSection => isCardSection(section) && section.id.includes("welcome")
-  );
-  const offerDescription = [
-    summarizeContent(welcomeSection?.content),
-    ...(welcomeSection?.subsections?.map((subsection) => summarizeContent(subsection.content)) ?? [])
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .trim();
-
-  const structuredData: Record<string, unknown> = {
-    "@context": "https://schema.org",
-    "@type": "FinancialProduct",
-    name: card.name,
-    issuer: card.issuer,
-    description: card.summary,
-    url: `https://example.com/travel-with-points/credit-cards/${card.slug}`,
-    feesAndCommissionsSpecification: formatAnnualFee(card.annualFee)
-  };
-
-  if (offerDescription) {
-    structuredData.offers = {
-      "@type": "Offer",
-      name: "Card benefits",
-      description: offerDescription
-    };
-  }
-
-  const breadcrumbStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Travel with Points",
-        item: "https://example.com/travel-with-points"
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Credit cards",
-        item: "https://example.com/travel-with-points/credit-cards"
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: card.name,
-        item: `https://example.com/travel-with-points/credit-cards/${card.slug}`
-      }
-    ]
-  };
-
+export default function CreditCardContent({ card }: { card: Card }) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 text-slate-900">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
-      />
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-6 px-4 py-12 sm:gap-8 sm:px-6 sm:py-12">
         <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
           <ol className="flex flex-wrap items-center gap-2">
