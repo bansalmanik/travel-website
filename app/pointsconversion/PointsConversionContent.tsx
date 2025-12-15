@@ -172,31 +172,31 @@ export default function PointsConversionContent({ conversions }: PointsConversio
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
-      <div className="mx-auto max-w-2xl px-4 py-5">
+      <div className="mx-auto max-w-3xl px-4 py-8">
         {/* Header */}
-        <h1 className="mb-4 text-center text-lg font-bold text-slate-800">✨ Points Calculator</h1>
+        <h1 className="mb-6 text-center text-2xl font-bold text-slate-800">✨ Points Calculator</h1>
 
         {/* Filters Card */}
-        <div className="mb-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
+        <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100">
           {/* Dropdowns Row */}
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             <div className="flex-1">
-              <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-slate-400">Program</p>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Program</p>
               <div className="relative">
                 {selectedProgramName && selectedProgramName !== ALL_PROGRAMS_OPTION && PROGRAM_LOGOS[selectedProgramName] && (
-                  <div className="pointer-events-none absolute left-2 top-1/2 z-10 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
+                  <div className="pointer-events-none absolute left-3 top-1/2 z-10 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                     <img
                       src={PROGRAM_LOGOS[selectedProgramName]}
                       alt={selectedProgramName}
-                      className="h-5 w-5 rounded-full object-cover"
+                      className="h-6 w-6 rounded-full object-cover"
                     />
                   </div>
                 )}
                 <select
                   value={selectedProgramName}
                   onChange={handleProgramChange}
-                  className={`w-full cursor-pointer rounded-lg bg-slate-50 py-2 text-sm font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
-                    selectedProgramName && selectedProgramName !== ALL_PROGRAMS_OPTION && PROGRAM_LOGOS[selectedProgramName] ? 'pl-10 pr-3' : 'px-3'
+                  className={`w-full cursor-pointer rounded-lg bg-slate-50 py-3 text-base font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                    selectedProgramName && selectedProgramName !== ALL_PROGRAMS_OPTION && PROGRAM_LOGOS[selectedProgramName] ? 'pl-12 pr-4' : 'px-4'
                   }`}
                 >
                   {programOptions.map((option) => (
@@ -207,11 +207,11 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             </div>
 
             <div className="flex-1">
-              <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-slate-400">Transfer From</p>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Transfer From</p>
               <select
                 value={normalizedSelectedFrom}
                 onChange={handleFromChange}
-                className="w-full cursor-pointer rounded-lg bg-slate-50 px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full cursor-pointer rounded-lg bg-slate-50 px-4 py-3 text-base font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 disabled={fromOptions.length === 0}
               >
                 {fromOptions.length === 0 ? (
@@ -226,23 +226,23 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           </div>
 
           {/* Transfer To */}
-          <div className="mt-3">
-            <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-slate-400">Transfer To</p>
+          <div className="mt-4">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Transfer To</p>
             <div className="relative">
               {normalizedSelectedTo && PROGRAM_LOGOS[normalizedSelectedTo] && (
-                <div className="pointer-events-none absolute left-2 top-1/2 z-10 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white">
+                <div className="pointer-events-none absolute left-3 top-1/2 z-10 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                   <img
                     src={PROGRAM_LOGOS[normalizedSelectedTo]}
                     alt={normalizedSelectedTo}
-                    className="h-5 w-5 rounded-full object-cover"
+                    className="h-6 w-6 rounded-full object-cover"
                   />
                 </div>
               )}
               <select
                 value={normalizedSelectedTo}
                 onChange={handleToChange}
-                className={`w-full cursor-pointer rounded-lg bg-slate-50 py-2 text-sm font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
-                  normalizedSelectedTo && PROGRAM_LOGOS[normalizedSelectedTo] ? 'pl-10 pr-3' : 'px-3'
+                className={`w-full cursor-pointer rounded-lg bg-slate-50 py-3 text-base font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                  normalizedSelectedTo && PROGRAM_LOGOS[normalizedSelectedTo] ? 'pl-12 pr-4' : 'px-4'
                 }`}
                 disabled={toOptions.length === 0}
               >
@@ -255,8 +255,8 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           </div>
 
           {/* Points Input Below */}
-          <div className="mt-3">
-            <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-slate-400">Points to Transfer</p>
+          <div className="mt-4">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Points to Transfer</p>
             <div className="relative">
               <input
                 type="number"
@@ -265,15 +265,15 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 value={transferPoints}
                 onChange={handleTransferPointsChange}
                 placeholder="5000"
-                className="w-full rounded-lg bg-slate-50 px-3 py-2.5 pr-10 text-center text-lg font-bold text-slate-700 placeholder:text-lg placeholder:font-bold placeholder:text-slate-400 transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400"
+                className="w-full rounded-lg bg-slate-50 px-4 py-3.5 pr-12 text-center text-xl font-bold text-slate-700 placeholder:text-xl placeholder:font-bold placeholder:text-slate-400 transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
               {transferPoints && (
                 <button
                   onClick={handleClearPoints}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 flex h-6 w-6 items-center justify-center rounded-full bg-slate-300 text-slate-600 transition hover:bg-slate-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-500"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 flex h-7 w-7 items-center justify-center rounded-full bg-slate-300 text-slate-600 transition hover:bg-slate-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-500"
                   aria-label="Clear points"
                 >
-                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
@@ -283,20 +283,20 @@ export default function PointsConversionContent({ conversions }: PointsConversio
         </div>
 
         {/* Results Count */}
-        <div className="mb-3 flex items-center gap-2">
-          <span className="rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-bold text-indigo-700">
+        <div className="mb-4 flex items-center gap-2">
+          <span className="rounded-full bg-indigo-100 px-3 py-1 text-sm font-bold text-indigo-700">
             {filteredPartnerRows.length}
           </span>
-          <span className="text-sm text-slate-600">transfer partners</span>
+          <span className="text-base text-slate-600">transfer partners</span>
         </div>
 
         {/* Results List - Single Column */}
         {filteredPartnerRows.length === 0 ? (
           <div className="rounded-2xl bg-white/70 py-16 text-center backdrop-blur">
-            <p className="text-slate-400">No partners available</p>
+            <p className="text-base text-slate-400">No partners available</p>
           </div>
         ) : (
-          <div className="space-y-2">
+          <div className="space-y-3">
             {filteredPartnerRows.map((partner) => {
               const key = `${partner.to}-${partner.rate}`;
               const projected = calculateProjectedPoints(partner.rate);
@@ -307,17 +307,17 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 <div
                   key={key}
                   onClick={() => setExpandedRow(isExpanded ? null : key)}
-                  className={`group cursor-pointer rounded-xl bg-white p-3 shadow-sm ring-1 transition-all active:scale-[0.99] ${
+                  className={`group cursor-pointer rounded-xl bg-white p-4 shadow-sm ring-1 transition-all active:scale-[0.99] ${
                     isExpanded 
                       ? "ring-emerald-300 shadow-md" 
                       : "ring-slate-100 hover:shadow-md hover:ring-slate-200"
                   }`}
                 >
-                  <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center justify-between gap-4">
                     <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2.5">
                         {PROGRAM_LOGOS[partner.to] && (
-                          <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-slate-100 p-1">
+                          <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-slate-100 p-1">
                             <img
                               src={PROGRAM_LOGOS[partner.to]}
                               alt={partner.to}
@@ -325,21 +325,21 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                             />
                           </div>
                         )}
-                        <p className="truncate text-sm font-semibold text-slate-800">{partner.to}</p>
-                        <span className="flex-shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[9px] font-medium text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600">
+                        <p className="truncate text-base font-semibold text-slate-800">{partner.to}</p>
+                        <span className="flex-shrink-0 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600">
                           {isExpanded ? "tap to hide" : "tap for details"}
                         </span>
                       </div>
-                      <p className="mt-0.5 text-[11px] text-slate-400">{partner.rate}</p>
+                      <p className="mt-1 text-xs text-slate-400">{partner.rate}</p>
                     </div>
                     
                     {formattedProjected ? (
-                      <div className="flex-shrink-0 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 px-3 py-1.5">
-                        <p className="text-sm font-bold text-white">{formattedProjected}</p>
+                      <div className="flex-shrink-0 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2">
+                        <p className="text-base font-bold text-white">{formattedProjected}</p>
                       </div>
                     ) : (
-                      <div className={`flex h-7 w-7 items-center justify-center rounded-lg transition-colors ${isExpanded ? "bg-emerald-100 text-emerald-600" : "bg-slate-50 text-slate-400 group-hover:bg-indigo-100 group-hover:text-indigo-500"}`}>
-                        <svg className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <div className={`flex h-9 w-9 items-center justify-center rounded-lg transition-colors ${isExpanded ? "bg-emerald-100 text-emerald-600" : "bg-slate-50 text-slate-400 group-hover:bg-indigo-100 group-hover:text-indigo-500"}`}>
+                        <svg className={`h-5 w-5 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
                       </div>
@@ -347,8 +347,8 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   </div>
 
                   {isExpanded && (
-                    <div className="mt-2 rounded-lg bg-slate-50 p-2.5">
-                      <p className="text-[11px] leading-relaxed text-slate-600">
+                    <div className="mt-3 rounded-lg bg-slate-50 p-3">
+                      <p className="text-sm leading-relaxed text-slate-600">
                         💡 {partner.insight}
                       </p>
                     </div>
