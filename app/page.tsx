@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { BlogPostCard } from "./components/blog/BlogPostCard";
 import { getTravelResourceEntries } from "@/lib/contentData";
 import { getAllStorySummaries } from "@/app/stories/data";
+import { getAllBlogPosts } from "@/lib/blog";
 
 const quickLinks = [
   { label: "Credit Cards", href: "/travel-with-points/credit-cards", icon: "💳" },
@@ -22,6 +24,9 @@ export default async function Home() {
   
   const allStories = await getAllStorySummaries();
   const latestStories = allStories.slice(0, 2);
+
+  const blogPosts = await getAllBlogPosts();
+  const latestBlogPosts = blogPosts.slice(0, 3);
   
   const heroImageSrc = "/images/content/cover_1.jpg";
 
@@ -269,6 +274,33 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
               >
                 View all stories
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-slate-100 py-10 sm:py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="mb-6 text-center sm:mb-8">
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Latest from Blog</h2>
+              <p className="mt-2 text-sm text-slate-600 sm:text-base">
+                Fresh guides on credit cards, hotels, airlines, and travel tips.
+              </p>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
+              {latestBlogPosts.map((post) => (
+                <BlogPostCard key={post.slug} post={post} />
+              ))}
+            </div>
+            <div className="mt-6 text-center sm:mt-8">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+              >
+                View all articles
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
