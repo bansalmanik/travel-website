@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { getHotelProgramContent } from "@/lib/contentData";
+import { getPostsByCategory } from "@/lib/blog";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Hotel loyalty programs guide | Travel with Points",
@@ -21,6 +23,7 @@ export const metadata: Metadata = {
 export default async function HotelProgramsPage() {
   const { programs, elitePaths, bookingTips } =
     await getHotelProgramContent();
+  const blogPosts = await getPostsByCategory('hotels');
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
@@ -95,6 +98,39 @@ export default async function HotelProgramsPage() {
             })}
           </div>
         </section>
+
+        {blogPosts.length > 0 && (
+          <section className="space-y-6">
+            <h2 className="text-2xl font-semibold text-slate-900">Related Articles</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {blogPosts.slice(0, 4).map((post) => (
+                <Link
+                  key={post.slug}
+                  href={post.url}
+                  className="group relative overflow-hidden rounded-xl bg-slate-100 transition-transform hover:scale-[1.02]"
+                  style={{ aspectRatio: '16/9' }}
+                >
+                  {post.heroImage?.src && (
+                    <Image
+                      src={post.heroImage.src}
+                      alt={post.heroImage.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col justify-end p-4">
+                    <h3 className="mb-1 text-base font-semibold leading-snug text-white">
+                      {post.title}
+                    </h3>
+                    <p className="text-xs text-white/80">{post.readTime}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </main>
   );
