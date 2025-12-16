@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllTravelResources } from "@/lib/travel-resources";
-import { getAllStorySummaries } from "@/app/stories/data";
+import { getAllStorySummaries } from "@/lib/stories";
 
 const quickLinks = [
   { label: "Credit Cards", href: "/travel-with-points/credit-cards", icon: "💳" },
