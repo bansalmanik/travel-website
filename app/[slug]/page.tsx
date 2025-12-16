@@ -8,7 +8,7 @@ import StoryContent from './story-content'
 import HotelProgramContent from './hotel-program-content'
 import FlightProgramContent from './flight-program-content'
 import CreditCardContent from './credit-card-content'
-import TravelResourceContent from './travel-resource-content'
+import TravelResourceMDXContent from './travel-resource-mdx-content'
 
 export async function generateStaticParams() {
   const slugs = await getAllContentSlugs()
@@ -79,6 +79,32 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         },
       }
     }
+    case 'travel-resource': {
+      const resource = content.data
+      return {
+        title: resource.seoTitle,
+        description: resource.seoDescription,
+        authors: [{ name: resource.author }],
+        openGraph: {
+          title: resource.seoTitle,
+          description: resource.seoDescription,
+          type: 'article',
+          publishedTime: resource.publishedOn,
+          authors: [resource.author],
+          images: [{ url: resource.heroImage.src, alt: resource.heroImage.alt }],
+          url: `https://milesgoround.com/${slug}`,
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: resource.seoTitle,
+          description: resource.seoDescription,
+          images: [resource.heroImage.src],
+        },
+        alternates: {
+          canonical: `https://milesgoround.com/${slug}`,
+        },
+      }
+    }
     default:
       return {
         title: `${slug} | Miles Go Round`,
@@ -110,7 +136,7 @@ export default async function UnifiedContentPage({ params }: { params: Promise<{
     case 'credit-card':
       return <CreditCardContent card={content.data} />
     case 'travel-resource':
-      return <TravelResourceContent resource={content.data} />
+      return <TravelResourceMDXContent resource={content.data} />
     default:
       notFound()
   }

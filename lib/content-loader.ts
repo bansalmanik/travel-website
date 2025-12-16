@@ -4,9 +4,9 @@ import { getStoryBySlug, getAllStorySummaries } from '@/app/stories/data'
 import { 
   getCreditCardContent, 
   getFlightProgramContent, 
-  getHotelProgramContent,
-  getTravelResourceEntries 
+  getHotelProgramContent
 } from './contentData'
+import { getTravelResource, getAllTravelResources } from './travel-resources'
 import type { BlogPost } from './blog'
 import type { Story } from '@/app/stories/data'
 
@@ -78,9 +78,8 @@ export async function getContentBySlug(slug: string): Promise<UnifiedContent | n
     return { slug, type: 'credit-card', data: creditCard }
   }
 
-  // Try travel resource
-  const travelResources = await getTravelResourceEntries()
-  const travelResource = travelResources.find((r: any) => r.slug === slug)
+  // Try travel resource (MDX)
+  const travelResource = await getTravelResource(slug)
   if (travelResource) {
     return { slug, type: 'travel-resource', data: travelResource }
   }
@@ -114,9 +113,9 @@ export async function getAllContentSlugs(): Promise<string[]> {
   const creditCardContent = await getCreditCardContent()
   slugs.push(...creditCardContent.cards.map((c: any) => c.slug))
 
-  // Travel resources
-  const travelResources = await getTravelResourceEntries()
-  slugs.push(...travelResources.map((r: any) => r.slug))
+  // Travel resources (MDX)
+  const travelResources = await getAllTravelResources()
+  slugs.push(...travelResources.map(r => r.slug))
 
   return slugs
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getTravelResourceEntries } from "@/lib/contentData";
+import { getAllTravelResources } from "@/lib/travel-resources";
 
 const pageTitle = "Travel Resources Library | Miles Go Round";
 const pageDescription =
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 export default async function TravelResourcesPage() {
-  const travelResources = await getTravelResourceEntries();
+  const travelResources = await getAllTravelResources();
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -89,7 +89,7 @@ export default async function TravelResourcesPage() {
                   <span>{entry.readTime}</span>
                 </div>
                 <h2 className="text-2xl font-semibold text-slate-900">{entry.title}</h2>
-                <p className="text-sm leading-6 text-slate-600">{entry.summary}</p>
+                <p className="text-sm leading-6 text-slate-600">{entry.excerpt}</p>
               </div>
             </article>
           ))}

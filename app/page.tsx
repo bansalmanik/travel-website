@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getTravelResourceEntries } from "@/lib/contentData";
+import { getAllTravelResources } from "@/lib/travel-resources";
 import { getAllStorySummaries } from "@/app/stories/data";
 
 const quickLinks = [
@@ -12,7 +12,7 @@ const quickLinks = [
 ];
 
 export default async function Home() {
-  const travelResourceEntries = await getTravelResourceEntries();
+  const travelResourceEntries = await getAllTravelResources();
   const journalHighlights = travelResourceEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
     date: entry.displayDate,
