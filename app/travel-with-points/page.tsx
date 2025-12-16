@@ -69,9 +69,6 @@ export default function TravelWithPointsPage() {
           <h1 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
             Turn everyday spending into your next adventure
           </h1>
-          <p className="mx-auto max-w-2xl text-sm text-slate-600 sm:text-base">
-            Compare programs, map transfer routes, and pick the right cards to unlock outsized value on flights and stays. Everything is organized so you can move from idea to booked seat in minutes.
-          </p>
         </header>
 
         <section className="grid gap-5 rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-sm backdrop-blur sm:gap-6 sm:p-8 lg:grid-cols-3">
@@ -109,28 +106,6 @@ export default function TravelWithPointsPage() {
           ))}
         </section>
 
-        <section className="space-y-5">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">Quick win playbook</h2>
-            <Link
-              href="/travel-with-points/credit-cards"
-              className="hidden text-sm font-semibold text-slate-700 underline-offset-4 transition hover:text-slate-900 sm:inline-flex"
-            >
-              Browse starter cards →
-            </Link>
-          </div>
-          <div className="-mx-2 flex snap-x snap-mandatory gap-4 overflow-x-auto px-2 pb-2 sm:grid sm:snap-none sm:grid-cols-3 sm:overflow-visible">
-            {quickTips.map((tip) => (
-              <div
-                key={tip.title}
-                className="min-w-[72%] snap-center rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm backdrop-blur sm:min-w-0"
-              >
-                <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{tip.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-700">{tip.detail}</p>
-              </div>
-            ))}
-          </div>
-        </section>
       </div>
     </div>
   );
