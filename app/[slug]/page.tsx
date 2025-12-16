@@ -8,6 +8,7 @@ import StoryMdxContent from './story-mdx-content'
 import HotelProgramContent from './hotel-program-content'
 import FlightProgramContent from './flight-program-content'
 import CreditCardContent from './credit-card-content'
+import BankProgramContent from './bank-program-content'
 import TravelResourceMDXContent from './travel-resource-mdx-content'
 
 export async function generateStaticParams() {
@@ -135,6 +136,8 @@ export default async function UnifiedContentPage({ params }: { params: Promise<{
       return <FlightProgramContent program={content.data} />
     case 'credit-card':
       return <CreditCardContent card={content.data} />
+    case 'bank-program':
+      return <BankProgramContent program={content.data} />
     case 'travel-resource':
       return <TravelResourceMDXContent resource={content.data} />
     default:

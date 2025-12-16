@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "alliance partners"
   ],
   alternates: {
-    canonical: "/travel-with-points/flight-programs"
+    canonical: "/flight-programs"
   }
 };
 
@@ -111,18 +111,6 @@ export default async function FlightProgramsPage() {
                 </article>
               );
             })}
-          </div>
-        </section>
-
-        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Award booking playbook</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            {awardPlaybook.map((item) => (
-              <article key={item.title} className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
-                <p className="text-sm leading-6 text-slate-700">{item.detail}</p>
-              </article>
-            ))}
           </div>
         </section>
 

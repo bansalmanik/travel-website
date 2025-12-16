@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
   alternates: {
-    canonical: "/travel-with-points/bank-programs",
+    canonical: "/bank-programs",
   },
   openGraph: {
     title: pageTitle,
     description: pageDescription,
     type: "website",
-    url: "https://example.com/travel-with-points/bank-programs",
+    url: "https://example.com/bank-programs",
   },
   twitter: {
     card: "summary_large_image",
@@ -52,7 +52,7 @@ export default async function BankProgramsPage() {
           {programs.map((program) => (
             <Link
               key={program.slug}
-              href={`/travel-with-points/bank-programs/${program.slug}`}
+              href={`/${program.slug}`}
               className="group flex h-full flex-col gap-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-md"
             >
               <div className="space-y-4">

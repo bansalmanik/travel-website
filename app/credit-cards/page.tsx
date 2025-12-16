@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "transferable points"
   ],
   alternates: {
-    canonical: "/travel-with-points/credit-cards"
+    canonical: "/credit-cards"
   }
 };
 
@@ -109,18 +109,6 @@ export default async function CreditCardsPage() {
                   )}
                 </dl>
               </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Core principles</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            {cardStrategies.map((strategy) => (
-              <article key={strategy.title} className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-lg font-semibold text-slate-900">{strategy.title}</h3>
-                <p className="text-sm leading-6 text-slate-700">{strategy.description}</p>
-              </article>
             ))}
           </div>
         </section>

@@ -4,11 +4,12 @@ import { getStoryBySlug, getAllStorySummaries } from './stories'
 import { 
   getCreditCardContent, 
   getFlightProgramContent, 
-  getHotelProgramContent
+  getHotelProgramContent,
+  getBankProgramContent
 } from './contentData'
 import { getTravelResource, getAllTravelResources } from './travel-resources'
 
-export type ContentType = 'blog' | 'story' | 'hotel-program' | 'flight-program' | 'credit-card' | 'travel-resource'
+export type ContentType = 'blog' | 'story' | 'hotel-program' | 'flight-program' | 'credit-card' | 'bank-program' | 'travel-resource'
 
 export interface UnifiedContent {
   slug: string
@@ -19,8 +20,12 @@ export interface UnifiedContent {
 // Reserved routes that should NOT be handled by the catch-all
 export const RESERVED_ROUTES = [
   'about',
+  'bank-programs',
   'blog',
   'contact',
+  'credit-cards',
+  'flight-programs',
+  'hotel-programs',
   'learning',
   'pointsconversion',
   'privacy',
@@ -76,6 +81,13 @@ export async function getContentBySlug(slug: string): Promise<UnifiedContent | n
     return { slug, type: 'credit-card', data: creditCard }
   }
 
+  // Try bank program
+  const bankContent = await getBankProgramContent()
+  const bankProgram = bankContent.programs.find((p: any) => p.slug === slug)
+  if (bankProgram) {
+    return { slug, type: 'bank-program', data: bankProgram }
+  }
+
   // Try travel resource (MDX)
   const travelResource = await getTravelResource(slug)
   if (travelResource) {
@@ -110,6 +122,10 @@ export async function getAllContentSlugs(): Promise<string[]> {
   // Credit cards
   const creditCardContent = await getCreditCardContent()
   slugs.push(...creditCardContent.cards.map((c: any) => c.slug))
+
+  // Bank programs
+  const bankContent = await getBankProgramContent()
+  slugs.push(...bankContent.programs.map((p: any) => p.slug))
 
   // Travel resources (MDX)
   const travelResources = await getAllTravelResources()

@@ -5,9 +5,9 @@ import { getAllTravelResources } from "@/lib/travel-resources";
 import { getAllStorySummaries } from "@/lib/stories";
 
 const quickLinks = [
-  { label: "Credit Cards", href: "/travel-with-points/credit-cards", icon: "💳" },
-  { label: "Hotels", href: "/travel-with-points/hotel-programs", icon: "🏨" },
-  { label: "Flights", href: "/travel-with-points/flight-programs", icon: "✈️" },
+  { label: "Credit Cards", href: "/credit-cards", icon: "💳" },
+  { label: "Hotels", href: "/hotel-programs", icon: "🏨" },
+  { label: "Flights", href: "/flight-programs", icon: "✈️" },
   { label: "Convert Points", href: "/pointsconversion", icon: "🔄" },
 ];
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "hotel points strategy"
   ],
   alternates: {
-    canonical: "/travel-with-points/hotel-programs"
+    canonical: "/hotel-programs"
   }
 };
 
@@ -94,30 +94,6 @@ export default async function HotelProgramsPage() {
               );
             })}
           </div>
-        </section>
-
-        <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Paths to elite status</h2>
-          <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
-            {elitePaths.map((path) => (
-              <article key={path.tier} className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{path.tier}</h3>
-                <p className="text-sm leading-6 text-slate-700 sm:text-base">{path.highlight}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Booking checklist</h2>
-          <ul className="space-y-4 text-sm leading-6 text-slate-700 sm:text-base">
-            {bookingTips.map((tip) => (
-              <li key={tip} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-sky-700 sm:h-2.5 sm:w-2.5" aria-hidden />
-                <span>{tip}</span>
-              </li>
-            ))}
-          </ul>
         </section>
       </div>
     </main>

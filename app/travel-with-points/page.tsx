@@ -20,28 +20,28 @@ const sections = [
     title: "Credit Cards",
     description:
       "Earn transferable points, maximize category bonuses, and decide when a premium annual fee is worth it.",
-    href: "/travel-with-points/credit-cards",
+    href: "/credit-cards",
     accent: "bg-amber-100 text-amber-900",
   },
   {
     title: "Hotel Programs",
     description:
       "Unlock elite benefits, track milestone rewards, and understand when to redeem points versus paying cash.",
-    href: "/travel-with-points/hotel-programs",
+    href: "/hotel-programs",
     accent: "bg-sky-100 text-sky-900",
   },
   {
     title: "Flight Programs",
     description:
       "Use partner awards, alliances, and transfer bonuses to sit up front without paying full fare.",
-    href: "/travel-with-points/flight-programs",
+    href: "/flight-programs",
     accent: "bg-emerald-100 text-emerald-900",
   },
   {
     title: "Bank Programs",
     description:
       "Tap into bank-specific travel portals and redemption tools to stretch every transferable point further.",
-    href: "/travel-with-points/bank-programs",
+    href: "/bank-programs",
     accent: "bg-rose-100 text-rose-900",
   },
 ];

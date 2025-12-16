@@ -49,13 +49,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       "accelerated reward points"
     ],
     alternates: {
-      canonical: `/travel-with-points/bank-programs/${program.slug}`,
+      canonical: `/bank-programs/${program.slug}`,
     },
     openGraph: {
       title: `${program.name} rewards portal guide`,
       description,
       type: "article",
-      url: `https://example.com/travel-with-points/bank-programs/${program.slug}`,
+      url: `https://example.com/bank-programs/${program.slug}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -91,7 +91,7 @@ export default async function BankProgramDetailPage({ params }: PageProps) {
       "@type": "Offer",
       description: program.programType,
     },
-    url: `${siteUrl}/travel-with-points/bank-programs/${program.slug}`,
+    url: `${siteUrl}/bank-programs/${program.slug}`,
     audience: {
       "@type": "Audience",
       audienceType: "Credit card and bank customers",
@@ -114,7 +114,7 @@ export default async function BankProgramDetailPage({ params }: PageProps) {
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href="/travel-with-points/bank-programs" className="hover:text-rose-800">
+              <Link href="/bank-programs" className="hover:text-rose-800">
                 Bank programs
               </Link>
             </li>
@@ -148,7 +148,7 @@ export default async function BankProgramDetailPage({ params }: PageProps) {
 
         <footer className="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-slate-900">Compare more bank portals</p>
-          <Link href="/travel-with-points/bank-programs" className="inline-flex items-center font-semibold text-rose-800">
+          <Link href="/bank-programs" className="inline-flex items-center font-semibold text-rose-800">
             Back to bank programs hub
             <svg
               aria-hidden

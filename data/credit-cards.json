@@ -2991,18 +2991,6 @@
       "Category": "Travel & Lifestyle"
     }
   ],
-  "cardStrategies": [
-    {
-      "title": "Lead with transferable currencies",
-      "description": "Choose cards whose rewards move into multiple airline and hotel partners so you can chase the best sweet spots without being locked in.",
-      "enabled": true
-    },
-    {
-      "title": "Balance lounge coverage",
-      "description": "Mix domestic and international lounge entitlements across cards to cover the whole family on busy travel days.",
-      "enabled": true
-    }
-  ],
   "favoriteCombos": [
     {
       "name": "Best Starter Travel Card",
