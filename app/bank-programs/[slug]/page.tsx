@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { BankProgramSections } from "@/app/components/bank-program-sections";
-import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
+import type { BankProgram } from "@/app/bank-programs/types";
 import { getBankProgramContent } from "@/lib/contentData";
 
 type PageProps = {

@@ -7,7 +7,7 @@ import type {
   QuickFact,
   SectionImage,
   StatusLevelsSection
-} from "@/app/travel-with-points/hotel-programs/types";
+} from "@/app/hotel-programs/types";
 
 const renderSectionImage = (image?: SectionImage) => {
   if (!image) {

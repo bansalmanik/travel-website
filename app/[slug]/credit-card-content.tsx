@@ -12,7 +12,7 @@ import type {
   CardApplyNowBlock,
   RichContent,
   RichContentBlock,
-} from "@/app/travel-with-points/credit-cards/types";
+} from "@/app/credit-cards/types";
 
 type SectionWrapperProps = {
   title: string;

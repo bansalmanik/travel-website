@@ -5,7 +5,7 @@ import type {
   AwardPlaybookItem,
   FavoriteRoute,
   FlightProgram,
-} from "@/app/travel-with-points/flight-programs/types";
+} from "@/app/flight-programs/types";
 import { getFlightProgramContent } from "@/lib/contentData";
 import { getPostsByCategory } from "@/lib/blog";
 import Image from "next/image";

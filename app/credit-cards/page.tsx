@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import type { AnnualFee } from "@/app/travel-with-points/credit-cards/types";
+import type { AnnualFee } from "@/app/credit-cards/types";
 import { getCreditCardContent } from "@/lib/contentData";
 import { getPostsByCategory } from "@/lib/blog";
 import Image from "next/image";

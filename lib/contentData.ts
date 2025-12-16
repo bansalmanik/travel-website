@@ -1,21 +1,21 @@
-import type { BankProgram, BankProgramDataset } from "@/app/travel-with-points/bank-programs/types";
+import type { BankProgram, BankProgramDataset } from "@/app/bank-programs/types";
 import type {
     AwardPlaybookItem,
     FavoriteRoute,
     FlightProgram,
-} from "@/app/travel-with-points/flight-programs/types";
+} from "@/app/flight-programs/types";
 import type {
     Card,
     CardStrategy,
     CreditCardDataset,
     FavoriteCombo,
-} from "@/app/travel-with-points/credit-cards/types";
+} from "@/app/credit-cards/types";
 import type {
     ElitePath,
     HotelDataset,
     HotelProgram,
     ListSection,
-} from "@/app/travel-with-points/hotel-programs/types";
+} from "@/app/hotel-programs/types";
 
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";

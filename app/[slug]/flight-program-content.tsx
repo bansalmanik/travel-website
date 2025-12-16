@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { FlightProgramSections } from "@/app/components/flight-program-sections";
-import type { FlightProgram } from "@/app/travel-with-points/flight-programs/types";
+import type { FlightProgram } from "@/app/flight-programs/types";
 
 export default function FlightProgramContent({ program }: { program: FlightProgram }) {
   return (

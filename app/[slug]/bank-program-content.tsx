@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { BankProgramSections } from "@/app/components/bank-program-sections";
-import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
+import type { BankProgram } from "@/app/bank-programs/types";
 
 export default function BankProgramContent({ program }: { program: BankProgram }) {
   const description = program.seoDescription ?? program.summary;

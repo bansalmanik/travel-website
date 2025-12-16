@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import type { BankProgram } from "@/app/travel-with-points/bank-programs/types";
+import type { BankProgram } from "@/app/bank-programs/types";
 import { getBankProgramContent } from "@/lib/contentData";
 
 const pageTitle = "Bank Programs | Miles Go Round";
