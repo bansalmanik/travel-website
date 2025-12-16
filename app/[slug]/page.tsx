@@ -4,7 +4,7 @@ import { getContentBySlug, getAllContentSlugs, RESERVED_ROUTES } from '@/lib/con
 
 // Import content renderers
 import BlogPostContent from './blog-post-content'
-import StoryContent from './story-content'
+import StoryMdxContent from './story-mdx-content'
 import HotelProgramContent from './hotel-program-content'
 import FlightProgramContent from './flight-program-content'
 import CreditCardContent from './credit-card-content'
@@ -128,7 +128,7 @@ export default async function UnifiedContentPage({ params }: { params: Promise<{
     case 'blog':
       return <BlogPostContent post={content.data} />
     case 'story':
-      return <StoryContent story={content.data} />
+      return <StoryMdxContent story={content.data} />
     case 'hotel-program':
       return <HotelProgramContent program={content.data} />
     case 'flight-program':

@@ -1,14 +1,12 @@
 // Unified content loader for flat URL structure
 import { getBlogPost, getAllBlogPosts } from './blog'
-import { getStoryBySlug, getAllStorySummaries } from '@/app/stories/data'
+import { getStoryBySlug, getAllStorySummaries } from './stories'
 import { 
   getCreditCardContent, 
   getFlightProgramContent, 
   getHotelProgramContent
 } from './contentData'
 import { getTravelResource, getAllTravelResources } from './travel-resources'
-import type { BlogPost } from './blog'
-import type { Story } from '@/app/stories/data'
 
 export type ContentType = 'blog' | 'story' | 'hotel-program' | 'flight-program' | 'credit-card' | 'travel-resource'
 
