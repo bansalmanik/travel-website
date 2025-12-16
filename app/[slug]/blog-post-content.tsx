@@ -3,6 +3,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getRelatedPosts, getCategoryInfo } from '@/lib/blog'
 import type { BlogPost } from '@/lib/blog'
+import ImageGallery from '@/app/components/mdx/ImageGallery'
+import Callout from '@/app/components/mdx/Callout'
+import YouTube from '@/app/components/mdx/YouTube'
+
+const mdxComponents = {
+  ImageGallery,
+  Callout,
+  YouTube,
+}
 
 export default async function BlogPostContent({ post }: { post: BlogPost }) {
   const relatedPosts = await getRelatedPosts(post, 3)
@@ -95,7 +104,7 @@ export default async function BlogPostContent({ post }: { post: BlogPost }) {
         
         {/* Content */}
         <div className="prose prose-slate mt-10 max-w-none">
-          <MDXRemote source={post.content} />
+          <MDXRemote source={post.content} components={mdxComponents} />
         </div>
         
         {/* Tags */}
