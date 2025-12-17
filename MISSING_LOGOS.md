@@ -30,7 +30,6 @@ All programs have logos!
 5. **ITA Airways (Volare)** → `/Logo/volare_logo.webp`
 6. **Lufthansa – Miles & More** → `/Logo/miles_&_more_logo.webp`
 7. **South African Airways – Voyager** → `/Logo/voyager_logo.webp`
-8. **ITC / Club ITC Green Points** → `/Logo/itc_club_logo.webp`
 9. **Hilton Honors** → `/Logo/hilton_honors_logo.webp`
 10. **InterMiles** → `/Logo/intermiles_logo.webp`
 11. **MilleMiglia (ITA Airways / Alitalia)** → `/Logo/volare_logo.webp`
