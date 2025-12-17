@@ -6,7 +6,7 @@ console.log('📊 Generating from D1...\n');
 const query = 'SELECT p.name as program_name, ps_from.name as from_name, ps_to.name as to_name, cr.rate, cr.insight FROM conversion_rates cr JOIN point_sources ps_from ON cr.from_source_id = ps_from.id JOIN point_sources ps_to ON cr.to_source_id = ps_to.id LEFT JOIN programs p ON ps_from.program_id = p.id WHERE cr.enabled = 1 AND ps_from.enabled = 1 AND ps_to.enabled = 1';
 
 try {
-  console.log('🔍 Querying...');
+  console.log('🔍 Querying D1...');
   const output = execSync(
     `npx wrangler d1 execute points-conversion-db --remote --json --command="${query}"`,
     { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024 }
@@ -16,7 +16,7 @@ try {
   const result = JSON.parse(jsonMatch[0]);
   const rows = result[0].results;
   
-  console.log(`✓ Got ${rows.length} records\n`);
+  console.log(`✓ Got ${rows.length} records from D1\n`);
 
   const conversionsMap = new Map();
 
@@ -49,9 +49,18 @@ try {
   const conversions = Array.from(conversionsMap.values());
   fs.writeFileSync('data/points-conversion.json', JSON.stringify(conversions, null, 2));
 
-  console.log(`✅ Done! ${conversions.length} sources`);
+  console.log(`✅ Generated fresh data! ${conversions.length} sources\n`);
 
 } catch (error) {
-  console.error('❌', error.message);
-  process.exit(1);
+  console.warn('⚠️  Could not fetch from D1:', error.message);
+  console.log('📦 Using existing data/points-conversion.json');
+  
+  // Check if existing file exists
+  if (!fs.existsSync('data/points-conversion.json')) {
+    console.error('❌ No existing data file found!');
+    console.error('💡 Run this script locally first to generate initial data.');
+    process.exit(1);
+  }
+  
+  console.log('✓ Build will continue with existing data\n');
 }
