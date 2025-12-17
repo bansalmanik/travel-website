@@ -7,8 +7,6 @@ import type { Conversion } from "@/app/pointsconversion/types";
 
 type ConversionByFrom = Record<string, Conversion>;
 
-const ALL_PROGRAMS_OPTION = "All Programs";
-
 const getProgramName = (conversion: Conversion) =>
   conversion.program ?? "Other";
 
@@ -148,8 +146,8 @@ type PointsConversionContentProps = {
 };
 
 export default function PointsConversionContent({ conversions }: PointsConversionContentProps) {
-  const [selectedProgramName, setSelectedProgramName] = useState<string>(ALL_PROGRAMS_OPTION);
-  const [selectedFrom, setSelectedFrom] = useState(conversions[0]?.from ?? "");
+  const [selectedProgramName, setSelectedProgramName] = useState<string>("");
+  const [selectedFrom, setSelectedFrom] = useState<string>("");
   const [selectedTo, setSelectedTo] = useState<string>("");
   const [transferPoints, setTransferPoints] = useState<string>("");
   const [expandedRow, setExpandedRow] = useState<string | null>(null);
@@ -165,12 +163,12 @@ export default function PointsConversionContent({ conversions }: PointsConversio
     const uniquePrograms = Array.from(
       new Set(conversions.map((conversion) => getProgramName(conversion)))
     ).sort((a, b) => a.localeCompare(b));
-    return [ALL_PROGRAMS_OPTION, ...uniquePrograms];
+    return uniquePrograms;
   }, [conversions]);
 
   const filteredConversions = useMemo(() => {
-    if (!selectedProgramName || selectedProgramName === ALL_PROGRAMS_OPTION) {
-      return conversions;
+    if (!selectedProgramName) {
+      return [];
     }
     return conversions.filter(
       (conversion) => getProgramName(conversion) === selectedProgramName
@@ -187,8 +185,9 @@ export default function PointsConversionContent({ conversions }: PointsConversio
 
   const normalizedSelectedFrom = useMemo(() => {
     if (fromOptions.length === 0) return "";
+    if (fromOptions.length === 1) return fromOptions[0];
     if (selectedFrom && fromOptions.includes(selectedFrom)) return selectedFrom;
-    return fromOptions[0];
+    return "";
   }, [fromOptions, selectedFrom]);
 
   const selectedConversion = useMemo(() => {
@@ -255,14 +254,8 @@ export default function PointsConversionContent({ conversions }: PointsConversio
   const handleProgramChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const newProgram = event.target.value;
     setSelectedProgramName(newProgram);
-    const nextConversions =
-      !newProgram || newProgram === ALL_PROGRAMS_OPTION
-        ? conversions
-        : conversions.filter((conversion) => getProgramName(conversion) === newProgram);
-    const nextFromOption = nextConversions
-      .map((conversion) => conversion.from)
-      .sort((a, b) => a.localeCompare(b))[0];
-    setSelectedFrom(nextFromOption ?? "");
+    setSelectedFrom("");
+    setSelectedTo("");
   };
 
   const handleFromChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -295,7 +288,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             <div className="flex-1">
               <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Program</p>
               <div className="relative">
-                {selectedProgramName && selectedProgramName !== ALL_PROGRAMS_OPTION && PROGRAM_LOGOS[selectedProgramName] && (
+                {selectedProgramName && PROGRAM_LOGOS[selectedProgramName] && (
                   <div className="pointer-events-none absolute left-3 top-1/2 z-10 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full bg-white">
                     <img
                       src={PROGRAM_LOGOS[selectedProgramName]}
@@ -307,10 +300,11 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 <select
                   value={selectedProgramName}
                   onChange={handleProgramChange}
-                  className={`w-full cursor-pointer rounded-lg bg-slate-50 py-3 text-base font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
-                    selectedProgramName && selectedProgramName !== ALL_PROGRAMS_OPTION && PROGRAM_LOGOS[selectedProgramName] ? 'pl-12 pr-4' : 'px-4'
-                  }`}
+                  className={`w-full cursor-pointer rounded-lg bg-slate-50 py-3 text-base font-medium transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                    selectedProgramName && PROGRAM_LOGOS[selectedProgramName] ? 'pl-12 pr-4' : 'px-4'
+                  } ${!selectedProgramName ? 'text-slate-400' : 'text-slate-700'}`}
                 >
+                  <option value="">Select a program</option>
                   {programOptions.map((option) => (
                     <option key={option} value={option}>{option}</option>
                   ))}
@@ -323,15 +317,24 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               <select
                 value={normalizedSelectedFrom}
                 onChange={handleFromChange}
-                className="w-full cursor-pointer rounded-lg bg-slate-50 px-4 py-3 text-base font-medium text-slate-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                disabled={fromOptions.length === 0}
+                className={`w-full rounded-lg bg-slate-50 px-4 py-3 text-base font-medium transition focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                  !selectedProgramName || fromOptions.length === 0 ? 'cursor-not-allowed text-slate-400' : 'cursor-pointer text-slate-700 hover:bg-indigo-50'
+                }`}
+                disabled={!selectedProgramName || fromOptions.length === 0}
               >
-                {fromOptions.length === 0 ? (
-                  <option value="" disabled>No cards</option>
+                {!selectedProgramName ? (
+                  <option value="">Select program first</option>
+                ) : fromOptions.length === 0 ? (
+                  <option value="">No cards available</option>
+                ) : fromOptions.length === 1 ? (
+                  <option value={fromOptions[0]}>{fromOptions[0]}</option>
                 ) : (
-                  fromOptions.map((option) => (
-                    <option key={option} value={option}>{option}</option>
-                  ))
+                  <>
+                    <option value="">Select card</option>
+                    {fromOptions.map((option) => (
+                      <option key={option} value={option}>{option}</option>
+                    ))}
+                  </>
                 )}
               </select>
             </div>
@@ -403,7 +406,12 @@ export default function PointsConversionContent({ conversions }: PointsConversio
         </div>
 
         {/* Results List - Single Column */}
-        {filteredPartnerRows.length === 0 ? (
+        {!selectedProgramName ? (
+          <div className="rounded-2xl bg-white/70 py-16 text-center backdrop-blur">
+            <p className="text-lg font-semibold text-slate-600 mb-2">👆 Select a program to get started</p>
+            <p className="text-sm text-slate-400">Choose a credit card program or loyalty program above</p>
+          </div>
+        ) : filteredPartnerRows.length === 0 ? (
           <div className="rounded-2xl bg-white/70 py-16 text-center backdrop-blur">
             <p className="text-base text-slate-400">No partners available</p>
           </div>
