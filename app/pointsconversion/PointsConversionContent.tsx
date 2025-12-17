@@ -198,6 +198,19 @@ export default function PointsConversionContent({ conversions }: PointsConversio
     return rows;
   }, [selectedTo, mode, conversions]);
 
+  // Get unique programs from reverse results for filtering
+  const reverseProgramsAvailable = useMemo(() => {
+    const programs = new Set<string>();
+    reversePartnerRows.forEach((row) => programs.add(row.program));
+    return Array.from(programs).sort((a, b) => a.localeCompare(b));
+  }, [reversePartnerRows]);
+
+  // Filter reverse results by selected program
+  const filteredReverseRows = useMemo(() => {
+    if (!selectedProgramName || mode !== "reverse") return reversePartnerRows;
+    return reversePartnerRows.filter((row) => row.program === selectedProgramName);
+  }, [reversePartnerRows, selectedProgramName, mode]);
+
   const programOptions = useMemo(() => {
     const uniquePrograms = Array.from(
       new Set(conversions.map((conversion) => getProgramName(conversion)))
@@ -311,6 +324,10 @@ export default function PointsConversionContent({ conversions }: PointsConversio
 
   const handleToChange = (newTo: string) => {
     setSelectedTo(newTo);
+    // Reset program filter in reverse mode when changing partner
+    if (mode === "reverse") {
+      setSelectedProgramName("");
+    }
   };
 
   const handleTransferPointsChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -475,12 +492,48 @@ export default function PointsConversionContent({ conversions }: PointsConversio
         {/* Results Count */}
         <div className="mb-3 sm:mb-4 flex items-center gap-2">
           <span className="rounded-full bg-indigo-100 px-2.5 sm:px-3 py-1 text-xs sm:text-sm font-bold text-indigo-700">
-            {mode === "forward" ? filteredPartnerRows.length : reversePartnerRows.length}
+            {mode === "forward" ? filteredPartnerRows.length : filteredReverseRows.length}
           </span>
           <span className="text-sm sm:text-base text-slate-600">
             {mode === "forward" ? "transfer partners" : "sources found"}
           </span>
         </div>
+
+        {/* Program Filters - Only in reverse mode when results exist */}
+        {mode === "reverse" && reversePartnerRows.length > 0 && (
+          <div className="mb-4 flex flex-wrap gap-2">
+            <button
+              onClick={() => setSelectedProgramName("")}
+              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition ${
+                !selectedProgramName
+                  ? "bg-indigo-500 text-white shadow-sm"
+                  : "bg-white text-slate-600 hover:bg-slate-50 ring-1 ring-slate-200"
+              }`}
+            >
+              All Programs
+            </button>
+            {reverseProgramsAvailable.map((program) => (
+              <button
+                key={program}
+                onClick={() => setSelectedProgramName(program)}
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition ${
+                  selectedProgramName === program
+                    ? "bg-indigo-500 text-white shadow-sm"
+                    : "bg-white text-slate-600 hover:bg-slate-50 ring-1 ring-slate-200"
+                }`}
+              >
+                {PROGRAM_LOGOS[program] && (
+                  <img
+                    src={PROGRAM_LOGOS[program]}
+                    alt={program}
+                    className="h-5 w-5 rounded-full object-cover"
+                  />
+                )}
+                {program}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Results List */}
         {mode === "forward" ? (
@@ -526,7 +579,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                         )}
                         <div className="min-w-0 flex-1">
                           <p className="truncate text-sm sm:text-base font-semibold text-slate-800">{partner.to}</p>
-                          <p className="mt-0.5 text-xs text-slate-400">{partner.rate}</p>
+                          <p className="mt-0.5 text-xs text-slate-600">{partner.rate}</p>
                         </div>
                         <span className="hidden sm:inline-flex flex-shrink-0 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600">
                           {isExpanded ? "tap to hide" : "tap for details"}
@@ -566,13 +619,17 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               <p className="text-base sm:text-lg font-semibold text-slate-600 mb-2">👆 Select a partner to find sources</p>
               <p className="text-xs sm:text-sm text-slate-400">Choose where you want to transfer points to</p>
             </div>
-          ) : reversePartnerRows.length === 0 ? (
+          ) : filteredReverseRows.length === 0 ? (
             <div className="rounded-2xl bg-white/70 py-12 sm:py-16 text-center backdrop-blur">
-              <p className="text-sm sm:text-base text-slate-400">No sources found for this partner</p>
+              <p className="text-sm sm:text-base text-slate-400">
+                {reversePartnerRows.length === 0 
+                  ? "No sources found for this partner"
+                  : "No sources found for this program"}
+              </p>
             </div>
           ) : (
             <div className="space-y-2 sm:space-y-3">
-              {reversePartnerRows.map((source) => {
+              {filteredReverseRows.map((source) => {
                 const key = `${source.from}-${source.rate}`;
                 const isExpanded = expandedRow === key;
 
@@ -600,7 +657,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                           )}
                           <div className="min-w-0 flex-1">
                             <p className="truncate text-sm sm:text-base font-semibold text-slate-800">{source.from}</p>
-                            <p className="mt-0.5 text-xs text-slate-400">{source.program} • {source.rate}</p>
+                            <p className="mt-0.5 text-xs text-slate-600">{source.program} • {source.rate}</p>
                           </div>
                         </div>
                       </div>

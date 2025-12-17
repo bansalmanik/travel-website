@@ -26,19 +26,31 @@ export default function LogoSelect({
   className = "",
 }: LogoSelectProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const selectedOption = options.find((opt) => opt.value === value);
+
+  // Filter options based on search query
+  const filteredOptions = searchQuery
+    ? options.filter((opt) =>
+        opt.label.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : options;
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
+        setSearchQuery("");
       }
     };
 
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
+      // Focus search input when dropdown opens
+      setTimeout(() => searchInputRef.current?.focus(), 50);
     }
 
     return () => {
@@ -49,6 +61,7 @@ export default function LogoSelect({
   const handleSelect = (optionValue: string) => {
     onChange(optionValue);
     setIsOpen(false);
+    setSearchQuery("");
   };
 
   return (
@@ -90,8 +103,28 @@ export default function LogoSelect({
 
       {/* Dropdown Menu */}
       {isOpen && !disabled && (
-        <div className="absolute z-50 mt-2 w-full rounded-lg bg-white shadow-lg ring-1 ring-slate-200 max-h-60 overflow-auto">
-          {options.map((option) => (
+        <div className="absolute z-50 mt-2 w-full rounded-lg bg-white shadow-lg ring-1 ring-slate-200">
+          {/* Search Input */}
+          <div className="p-2 border-b border-slate-200">
+            <input
+              ref={searchInputRef}
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search..."
+              className="w-full px-3 py-2 text-sm rounded-md border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+
+          {/* Options List */}
+          <div className="max-h-60 overflow-auto">
+            {filteredOptions.length === 0 ? (
+              <div className="px-4 py-3 text-sm text-slate-400 text-center">
+                No results found
+              </div>
+            ) : (
+              filteredOptions.map((option) => (
             <button
               key={option.value}
               type="button"
@@ -111,7 +144,9 @@ export default function LogoSelect({
               )}
               {option.label}
             </button>
-          ))}
+              ))
+            )}
+          </div>
         </div>
       )}
     </div>
