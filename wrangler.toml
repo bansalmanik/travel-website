@@ -1,0 +1,10 @@
+# Wrangler configuration for Cloudflare D1 database
+
+name = "travel-with-points"
+compatibility_date = "2024-12-17"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "points-conversion-db"
+database_id = "0611893c-4c50-4a29-8720-e76818fada69"  # Replace with your actual database ID from Step 1
