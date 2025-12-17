@@ -7,9 +7,16 @@ const query = 'SELECT p.name as program_name, ps_from.name as from_name, ps_to.n
 
 try {
   console.log('🔍 Querying D1...');
+  
+  // Set up environment for wrangler if API token is available
+  const env = { ...process.env };
+  if (process.env.CLOUDFLARE_API_TOKEN) {
+    console.log('✓ Using CLOUDFLARE_API_TOKEN for authentication');
+  }
+  
   const output = execSync(
     `npx wrangler d1 execute points-conversion-db --remote --json --command="${query}"`,
-    { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024 }
+    { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, env }
   );
 
   const jsonMatch = output.match(/\[[\s\S]*\]/);
