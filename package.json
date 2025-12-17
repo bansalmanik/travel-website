@@ -2,12 +2,15 @@
   "name": "travel-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-conversions-from-d1.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate:images": "powershell -File scripts/validate-images.ps1"
+    "validate:images": "powershell -File scripts/validate-images.ps1",
+    "generate:conversions": "node scripts/generate-conversions-from-d1.js"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
