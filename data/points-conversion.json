@@ -12,7 +12,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 12,00,000.",
             "enabled": true
           },
@@ -22,17 +22,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 12,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 12,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 3,00,000.",
             "enabled": true
           },
@@ -67,12 +67,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 3,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 3,00,000.",
             "enabled": true
           },
@@ -87,7 +87,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 3,00,000.",
             "enabled": true
           },
@@ -107,7 +107,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Magnus (Burgundy)",
+    "from": "Magnus (Burgundy)",
     "rates": [
       {
         "rate": "5 : 4 Ratio",
@@ -118,7 +118,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 8,00,000.",
             "enabled": true
           },
@@ -128,17 +128,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 8,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 8,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 2,00,000.",
             "enabled": true
           },
@@ -173,12 +173,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 2,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 2,00,000.",
             "enabled": true
           },
@@ -193,7 +193,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 2,00,000.",
             "enabled": true
           },
@@ -213,7 +213,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Magnus(plain) Card",
+    "from": "Magnus(plain)",
     "rates": [
       {
         "rate": "5 : 2 Ratio",
@@ -224,7 +224,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
@@ -234,17 +234,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -279,12 +279,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -299,7 +299,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -319,7 +319,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Reserve Card",
+    "from": "Reserve",
     "rates": [
       {
         "rate": "5 : 2 Ratio",
@@ -330,7 +330,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
@@ -340,17 +340,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -385,12 +385,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -405,7 +405,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -425,7 +425,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Horizon  Card",
+    "from": "Horizon",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
@@ -436,7 +436,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
@@ -446,17 +446,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -491,12 +491,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -511,7 +511,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -531,7 +531,7 @@
   },
   {
     "program": "Axis",
-    "from": "IndianOil Axis Premium  Card",
+    "from": "IndianOil Axis Premium",
     "rates": [
       {
         "rate": "2 : 1 Ratio",
@@ -542,7 +542,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
@@ -552,17 +552,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -597,12 +597,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -617,7 +617,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -637,7 +637,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Olympus  Card",
+    "from": "Olympus",
     "rates": [
       {
         "rate": "1 : 4 Ratio",
@@ -648,7 +648,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 6,00,000.",
             "enabled": true
           },
@@ -658,17 +658,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 6,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 6,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 1,50,000.",
             "enabled": true
           },
@@ -703,12 +703,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 1,50,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 1,50,000.",
             "enabled": true
           },
@@ -723,7 +723,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 1,50,000.",
             "enabled": true
           },
@@ -743,7 +743,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Atlas  Card",
+    "from": "Atlas",
     "rates": [
       {
         "rate": "1 : 2 Ratio",
@@ -754,7 +754,7 @@
             "enabled": true
           },
           {
-            "to": "Air Asia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 1,20,000.",
             "enabled": true
           },
@@ -764,17 +764,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 1,20,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 1,20,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 30,000.",
             "enabled": true
           },
@@ -804,12 +804,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 30,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 30,000.",
             "enabled": true
           },
@@ -824,7 +824,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 30,000.",
             "enabled": true
           },
@@ -854,7 +854,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Select, Privilege & Rewards  Cards",
+    "from": "Select, Privilege & Rewards  Cards",
     "rates": [
       {
         "rate": "5 : 1 Ratio",
@@ -870,7 +870,7 @@
             "enabled": true
           },
           {
-            "to": "airasia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           }
@@ -890,17 +890,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -930,12 +930,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -945,7 +945,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -965,7 +965,7 @@
   },
   {
     "program": "Axis",
-    "from": "Axis Other Eligible /Debit Cards",
+    "from": "Other Eligible /Debit Cards",
     "rates": [
       {
         "rate": "10 : 1 Ratio",
@@ -981,7 +981,7 @@
             "enabled": true
           },
           {
-            "to": "airasia",
+            "to": "AirAsia Rewards",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           }
@@ -1001,17 +1001,17 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
-            "to": "Ethiopian Airlines",
+            "to": "Ethiopian Airlines ShebaMiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -1041,12 +1041,12 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways",
+            "to": "Qatar Avios",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -1056,7 +1056,7 @@
             "enabled": true
           },
           {
-            "to": "Turkish Airlines",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
           },
@@ -1076,7 +1076,7 @@
   },
   {
     "program": "HDFC",
-    "from": "HDFC Regalia Gold Cards",
+    "from": "Regalia Gold",
     "rates": [
       {
         "rate": "1 : 0.5 Ratio",
@@ -1087,12 +1087,12 @@
             "enabled": true
           },
           {
-            "to": "Finnair Plus (Avios)",
+            "to": "Finnair (Avios)",
             "insight": "1 RP = 0.5 Finnair Plus Avios.",
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "1 RP = 0.5 mile conversion.",
             "enabled": true
           },
@@ -1102,7 +1102,7 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "1 RP = 0.5 mile conversion.",
             "enabled": true
           },
@@ -1147,12 +1147,12 @@
         "rate": "1 : 0.33 Ratio",
         "partners": [
           {
-            "to": "British Airways Executive Club (Avios)",
+            "to": "British Airways (Avios)",
             "insight": "Lower value conversion at 1 RP = 0.33 Avios.",
             "enabled": true
           },
           {
-            "to": "Air Canada Aeroplan",
+            "to": "Aeroplan",
             "insight": "Lower value conversion at 1 RP = 0.33 point.",
             "enabled": true
           },
@@ -1162,7 +1162,7 @@
             "enabled": true
           },
           {
-            "to": "Marriot",
+            "to": "Marriott Bonvoy",
             "insight": "Lower value conversion at 1 RP = 0.33 mile.",
             "enabled": true
           }
@@ -1182,7 +1182,7 @@
   },
   {
     "program": "HDFC",
-    "from": "HDFC Infinia",
+    "from": "Infinia",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
@@ -1193,12 +1193,12 @@
             "enabled": true
           },
           {
-            "to": "Finnair Plus (Avios)",
+            "to": "Finnair (Avios)",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
@@ -1208,12 +1208,12 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
           {
-            "to": "SpiceJet SpiceClub",
+            "to": "SpiceJet",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
@@ -1238,12 +1238,12 @@
         "rate": "2 : 1 Ratio",
         "partners": [
           {
-            "to": "British Airways Executive Club (Avios)",
+            "to": "British Airways (Avios)",
             "insight": "2:1 transfer ratio.",
             "enabled": true
           },
           {
-            "to": "Air Canada Aeroplan",
+            "to": "Aeroplan",
             "insight": "2:1 transfer ratio.",
             "enabled": true
           },
@@ -1293,7 +1293,7 @@
   },
   {
     "program": "HDFC",
-    "from": "HDFC Diners Club Black",
+    "from": "Diners Club Black",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
@@ -1304,12 +1304,12 @@
             "enabled": true
           },
           {
-            "to": "Finnair Plus (Avios)",
+            "to": "Finnair (Avios)",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
@@ -1319,12 +1319,12 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
           {
-            "to": "SpiceJet SpiceClub",
+            "to": "SpiceJet",
             "insight": "Optimal 1:1 transfer ratio.",
             "enabled": true
           },
@@ -1349,12 +1349,12 @@
         "rate": "2 : 1 Ratio",
         "partners": [
           {
-            "to": "British Airways Executive Club (Avios)",
+            "to": "British Airways (Avios)",
             "insight": "2:1 transfer ratio.",
             "enabled": true
           },
           {
-            "to": "Air Canada Aeroplan",
+            "to": "Aeroplan",
             "insight": "2:1 transfer ratio.",
             "enabled": true
           },
@@ -1404,13 +1404,13 @@
   },
   {
     "program": "HSBC",
-    "from": "HSBC Travel One",
+    "from": "Travel One",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
         "partners": [
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1420,7 +1420,7 @@
             "enabled": true
           },
           {
-            "to": "British Airways Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1435,7 +1435,7 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1450,7 +1450,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1460,7 +1460,7 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1530,13 +1530,13 @@
   },
   {
     "program": "HSBC",
-    "from": "HSBC Prive",
+    "from": "Prive",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
         "partners": [
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1546,7 +1546,7 @@
             "enabled": true
           },
           {
-            "to": "British Airways Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1561,7 +1561,7 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1576,7 +1576,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1586,7 +1586,7 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1656,13 +1656,13 @@
   },
   {
     "program": "HSBC",
-    "from": "HSBC Premier",
+    "from": "Premier",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
         "partners": [
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1672,7 +1672,7 @@
             "enabled": true
           },
           {
-            "to": "British Airways Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1687,7 +1687,7 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1702,7 +1702,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1712,7 +1712,7 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1782,13 +1782,13 @@
   },
   {
     "program": "HSBC",
-    "from": "HSBC Visa Platinum",
+    "from": "Visa Platinum",
     "rates": [
       {
         "rate": "2 : 1 Ratio",
         "partners": [
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1798,7 +1798,7 @@
             "enabled": true
           },
           {
-            "to": "British Airways Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1813,7 +1813,7 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1828,7 +1828,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1838,7 +1838,7 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1913,13 +1913,13 @@
   },
   {
     "program": "HSBC",
-    "from": "HSBC Rupay Platinum",
+    "from": "Rupay Platinum",
     "rates": [
       {
         "rate": "2 : 1 Ratio",
         "partners": [
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1929,7 +1929,7 @@
             "enabled": true
           },
           {
-            "to": "British Airways Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1944,7 +1944,7 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1959,7 +1959,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -1969,7 +1969,7 @@
             "enabled": true
           },
           {
-            "to": "Vietnam Airlines Lotusmiles",
+            "to": "Vietnam Airlines LotusMiles",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -2050,12 +2050,12 @@
         "rate": "2 : 1 Ratio",
         "partners": [
           {
-            "to": "Asia Miles",
+            "to": "Asia Miles (Cathay Pacific)",
             "insight": "Transfers from American Express Membership Rewards convert at 2:1.",
             "enabled": true
           },
           {
-            "to": "British Airways Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfers from American Express Membership Rewards convert at 2:1.",
             "enabled": true
           },
@@ -2070,7 +2070,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfers from American Express Membership Rewards convert at 2:1.",
             "enabled": true
           },
@@ -2110,13 +2110,13 @@
   },
   {
     "program": "SBI",
-    "from": "SBI Miles Cards",
+    "from": "Miles",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
         "partners": [
           {
-            "to": "Air Canada Aeroplan",
+            "to": "Aeroplan",
             "insight": "Transfers from SBI Miles convert to Aeroplan at 1:1.",
             "enabled": true
           },
@@ -2126,22 +2126,22 @@
             "enabled": true
           },
           {
-            "to": "Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "Transfers from SBI Miles convert to Flying Blue at 1:1.",
             "enabled": true
           },
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "Transfers from SBI Miles convert to Maharaja Club at 1:1.",
             "enabled": true
           },
           {
-            "to": "British Airways Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfers from SBI Miles convert to British Airways Executive Club at 1:1.",
             "enabled": true
           },
           {
-            "to": "Cathay",
+            "to": "Asia Miles (Cathay Pacific)",
             "insight": "Transfers from SBI Miles convert to Cathay at 1:1.",
             "enabled": true
           },
@@ -2151,7 +2151,7 @@
             "enabled": true
           },
           {
-            "to": "SpiceJet SpiceClub",
+            "to": "SpiceJet",
             "insight": "Transfers from SBI Miles convert to SpiceClub at 1:1.",
             "enabled": true
           },
@@ -2206,7 +2206,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfers from SBI Miles convert to Privilege Club at 2:1.",
             "enabled": true
           }
@@ -2216,7 +2216,7 @@
   },
   {
     "program": "SBI",
-    "from": "SBI Aurum Card",
+    "from": "Aurum Card",
     "rates": [
       {
         "rate": "4 : 1 Ratio",
@@ -2232,12 +2232,12 @@
         "rate": "5 : 1 Ratio",
         "partners": [
           {
-            "to": "Air India",
+            "to": "Air India Maharaja Points",
             "insight": "Transfers from SBI Aurum convert to Maharaja Club at 5:1.",
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Transfers from SBI Aurum convert to Privilege Club at 5:1.",
             "enabled": true
           }
@@ -2253,7 +2253,7 @@
         "rate": "2000 : 1000 Ratio",
         "partners": [
           {
-            "to": "Aegean Miles+Bonus",
+            "to": "AEGEAN Miles+Bonus",
             "insight": "Transfer 2,000 ALL Points into 1000 Miles",
             "enabled": true
           },
@@ -2273,17 +2273,17 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Transfer 4,000 ALL Points into 2000 Miles.",
             "enabled": true
           },
           {
-            "to": "LATAM Pass (Brazil)",
+            "to": "LATAM Pass Brazil",
             "insight": "Transfer 4,000 ALL Points into 2000 Miles.",
             "enabled": true
           },
           {
-            "to": "Smiles Miles",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "Transfer 4,000 ALL Points into 2000 Miles.",
             "enabled": true
           }
@@ -2293,7 +2293,7 @@
         "rate": "2000 : 1300 Ratio",
         "partners": [
           {
-            "to": "Finnair Plus (Avios)",
+            "to": "Finnair (Avios)",
             "insight": "Transfer 2,000 ALL Points into 1300 Avios.",
             "enabled": true
           }
@@ -2333,7 +2333,7 @@
   },
   {
     "program": "Marriott Bonvoy",
-    "from": "Marriott Bonvoy Points",
+    "from": "Marriott Bonvoy",
     "rates": [
       {
         "rate": "3 : 1 Ratio",
@@ -2354,7 +2354,7 @@
             "enabled": true
           },
           {
-            "to": "Air Canada Aeroplan",
+            "to": "Aeroplan",
             "insight": "Convert Marriott Bonvoy points to Air Canada Aeroplan points at a 3:1 ratio.",
             "enabled": true
           },
@@ -2364,17 +2364,17 @@
             "enabled": true
           },
           {
-            "to": "Air France-KLM Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "Convert Marriott Bonvoy points to Flying Blue miles at a 3:1 ratio.",
             "enabled": true
           },
           {
-            "to": "Atmos™ Rewards",
+            "to": "Atmos Rewards",
             "insight": "Convert Marriott Bonvoy points to Atmos Rewards miles at a 3:1 ratio.",
             "enabled": true
           },
           {
-            "to": "American Airlines AAdvantage®",
+            "to": "American Airlines AAdvantage",
             "insight": "Convert Marriott Bonvoy points to American Airlines AAdvantage miles at a 3:1 ratio.",
             "enabled": true
           },
@@ -2389,17 +2389,17 @@
             "enabled": true
           },
           {
-            "to": "The British Airways Club",
+            "to": "British Airways (Avios)",
             "insight": "Convert Marriott Bonvoy points to The British Airways Club Avios at a 3:1 ratio.",
             "enabled": true
           },
           {
-            "to": "Cathay Pacific Cathay",
+            "to": "Asia Miles (Cathay Pacific)",
             "insight": "Convert Marriott Bonvoy points to Cathay Pacific Cathay miles at a 3:1 ratio.",
             "enabled": true
           },
           {
-            "to": "China Southern Airlines Sky Pearl Club",
+            "to": "China Southern – Sky Pearl Club",
             "insight": "Convert Marriott Bonvoy points to China Southern Airlines Sky Pearl Club kilometers at a 3:1 ratio.",
             "enabled": true
           },
@@ -2409,12 +2409,12 @@
             "enabled": true
           },
           {
-            "to": "Delta SkyMiles®",
+            "to": "Delta SkyMiles",
             "insight": "Convert Marriott Bonvoy points to Delta SkyMiles at a 3:1 ratio.",
             "enabled": true
           },
           {
-            "to": "Emirates Skywards®",
+            "to": "Emirates Skywards",
             "insight": "Convert Marriott Bonvoy points to Emirates Skywards miles at a 3:1 ratio.",
             "enabled": true
           },
@@ -2444,13 +2444,8 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines JAL Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Convert Marriott Bonvoy points to Japan Airlines JAL Mileage Bank miles at a 3:1 ratio.",
-            "enabled": true
-          },
-          {
-            "to": "LATAM Airlines LATAM Pass",
-            "insight": "Convert Marriott Bonvoy points to LATAM Pass kilometers at a 3:1 ratio.",
             "enabled": true
           },
           {
@@ -2464,7 +2459,7 @@
             "enabled": true
           },
           {
-            "to": "Qatar Airways Privilege Club",
+            "to": "Qatar Avios",
             "insight": "Convert Marriott Bonvoy points to Qatar Airways Privilege Club Avios at a 3:1 ratio.",
             "enabled": true
           },
@@ -2474,7 +2469,7 @@
             "enabled": true
           },
           {
-            "to": "Singapore Airlines KrisFlyer®",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "Convert Marriott Bonvoy points to Singapore Airlines KrisFlyer miles at a 3:1 ratio.",
             "enabled": true
           },
@@ -2499,7 +2494,7 @@
             "enabled": true
           },
           {
-            "to": "United MileagePlus®",
+            "to": "United MileagePlus",
             "insight": "Convert Marriott Bonvoy points to United MileagePlus miles at a 3:1 ratio.",
             "enabled": true
           },
@@ -2540,27 +2535,27 @@
         "rate": "5 : 1 Ratio",
         "partners": [
           {
-            "to": "Aeromexico – Club Premier",
+            "to": "Aeromexico Rewards",
             "insight": "Transfer IHG One Rewards points to Aeromexico Club Premier at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Air Canada – Aeroplan",
+            "to": "Aeroplan",
             "insight": "Transfer IHG One Rewards points to Air Canada Aeroplan at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Air China – PhoenixMiles",
+            "to": "Air China PhoenixMiles",
             "insight": "Transfer IHG One Rewards points to Air China PhoenixMiles at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Air France KLM – Flying Blue",
+            "to": "Air France–KLM Flying Blue",
             "insight": "Transfer IHG One Rewards points to Flying Blue at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Air New Zealand – Airpoints",
+            "to": "Air New Zealand Airpoints",
             "insight": "Transfer IHG One Rewards points to Air New Zealand Airpoints at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
@@ -2570,17 +2565,17 @@
             "enabled": true
           },
           {
-            "to": "Alaska Airlines – Mileage Plan",
+            "to": "Atmos Rewards",
             "insight": "Transfer IHG One Rewards points to Alaska Airlines Mileage Plan at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "ANA – ANA Mileage Club",
+            "to": "ANA Mileage Club",
             "insight": "Transfer IHG One Rewards points to ANA Mileage Club at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "American Airlines – AAdvantage",
+            "to": "American Airlines AAdvantage",
             "insight": "Transfer IHG One Rewards points to American Airlines AAdvantage at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
@@ -2590,12 +2585,12 @@
             "enabled": true
           },
           {
-            "to": "Avianca Airlines – LifeMiles",
+            "to": "Avianca LifeMiles",
             "insight": "Transfer IHG One Rewards points to Avianca LifeMiles at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "British Airways – Executive Club",
+            "to": "British Airways (Avios)",
             "insight": "Transfer IHG One Rewards points to British Airways Executive Club at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
@@ -2610,27 +2605,27 @@
             "enabled": true
           },
           {
-            "to": "Delta Air Lines – SkyMiles®",
+            "to": "Delta SkyMiles",
             "insight": "Transfer IHG One Rewards points to Delta SkyMiles at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Emirates – Skywards",
+            "to": "Emirates Skywards",
             "insight": "Transfer IHG One Rewards points to Emirates Skywards at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Etihad Airways – Etihad Guest",
+            "to": "Etihad Guest",
             "insight": "Transfer IHG One Rewards points to Etihad Guest at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Eva Airways – Infinity MileageLands",
+            "to": "EVA Air Infinity MileageLands",
             "insight": "Transfer IHG One Rewards points to EVA Air Infinity MileageLands at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Finnair – Finnair Plus",
+            "to": "Finnair (Avios)",
             "insight": "Transfer IHG One Rewards points to Finnair Plus at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
@@ -2640,12 +2635,12 @@
             "enabled": true
           },
           {
-            "to": "Hainan Airlines – Fortune Wings Club",
+            "to": "Hainan Airlines Fortune Wings Club",
             "insight": "Transfer IHG One Rewards points to Hainan Airlines Fortune Wings Club at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Iberia Airlines – Iberia Plus",
+            "to": "Iberia Plus",
             "insight": "Transfer IHG One Rewards points to Iberia Plus at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
@@ -2655,7 +2650,7 @@
             "enabled": true
           },
           {
-            "to": "Japan Airlines – JAL Mileage Bank",
+            "to": "JAL Mileage Bank",
             "insight": "Transfer IHG One Rewards points to Japan Airlines JAL Mileage Bank at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
@@ -2685,12 +2680,12 @@
             "enabled": true
           },
           {
-            "to": "Qantas Airlines – Frequent Flyer",
+            "to": "Qantas Frequent Flyer",
             "insight": "Transfer IHG One Rewards points to Qantas Frequent Flyer at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Singapore Airlines – KrisFlyer",
+            "to": "Singapore Airlines KrisFlyer",
             "insight": "Transfer IHG One Rewards points to Singapore Airlines KrisFlyer at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
@@ -2700,27 +2695,27 @@
             "enabled": true
           },
           {
-            "to": "Thai Airways – Royal Orchid Plus",
+            "to": "Thai Airways Royal Orchid Plus",
             "insight": "Transfer IHG One Rewards points to Thai Airways Royal Orchid Plus at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Turkish Airlines – Miles&Smiles",
+            "to": "Turkish Airlines Miles&Smiles",
             "insight": "Transfer IHG One Rewards points to Turkish Airlines Miles&Smiles at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "United Airlines – MileagePlus®",
+            "to": "United MileagePlus",
             "insight": "Transfer IHG One Rewards points to United MileagePlus at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Virgin Atlantic – Flying Club",
+            "to": "Virgin Atlantic Flying Club",
             "insight": "Transfer IHG One Rewards points to Virgin Atlantic Flying Club at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           },
           {
-            "to": "Virgin Australia – Velocity Frequent Flyer",
+            "to": "Virgin Australia Velocity Frequent Flyer",
             "insight": "Transfer IHG One Rewards points to Virgin Australia Velocity Frequent Flyer at a 5:1 ratio with a 10,000-point minimum.",
             "enabled": true
           }
