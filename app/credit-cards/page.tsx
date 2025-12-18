@@ -116,19 +116,31 @@ export default async function CreditCardsPage() {
           </div>
         </section>
 
-        <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">Starter card pairings</h2>
-          <div className="space-y-6">
-            {favoriteCombos.map((combo) => (
-              <article key={combo.name} className="space-y-2 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                <h3 className="text-lg font-semibold text-slate-900">{combo.name}</h3>
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">
-                  {combo.cards.join(" + ")}
-                </p>
-                <p className="text-sm leading-6 text-slate-700">{combo.note}</p>
-              </article>
-            ))}
-          </div>
+        <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <details className="group">
+            <summary className="flex cursor-pointer items-center justify-between text-2xl font-semibold text-slate-900 transition-colors hover:text-blue-700">
+              <span>Starter card pairings</span>
+              <svg
+                className="h-6 w-6 transition-transform group-open:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="mt-6 space-y-6">
+              {favoriteCombos.map((combo) => (
+                <article key={combo.name} className="space-y-2 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">{combo.name}</h3>
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">
+                    {combo.cards.join(" + ")}
+                  </p>
+                  <p className="text-sm leading-6 text-slate-700">{combo.note}</p>
+                </article>
+              ))}
+            </div>
+          </details>
         </section>
 
         {blogPosts.length > 0 && (
