@@ -8,6 +8,15 @@ import Callout from '@/app/components/mdx/Callout'
 import YouTube from '@/app/components/mdx/YouTube'
 
 const mdxComponents = {
+  h2: (props: any) => <h2 className="text-2xl font-bold text-slate-900 mt-10 mb-4" {...props} />,
+  h3: (props: any) => <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3" {...props} />,
+  h4: (props: any) => <h4 className="text-lg font-bold text-slate-900 mt-6 mb-2" {...props} />,
+  p: (props: any) => <p className="text-slate-700 leading-relaxed mb-4" {...props} />,
+  ul: (props: any) => <ul className="list-disc pl-6 mb-6 space-y-2 text-slate-700" {...props} />,
+  ol: (props: any) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-slate-700" {...props} />,
+  li: (props: any) => <li className="leading-relaxed" {...props} />,
+  strong: (props: any) => <strong className="font-semibold text-slate-900" {...props} />,
+  em: (props: any) => <em className="italic" {...props} />,
   ImageGallery,
   Callout,
   YouTube,
@@ -34,11 +43,13 @@ export default async function BlogPostContent({ post }: { post: BlogPost }) {
   }
   
   return (
-    <div className="min-h-screen bg-white">
+    <>
       <script 
         type="application/ld+json" 
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} 
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        suppressHydrationWarning
       />
+      <div className="min-h-screen bg-white">
       
       {/* Breadcrumbs */}
       <div className="border-b border-slate-100 bg-slate-50">
@@ -56,17 +67,8 @@ export default async function BlogPostContent({ post }: { post: BlogPost }) {
       </div>
       
       <article className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12">
-        {/* Category Badge */}
-        <Link 
-          href={`/blog/category/${post.category}`}
-          className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition-transform hover:scale-105 ${categoryInfo.color}`}
-        >
-          <span>{categoryInfo.icon}</span>
-          <span>{categoryInfo.name}</span>
-        </Link>
-        
         {/* Title */}
-        <h1 className="mt-6 text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+        <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
           {post.title}
         </h1>
         
@@ -103,7 +105,7 @@ export default async function BlogPostContent({ post }: { post: BlogPost }) {
         </div>
         
         {/* Content */}
-        <div className="prose prose-slate mt-10 max-w-none">
+        <div className="mt-10 max-w-none text-base leading-relaxed">
           <MDXRemote source={post.content} components={mdxComponents} />
         </div>
         
@@ -156,6 +158,7 @@ export default async function BlogPostContent({ post }: { post: BlogPost }) {
           </div>
         </section>
       )}
-    </div>
+      </div>
+    </>
   )
 }
