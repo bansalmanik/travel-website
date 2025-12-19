@@ -27,21 +27,16 @@ export default async function HotelProgramsPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
-      <div className="mx-auto flex w-full max-w-4xl flex-col gap-12 px-4 py-16 sm:gap-16 sm:px-6 sm:py-20 lg:py-28">
+      <div className="mx-auto flex w-full max-w-4xl flex-col gap-12 px-4 py-8 sm:gap-16 sm:px-6 sm:py-12 lg:py-16">
         <header className="space-y-4 sm:space-y-5">
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.4em] text-sky-700 sm:text-xs">Travel with Points</p>
           <h1 className="text-3xl font-semibold sm:text-5xl">Hotel loyalty programs</h1>
-          <p className="text-sm text-slate-700 sm:text-base">
-            Elite status brings upgrades, late checkout, and breakfast. Learn which chains reward credit card spending versus
-            nights on property so you can focus on the brands that fit your style of travel.
-          </p>
         </header>
 
         <section className="space-y-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Featured hotel programs</h2>
           <div className="grid gap-6 sm:gap-7 md:grid-cols-2">
             {programs.map((program) => {
-              const highlight = program.overview?.items?.[0];
               const topTier =
                 program.statusLevels && program.statusLevels.tiers.length > 0
                   ? program.statusLevels.tiers[program.statusLevels.tiers.length - 1]
@@ -54,7 +49,6 @@ export default async function HotelProgramsPage() {
                 >
                   <div className="space-y-4">
                     <div className="space-y-2">
-                      <p className="text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-sky-700 sm:text-xs">{program.footprint}</p>
                       <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
                         <Link
                           href={`/${program.slug}`}
@@ -65,11 +59,6 @@ export default async function HotelProgramsPage() {
                       </h3>
                       <p className="text-sm text-slate-700 sm:text-base">{program.summary}</p>
                     </div>
-                    {highlight ? (
-                      <p className="text-sm text-slate-700 sm:text-base">
-                        <span className="font-semibold text-slate-900">Snapshot:</span> {highlight}
-                      </p>
-                    ) : null}
                     {topTier ? (
                       <p className="text-[0.65rem] uppercase tracking-[0.25em] text-sky-700 sm:text-xs">Top tier • {topTier}</p>
                     ) : null}

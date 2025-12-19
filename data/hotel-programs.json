@@ -286,7 +286,6 @@
     {
       "slug": "accor-live-limitless",
       "name": "Accor Live Limitless (ALL)",
-      "footprint": "5,500+ hotels spanning 110 countries",
       "summary": "Earn Reward and Status Points across Accor’s luxury-to-economy brands with cash-like redemptions and lifestyle perks.",
       "seoDescription": "Explore Accor Live Limitless elite tiers, earning rates, and fixed-value redemptions for hotel stays, dining, and experiences.",
       "overview": {
@@ -391,11 +390,7 @@
             "enabled": true
           }
         ],
-        "note": "Diamond status unlocks a complimentary weekend night, dining credits, and a dedicated support line.",
-        "image": {
-          "src": "/images/content/photo-1489515217757-5fd1be406fef.svg",
-          "alt": "Accor guest suite with city skyline views"
-        }
+        "note": "Diamond status unlocks a complimentary weekend night, dining credits, and a dedicated support line."
       },
       "coBrandedCards": {
         "items": [
