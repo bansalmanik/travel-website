@@ -1,7 +1,7 @@
 [
   {
     "program": "Axis",
-    "from": "Axis Burgundy Private",
+    "from": "Burgundy Private",
     "rates": [
       {
         "rate": "5 : 4 Ratio",
@@ -1177,6 +1177,41 @@
             "enabled": true
           }
         ]
+      },
+      {
+        "rate": "1 : 0.5",
+        "partners": [
+          {
+            "to": "Radisson Rewards",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "1 : 0.33",
+        "partners": [
+          {
+            "to": "Thai Airways Royal Orchid Plus",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          },
+          {
+            "to": "Qatar Avios",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          },
+          {
+            "to": "Asia Miles (Cathay Pacific)",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          }
+        ]
       }
     ]
   },
@@ -1274,7 +1309,7 @@
           },
           {
             "to": "Qatar Avios",
-            "insight": "Should never be done. Instead transfer 1:1 to Finnair Avios",
+            "insight": "Instead transfer 1:1 to Finnair Avios",
             "enabled": true
           },
           {
@@ -1283,8 +1318,33 @@
             "enabled": true
           },
           {
-            "to": "Club ITC Green Points",
+            "to": "ITC",
             "insight": "Devalued 2:1 hotel transfer.",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "1 : 0.5",
+        "partners": [
+          {
+            "to": "Asia Miles (Cathay Pacific)",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          },
+          {
+            "to": "Thai Airways Royal Orchid Plus",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "1 : 1",
+        "partners": [
+          {
+            "to": "Radisson Rewards",
+            "insight": "Transfer points within 24 hours",
             "enabled": true
           }
         ]
@@ -1394,8 +1454,33 @@
             "enabled": true
           },
           {
-            "to": "Club ITC Green Points",
+            "to": "ITC",
             "insight": "Devalued 2:1 hotel transfer.",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "1 : 1",
+        "partners": [
+          {
+            "to": "Radisson Rewards",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "1 : 0.5",
+        "partners": [
+          {
+            "to": "Asia Miles (Cathay Pacific)",
+            "insight": "Transfer points within 24 hours",
+            "enabled": true
+          },
+          {
+            "to": "Thai Airways Royal Orchid Plus",
+            "insight": "Transfer points within 24 hours",
             "enabled": true
           }
         ]
@@ -2242,11 +2327,21 @@
             "enabled": true
           }
         ]
+      },
+      {
+        "rate": "5 : 1",
+        "partners": [
+          {
+            "to": "ITC",
+            "insight": "Takes upto 2 days",
+            "enabled": true
+          }
+        ]
       }
     ]
   },
   {
-    "program": "Other",
+    "program": "Accor",
     "from": "Accor Live Limitless",
     "rates": [
       {
@@ -2325,6 +2420,136 @@
           {
             "to": "Vietnam Airlines LotusMiles",
             "insight": "Transfer 3,000 ALL Points into 2000 Miles.",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "4000 : 2000",
+        "partners": [
+          {
+            "to": "Etihad Guest",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "Aeromexico Rewards",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "Avianca LifeMiles",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "British Airways (Avios)",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "Asia Miles (Cathay Pacific)",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "Delta SkyMiles",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "Korean Air – SKYPASS",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          },
+          {
+            "to": "Thai Airways Royal Orchid Plus",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "4000 : 3200",
+        "partners": [
+          {
+            "to": "Air China PhoenixMiles",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "2000 : 30",
+        "partners": [
+          {
+            "to": "Air New Zealand Airpoints",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "2000 : 2000",
+        "partners": [
+          {
+            "to": "Air France–KLM Flying Blue",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "3000 : 3000",
+        "partners": [
+          {
+            "to": "Iberia Plus",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "2000 : 2500",
+        "partners": [
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "2000 : 1500",
+        "partners": [
+          {
+            "to": "Qatar Avios",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "2000 : 1000",
+        "partners": [
+          {
+            "to": "Emirates Skywards®",
+            "insight": "Takes upto 7 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "4000 : 4000",
+        "partners": [
+          {
+            "to": "Virgin Australia Velocity Frequent Flyer",
+            "insight": "Takes upto 7 days",
             "enabled": true
           }
         ]
@@ -2717,6 +2942,27 @@
           {
             "to": "Virgin Australia Velocity Frequent Flyer",
             "insight": "Transfer IHG One Rewards points to Virgin Australia Velocity Frequent Flyer at a 5:1 ratio with a 10,000-point minimum.",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Other",
+    "from": "IHG One Rewards",
+    "rates": [
+      {
+        "rate": "5 : 1",
+        "partners": [
+          {
+            "to": "ITA Airways (Volare)",
+            "insight": "Transfer IHG points to airline miles by calling IHG One Rewards customer care +61 2 8074 3411",
+            "enabled": true
+          },
+          {
+            "to": "Saudia Alfursan",
+            "insight": "Transfer IHG points to airline miles by calling IHG One Rewards customer care +61 2 8074 3411",
             "enabled": true
           }
         ]
