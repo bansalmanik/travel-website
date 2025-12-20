@@ -277,13 +277,45 @@
         ]
       },
       {
-        "heading": "How to calculate the return rate of a card?",
+        "heading": "How to Calculate the Return Rate of a Credit Card",
         "body": [
-          "For cashback or discount cards, this is simple: compare the cashback percentage across cards that fit your spending criteria.",
-          "For credit cards that earn reward points, it is less straightforward. First, you must assign a safe, average monetary value to each point. Then, calculate how many points you earn per ₹100 spent to derive your rate of return.",
-          "Note that many reward cards give accelerated (higher) points when you make purchases via specific platforms. Some of these platforms also sell shopping vouchers for grocery, fashion, and dining.",
-          "For example, suppose the HDFC Regalia Gold Credit Card gives 4 reward points per ₹150 spent. You might assume you will get 4 points when spending ₹150 on BigBasket. However, via the 'HDFC SmartBuy' portal, you can buy a BigBasket voucher that gives you 5x points. Suddenly, for that same ₹150 spend, you earn 20 points.",
-          "If you are confused about HDFC SmartBuy or similar portals, don't worry. Navigate to our 'Travel on Points' section, where we explain these accelerators in detail."
+          "Understanding the true return rate of a credit card is essential for making informed decisions. The calculation method varies depending on the card type."
+        ]
+      },
+      {
+        "subheading": "1. Cashback and Discount Cards",
+        "body": [
+          "For these cards, the calculation is simple: compare the cashback percentage or instant discount rate across cards that align with your typical spending habits."
+        ]
+      },
+      {
+        "subheading": "2. Reward Point Cards",
+        "body": [
+          "Calculating the return on reward cards is more complex. You should follow a two-step process:"
+        ],
+        "bulletPoints": [
+          "**Assign a Point Value**: Determine a conservative, average monetary value for a single point (e.g., 1 Reward Point = ₹0.50).",
+          "**Calculate the Return per ₹100**: Determine how many points you earn for every ₹100 spent to derive your effective percentage of return."
+        ]
+      },
+      {
+        "subheading": "3. Understanding Accelerated Rewards",
+        "body": [
+          "Many premium cards offer \"accelerated\" (higher) reward rates when you purchase through specific bank-owned platforms. These portals often sell shopping vouchers for groceries, fashion, and dining that offer significantly higher yields."
+        ]
+      },
+      {
+        "subheading": "Example: HDFC Regalia Gold",
+        "bulletPoints": [
+          "**Standard Spend**: Usually, this card offers 4 Reward Points per ₹150 spent.",
+          "**Accelerated Spend**: If you purchase a BigBasket voucher through the HDFC SmartBuy portal, you can earn 5x points.",
+          "**The Result**: For that same ₹150 spend, you earn 20 points instead of 4, dramatically increasing your total return."
+        ]
+      },
+      {
+        "subheading": "Confused by SmartBuy or other accelerator portals?",
+        "body": [
+          "Visit our 'Travel on Points' section, where we break down these multipliers and show you how to maximize your rewards."
         ]
       },
       {

@@ -79,36 +79,47 @@ function renderSections(sections: MilesPointsArticle["sections"]) {
     });
   }
 
-  return sections.map((section, index) => (
-    <section 
-      key={`${section.heading ?? "section"}-${index}`} 
-      className="space-y-4 scroll-mt-8"
-      id={section.heading ? section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-') : undefined}
-    >
-      {section.heading ? (
-        <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-          {section.heading}
-        </h2>
-      ) : null}
-      <div className="space-y-4 text-base leading-relaxed sm:text-lg sm:leading-relaxed">
-        {section.body?.map((paragraph, bodyIndex) => (
-          <p key={`paragraph-${bodyIndex}`} className="text-slate-700">
-            {renderFormattedText(paragraph)}
-          </p>
-        ))}
-        {section.bulletPoints ? (
-          <ul className="space-y-3 rounded-lg border border-amber-100 bg-amber-50/30 p-5 sm:p-6">
-            {section.bulletPoints.map((item, bulletIndex) => (
-              <li key={`bullet-${bulletIndex}`} className="flex gap-3 text-slate-700">
-                <span className="mt-1.5 flex h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600" />
-                <span className="flex-1">{renderFormattedText(item)}</span>
-              </li>
-            ))}
-          </ul>
+  return sections.map((section, index) => {
+    const hasSubheading = !!section.subheading;
+    
+    return (
+      <section 
+        key={`${section.heading ?? section.subheading ?? "section"}-${index}`} 
+        className={hasSubheading ? "space-y-3 pl-4 sm:pl-6" : "space-y-4 scroll-mt-8"}
+        id={section.heading ? section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-') : section.subheading ? section.subheading.toLowerCase().replace(/[^a-z0-9]+/g, '-') : undefined}
+      >
+        {section.heading ? (
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+            {section.heading}
+          </h2>
         ) : null}
-      </div>
-    </section>
-  ));
+        
+        {section.subheading ? (
+          <h3 className="text-xl font-semibold text-slate-800 sm:text-2xl">
+            {section.subheading}
+          </h3>
+        ) : null}
+        
+        <div className="space-y-4 text-base leading-relaxed sm:text-lg sm:leading-relaxed">
+          {section.body?.map((paragraph, bodyIndex) => (
+            <p key={`paragraph-${bodyIndex}`} className="text-slate-700">
+              {renderFormattedText(paragraph)}
+            </p>
+          ))}
+          {section.bulletPoints ? (
+            <ul className="space-y-3 rounded-lg border border-amber-100 bg-amber-50/30 p-5 sm:p-6">
+              {section.bulletPoints.map((item, bulletIndex) => (
+                <li key={`bullet-${bulletIndex}`} className="flex gap-3 text-slate-700">
+                  <span className="mt-1.5 flex h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600" />
+                  <span className="flex-1">{renderFormattedText(item)}</span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      </section>
+    );
+  });
 }
 
 export default async function MilesPointsArticlePage({
