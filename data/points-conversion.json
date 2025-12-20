@@ -2754,7 +2754,7 @@
   },
   {
     "program": "IHG One Rewards",
-    "from": "Points",
+    "from": "IHG One Rewards",
     "rates": [
       {
         "rate": "5 : 1 Ratio",
@@ -2950,7 +2950,7 @@
   },
   {
     "program": "Other",
-    "from": "IHG One Rewards",
+    "from": "Etihad Guest",
     "rates": [
       {
         "rate": "5 : 1",

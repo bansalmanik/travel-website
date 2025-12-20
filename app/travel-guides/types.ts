@@ -5,7 +5,7 @@ export type SectionImage = {
   enabled?: boolean;
 };
 
-export type TravelResourceSection = {
+export type TravelGuideSection = {
   heading: string;
   body: string[];
   image?: SectionImage;
@@ -13,7 +13,7 @@ export type TravelResourceSection = {
   enabled?: boolean;
 };
 
-export type TravelResourceEntry = {
+export type TravelGuideEntry = {
   slug: string;
   title: string;
   author: string;
@@ -25,10 +25,10 @@ export type TravelResourceEntry = {
   heroImage: SectionImage;
   gallery?: SectionImage[];
   videoUrl?: string;
-  sections: TravelResourceSection[];
+  sections: TravelGuideSection[];
   enabled?: boolean;
 };
 
-export type TravelResourceDataset = {
-  travelResources: TravelResourceEntry[];
+export type TravelGuideDataset = {
+  travelGuides: TravelGuideEntry[];
 };

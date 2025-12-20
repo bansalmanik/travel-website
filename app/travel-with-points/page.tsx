@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const featuredSection = {
-  title: "Miles & Points Explained",
+    title: "Points & Miles Explained",
   description:
     "Start here if you're new to points and miles. Learn the fundamentals, understand how different programs work, and build a solid foundation for your travel rewards journey.",
-  href: "/travel-with-points/miles-and-points-explained",
+  href: "/travel-with-points/points-and-miles-explained",
   accent: "bg-indigo-100 text-indigo-900",
 };
 

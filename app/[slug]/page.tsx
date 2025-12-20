@@ -9,7 +9,7 @@ import HotelProgramContent from './hotel-program-content'
 import FlightProgramContent from './flight-program-content'
 import CreditCardContent from './credit-card-content'
 import BankProgramContent from './bank-program-content'
-import TravelResourceMDXContent from './travel-resource-mdx-content'
+import TravelGuideMDXContent from './travel-guide-mdx-content'
 
 export async function generateStaticParams() {
   const slugs = await getAllContentSlugs()
@@ -80,26 +80,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         },
       }
     }
-    case 'travel-resource': {
-      const resource = content.data
+    case 'travel-guide': {
+      const guide = content.data
       return {
-        title: resource.seoTitle,
-        description: resource.seoDescription,
-        authors: [{ name: resource.author }],
+        title: guide.seoTitle,
+        description: guide.seoDescription,
+        authors: [{ name: guide.author }],
         openGraph: {
-          title: resource.seoTitle,
-          description: resource.seoDescription,
+          title: guide.seoTitle,
+          description: guide.seoDescription,
           type: 'article',
-          publishedTime: resource.publishedOn,
-          authors: [resource.author],
-          images: [{ url: resource.heroImage.src, alt: resource.heroImage.alt }],
+          publishedTime: guide.publishedOn,
+          authors: [guide.author],
+          images: [{ url: guide.heroImage.src, alt: guide.heroImage.alt }],
           url: `https://milesgoround.com/${slug}`,
         },
         twitter: {
           card: 'summary_large_image',
-          title: resource.seoTitle,
-          description: resource.seoDescription,
-          images: [resource.heroImage.src],
+          title: guide.seoTitle,
+          description: guide.seoDescription,
+          images: [guide.heroImage.src],
         },
         alternates: {
           canonical: `https://milesgoround.com/${slug}`,
@@ -138,8 +138,8 @@ export default async function UnifiedContentPage({ params }: { params: Promise<{
       return <CreditCardContent card={content.data} />
     case 'bank-program':
       return <BankProgramContent program={content.data} />
-    case 'travel-resource':
-      return <TravelResourceMDXContent resource={content.data} />
+    case 'travel-guide':
+      return <TravelGuideMDXContent guide={content.data} />
     default:
       notFound()
   }

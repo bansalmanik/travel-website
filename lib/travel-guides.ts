@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
 
-export interface TravelResource {
+export interface TravelGuide {
   slug: string
   title: string
   excerpt: string
@@ -18,10 +18,10 @@ export interface TravelResource {
   url: string
 }
 
-const CONTENT_DIR = path.join(process.cwd(), 'content/travel-resources')
+const CONTENT_DIR = path.join(process.cwd(), 'content/travel-guides')
 
-export async function getAllTravelResources(): Promise<TravelResource[]> {
-  const resources: TravelResource[] = []
+export async function getAllTravelGuides(): Promise<TravelGuide[]> {
+  const guides: TravelGuide[] = []
   
   try {
     const files = await fs.readdir(CONTENT_DIR)
@@ -32,24 +32,24 @@ export async function getAllTravelResources(): Promise<TravelResource[]> {
         const fileContent = await fs.readFile(filePath, 'utf-8')
         const { data, content } = matter(fileContent)
         
-        resources.push({
+        guides.push({
           ...data,
           content,
           readTime: data.readTime || readingTime(content).text,
           url: `/${data.slug}`,
-        } as TravelResource)
+        } as TravelGuide)
       }
     }
   } catch (error) {
-    console.warn('Travel resources directory not found, skipping...')
+    console.warn('Travel guides directory not found, skipping...')
   }
   
-  return resources.sort((a, b) => 
+  return guides.sort((a, b) => 
     new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
   )
 }
 
-export async function getTravelResource(slug: string): Promise<TravelResource | null> {
-  const resources = await getAllTravelResources()
-  return resources.find(resource => resource.slug === slug) || null
+export async function getTravelGuide(slug: string): Promise<TravelGuide | null> {
+  const guides = await getAllTravelGuides()
+  return guides.find(guide => guide.slug === slug) || null
 }

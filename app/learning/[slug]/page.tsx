@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { ArticleLayout } from "@/app/travel-with-points/miles-and-points-explained/article-layout";
-import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
+import { ArticleLayout } from "@/app/travel-with-points/points-and-miles-explained/article-layout";
+import type { MilesPointsArticle } from "@/app/travel-with-points/points-and-miles-explained/types";
 import {
   getAdjacentMilesPointsArticles,
   getMilesPointsArticleBySlug,
@@ -23,7 +23,7 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Miles & Points Explained | Miles Go Round",
+      title: "Points & Miles Explained | Miles Go Round",
       description:
         "Beginner-friendly guides explaining how travel points and miles work, how to earn them, and how to redeem them wisely.",
     };

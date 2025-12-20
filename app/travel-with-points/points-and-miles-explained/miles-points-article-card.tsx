@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
+import type { MilesPointsArticle } from "@/app/travel-with-points/points-and-miles-explained/types";
 
 export function MilesPointsArticleCard({ article }: { article: MilesPointsArticle }) {
   return (

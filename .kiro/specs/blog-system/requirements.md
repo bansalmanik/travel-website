@@ -117,7 +117,7 @@ This document outlines the requirements for implementing a comprehensive blog sy
 1. WHEN a blog page loads THEN the system SHALL use the existing site header, footer, and navigation components
 2. WHEN blog posts are displayed THEN the system SHALL follow the existing design system for typography, colors, and spacing
 3. WHEN a visitor navigates between blog and other site sections THEN the system SHALL maintain consistent navigation patterns
-4. WHEN blog posts include images THEN the system SHALL use the same image optimization and display patterns as Stories and Travel Resources
+4. WHEN blog posts include images THEN the system SHALL use the same image optimization and display patterns as Stories and Travel Guides
 5. WHEN the homepage loads THEN the system SHALL optionally display a "Latest from Blog" section with 2-3 featured posts
 
 ### Requirement 9

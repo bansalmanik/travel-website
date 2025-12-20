@@ -7,9 +7,9 @@ import {
   getHotelProgramContent,
   getBankProgramContent
 } from './contentData'
-import { getTravelResource, getAllTravelResources } from './travel-resources'
+import { getTravelGuide, getAllTravelGuides } from './travel-guides'
 
-export type ContentType = 'blog' | 'story' | 'hotel-program' | 'flight-program' | 'credit-card' | 'bank-program' | 'travel-resource'
+export type ContentType = 'blog' | 'story' | 'hotel-program' | 'flight-program' | 'credit-card' | 'bank-program' | 'travel-guide'
 
 export interface UnifiedContent {
   slug: string
@@ -31,7 +31,7 @@ export const RESERVED_ROUTES = [
   'privacy',
   'stories',
   'terms',
-  'travel-resources',
+  'travel-guides',
   'travel-with-points',
   '_next',
   'api',
@@ -88,10 +88,10 @@ export async function getContentBySlug(slug: string): Promise<UnifiedContent | n
     return { slug, type: 'bank-program', data: bankProgram }
   }
 
-  // Try travel resource (MDX)
-  const travelResource = await getTravelResource(slug)
-  if (travelResource) {
-    return { slug, type: 'travel-resource', data: travelResource }
+  // Try travel guide (MDX)
+  const travelGuide = await getTravelGuide(slug)
+  if (travelGuide) {
+    return { slug, type: 'travel-guide', data: travelGuide }
   }
 
   return null
@@ -127,9 +127,9 @@ export async function getAllContentSlugs(): Promise<string[]> {
   const bankContent = await getBankProgramContent()
   slugs.push(...bankContent.programs.map((p: any) => p.slug))
 
-  // Travel resources (MDX)
-  const travelResources = await getAllTravelResources()
-  slugs.push(...travelResources.map(r => r.slug))
+  // Travel guides (MDX)
+  const travelGuides = await getAllTravelGuides()
+  slugs.push(...travelGuides.map(g => g.slug))
 
   return slugs
 }

@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getAllTravelResources } from "@/lib/travel-resources";
+import { getAllTravelGuides } from "@/lib/travel-guides";
 
-const pageTitle = "Travel Resources Library | Miles Go Round";
+const pageTitle = "Travel Guides Library | Miles Go Round";
 const pageDescription =
-  "Browse Ana's reflective travel resources to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
+  "Browse Ana's reflective travel guides to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
 
 export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
   alternates: {
-    canonical: "/travel-resources",
+    canonical: "/travel-guides",
   },
   openGraph: {
     title: pageTitle,
     description: pageDescription,
     type: "website",
-    url: "https://example.com/travel-resources",
+    url: "https://example.com/travel-guides",
   },
   twitter: {
     card: "summary_large_image",
@@ -27,19 +27,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function TravelResourcesPage() {
-  const travelResources = await getAllTravelResources();
+export default async function TravelGuidesPage() {
+  const travelGuides = await getAllTravelGuides();
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Travel Resources Library",
+    name: "Travel Guides Library",
     description: pageDescription,
-    url: "https://example.com/travel-resources",
-    hasPart: travelResources.map((entry) => ({
+    url: "https://example.com/travel-guides",
+    hasPart: travelGuides.map((entry) => ({
       "@type": "Article",
       headline: entry.title,
       datePublished: entry.publishedOn,
-      url: `https://example.com/travel-resources/${entry.slug}`,
+      url: `https://example.com/travel-guides/${entry.slug}`,
     })),
   };
 
@@ -55,7 +55,7 @@ export default async function TravelResourcesPage() {
             Field Notes
           </p>
           <h1 className="text-4xl font-semibold text-slate-900 sm:text-5xl">
-            Travel Resources Library
+            Travel Guides Library
           </h1>
           <p className="mx-auto max-w-2xl text-base text-slate-600">
             Every entry is a postcard from the road—honest reflections, mindful rituals, and practical tips to make slow travel
@@ -64,7 +64,7 @@ export default async function TravelResourcesPage() {
         </header>
 
         <div className="grid gap-10 md:grid-cols-2">
-          {travelResources.map((entry) => (
+          {travelGuides.map((entry) => (
             <article
               key={entry.slug}
               className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl focus-within:-translate-y-1 focus-within:shadow-xl"

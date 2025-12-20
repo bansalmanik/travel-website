@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
+import type { MilesPointsArticle } from "@/app/travel-with-points/points-and-miles-explained/types";
 
 function formatDate(date: string) {
   return new Intl.DateTimeFormat("en", {
@@ -25,14 +25,14 @@ export function ArticleLayout({
   const published = formatDate(article.publishedOn);
   const updated = article.updatedOn ? formatDate(article.updatedOn) : undefined;
   const categoryLabel = article.category?.trim();
-  const showCategory = categoryLabel && categoryLabel.toLowerCase() !== "miles & points explained";
+  const showCategory = categoryLabel && categoryLabel.toLowerCase() !== "points & miles explained";
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 text-slate-900">
       <div className="mx-auto flex max-w-3xl flex-col gap-10 px-4 pb-20 pt-16 sm:px-6 lg:pb-28 lg:pt-24">
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-amber-800">
           <Link
-            href="/travel-with-points/miles-and-points-explained"
+            href="/travel-with-points/points-and-miles-explained"
             className="rounded-full border border-amber-100 bg-amber-50 px-3 py-1 text-[0.68rem] transition hover:-translate-y-[1px] hover:shadow-sm"
           >
             Miles &amp; Points Explained

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getAllTravelResources } from "@/lib/travel-resources";
+import { getAllTravelGuides } from "@/lib/travel-guides";
 import { getAllStorySummaries } from "@/lib/stories";
 import { getAllBlogPosts, getCategoryInfo } from "@/lib/blog";
 
@@ -13,8 +13,8 @@ const quickLinks = [
 ];
 
 export default async function Home() {
-  const travelResourceEntries = await getAllTravelResources();
-  const journalHighlights = travelResourceEntries.slice(0, 3).map((entry) => ({
+  const travelGuideEntries = await getAllTravelGuides();
+  const journalHighlights = travelGuideEntries.slice(0, 3).map((entry) => ({
     title: entry.title,
     date: entry.displayDate,
     url: `/${entry.slug}`,
@@ -72,23 +72,23 @@ export default async function Home() {
             <div className="mb-6 flex flex-col items-center justify-center gap-3 sm:mb-8 sm:flex-row sm:gap-4">
               {/* Primary CTA */}
               <Link
-                href="/travel-with-points"
+                href="/travel-guides"
                 className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-black/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-xl hover:shadow-black/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               >
-                <span className="relative">Start Exploring</span>
+                <span className="relative">Travel Guides</span>
                 <svg className="relative h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </Link>
               {/* Secondary CTA */}
               <Link
-                href="/stories"
+                href="/travel-with-points/points-and-miles-explained"
                 className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               >
                 <svg className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
-                <span>Read Stories</span>
+                <span>Points and Miles Explained</span>
               </Link>
             </div>
 
@@ -115,119 +115,9 @@ export default async function Home() {
 
       {/* Main Content */}
       <main className="bg-white">
-        {/* Getting Started Section */}
-        <section className="border-b border-slate-100 py-8 sm:py-12">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6">
-            <div className="mb-6 text-center">
-              <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">
-                Start Your Journey
-              </h2>
-            </div>
-
-            <div className="space-y-3 sm:grid sm:grid-cols-2 sm:gap-4 sm:space-y-0">
-              {/* Miles & Points Explained */}
-              <Link
-                href="/travel-with-points/miles-and-points-explained"
-                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-slate-900 sm:hover:shadow-lg"
-              >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-slate-900 sm:h-12 sm:w-12">
-                  <svg className="h-5 w-5 text-white sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-                <div className="flex-1 sm:mt-3">
-                  <h3 className="mb-1 text-base font-semibold text-slate-900 sm:text-lg">
-                    Miles & Points Explained
-                  </h3>
-                  <p className="text-sm text-slate-600 sm:mb-2">
-                    Learn the basics
-                  </p>
-                </div>
-                <svg className="h-5 w-5 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-
-              {/* Travel With Points */}
-              <Link
-                href="/travel-with-points"
-                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all active:scale-[0.98] sm:flex-col sm:items-start sm:p-6 sm:hover:border-sky-300 sm:hover:shadow-lg"
-              >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-sky-500 sm:h-12 sm:w-12">
-                  <svg className="h-5 w-5 text-white sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div className="flex-1 sm:mt-3">
-                  <h3 className="mb-1 text-base font-semibold text-slate-900 sm:text-lg">
-                    Travel With Points
-                  </h3>
-                  <p className="text-sm text-slate-600 sm:mb-2">
-                    Explore programs
-                  </p>
-                </div>
-                <svg className="h-5 w-5 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Latest Resources Section */}
-        <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <div className="mb-6 text-center sm:mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
-                Latest Resources
-              </h2>
-            </div>
-
-            <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
-              {journalHighlights.map((entry) => (
-                <Link
-                  key={entry.title}
-                  href={entry.url}
-                  className="group relative overflow-hidden rounded-lg bg-slate-100 transition-transform hover:scale-[1.02]"
-                  style={{ aspectRatio: '4/3' }}
-                >
-                  {entry.heroImage?.src && (
-                    <Image
-                      src={entry.heroImage.src}
-                      alt={entry.heroImage.alt}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, 33vw"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5">
-                    <p className="mb-1 text-xs font-medium text-white/70">{entry.date}</p>
-                    <h3 className="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-white/90 sm:text-base">
-                      {entry.title}
-                    </h3>
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            <div className="mt-6 text-center sm:mt-8">
-              <Link
-                href="/travel-resources"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
-              >
-                View all resources
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </section>
-
         {/* Blog Section */}
         {latestBlogPosts.length > 0 && (
-          <section className="border-t border-slate-100 py-10 sm:py-14">
+          <section className="py-10 sm:py-14">
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
               <div className="mb-6 text-center sm:mb-8">
                 <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
@@ -283,6 +173,152 @@ export default async function Home() {
             </div>
           </section>
         )}
+
+        {/* Latest Guides Section */}
+        <section className="border-t border-slate-100 py-10 sm:py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="mb-6 text-center sm:mb-8">
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
+                Latest Guides
+              </h2>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
+              {journalHighlights.map((entry) => (
+                <Link
+                  key={entry.title}
+                  href={entry.url}
+                  className="group relative overflow-hidden rounded-lg bg-slate-100 transition-transform hover:scale-[1.02]"
+                  style={{ aspectRatio: '4/3' }}
+                >
+                  {entry.heroImage?.src && (
+                    <Image
+                      src={entry.heroImage.src}
+                      alt={entry.heroImage.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5">
+                    <p className="mb-1 text-xs font-medium text-white/70">{entry.date}</p>
+                    <h3 className="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-white/90 sm:text-base">
+                      {entry.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-6 text-center sm:mt-8">
+              <Link
+                href="/travel-guides"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+              >
+                View all guides
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Travel With Points Section */}
+        <section className="border-t border-slate-100 py-10 sm:py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="mb-6 text-center sm:mb-8">
+              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
+                Travel With Points
+              </h2>
+              <p className="mt-2 text-slate-600">Discover credit cards, hotel programs, and airline loyalty programs</p>
+            </div>
+
+            <div className="space-y-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:space-y-0">
+              {/* Credit Cards */}
+              <Link
+                href="/credit-cards"
+                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all hover:border-slate-300 hover:shadow-md sm:flex-col sm:items-start sm:p-6"
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-700">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                  </svg>
+                </div>
+                <div className="flex-1 sm:mt-3">
+                  <h3 className="mb-1 text-base font-semibold text-slate-900 sm:text-lg">
+                    Credit Cards
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    Best travel credit cards to earn points
+                  </p>
+                </div>
+                <svg className="h-5 w-5 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+
+              {/* Hotel Programs */}
+              <Link
+                href="/hotel-programs"
+                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all hover:border-slate-300 hover:shadow-md sm:flex-col sm:items-start sm:p-6"
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-700">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                  </svg>
+                </div>
+                <div className="flex-1 sm:mt-3">
+                  <h3 className="mb-1 text-base font-semibold text-slate-900 sm:text-lg">
+                    Hotel Programs
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    Maximize stays with loyalty programs
+                  </p>
+                </div>
+                <svg className="h-5 w-5 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+
+              {/* Flight Programs */}
+              <Link
+                href="/flight-programs"
+                className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all hover:border-slate-300 hover:shadow-md sm:flex-col sm:items-start sm:p-6"
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-700">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                  </svg>
+                </div>
+                <div className="flex-1 sm:mt-3">
+                  <h3 className="mb-1 text-base font-semibold text-slate-900 sm:text-lg">
+                    Flight Programs
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    Airline miles and frequent flyer programs
+                  </p>
+                </div>
+                <svg className="h-5 w-5 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 sm:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="mt-6 text-center sm:mt-8">
+              <Link
+                href="/travel-with-points"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+              >
+                Explore all programs
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* Stories Section */}
         <section className="border-t border-slate-100 py-10 sm:py-14">

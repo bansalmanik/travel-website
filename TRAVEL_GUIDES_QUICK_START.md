@@ -1,20 +1,20 @@
-# Travel Resources - Quick Start
+# Travel Guides - Quick Start
 
 ## ✅ Migration Complete
 
-Travel resources now use MDX files instead of JSON!
+Travel guides now use MDX files instead of JSON!
 
 ## File Location
 
 ```
-content/travel-resources/
+content/travel-guides/
 ├── macau-transportation-essentials.mdx
 └── hongkong-transportation-essentials.mdx
 ```
 
-## Add New Travel Resource
+## Add New Travel Guide
 
-1. Create file: `content/travel-resources/your-slug.mdx`
+1. Create file: `content/travel-guides/your-slug.mdx`
 
 2. Add frontmatter:
 ```yaml
