@@ -105,13 +105,13 @@
   },
   {
     "slug": "how-credit-card-works",
-    "title": "Credit Cards: Credit Card 101?",
-    "excerpt": "Learn how credit cards work and costs and risks associated.",
+    "title": "Credit Cards: Credit Card 101",
+    "excerpt": "Learn how credit cards work and the costs and risks associated with them.",
     "category": "Points & Miles Explained",
     "readTime": "2 min read",
     "publishedOn": "2025-12-06",
-    "seoTitle": "Credit Cards: Who Should NOT Get Them? (Responsible Use)",
-    "seoDescription": "Credit Card 101. What are Credit cards? How credit cards work? Costs associated with credit cards.",
+    "seoTitle": "Credit Cards: How Credit Cards Work (Responsible Use)",
+    "seoDescription": "Credit Card 101. What are credit cards? How do credit cards work? Costs associated with credit cards.",
     "tags": [
       "beginner",
       "finance",
@@ -119,32 +119,32 @@
     ],
     "sections": [
       {
-        "heading": "What is a  credit card?",
+        "heading": "What is a credit card?",
         "body": [
           "A credit card is essentially a revolving line of credit. Unlike a debit card, which pulls money directly from your bank account, a credit card allows you to borrow money from a bank (the issuer) to make purchases, up to a certain limit.",
           "Here is a breakdown of how the cycle works, how to avoid interest, and how the companies make money."
         ]
       },
       {
-        "heading": "How Credit Cards work?",
+        "heading": "How do credit cards work?",
         "bulletPoints": [
           "**Spending**: You use the card to buy things. The bank pays the merchant on your behalf immediately.",
           "**Statement Date**: At the end of the 30-day cycle, the bank closes the books and sends you a statement. This lists every purchase you made and your Statement Balance.",
           "**Grace Period**: You typically have 21–25 days from the statement date to pay the bill. This is called the grace period.",
-          "**Due Date**: This is the deadline. If you pay the entire statement balance by this date, you are generally charged interest."
+          "**Due Date**: This is the deadline. If you pay the entire statement balance by this date, you are generally not charged interest."
         ]
       },
       {
         "heading": "Costs associated with a credit card",
         "body": [
-          "There are certain fees associated with a Credit card. Always read terms and condition document associated with your credit card. Some of the common fee that bank charges are mentioned below and this is not a holistic list"
+          "There are certain fees associated with a credit card. Always read the terms and conditions document associated with your credit card. Some of the common fees that banks charge are mentioned below, and this is not a comprehensive list:"
         ],
         "bulletPoints": [
-          "**Annual Fee**: A yearly membership charge. This is ₹0 for Lifetime Free Cards(LTF)",
+          "**Annual Fee**: A yearly membership charge. This is ₹0 for Lifetime Free Cards (LTF).",
           "**Late Payment Fee**: A penalty for missing your due date.",
-          "**Interest**: The cost of not paying bill in full and carrying a balance.",
-          "**Cash Advance Fee**: A charge for taking cash out at an ATM using Credit card.",
-          "**Foreign Transaction Fee**: A 0 - 3.5% surcharge on purchases made outside your country."       
+          "**Interest**: The cost of not paying your bill in full and carrying a balance.",
+          "**Cash Advance Fee**: A charge for withdrawing cash at an ATM using your credit card.",
+          "**Foreign Transaction Fee**: A 0-3.5% surcharge on purchases made outside your country."       
         ]
       }
     ]
@@ -273,7 +273,7 @@
         ],
         "bulletPoints": [
           "**High Grocery Spends + Cashback Preference**: For this use case, consider the HSBC Live+, which gives 10% cashback (up to ₹1,000/month) on grocery spends, including offline Kirana stores. Another option is the HDFC Swiggy card if you primarily use Swiggy Instamart.",
-          "**High Grocery Spends + Travel Redemption Preference**: The first step remains the same: identify that your main category is groceries. However, since you want travel redemptions, you need a card that earns reward points. Be careful here—sometimes the rewards card you are eligible for has a lower return rate than a cashback card in the same category. in those cases, it is often mathematically better to choose the cashback card."
+          "**High Grocery Spends + Travel Redemption Preference**: The first step remains the same: identify that your main category is groceries. However, since you want travel redemptions, you need a card that earns reward points. Be careful here—sometimes the rewards card you are eligible for has a lower return rate than a cashback card in the same category. In those cases, it is often mathematically better to choose the cashback card."
         ]
       },
       {
