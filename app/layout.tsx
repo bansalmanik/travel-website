@@ -110,6 +110,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr">
       <head>
+        <meta name='impact-site-verification' content='969573b7-4c57-4d0a-a384-abaf360ca209' />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script
