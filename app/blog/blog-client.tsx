@@ -24,7 +24,7 @@ export default function BlogClient({ posts, categories, categoryInfo }: BlogClie
       <section className="border-b border-slate-200 bg-white py-6 sm:py-8 sticky top-0 z-10 backdrop-blur-sm bg-white/95">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-1">
-            Travel Guides
+            Latest Blog Posts
           </h1>
           
           {/* Filter Label with scroll hint */}
