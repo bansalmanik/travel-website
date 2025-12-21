@@ -18,7 +18,7 @@
       {
         "heading": "What “Points” and “Miles” really mean",
         "body": [
-          "Points and miles are loyalty currencies. Airlines, hotels, and banks issue them to reward repeat customers and encourage spending or bookings.",
+          "Points and miles are loyalty currencies. Airlines, hotels, and banks issue them to reward the repeat customers and encourage spending or bookings.",
           "Airline miles are specific to that airline. Despite the name, “miles” are not always based on distance flown. Think of miles simply as a term for reward points. In fact, most airlines don't even call their currency “miles” anymore. Example: Air India uses the terminology “Maharaja Points” while IndiGo uses “BluChips”.",
           "Similar to airlines, popular hotel chains like Marriott and Hilton issue hotel points. These points can be used to book hotel stays. Most hotel chains also provide an option to pay partially using points and the remainder via cash or card.",
           "Bank points are issued directly by banks. These are incredibly powerful because, in most cases, they can be transferred to airline miles or hotel points subject to certain terms and conditions."
@@ -51,7 +51,7 @@
         "body": [
           "1 Point or Mile is not equal to ₹1. The value varies from program to program and redemption to redemption.",
           "Some programs provide upfront pricing or a fixed value for each point/mile. Example: Accor Live Limitless, where 2,000 Accor Points always equals €40.",
-          "Some programs use fixed redemption charts (points required) while the cash price is dynamic. Example: Wyndham Rewards divides its hotels into three tiers, costing 7,500, 15,000, or 30,000 points respectively. A room costing 30,000 points might be priced at ₹40,000 or ₹25,000 in cash depending on the date.",
+          "Some programs use fixed redemption charts (points required) while the cash price is dynamic. Example: Wyndham Rewards divides its hotels into three tiers, costing 7,500, 15,000, and 30,000 points respectively, which remain fixed. However, a room costing 30,000 points might be priced at ₹40,000,  ₹25,000, or some other value in cash, depending on the day.",
           "Other programs utilize dynamic pricing for both points and cash, where the redemption cost is determined by supply and demand."
         ]
       }
@@ -60,7 +60,7 @@
   {
     "slug": "setup-safety-and-rules",
     "title": "Points and Miles: How to Begin?",
-    "excerpt": "Before earning aggressively, set up accounts properly, learn expiry rules, and avoid common beginner mistakes.",
+    "excerpt": "Before earning aggressively, set up accounts properly, learn the expiry rules, and avoid common beginner mistakes.",
     "category": "Points & Miles Explained",
     "readTime": "4 min read",
     "publishedOn": "2025-12-06",
@@ -77,7 +77,7 @@
         "heading": "Create accounts and standardize your identity",
         "body": [
           "Create frequent flyer and hotel loyalty accounts for the programs you are likely to use. Ensure you use the same legal name (matching your passport), date of birth, and email/phone format everywhere.",
-          "Small mismatches can create significant administrative headaches when transferring points, requesting missing credits, or merging accounts. Consistency saves hours of troubleshooting later."
+          "Small mismatches can create significant administrative headaches when transferring points, requesting missing credits, or merging accounts. Consistency saves hours of back-and-forth with customer support later."
         ]
       },
       {
@@ -131,7 +131,7 @@
           "**Spending**: You use the card to buy things. The bank pays the merchant on your behalf immediately.",
           "**Statement Date**: At the end of the 30-day cycle, the bank closes the books and sends you a statement. This lists every purchase you made and your Statement Balance.",
           "**Grace Period**: You typically have 21–25 days from the statement date to pay the bill. This is called the grace period.",
-          "**Due Date**: This is the deadline. If you pay the entire statement balance by this date, you are generally not charged interest."
+          "**Due Date**: This is the deadline. If you pay the entire statement balance by this date, you are not charged interest."
         ]
       },
       {
@@ -140,11 +140,11 @@
           "There are certain fees associated with a credit card. Always read the terms and conditions document associated with your credit card. Some of the common fees that banks charge are mentioned below, and this is not a comprehensive list:"
         ],
         "bulletPoints": [
-          "**Annual Fee**: A yearly membership charge. This is ₹0 for Lifetime Free Cards (LTF).",
+          "**Annual Fee**: A yearly membership charge. This is ₹0 for LifeTime Free (LTF) Cards.",
           "**Late Payment Fee**: A penalty for missing your due date.",
           "**Interest**: The cost of not paying your bill in full and carrying a balance.",
           "**Cash Advance Fee**: A charge for withdrawing cash at an ATM using your credit card.",
-          "**Foreign Transaction Fee**: A 0-3.5% surcharge on purchases made outside your country."       
+          "**Foreign Transaction Fee**: A 0-3.5% surcharge on purchases made outside your country."
         ]
       }
     ]
@@ -261,8 +261,8 @@
       {
         "heading": "Questions you should ask yourself before choosing a credit card",
         "bulletPoints": [
-          "**What is your Spending Pattern?**: Choose a card based on the category where you spend the most money.",
-          "**What is your Redemption Preference?**: If you prefer direct savings, choose a cashback card or a co-branded card with good discounts. If you want flexibility for travel, choose a card that earns transferable reward points."
+          "**What is your Spending Pattern?** Choose a card based on the category where you spend the most money.",
+          "**What is your Redemption Preference?** If you prefer direct savings, choose a cashback card or a co-branded card with good discounts. If you want flexibility for travel, choose a card that earns transferable reward points."
         ]
       },
       {
@@ -273,7 +273,7 @@
         ],
         "bulletPoints": [
           "**High Grocery Spends + Cashback Preference**: For this use case, consider the HSBC Live+, which gives 10% cashback (up to ₹1,000/month) on grocery spends, including offline Kirana stores. Another option is the HDFC Swiggy card if you primarily use Swiggy Instamart.",
-          "**High Grocery Spends + Travel Redemption Preference**: The first step remains the same: identify that your main category is groceries. However, since you want travel redemptions, you need a card that earns reward points. Be careful here—sometimes the rewards card you are eligible for has a lower return rate than a cashback card in the same category. In those cases, it is often mathematically better to choose the cashback card."
+          "**High Grocery Spends + Travel Redemption Preference**: The first step remains the same: identify that your main category is groceries. However, since you want travel redemptions, you need a card that earns reward points. Be careful here—sometimes the rewards card for which you are eligible, could have a lower return rate than a cashback card in the same category. In those cases, it is often mathematically better to choose the cashback card."
         ]
       },
       {
@@ -321,9 +321,9 @@
       {
         "heading": "The \"Net Effective Return\" (Don't ignore the fee!)",
         "body": [
-          "A card might offer a high 4% return, but if it comes with a high annual fee, your *actual* profit could be lower than a free card.",
+          "A card might offer a high 4% return, but if it comes with a high annual fee, your ''actual'' profit could be lower than a free card.",
           "To see if a fee-based card is worth it, subtract the annual fee from the total value of rewards you expect to earn in a year.",
-          "**The Breakeven Calculation**: Ask yourself, 'How much do I need to spend just to earn back the fee?' For example, if a card costs ₹3,000 and earns a 2% return, you must spend ₹1.5 Lakhs just to break even (return to ₹0 profit). Only spending *above* that amount generates real value."
+          "**The Breakeven Calculation**: Ask yourself, 'How much do I need to spend just to earn back the fee?' For example, if a card costs ₹3,000 and earns a 2% return, you must spend ₹1.5 Lakhs just to break even (return to ₹0 profit). Only spending ''above'' that amount generates real value."
         ]
       }
     ]
@@ -392,7 +392,7 @@
       {
         "subheading": "HDFC SmartBuy",
         "body": [
-          "One of the most popular portals, offering 5x-10x reward points on select vouchers and travel bookings. Works for all HDFC cards, with some cards earning accelerated reward points and others cashback."
+          "One of the most popular portals, offering 5x-10x reward points on select vouchers and travel bookings. Works for all HDFC cards, with some cards earning accelerated reward points (to do: add example) and others cashback (to do: add example)."
         ]
       },
       {
@@ -438,7 +438,7 @@
         "body": [
           "A frequent flyer program (FFP) is an airline's loyalty scheme that rewards customers with miles or points for flying with them or their partner airlines.",
           "These miles can be redeemed for free flights (award tickets), upgrades and other travel benefits.",
-          "Every major airline operates its own program. Examples include Air India Maharaja Club, IndiGo Bluschips, Emirates Skywards, and Singapore Airlines KrisFlyer."
+          "Every major airline operates its own program. Examples include Air India Maharaja Club, IndiGo BluChips, Emirates Skywards, and Singapore Airlines KrisFlyer."
         ]
       },
       {
