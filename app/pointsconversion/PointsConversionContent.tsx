@@ -149,7 +149,7 @@ type PointsConversionContentProps = {
 export default function PointsConversionContent({ conversions }: PointsConversionContentProps) {
   const [mode, setMode] = useState<"forward" | "reverse">("forward");
   const [selectedProgramName, setSelectedProgramName] = useState<string>("Axis");
-  const [selectedFrom, setSelectedFrom] = useState<string>("Axis Olympus");
+  const [selectedFrom, setSelectedFrom] = useState<string>("Atlas");
   const [selectedTo, setSelectedTo] = useState<string>("");
   const [transferPoints, setTransferPoints] = useState<string>("");
   const [expandedRow, setExpandedRow] = useState<string | null>(null);
