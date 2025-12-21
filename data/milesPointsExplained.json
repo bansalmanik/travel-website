@@ -3,7 +3,7 @@
     "slug": "what-are-points-and-miles",
     "title": "Points & Miles: What Are They?",
     "excerpt": "Start here: learn the core vocabulary, who issues points, and how to view them as a travel currency rather than cash.",
-    "category": "Miles & Points Explained",
+    "category": "Points & Miles Explained",
     "readTime": "7 min read",
     "publishedOn": "2025-12-05",
     "seoTitle": "What Are Points and Miles? Beginner's Loyalty Currency Guide",
@@ -18,8 +18,8 @@
       {
         "heading": "What “Points” and “Miles” really mean",
         "body": [
-          "Points and miles are loyalty currencies. Airlines, hotels, and banks issue them to reward repeat customers and encourage spending or bookings.",
-          "Airline miles are specific to that airline. Despite the name, “miles” are not always based on distance flown; think of miles simply as a term for reward points. In fact, most airlines don't even call their currency “miles” anymore. Example: Air India uses the terminology “Maharaja Points,” while IndiGo uses “BluChips.”",
+          "Points and miles are loyalty currencies. Airlines, hotels, and banks issue them to reward the repeat customers and encourage spending or bookings.",
+          "Airline miles are specific to that airline. Despite the name, “miles” are not always based on distance flown. Think of miles simply as a term for reward points. In fact, most airlines don't even call their currency “miles” anymore. Example: Air India uses the terminology “Maharaja Points” while IndiGo uses “BluChips”.",
           "Similar to airlines, popular hotel chains like Marriott and Hilton issue hotel points. These points can be used to book hotel stays. Most hotel chains also provide an option to pay partially using points and the remainder via cash or card.",
           "Bank points are issued directly by banks. These are incredibly powerful because, in most cases, they can be transferred to airline miles or hotel points subject to certain terms and conditions."
         ]
@@ -51,7 +51,7 @@
         "body": [
           "1 Point or Mile is not equal to ₹1. The value varies from program to program and redemption to redemption.",
           "Some programs provide upfront pricing or a fixed value for each point/mile. Example: Accor Live Limitless, where 2,000 Accor Points always equals €40.",
-          "Some programs use fixed redemption charts (points required) while the cash price is dynamic. Example: Wyndham Rewards divides its hotels into three tiers, costing 7,500, 15,000, or 30,000 points respectively. A room costing 30,000 points might be priced at ₹40,000 or ₹25,000 in cash depending on the date.",
+          "Some programs use fixed redemption charts (points required) while the cash price is dynamic. Example: Wyndham Rewards divides its hotels into three tiers, costing 7,500, 15,000, and 30,000 points respectively, which remain fixed. However, a room costing 30,000 points might be priced at ₹40,000,  ₹25,000, or some other value in cash, depending on the day.",
           "Other programs utilize dynamic pricing for both points and cash, where the redemption cost is determined by supply and demand."
         ]
       }
@@ -60,8 +60,8 @@
   {
     "slug": "setup-safety-and-rules",
     "title": "Points and Miles: How to Begin?",
-    "excerpt": "Before earning aggressively, set up accounts properly, learn expiry rules, and avoid common beginner mistakes.",
-    "category": "Miles & Points Explained",
+    "excerpt": "Before earning aggressively, set up accounts properly, learn the expiry rules, and avoid common beginner mistakes.",
+    "category": "Points & Miles Explained",
     "readTime": "4 min read",
     "publishedOn": "2025-12-06",
     "seoTitle": "Points and Miles Setup: Account Security & Preventing Expiry",
@@ -77,7 +77,7 @@
         "heading": "Create accounts and standardize your identity",
         "body": [
           "Create frequent flyer and hotel loyalty accounts for the programs you are likely to use. Ensure you use the same legal name (matching your passport), date of birth, and email/phone format everywhere.",
-          "Small mismatches can create significant administrative headaches when transferring points, requesting missing credits, or merging accounts. Consistency saves hours of troubleshooting later."
+          "Small mismatches can create significant administrative headaches when transferring points, requesting missing credits, or merging accounts. Consistency saves hours of back-and-forth with customer support later."
         ]
       },
       {
@@ -104,10 +104,56 @@
     ]
   },
   {
+    "slug": "how-credit-card-works",
+    "title": "Credit Cards: Credit Card 101",
+    "excerpt": "Learn how credit cards work and the costs and risks associated with them.",
+    "category": "Points & Miles Explained",
+    "readTime": "2 min read",
+    "publishedOn": "2025-12-06",
+    "seoTitle": "Credit Cards: How Credit Cards Work (Responsible Use)",
+    "seoDescription": "Credit Card 101. What are credit cards? How do credit cards work? Costs associated with credit cards.",
+    "tags": [
+      "beginner",
+      "finance",
+      "strategy"
+    ],
+    "sections": [
+      {
+        "heading": "What is a credit card?",
+        "body": [
+          "A credit card is essentially a revolving line of credit. Unlike a debit card, which pulls money directly from your bank account, a credit card allows you to borrow money from a bank (the issuer) to make purchases, up to a certain limit.",
+          "Here is a breakdown of how the cycle works, how to avoid interest, and how the companies make money."
+        ]
+      },
+      {
+        "heading": "How do credit cards work?",
+        "bulletPoints": [
+          "**Spending**: You use the card to buy things. The bank pays the merchant on your behalf immediately.",
+          "**Statement Date**: At the end of the 30-day cycle, the bank closes the books and sends you a statement. This lists every purchase you made and your Statement Balance.",
+          "**Grace Period**: You typically have 21–25 days from the statement date to pay the bill. This is called the grace period.",
+          "**Due Date**: This is the deadline. If you pay the entire statement balance by this date, you are not charged interest."
+        ]
+      },
+      {
+        "heading": "Costs associated with a credit card",
+        "body": [
+          "There are certain fees associated with a credit card. Always read the terms and conditions document associated with your credit card. Some of the common fees that banks charge are mentioned below, and this is not a comprehensive list:"
+        ],
+        "bulletPoints": [
+          "**Annual Fee**: A yearly membership charge. This is ₹0 for LifeTime Free (LTF) Cards.",
+          "**Late Payment Fee**: A penalty for missing your due date.",
+          "**Interest**: The cost of not paying your bill in full and carrying a balance.",
+          "**Cash Advance Fee**: A charge for withdrawing cash at an ATM using your credit card.",
+          "**Foreign Transaction Fee**: A 0-3.5% surcharge on purchases made outside your country."
+        ]
+      }
+    ]
+  },
+  {
     "slug": "who-should-get-credit-card",
     "title": "Credit Cards: Who Should Avoid Them?",
     "excerpt": "Choosing the right credit card is the fundamental step toward a good points and miles strategy, but they aren't for everyone.",
-    "category": "Miles & Points Explained",
+    "category": "Points & Miles Explained",
     "readTime": "2 min read",
     "publishedOn": "2025-12-06",
     "seoTitle": "Credit Cards: Who Should NOT Get Them? (Responsible Use)",
@@ -144,7 +190,7 @@
     "slug": "credit-card-types",
     "title": "Credit Cards: Understanding the Types",
     "excerpt": "The complete earning playbook: welcome bonuses, everyday spending, travel, promos, portals, and smart stacking.",
-    "category": "Miles & Points Explained",
+    "category": "Points & Miles Explained",
     "readTime": "8 min read",
     "publishedOn": "2025-12-07",
     "seoTitle": "Credit Card Types: Cashback, Co-branded, and Rewards Explained",
@@ -183,7 +229,7 @@
         "heading": "Category-Based Credit Cards",
         "body": [
           "These cards are designed by banks to attract customers who shop heavily in specific categories, such as fuel, grocery, or dining.",
-          "If your budget skews heavily toward a certain category, these cards are for you. If you spend on travel, get a travel card; if you spend on groceries, get a grocery card.",
+          "If your budget skews heavily toward a certain category, these cards are for you. If you spend on travel, get a travel card. If you spend on groceries, get a grocery card.",
           "Example: The HSBC Live+ is a card that gives you 10% cashback on dining, food delivery and grocery spending."
         ]
       },
@@ -199,12 +245,12 @@
   {
     "slug": "choosing-right-credit-card",
     "title": "Credit Cards: Which One is Right for You?",
-    "excerpt": "Learn the value framework: cash vs. points, hidden fees, and a simple method to judge good vs. bad redemptions.",
-    "category": "Miles & Points Explained",
+    "excerpt": "Learn how to judge which is the right credit card for you.",
+    "category": "Points & Miles Explained",
     "readTime": "8 min read",
     "publishedOn": "2025-12-09",
-    "seoTitle": "Points & Miles Redemption: Calculate Value (CPP) & Avoid Fees",
-    "seoDescription": "A practical framework for redemption: learn to calculate Cents-Per-Point (CPP), compare cash vs. points, and spot hidden fees that destroy the value of your rewards.",
+    "seoTitle": "Points & Miles Redemption: Which credit card is right for you",
+    "seoDescription": "A practical framework describing how to choose the right credit card.",
     "tags": [
       "redeeming",
       "cpp",
@@ -213,13 +259,10 @@
     ],
     "sections": [
       {
-        "body": [
-          "There are two primary factors to keep in mind when choosing a credit card:"
-        ],
+        "heading": "Questions you should ask yourself before choosing a credit card",
         "bulletPoints": [
-          "**Spending Pattern**: Choose a card based on the category where you spend the most money.",
-          "**Redemption Preference**: If you prefer direct savings, choose a cashback card or a co-branded card with good discounts. If you want flexibility for luxury travel, choose a card that earns transferable reward points.",
-          "**Return on Spend**: Compare the return rate on your spending while keeping your redemption preference in mind."
+          "**What is your Spending Pattern?** Choose a card based on the category where you spend the most money.",
+          "**What is your Redemption Preference?** If you prefer direct savings, choose a cashback card or a co-branded card with good discounts. If you want flexibility for travel, choose a card that earns transferable reward points."
         ]
       },
       {
@@ -230,25 +273,411 @@
         ],
         "bulletPoints": [
           "**High Grocery Spends + Cashback Preference**: For this use case, consider the HSBC Live+, which gives 10% cashback (up to ₹1,000/month) on grocery spends, including offline Kirana stores. Another option is the HDFC Swiggy card if you primarily use Swiggy Instamart.",
-          "**High Grocery Spends + Travel Redemption Preference**: The first step remains the same: identify that your main category is groceries. However, since you want travel redemptions, you need a card that earns reward points. Be careful here—sometimes the rewards card you are eligible for has a lower return rate than a cashback card in the same category. in those cases, it is often mathematically better to choose the cashback card."
+          "**High Grocery Spends + Travel Redemption Preference**: The first step remains the same: identify that your main category is groceries. However, since you want travel redemptions, you need a card that earns reward points. Be careful here—sometimes the rewards card for which you are eligible, could have a lower return rate than a cashback card in the same category. In those cases, it is often mathematically better to choose the cashback card."
         ]
       },
       {
-        "heading": "How to calculate the return rate of a card?",
+        "heading": "How to Calculate the Return Rate of a Credit Card",
         "body": [
-          "For cashback or discount cards, this is simple: compare the cashback percentage across cards that fit your spending criteria.",
-          "For credit cards that earn reward points, it is less straightforward. First, you must assign a safe, average monetary value to each point. Then, calculate how many points you earn per ₹100 spent to derive your rate of return.",
-          "Note that many reward cards give accelerated (higher) points when you make purchases via specific platforms. Some of these platforms also sell shopping vouchers for grocery, fashion, and dining.",
-          "For example, suppose the HDFC Regalia Gold Credit Card gives 4 reward points per ₹150 spent. You might assume you will get 4 points when spending ₹150 on BigBasket. However, via the 'HDFC SmartBuy' portal, you can buy a BigBasket voucher that gives you 5x points. Suddenly, for that same ₹150 spend, you earn 20 points.",
-          "If you are confused about HDFC SmartBuy or similar portals, don't worry. Navigate to our 'Travel on Points' section, where we explain these accelerators in detail."
+          "Understanding the true return rate of a credit card is essential for making informed decisions. The calculation method varies depending on the card type."
+        ]
+      },
+      {
+        "subheading": "1. Cashback and Discount Cards",
+        "body": [
+          "For these cards, the calculation is simple: compare the cashback percentage or instant discount rate across cards that align with your typical spending habits."
+        ]
+      },
+      {
+        "subheading": "2. Reward Point Cards",
+        "body": [
+          "Calculating the return on reward cards is more complex. You should follow a two-step process:"
+        ],
+        "bulletPoints": [
+          "**Assign a Point Value**: Determine a conservative, average monetary value for a single point (e.g., 1 Reward Point = ₹0.50).",
+          "**Calculate the Return per ₹100**: Determine how many points you earn for every ₹100 spent to derive your effective percentage of return."
+        ]
+      },
+      {
+        "subheading": "3. Understanding Accelerated Rewards",
+        "body": [
+          "Many premium cards offer \"accelerated\" (higher) reward rates when you purchase through specific bank-owned platforms. These portals often sell shopping vouchers for groceries, fashion, and dining that offer significantly higher yields."
+        ]
+      },
+      {
+        "subheading": "Example: HDFC Regalia Gold",
+        "bulletPoints": [
+          "**Standard Spend**: Usually, this card offers 4 Reward Points per ₹150 spent.",
+          "**Accelerated Spend**: If you purchase a BigBasket voucher through the HDFC SmartBuy portal, you can earn 5x points.",
+          "**The Result**: For that same ₹150 spend, you earn 20 points instead of 4, dramatically increasing your total return."
+        ]
+      },
+      {
+        "subheading": "Confused by SmartBuy or other accelerator portals?",
+        "body": [
+          "Visit our 'Travel on Points' section, where we break down these multipliers and show you how to maximize your rewards."
         ]
       },
       {
         "heading": "The \"Net Effective Return\" (Don't ignore the fee!)",
         "body": [
-          "A card might offer a high 4% return, but if it comes with a high annual fee, your *actual* profit could be lower than a free card.",
+          "A card might offer a high 4% return, but if it comes with a high annual fee, your ''actual'' profit could be lower than a free card.",
           "To see if a fee-based card is worth it, subtract the annual fee from the total value of rewards you expect to earn in a year.",
-          "**The Breakeven Calculation**: Ask yourself, 'How much do I need to spend just to earn back the fee?' For example, if a card costs ₹3,000 and earns a 2% return, you must spend ₹1.5 Lakhs just to break even (return to ₹0 profit). Only spending *above* that amount generates real value."
+          "**The Breakeven Calculation**: Ask yourself, 'How much do I need to spend just to earn back the fee?' For example, if a card costs ₹3,000 and earns a 2% return, you must spend ₹1.5 Lakhs just to break even (return to ₹0 profit). Only spending ''above'' that amount generates real value."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "understanding-bank-portals",
+    "title": "Understanding Bank Portals: Maximize Your Rewards",
+    "excerpt": "Learn how bank reward portals work and how to use them to earn accelerated points on everyday purchases.",
+    "category": "Points & Miles Explained",
+    "readTime": "6 min read",
+    "publishedOn": "2025-12-10",
+    "seoTitle": "Understanding Bank Portals: SmartBuy, Gyftr & Reward Multipliers",
+    "seoDescription": "Master bank reward portals to earn 5x-10x points on shopping vouchers, travel bookings, and everyday purchases. Learn strategies to maximize returns.",
+    "tags": [
+      "earning",
+      "bank-portals",
+      "rewards",
+      "beginner"
+    ],
+    "sections": [
+      {
+        "heading": "What are Bank Reward Portals?",
+        "body": [
+          "Bank reward portals are online platforms operated by credit card issuers where you can purchase gift vouchers, book travel, or shop at partner merchants to earn accelerated reward points.",
+          "Instead of earning the standard rate (e.g., 1 point per ₹150), these portals offer multipliers like 5x, 10x, or even higher on specific categories or merchants.",
+          "Popular examples include HDFC SmartBuy, Axis TravelEdge and ICICI iShop."
+        ]
+      },
+      {
+        "heading": "How do Bank Portals work?",
+        "body": [
+          "The process is straightforward:"
+        ],
+        "bulletPoints": [
+          "**Log in**: Access your bank's reward portal using your credit card credentials.",
+          "**Browse**: Look for gift vouchers (Amazon, Flipkart, BigBasket, etc.) or travel bookings.",
+          "**Purchase**: Buy the voucher or service using your eligible credit card.",
+          "**Earn Accelerated Points**: Receive bonus points on top of your base earning rate.",
+          "**Redeem**: Use the voucher for your actual purchase on the merchant's platform."
+        ]
+      },
+      {
+        "heading": "Types of offerings on Bank Portals",
+        "body": [
+          "Bank portals typically offer two main categories:"
+        ]
+      },
+      {
+        "subheading": "1. Gift Vouchers",
+        "body": [
+          "Purchase e-gift cards for popular merchants like Amazon, Flipkart, BigBasket, Swiggy, Zomato, and more. These vouchers can be used for your regular shopping, effectively earning you bonus points on purchases you would make anyway."
+        ]
+      },
+      {
+        "subheading": "2. Travel Bookings",
+        "body": [
+          "Book flights, hotels, and holiday packages directly through the portal. Many banks offer accelerated points on travel bookings, making this an attractive option for frequent travelers."
+        ]
+      },
+      {
+        "heading": "Popular Bank Portals in India",
+        "body": [
+          "Here are the major bank reward portals you should know about:"
+        ]
+      },
+      {
+        "subheading": "HDFC SmartBuy",
+        "body": [
+          "One of the most popular portals, offering 5x-10x reward points on select vouchers and travel bookings. Works for all HDFC cards, with some cards earning accelerated reward points (to do: add example) and others cashback (to do: add example)."
+        ]
+      },
+      {
+        "subheading": "ICICI iShop",
+        "body": [
+          "Offers accelerated points or cashback depending on card used, on various gift vouchers and travel bookings."
+        ]
+      },
+      {
+        "subheading": "HSBC MarketPlace",
+        "body": [
+          "Get accelerated reward points when making travel bookings on HSBC marketplace."
+        ]
+      },
+      {
+        "heading": "Strategies to maximize Bank Portal benefits",
+        "bulletPoints": [
+          "**Stack Discount**: Some vouchers are available on discount and you also get accelerated rewards.",
+          "**Check Validity**: Gift vouchers typically have 6-12 month validity. Don't buy more than you can use.",
+          "**Read Terms**: Each portal has specific eligible cards, minimum transaction amounts, and monthly caps."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "understanding-frequent-flyer-programs",
+    "title": "Understanding Frequent Flyer Programs",
+    "excerpt": "Learn how airline loyalty programs work, how to earn miles, and strategies to maximize value from your air travel.",
+    "category": "Points & Miles Explained",
+    "readTime": "8 min read",
+    "publishedOn": "2025-12-11",
+    "seoTitle": "Frequent Flyer Programs Explained: Earn Miles & Book Award Flights",
+    "seoDescription": "Complete guide to airline loyalty programs. Learn how to earn miles through flights and credit cards, understand award charts, and book your first award ticket.",
+    "tags": [
+      "airlines",
+      "miles",
+      "award-travel",
+      "beginner"
+    ],
+    "sections": [
+      {
+        "heading": "What is a Frequent Flyer Program?",
+        "body": [
+          "A frequent flyer program (FFP) is an airline's loyalty scheme that rewards customers with miles or points for flying with them or their partner airlines.",
+          "These miles can be redeemed for free flights (award tickets), upgrades and other travel benefits.",
+          "Every major airline operates its own program. Examples include Air India Maharaja Club, IndiGo BluChips, Emirates Skywards, and Singapore Airlines KrisFlyer."
+        ]
+      },
+      {
+        "heading": "How do you earn airline miles?",
+        "body": [
+          "There are multiple ways to accumulate miles in your frequent flyer account:"
+        ]
+      },
+      {
+        "subheading": "1. Flying",
+        "body": [
+          "**The traditional method**: Earn miles based on booking price or your fare class. Premium cabins (Business/First) typically earn more miles than Economy.",
+          "Most airlines use either distance-based earning (miles = distance flown × multiplier) or revenue-based earning (miles = ticket price × multiplier)."
+        ]
+      },
+      {
+        "subheading": "2. Credit Card Spending",
+        "body": [
+          "This is often the fastest way to accumulate miles. Many credit cards earn bank points that can be transferred to airline programs at a 1:1 or similar ratio.",
+          "Some airlines also offer co-branded credit cards that earn miles directly in their program."
+        ]
+      },
+      {
+        "subheading": "3. Partner Activities",
+        "body": [
+          "Earn miles through hotel stays, car rentals, dining programs, shopping portals, and other partner activities. These typically offer lower earning rates but can add up over time."
+        ]
+      },
+      {
+        "heading": "Understanding Airline Alliances",
+        "body": [
+          "Most airlines belong to one of three major global alliances: Star Alliance, Oneworld, or SkyTeam. Alliance membership allows you to:",
+          "Earn miles when flying on any partner airline within the alliance.",
+          "Redeem miles for award tickets on any partner airline.",
+          "Enjoy reciprocal benefits like lounge access and priority boarding when you have elite status."
+        ],
+        "bulletPoints": [
+          "**Star Alliance**: Includes Air India, Singapore Airlines, United, Lufthansa, Thai Airways, and 26+ airlines.",
+          "**Oneworld**: Includes British Airways, Qantas, American Airlines, Qatar Airways, and 13+ airlines.",
+          "**SkyTeam**: Includes Delta, Air France, KLM, Korean Air, and 19+ airlines."
+        ]
+      },
+      {
+        "heading": "Award Charts vs. Dynamic Pricing",
+        "body": [
+          "Airlines use two main pricing models for award tickets:"
+        ]
+      },
+      {
+        "subheading": "Fixed Award Charts",
+        "body": [
+          "Traditional model where the miles required for a route are predetermined based on distance and cabin class. Example: 15,000 miles for a domestic Economy ticket, 50,000 miles for an international Business class ticket.",
+          "Advantage: Predictable pricing, excellent value during peak seasons.",
+          "Disadvantage: Limited award availability, especially on popular routes."
+        ]
+      },
+      {
+        "subheading": "Dynamic Pricing",
+        "body": [
+          "Modern model where award prices fluctuate based on demand, similar to cash fares. The miles required can vary significantly depending on the date and route.",
+          "Advantage: More award availability.",
+          "Disadvantage: Can require significantly more miles during peak periods, reducing value."
+        ]
+      },
+      {
+        "heading": "Elite Status and Tier Benefits",
+        "body": [
+          "Most frequent flyer programs have multiple elite tiers (Silver, Gold, Platinum) that you achieve by flying a certain number of miles or segments annually.",
+          "Elite status benefits typically include:"
+        ],
+        "bulletPoints": [
+          "**Priority Services**: Check-in, boarding, baggage handling, and standby.",
+          "**Lounge Access**: Access to airline lounges for you and sometimes a guest.",
+          "**Bonus Miles**: Earn 25%-100% more miles on flights.",
+          "**Complimentary Upgrades**: Subject to availability.",
+          "**Waived Fees**: Baggage fees, change fees, and award booking fees.",
+          "**Alliance Benefits**: Reciprocal benefits when flying partner airlines."
+        ]
+      },
+      {
+        "heading": "Common beginner mistakes",
+        "bulletPoints": [
+          "**Spreading miles too thin**: Having small balances in multiple programs instead of concentrating in one or two.",
+          "**Letting miles expire**: Not tracking expiry dates and losing hard-earned miles.",
+          "**Booking last minute**: Award availability is usually poor close to departure dates.",
+          "**Ignoring partner airlines**: Missing out on better redemption opportunities through alliance partners.",
+          "**Not comparing cash vs. miles**: Sometimes paying cash is better value than using miles."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "understanding-hotel-programs",
+    "title": "Understanding Hotel Loyalty Programs",
+    "excerpt": "Master hotel loyalty programs to earn free nights, room upgrades, and elite benefits at your favorite hotel chains.",
+    "category": "Points & Miles Explained",
+    "readTime": "7 min read",
+    "publishedOn": "2025-12-12",
+    "seoTitle": "Hotel Loyalty Programs Explained: Free Nights & Elite Status Guide",
+    "seoDescription": "Complete guide to hotel rewards programs. Learn how to earn points, book award nights, achieve elite status, and maximize value from hotel stays.",
+    "tags": [
+      "hotels",
+      "loyalty",
+      "award-nights",
+      "beginner"
+    ],
+    "sections": [
+      {
+        "heading": "What are Hotel Loyalty Programs?",
+        "body": [
+          "Hotel loyalty programs reward guests with points for stays at participating properties. These points can be redeemed for free nights, room upgrades, dining, spa services, and other benefits.",
+          "Unlike airline programs, hotel programs are generally easier to understand and offer more consistent value. Most major hotel chains operate global loyalty programs.",
+          "Popular programs include Marriott Bonvoy, Hilton Honors, IHG One Rewards, Accor Live Limitless, and World of Hyatt."
+        ]
+      },
+      {
+        "heading": "How do you earn hotel points?",
+        "body": [
+          "There are several ways to accumulate points in hotel loyalty programs:"
+        ]
+      },
+      {
+        "subheading": "1. Hotel Stays",
+        "body": [
+          "**The primary method**: earn points based on the amount you spend on eligible charges (room rate, dining, spa, etc.). Most programs award 5-10 points per dollar or equivalent currency spent.",
+          "Elite members earn bonus points on top of the base rate (25%-100% more depending on tier)."
+        ]
+      },
+      {
+        "subheading": "2. Credit Card Spending",
+        "body": [
+          "Many credit cards earn bank points that can be transferred to hotel programs. Some hotel chains also offer co-branded credit cards that earn points directly in their program.",
+          "This is often the fastest way to accumulate a large points balance for aspirational redemptions."
+        ]
+      },
+      {
+        "subheading": "3. Promotions and Bonuses",
+        "body": [
+          "Hotels frequently run promotions offering bonus points for stays during specific periods, at certain properties, or for completing challenges (e.g., stay 3 nights, earn 5,000 bonus points)."
+        ]
+      },
+      {
+        "subheading": "4. Partner Activities",
+        "body": [
+          "Earn points through car rentals, airline flights, dining programs, and shopping portals. These typically offer lower earning rates but can supplement your balance."
+        ]
+      },
+      {
+        "heading": "Understanding Hotel Point Values",
+        "body": [
+          "Hotel programs use different pricing models for award nights:"
+        ]
+      },
+      {
+        "subheading": "Fixed Category Pricing",
+        "body": [
+          "Hotels are divided into categories, with each category requiring a fixed number of points per night. Example: Category 1 = 7,500 points, Category 2 = 15,000 points.",
+          "**Advantage**: Predictable pricing, excellent value at high-category properties during peak seasons.",
+          "**Programs using this**: Wyndham."
+        ]
+      },
+      {
+        "subheading": "Dynamic Pricing",
+        "body": [
+          "Points required vary based on the cash rate, demand, and season. The same hotel might cost 20,000 points one night and 50,000 points the next.",
+          "**Advantage**: More award availability.",
+          "**Disadvantage**: Can require significantly more points during peak periods.",
+          "**Programs using this**: Marriott Bonvoy."
+        ]
+      },
+      {
+        "subheading": "Fixed Point Value",
+        "body": [
+          "Each point has a fixed monetary value (e.g., 2,000 points = €40). You can use points to offset any amount of your bill.",
+          "**Advantage**: Complete flexibility, no blackout dates.",
+          "**Disadvantage**: Fixed value means you can't get outsized value from strategic redemptions.",
+          "**Programs using this**: Accor Live Limitless."
+        ]
+      },
+      {
+        "heading": "Elite Status Tiers and Benefits",
+        "body": [
+          "Most hotel programs have elite tiers achieved by staying a certain number of nights or earning a certain number of points annually.",
+          "Common elite benefits include:"
+        ],
+        "bulletPoints": [
+          "**Bonus Points**: Earn 10%-100% more points on stays.",
+          "**Room Upgrades**: Subject to availability, often to the next room category or suites.",
+          "**Late Checkout**: Extended checkout time (2pm-4pm depending on tier).",
+          "**Welcome Amenities**: Free breakfast, food & beverage credits, or welcome gifts.",
+          "**Guaranteed Availability**: Book standard rooms even when hotels show as sold out (48-72 hours advance).",
+          "**Waived Fees**: Resort fees, early departure fees, and award booking fees.",
+          "**Lounge Access**: Access to executive lounges at select properties (top tiers)."
+        ]
+      },
+      {
+        "heading": "Major Hotel Loyalty Programs",
+        "body": [
+          "Here's a quick overview of the largest programs:"
+        ]
+      },
+      {
+        "subheading": "Marriott Bonvoy",
+        "body": [
+          "The world's largest hotel program with 8,000+ properties across 30 brands (Marriott, Sheraton, Westin, Ritz-Carlton, St. Regis, etc.). Uses dynamic pricing for award nights."
+        ]
+      },
+      {
+        "subheading": "Hilton Honors",
+        "body": [
+          "6,000+ properties across 18 brands (Hilton, Conrad, Waldorf Astoria, DoubleTree, etc.). Uses dynamic pricing with generally good availability."
+        ]
+      },
+      {
+        "subheading": "World of Hyatt",
+        "body": [
+          "Smaller footprint (1,000+ properties) but known for excellent redemption value and generous elite benefits. Uses category-based pricing."
+        ]
+      },
+      {
+        "subheading": "IHG One Rewards",
+        "body": [
+          "6,000+ properties across brands like InterContinental, Crowne Plaza, Holiday Inn. Uses category-based pricing with good value at top-tier properties."
+        ]
+      },
+      {
+        "subheading": "Accor Live Limitless",
+        "body": [
+          "5,000+ properties worldwide (Sofitel, Pullman, Novotel, ibis, etc.). Uses fixed point value (2,000 points = €40), offering complete flexibility."
+        ]
+      },
+      {
+        "heading": "Common mistakes to avoid",
+        "bulletPoints": [
+          "**Booking through third parties**: OTAs (Expedia, Booking.com) don't earn points or elite benefits.",
+          "**Ignoring elite status**: The benefits often outweigh the effort to achieve status.",
+          "**Not using points**: Hotel points typically don't expire with activity, but programs can devalue without notice.",
+          "**Redeeming at low-value properties**: Save points for high-end properties where you get maximum value.",
+          "**Forgetting to link reservations**: Ensure your loyalty number is attached to every booking."
         ]
       }
     ]

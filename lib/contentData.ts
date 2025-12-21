@@ -1,25 +1,22 @@
-import type { BankProgram, BankProgramDataset } from "@/app/travel-with-points/bank-programs/types";
+import type { BankProgram, BankProgramDataset } from "@/app/bank-programs/types";
 import type {
     AwardPlaybookItem,
     FavoriteRoute,
     FlightProgram,
-} from "@/app/travel-with-points/flight-programs/types";
+} from "@/app/flight-programs/types";
 import type {
     Card,
     CardStrategy,
     CreditCardDataset,
     FavoriteCombo,
-} from "@/app/travel-with-points/credit-cards/types";
+} from "@/app/credit-cards/types";
 import type {
     ElitePath,
     HotelDataset,
     HotelProgram,
     ListSection,
-} from "@/app/travel-with-points/hotel-programs/types";
-import type {
-    TravelResourceDataset,
-    TravelResourceEntry,
-} from "@/app/travel-resources/types";
+} from "@/app/hotel-programs/types";
+
 import type { Conversion } from "@/app/pointsconversion/types";
 import { filterEnabled, filterEnabledDeep } from "./filterEnabled";
 
@@ -59,29 +56,7 @@ async function resolveListSection(
     return { ...section, image };
 }
 
-export async function getTravelResourceEntries(): Promise<TravelResourceEntry[]> {
-    const data = await loadJsonData<TravelResourceDataset>(
-        "travel-resources.json"
-    );
-    const travelResources = filterEnabled(data.travelResources).map((entry) =>
-        filterEnabledDeep(entry)
-    );
 
-    return Promise.all(
-        travelResources.map(async (entry) => ({
-            ...entry,
-            heroImage: await resolveImage(entry.heroImage),
-            gallery: await resolveImages(entry.gallery),
-            sections: await Promise.all(
-                entry.sections.map(async (section) => ({
-                    ...section,
-                    image: await resolveOptionalImage(section.image),
-                    images: await resolveImages(section.images),
-                }))
-            ),
-        }))
-    );
-}
 
 export async function getCreditCardContent(): Promise<{
     cards: Card[];
