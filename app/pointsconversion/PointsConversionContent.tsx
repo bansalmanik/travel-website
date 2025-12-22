@@ -21,7 +21,9 @@ const PROGRAM_LOGOS: Record<string, string> = {
   "American Express": "/Logo/amex_logo.webp",
   "SBI": "/Logo/sbi_logo.webp",
   "Accor": "/Logo/accor_live_limitless.webp",
-  "Marriott Bonvoy": "/Logo/marriott_bonvoy_logo.webp",
+    "Marriott Bonvoy": "/Logo/marriott_bonvoy_logo.webp",
+    "ICICI": "/Logo/icici_logo.webp",
+    "AU Bank": "/Logo/au_logo.webp",
   
   // Partners - Airlines
   "Air India": "/Logo/maharaja_club_logo.webp",

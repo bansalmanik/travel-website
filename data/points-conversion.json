@@ -2195,7 +2195,7 @@
   },
   {
     "program": "SBI",
-    "from": "Miles",
+    "from": "SBI Miles",
     "rates": [
       {
         "rate": "1 : 1 Ratio",
@@ -2529,16 +2529,6 @@
         "partners": [
           {
             "to": "Qatar Avios",
-            "insight": "Takes upto 7 days",
-            "enabled": true
-          }
-        ]
-      },
-      {
-        "rate": "2000 : 1000",
-        "partners": [
-          {
-            "to": "Emirates Skywards®",
             "insight": "Takes upto 7 days",
             "enabled": true
           }
@@ -2963,6 +2953,142 @@
           {
             "to": "Saudia Alfursan",
             "insight": "Transfer IHG points to airline miles by calling IHG One Rewards customer care +61 2 8074 3411",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "ICICI",
+    "from": "Emeralde Private",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May Take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "ICICI",
+    "from": "Times Black",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May Take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Aer Lingus AerClub",
+    "from": "Aer Lingus AerClub",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Iberia Plus",
+            "insight": "Instant",
+            "enabled": true
+          },
+          {
+            "to": "Qatar Avios",
+            "insight": "Instant",
+            "enabled": true
+          },
+          {
+            "to": "British Airways (Avios)",
+            "insight": "Instant",
+            "enabled": true
+          },
+          {
+            "to": "Finnair (Avios)",
+            "insight": "Instant",
+            "enabled": true
+          },
+          {
+            "to": "Vueling Club",
+            "insight": "Instant",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "British Airways (Avios)",
+    "from": "British Airways (Avios)",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Iberia Plus",
+            "insight": "",
+            "enabled": true
+          },
+          {
+            "to": "Vueling Club",
+            "insight": "",
+            "enabled": true
+          },
+          {
+            "to": "Qatar Avios",
+            "insight": "",
+            "enabled": true
+          },
+          {
+            "to": "Finnair (Avios)",
+            "insight": "",
+            "enabled": true
+          },
+          {
+            "to": "Aer Lingus AerClub",
+            "insight": "",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "AU Bank",
+    "from": "Zenith",
+    "rates": [
+      {
+        "rate": "6 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May take upto 5 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "AU Bank",
+    "from": "Zenith Plus",
+    "rates": [
+      {
+        "rate": "3 : 2 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May take upto 5 days",
             "enabled": true
           }
         ]
