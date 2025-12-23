@@ -86,12 +86,12 @@ export default function TravelEssentialsPage() {
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Hero Section */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
                 Plug, Sip & Tip
               </h1>
-              <p className="text-lg sm:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
                 Get instant answers to the three questions every traveler asks: 
                 <span className="block mt-2 font-semibold text-white">
                   Can I charge my phone? Can I drink the water? Do I tip?
@@ -102,19 +102,18 @@ export default function TravelEssentialsPage() {
         </div>
 
         {/* Widget Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
           <TravelEssentialsWidget data={data} />
         </div>
 
-
         {/* FAQ Section */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-          <div className="bg-slate-50 rounded-2xl p-6 sm:p-8 lg:p-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
+          <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 lg:p-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-5">
               Frequently Asked Questions
             </h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-5">
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">
                   Do I need a voltage converter or just an adapter?

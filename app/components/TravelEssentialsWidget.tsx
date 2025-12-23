@@ -57,21 +57,21 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   return (
     <div className="w-full max-w-4xl mx-auto">
       {/* Search Bar */}
-      <form onSubmit={handleSearch} className="relative mb-8">
+      <form onSubmit={handleSearch} className="relative mb-5 sm:mb-6">
         <div className="relative">
           <input
             type="text"
             value={searchQuery}
             onChange={handleInputChange}
             onFocus={() => setShowSuggestions(true)}
-            placeholder="Search for a country (e.g., Vietnam, Japan, France)..."
-            className="w-full px-6 py-4 text-lg border-2 border-slate-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all shadow-sm"
+            placeholder="Search for a country..."
+            className="w-full px-4 py-3 sm:px-6 sm:py-4 text-base sm:text-lg border-2 border-slate-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all shadow-sm pr-24 sm:pr-28"
             aria-label="Search for country travel essentials"
             autoComplete="off"
           />
           <button
             type="submit"
-            className="absolute right-3 top-1/2 -translate-y-1/2 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 sm:px-6 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm sm:text-base"
             aria-label="Search"
           >
             Search
@@ -86,10 +86,10 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
                 key={country.code}
                 type="button"
                 onClick={() => handleCountrySelect(country)}
-                className="w-full px-6 py-3 text-left hover:bg-blue-50 transition-colors border-b border-slate-100 last:border-b-0"
+                className="w-full px-4 py-2.5 sm:px-6 sm:py-3 text-left hover:bg-blue-50 transition-colors border-b border-slate-100 last:border-b-0"
               >
-                <span className="font-medium text-slate-900">{country.country}</span>
-                <span className="ml-2 text-sm text-slate-500">({country.code})</span>
+                <span className="font-medium text-slate-900 text-sm sm:text-base">{country.country}</span>
+                <span className="ml-2 text-xs sm:text-sm text-slate-500">({country.code})</span>
               </button>
             ))}
           </div>
@@ -98,35 +98,35 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
 
       {/* Results Dashboard */}
       {selectedCountry && (
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+        <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden border border-slate-200">
           {/* Header */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-6 sm:px-8 sm:py-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-4 sm:px-6 sm:py-5">
+            <h2 className="text-xl sm:text-2xl font-bold text-white">
               {selectedCountry.country}
             </h2>
-            <p className="text-blue-100 mt-1">Essential travel information</p>
+            <p className="text-blue-100 mt-1 text-sm sm:text-base">Essential travel information</p>
           </div>
 
           {/* Three-Column Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200">
             {/* Plug Section */}
-            <div className="p-6 sm:p-8">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-amber-100 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 sm:w-7 sm:h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="p-4 sm:p-5 md:p-6">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-amber-100 rounded-lg sm:rounded-xl flex items-center justify-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Plug</h3>
-                  <div className="space-y-2">
-                    <p className="text-2xl font-bold text-amber-600">{selectedCountry.plug.type}</p>
-                    <p className="text-sm text-slate-600">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Plug</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <p className="text-xl sm:text-2xl font-bold text-amber-600">{selectedCountry.plug.type}</p>
+                    <p className="text-xs sm:text-sm text-slate-600">
                       <span className="font-semibold">{selectedCountry.plug.voltage}</span>
                       {' • '}
                       <span className="font-semibold">{selectedCountry.plug.frequency}</span>
                     </p>
-                    <p className="text-sm text-slate-700 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                       {selectedCountry.plug.description}
                     </p>
                   </div>
@@ -135,30 +135,30 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
             </div>
 
             {/* Water Section */}
-            <div className="p-6 sm:p-8">
-              <div className="flex items-start gap-4">
-                <div className={`flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center ${
+            <div className="p-4 sm:p-5 md:p-6">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${
                   selectedCountry.water.safe ? 'bg-green-100' : 'bg-red-100'
                 }`}>
                   {selectedCountry.water.safe ? (
-                    <svg className="w-6 h-6 sm:w-7 sm:h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   ) : (
-                    <svg className="w-6 h-6 sm:w-7 sm:h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   )}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Sip</h3>
-                  <div className="space-y-2">
-                    <p className={`text-2xl font-bold ${
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Sip</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <p className={`text-xl sm:text-2xl font-bold ${
                       selectedCountry.water.safe ? 'text-green-600' : 'text-red-600'
                     }`}>
                       {selectedCountry.water.safe ? 'Safe' : 'Not Safe'}
                     </p>
-                    <p className="text-sm text-slate-700 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                       {selectedCountry.water.note}
                     </p>
                   </div>
@@ -167,26 +167,26 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
             </div>
 
             {/* Tipping Section */}
-            <div className="p-6 sm:p-8">
-              <div className="flex items-start gap-4">
-                <div className={`flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center ${
+            <div className="p-4 sm:p-5 md:p-6">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${
                   selectedCountry.tipping.expected ? 'bg-purple-100' : 'bg-slate-100'
                 }`}>
-                  <svg className={`w-6 h-6 sm:w-7 sm:h-7 ${
+                  <svg className={`w-5 h-5 sm:w-6 sm:h-6 ${
                     selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
                   }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Tip</h3>
-                  <div className="space-y-2">
-                    <p className={`text-2xl font-bold ${
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Tip</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <p className={`text-xl sm:text-2xl font-bold ${
                       selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
                     }`}>
                       {selectedCountry.tipping.expected ? 'Expected' : 'Optional'}
                     </p>
-                    <p className="text-sm text-slate-700 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                       {selectedCountry.tipping.note}
                     </p>
                   </div>
@@ -199,16 +199,16 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
 
       {/* Empty State */}
       {!selectedCountry && (
-        <div className="text-center py-16 px-6">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-6">
-            <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="text-center py-10 sm:py-12 px-4 sm:px-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-blue-100 rounded-full mb-4 sm:mb-5">
+            <svg className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-slate-900 mb-2">
+          <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
             Search for a country to get started
           </h3>
-          <p className="text-slate-600 max-w-md mx-auto">
+          <p className="text-sm sm:text-base text-slate-600 max-w-md mx-auto">
             Get instant information about power plugs, tap water safety, and tipping customs for your destination
           </p>
         </div>
