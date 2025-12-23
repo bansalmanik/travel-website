@@ -21,26 +21,6 @@ export function TravelEssentialsPromo() {
           Can I charge my phone? Can I drink the water? Do I tip?
         </p>
         
-        <div className="flex flex-wrap gap-3 mb-6">
-          <div className="flex items-center gap-2 text-sm bg-blue-500/30 px-3 py-1.5 rounded-full">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            <span>50+ Countries</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm bg-blue-500/30 px-3 py-1.5 rounded-full">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-            <span>Instant Results</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm bg-blue-500/30 px-3 py-1.5 rounded-full">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-            </svg>
-            <span>Mobile Friendly</span>
-          </div>
-        </div>
         
         <Link
           href="/travel-essentials"

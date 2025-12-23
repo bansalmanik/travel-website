@@ -97,26 +97,6 @@ export default function TravelEssentialsPage() {
                   Can I charge my phone? Can I drink the water? Do I tip?
                 </span>
               </p>
-              <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
-                <div className="flex items-center gap-2 bg-blue-500/30 px-4 py-2 rounded-full">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>50+ Countries</span>
-                </div>
-                <div className="flex items-center gap-2 bg-blue-500/30 px-4 py-2 rounded-full">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  <span>Instant Results</span>
-                </div>
-                <div className="flex items-center gap-2 bg-blue-500/30 px-4 py-2 rounded-full">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                  <span>Mobile Friendly</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -126,77 +106,6 @@ export default function TravelEssentialsPage() {
           <TravelEssentialsWidget data={data} />
         </div>
 
-        {/* Info Section */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-          <div className="bg-white rounded-2xl shadow-lg border border-slate-200 p-6 sm:p-8 lg:p-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
-              Why You Need This Tool
-            </h2>
-            
-            <div className="space-y-6 text-slate-700 leading-relaxed">
-              <p>
-                Landing in a new country shouldn't start with panic. Whether you're a seasoned traveler or taking your first international trip, 
-                these three essentials can make or break your first day abroad.
-              </p>
-
-              <div className="grid sm:grid-cols-3 gap-6 my-8">
-                <div className="text-center p-4">
-                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-slate-900 mb-2">Power Plugs</h3>
-                  <p className="text-sm text-slate-600">
-                    Know exactly which adapter you need before you travel
-                  </p>
-                </div>
-
-                <div className="text-center p-4">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-slate-900 mb-2">Tap Water</h3>
-                  <p className="text-sm text-slate-600">
-                    Stay healthy by knowing if the water is safe to drink
-                  </p>
-                </div>
-
-                <div className="text-center p-4">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-slate-900 mb-2">Tipping</h3>
-                  <p className="text-sm text-slate-600">
-                    Avoid awkward moments with local tipping customs
-                  </p>
-                </div>
-              </div>
-
-              <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
-                How to Use This Tool
-              </h3>
-              <ol className="list-decimal list-inside space-y-2 ml-2">
-                <li>Type your destination country in the search bar</li>
-                <li>Get instant results for plugs, water safety, and tipping</li>
-                <li>Bookmark this page for quick reference while traveling</li>
-                <li>Share with fellow travelers to help them prepare</li>
-              </ol>
-
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 sm:p-6 mt-8 rounded-r-lg">
-                <h3 className="font-bold text-blue-900 mb-2">Pro Tip</h3>
-                <p className="text-blue-800 text-sm sm:text-base">
-                  Save this page to your phone's home screen for offline access. Take a screenshot of your destination's 
-                  info before you fly, so you have it handy even without internet connection.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* FAQ Section */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
