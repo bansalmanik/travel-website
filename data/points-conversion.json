@@ -42,11 +42,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 12,00,000.",
-            "enabled": true
-          },
-          {
             "to": "ITC",
             "insight": "This is Group B partner with annual capping of 12,00,000.",
             "enabled": true
@@ -148,11 +143,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 8,00,000.",
-            "enabled": true
-          },
-          {
             "to": "ITC",
             "insight": "This is Group B partner with annual capping of 8,00,000.",
             "enabled": true
@@ -205,6 +195,11 @@
           {
             "to": "Wyndham Rewards",
             "insight": "This is Group A partner with annual capping of 2,00,000.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 8,00,000.",
             "enabled": true
           }
         ]
@@ -254,11 +249,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000.",
-            "enabled": true
-          },
-          {
             "to": "ITC",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
@@ -312,6 +302,11 @@
             "to": "Wyndham Rewards",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000.",
+            "enabled": true
           }
         ]
       }
@@ -357,11 +352,6 @@
           {
             "to": "Etihad Guest",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
-            "enabled": true
-          },
-          {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
@@ -466,11 +456,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000.",
-            "enabled": true
-          },
-          {
             "to": "ITC",
             "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
@@ -524,6 +509,11 @@
             "to": "Wyndham Rewards",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000.",
+            "enabled": true
           }
         ]
       }
@@ -569,11 +559,6 @@
           {
             "to": "Etihad Guest",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
-            "enabled": true
-          },
-          {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
@@ -678,11 +663,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 6,00,000.",
-            "enabled": true
-          },
-          {
             "to": "ITC",
             "insight": "This is Group B partner with annual capping of 6,00,000.",
             "enabled": true
@@ -736,6 +716,11 @@
             "to": "Wyndham Rewards",
             "insight": "This is Group A partner with annual capping of 1,50,000.",
             "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 6,00,000.",
+            "enabled": true
           }
         ]
       }
@@ -781,11 +766,6 @@
           {
             "to": "Etihad Guest",
             "insight": "This is Group A partner with annual capping of 30,000.",
-            "enabled": true
-          },
-          {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 1,20,000.",
             "enabled": true
           },
           {
@@ -836,6 +816,11 @@
           {
             "to": "Wyndham Rewards",
             "insight": "This is Group A partner with annual capping of 30,000.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 1,20,000.",
             "enabled": true
           }
         ]
@@ -910,11 +895,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000.",
-            "enabled": true
-          },
-          {
             "to": "JAL Mileage Bank",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
             "enabled": true
@@ -957,6 +937,11 @@
           {
             "to": "Wyndham Rewards",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           }
         ]
@@ -1018,11 +1003,6 @@
           {
             "to": "Etihad Guest",
             "insight": "This is Group A partner with annual capping of 1,00,000.",
-            "enabled": true
-          },
-          {
-            "to": "IHG One Rewards",
-            "insight": "This is Group B partner with annual capping of 4,00,000.",
             "enabled": true
           },
           {
@@ -1122,11 +1102,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "Standard hotel transfer at 1 RP = 0.5 point.",
-            "enabled": true
-          },
-          {
             "to": "Wyndham Rewards",
             "insight": "Standard hotel transfer at 1 RP = 0.5 point.",
             "enabled": true
@@ -1212,6 +1187,16 @@
             "enabled": true
           }
         ]
+      },
+      {
+        "rate": "2 : 1 Ratio",
+        "partners": [
+          {
+            "to": "IHG One Rewards",
+            "insight": "May take upto 3 days",
+            "enabled": true
+          }
+        ]
       }
     ]
   },
@@ -1258,13 +1243,13 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
+            "to": "Wyndham Rewards",
             "insight": "Optimal 1:1 hotel transfer.",
             "enabled": true
           },
           {
-            "to": "Wyndham Rewards",
-            "insight": "Optimal 1:1 hotel transfer.",
+            "to": "IHG One Rewards",
+            "insight": "May take upto 3 days",
             "enabled": true
           }
         ]
@@ -1394,13 +1379,13 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
+            "to": "Wyndham Rewards",
             "insight": "Optimal 1:1 hotel transfer.",
             "enabled": true
           },
           {
-            "to": "Wyndham Rewards",
-            "insight": "Optimal 1:1 hotel transfer.",
+            "to": "IHG One Rewards",
+            "insight": "May take upto 3 days",
             "enabled": true
           }
         ]
@@ -1555,11 +1540,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "Transfer at 1:1.",
-            "enabled": true
-          },
-          {
             "to": "Marriott Bonvoy",
             "insight": "Transfer at 1:1.",
             "enabled": true
@@ -1567,6 +1547,11 @@
           {
             "to": "Wyndham Rewards",
             "insight": "Transfer at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "May take upto 1 day",
             "enabled": true
           }
         ]
@@ -1677,11 +1662,6 @@
           },
           {
             "to": "Accor Live Limitless",
-            "insight": "Transfer at 1:1.",
-            "enabled": true
-          },
-          {
-            "to": "IHG One Rewards",
             "insight": "Transfer at 1:1.",
             "enabled": true
           },
@@ -1807,11 +1787,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "Transfer at 1:1.",
-            "enabled": true
-          },
-          {
             "to": "Marriott Bonvoy",
             "insight": "Transfer at 1:1.",
             "enabled": true
@@ -1819,6 +1794,11 @@
           {
             "to": "Wyndham Rewards",
             "insight": "Transfer at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "May take upto 1 day",
             "enabled": true
           }
         ]
@@ -1933,11 +1913,6 @@
             "enabled": true
           },
           {
-            "to": "IHG One Rewards",
-            "insight": "Transfer at 2:1.",
-            "enabled": true
-          },
-          {
             "to": "Marriott Bonvoy",
             "insight": "Transfer at 2:1.",
             "enabled": true
@@ -1945,6 +1920,11 @@
           {
             "to": "Wyndham Rewards",
             "insight": "Transfer at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "May take upto 1 day",
             "enabled": true
           }
         ]
@@ -2060,11 +2040,6 @@
           },
           {
             "to": "Accor Live Limitless",
-            "insight": "Transfer at 2:1.",
-            "enabled": true
-          },
-          {
-            "to": "IHG One Rewards",
             "insight": "Transfer at 2:1.",
             "enabled": true
           },
@@ -2248,6 +2223,11 @@
           {
             "to": "Qantas Frequent Flyer",
             "insight": "Transfers from SBI Miles convert to Qantas Frequent Flyer at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "May take upto 2 days",
             "enabled": true
           }
         ]
@@ -2935,13 +2915,7 @@
             "enabled": true
           }
         ]
-      }
-    ]
-  },
-  {
-    "program": "Other",
-    "from": "Etihad Guest",
-    "rates": [
+      },
       {
         "rate": "5 : 1",
         "partners": [
@@ -3089,6 +3063,22 @@
           {
             "to": "Air India Maharaja Points",
             "insight": "May take upto 5 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Emirates Skywards",
+    "from": "Emirates Skywards",
+    "rates": [
+      {
+        "rate": "4 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "May take upto 7 days",
             "enabled": true
           }
         ]
