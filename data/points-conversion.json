@@ -3084,5 +3084,229 @@
         ]
       }
     ]
+  },
+  {
+    "program": "Other",
+    "from": "Finnair (Avios)",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Qatar Avios",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Iberia Plus",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Vueling Club",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Aer Lingus AerClub",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "British Airways (Avios)",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "23 : 5 Ratio",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "May take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Other",
+    "from": "Iberia Plus",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Qatar Avios",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Vueling Club",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Aer Lingus AerClub",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Finnair (Avios)",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "British Airways (Avios)",
+            "insight": "May take upto 1 day",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "ITC Club",
+    "from": "ITC",
+    "rates": [
+      {
+        "rate": "2 : 3 Ratio",
+        "partners": [
+          {
+            "to": "Marriott Bonvoy",
+            "insight": "May take upto 21 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "JAL Mileage Bank",
+    "from": "JAL Mileage Bank",
+    "rates": [
+      {
+        "rate": "5 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "May Take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Other",
+    "from": "Singapore Airlines KrisFlyer",
+    "rates": [
+      {
+        "rate": "9 : 2 Ratio",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "May Take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Other",
+    "from": "Qatar Avios",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Aer Lingus AerClub",
+            "insight": "May Take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Vueling Club",
+            "insight": "May Take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Iberia Plus",
+            "insight": "May Take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "Finnair (Avios)",
+            "insight": "May Take upto 1 day",
+            "enabled": true
+          },
+          {
+            "to": "British Airways (Avios)",
+            "insight": "May Take upto 1 day",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "7 : 2 Ratio",
+        "partners": [
+          {
+            "to": "Accor Live Limitless",
+            "insight": "May Take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Yes Bank",
+    "from": "Marquee",
+    "rates": [
+      {
+        "rate": "15 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Yes Bank",
+    "from": "Private",
+    "rates": [
+      {
+        "rate": "6 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "Yes Bank",
+    "from": "Reserv",
+    "rates": [
+      {
+        "rate": "15 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
   }
 ]
