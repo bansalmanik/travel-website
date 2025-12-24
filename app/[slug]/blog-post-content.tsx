@@ -6,6 +6,8 @@ import type { BlogPost } from '@/lib/blog'
 import ImageGallery from '@/app/components/mdx/ImageGallery'
 import Callout from '@/app/components/mdx/Callout'
 import YouTube from '@/app/components/mdx/YouTube'
+import MDXImage from '@/app/components/mdx/MDXImage'
+import ImageRow from '@/app/components/mdx/ImageRow'
 
 const mdxComponents = {
   h2: (props: any) => <h2 className="text-2xl font-bold text-slate-900 mt-10 mb-4" {...props} />,
@@ -20,6 +22,9 @@ const mdxComponents = {
   ImageGallery,
   Callout,
   YouTube,
+  MDXImage,
+  ImageRow,
+  img: MDXImage,
 }
 
 export default async function BlogPostContent({ post }: { post: BlogPost }) {
