@@ -4,7 +4,6 @@ import { getContentBySlug, getAllContentSlugs, RESERVED_ROUTES } from '@/lib/con
 
 // Import content renderers
 import BlogPostContent from './blog-post-content'
-import StoryMdxContent from './story-mdx-content'
 import HotelProgramContent from './hotel-program-content'
 import FlightProgramContent from './flight-program-content'
 import CreditCardContent from './credit-card-content'
@@ -48,32 +47,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           title: post.seoTitle,
           description: post.seoDescription,
           images: [post.heroImage.src],
-        },
-        alternates: {
-          canonical: `https://milesgoround.com/${slug}`,
-        },
-      }
-    }
-    case 'story': {
-      const story = content.data
-      const title = `${story.title} | Miles Go Round`
-      const description = `${story.excerpt} Discover travel inspiration from ${story.city}, ${story.country}.`
-      return {
-        title,
-        description,
-        authors: [{ name: story.author }],
-        openGraph: {
-          title,
-          description,
-          type: 'article',
-          images: [{ url: story.coverImage.src, alt: story.coverImage.alt }],
-          url: `https://milesgoround.com/${slug}`,
-        },
-        twitter: {
-          card: 'summary_large_image',
-          title,
-          description,
-          images: [story.coverImage.src],
         },
         alternates: {
           canonical: `https://milesgoround.com/${slug}`,
@@ -128,8 +101,6 @@ export default async function UnifiedContentPage({ params }: { params: Promise<{
   switch (content.type) {
     case 'blog':
       return <BlogPostContent post={content.data} />
-    case 'story':
-      return <StoryMdxContent story={content.data} />
     case 'hotel-program':
       return <HotelProgramContent program={content.data} />
     case 'flight-program':

@@ -17,7 +17,6 @@ Your app is now configured for **static export** which eliminates the 3 MiB work
 
 ### 3. Added Static Generation
 - Added `generateStaticParams()` to all dynamic routes:
-  - `/stories/[slug]`
   - `/travel-guides/[slug]`
   - `/travel-with-points/bank-programs/[slug]`
   - `/travel-with-points/credit-cards/[slug]`

@@ -2,7 +2,7 @@
 
 export default function ScrollDownButton() {
   const handleScroll = () => {
-    document.getElementById('story-content')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('content')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

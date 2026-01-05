@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getAllTravelGuides } from "@/lib/travel-guides";
-import { getAllStorySummaries } from "@/lib/stories";
 import { getAllBlogPosts, getCategoryInfo } from "@/lib/blog";
 
 const quickLinks = [
@@ -20,9 +19,6 @@ export default async function Home() {
     url: `/${entry.slug}`,
     heroImage: entry.heroImage,
   }));
-  
-  const allStories = await getAllStorySummaries();
-  const latestStories = allStories.slice(0, 2);
   
   const allBlogPosts = await getAllBlogPosts();
   const latestBlogPosts = allBlogPosts.slice(0, 3);
@@ -320,61 +316,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* Stories Section */}
-        <section className="border-t border-slate-100 py-10 sm:py-14">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <div className="mb-6 text-center sm:mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
-                Latest Stories
-              </h2>
-            </div>
 
-            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
-              {latestStories.map((story) => (
-                <Link
-                  key={story.slug}
-                  href={`/${story.slug}`}
-                  className="group relative overflow-hidden rounded-lg bg-slate-100 transition-transform hover:scale-[1.02]"
-                  style={{ aspectRatio: '16/9' }}
-                >
-                  {story.coverImage?.src && (
-                    <Image
-                      src={story.coverImage.src}
-                      alt={story.coverImage.alt}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                  <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-6">
-                    <div className="mb-2 flex items-center gap-2 text-xs text-white/70">
-                      <span className="font-medium">{story.city}, {story.country}</span>
-                      <span className="text-white/50">•</span>
-                      <span className="text-white/70">{story.date}</span>
-                    </div>
-                    <h3 className="mb-2 text-base font-semibold leading-snug text-white transition-colors group-hover:text-white/90 sm:text-lg">
-                      {story.title}
-                    </h3>
-                    <p className="text-xs text-white/80 line-clamp-2 sm:text-sm">{story.excerpt}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            <div className="mt-6 text-center sm:mt-8">
-              <Link
-                href="/stories"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-900 hover:bg-slate-900 hover:text-white"
-              >
-                View all stories
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* Footer */}
@@ -392,7 +334,7 @@ export default async function Home() {
               />
               <div>
                 <p className="font-semibold text-slate-900">Miles Go Round</p>
-                <p className="text-xs text-slate-500">Stories from a life in motion</p>
+                <p className="text-xs text-slate-500">Travel smarter with points and miles</p>
               </div>
             </div>
 

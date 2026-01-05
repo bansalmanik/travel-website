@@ -207,7 +207,6 @@ const navigationLinks = [
   { href: "/travel-with-points", label: "Travel with points" },
   { href: "/travel-guides", label: "Travel Guides" },
   { href: "/blog", label: "Blog" },  // ← Blog link
-  { href: "/stories", label: "Stories" },
 ];
 ```
 

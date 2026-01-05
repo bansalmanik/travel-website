@@ -1,0 +1,938 @@
+[
+  {
+    "country": "United States",
+    "code": "US",
+    "plug": {
+      "type": "Type A, B",
+      "voltage": "120V",
+      "frequency": "60Hz",
+      "description": "Two flat parallel pins (Type A) or with grounding pin (Type B)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe to drink throughout the country"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "15-20% in restaurants, $1-2 per drink at bars, 15-20% for taxis"
+    }
+  },
+  {
+    "country": "United Kingdom",
+    "code": "GB",
+    "plug": {
+      "type": "Type G",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three rectangular pins in triangular pattern"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe and high quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Optional 10-15% in restaurants if service not included, round up for taxis"
+    }
+  },
+  {
+    "country": "France",
+    "code": "FR",
+    "plug": {
+      "type": "Type C, E",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) or with grounding pin (Type E)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe and commonly served in restaurants"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service included in bill, but round up or leave small change for good service"
+    }
+  },
+  {
+    "country": "Germany",
+    "code": "DE",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) or with side grounding clips (Type F)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is excellent quality and safe"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "Round up to nearest euro or add 5-10% in restaurants"
+    }
+  },
+  {
+    "country": "Spain",
+    "code": "ES",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) or with side grounding clips (Type F)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is generally safe"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not mandatory, but 5-10% appreciated for good service"
+    }
+  },
+  {
+    "country": "Italy",
+    "code": "IT",
+    "plug": {
+      "type": "Type C, F, L",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C), side clips (Type F), or three pins in line (Type L)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service charge often included, round up or leave 1-2 euros for good service"
+    }
+  },
+  {
+    "country": "Japan",
+    "code": "JP",
+    "plug": {
+      "type": "Type A, B",
+      "voltage": "100V",
+      "frequency": "50/60Hz",
+      "description": "Two flat parallel pins, similar to US but lower voltage"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is exceptionally clean and safe"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Tipping is not customary and may be considered rude"
+    }
+  },
+  {
+    "country": "China",
+    "code": "CN",
+    "plug": {
+      "type": "Type A, C, I",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Multiple types used, most common are Type A and I"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled or filtered water"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not expected in most places, though becoming more common in tourist areas"
+    }
+  },
+  {
+    "country": "Thailand",
+    "code": "TH",
+    "plug": {
+      "type": "Type A, B, C, F and O",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Multiple socket types, carry universal travel adapter"
+    },
+    "water": {
+      "safe": false,
+      "note": "Stick to bottled water, avoid ice in drinks"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not mandatory but appreciated, 5-10% in nicer restaurants and 20-50 baht for good service"
+    }
+  },
+  {
+    "country": "Vietnam",
+    "code": "VN",
+    "plug": {
+      "type": "Type A, B, C, G",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Multiple types, , carry universal travel adapter"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water, avoid ice unless in upscale venues"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not expected, but round up for taxis and leave small change for good service"
+    }
+  },
+  {
+    "country": "India",
+    "code": "IN",
+    "plug": {
+      "type": "Type C, D, M",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three round pins (Type D) most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water, avoid ice and raw foods washed in tap water"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, round up for taxis, 50-100 rupees for hotel staff"
+    }
+  },
+  {
+    "country": "United Arab Emirates",
+    "code": "AE",
+    "plug": {
+      "type": "Type G",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Type G is most common but you might also encounter Type C and D"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe but heavily desalinated, bottled water preferred"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10-15% in restaurants, round up for taxis, 5-10 AED for hotel staff"
+    }
+  },
+  {
+    "country": "Australia",
+    "code": "AU",
+    "plug": {
+      "type": "Type I",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three flat pins in triangular pattern"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is excellent quality and safe"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not mandatory, 10% for truly exceptional service"
+    }
+  },
+  {
+    "country": "New Zealand",
+    "code": "NZ",
+    "plug": {
+      "type": "Type I",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three flat pins in triangular pattern"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safes"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not customary, 10% for truly exceptional service"
+    }
+  },
+  {
+    "country": "Canada",
+    "code": "CA",
+    "plug": {
+      "type": "Type A, B",
+      "voltage": "120V",
+      "frequency": "60Hz",
+      "description": "Same as US - two flat parallel pins"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe and high quality"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "15-20% in restaurants, $1-2 per drink, 10-15% for taxis"
+    }
+  },
+  {
+    "country": "Mexico",
+    "code": "MX",
+    "plug": {
+      "type": "Type A, B",
+      "voltage": "127V",
+      "frequency": "60Hz",
+      "description": "Same as US - two flat parallel pins"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water, avoid ice in non-tourist areas"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10-15% in restaurants, 20-50 pesos for hotel staff, round up for taxis"
+    }
+  },
+  {
+    "country": "Brazil",
+    "code": "BR",
+    "plug": {
+      "type": "Type C, N",
+      "voltage": "127/220V",
+      "frequency": "60Hz",
+      "description": "Two round pins (Type C) or three pins (Type N), voltage varies by region"
+    },
+    "water": {
+      "safe": false,
+      "note": "Stick to bottled water"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% service charge usually included, add extra for good service"
+    }
+  },
+  {
+    "country": "Argentina",
+    "code": "AR",
+    "plug": {
+      "type": "Type C, I",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Two or three flat angled pins (Type I) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is generally safe in Buenos Aires and major cities"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "South Africa",
+    "code": "ZA",
+    "plug": {
+      "type": "Type C, D, M, N",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three large round pins (Type M) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Safe in major cities but prefer bottled water outside urban areas"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10-15% in restaurants, 10% for taxis, 20-50 rand for Housekeeping"
+    }
+  },
+  {
+    "country": "Egypt",
+    "code": "EG",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water, avoid ice"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "Tipping (baksheesh) is customary for almost all services, 10-15% in restaurants"
+    }
+  },
+  {
+    "country": "Turkey",
+    "code": "TR",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Stick to bottled water in most areas"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "5-10% in restaurants, round up for taxis, small tips for hotel staff"
+    }
+  },
+  {
+    "country": "Greece",
+    "code": "GR",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is generally safe, though bottled is preferred on islands"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Round up or leave 5-10% for good service"
+    }
+  },
+  {
+    "country": "Portugal",
+    "code": "PT",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe throughout the country"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not mandatory, but 5-10% appreciated for good service"
+    }
+  },
+  {
+    "country": "Netherlands",
+    "code": "NL",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is excellent quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Round up or add 5-10% for good service"
+    }
+  },
+  {
+    "country": "Switzerland",
+    "code": "CH",
+    "plug": {
+      "type": "Type C, J",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three round pins (Type J) unique to Switzerland"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is pristine"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service included, but round up for good service"
+    }
+  },
+  {
+    "country": "Austria",
+    "code": "AT",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is excellent quality"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "5-10% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "Sweden",
+    "code": "SE",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is pristine quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service included, but round up for good service"
+    }
+  },
+  {
+    "country": "Norway",
+    "code": "NO",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is pristine quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service included, but round up or add 5-10% for exceptional service"
+    }
+  },
+  {
+    "country": "Denmark",
+    "code": "DK",
+    "plug": {
+      "type": "Type C, E, F, K",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Type K (three pins) unique to Denmark, but Type C also works"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is excellent quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service included, but round up for good service"
+    }
+  },
+  {
+    "country": "Finland",
+    "code": "FI",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is pristine quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service included, tipping not expected"
+    }
+  },
+  {
+    "country": "Iceland",
+    "code": "IS",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is pristine, comes from glaciers"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not customary, service included in prices"
+    }
+  },
+  {
+    "country": "Ireland",
+    "code": "IE",
+    "plug": {
+      "type": "Type G",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three rectangular pins in triangular pattern (UK style)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe and high quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Optional 10-12% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "Poland",
+    "code": "PL",
+    "plug": {
+      "type": "Type C, E",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe in cities"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "Czech Republic",
+    "code": "CZ",
+    "plug": {
+      "type": "Type C, E",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe and good quality"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "Round up or add 10% in restaurants"
+    }
+  },
+  {
+    "country": "Hungary",
+    "code": "HU",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe in Budapest and major cities"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10-15% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "Croatia",
+    "code": "HR",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe throughout the country"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Round up or add 10% for good service"
+    }
+  },
+  {
+    "country": "Singapore",
+    "code": "SG",
+    "plug": {
+      "type": "Type G",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three rectangular pins in triangular pattern (UK style)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe and high quality"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Service charge usually included, not expected but appreciated"
+    }
+  },
+  {
+    "country": "Malaysia",
+    "code": "MY",
+    "plug": {
+      "type": "Type G",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Three rectangular pins in triangular pattern (UK style)"
+    },
+    "water": {
+      "safe": false,
+      "note": "Stick to bottled water, especially outside major cities"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not mandatory, but appreciated in tourist areas"
+    }
+  },
+  {
+    "country": "Indonesia",
+    "code": "ID",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water, avoid ice"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not mandatory but appreciated, 5-10% in upscale restaurants"
+    }
+  },
+  {
+    "country": "Philippines",
+    "code": "PH",
+    "plug": {
+      "type": "Type A, B, C",
+      "voltage": "220V",
+      "frequency": "60Hz",
+      "description": "Multiple types, Type A most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not mandatory but appreciated, 10% in restaurants"
+    }
+  },
+  {
+    "country": "South Korea",
+    "code": "KR",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "220V",
+      "frequency": "60Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe in cities"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not customary, may be refused"
+    }
+  },
+  {
+    "country": "Taiwan",
+    "code": "TW",
+    "plug": {
+      "type": "Type A, B",
+      "voltage": "110V",
+      "frequency": "60Hz",
+      "description": "Two flat parallel pins (US style)"
+    },
+    "water": {
+      "safe": false,
+      "note": "Boil tap water or drink bottled water"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "Not customary, service charge often included"
+    }
+  },
+  {
+    "country": "Hong Kong",
+    "code": "HK",
+    "plug": {
+      "type": "Type G",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Three rectangular pins in triangular pattern (UK style)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe but locals prefer boiled or bottled"
+    },
+    "tipping": {
+      "expected": false,
+      "note": "10% service charge usually included, small tips appreciated"
+    }
+  },
+  {
+    "country": "Morocco",
+    "code": "MA",
+    "plug": {
+      "type": "Type C, E",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, small tips for guides and hotel staff"
+    }
+  },
+  {
+    "country": "Israel",
+    "code": "IL",
+    "plug": {
+      "type": "Type C, H",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Type H (three flat pins) unique to Israel, Type C also common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe throughout the country"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10-15% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "Peru",
+    "code": "PE",
+    "plug": {
+      "type": "Type A, B, C",
+      "voltage": "220V",
+      "frequency": "60Hz",
+      "description": "Type A and C most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water, especially at high altitudes"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, small tips for guides and porters"
+    }
+  },
+  {
+    "country": "Chile",
+    "code": "CL",
+    "plug": {
+      "type": "Type C, L",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Type C and L (three pins) both common"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is safe in Santiago and major cities"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "Colombia",
+    "code": "CO",
+    "plug": {
+      "type": "Type A, B",
+      "voltage": "110V",
+      "frequency": "60Hz",
+      "description": "Two flat parallel pins (US style)"
+    },
+    "water": {
+      "safe": false,
+      "note": "Stick to bottled water in most areas"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, often included as 'propina voluntaria'"
+    }
+  },
+  {
+    "country": "Costa Rica",
+    "code": "CR",
+    "plug": {
+      "type": "Type A, B",
+      "voltage": "120V",
+      "frequency": "60Hz",
+      "description": "Two flat parallel pins (US style)"
+    },
+    "water": {
+      "safe": true,
+      "note": "Tap water is generally safe in most areas"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% service charge usually included, extra tip appreciated"
+    }
+  },
+  {
+    "country": "Russia",
+    "code": "RU",
+    "plug": {
+      "type": "Type C, F",
+      "voltage": "220V",
+      "frequency": "50Hz",
+      "description": "Two round pins (Type C) most common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water, especially outside major cities"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, round up for taxis"
+    }
+  },
+  {
+    "country": "Kenya",
+    "code": "KE",
+    "plug": {
+      "type": "Type G",
+      "voltage": "240V",
+      "frequency": "50Hz",
+      "description": "Three rectangular pins in triangular pattern (UK style)"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, $5-10 per day for safari guides"
+    }
+  },
+  {
+    "country": "Tanzania",
+    "code": "TZ",
+    "plug": {
+      "type": "Type D, G",
+      "voltage": "230V",
+      "frequency": "50Hz",
+      "description": "Type D and G both common"
+    },
+    "water": {
+      "safe": false,
+      "note": "Drink only bottled water"
+    },
+    "tipping": {
+      "expected": true,
+      "note": "10% in restaurants, $10-20 per day for safari guides"
+    }
+  }
+]
