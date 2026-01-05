@@ -1,5 +1,5 @@
 import rawArticles from "@/data/milesPointsExplained.json";
-import type { MilesPointsArticle } from "@/app/travel-with-points/miles-and-points-explained/types";
+import type { MilesPointsArticle } from "@/app/travel-with-points/points-and-miles-explained/types";
 
 const articles = rawArticles as MilesPointsArticle[];
 

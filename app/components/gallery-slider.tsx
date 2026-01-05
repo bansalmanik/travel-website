@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useCallback, useRef } from "react";
 
-import type { StoryImage } from "@/app/stories/data";
+import type { StoryImage } from "@/lib/stories";
 
 type GallerySliderProps = {
   images: StoryImage[];

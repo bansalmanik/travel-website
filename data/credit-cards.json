@@ -863,7 +863,7 @@
         {
           "component": "applyNow",
           "applyNow": {
-            "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+            "url": "https://bitli.in/yrQbvrn",
             "disclaimer": "Application is handled directly by HDFC Bank."
           }
         }
@@ -2108,6 +2108,13 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://bitli.in/GDBEaFa",
+            "disclaimer": "Application is handled directly by HDFC Bank."
+          }
         }
       ],
       "enabled": true,
@@ -2441,6 +2448,13 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://bitli.in/VIV663t",
+            "disclaimer": "Application is handled directly by HDFC Bank."
+          }
         }
       ],
       "enabled": true,
@@ -2720,6 +2734,13 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://bitli.in/4Wt7A4w",
+            "disclaimer": "Application is handled directly by HDFC Bank."
+          }
         }
       ],
       "enabled": true,
@@ -2840,6 +2861,13 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://bitli.in/oVdD1om",
+            "disclaimer": "Application is handled directly by HDFC Bank."
+          }
         }
       ],
       "enabled": true,
@@ -2983,24 +3011,19 @@
               ]
             }
           ]
+        },
+        {
+          "component": "applyNow",
+          "applyNow": {
+            "url": "https://bitli.in/228z2V1",
+            "disclaimer": "Application is handled directly by HDFC Bank."
+          }
         }
       ],
       "enabled": true,
       "JoiningFee": "₹5,999 + GST",
       "AnnualFees": "₹5,999 + GST",
       "Category": "Travel & Lifestyle"
-    }
-  ],
-  "cardStrategies": [
-    {
-      "title": "Lead with transferable currencies",
-      "description": "Choose cards whose rewards move into multiple airline and hotel partners so you can chase the best sweet spots without being locked in.",
-      "enabled": true
-    },
-    {
-      "title": "Balance lounge coverage",
-      "description": "Mix domestic and international lounge entitlements across cards to cover the whole family on busy travel days.",
-      "enabled": true
     }
   ],
   "favoriteCombos": [
@@ -3025,7 +3048,7 @@
       "cards": [
         "American Express® Platinum Travel Credit Card"
       ],
-      "note": "Amex Platinum Travel gives 40,000 points and a ₹10,000 Taj voucher on spending ₹4,00,000 in a year. If you don't spend on travel too much but still want to earn good points in everyday spending then this is the card for you.",
+      "note": "Amex Platinum Travel gives 40,000 Milestone points and a ₹10,000 Taj voucher on spending ₹4,00,000 in a year. If you don't spend on travel too much but still want to earn good points on everyday spending then this is the card for you.",
       "enabled": true
     }
   ]

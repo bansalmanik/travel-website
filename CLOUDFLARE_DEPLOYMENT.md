@@ -18,12 +18,12 @@ Your app is now configured for **static export** which eliminates the 3 MiB work
 ### 3. Added Static Generation
 - Added `generateStaticParams()` to all dynamic routes:
   - `/stories/[slug]`
-  - `/travel-resources/[slug]`
+  - `/travel-guides/[slug]`
   - `/travel-with-points/bank-programs/[slug]`
   - `/travel-with-points/credit-cards/[slug]`
   - `/travel-with-points/flight-programs/[slug]`
   - `/travel-with-points/hotel-programs/[slug]`
-  - `/travel-with-points/miles-and-points-explained/[slug]`
+  - `/travel-with-points/points-and-miles-explained/[slug]`
 
 ## Deployment to Cloudflare Pages
 
@@ -37,7 +37,13 @@ Your app is now configured for **static export** which eliminates the 3 MiB work
    Build command: npm run build
    Build output directory: out
    ```
-5. Click **Save and Deploy**
+5. **Important**: Add environment variable for D1 access:
+   - Go to **Settings** → **Environment variables**
+   - Add `CLOUDFLARE_API_TOKEN` with your API token (or the build will use your local auth)
+   - Alternatively, the build uses `wrangler` which should authenticate automatically in Cloudflare's build environment
+6. Click **Save and Deploy**
+
+**Note**: The `prebuild` script automatically queries your D1 database before building. This happens during the Cloudflare Pages build process.
 
 ### Option 2: Via Wrangler CLI
 
@@ -90,6 +96,23 @@ ls out
 # Serve locally (optional)
 npx serve out
 ```
+
+## D1 Database Integration
+
+Your points conversion data is now stored in Cloudflare D1 and automatically fetched during build:
+
+1. **Build Process**: `npm run build` → runs `prebuild` → queries D1 → generates JSON → builds site
+2. **Authentication**: Wrangler automatically authenticates in Cloudflare's build environment
+3. **No Runtime Queries**: Data is baked into static files (fast!)
+
+### Updating Points Data
+
+To update conversion data:
+1. Update data in D1 (via SQL or migration script)
+2. Trigger a new deployment (push to Git or manual deploy)
+3. Build process fetches fresh data automatically
+
+See `D1_INTEGRATION.md` for details.
 
 ## Need Dynamic Features?
 

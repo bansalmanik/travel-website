@@ -9,7 +9,7 @@ import type {
   KeyValueSection,
   TableRow,
   TableSection,
-} from "@/app/travel-with-points/bank-programs/types";
+} from "@/app/bank-programs/types";
 
 function hasKeyValueContent(items?: KeyValueItem[]): items is KeyValueItem[] {
   return Boolean(items?.some((item) => item.value?.trim().length));
