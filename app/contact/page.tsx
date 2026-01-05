@@ -13,7 +13,7 @@ export default function ContactPage() {
         
         <div className="prose prose-slate max-w-none">
           <p className="text-lg leading-relaxed text-slate-600">
-            We'd love to hear from you! Whether you have questions, feedback, or want to share your travel story, feel free to reach out.
+            We'd love to hear from you! Whether you have questions, feedback, or want to share your travel experiences, feel free to reach out.
           </p>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
@@ -52,9 +52,9 @@ export default function ContactPage() {
             <h2 className="mb-4 text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="mb-2 font-semibold text-slate-900">Can I contribute a travel story?</h3>
+                <h3 className="mb-2 font-semibold text-slate-900">Can I contribute a travel article?</h3>
                 <p className="text-slate-600">
-                  Yes! We love featuring travel stories from our community. Send us an email with your story idea.
+                  Yes! We love featuring travel content from our community. Send us an email with your article idea.
                 </p>
               </div>
               <div>

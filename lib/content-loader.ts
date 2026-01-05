@@ -1,6 +1,5 @@
 // Unified content loader for flat URL structure
 import { getBlogPost, getAllBlogPosts } from './blog'
-import { getStoryBySlug, getAllStorySummaries } from './stories'
 import { 
   getCreditCardContent, 
   getFlightProgramContent, 
@@ -9,7 +8,7 @@ import {
 } from './contentData'
 import { getTravelGuide, getAllTravelGuides } from './travel-guides'
 
-export type ContentType = 'blog' | 'story' | 'hotel-program' | 'flight-program' | 'credit-card' | 'bank-program' | 'travel-guide'
+export type ContentType = 'blog' | 'hotel-program' | 'flight-program' | 'credit-card' | 'bank-program' | 'travel-guide'
 
 export interface UnifiedContent {
   slug: string
@@ -29,7 +28,6 @@ export const RESERVED_ROUTES = [
   'learning',
   'pointsconversion',
   'privacy',
-  'stories',
   'terms',
   'travel-guides',
   'travel-with-points',
@@ -52,12 +50,6 @@ export async function getContentBySlug(slug: string): Promise<UnifiedContent | n
   const blogPost = await getBlogPost(slug)
   if (blogPost) {
     return { slug, type: 'blog', data: blogPost }
-  }
-
-  // Try story
-  const story = await getStoryBySlug(slug)
-  if (story) {
-    return { slug, type: 'story', data: story }
   }
 
   // Try hotel program
@@ -106,10 +98,6 @@ export async function getAllContentSlugs(): Promise<string[]> {
   // Blog posts
   const blogPosts = await getAllBlogPosts()
   slugs.push(...blogPosts.map(post => post.slug))
-
-  // Stories
-  const stories = await getAllStorySummaries()
-  slugs.push(...stories.map(story => story.slug))
 
   // Hotel programs
   const hotelContent = await getHotelProgramContent()
