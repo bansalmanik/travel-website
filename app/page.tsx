@@ -1,8 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
 import { getAllTravelGuides } from "@/lib/travel-guides";
 import { getAllBlogPosts, getCategoryInfo } from "@/lib/blog";
+
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
+  title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+  description:
+    "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, hotel & airline loyalty programs, and tips to maximize points and miles for free flights and hotel stays.",
+  alternates: {
+    canonical: siteUrl,
+  },
+};
 
 const quickLinks = [
   { label: "Credit Cards", href: "/credit-cards", icon: "💳" },
@@ -25,7 +37,63 @@ export default async function Home() {
   
   const heroImageSrc = "/images/content/cover_1.jpg";
 
+  // Home page structured data
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${siteUrl}/#webpage`,
+    url: siteUrl,
+    name: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    description: "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, and tips to maximize points and miles.",
+    isPartOf: { "@id": `${siteUrl}/#website` },
+    about: {
+      "@type": "Thing",
+      name: "Travel Rewards and Points & Miles",
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Travel Essentials",
+          url: `${siteUrl}/travel-essentials`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Travel Guides",
+          url: `${siteUrl}/travel-guides`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Credit Cards",
+          url: `${siteUrl}/credit-cards`,
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Hotel Programs",
+          url: `${siteUrl}/hotel-programs`,
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          name: "Flight Programs",
+          url: `${siteUrl}/flight-programs`,
+        },
+      ],
+    },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }}
+      />
     <div className="min-h-screen bg-white text-slate-900">
       {/* Hero Section - Exact viewport height */}
       <header className="relative isolate flex h-[100svh] flex-col overflow-hidden">
@@ -68,23 +136,23 @@ export default async function Home() {
             <div className="mb-6 flex flex-col items-center justify-center gap-3 sm:mb-8 sm:flex-row sm:gap-4">
               {/* Primary CTA */}
               <Link
-                href="/travel-guides"
+                href="/travel-essentials"
                 className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-black/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-xl hover:shadow-black/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               >
-                <span className="relative">Travel Guides</span>
+                <span className="relative">Travel Essentials</span>
                 <svg className="relative h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </Link>
               {/* Secondary CTA */}
               <Link
-                href="/travel-with-points/points-and-miles-explained"
+                href="/travel-guides"
                 className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               >
                 <svg className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
-                <span>Points and Miles Explained</span>
+                <span>Travel Guides</span>
               </Link>
             </div>
 
@@ -401,5 +469,6 @@ export default async function Home() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

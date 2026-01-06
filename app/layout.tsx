@@ -9,31 +9,40 @@ const siteUrl = "https://www.milesgoround.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-      default: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    default: "Miles Go Round | Travel Guides, Points & Miles Strategies",
     template: "%s | Miles Go Round",
   },
   description:
-    "Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.",
+    "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, hotel & airline loyalty programs, and tips to maximize points and miles for free flights and hotel stays.",
   keywords: [
-      "travel guides",
-      "travel blog",
-      "points and miles",
-      "airline miles",
-      "hotel points",
-      "credit card rewards",
-      "loyalty programs",
-      "travel rewards",
-      "flight booking tips",
-      "hotel booking tips",
+    "travel guides",
+    "points and miles",
+    "travel rewards",
+    "credit card rewards",
+    "airline miles",
+    "hotel points",
+    "frequent flyer programs",
+    "loyalty programs",
+    "free flights",
+    "travel hacking",
+    "destination guides",
+    "travel tips",
+    "India travel credit cards",
+    "Marriott Bonvoy",
+    "airline alliances",
   ],
   applicationName: "Miles Go Round",
   category: "travel",
+  classification: "Travel & Tourism",
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
@@ -45,23 +54,24 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
+    // Add your actual verification codes here
+    // google: "your-actual-google-verification-code",
+    // yandex: "your-actual-yandex-verification-code",
   },
   openGraph: {
     type: "website",
     url: siteUrl,
     siteName: "Miles Go Round",
-      title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
     description:
-      "Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.",
+      "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, and tips to maximize points and miles for free flights and hotel stays.",
     locale: "en_US",
     images: [
       {
-        url: "/images/content/cover_1.jpg",
+        url: `${siteUrl}/images/content/cover_1.jpg`,
         width: 1200,
         height: 630,
-        alt: "Sunset over mountains and fjords",
+        alt: "Miles Go Round - Travel Guides & Rewards Strategies",
         type: "image/jpeg",
       },
     ],
@@ -70,10 +80,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@milesgoround",
     creator: "@milesgoround",
-      title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
     description:
-      "Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.",
-    images: ["/images/content/cover_1.jpg"],
+      "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, and tips to maximize points and miles.",
+    images: [`${siteUrl}/images/content/cover_1.jpg`],
   },
   authors: [{ name: "Miles Go Round", url: siteUrl }],
   creator: "Miles Go Round",
@@ -86,13 +96,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.png", type: "image/png", sizes: "16x16" },
     ],
     apple: [
       { url: "/favicon.png", sizes: "180x180", type: "image/png" },
     ],
+    shortcut: "/favicon.png",
   },
+  manifest: "/manifest.json",
   other: {
-    "google-site-verification": "your-google-verification-code",
+    // Add your actual Google verification code here
+    // "google-site-verification": "your-actual-google-verification-code",
   },
 };
 
@@ -149,11 +163,14 @@ export default function RootLayout({
                     '@id': `${siteUrl}/#website`,
                     name: 'Miles Go Round',
                     url: siteUrl,
-                        description: 'Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.',
+                    description: 'Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, and tips to maximize points and miles for free flights and hotel stays.',
                     inLanguage: 'en-US',
                     potentialAction: {
                       '@type': 'SearchAction',
-                      target: `${siteUrl}/search?q={search_term_string}`,
+                      target: {
+                        '@type': 'EntryPoint',
+                        urlTemplate: `${siteUrl}/blog?q={search_term_string}`,
+                      },
                       'query-input': 'required name=search_term_string',
                     },
                   },
@@ -162,11 +179,18 @@ export default function RootLayout({
                     '@id': `${siteUrl}/#organization`,
                     name: 'Miles Go Round',
                     url: siteUrl,
+                    description: 'Travel guides and rewards strategies to help you travel smarter with points and miles.',
                     logo: {
                       '@type': 'ImageObject',
+                      '@id': `${siteUrl}/#logo`,
                       url: `${siteUrl}/Logo/MilesGoRound-Logo-Blue.png`,
+                      contentUrl: `${siteUrl}/Logo/MilesGoRound-Logo-Blue.png`,
                       width: 512,
                       height: 512,
+                      caption: 'Miles Go Round',
+                    },
+                    image: {
+                      '@id': `${siteUrl}/#logo`,
                     },
                     sameAs: [
                       'https://www.instagram.com/milesgoround/',
@@ -177,8 +201,29 @@ export default function RootLayout({
                       '@type': 'ContactPoint',
                       email: 'info@milesgoround.com',
                       contactType: 'customer service',
-                      availableLanguage: 'English',
+                      availableLanguage: ['English'],
                     },
+                    foundingDate: '2024',
+                    knowsAbout: [
+                      'Travel Rewards',
+                      'Points and Miles',
+                      'Credit Card Rewards',
+                      'Airline Loyalty Programs',
+                      'Hotel Loyalty Programs',
+                      'Travel Hacking',
+                    ],
+                  },
+                  {
+                    '@type': 'BreadcrumbList',
+                    '@id': `${siteUrl}/#breadcrumb`,
+                    itemListElement: [
+                      {
+                        '@type': 'ListItem',
+                        position: 1,
+                        name: 'Home',
+                        item: siteUrl,
+                      },
+                    ],
                   },
                 ],
               }),

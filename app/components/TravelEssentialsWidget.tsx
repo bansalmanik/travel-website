@@ -11,6 +11,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCountry, setSelectedCountry] = useState<CountryEssentials | null>(null);
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [isWeatherExpanded, setIsWeatherExpanded] = useState(false);
 
   const filteredCountries = useMemo(() => {
     if (!searchQuery.trim()) return [];
@@ -51,7 +52,26 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
     setShowSuggestions(true);
     if (!e.target.value.trim()) {
       setSelectedCountry(null);
+      setIsWeatherExpanded(false);
     }
+  };
+
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  
+  const getConditionColor = (condition: string) => {
+    const lower = condition.toLowerCase();
+    if (lower.includes('ideal') || lower.includes('pleasant') || lower.includes('perfect')) return 'text-green-600';
+    if (lower.includes('hot') || lower.includes('cold') || lower.includes('extreme')) return 'text-orange-600';
+    if (lower.includes('rainy') || lower.includes('monsoon')) return 'text-blue-600';
+    return 'text-slate-600';
+  };
+
+  const getRainfallIcon = (rainfall: string) => {
+    const lower = rainfall.toLowerCase();
+    if (lower.includes('very high')) return '🌧️🌧️🌧️';
+    if (lower.includes('high')) return '🌧️🌧️';
+    if (lower.includes('moderate')) return '🌧️';
+    return '☀️';
   };
 
   return (
@@ -194,6 +214,80 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
               </div>
             </div>
           </div>
+
+          {/* Weather Section - Collapsible */}
+          {selectedCountry.weather && (
+            <div className="border-t border-slate-200">
+              <button
+                onClick={() => setIsWeatherExpanded(!isWeatherExpanded)}
+                className="w-full px-4 py-4 sm:px-6 sm:py-5 flex items-center justify-between hover:bg-slate-50 transition-colors"
+                aria-expanded={isWeatherExpanded}
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-sky-100 rounded-lg sm:rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900">Month-by-Month Weather</h3>
+                    <p className="text-xs sm:text-sm text-slate-600">Plan your visit with climate insights</p>
+                  </div>
+                </div>
+                <svg 
+                  className={`w-5 h-5 sm:w-6 sm:h-6 text-slate-400 transition-transform ${isWeatherExpanded ? 'rotate-180' : ''}`}
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {isWeatherExpanded && (
+                <div className="px-4 pb-4 sm:px-6 sm:pb-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                    {months.map((month) => {
+                      const weather = selectedCountry.weather?.[month];
+                      if (!weather) return null;
+                      
+                      return (
+                        <div 
+                          key={month}
+                          className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200 hover:border-sky-300 hover:shadow-sm transition-all"
+                        >
+                          <div className="flex items-start justify-between mb-2">
+                            <h4 className="text-sm sm:text-base font-bold text-slate-900">{month}</h4>
+                            <span className="text-lg" role="img" aria-label="rainfall indicator">
+                              {getRainfallIcon(weather.rainfall)}
+                            </span>
+                          </div>
+                          <div className="space-y-1.5">
+                            <p className="text-base sm:text-lg font-semibold text-sky-600">
+                              {weather.temp}
+                            </p>
+                            <p className={`text-xs sm:text-sm font-medium ${getConditionColor(weather.condition)}`}>
+                              {weather.condition}
+                            </p>
+                            <p className="text-xs text-slate-500">
+                              Rainfall: {weather.rainfall}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  
+                  <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                    <p className="text-xs sm:text-sm text-blue-800">
+                      <span className="font-semibold">Note:</span> Weather can vary by region within the country. 
+                      These are general averages for major cities and tourist areas.
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
 
