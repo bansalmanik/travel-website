@@ -20,6 +20,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const article = getMilesPointsArticleBySlug(slug);
+  const siteUrl = "https://www.milesgoround.com";
+  const canonicalUrl = `${siteUrl}/learning/${slug}`;
 
   if (!article) {
     return {
@@ -29,15 +31,20 @@ export async function generateMetadata({
     };
   }
 
-  const title = article.seoTitle || article.title;
+  const title = article.seoTitle || `${article.title} | Miles Go Round`;
   const description = article.seoDescription || article.excerpt;
 
   return {
     title,
     description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title,
       description,
+      url: canonicalUrl,
+      type: "article",
     },
     twitter: {
       card: "summary_large_image",

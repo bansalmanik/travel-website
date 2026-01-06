@@ -3086,7 +3086,7 @@
     ]
   },
   {
-    "program": "Other",
+    "program": "Finnair (Avios)",
     "from": "Finnair (Avios)",
     "rates": [
       {
@@ -3132,7 +3132,7 @@
     ]
   },
   {
-    "program": "Other",
+    "program": "Iberia Plus",
     "from": "Iberia Plus",
     "rates": [
       {
@@ -3200,7 +3200,7 @@
     ]
   },
   {
-    "program": "Other",
+    "program": "Singapore Airlines KrisFlyer",
     "from": "Singapore Airlines KrisFlyer",
     "rates": [
       {
@@ -3216,7 +3216,7 @@
     ]
   },
   {
-    "program": "Other",
+    "program": "Qatar Avios",
     "from": "Qatar Avios",
     "rates": [
       {
@@ -3303,6 +3303,260 @@
           {
             "to": "Air India Maharaja Points",
             "insight": "May take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "SBI",
+    "from": "Air India Signature",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "SBI",
+    "from": "Air India Platinum",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "May take upto 7 days",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "SBI",
+    "from": "Miles Elite",
+    "rates": [
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "IHG One Rewards",
+            "insight": "May take upto 2 days",
+            "enabled": true
+          },
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "Transfers from SBI Miles convert to Qantas Frequent Flyer at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "Transfers from SBI Miles convert to Royal Orchid Plus at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "Transfers from SBI Miles convert to SpiceClub at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "Transfers from SBI Miles convert to Etihad Guest at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Asia Miles (Cathay Pacific)",
+            "insight": "Transfers from SBI Miles convert to Cathay at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "British Airways (Avios)",
+            "insight": "Transfers from SBI Miles convert to British Airways Executive Club at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "Transfers from SBI Miles convert to Maharaja Club at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Air France–KLM Flying Blue",
+            "insight": "Transfers from SBI Miles convert to Flying Blue at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "AirAsia Rewards",
+            "insight": "Transfers from SBI Miles convert to AirAsia Rewards at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "Transfers from SBI Miles convert to Aeroplan at 1:1.",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "2 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Qatar Avios",
+            "insight": "Transfers from SBI Miles convert to Privilege Club at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "United MileagePlus",
+            "insight": "Transfers from SBI Miles convert to MileagePlus at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "Transfers from SBI Miles convert to Miles&Smiles at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Saudia Alfursan",
+            "insight": "Transfers from SBI Miles convert to Alfursan at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "Transfers from SBI Miles convert to JAL Mileage Bank at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Ethiopian Airlines ShebaMiles",
+            "insight": "Transfers from SBI Miles convert to ShebaMiles at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Emirates Skywards",
+            "insight": "Transfers from SBI Miles convert to Emirates Skywards at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Air Arabia AA Rewards",
+            "insight": "Transfers from SBI Miles convert to AA Rewards at 2:1.",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program": "SBI",
+    "from": "Miles Prime",
+    "rates": [
+      {
+        "rate": "2 : 1 Ratio",
+        "partners": [
+          {
+            "to": "United MileagePlus",
+            "insight": "Transfers from SBI Miles convert to MileagePlus at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Turkish Airlines Miles&Smiles",
+            "insight": "Transfers from SBI Miles convert to Miles&Smiles at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Saudia Alfursan",
+            "insight": "Transfers from SBI Miles convert to Alfursan at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "JAL Mileage Bank",
+            "insight": "Transfers from SBI Miles convert to JAL Mileage Bank at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Ethiopian Airlines ShebaMiles",
+            "insight": "Transfers from SBI Miles convert to ShebaMiles at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Emirates Skywards",
+            "insight": "Transfers from SBI Miles convert to Emirates Skywards at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Air Arabia AA Rewards",
+            "insight": "Transfers from SBI Miles convert to AA Rewards at 2:1.",
+            "enabled": true
+          },
+          {
+            "to": "Qatar Avios",
+            "insight": "Transfers from SBI Miles convert to Privilege Club at 2:1.",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "rate": "1 : 1 Ratio",
+        "partners": [
+          {
+            "to": "Qantas Frequent Flyer",
+            "insight": "Transfers from SBI Miles convert to Qantas Frequent Flyer at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Royal Orchid Plus",
+            "insight": "Transfers from SBI Miles convert to Royal Orchid Plus at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "SpiceJet",
+            "insight": "Transfers from SBI Miles convert to SpiceClub at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Etihad Guest",
+            "insight": "Transfers from SBI Miles convert to Etihad Guest at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Asia Miles (Cathay Pacific)",
+            "insight": "Transfers from SBI Miles convert to Cathay at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "British Airways (Avios)",
+            "insight": "Transfers from SBI Miles convert to British Airways Executive Club at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Air India Maharaja Points",
+            "insight": "Transfers from SBI Miles convert to Maharaja Club at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Air France–KLM Flying Blue",
+            "insight": "Transfers from SBI Miles convert to Flying Blue at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "AirAsia Rewards",
+            "insight": "Transfers from SBI Miles convert to AirAsia Rewards at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "Aeroplan",
+            "insight": "Transfers from SBI Miles convert to Aeroplan at 1:1.",
+            "enabled": true
+          },
+          {
+            "to": "IHG One Rewards",
+            "insight": "May take upto 2 days",
             "enabled": true
           }
         ]

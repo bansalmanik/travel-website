@@ -49,8 +49,11 @@ export default function LogoSelect({
 
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
-      // Focus search input when dropdown opens
-      setTimeout(() => searchInputRef.current?.focus(), 50);
+      // Only auto-focus search input on desktop (not touch devices) to prevent keyboard popup on mobile
+      const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+      if (!isTouchDevice) {
+        setTimeout(() => searchInputRef.current?.focus(), 50);
+      }
     }
 
     return () => {

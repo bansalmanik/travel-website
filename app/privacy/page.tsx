@@ -1,6 +1,17 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
   title: "Privacy Policy | Miles Go Round",
-  description: "Privacy Policy for Miles Go Round",
+  description: "Privacy Policy for Miles Go Round. Learn how we collect, use, and protect your information.",
+  alternates: {
+    canonical: `${siteUrl}/privacy`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPage() {

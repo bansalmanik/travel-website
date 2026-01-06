@@ -3,22 +3,35 @@ import type { Metadata } from "next";
 import { MilesPointsArticleCard } from "@/app/travel-with-points/points-and-miles-explained/miles-points-article-card";
 import { getAllMilesPointsArticles } from "@/lib/milesPointsArticles";
 
+const siteUrl = "https://www.milesgoround.com";
+
 export const metadata: Metadata = {
-  title: "Points & Miles Explained | Miles Go Round",
+  title: "Travel Rewards 101 | Beginner's Guide",
   description:
-    "Beginner-friendly guides explaining how travel points and miles work, how to earn them, and how to redeem them wisely.",
+    "New to travel rewards? Learn the basics of points and miles, how loyalty programs work, and simple strategies to book better trips.",
+  keywords: [
+    "travel rewards guide",
+    "beginner travel tips",
+    "loyalty programs explained",
+    "how to book travel",
+    "travel for less",
+    "points basics",
+    "miles basics",
+  ],
   alternates: {
-    canonical: "/travel-with-points/points-and-miles-explained",
+    canonical: `${siteUrl}/travel-with-points/points-and-miles-explained`,
   },
   openGraph: {
-      title: "Points & Miles Explained | Miles Go Round",
+    title: "Travel Rewards 101 | Miles Go Round",
     description:
-      "Beginner-friendly guides explaining how travel points and miles work, how to earn them, and how to redeem them wisely.",
+      "New to travel rewards? Learn the basics and simple strategies to book better trips.",
+    url: `${siteUrl}/travel-with-points/points-and-miles-explained`,
+    type: "website",
   },
   twitter: {
-    title: "Points & Miles Explained | Miles Go Round",
+    title: "Travel Rewards 101 | Miles Go Round",
     description:
-      "Beginner-friendly guides explaining how travel points and miles work, how to earn them, and how to redeem them wisely.",
+      "New to travel rewards? Learn the basics and simple strategies to book better trips.",
     card: "summary_large_image",
   },
 };

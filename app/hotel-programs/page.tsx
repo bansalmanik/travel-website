@@ -5,19 +5,37 @@ import { getHotelProgramContent } from "@/lib/contentData";
 import { getPostsByCategory } from "@/lib/blog";
 import Image from "next/image";
 
+const siteUrl = "https://www.milesgoround.com";
+
 export const metadata: Metadata = {
-  title: "Hotel loyalty programs guide | Travel with Points",
+  title: "Hotel Loyalty Programs | Book Smarter Stays",
   description:
-    "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points.",
+    "Explore hotel loyalty programs to enhance your stays. Learn about elite perks, free nights, and strategies to get more from your hotel bookings.",
   keywords: [
     "hotel loyalty programs",
-    "elite status tips",
-    "travel rewards hotels",
-    "hotel points strategy"
+    "hotel stays",
+    "elite status",
+    "hotel perks",
+    "free hotel nights",
+    "hotel booking tips",
+    "travel accommodation",
   ],
   alternates: {
-    canonical: "/hotel-programs"
-  }
+    canonical: `${siteUrl}/hotel-programs`,
+  },
+  openGraph: {
+    title: "Hotel Loyalty Programs | Miles Go Round",
+    description:
+      "Explore hotel loyalty programs to enhance your stays. Learn about elite perks and strategies for better bookings.",
+    url: `${siteUrl}/hotel-programs`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hotel Loyalty Programs | Miles Go Round",
+    description:
+      "Explore hotel loyalty programs to enhance your stays. Learn about elite perks and booking strategies.",
+  },
 };
 
 export default async function HotelProgramsPage() {
