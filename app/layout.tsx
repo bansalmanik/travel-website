@@ -45,8 +45,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
+    // Add your actual verification codes here
+    // google: "your-actual-google-verification-code",
+    // yandex: "your-actual-yandex-verification-code",
   },
   openGraph: {
     type: "website",
@@ -92,7 +93,8 @@ export const metadata: Metadata = {
     ],
   },
   other: {
-    "google-site-verification": "your-google-verification-code",
+    // Add your actual Google verification code here
+    // "google-site-verification": "your-actual-google-verification-code",
   },
 };
 

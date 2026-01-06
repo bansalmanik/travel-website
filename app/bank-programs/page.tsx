@@ -4,25 +4,33 @@ import Link from "next/link";
 import type { BankProgram } from "@/app/bank-programs/types";
 import { getBankProgramContent } from "@/lib/contentData";
 
-const pageTitle = "Bank Programs | Miles Go Round";
+const siteUrl = "https://www.milesgoround.com";
+const pageTitle = "Bank Rewards Programs Guide | Transfer Partners & Portals";
 const pageDescription =
-  "Compare Indian bank travel portals, shopping ecosystems, and transfer partners so you know where to route your next swipe.";
+  "Compare bank travel portals, shopping ecosystems, and transfer partners. Learn how to maximize your bank rewards for travel bookings and redemptions.";
 
 export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
+  keywords: [
+    "bank rewards programs",
+    "bank transfer partners",
+    "travel portals",
+    "reward points",
+    "bank loyalty programs",
+  ],
   alternates: {
-    canonical: "/bank-programs",
+    canonical: `${siteUrl}/bank-programs`,
   },
   openGraph: {
-    title: pageTitle,
+    title: "Bank Rewards Programs Guide | Miles Go Round",
     description: pageDescription,
     type: "website",
-    url: "https://example.com/bank-programs",
+    url: `${siteUrl}/bank-programs`,
   },
   twitter: {
     card: "summary_large_image",
-    title: pageTitle,
+    title: "Bank Rewards Programs Guide | Miles Go Round",
     description: pageDescription,
   },
 };

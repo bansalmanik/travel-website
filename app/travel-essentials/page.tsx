@@ -52,6 +52,46 @@ export const metadata: Metadata = {
 export default function TravelEssentialsPage() {
   const data = travelEssentialsData as CountryEssentials[];
 
+  // FAQ structured data
+  const faqStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Do I need a voltage converter or just an adapter?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Most modern electronics (phones, laptops, cameras) work with 100-240V and only need a plug adapter. Check your device\'s power brick - if it says "100-240V", you only need an adapter. Hair dryers and other heating devices often need a voltage converter.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What if tap water is marked as "not safe"?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Stick to bottled water for drinking and brushing teeth. Avoid ice in drinks unless you\'re at an upscale hotel or restaurant. Be cautious with raw fruits and vegetables that may have been washed in tap water.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much should I tip in countries where it\'s expected?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The specific percentages and amounts are listed for each country in the tool. When in doubt, ask locals or your hotel concierge for guidance. It\'s better to tip slightly less than to not tip at all in countries where it\'s expected.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is this information regularly updated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! We review and update country information regularly. However, local customs can vary by region within a country, so use this as a general guide and observe local practices when you arrive.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
       {/* Schema.org structured data */}
@@ -81,6 +121,12 @@ export default function TravelEssentialsPage() {
             ],
           }),
         }}
+      />
+      {/* FAQ structured data */}
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">

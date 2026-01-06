@@ -3,20 +3,38 @@ import type { Metadata } from "next";
 import PointsConversionContent from "./PointsConversionContent";
 import { getPointsConversions } from "@/lib/contentData";
 
+const siteUrl = "https://www.milesgoround.com";
+
 export const metadata: Metadata = {
-  title: "Points Conversion Guide | Transfer Rates",
+  title: "Points Transfer Partners & Conversion Rates | Miles Go Round",
   description:
-    "Pick a rewards program and originating card to see every partner and transfer ratio in one clean table.",
+    "Compare transfer partners and conversion ratios for all major credit card points programs. Find the best transfer rates for airline miles and hotel points.",
+  keywords: [
+    "points transfer partners",
+    "points conversion rates",
+    "transfer ratios",
+    "credit card points transfer",
+    "airline miles transfer",
+    "hotel points transfer",
+    "Chase Ultimate Rewards",
+    "Amex Membership Rewards",
+    "Citi ThankYou",
+  ],
+  alternates: {
+    canonical: `${siteUrl}/pointsconversion`,
+  },
   openGraph: {
-    title: "Points Conversion Guide",
+    title: "Points Transfer Partners & Conversion Rates | Miles Go Round",
     description:
-      "Filter by program and source card to browse transfer partners, ratios, and guidance in seconds.",
+      "Compare transfer partners and conversion ratios for all major credit card points programs.",
+    url: `${siteUrl}/pointsconversion`,
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Points Conversion Guide",
+    title: "Points Transfer Partners & Conversion Rates",
     description:
-      "See transfer partners and ratios faster—choose your program and card to get a complete table instantly.",
+      "Compare transfer partners and conversion ratios for all major credit card points programs.",
   },
 };
 

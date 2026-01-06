@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getPostsByCategory, getCategoryInfo } from '@/lib/blog'
 
+const siteUrl = 'https://www.milesgoround.com'
 const CATEGORIES = ['credit-cards', 'hotels', 'airlines', 'travel-tips', 'destinations']
 
 export async function generateStaticParams() {
@@ -13,13 +14,25 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
   const { category } = await params
   const info = getCategoryInfo(category)
+  const url = `${siteUrl}/blog/category/${category}`
+  
   return {
-    title: `${info.name} | Blog | Miles Go Round`,
+    title: `${info.name} Articles | Blog | Miles Go Round`,
     description: `${info.description}. Expert guides and tips to maximize your travel rewards.`,
+    keywords: [info.name.toLowerCase(), 'travel rewards', 'points and miles', 'travel tips'],
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title: `${info.name} | Blog | Miles Go Round`,
+      title: `${info.name} Articles | Miles Go Round Blog`,
       description: `${info.description}. Expert guides and tips to maximize your travel rewards.`,
       type: 'website',
+      url,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${info.name} Articles | Miles Go Round`,
+      description: `${info.description}. Expert guides and tips to maximize your travel rewards.`,
     },
   }
 }

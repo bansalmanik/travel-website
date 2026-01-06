@@ -1,6 +1,17 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
   title: "Terms and Conditions | Miles Go Round",
-  description: "Terms and Conditions for Miles Go Round",
+  description: "Terms and Conditions for Miles Go Round. Read our terms of service and usage policies.",
+  alternates: {
+    canonical: `${siteUrl}/terms`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function TermsPage() {

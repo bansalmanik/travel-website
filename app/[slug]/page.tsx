@@ -10,6 +10,8 @@ import CreditCardContent from './credit-card-content'
 import BankProgramContent from './bank-program-content'
 import TravelGuideMDXContent from './travel-guide-mdx-content'
 
+const siteUrl = 'https://www.milesgoround.com'
+
 export async function generateStaticParams() {
   const slugs = await getAllContentSlugs()
   return slugs.map(slug => ({ slug }))
@@ -22,6 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   const content = await getContentBySlug(slug)
   if (!content) return {}
+  
+  const canonicalUrl = `${siteUrl}/${slug}`
   
   // Generate metadata based on content type
   switch (content.type) {
@@ -40,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           modifiedTime: post.updatedOn,
           authors: [post.author],
           images: [{ url: post.heroImage.src, alt: post.heroImage.alt }],
-          url: `https://milesgoround.com/${slug}`,
+          url: canonicalUrl,
         },
         twitter: {
           card: 'summary_large_image',
@@ -49,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           images: [post.heroImage.src],
         },
         alternates: {
-          canonical: `https://milesgoround.com/${slug}`,
+          canonical: canonicalUrl,
         },
       }
     }
@@ -66,7 +70,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           publishedTime: guide.publishedOn,
           authors: [guide.author],
           images: [{ url: guide.heroImage.src, alt: guide.heroImage.alt }],
-          url: `https://milesgoround.com/${slug}`,
+          url: canonicalUrl,
         },
         twitter: {
           card: 'summary_large_image',
@@ -75,7 +79,95 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           images: [guide.heroImage.src],
         },
         alternates: {
-          canonical: `https://milesgoround.com/${slug}`,
+          canonical: canonicalUrl,
+        },
+      }
+    }
+    case 'hotel-program': {
+      const program = content.data
+      return {
+        title: `${program.name} Loyalty Program Guide | Miles Go Round`,
+        description: program.summary || `Complete guide to ${program.name} loyalty program. Learn about elite status, points earning, and redemption strategies.`,
+        keywords: [program.name, 'hotel loyalty program', 'hotel points', 'elite status'].join(', '),
+        openGraph: {
+          title: `${program.name} Loyalty Program Guide`,
+          description: program.summary || `Complete guide to ${program.name} loyalty program.`,
+          type: 'article',
+          url: canonicalUrl,
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: `${program.name} Loyalty Program Guide`,
+          description: program.summary || `Complete guide to ${program.name} loyalty program.`,
+        },
+        alternates: {
+          canonical: canonicalUrl,
+        },
+      }
+    }
+    case 'flight-program': {
+      const program = content.data
+      return {
+        title: `${program.name} Miles Guide | Award Sweet Spots | Miles Go Round`,
+        description: program.summary || `Complete guide to ${program.name}. Find award sweet spots, alliance partners, and redemption strategies.`,
+        keywords: [program.name, 'airline miles', 'frequent flyer', 'award travel', program.alliance || ''].filter(Boolean).join(', '),
+        openGraph: {
+          title: `${program.name} Miles Guide | Award Sweet Spots`,
+          description: program.summary || `Complete guide to ${program.name}.`,
+          type: 'article',
+          url: canonicalUrl,
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: `${program.name} Miles Guide`,
+          description: program.summary || `Complete guide to ${program.name}.`,
+        },
+        alternates: {
+          canonical: canonicalUrl,
+        },
+      }
+    }
+    case 'credit-card': {
+      const card = content.data
+      return {
+        title: `${card.name} Review | ${card.issuer} | Miles Go Round`,
+        description: `${card.name} credit card review. Learn about rewards, benefits, annual fee, and whether this card is right for your travel strategy.`,
+        keywords: [card.name, card.issuer, 'credit card review', 'travel credit card', card.rewardsCurrency || ''].filter(Boolean).join(', '),
+        openGraph: {
+          title: `${card.name} Review | ${card.issuer}`,
+          description: `${card.name} credit card review. Learn about rewards, benefits, and annual fee.`,
+          type: 'article',
+          url: canonicalUrl,
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: `${card.name} Review`,
+          description: `${card.name} credit card review. Learn about rewards, benefits, and annual fee.`,
+        },
+        alternates: {
+          canonical: canonicalUrl,
+        },
+      }
+    }
+    case 'bank-program': {
+      const program = content.data
+      return {
+        title: `${program.name} Points Guide | Transfer Partners | Miles Go Round`,
+        description: program.summary || `Complete guide to ${program.name}. Learn about transfer partners, redemption options, and maximizing your points.`,
+        keywords: [program.name, 'bank points', 'transfer partners', 'points program'].join(', '),
+        openGraph: {
+          title: `${program.name} Points Guide`,
+          description: program.summary || `Complete guide to ${program.name}.`,
+          type: 'article',
+          url: canonicalUrl,
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: `${program.name} Points Guide`,
+          description: program.summary || `Complete guide to ${program.name}.`,
+        },
+        alternates: {
+          canonical: canonicalUrl,
         },
       }
     }
@@ -83,7 +175,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       return {
         title: `${slug} | Miles Go Round`,
         alternates: {
-          canonical: `https://milesgoround.com/${slug}`,
+          canonical: canonicalUrl,
         },
       }
   }

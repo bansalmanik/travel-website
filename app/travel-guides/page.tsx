@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: pageTitle,
     description: pageDescription,
     type: "website",
-    url: "https://example.com/travel-guides",
+    url: "https://www.milesgoround.com/travel-guides",
   },
   twitter: {
     card: "summary_large_image",
@@ -34,12 +34,12 @@ export default async function TravelGuidesPage() {
     "@type": "CollectionPage",
     name: "Travel Guides Library",
     description: pageDescription,
-    url: "https://example.com/travel-guides",
+    url: "https://www.milesgoround.com/travel-guides",
     hasPart: travelGuides.map((entry) => ({
       "@type": "Article",
       headline: entry.title,
       datePublished: entry.publishedOn,
-      url: `https://example.com/travel-guides/${entry.slug}`,
+      url: `https://www.milesgoround.com/${entry.slug}`,
     })),
   };
 

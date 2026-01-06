@@ -1,4 +1,38 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
+  title: "Travel with Points | Maximize Your Miles & Rewards",
+  description:
+    "Turn everyday spending into your next adventure. Learn how to earn, transfer, and redeem points for flights, hotels, and more.",
+  keywords: [
+    "travel with points",
+    "points and miles",
+    "travel rewards",
+    "credit card points",
+    "airline miles",
+    "hotel points",
+    "loyalty programs",
+  ],
+  alternates: {
+    canonical: `${siteUrl}/travel-with-points`,
+  },
+  openGraph: {
+    title: "Travel with Points | Miles Go Round",
+    description:
+      "Turn everyday spending into your next adventure. Learn how to earn, transfer, and redeem points for flights, hotels, and more.",
+    url: `${siteUrl}/travel-with-points`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Travel with Points | Miles Go Round",
+    description:
+      "Turn everyday spending into your next adventure. Learn how to earn, transfer, and redeem points.",
+  },
+};
 
 const featuredSection = {
     title: "Points & Miles Explained",

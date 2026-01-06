@@ -6,6 +6,8 @@ import { getCreditCardContent } from "@/lib/contentData";
 import { getPostsByCategory } from "@/lib/blog";
 import Image from "next/image";
 
+const siteUrl = "https://www.milesgoround.com";
+
 function formatAnnualFee(annualFee: AnnualFee) {
   const locale = annualFee.currency === "INR" ? "en-IN" : "en-US";
   const hasFraction = !Number.isInteger(annualFee.amount);
@@ -25,19 +27,36 @@ function formatAnnualFee(annualFee: AnnualFee) {
 }
 
 export const metadata: Metadata = {
-  title: "Travel credit card strategy | Travel with Points",
+  title: "Best Travel Credit Cards 2025 | Points & Miles Strategy",
   description:
-    "Discover flexible currencies, card pairings, and smart earning tactics to maximize travel rewards with every swipe.",
+    "Compare the best travel credit cards for earning points and miles. Discover flexible currencies, card pairings, and smart earning tactics to maximize travel rewards.",
   keywords: [
-    "travel credit cards",
+    "best travel credit cards",
+    "travel credit cards 2025",
     "points strategy",
     "loyalty rewards",
     "credit card combinations",
-    "transferable points"
+    "transferable points",
+    "credit card rewards",
+    "airline credit cards",
+    "hotel credit cards",
   ],
   alternates: {
-    canonical: "/credit-cards"
-  }
+    canonical: `${siteUrl}/credit-cards`,
+  },
+  openGraph: {
+    title: "Best Travel Credit Cards | Miles Go Round",
+    description:
+      "Compare the best travel credit cards for earning points and miles. Discover flexible currencies and smart earning tactics.",
+    url: `${siteUrl}/credit-cards`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Travel Credit Cards | Miles Go Round",
+    description:
+      "Compare the best travel credit cards for earning points and miles. Discover flexible currencies and smart earning tactics.",
+  },
 };
 
 export default async function CreditCardsPage() {

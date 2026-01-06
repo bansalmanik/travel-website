@@ -10,19 +10,41 @@ import { getFlightProgramContent } from "@/lib/contentData";
 import { getPostsByCategory } from "@/lib/blog";
 import Image from "next/image";
 
+const siteUrl = "https://www.milesgoround.com";
+
 export const metadata: Metadata = {
-  title: "Flight loyalty program sweet spots | Travel with Points",
+  title: "Airline Miles & Flight Programs Guide 2025 | Sweet Spots",
   description:
-    "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles.",
+    "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles. Find the best sweet spots for business and first class.",
   keywords: [
+    "airline miles",
     "flight loyalty programs",
     "airline miles sweet spots",
     "award travel tips",
-    "alliance partners"
+    "alliance partners",
+    "frequent flyer programs",
+    "business class awards",
+    "first class awards",
+    "Star Alliance",
+    "OneWorld",
+    "SkyTeam",
   ],
   alternates: {
-    canonical: "/flight-programs"
-  }
+    canonical: `${siteUrl}/flight-programs`,
+  },
+  openGraph: {
+    title: "Airline Miles & Flight Programs Guide | Miles Go Round",
+    description:
+      "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles.",
+    url: `${siteUrl}/flight-programs`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Airline Miles & Flight Programs Guide | Miles Go Round",
+    description:
+      "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles.",
+  },
 };
 
 export default async function FlightProgramsPage() {

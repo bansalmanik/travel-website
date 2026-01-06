@@ -5,19 +5,40 @@ import { getHotelProgramContent } from "@/lib/contentData";
 import { getPostsByCategory } from "@/lib/blog";
 import Image from "next/image";
 
+const siteUrl = "https://www.milesgoround.com";
+
 export const metadata: Metadata = {
-  title: "Hotel loyalty programs guide | Travel with Points",
+  title: "Hotel Loyalty Programs Guide 2025 | Maximize Hotel Points",
   description:
-    "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points.",
+    "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points. Marriott, Hilton, Hyatt, IHG and more.",
   keywords: [
     "hotel loyalty programs",
+    "hotel points guide",
     "elite status tips",
     "travel rewards hotels",
-    "hotel points strategy"
+    "hotel points strategy",
+    "Marriott Bonvoy",
+    "Hilton Honors",
+    "World of Hyatt",
+    "IHG Rewards",
+    "free hotel nights",
   ],
   alternates: {
-    canonical: "/hotel-programs"
-  }
+    canonical: `${siteUrl}/hotel-programs`,
+  },
+  openGraph: {
+    title: "Hotel Loyalty Programs Guide | Miles Go Round",
+    description:
+      "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points.",
+    url: `${siteUrl}/hotel-programs`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hotel Loyalty Programs Guide | Miles Go Round",
+    description:
+      "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points.",
+  },
 };
 
 export default async function HotelProgramsPage() {

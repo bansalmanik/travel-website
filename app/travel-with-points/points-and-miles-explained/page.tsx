@@ -3,22 +3,36 @@ import type { Metadata } from "next";
 import { MilesPointsArticleCard } from "@/app/travel-with-points/points-and-miles-explained/miles-points-article-card";
 import { getAllMilesPointsArticles } from "@/lib/milesPointsArticles";
 
+const siteUrl = "https://www.milesgoround.com";
+
 export const metadata: Metadata = {
-  title: "Points & Miles Explained | Miles Go Round",
+  title: "Points & Miles Explained | Beginner's Guide to Travel Rewards",
   description:
-    "Beginner-friendly guides explaining how travel points and miles work, how to earn them, and how to redeem them wisely.",
+    "Learn how travel points and miles work with our beginner-friendly guides. Understand earning strategies, redemption tips, and transfer partners to maximize your rewards.",
+  keywords: [
+    "points and miles explained",
+    "travel rewards guide",
+    "how to earn miles",
+    "how to redeem points",
+    "transfer partners",
+    "beginner travel rewards",
+    "airline miles guide",
+    "hotel points guide",
+  ],
   alternates: {
-    canonical: "/travel-with-points/points-and-miles-explained",
+    canonical: `${siteUrl}/travel-with-points/points-and-miles-explained`,
   },
   openGraph: {
-      title: "Points & Miles Explained | Miles Go Round",
+    title: "Points & Miles Explained | Miles Go Round",
     description:
-      "Beginner-friendly guides explaining how travel points and miles work, how to earn them, and how to redeem them wisely.",
+      "Learn how travel points and miles work with our beginner-friendly guides. Understand earning strategies and redemption tips.",
+    url: `${siteUrl}/travel-with-points/points-and-miles-explained`,
+    type: "website",
   },
   twitter: {
     title: "Points & Miles Explained | Miles Go Round",
     description:
-      "Beginner-friendly guides explaining how travel points and miles work, how to earn them, and how to redeem them wisely.",
+      "Learn how travel points and miles work with our beginner-friendly guides.",
     card: "summary_large_image",
   },
 };
