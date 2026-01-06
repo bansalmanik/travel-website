@@ -482,7 +482,7 @@
     },
     "tipping": {
       "expected": false,
-      "note": "Service included, but round up for good service"
+      "note": "Round up for good service"
     }
   },
   {
@@ -500,7 +500,7 @@
     },
     "tipping": {
       "expected": false,
-      "note": "Service included, but round up or add 5-10% for exceptional service"
+      "note": "Round up or add 5-10% for exceptional service"
     }
   },
   {
@@ -518,7 +518,7 @@
     },
     "tipping": {
       "expected": false,
-      "note": "Service included, but round up for good service"
+      "note": "Round up for good service"
     }
   },
   {
@@ -586,7 +586,7 @@
     },
     "water": {
       "safe": true,
-      "note": "Tap water is safe in cities"
+      "note": "Tap water is safe"
     },
     "tipping": {
       "expected": true,
@@ -643,7 +643,7 @@
       "note": "Tap water is safe throughout the country"
     },
     "tipping": {
-      "expected": false,
+      "expected": true,
       "note": "Round up or add 10% for good service"
     }
   },
@@ -676,7 +676,7 @@
     },
     "water": {
       "safe": false,
-      "note": "Stick to bottled water, especially outside major cities"
+      "note": "Stick to bottled water"
     },
     "tipping": {
       "expected": false,
@@ -820,7 +820,7 @@
     },
     "water": {
       "safe": false,
-      "note": "Drink only bottled water, especially at high altitudes"
+      "note": "Drink only bottled water"
     },
     "tipping": {
       "expected": true,
@@ -856,11 +856,11 @@
     },
     "water": {
       "safe": false,
-      "note": "Stick to bottled water in most areas"
+      "note": "Stick to bottled water"
     },
     "tipping": {
-      "expected": true,
-      "note": "10% in restaurants, often included as 'propina voluntaria'"
+      "expected": false,
+      "note": "10% in restaurants if already not included as 'propina voluntaria'"
     }
   },
   {
@@ -877,7 +877,7 @@
       "note": "Tap water is generally safe in most areas"
     },
     "tipping": {
-      "expected": true,
+      "expected": false,
       "note": "10% service charge usually included, extra tip appreciated"
     }
   },
