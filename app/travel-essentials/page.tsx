@@ -6,23 +6,17 @@ import type { CountryEssentials } from '@/lib/travel-essentials';
 const siteUrl = 'https://www.milesgoround.com';
 
 export const metadata: Metadata = {
-  title: 'Travel Essentials: Plug, Sip & Tip Guide',
-  description: 'Instant travel essentials for 50+ countries. Check power plug types, tap water safety, and tipping customs in seconds. Essential info for every traveler.',
+  title: 'Travel Essentials | Plug, Water & Tipping Guide',
+  description: 'Essential travel info for 50+ countries. Check power plug types, tap water safety, and local tipping customs before your trip.',
   keywords: [
     'travel essentials',
-    'power plug types',
-    'electrical outlets by country',
-    'tap water safety',
-    'tipping guide',
-    'tipping customs by country',
-    'travel adapter guide',
-    'voltage by country',
-    'safe drinking water',
-    'international travel tips',
-    'country travel information',
     'travel preparation',
-    'plug types worldwide',
+    'power plugs by country',
+    'tap water safety',
+    'tipping customs',
     'travel checklist',
+    'international travel',
+    'country travel info',
   ],
   openGraph: {
     title: 'Travel Essentials: Plug, Sip & Tip Guide | Miles Go Round',

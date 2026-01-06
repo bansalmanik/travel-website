@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 const siteUrl = "https://www.milesgoround.com";
 
 export const metadata: Metadata = {
-  title: "About Miles Go Round | Your Travel Rewards Guide",
-  description: "Learn about Miles Go Round - your trusted guide to maximizing travel rewards through miles, points, and credit card strategies.",
+  title: "About Miles Go Round | Travel Stories & Smart Rewards",
+  description: "Learn about Miles Go Round - your guide to meaningful travel experiences and smart strategies for using rewards to explore the world.",
   alternates: {
     canonical: `${siteUrl}/about`,
   },
   openGraph: {
     title: "About Miles Go Round",
-    description: "Learn about Miles Go Round - your trusted guide to maximizing travel rewards through miles, points, and credit card strategies.",
+    description: "Your guide to meaningful travel experiences and smart strategies for using rewards to explore the world.",
     url: `${siteUrl}/about`,
     type: "website",
   },

@@ -4,12 +4,12 @@ import Link from "next/link";
 const siteUrl = "https://www.milesgoround.com";
 
 export const metadata: Metadata = {
-  title: "Travel with Points | Maximize Your Miles & Rewards",
+  title: "Travel with Points | Smart Booking Strategies",
   description:
-    "Turn everyday spending into your next adventure. Learn how to earn, transfer, and redeem points for flights, hotels, and more.",
+    "Learn how to book flights and hotels smarter. Discover credit cards, loyalty programs, and transfer strategies to enhance your travel experiences.",
   keywords: [
     "travel with points",
-    "points and miles",
+    "smart travel booking",
     "travel rewards",
     "credit card points",
     "airline miles",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Travel with Points | Miles Go Round",
     description:
-      "Turn everyday spending into your next adventure. Learn how to earn, transfer, and redeem points for flights, hotels, and more.",
+      "Learn how to book flights and hotels smarter with credit cards, loyalty programs, and transfer strategies.",
     url: `${siteUrl}/travel-with-points`,
     type: "website",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel with Points | Miles Go Round",
     description:
-      "Turn everyday spending into your next adventure. Learn how to earn, transfer, and redeem points.",
+      "Learn how to book flights and hotels smarter with credit cards and loyalty programs.",
   },
 };
 

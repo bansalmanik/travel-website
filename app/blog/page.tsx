@@ -6,29 +6,30 @@ const siteUrl = 'https://www.milesgoround.com'
 const CATEGORIES = ['credit-cards', 'hotels', 'airlines', 'travel-tips', 'destinations']
 
 export const metadata: Metadata = {
-  title: 'Travel Rewards Blog | Points, Miles & Credit Card Guides',
-  description: 'Expert guides on credit cards, hotels, airlines, and travel tips to maximize your points and miles for free flights and hotel stays.',
+  title: 'Travel Blog | Destinations, Guides & Rewards Tips',
+  description: 'Explore destination guides, travel stories, hotel reviews, and tips on maximizing your travel experiences with smart rewards strategies.',
   keywords: [
     'travel blog',
-    'points and miles blog',
-    'credit card guides',
-    'travel rewards tips',
-    'airline miles',
-    'hotel points',
+    'destination guides',
+    'travel stories',
+    'hotel reviews',
+    'travel tips',
+    'points and miles',
+    'travel rewards',
   ],
   alternates: {
     canonical: `${siteUrl}/blog`,
   },
   openGraph: {
-    title: 'Travel Rewards Blog | Miles Go Round',
-    description: 'Expert guides on credit cards, hotels, airlines, and travel tips to maximize your points and miles.',
+    title: 'Travel Blog | Miles Go Round',
+    description: 'Explore destination guides, travel stories, hotel reviews, and tips on maximizing your travel experiences.',
     type: 'website',
     url: `${siteUrl}/blog`,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Rewards Blog | Miles Go Round',
-    description: 'Expert guides on credit cards, hotels, airlines, and travel tips to maximize your points and miles.',
+    title: 'Travel Blog | Miles Go Round',
+    description: 'Explore destination guides, travel stories, hotel reviews, and tips on maximizing your travel experiences.',
   },
 }
 
@@ -45,8 +46,8 @@ export default async function BlogPage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'Miles Go Round Blog',
-    description: 'Expert guides on credit cards, hotels, airlines, and travel tips to maximize your points and miles.',
+    name: 'Miles Go Round Travel Blog',
+    description: 'Explore destination guides, travel stories, hotel reviews, and tips on maximizing your travel experiences.',
     url: `${siteUrl}/blog`,
     publisher: {
       '@type': 'Organization',

@@ -27,35 +27,33 @@ function formatAnnualFee(annualFee: AnnualFee) {
 }
 
 export const metadata: Metadata = {
-  title: "Best Travel Credit Cards 2025 | Points & Miles Strategy",
+  title: "Travel Credit Cards | Earn Rewards for Your Trips",
   description:
-    "Compare the best travel credit cards for earning points and miles. Discover flexible currencies, card pairings, and smart earning tactics to maximize travel rewards.",
+    "Find the best travel credit cards to fund your adventures. Compare cards, earning strategies, and perks to make every trip more rewarding.",
   keywords: [
-    "best travel credit cards",
-    "travel credit cards 2025",
-    "points strategy",
-    "loyalty rewards",
-    "credit card combinations",
-    "transferable points",
+    "travel credit cards",
+    "best travel cards",
     "credit card rewards",
-    "airline credit cards",
-    "hotel credit cards",
+    "travel perks",
+    "card benefits",
+    "earning strategies",
+    "travel booking",
   ],
   alternates: {
     canonical: `${siteUrl}/credit-cards`,
   },
   openGraph: {
-    title: "Best Travel Credit Cards | Miles Go Round",
+    title: "Travel Credit Cards | Miles Go Round",
     description:
-      "Compare the best travel credit cards for earning points and miles. Discover flexible currencies and smart earning tactics.",
+      "Find the best travel credit cards to fund your adventures. Compare cards, earning strategies, and perks.",
     url: `${siteUrl}/credit-cards`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Travel Credit Cards | Miles Go Round",
+    title: "Travel Credit Cards | Miles Go Round",
     description:
-      "Compare the best travel credit cards for earning points and miles. Discover flexible currencies and smart earning tactics.",
+      "Find the best travel credit cards to fund your adventures. Compare cards and earning strategies.",
   },
 };
 

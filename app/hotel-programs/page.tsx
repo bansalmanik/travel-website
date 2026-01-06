@@ -8,36 +8,33 @@ import Image from "next/image";
 const siteUrl = "https://www.milesgoround.com";
 
 export const metadata: Metadata = {
-  title: "Hotel Loyalty Programs Guide 2025 | Maximize Hotel Points",
+  title: "Hotel Loyalty Programs | Book Smarter Stays",
   description:
-    "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points. Marriott, Hilton, Hyatt, IHG and more.",
+    "Explore hotel loyalty programs to enhance your stays. Learn about elite perks, free nights, and strategies to get more from your hotel bookings.",
   keywords: [
     "hotel loyalty programs",
-    "hotel points guide",
-    "elite status tips",
-    "travel rewards hotels",
-    "hotel points strategy",
-    "Marriott Bonvoy",
-    "Hilton Honors",
-    "World of Hyatt",
-    "IHG Rewards",
+    "hotel stays",
+    "elite status",
+    "hotel perks",
     "free hotel nights",
+    "hotel booking tips",
+    "travel accommodation",
   ],
   alternates: {
     canonical: `${siteUrl}/hotel-programs`,
   },
   openGraph: {
-    title: "Hotel Loyalty Programs Guide | Miles Go Round",
+    title: "Hotel Loyalty Programs | Miles Go Round",
     description:
-      "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points.",
+      "Explore hotel loyalty programs to enhance your stays. Learn about elite perks and strategies for better bookings.",
     url: `${siteUrl}/hotel-programs`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hotel Loyalty Programs Guide | Miles Go Round",
+    title: "Hotel Loyalty Programs | Miles Go Round",
     description:
-      "Compare elite status perks, understand free night certificates, and follow a proven checklist to stretch hotel points.",
+      "Explore hotel loyalty programs to enhance your stays. Learn about elite perks and booking strategies.",
   },
 };
 

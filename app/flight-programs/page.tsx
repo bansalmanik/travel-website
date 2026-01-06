@@ -13,37 +13,33 @@ import Image from "next/image";
 const siteUrl = "https://www.milesgoround.com";
 
 export const metadata: Metadata = {
-  title: "Airline Miles & Flight Programs Guide 2025 | Sweet Spots",
+  title: "Airline Loyalty Programs | Fly Smarter",
   description:
-    "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles. Find the best sweet spots for business and first class.",
+    "Explore airline loyalty programs to enhance your flights. Learn about alliances, award bookings, and strategies to fly better for less.",
   keywords: [
-    "airline miles",
-    "flight loyalty programs",
-    "airline miles sweet spots",
-    "award travel tips",
-    "alliance partners",
-    "frequent flyer programs",
-    "business class awards",
-    "first class awards",
-    "Star Alliance",
-    "OneWorld",
-    "SkyTeam",
+    "airline loyalty programs",
+    "flight booking",
+    "airline alliances",
+    "award flights",
+    "frequent flyer",
+    "travel flights",
+    "airline perks",
   ],
   alternates: {
     canonical: `${siteUrl}/flight-programs`,
   },
   openGraph: {
-    title: "Airline Miles & Flight Programs Guide | Miles Go Round",
+    title: "Airline Loyalty Programs | Miles Go Round",
     description:
-      "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles.",
+      "Explore airline loyalty programs to enhance your flights. Learn about alliances and award booking strategies.",
     url: `${siteUrl}/flight-programs`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Airline Miles & Flight Programs Guide | Miles Go Round",
+    title: "Airline Loyalty Programs | Miles Go Round",
     description:
-      "Unlock airline alliances, stopover rules, and proven award redemptions to fly farther for fewer miles.",
+      "Explore airline loyalty programs to enhance your flights. Learn about alliances and booking strategies.",
   },
 };
 

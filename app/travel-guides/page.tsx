@@ -4,9 +4,9 @@ import Link from "next/link";
 
 import { getAllTravelGuides } from "@/lib/travel-guides";
 
-const pageTitle = "Travel Guides Library | Miles Go Round";
+const pageTitle = "Travel Guides | Destination Stories & Experiences";
 const pageDescription =
-  "Browse Ana's reflective travel guides to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
+  "Explore reflective travel guides with destination insights, local experiences, and practical tips for meaningful journeys around the world.";
 
 export const metadata: Metadata = {
   title: pageTitle,

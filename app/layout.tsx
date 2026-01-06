@@ -9,22 +9,22 @@ const siteUrl = "https://www.milesgoround.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-      default: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    default: "Miles Go Round | Travel Guides & Smart Rewards Strategies",
     template: "%s | Miles Go Round",
   },
   description:
-    "Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.",
+    "Discover inspiring travel guides, destination stories, and practical tips on using points and miles to make every journey more rewarding.",
   keywords: [
-      "travel guides",
-      "travel blog",
-      "points and miles",
-      "airline miles",
-      "hotel points",
-      "credit card rewards",
-      "loyalty programs",
-      "travel rewards",
-      "flight booking tips",
-      "hotel booking tips",
+    "travel guides",
+    "travel blog",
+    "destination guides",
+    "travel stories",
+    "travel tips",
+    "points and miles",
+    "travel rewards",
+    "flight booking",
+    "hotel booking",
+    "travel inspiration",
   ],
   applicationName: "Miles Go Round",
   category: "travel",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Miles Go Round",
-      title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    title: "Miles Go Round | Travel Guides & Smart Rewards Strategies",
     description:
-      "Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.",
+      "Discover inspiring travel guides, destination stories, and practical tips on using points and miles to make every journey more rewarding.",
     locale: "en_US",
     images: [
       {
@@ -71,9 +71,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@milesgoround",
     creator: "@milesgoround",
-      title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    title: "Miles Go Round | Travel Guides & Smart Rewards Strategies",
     description:
-      "Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.",
+      "Discover inspiring travel guides, destination stories, and practical tips on using points and miles to make every journey more rewarding.",
     images: ["/images/content/cover_1.jpg"],
   },
   authors: [{ name: "Miles Go Round", url: siteUrl }],
@@ -151,7 +151,7 @@ export default function RootLayout({
                     '@id': `${siteUrl}/#website`,
                     name: 'Miles Go Round',
                     url: siteUrl,
-                        description: 'Travel guides, real experiences, and practical advice on using points, miles, and credit cards to book flights and hotels smarter.',
+                        description: 'Discover inspiring travel guides, destination stories, and practical tips on using points and miles to make every journey more rewarding.',
                     inLanguage: 'en-US',
                     potentialAction: {
                       '@type': 'SearchAction',
