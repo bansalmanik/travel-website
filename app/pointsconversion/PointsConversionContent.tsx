@@ -274,9 +274,11 @@ export default function PointsConversionContent({ conversions }: PointsConversio
   }, [selectedTo, toOptions]);
 
   const filteredPartnerRows = useMemo(() => {
+    // If only one partner, show it regardless of selection state
+    if (toOptions.length === 1) return partnerRows;
     if (!normalizedSelectedTo) return partnerRows;
     return partnerRows.filter((partner) => partner.to === normalizedSelectedTo);
-  }, [partnerRows, normalizedSelectedTo]);
+  }, [partnerRows, normalizedSelectedTo, toOptions.length]);
 
   const parsedTransferPoints = useMemo(() => {
     const numericValue = Number(transferPoints);
@@ -398,7 +400,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                 <div className="flex-1">
                   <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Transfer From</p>
                   <LogoSelect
-                    value={normalizedSelectedFrom}
+                    value={fromOptions.length === 1 ? fromOptions[0] : normalizedSelectedFrom}
                     onChange={handleFromChange}
                     options={
                       !selectedProgramName
@@ -417,7 +419,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                           ]
                     }
                     placeholder={!selectedProgramName ? "Select program first" : "Select card"}
-                    disabled={!selectedProgramName || fromOptions.length === 0}
+                    disabled={!selectedProgramName || fromOptions.length === 0 || fromOptions.length === 1}
                   />
                 </div>
               </div>
@@ -426,18 +428,22 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               <div className="mt-3 sm:mt-4">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Transfer To</p>
                 <LogoSelect
-                  value={normalizedSelectedTo}
+                  value={toOptions.length === 1 ? toOptions[0] : normalizedSelectedTo}
                   onChange={handleToChange}
-                  options={[
-                    { value: "", label: "All Partners" },
-                    ...toOptions.map((partner) => ({
-                      value: partner,
-                      label: partner,
-                      logo: PROGRAM_LOGOS[partner],
-                    })),
-                  ]}
+                  options={
+                    toOptions.length === 1
+                      ? [{ value: toOptions[0], label: toOptions[0], logo: PROGRAM_LOGOS[toOptions[0]] }]
+                      : [
+                          { value: "", label: "All Partners" },
+                          ...toOptions.map((partner) => ({
+                            value: partner,
+                            label: partner,
+                            logo: PROGRAM_LOGOS[partner],
+                          })),
+                        ]
+                  }
                   placeholder="All Partners"
-                  disabled={toOptions.length === 0}
+                  disabled={toOptions.length === 0 || toOptions.length === 1}
                 />
               </div>
             </>
