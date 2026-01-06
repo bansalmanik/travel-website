@@ -8,8 +8,8 @@ import Image from "next/image";
 const navigationLinks = [
   { href: "/travel-with-points", label: "Travel with points" },
   { href: "/travel-guides", label: "Travel Guides" },
+  { href: "/travel-essentials", label: "Travel Essentials" },
   { href: "/blog", label: "Blog" },
-  { href: "/stories", label: "Stories" },
 ];
 
 export function SiteNav() {

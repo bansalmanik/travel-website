@@ -3,10 +3,15 @@
 import Image from "next/image";
 import { useCallback, useRef } from "react";
 
-import type { StoryImage } from "@/lib/stories";
+type GalleryImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+  layout?: "landscape" | "portrait" | "square";
+};
 
 type GallerySliderProps = {
-  images: StoryImage[];
+  images: GalleryImage[];
 };
 
 export default function GallerySlider({ images }: GallerySliderProps) {
@@ -28,7 +33,7 @@ export default function GallerySlider({ images }: GallerySliderProps) {
       <div
         ref={scrollRef}
         className="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 pr-1 scroll-smooth"
-        aria-label="Story photo gallery"
+        aria-label="Photo gallery"
       >
         {images.map((image) => (
           <figure
