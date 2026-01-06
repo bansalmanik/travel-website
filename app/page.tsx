@@ -1,8 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
 import { getAllTravelGuides } from "@/lib/travel-guides";
 import { getAllBlogPosts, getCategoryInfo } from "@/lib/blog";
+
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
+  title: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+  description:
+    "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, hotel & airline loyalty programs, and tips to maximize points and miles for free flights and hotel stays.",
+  alternates: {
+    canonical: siteUrl,
+  },
+};
 
 const quickLinks = [
   { label: "Credit Cards", href: "/credit-cards", icon: "💳" },
@@ -25,7 +37,63 @@ export default async function Home() {
   
   const heroImageSrc = "/images/content/cover_1.jpg";
 
+  // Home page structured data
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${siteUrl}/#webpage`,
+    url: siteUrl,
+    name: "Miles Go Round | Travel Guides, Points & Miles Strategies",
+    description: "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, and tips to maximize points and miles.",
+    isPartOf: { "@id": `${siteUrl}/#website` },
+    about: {
+      "@type": "Thing",
+      name: "Travel Rewards and Points & Miles",
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Travel Essentials",
+          url: `${siteUrl}/travel-essentials`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Travel Guides",
+          url: `${siteUrl}/travel-guides`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Credit Cards",
+          url: `${siteUrl}/credit-cards`,
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Hotel Programs",
+          url: `${siteUrl}/hotel-programs`,
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          name: "Flight Programs",
+          url: `${siteUrl}/flight-programs`,
+        },
+      ],
+    },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }}
+      />
     <div className="min-h-screen bg-white text-slate-900">
       {/* Hero Section - Exact viewport height */}
       <header className="relative isolate flex h-[100svh] flex-col overflow-hidden">
@@ -401,5 +469,6 @@ export default async function Home() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
