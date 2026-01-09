@@ -77,6 +77,14 @@ export default function TravelEssentialsPage() {
       },
       {
         '@type': 'Question',
+        name: 'Is the weather information a live forecast?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, this is a general climate overview based on historical averages. Actual conditions can vary significantly by region and season.',
+        },
+      },
+      {
+        '@type': 'Question',
         name: 'Is this information regularly updated?',
         acceptedAnswer: {
           '@type': 'Answer',
@@ -132,7 +140,7 @@ export default function TravelEssentialsPage() {
                 Plug, Sip & Tip
               </h1>
               <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
-                Get instant answers to the three questions every traveler asks: 
+                Get instant answers to the three questions every traveler asks:
                 <span className="block mt-2 font-semibold text-white">
                   Can I charge my phone? Can I drink the water? Do I tip?
                 </span>
@@ -152,15 +160,15 @@ export default function TravelEssentialsPage() {
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-5">
               Frequently Asked Questions
             </h2>
-            
+
             <div className="space-y-4 sm:space-y-5">
               <div>
                 <h3 className="font-bold text-slate-900 mb-2">
                   Do I need a voltage converter or just an adapter?
                 </h3>
                 <p className="text-slate-700 text-sm sm:text-base">
-                  Most modern electronics (phones, laptops, cameras) work with 100-240V and only need a plug adapter. 
-                  Check your device's power brick - if it says "100-240V", you only need an adapter. Hair dryers and 
+                  Most modern electronics (phones, laptops, cameras) work with 100-240V and only need a plug adapter.
+                  Check your device's power brick - if it says "100-240V", you only need an adapter. Hair dryers and
                   other heating devices often need a voltage converter.
                 </p>
               </div>
@@ -170,8 +178,8 @@ export default function TravelEssentialsPage() {
                   What if tap water is marked as "not safe"?
                 </h3>
                 <p className="text-slate-700 text-sm sm:text-base">
-                  Stick to bottled water for drinking and brushing teeth. Avoid ice in drinks unless you're at an 
-                  upscale hotel or restaurant. Be cautious with raw fruits and vegetables that may have been washed 
+                  Stick to bottled water for drinking and brushing teeth. Avoid ice in drinks unless you're at an
+                  upscale hotel or restaurant. Be cautious with raw fruits and vegetables that may have been washed
                   in tap water.
                 </p>
               </div>
@@ -181,9 +189,19 @@ export default function TravelEssentialsPage() {
                   How much should I tip in countries where it's expected?
                 </h3>
                 <p className="text-slate-700 text-sm sm:text-base">
-                  The specific percentages and amounts are listed for each country in the tool above. When in doubt, 
-                  ask locals or your hotel concierge for guidance. It's better to tip slightly less than to not tip 
+                  The specific percentages and amounts are listed for each country in the tool above. When in doubt,
+                  ask locals or your hotel concierge for guidance. It's better to tip slightly less than to not tip
                   at all in countries where it's expected.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-slate-900 mb-2">
+                  Is the weather information a live forecast?
+                </h3>
+                <p className="text-slate-700 text-sm sm:text-base">
+                  No, this is a general climate overview based on historical averages. Actual conditions
+                  can vary significantly by region and season.
                 </p>
               </div>
 
@@ -192,7 +210,7 @@ export default function TravelEssentialsPage() {
                   Is this information regularly updated?
                 </h3>
                 <p className="text-slate-700 text-sm sm:text-base">
-                  Yes! We review and update country information regularly. However, local customs can vary by region 
+                  Yes! We review and update country information regularly. However, local customs can vary by region
                   within a country, so use this as a general guide and observe local practices when you arrive.
                 </p>
               </div>
