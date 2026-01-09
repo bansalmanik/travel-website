@@ -15,10 +15,10 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
 
   const filteredCountries = useMemo(() => {
     if (!searchQuery.trim()) return [];
-    
+
     const query = searchQuery.toLowerCase().trim();
     return data
-      .filter(country => 
+      .filter(country =>
         country.country.toLowerCase().includes(query) ||
         country.code.toLowerCase() === query
       )
@@ -26,8 +26,8 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   }, [searchQuery, data]);
 
   useEffect(() => {
-    if (filteredCountries.length === 1 && 
-        filteredCountries[0].country.toLowerCase() === searchQuery.toLowerCase()) {
+    if (filteredCountries.length === 1 &&
+      filteredCountries[0].country.toLowerCase() === searchQuery.toLowerCase()) {
       setSelectedCountry(filteredCountries[0]);
       setShowSuggestions(false);
     }
@@ -57,7 +57,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   };
 
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  
+
   const getConditionColor = (condition: string) => {
     const lower = condition.toLowerCase();
     if (lower.includes('ideal') || lower.includes('pleasant') || lower.includes('perfect')) return 'text-green-600';
@@ -157,9 +157,8 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
             {/* Water Section */}
             <div className="p-4 sm:p-5 md:p-6">
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${
-                  selectedCountry.water.safe ? 'bg-green-100' : 'bg-red-100'
-                }`}>
+                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${selectedCountry.water.safe ? 'bg-green-100' : 'bg-red-100'
+                  }`}>
                   {selectedCountry.water.safe ? (
                     <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -173,9 +172,8 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
                 <div className="flex-1 min-w-0">
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Sip</h3>
                   <div className="space-y-1.5 sm:space-y-2">
-                    <p className={`text-xl sm:text-2xl font-bold ${
-                      selectedCountry.water.safe ? 'text-green-600' : 'text-red-600'
-                    }`}>
+                    <p className={`text-xl sm:text-2xl font-bold ${selectedCountry.water.safe ? 'text-green-600' : 'text-red-600'
+                      }`}>
                       {selectedCountry.water.safe ? 'Safe' : 'Not Safe'}
                     </p>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -189,21 +187,18 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
             {/* Tipping Section */}
             <div className="p-4 sm:p-5 md:p-6">
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${
-                  selectedCountry.tipping.expected ? 'bg-purple-100' : 'bg-slate-100'
-                }`}>
-                  <svg className={`w-5 h-5 sm:w-6 sm:h-6 ${
-                    selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
-                  }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${selectedCountry.tipping.expected ? 'bg-purple-100' : 'bg-slate-100'
+                  }`}>
+                  <svg className={`w-5 h-5 sm:w-6 sm:h-6 ${selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
+                    }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Tip</h3>
                   <div className="space-y-1.5 sm:space-y-2">
-                    <p className={`text-xl sm:text-2xl font-bold ${
-                      selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
-                    }`}>
+                    <p className={`text-xl sm:text-2xl font-bold ${selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
+                      }`}>
                       {selectedCountry.tipping.expected ? 'Expected' : 'Optional'}
                     </p>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -234,10 +229,10 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
                     <p className="text-xs sm:text-sm text-slate-600">Plan your visit with climate insights</p>
                   </div>
                 </div>
-                <svg 
+                <svg
                   className={`w-5 h-5 sm:w-6 sm:h-6 text-slate-400 transition-transform ${isWeatherExpanded ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -250,9 +245,9 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
                     {months.map((month) => {
                       const weather = selectedCountry.weather?.[month];
                       if (!weather) return null;
-                      
+
                       return (
-                        <div 
+                        <div
                           key={month}
                           className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200 hover:border-sky-300 hover:shadow-sm transition-all"
                         >
@@ -277,12 +272,19 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
                       );
                     })}
                   </div>
-                  
-                  <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                    <p className="text-xs sm:text-sm text-blue-800">
-                      <span className="font-semibold">Note:</span> Weather can vary by region within the country. 
-                      These are general averages for major cities and tourist areas.
-                    </p>
+
+                  <div className="mt-5 p-4 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">
+                    <div className="flex gap-3">
+                      <svg className="w-5 h-5 text-sky-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <div className="space-y-1">
+                        <p className="text-sm font-semibold text-slate-900">Climate Overview</p>
+                        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                          This is a general climate overview based on historical averages, not a live weather forecast.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
