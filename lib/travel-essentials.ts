@@ -32,6 +32,9 @@ export interface CountryEssentials {
   water: WaterInfo;
   tipping: TippingInfo;
   weather?: WeatherInfo;
+  weatherRegions?: {
+    [regionName: string]: WeatherInfo;
+  };
 }
 
 let cachedData: CountryEssentials[] | null = null;
@@ -60,7 +63,7 @@ export function searchCountries(query: string, countries: CountryEssentials[]): 
   }
 
   const searchTerm = query.toLowerCase().trim();
-  return countries.filter(country => 
+  return countries.filter(country =>
     country.country.toLowerCase().includes(searchTerm) ||
     country.code.toLowerCase() === searchTerm
   );

@@ -10,6 +10,7 @@ interface TravelEssentialsWidgetProps {
 export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCountry, setSelectedCountry] = useState<CountryEssentials | null>(null);
+  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [isWeatherExpanded, setIsWeatherExpanded] = useState(false);
 
@@ -43,6 +44,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
 
   const handleCountrySelect = (country: CountryEssentials) => {
     setSelectedCountry(country);
+    setSelectedRegion(null);
     setSearchQuery(country.country);
     setShowSuggestions(false);
   };
@@ -52,6 +54,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
     setShowSuggestions(true);
     if (!e.target.value.trim()) {
       setSelectedCountry(null);
+      setSelectedRegion(null);
       setIsWeatherExpanded(false);
     }
   };
@@ -209,7 +212,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
           </div>
 
           {/* Weather Section - Collapsible */}
-          {selectedCountry.weather && (
+          {(selectedCountry.weather || selectedCountry.weatherRegions) && (
             <div className="border-t border-slate-200">
               <button
                 onClick={() => setIsWeatherExpanded(!isWeatherExpanded)}
@@ -239,10 +242,44 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
 
               {isWeatherExpanded && (
                 <div className="px-0 sm:px-6 pb-4 sm:pb-6">
+                  {/* Region Selector */}
+                  {selectedCountry.weatherRegions && (
+                    <div className="mb-6 px-4 sm:px-0">
+                      <label htmlFor="region-select" className="block text-sm font-medium text-slate-700 mb-2">
+                        Select a region for accurate weather:
+                      </label>
+                      <div className="relative">
+                        <select
+                          id="region-select"
+                          value={selectedRegion || ''}
+                          onChange={(e) => setSelectedRegion(e.target.value || null)}
+                          className="block w-full pl-3 pr-10 py-2.5 text-base border-slate-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-lg bg-slate-50 border hover:bg-white transition-colors"
+                        >
+                          <option value="">National Average</option>
+                          {Object.keys(selectedCountry.weatherRegions).sort().map((region) => (
+                            <option key={region} value={region}>
+                              {region}
+                            </option>
+                          ))}
+                        </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-700">
+                          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Weather Grid - Horizontal Scroll on mobile, Grid on md+ */}
                   <div className="flex overflow-x-auto pb-4 gap-3 px-4 sm:px-0 scrollbar-hide snap-x md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:overflow-visible">
                     {months.map((month) => {
-                      const weather = selectedCountry.weather?.[month];
+                      // Determine source of weather data
+                      const source = selectedRegion && selectedCountry.weatherRegions
+                        ? selectedCountry.weatherRegions[selectedRegion]
+                        : selectedCountry.weather;
+
+                      const weather = source?.[month];
                       if (!weather) return null;
 
                       return (
@@ -278,19 +315,6 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
                     <p className="text-[10px] font-medium text-slate-400 uppercase tracking-widest">Swipe for more months</p>
                   </div>
 
-                  <div className="mt-5 p-4 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">
-                    <div className="flex gap-3">
-                      <svg className="w-5 h-5 text-sky-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <div className="space-y-1">
-                        <p className="text-sm font-semibold text-slate-900">Climate Overview</p>
-                        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                          This is a general climate overview based on historical averages, not a live weather forecast.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               )}
             </div>

@@ -77,6 +77,194 @@
         "condition": "Cold, winter begins",
         "rainfall": "Moderate"
       }
+    },
+    "weatherRegions": {
+      "Northeast (NY, MA)": {
+        "Jan": {
+          "temp": "-5-5°C",
+          "condition": "Freezing, snowy",
+          "rainfall": "Moderate"
+        },
+        "Feb": {
+          "temp": "-3-6°C",
+          "condition": "Cold, snow/rain",
+          "rainfall": "Moderate"
+        },
+        "Mar": {
+          "temp": "1-10°C",
+          "condition": "Chilly, wet",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "7-17°C",
+          "condition": "Mild, blooming",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "13-23°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "18-28°C",
+          "condition": "Warm, humid",
+          "rainfall": "Moderate"
+        },
+        "Jul": {
+          "temp": "21-30°C",
+          "condition": "Hot, humid",
+          "rainfall": "Moderate"
+        },
+        "Aug": {
+          "temp": "20-29°C",
+          "condition": "Hot, humid",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "16-25°C",
+          "condition": "Pleasant, mild",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "10-18°C",
+          "condition": "Cool, crisp",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "5-12°C",
+          "condition": "Chilly, rain",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "-1-7°C",
+          "condition": "Cold, snowy",
+          "rainfall": "Moderate"
+        }
+      },
+      "Southeast (FL, GA)": {
+        "Jan": {
+          "temp": "10-20°C",
+          "condition": "Mild, sunny",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "12-22°C",
+          "condition": "Mild, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Mar": {
+          "temp": "15-25°C",
+          "condition": "Warm, spring",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "18-28°C",
+          "condition": "Indoors, humid",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "22-31°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Jun": {
+          "temp": "24-33°C",
+          "condition": "Very hot, storms",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "25-34°C",
+          "condition": "Very hot, storms",
+          "rainfall": "High"
+        },
+        "Aug": {
+          "temp": "25-34°C",
+          "condition": "Very hot, storms",
+          "rainfall": "High"
+        },
+        "Sep": {
+          "temp": "24-32°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Oct": {
+          "temp": "20-29°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "15-25°C",
+          "condition": "Mild, sunny",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "12-22°C",
+          "condition": "Mild, dry",
+          "rainfall": "Low"
+        }
+      },
+      "West Coast (CA)": {
+        "Jan": {
+          "temp": "8-15°C",
+          "condition": "Cool, rainy",
+          "rainfall": "High"
+        },
+        "Feb": {
+          "temp": "9-16°C",
+          "condition": "Cool, variable",
+          "rainfall": "High"
+        },
+        "Mar": {
+          "temp": "10-18°C",
+          "condition": "Mild, blooming",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "11-20°C",
+          "condition": "Pleasant, sunny",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "13-22°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "15-24°C",
+          "condition": "Warm, dry",
+          "rainfall": "None"
+        },
+        "Jul": {
+          "temp": "17-26°C",
+          "condition": "Perfect, dry",
+          "rainfall": "None"
+        },
+        "Aug": {
+          "temp": "17-27°C",
+          "condition": "Warm, dry",
+          "rainfall": "None"
+        },
+        "Sep": {
+          "temp": "17-27°C",
+          "condition": "Warm, dry",
+          "rainfall": "None"
+        },
+        "Oct": {
+          "temp": "14-24°C",
+          "condition": "Mild, sunny",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "11-19°C",
+          "condition": "Cool, variable",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "8-15°C",
+          "condition": "Cool, rainy",
+          "rainfall": "Moderate"
+        }
+      }
     }
   },
   {
