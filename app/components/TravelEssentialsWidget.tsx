@@ -1,15 +1,19 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import type { CountryEssentials } from '@/lib/travel-essentials';
+import { getCountrySlug } from '@/lib/travel-essentials';
 
 interface TravelEssentialsWidgetProps {
   data: CountryEssentials[];
+  initialCountry?: CountryEssentials | null;
 }
 
-export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCountry, setSelectedCountry] = useState<CountryEssentials | null>(null);
+export function TravelEssentialsWidget({ data, initialCountry = null }: TravelEssentialsWidgetProps) {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState(initialCountry?.country || '');
+  const [selectedCountry, setSelectedCountry] = useState<CountryEssentials | null>(initialCountry);
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [isWeatherExpanded, setIsWeatherExpanded] = useState(false);
@@ -37,8 +41,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (filteredCountries.length > 0) {
-      setSelectedCountry(filteredCountries[0]);
-      setShowSuggestions(false);
+      handleCountrySelect(filteredCountries[0]);
     }
   };
 
@@ -47,6 +50,10 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
     setSelectedRegion(null);
     setSearchQuery(country.country);
     setShowSuggestions(false);
+
+    // Navigate to SEO-friendly URL
+    const slug = getCountrySlug(country);
+    router.push(`/travel-essentials/${slug}`, { scroll: false });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -56,6 +63,8 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
       setSelectedCountry(null);
       setSelectedRegion(null);
       setIsWeatherExpanded(false);
+      // Navigate back to base URL when search is cleared
+      router.push('/travel-essentials/', { scroll: false });
     }
   };
 
