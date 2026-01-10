@@ -1443,189 +1443,375 @@
       }
     },
     "weatherRegions": {
-      "North (Delhi, Agra)": {
+      "North India (Delhi, Jaipur)": {
         "Jan": {
-          "temp": "8-22°C",
-          "condition": "Cold/Foggy",
+          "temp": "8-21°C",
+          "condition": "Cold, foggy mornings",
           "rainfall": "Low"
         },
         "Feb": {
-          "temp": "11-25°C",
+          "temp": "11-26°C",
           "condition": "Pleasant, sunny",
           "rainfall": "Low"
         },
         "Mar": {
-          "temp": "16-31°C",
+          "temp": "16-32°C",
           "condition": "Warm, sunny",
           "rainfall": "Low"
         },
         "Apr": {
-          "temp": "22-38°C",
+          "temp": "23-38°C",
           "condition": "Hot, dry",
           "rainfall": "Low"
         },
         "May": {
-          "temp": "26-42°C",
-          "condition": "Very hot, dry",
+          "temp": "27-42°C",
+          "condition": "Very hot, dry heat",
           "rainfall": "Low"
         },
         "Jun": {
-          "temp": "28-40°C",
-          "condition": "Extreme heat, monsoon start",
+          "temp": "29-41°C",
+          "condition": "Extreme heat, pre-monsoon",
           "rainfall": "Moderate"
         },
         "Jul": {
-          "temp": "26-35°C",
+          "temp": "28-36°C",
           "condition": "Hot, humid, rainy",
           "rainfall": "High"
         },
         "Aug": {
-          "temp": "26-34°C",
+          "temp": "27-35°C",
           "condition": "Hot, humid, rainy",
           "rainfall": "High"
         },
         "Sep": {
-          "temp": "24-34°C",
-          "condition": "Hot, humid",
+          "temp": "25-34°C",
+          "condition": "Hot, humid, monsoon ends",
           "rainfall": "Moderate"
         },
         "Oct": {
-          "temp": "19-33°C",
-          "condition": "Pleasant, sunny",
+          "temp": "20-33°C",
+          "condition": "Warm, sunny, pleasant",
           "rainfall": "Low"
         },
         "Nov": {
-          "temp": "13-28°C",
+          "temp": "14-29°C",
           "condition": "Cool, pleasant",
           "rainfall": "Low"
         },
         "Dec": {
           "temp": "9-23°C",
-          "condition": "Cold/Cool, sunny",
+          "condition": "Cool/Cold, sunny",
           "rainfall": "Low"
         }
       },
-      "South (Chennai, Kerala)": {
+      "South India (Bengaluru, Kerala, Chennai)": {
         "Jan": {
-          "temp": "21-30°C",
-          "condition": "Warm, pleasant",
+          "temp": "20-30°C",
+          "condition": "Pleasant, dry",
           "rainfall": "Low"
         },
         "Feb": {
-          "temp": "22-31°C",
+          "temp": "21-32°C",
           "condition": "Warm, sunny",
           "rainfall": "Low"
         },
         "Mar": {
-          "temp": "24-33°C",
-          "condition": "Hot, sunny",
+          "temp": "23-34°C",
+          "condition": "Hot, humid",
           "rainfall": "Low"
         },
         "Apr": {
-          "temp": "26-35°C",
+          "temp": "25-36°C",
           "condition": "Hot, humid",
           "rainfall": "Moderate"
         },
         "May": {
-          "temp": "27-37°C",
+          "temp": "26-37°C",
           "condition": "Very hot, humid",
           "rainfall": "Moderate"
         },
         "Jun": {
-          "temp": "25-31°C",
-          "condition": "Hot, monsoon",
+          "temp": "24-31°C",
+          "condition": "Monsoon, breezy",
           "rainfall": "Very High"
         },
         "Jul": {
-          "temp": "24-30°C",
-          "condition": "Warm, rainy",
+          "temp": "23-30°C",
+          "condition": "Heavy monsoon rains",
           "rainfall": "Very High"
         },
         "Aug": {
-          "temp": "24-30°C",
-          "condition": "Warm, rainy",
-          "rainfall": "Very High"
+          "temp": "23-30°C",
+          "condition": "Monsoon showers",
+          "rainfall": "High"
         },
         "Sep": {
           "temp": "24-31°C",
-          "condition": "Warm, humid",
+          "condition": "Humid, occasional rain",
           "rainfall": "High"
         },
         "Oct": {
           "temp": "24-31°C",
-          "condition": "Warm, rainy",
+          "condition": "Warm, NE Monsoon starts",
           "rainfall": "High"
         },
         "Nov": {
           "temp": "23-30°C",
-          "condition": "Warm, pleasant",
-          "rainfall": "Moderate"
-        },
-        "Dec": {
-          "temp": "22-29°C",
-          "condition": "Warm, sunny",
-          "rainfall": "Low"
-        }
-      },
-      "Mountains (Himalayas)": {
-        "Jan": {
-          "temp": "-5-8°C",
-          "condition": "Freezing, snowy",
+          "condition": "Warm, rainy in East coast",
           "rainfall": "High"
         },
-        "Feb": {
-          "temp": "-3-10°C",
-          "condition": "Cold, snowy",
+        "Dec": {
+          "temp": "21-29°C",
+          "condition": "Pleasant, drier",
           "rainfall": "Moderate"
+        }
+      },
+      "East India (Kolkata, Bhubaneswar)": {
+        "Jan": {
+          "temp": "13-26°C",
+          "condition": "Mild, sunny",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "16-29°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Low"
         },
         "Mar": {
-          "temp": "2-15°C",
-          "condition": "Cold, alpine spring",
+          "temp": "21-34°C",
+          "condition": "Hot, humid",
           "rainfall": "Moderate"
         },
         "Apr": {
-          "temp": "7-20°C",
+          "temp": "25-36°C",
+          "condition": "Hot, humid, storms",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "26-37°C",
+          "condition": "Hot, very humid",
+          "rainfall": "High"
+        },
+        "Jun": {
+          "temp": "27-34°C",
+          "condition": "Monsoon arrival",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "26-33°C",
+          "condition": "Heavy rains, humid",
+          "rainfall": "Very High"
+        },
+        "Aug": {
+          "temp": "26-33°C",
+          "condition": "Humid, rainy",
+          "rainfall": "Very High"
+        },
+        "Sep": {
+          "temp": "26-33°C",
+          "condition": "Humid, occasional rain",
+          "rainfall": "High"
+        },
+        "Oct": {
+          "temp": "24-32°C",
+          "condition": "Warm, monsoon retreating",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "19-29°C",
+          "condition": "Mild, pleasant",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "14-27°C",
+          "condition": "Cool, dry",
+          "rainfall": "Low"
+        }
+      },
+      "West India (Mumbai, Goa)": {
+        "Jan": {
+          "temp": "17-30°C",
+          "condition": "Warm days, cool nights",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "18-31°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "21-33°C",
+          "condition": "Hot, humid",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "24-34°C",
+          "condition": "Hot, very humid",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "27-35°C",
+          "condition": "Hot, very humid, pre-monsoon",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "26-32°C",
+          "condition": "Heavy monsoon rains",
+          "rainfall": "Very High"
+        },
+        "Jul": {
+          "temp": "25-30°C",
+          "condition": "Continuous heavy rain",
+          "rainfall": "Very High"
+        },
+        "Aug": {
+          "temp": "25-30°C",
+          "condition": "Rainy, humid",
+          "rainfall": "Very High"
+        },
+        "Sep": {
+          "temp": "25-31°C",
+          "condition": "Humid, showers",
+          "rainfall": "High"
+        },
+        "Oct": {
+          "temp": "24-33°C",
+          "condition": "Hot, humid",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "22-33°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "19-32°C",
+          "condition": "Pleasant, sunny",
+          "rainfall": "Low"
+        }
+      },
+      "Central India (Bhopal, Indore)": {
+        "Jan": {
+          "temp": "10-25°C",
+          "condition": "Cool, dry",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "13-29°C",
+          "condition": "Sunny, pleasant",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "18-35°C",
+          "condition": "Hot, dry",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "24-40°C",
+          "condition": "Very hot, dry",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "27-42°C",
+          "condition": "Extremely hot",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "26-39°C",
+          "condition": "Hot, monsoon arrives",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "24-32°C",
+          "condition": "Humid, monsoon rains",
+          "rainfall": "Very High"
+        },
+        "Aug": {
+          "temp": "23-30°C",
+          "condition": "Humid, rainy",
+          "rainfall": "Very High"
+        },
+        "Sep": {
+          "temp": "23-31°C",
+          "condition": "Humid, monsoon ends",
+          "rainfall": "High"
+        },
+        "Oct": {
+          "temp": "19-33°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "15-30°C",
+          "condition": "Pleasant, dry",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "11-26°C",
+          "condition": "Cool, sunny",
+          "rainfall": "Low"
+        }
+      },
+      "Himalayas (Leh, Shimla, Darjeeling)": {
+        "Jan": {
+          "temp": "-5 to 10°C",
+          "condition": "Freezing, snow",
+          "rainfall": "Moderate"
+        },
+        "Feb": {
+          "temp": "-2 to 12°C",
+          "condition": "Cold, snow likely",
+          "rainfall": "Moderate"
+        },
+        "Mar": {
+          "temp": "3-16°C",
+          "condition": "Cold/Cool, spring",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "8-21°C",
           "condition": "Cool, pleasant",
           "rainfall": "Moderate"
         },
         "May": {
-          "temp": "11-25°C",
+          "temp": "12-25°C",
           "condition": "Mild, sunny",
           "rainfall": "Moderate"
         },
         "Jun": {
-          "temp": "14-28°C",
-          "condition": "Warm, pleasant",
+          "temp": "15-28°C",
+          "condition": "Pleasant, warm",
           "rainfall": "Moderate"
         },
         "Jul": {
-          "temp": "15-25°C",
-          "condition": "Mild, monsoon",
+          "temp": "16-24°C",
+          "condition": "Mild, foggy/rainy",
           "rainfall": "High"
         },
         "Aug": {
-          "temp": "15-25°C",
+          "temp": "16-24°C",
           "condition": "Mild, rainy",
           "rainfall": "High"
         },
         "Sep": {
-          "temp": "12-22°C",
+          "temp": "13-23°C",
           "condition": "Cool, pleasant",
           "rainfall": "Moderate"
         },
         "Oct": {
-          "temp": "6-18°C",
-          "condition": "Chilly, crisp",
+          "temp": "8-20°C",
+          "condition": "Crisp, sunny",
           "rainfall": "Low"
         },
         "Nov": {
-          "temp": "1-12°C",
-          "condition": "Cold, sunny",
+          "temp": "4-15°C",
+          "condition": "Cold, dry",
           "rainfall": "Low"
         },
         "Dec": {
-          "temp": "-2-10°C",
-          "condition": "Cold, snowy",
+          "temp": "-1 to 12°C",
+          "condition": "Cold, snow starts",
           "rainfall": "Low"
         }
       }
