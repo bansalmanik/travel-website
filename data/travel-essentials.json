@@ -127,7 +127,7 @@
         },
         "Oct": {
           "temp": "10-18°C",
-          "condition": "Cool, crisp",
+          "condition": "Cool, peak fall foliage",
           "rainfall": "Moderate"
         },
         "Nov": {
@@ -179,12 +179,12 @@
         },
         "Aug": {
           "temp": "25-34°C",
-          "condition": "Very hot, storms",
+          "condition": "Very hot, hurricane risk",
           "rainfall": "High"
         },
         "Sep": {
           "temp": "24-32°C",
-          "condition": "Hot, humid",
+          "condition": "Hot, hurricane risk",
           "rainfall": "High"
         },
         "Oct": {
@@ -745,6 +745,194 @@
         "condition": "Cold, dry",
         "rainfall": "Low"
       }
+    },
+    "weatherRegions": {
+      "Hokkaido (North)": {
+        "Jan": {
+          "temp": "-12 - -4°C",
+          "condition": "Cold, snowy, ski season",
+          "rainfall": "Moderate"
+        },
+        "Feb": {
+          "temp": "-12 - -4°C",
+          "condition": "Cold, snowy, peak ski",
+          "rainfall": "Moderate"
+        },
+        "Mar": {
+          "temp": "-7 - 0°C",
+          "condition": "Cold, snowy",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "0 - 8°C",
+          "condition": "Cool, spring thaw",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "5 - 15°C",
+          "condition": "Spring, cherry blossoms",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "10 - 20°C",
+          "condition": "Pleasant, mild",
+          "rainfall": "Moderate"
+        },
+        "Jul": {
+          "temp": "14 - 22°C",
+          "condition": "Warm, mild summer",
+          "rainfall": "Low"
+        },
+        "Aug": {
+          "temp": "17 - 25°C",
+          "condition": "Warm, pleasant, no rainy season",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "12 - 20°C",
+          "condition": "Mild, autumn colors begin",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "6 - 14°C",
+          "condition": "Cool, peak autumn foliage",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "-1 - 7°C",
+          "condition": "Cold, early snow",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "-7 - -1°C",
+          "condition": "Cold, snowy",
+          "rainfall": "Moderate"
+        }
+      },
+      "Honshu (Tokyo, Kyoto)": {
+        "Jan": {
+          "temp": "2 - 10°C",
+          "condition": "Cold, sunny",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "2 - 10°C",
+          "condition": "Cold, sunny",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "5 - 13°C",
+          "condition": "Cool, plum blossoms",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "10 - 19°C",
+          "condition": "Mild, cherry blossoms",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "15 - 23°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "19 - 25°C",
+          "condition": "Warm, humid, rainy season",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "23 - 29°C",
+          "condition": "Hot, humid, rainy",
+          "rainfall": "High"
+        },
+        "Aug": {
+          "temp": "25 - 31°C",
+          "condition": "Hot, humid, festivals",
+          "rainfall": "High"
+        },
+        "Sep": {
+          "temp": "21 - 27°C",
+          "condition": "Warm, typhoon risk",
+          "rainfall": "High"
+        },
+        "Oct": {
+          "temp": "15 - 22°C",
+          "condition": "Mild, pleasant autumn",
+          "rainfall": "High"
+        },
+        "Nov": {
+          "temp": "9 - 17°C",
+          "condition": "Cool, fall foliage",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "4 - 12°C",
+          "condition": "Cold, clear skies",
+          "rainfall": "Low"
+        }
+      },
+      "Okinawa (South)": {
+        "Jan": {
+          "temp": "14 - 19°C",
+          "condition": "Mild, cherry blossoms",
+          "rainfall": "Moderate"
+        },
+        "Feb": {
+          "temp": "15 - 20°C",
+          "condition": "Mild, cloudy",
+          "rainfall": "Moderate"
+        },
+        "Mar": {
+          "temp": "17 - 22°C",
+          "condition": "Warm, beach opening",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "19 - 24°C",
+          "condition": "Warm, humid",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "22 - 27°C",
+          "condition": "Warm, rainy season begins",
+          "rainfall": "High"
+        },
+        "Jun": {
+          "temp": "25 - 29°C",
+          "condition": "Hot, humid, rainy season",
+          "rainfall": "Very High"
+        },
+        "Jul": {
+          "temp": "27 - 32°C",
+          "condition": "Hot, sunny, beach season",
+          "rainfall": "High"
+        },
+        "Aug": {
+          "temp": "27 - 31°C",
+          "condition": "Hot, sunny",
+          "rainfall": "High"
+        },
+        "Sep": {
+          "temp": "26 - 31°C",
+          "condition": "Hot, typhoon risk",
+          "rainfall": "High"
+        },
+        "Oct": {
+          "temp": "23 - 28°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "20 - 25°C",
+          "condition": "Mild, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "16 - 21°C",
+          "condition": "Mild, cool breeze",
+          "rainfall": "Low"
+        }
+      }
     }
   },
   {
@@ -875,7 +1063,7 @@
         },
         "Oct": {
           "temp": "8-19°C",
-          "condition": "Cool, pleasant",
+          "condition": "Cool, Great Wall autumn foliage",
           "rainfall": "Low"
         },
         "Nov": {
@@ -994,7 +1182,7 @@
         },
         "Sep": {
           "temp": "24-32°C",
-          "condition": "Hot, humid",
+          "condition": "Hot, typhoon risk",
           "rainfall": "High"
         },
         "Oct": {
@@ -1668,7 +1856,7 @@
       "Tropical North (Cairns)": {
         "Jan": {
           "temp": "24-32°C",
-          "condition": "Hot, humid, monsoon",
+          "condition": "Hot, humid, stinger season",
           "rainfall": "Very High"
         },
         "Feb": {
@@ -1718,7 +1906,7 @@
         },
         "Nov": {
           "temp": "23-31°C",
-          "condition": "Hot, humid",
+          "condition": "Hot, stinger season begins",
           "rainfall": "Moderate"
         },
         "Dec": {
@@ -2217,6 +2405,194 @@
         "condition": "Mild, dry",
         "rainfall": "Low"
       }
+    },
+    "weatherRegions": {
+      "Baja California (Cabo)": {
+        "Jan": {
+          "temp": "13 - 27°C",
+          "condition": "Pleasant, sunny",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "13 - 27°C",
+          "condition": "Pleasant, dry",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "14 - 28°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "15 - 29°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "17 - 31°C",
+          "condition": "Hot, dry",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "21 - 34°C",
+          "condition": "Hot, sunny",
+          "rainfall": "Low"
+        },
+        "Jul": {
+          "temp": "24 - 36°C",
+          "condition": "Very hot, dry heat",
+          "rainfall": "Low"
+        },
+        "Aug": {
+          "temp": "24 - 34°C",
+          "condition": "Hot, humid",
+          "rainfall": "Low"
+        },
+        "Sep": {
+          "temp": "23 - 33°C",
+          "condition": "Hot, humid, rain risk",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "21 - 32°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "17 - 29°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "14 - 27°C",
+          "condition": "Pleasant, sunny",
+          "rainfall": "Low"
+        }
+      },
+      "Central Highlands (Mexico City)": {
+        "Jan": {
+          "temp": "9 - 21°C",
+          "condition": "Mild, sunny days",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "10 - 23°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "11 - 25°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "13 - 26°C",
+          "condition": "Warm, dry heat",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "13 - 26°C",
+          "condition": "Warm, thunderstorms start",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "13 - 24°C",
+          "condition": "Mild, rainy season",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "12 - 23°C",
+          "condition": "Mild, rainy",
+          "rainfall": "High"
+        },
+        "Aug": {
+          "temp": "12 - 23°C",
+          "condition": "Mild, rainy",
+          "rainfall": "High"
+        },
+        "Sep": {
+          "temp": "13 - 22°C",
+          "condition": "Mild, rainy",
+          "rainfall": "High"
+        },
+        "Oct": {
+          "temp": "11 - 22°C",
+          "condition": "Pleasant, cooling",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "10 - 22°C",
+          "condition": "Mild, dry",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "9 - 21°C",
+          "condition": "Cool nights, sunny days",
+          "rainfall": "Low"
+        }
+      },
+      "Yucatan Peninsula (Cancun)": {
+        "Jan": {
+          "temp": "19 - 28°C",
+          "condition": "Warm, ideal beach weather",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "20 - 29°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "21 - 30°C",
+          "condition": "Hot, sunny",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "22 - 31°C",
+          "condition": "Hot, dry",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "23 - 33°C",
+          "condition": "Hot, humid",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "24 - 32°C",
+          "condition": "Hot, rainy season starts",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "24 - 33°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Aug": {
+          "temp": "24 - 33°C",
+          "condition": "Hot, tropical storms possible",
+          "rainfall": "High"
+        },
+        "Sep": {
+          "temp": "24 - 32°C",
+          "condition": "Hot, hurricane risk",
+          "rainfall": "Very High"
+        },
+        "Oct": {
+          "temp": "23 - 31°C",
+          "condition": "Warm, humid",
+          "rainfall": "High"
+        },
+        "Nov": {
+          "temp": "21 - 29°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "20 - 28°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        }
+      }
     }
   },
   {
@@ -2565,6 +2941,194 @@
         "condition": "Hot, summer starts",
         "rainfall": "Moderate"
       }
+    },
+    "weatherRegions": {
+      "Buenos Aires (Central)": {
+        "Jan": {
+          "temp": "20 - 29°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Feb": {
+          "temp": "19 - 28°C",
+          "condition": "Warm, humid",
+          "rainfall": "Moderate"
+        },
+        "Mar": {
+          "temp": "17 - 26°C",
+          "condition": "Mild, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "13 - 22°C",
+          "condition": "Mild, autumn",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "10 - 18°C",
+          "condition": "Cool, damp",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "8 - 15°C",
+          "condition": "Cool, humid",
+          "rainfall": "Moderate"
+        },
+        "Jul": {
+          "temp": "7 - 15°C",
+          "condition": "Cool, dry",
+          "rainfall": "Low"
+        },
+        "Aug": {
+          "temp": "9 - 17°C",
+          "condition": "Cool, sunny",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "11 - 19°C",
+          "condition": "Spring, mild",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "13 - 22°C",
+          "condition": "Pleasant, rain possible",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "16 - 25°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "19 - 28°C",
+          "condition": "Hot, summer",
+          "rainfall": "Moderate"
+        }
+      },
+      "Patagonia (South)": {
+        "Jan": {
+          "temp": "10 - 20°C",
+          "condition": "Cool, windy, long days",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "10 - 20°C",
+          "condition": "Cool, windy",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "8 - 17°C",
+          "condition": "Cool, autumn starts",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "5 - 13°C",
+          "condition": "Chilly, colorful foliage",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "2 - 9°C",
+          "condition": "Cold, winter approaching",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "-1 - 6°C",
+          "condition": "Cold, snowy, short days",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "-2 - 5°C",
+          "condition": "Cold, snowy, ski season",
+          "rainfall": "High"
+        },
+        "Aug": {
+          "temp": "-1 - 7°C",
+          "condition": "Cold, snowy",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "2 - 10°C",
+          "condition": "Chilly, spring begins",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "5 - 14°C",
+          "condition": "Cool, windy",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "8 - 17°C",
+          "condition": "Cool, wildflowers",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "10 - 19°C",
+          "condition": "Cool, very windy",
+          "rainfall": "Low"
+        }
+      },
+      "North (Salta)": {
+        "Jan": {
+          "temp": "17 - 30°C",
+          "condition": "Hot, humid, wet",
+          "rainfall": "High"
+        },
+        "Feb": {
+          "temp": "16 - 29°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Mar": {
+          "temp": "15 - 27°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "High"
+        },
+        "Apr": {
+          "temp": "12 - 24°C",
+          "condition": "Warm, drying out",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "8 - 21°C",
+          "condition": "Mild, dry",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "5 - 19°C",
+          "condition": "Cool nights, sunny days",
+          "rainfall": "Low"
+        },
+        "Jul": {
+          "temp": "4 - 19°C",
+          "condition": "Cool, dry, sunny",
+          "rainfall": "Low"
+        },
+        "Aug": {
+          "temp": "6 - 22°C",
+          "condition": "Warm days, cool nights",
+          "rainfall": "Low"
+        },
+        "Sep": {
+          "temp": "9 - 24°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Oct": {
+          "temp": "13 - 28°C",
+          "condition": "Hot, dry season ends",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "15 - 29°C",
+          "condition": "Hot, sunny",
+          "rainfall": "Moderate"
+        },
+        "Dec": {
+          "temp": "17 - 30°C",
+          "condition": "Hot, humid storms",
+          "rainfall": "High"
+        }
+      }
     }
   },
   {
@@ -2644,6 +3208,194 @@
         "temp": "15-27°C",
         "condition": "Warm, summer begins",
         "rainfall": "Moderate"
+      }
+    },
+    "weatherRegions": {
+      "Western Cape (Cape Town)": {
+        "Jan": {
+          "temp": "16 - 26°C",
+          "condition": "Warm, sunny, dry",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "16 - 27°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "14 - 25°C",
+          "condition": "Mild, pleasant",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "12 - 23°C",
+          "condition": "Mild, cooling",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "10 - 20°C",
+          "condition": "Cool, rainy",
+          "rainfall": "High"
+        },
+        "Jun": {
+          "temp": "8 - 18°C",
+          "condition": "Cool, rainy winter",
+          "rainfall": "High"
+        },
+        "Jul": {
+          "temp": "7 - 17°C",
+          "condition": "Cold, wet",
+          "rainfall": "High"
+        },
+        "Aug": {
+          "temp": "8 - 18°C",
+          "condition": "Cool, spring flowers",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "10 - 19°C",
+          "condition": "Mild, spring",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "12 - 22°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "14 - 24°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "15 - 25°C",
+          "condition": "Warm, windy",
+          "rainfall": "Low"
+        }
+      },
+      "Gauteng (Johannesburg)": {
+        "Jan": {
+          "temp": "15 - 26°C",
+          "condition": "Warm, afternoon storms",
+          "rainfall": "High"
+        },
+        "Feb": {
+          "temp": "15 - 26°C",
+          "condition": "Warm, humid",
+          "rainfall": "Moderate"
+        },
+        "Mar": {
+          "temp": "13 - 25°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "10 - 22°C",
+          "condition": "Mild, sunny",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "6 - 19°C",
+          "condition": "Cool, dry, sunny",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "4 - 16°C",
+          "condition": "Cold nights, sunny days",
+          "rainfall": "Low"
+        },
+        "Jul": {
+          "temp": "3 - 17°C",
+          "condition": "Cold nights, dry",
+          "rainfall": "Low"
+        },
+        "Aug": {
+          "temp": "6 - 20°C",
+          "condition": "Mild, windy",
+          "rainfall": "Low"
+        },
+        "Sep": {
+          "temp": "10 - 24°C",
+          "condition": "Warm, spring",
+          "rainfall": "Low"
+        },
+        "Oct": {
+          "temp": "13 - 26°C",
+          "condition": "Warm, storms return",
+          "rainfall": "Moderate"
+        },
+        "Nov": {
+          "temp": "14 - 25°C",
+          "condition": "Warm, rain",
+          "rainfall": "High"
+        },
+        "Dec": {
+          "temp": "15 - 26°C",
+          "condition": "Warm, heavy rain",
+          "rainfall": "High"
+        }
+      },
+      "KwaZulu-Natal (Durban)": {
+        "Jan": {
+          "temp": "21 - 28°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Feb": {
+          "temp": "21 - 28°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Mar": {
+          "temp": "20 - 27°C",
+          "condition": "Warm, humid",
+          "rainfall": "High"
+        },
+        "Apr": {
+          "temp": "17 - 25°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "14 - 23°C",
+          "condition": "Mild, sunny",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "11 - 21°C",
+          "condition": "Mild, dry, sunny",
+          "rainfall": "Low"
+        },
+        "Jul": {
+          "temp": "11 - 21°C",
+          "condition": "Mild, dry",
+          "rainfall": "Low"
+        },
+        "Aug": {
+          "temp": "13 - 22°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "15 - 23°C",
+          "condition": "Warm, humid",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "17 - 24°C",
+          "condition": "Warm, rain",
+          "rainfall": "High"
+        },
+        "Nov": {
+          "temp": "19 - 26°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        },
+        "Dec": {
+          "temp": "20 - 27°C",
+          "condition": "Hot, humid",
+          "rainfall": "High"
+        }
       }
     }
   },
@@ -4884,6 +5636,194 @@
         "temp": "14-28°C",
         "condition": "Hot, summer starts",
         "rainfall": "Low"
+      }
+    },
+    "weatherRegions": {
+      "North (Atacama Desert)": {
+        "Jan": {
+          "temp": "9 - 27°C",
+          "condition": "Warm, sunny desert",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "9 - 27°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "8 - 26°C",
+          "condition": "Warm, pleasant",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "6 - 24°C",
+          "condition": "Mild, clear skies",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "4 - 23°C",
+          "condition": "Cool nights, sunny days",
+          "rainfall": "Low"
+        },
+        "Jun": {
+          "temp": "2 - 22°C",
+          "condition": "Cold nights, sunny",
+          "rainfall": "Low"
+        },
+        "Jul": {
+          "temp": "1 - 22°C",
+          "condition": "Cold nights, sunny",
+          "rainfall": "Low"
+        },
+        "Aug": {
+          "temp": "2 - 23°C",
+          "condition": "Cool, dry",
+          "rainfall": "Low"
+        },
+        "Sep": {
+          "temp": "4 - 24°C",
+          "condition": "Mild, spring",
+          "rainfall": "Low"
+        },
+        "Oct": {
+          "temp": "5 - 25°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "7 - 26°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "8 - 27°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        }
+      },
+      "Central (Santiago)": {
+        "Jan": {
+          "temp": "14 - 30°C",
+          "condition": "Hot, sunny",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "13 - 29°C",
+          "condition": "Hot, sunny",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "11 - 27°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Apr": {
+          "temp": "8 - 23°C",
+          "condition": "Mild, autumn",
+          "rainfall": "Low"
+        },
+        "May": {
+          "temp": "6 - 19°C",
+          "condition": "Cool, clouds increase",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "4 - 15°C",
+          "condition": "Cold, rainy season",
+          "rainfall": "Moderate"
+        },
+        "Jul": {
+          "temp": "3 - 15°C",
+          "condition": "Cold, rainy",
+          "rainfall": "Moderate"
+        },
+        "Aug": {
+          "temp": "4 - 17°C",
+          "condition": "Cool, rain decreases",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "6 - 19°C",
+          "condition": "Spring, pleasant",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "8 - 22°C",
+          "condition": "Warm, sunny",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "10 - 26°C",
+          "condition": "Warm, dry",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "12 - 29°C",
+          "condition": "Hot, summer",
+          "rainfall": "Low"
+        }
+      },
+      "South (Patagonia)": {
+        "Jan": {
+          "temp": "5 - 22°C",
+          "condition": "Cool, windy, long days",
+          "rainfall": "Low"
+        },
+        "Feb": {
+          "temp": "5 - 22°C",
+          "condition": "Cool, windy",
+          "rainfall": "Low"
+        },
+        "Mar": {
+          "temp": "4 - 19°C",
+          "condition": "Cool, autumn colors",
+          "rainfall": "Moderate"
+        },
+        "Apr": {
+          "temp": "2 - 15°C",
+          "condition": "Chilly, rain possible",
+          "rainfall": "Moderate"
+        },
+        "May": {
+          "temp": "0 - 10°C",
+          "condition": "Cold, winter nearing",
+          "rainfall": "Moderate"
+        },
+        "Jun": {
+          "temp": "-2 - 6°C",
+          "condition": "Cold, snowy, short days",
+          "rainfall": "Moderate"
+        },
+        "Jul": {
+          "temp": "-2 - 6°C",
+          "condition": "Cold, snowy",
+          "rainfall": "Moderate"
+        },
+        "Aug": {
+          "temp": "-1 - 8°C",
+          "condition": "Cold, snow melting",
+          "rainfall": "Moderate"
+        },
+        "Sep": {
+          "temp": "1 - 12°C",
+          "condition": "Chilly, windy",
+          "rainfall": "Moderate"
+        },
+        "Oct": {
+          "temp": "3 - 15°C",
+          "condition": "Cool, spring",
+          "rainfall": "Low"
+        },
+        "Nov": {
+          "temp": "4 - 18°C",
+          "condition": "Cool, wildflowers",
+          "rainfall": "Low"
+        },
+        "Dec": {
+          "temp": "5 - 20°C",
+          "condition": "Cool, very windy",
+          "rainfall": "Low"
+        }
       }
     }
   },
