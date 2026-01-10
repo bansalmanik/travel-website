@@ -3,6 +3,9 @@ import { getAllBlogPosts } from '@/lib/blog'
 import { getAllTravelGuides } from '@/lib/travel-guides'
 import { getCreditCardContent, getHotelProgramContent, getFlightProgramContent, getBankProgramContent } from '@/lib/contentData'
 import { getMilesPointsArticleSlugs } from '@/lib/milesPointsArticles'
+import { getCountrySlug } from '@/lib/travel-essentials'
+import travelEssentialsData from '@/data/travel-essentials.json'
+import type { CountryEssentials } from '@/lib/travel-essentials'
 
 export const dynamic = 'force-static'
 
@@ -10,7 +13,7 @@ const siteUrl = 'https://www.milesgoround.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date()
-  
+
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -175,6 +178,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }))
 
+  // Travel essentials country pages
+  const countries = travelEssentialsData as CountryEssentials[]
+  const travelEssentialsCountryPages: MetadataRoute.Sitemap = countries.map(country => ({
+    url: `${siteUrl}/travel-essentials/${getCountrySlug(country)}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
   return [
     ...staticPages,
     ...categoryPages,
@@ -185,5 +197,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...hotelProgramPages,
     ...flightProgramPages,
     ...bankProgramPages,
+    ...travelEssentialsCountryPages,
   ]
 }
