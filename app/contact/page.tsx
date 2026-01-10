@@ -1,8 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Contact | Miles Go Round",
-  description: "Get in touch with Miles Go Round. We'd love to hear from you.",
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Miles Go Round",
+  description: "Get in touch with Miles Go Round. Questions about travel rewards, points, or miles? We'd love to hear from you.",
+  alternates: {
+    canonical: `${siteUrl}/contact`,
+  },
+  openGraph: {
+    title: "Contact Miles Go Round",
+    description: "Get in touch with Miles Go Round. Questions about travel rewards, points, or miles? We'd love to hear from you.",
+    url: `${siteUrl}/contact`,
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

@@ -4,9 +4,9 @@ import Link from "next/link";
 
 import { getAllTravelGuides } from "@/lib/travel-guides";
 
-const pageTitle = "Travel Guides Library | Miles Go Round";
+const pageTitle = "Travel Guides | Destination Stories & Experiences";
 const pageDescription =
-  "Browse Ana's reflective travel guides to uncover remote-work routines, lightweight packing tips, and community-focused stories.";
+  "Explore reflective travel guides with destination insights, local experiences, and practical tips for meaningful journeys around the world.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: pageTitle,
     description: pageDescription,
     type: "website",
-    url: "https://example.com/travel-guides",
+    url: "https://www.milesgoround.com/travel-guides",
   },
   twitter: {
     card: "summary_large_image",
@@ -34,12 +34,12 @@ export default async function TravelGuidesPage() {
     "@type": "CollectionPage",
     name: "Travel Guides Library",
     description: pageDescription,
-    url: "https://example.com/travel-guides",
+    url: "https://www.milesgoround.com/travel-guides",
     hasPart: travelGuides.map((entry) => ({
       "@type": "Article",
       headline: entry.title,
       datePublished: entry.publishedOn,
-      url: `https://example.com/travel-guides/${entry.slug}`,
+      url: `https://www.milesgoround.com/${entry.slug}`,
     })),
   };
 

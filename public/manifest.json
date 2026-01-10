@@ -1,0 +1,31 @@
+{
+  "name": "Miles Go Round",
+  "short_name": "MilesGoRound",
+  "description": "Your ultimate guide to travel rewards. Discover destination guides, credit card strategies, and tips to maximize points and miles.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/Logo/MilesGoRound-Logo-Blue.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Logo/MilesGoRound-Logo-Blue.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "lifestyle"],
+  "lang": "en-US"
+}

@@ -15,12 +15,23 @@ export interface TippingInfo {
   note: string;
 }
 
+export interface MonthWeather {
+  temp: string;
+  condition: string;
+  rainfall: string;
+}
+
+export interface WeatherInfo {
+  [month: string]: MonthWeather;
+}
+
 export interface CountryEssentials {
   country: string;
   code: string;
   plug: PlugInfo;
   water: WaterInfo;
   tipping: TippingInfo;
+  weather?: WeatherInfo;
 }
 
 let cachedData: CountryEssentials[] | null = null;

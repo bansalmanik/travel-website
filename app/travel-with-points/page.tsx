@@ -1,4 +1,38 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+const siteUrl = "https://www.milesgoround.com";
+
+export const metadata: Metadata = {
+  title: "Travel with Points | Smart Booking Strategies",
+  description:
+    "Learn how to book flights and hotels smarter. Discover credit cards, loyalty programs, and transfer strategies to enhance your travel experiences.",
+  keywords: [
+    "travel with points",
+    "smart travel booking",
+    "travel rewards",
+    "credit card points",
+    "airline miles",
+    "hotel points",
+    "loyalty programs",
+  ],
+  alternates: {
+    canonical: `${siteUrl}/travel-with-points`,
+  },
+  openGraph: {
+    title: "Travel with Points | Miles Go Round",
+    description:
+      "Learn how to book flights and hotels smarter with credit cards, loyalty programs, and transfer strategies.",
+    url: `${siteUrl}/travel-with-points`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Travel with Points | Miles Go Round",
+    description:
+      "Learn how to book flights and hotels smarter with credit cards and loyalty programs.",
+  },
+};
 
 const featuredSection = {
     title: "Points & Miles Explained",
