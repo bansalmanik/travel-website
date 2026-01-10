@@ -21,10 +21,10 @@ const PROGRAM_LOGOS: Record<string, string> = {
   "American Express": "/Logo/amex_logo.webp",
   "SBI": "/Logo/sbi_logo.webp",
   "Accor": "/Logo/accor_live_limitless.webp",
-    "Marriott Bonvoy": "/Logo/marriott_bonvoy_logo.webp",
-    "ICICI": "/Logo/icici_logo.webp",
-    "AU Bank": "/Logo/au_logo.webp",
-  
+  "Marriott Bonvoy": "/Logo/marriott_bonvoy_logo.webp",
+  "ICICI": "/Logo/icici_logo.webp",
+  "AU Bank": "/Logo/au_logo.webp",
+  "Yes Bank": "/Logo/yes_bank_logo.webp",
   // Partners - Airlines
   "Air India": "/Logo/maharaja_club_logo.webp",
   "Air India Maharaja Points": "/Logo/maharaja_club_logo.webp",
@@ -117,13 +117,13 @@ const PROGRAM_LOGOS: Record<string, string> = {
   "MilleMiglia (ITA Airways / Alitalia)": "/Logo/volare_logo.webp",
   "Atmos Rewards": "/Logo/atmos_rewards_logo.webp",
   "SpiceJet": "/Logo/spiceclub_logo.webp",
-    "Juneyao Air": "/Logo/juneyao_air_logo.webp",
-    "Air Arabia AA Rewards": "/Logo/aa_rewards_logo.webp",
-    "JetBlue – TrueBlue": "/Logo/trueblue_logo.webp",
-    "Korean Air – SKYPASS": "/Logo/skypass_logo.webp",
-    "Air New Zealand Airpoints": "/Logo/airpoints_logo.webp",
-    "Vietnam Airlines LotusMiles": "/Logo/lotusmiles_logo.webp",
-    "Gulf Air – Falconflyer": "/Logo/falconflyer_logo.webp",  // Partners - Hotels
+  "Juneyao Air": "/Logo/juneyao_air_logo.webp",
+  "Air Arabia AA Rewards": "/Logo/aa_rewards_logo.webp",
+  "JetBlue – TrueBlue": "/Logo/trueblue_logo.webp",
+  "Korean Air – SKYPASS": "/Logo/skypass_logo.webp",
+  "Air New Zealand Airpoints": "/Logo/airpoints_logo.webp",
+  "Vietnam Airlines LotusMiles": "/Logo/lotusmiles_logo.webp",
+  "Gulf Air – Falconflyer": "/Logo/falconflyer_logo.webp",  // Partners - Hotels
   "Accor Live Limitless": "/Logo/accor_live_limitless.webp",
   "Marriot": "/Logo/marriott_bonvoy_logo.webp",
   "IHG One Rewards": "/Logo/ihg_rewards_club_logo.webp",
@@ -131,9 +131,9 @@ const PROGRAM_LOGOS: Record<string, string> = {
   "Hilton Honors": "/Logo/hilton_honors_logo.webp",
   "Wyndham Rewards": "/Logo/wyndham_logo.webp",
   "ITC": "/Logo/itc_club_logo.webp",
-    "Club ITC Green Points": "/Logo/itc_club_logo.webp",
-    "Shangri-La Circle": "/Logo/golden_circle_logo.webp",
-  
+  "Club ITC Green Points": "/Logo/itc_club_logo.webp",
+  "Shangri-La Circle": "/Logo/golden_circle_logo.webp",
+
   // Partners - Other
   "InterMiles": "/Logo/intermiles_logo.webp",
 };
@@ -179,9 +179,9 @@ export default function PointsConversionContent({ conversions }: PointsConversio
   // Reverse lookup: find all sources that transfer to selected partner
   const reversePartnerRows = useMemo(() => {
     if (!selectedTo || mode !== "reverse") return [];
-    
+
     const rows: Array<{ from: string; program: string; rate: string; insight: string }> = [];
-    
+
     conversions.forEach((conversion) => {
       conversion.rates.forEach((rate) => {
         rate.partners.forEach((partner) => {
@@ -196,7 +196,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
         });
       });
     });
-    
+
     return rows;
   }, [selectedTo, mode, conversions]);
 
@@ -353,21 +353,19 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           <div className="inline-flex rounded-lg bg-white p-1 shadow-sm ring-1 ring-slate-200">
             <button
               onClick={() => handleModeChange("forward")}
-              className={`px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base font-medium transition ${
-                mode === "forward"
+              className={`px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base font-medium transition ${mode === "forward"
                   ? "bg-indigo-500 text-white shadow-sm"
                   : "text-slate-600 hover:text-slate-900"
-              }`}
+                }`}
             >
               Find Partners
             </button>
             <button
               onClick={() => handleModeChange("reverse")}
-              className={`px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base font-medium transition ${
-                mode === "reverse"
+              className={`px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base font-medium transition ${mode === "reverse"
                   ? "bg-indigo-500 text-white shadow-sm"
                   : "text-slate-600 hover:text-slate-900"
-              }`}
+                }`}
             >
               Find Sources
             </button>
@@ -406,17 +404,17 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                       !selectedProgramName
                         ? [{ value: "", label: "Select program first" }]
                         : fromOptions.length === 0
-                        ? [{ value: "", label: "No cards available" }]
-                        : fromOptions.length === 1
-                        ? [{ value: fromOptions[0], label: fromOptions[0], logo: PROGRAM_LOGOS[selectedProgramName] }]
-                        : [
-                            { value: "", label: "Select card" },
-                            ...fromOptions.map((card) => ({
-                              value: card,
-                              label: card,
-                              logo: PROGRAM_LOGOS[selectedProgramName],
-                            })),
-                          ]
+                          ? [{ value: "", label: "No cards available" }]
+                          : fromOptions.length === 1
+                            ? [{ value: fromOptions[0], label: fromOptions[0], logo: PROGRAM_LOGOS[selectedProgramName] }]
+                            : [
+                              { value: "", label: "Select card" },
+                              ...fromOptions.map((card) => ({
+                                value: card,
+                                label: card,
+                                logo: PROGRAM_LOGOS[selectedProgramName],
+                              })),
+                            ]
                     }
                     placeholder={!selectedProgramName ? "Select program first" : "Select card"}
                     disabled={!selectedProgramName || fromOptions.length === 0 || fromOptions.length === 1}
@@ -434,13 +432,13 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                     toOptions.length === 1
                       ? [{ value: toOptions[0], label: toOptions[0], logo: PROGRAM_LOGOS[toOptions[0]] }]
                       : [
-                          { value: "", label: "All Partners" },
-                          ...toOptions.map((partner) => ({
-                            value: partner,
-                            label: partner,
-                            logo: PROGRAM_LOGOS[partner],
-                          })),
-                        ]
+                        { value: "", label: "All Partners" },
+                        ...toOptions.map((partner) => ({
+                          value: partner,
+                          label: partner,
+                          logo: PROGRAM_LOGOS[partner],
+                        })),
+                      ]
                   }
                   placeholder="All Partners"
                   disabled={toOptions.length === 0 || toOptions.length === 1}
@@ -512,11 +510,10 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           <div className="mb-4 flex flex-wrap gap-2">
             <button
               onClick={() => setSelectedProgramName("")}
-              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition ${
-                !selectedProgramName
+              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition ${!selectedProgramName
                   ? "bg-indigo-500 text-white shadow-sm"
                   : "bg-white text-slate-600 hover:bg-slate-50 ring-1 ring-slate-200"
-              }`}
+                }`}
             >
               All Programs
             </button>
@@ -524,11 +521,10 @@ export default function PointsConversionContent({ conversions }: PointsConversio
               <button
                 key={program}
                 onClick={() => setSelectedProgramName(program)}
-                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition ${
-                  selectedProgramName === program
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition ${selectedProgramName === program
                     ? "bg-indigo-500 text-white shadow-sm"
                     : "bg-white text-slate-600 hover:bg-slate-50 ring-1 ring-slate-200"
-                }`}
+                  }`}
               >
                 {PROGRAM_LOGOS[program] && (
                   <img
@@ -557,69 +553,68 @@ export default function PointsConversionContent({ conversions }: PointsConversio
             </div>
           ) : (
             <div className="space-y-2 sm:space-y-3">
-            {filteredPartnerRows.map((partner) => {
-              const key = `${partner.to}-${partner.rate}`;
-              const projected = calculateProjectedPoints(partner.rate);
-              const formattedProjected = formatPoints(projected);
-              const isExpanded = expandedRow === key;
+              {filteredPartnerRows.map((partner) => {
+                const key = `${partner.to}-${partner.rate}`;
+                const projected = calculateProjectedPoints(partner.rate);
+                const formattedProjected = formatPoints(projected);
+                const isExpanded = expandedRow === key;
 
-              return (
-                <div
-                  key={key}
-                  onClick={() => setExpandedRow(isExpanded ? null : key)}
-                  className={`group cursor-pointer rounded-xl bg-white p-3 sm:p-4 shadow-sm ring-1 transition-all active:scale-[0.99] ${
-                    isExpanded 
-                      ? "ring-emerald-300 shadow-md" 
-                      : "ring-slate-100 hover:shadow-md hover:ring-slate-200"
-                  }`}
-                >
-                  <div className="flex items-center justify-between gap-2 sm:gap-4">
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2">
-                        {PROGRAM_LOGOS[partner.to] && (
-                          <div className="flex h-8 w-8 sm:h-9 sm:w-9 flex-shrink-0 items-center justify-center rounded-full bg-slate-100 p-1">
-                            <img
-                              src={PROGRAM_LOGOS[partner.to]}
-                              alt={partner.to}
-                              className="h-full w-full rounded-full object-cover"
-                            />
+                return (
+                  <div
+                    key={key}
+                    onClick={() => setExpandedRow(isExpanded ? null : key)}
+                    className={`group cursor-pointer rounded-xl bg-white p-3 sm:p-4 shadow-sm ring-1 transition-all active:scale-[0.99] ${isExpanded
+                        ? "ring-emerald-300 shadow-md"
+                        : "ring-slate-100 hover:shadow-md hover:ring-slate-200"
+                      }`}
+                  >
+                    <div className="flex items-center justify-between gap-2 sm:gap-4">
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-2">
+                          {PROGRAM_LOGOS[partner.to] && (
+                            <div className="flex h-8 w-8 sm:h-9 sm:w-9 flex-shrink-0 items-center justify-center rounded-full bg-slate-100 p-1">
+                              <img
+                                src={PROGRAM_LOGOS[partner.to]}
+                                alt={partner.to}
+                                className="h-full w-full rounded-full object-cover"
+                              />
+                            </div>
+                          )}
+                          <div className="min-w-0 flex-1">
+                            <p className="truncate text-sm sm:text-base font-semibold text-slate-800">{partner.to}</p>
+                            <p className="mt-0.5 text-xs text-slate-600">{partner.rate}</p>
                           </div>
-                        )}
-                        <div className="min-w-0 flex-1">
-                          <p className="truncate text-sm sm:text-base font-semibold text-slate-800">{partner.to}</p>
-                          <p className="mt-0.5 text-xs text-slate-600">{partner.rate}</p>
+                          <span className="hidden sm:inline-flex flex-shrink-0 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600">
+                            {isExpanded ? "tap to hide" : "tap for details"}
+                          </span>
                         </div>
-                        <span className="hidden sm:inline-flex flex-shrink-0 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600">
-                          {isExpanded ? "tap to hide" : "tap for details"}
-                        </span>
                       </div>
+
+                      {formattedProjected ? (
+                        <div className="flex-shrink-0 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 px-3 sm:px-4 py-1.5 sm:py-2">
+                          <p className="text-sm sm:text-base font-bold text-white whitespace-nowrap">{formattedProjected}</p>
+                        </div>
+                      ) : (
+                        <div className={`flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg transition-colors ${isExpanded ? "bg-emerald-100 text-emerald-600" : "bg-slate-50 text-slate-400 group-hover:bg-indigo-100 group-hover:text-indigo-500"}`}>
+                          <svg className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      )}
                     </div>
-                    
-                    {formattedProjected ? (
-                      <div className="flex-shrink-0 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 px-3 sm:px-4 py-1.5 sm:py-2">
-                        <p className="text-sm sm:text-base font-bold text-white whitespace-nowrap">{formattedProjected}</p>
-                      </div>
-                    ) : (
-                      <div className={`flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg transition-colors ${isExpanded ? "bg-emerald-100 text-emerald-600" : "bg-slate-50 text-slate-400 group-hover:bg-indigo-100 group-hover:text-indigo-500"}`}>
-                        <svg className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
+
+                    {isExpanded && (
+                      <div className="mt-2 sm:mt-3 rounded-lg bg-slate-50 p-2.5 sm:p-3">
+                        <p className="text-xs sm:text-sm leading-relaxed text-slate-600">
+                          💡 {partner.insight}
+                        </p>
                       </div>
                     )}
                   </div>
-
-                  {isExpanded && (
-                    <div className="mt-2 sm:mt-3 rounded-lg bg-slate-50 p-2.5 sm:p-3">
-                      <p className="text-xs sm:text-sm leading-relaxed text-slate-600">
-                        💡 {partner.insight}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        )
+                );
+              })}
+            </div>
+          )
         ) : (
           /* Reverse Mode Results */
           !selectedTo ? (
@@ -630,7 +625,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
           ) : filteredReverseRows.length === 0 ? (
             <div className="rounded-2xl bg-white/70 py-12 sm:py-16 text-center backdrop-blur">
               <p className="text-sm sm:text-base text-slate-400">
-                {reversePartnerRows.length === 0 
+                {reversePartnerRows.length === 0
                   ? "No sources found for this partner"
                   : "No sources found for this program"}
               </p>
@@ -645,11 +640,10 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                   <div
                     key={key}
                     onClick={() => setExpandedRow(isExpanded ? null : key)}
-                    className={`group cursor-pointer rounded-xl bg-white p-3 sm:p-4 shadow-sm ring-1 transition-all active:scale-[0.99] ${
-                      isExpanded 
-                        ? "ring-emerald-300 shadow-md" 
+                    className={`group cursor-pointer rounded-xl bg-white p-3 sm:p-4 shadow-sm ring-1 transition-all active:scale-[0.99] ${isExpanded
+                        ? "ring-emerald-300 shadow-md"
                         : "ring-slate-100 hover:shadow-md hover:ring-slate-200"
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center justify-between gap-2 sm:gap-4">
                       <div className="min-w-0 flex-1">
@@ -669,7 +663,7 @@ export default function PointsConversionContent({ conversions }: PointsConversio
                           </div>
                         </div>
                       </div>
-                      
+
                       <div className={`flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg transition-colors ${isExpanded ? "bg-emerald-100 text-emerald-600" : "bg-slate-50 text-slate-400 group-hover:bg-indigo-100 group-hover:text-indigo-500"}`}>
                         <svg className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

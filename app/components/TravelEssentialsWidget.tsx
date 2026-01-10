@@ -1,24 +1,29 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import type { CountryEssentials } from '@/lib/travel-essentials';
+import { getCountrySlug } from '@/lib/travel-essentials';
 
 interface TravelEssentialsWidgetProps {
   data: CountryEssentials[];
+  initialCountry?: CountryEssentials | null;
 }
 
-export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCountry, setSelectedCountry] = useState<CountryEssentials | null>(null);
+export function TravelEssentialsWidget({ data, initialCountry = null }: TravelEssentialsWidgetProps) {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState(initialCountry?.country || '');
+  const [selectedCountry, setSelectedCountry] = useState<CountryEssentials | null>(initialCountry);
+  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [isWeatherExpanded, setIsWeatherExpanded] = useState(false);
 
   const filteredCountries = useMemo(() => {
     if (!searchQuery.trim()) return [];
-    
+
     const query = searchQuery.toLowerCase().trim();
     return data
-      .filter(country => 
+      .filter(country =>
         country.country.toLowerCase().includes(query) ||
         country.code.toLowerCase() === query
       )
@@ -26,8 +31,8 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   }, [searchQuery, data]);
 
   useEffect(() => {
-    if (filteredCountries.length === 1 && 
-        filteredCountries[0].country.toLowerCase() === searchQuery.toLowerCase()) {
+    if (filteredCountries.length === 1 &&
+      filteredCountries[0].country.toLowerCase() === searchQuery.toLowerCase()) {
       setSelectedCountry(filteredCountries[0]);
       setShowSuggestions(false);
     }
@@ -36,15 +41,19 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (filteredCountries.length > 0) {
-      setSelectedCountry(filteredCountries[0]);
-      setShowSuggestions(false);
+      handleCountrySelect(filteredCountries[0]);
     }
   };
 
   const handleCountrySelect = (country: CountryEssentials) => {
     setSelectedCountry(country);
+    setSelectedRegion(null);
     setSearchQuery(country.country);
     setShowSuggestions(false);
+
+    // Navigate to SEO-friendly URL
+    const slug = getCountrySlug(country);
+    router.push(`/travel-essentials/${slug}`, { scroll: false });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,12 +61,15 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
     setShowSuggestions(true);
     if (!e.target.value.trim()) {
       setSelectedCountry(null);
+      setSelectedRegion(null);
       setIsWeatherExpanded(false);
+      // Navigate back to base URL when search is cleared
+      router.push('/travel-essentials/', { scroll: false });
     }
   };
 
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  
+
   const getConditionColor = (condition: string) => {
     const lower = condition.toLowerCase();
     if (lower.includes('ideal') || lower.includes('pleasant') || lower.includes('perfect')) return 'text-green-600';
@@ -100,7 +112,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
 
         {/* Suggestions Dropdown */}
         {showSuggestions && filteredCountries.length > 0 && (
-          <div className="absolute z-10 w-full mt-2 bg-white border-2 border-slate-200 rounded-xl shadow-lg overflow-hidden">
+          <div className="absolute z-50 w-full mt-2 bg-white border-2 border-slate-200 rounded-xl shadow-lg overflow-hidden">
             {filteredCountries.map((country) => (
               <button
                 key={country.code}
@@ -119,34 +131,32 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
       {/* Results Dashboard */}
       {selectedCountry && (
         <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden border border-slate-200">
-          {/* Header */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-4 sm:px-6 sm:py-5">
-            <h2 className="text-xl sm:text-2xl font-bold text-white">
+          {/* Header - Sticky on mobile */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-3 sm:px-6 sm:py-5 sticky top-0 z-20 shadow-md sm:relative sm:shadow-none">
+            <h2 className="text-lg sm:text-2xl font-bold text-white">
               {selectedCountry.country}
             </h2>
-            <p className="text-blue-100 mt-1 text-sm sm:text-base">Essential travel information</p>
+            <p className="text-blue-100 mt-0.5 text-xs sm:text-base opacity-90">Essential travel information</p>
           </div>
 
-          {/* Three-Column Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+          {/* Three-Column Grid - Stacked on mobile, 3-col on md+ */}
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100 md:divide-slate-200">
             {/* Plug Section */}
-            <div className="p-4 sm:p-5 md:p-6">
+            <div className="p-4 sm:p-5 md:p-6 hover:bg-slate-50/50 transition-colors">
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-amber-100 rounded-lg sm:rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-8 h-8 sm:w-12 sm:h-12 bg-amber-100 rounded-lg sm:rounded-xl flex items-center justify-center">
+                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Plug</h3>
-                  <div className="space-y-1.5 sm:space-y-2">
-                    <p className="text-xl sm:text-2xl font-bold text-amber-600">{selectedCountry.plug.type}</p>
-                    <p className="text-xs sm:text-sm text-slate-600">
-                      <span className="font-semibold">{selectedCountry.plug.voltage}</span>
-                      {' • '}
-                      <span className="font-semibold">{selectedCountry.plug.frequency}</span>
+                  <h3 className="text-xs sm:text-lg font-bold text-slate-500 uppercase tracking-wider mb-1 sm:mb-2 sm:text-slate-900 sm:normal-case">Power Plug</h3>
+                  <div className="space-y-1 sm:space-y-2">
+                    <p className="text-lg sm:text-2xl font-bold text-amber-600 leading-none">{selectedCountry.plug.type}</p>
+                    <p className="text-[10px] sm:text-sm text-slate-500 font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+                      {selectedCountry.plug.voltage} • {selectedCountry.plug.frequency}
                     </p>
-                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-2 sm:line-clamp-none">
                       {selectedCountry.plug.description}
                     </p>
                   </div>
@@ -155,30 +165,28 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
             </div>
 
             {/* Water Section */}
-            <div className="p-4 sm:p-5 md:p-6">
+            <div className="p-4 sm:p-5 md:p-6 hover:bg-slate-50/50 transition-colors">
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${
-                  selectedCountry.water.safe ? 'bg-green-100' : 'bg-red-100'
-                }`}>
+                <div className={`flex-shrink-0 w-8 h-8 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${selectedCountry.water.safe ? 'bg-green-100' : 'bg-red-100'
+                  }`}>
                   {selectedCountry.water.safe ? (
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   ) : (
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 sm:w-6 sm:h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   )}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Sip</h3>
-                  <div className="space-y-1.5 sm:space-y-2">
-                    <p className={`text-xl sm:text-2xl font-bold ${
-                      selectedCountry.water.safe ? 'text-green-600' : 'text-red-600'
-                    }`}>
+                  <h3 className="text-xs sm:text-lg font-bold text-slate-500 uppercase tracking-wider mb-1 sm:mb-2 sm:text-slate-900 sm:normal-case">Tap Water</h3>
+                  <div className="space-y-1 sm:space-y-2">
+                    <p className={`text-lg sm:text-2xl font-bold leading-none ${selectedCountry.water.safe ? 'text-green-600' : 'text-red-600'
+                      }`}>
                       {selectedCountry.water.safe ? 'Safe' : 'Not Safe'}
                     </p>
-                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-2 sm:line-clamp-none">
                       {selectedCountry.water.note}
                     </p>
                   </div>
@@ -187,26 +195,23 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
             </div>
 
             {/* Tipping Section */}
-            <div className="p-4 sm:p-5 md:p-6">
+            <div className="p-4 sm:p-5 md:p-6 hover:bg-slate-50/50 transition-colors">
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${
-                  selectedCountry.tipping.expected ? 'bg-purple-100' : 'bg-slate-100'
-                }`}>
-                  <svg className={`w-5 h-5 sm:w-6 sm:h-6 ${
-                    selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
-                  }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`flex-shrink-0 w-8 h-8 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center ${selectedCountry.tipping.expected ? 'bg-purple-100' : 'bg-slate-100'
+                  }`}>
+                  <svg className={`w-4 h-4 sm:w-6 sm:h-6 ${selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
+                    }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 sm:mb-2">Tip</h3>
-                  <div className="space-y-1.5 sm:space-y-2">
-                    <p className={`text-xl sm:text-2xl font-bold ${
-                      selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
-                    }`}>
+                  <h3 className="text-xs sm:text-lg font-bold text-slate-500 uppercase tracking-wider mb-1 sm:mb-2 sm:text-slate-900 sm:normal-case">Tipping</h3>
+                  <div className="space-y-1 sm:space-y-2">
+                    <p className={`text-lg sm:text-2xl font-bold leading-none ${selectedCountry.tipping.expected ? 'text-purple-600' : 'text-slate-600'
+                      }`}>
                       {selectedCountry.tipping.expected ? 'Expected' : 'Optional'}
                     </p>
-                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-2 sm:line-clamp-none">
                       {selectedCountry.tipping.note}
                     </p>
                   </div>
@@ -216,7 +221,7 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
           </div>
 
           {/* Weather Section - Collapsible */}
-          {selectedCountry.weather && (
+          {(selectedCountry.weather || selectedCountry.weatherRegions) && (
             <div className="border-t border-slate-200">
               <button
                 onClick={() => setIsWeatherExpanded(!isWeatherExpanded)}
@@ -234,10 +239,10 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
                     <p className="text-xs sm:text-sm text-slate-600">Plan your visit with climate insights</p>
                   </div>
                 </div>
-                <svg 
+                <svg
                   className={`w-5 h-5 sm:w-6 sm:h-6 text-slate-400 transition-transform ${isWeatherExpanded ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -245,45 +250,80 @@ export function TravelEssentialsWidget({ data }: TravelEssentialsWidgetProps) {
               </button>
 
               {isWeatherExpanded && (
-                <div className="px-4 pb-4 sm:px-6 sm:pb-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-                    {months.map((month) => {
-                      const weather = selectedCountry.weather?.[month];
-                      if (!weather) return null;
-                      
-                      return (
-                        <div 
-                          key={month}
-                          className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200 hover:border-sky-300 hover:shadow-sm transition-all"
+                <div className="px-0 sm:px-6 pb-4 sm:pb-6">
+                  {/* Region Selector */}
+                  {selectedCountry.weatherRegions && (
+                    <div className="mb-6 px-4 sm:px-0">
+                      <label htmlFor="region-select" className="block text-sm font-medium text-slate-700 mb-2">
+                        Select a region for accurate weather:
+                      </label>
+                      <div className="relative">
+                        <select
+                          id="region-select"
+                          value={selectedRegion || ''}
+                          onChange={(e) => setSelectedRegion(e.target.value || null)}
+                          className="block w-full pl-3 pr-10 py-2.5 text-base border-slate-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-lg bg-slate-50 border hover:bg-white transition-colors"
                         >
-                          <div className="flex items-start justify-between mb-2">
+                          <option value="">National Average</option>
+                          {Object.keys(selectedCountry.weatherRegions).sort().map((region) => (
+                            <option key={region} value={region}>
+                              {region}
+                            </option>
+                          ))}
+                        </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-700">
+                          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Weather Grid - Horizontal Scroll on mobile, Grid on md+ */}
+                  <div className="flex overflow-x-auto pb-4 gap-3 px-4 sm:px-0 scrollbar-hide snap-x md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:overflow-visible">
+                    {months.map((month) => {
+                      // Determine source of weather data
+                      const source = selectedRegion && selectedCountry.weatherRegions
+                        ? selectedCountry.weatherRegions[selectedRegion]
+                        : selectedCountry.weather;
+
+                      const weather = source?.[month];
+                      if (!weather) return null;
+
+                      return (
+                        <div
+                          key={month}
+                          className="flex-shrink-0 w-[160px] sm:w-auto bg-slate-50 rounded-xl p-3 sm:p-4 border border-slate-200 hover:border-sky-300 hover:shadow-sm transition-all snap-start"
+                        >
+                          <div className="flex items-center justify-between mb-2">
                             <h4 className="text-sm sm:text-base font-bold text-slate-900">{month}</h4>
-                            <span className="text-lg" role="img" aria-label="rainfall indicator">
+                            <span className="text-base sm:text-lg" role="img" aria-label="rainfall indicator">
                               {getRainfallIcon(weather.rainfall)}
                             </span>
                           </div>
-                          <div className="space-y-1.5">
-                            <p className="text-base sm:text-lg font-semibold text-sky-600">
+                          <div className="space-y-1 sm:space-y-1.5">
+                            <p className="text-base sm:text-lg font-bold text-sky-600">
                               {weather.temp}
                             </p>
-                            <p className={`text-xs sm:text-sm font-medium ${getConditionColor(weather.condition)}`}>
+                            <p className={`text-[10px] sm:text-sm font-semibold uppercase tracking-tight ${getConditionColor(weather.condition)}`}>
                               {weather.condition}
                             </p>
-                            <p className="text-xs text-slate-500">
-                              Rainfall: {weather.rainfall}
+                            <p className="text-[10px] sm:text-xs text-slate-500 font-medium">
+                              Rain: {weather.rainfall}
                             </p>
                           </div>
                         </div>
                       );
                     })}
                   </div>
-                  
-                  <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                    <p className="text-xs sm:text-sm text-blue-800">
-                      <span className="font-semibold">Note:</span> Weather can vary by region within the country. 
-                      These are general averages for major cities and tourist areas.
-                    </p>
+
+                  {/* Mobile Scroll Indicator */}
+                  <div className="flex items-center justify-center gap-1.5 mt-1 mb-4 md:hidden">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></div>
+                    <p className="text-[10px] font-medium text-slate-400 uppercase tracking-widest">Swipe for more months</p>
                   </div>
+
                 </div>
               )}
             </div>
