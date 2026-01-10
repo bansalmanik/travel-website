@@ -112,7 +112,7 @@ export function TravelEssentialsWidget({ data, initialCountry = null }: TravelEs
 
         {/* Suggestions Dropdown */}
         {showSuggestions && filteredCountries.length > 0 && (
-          <div className="absolute z-10 w-full mt-2 bg-white border-2 border-slate-200 rounded-xl shadow-lg overflow-hidden">
+          <div className="absolute z-50 w-full mt-2 bg-white border-2 border-slate-200 rounded-xl shadow-lg overflow-hidden">
             {filteredCountries.map((country) => (
               <button
                 key={country.code}
