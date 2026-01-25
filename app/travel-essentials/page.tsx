@@ -6,8 +6,8 @@ import type { CountryEssentials } from '@/lib/travel-essentials';
 const siteUrl = 'https://www.milesgoround.com';
 
 export const metadata: Metadata = {
-  title: 'Travel Essentials | Plug, Water & Tipping Guide',
-  description: 'Essential travel info for 50+ countries. Check power plug types, tap water safety, and local tipping customs before your trip.',
+  title: 'Travel Essentials | Power, Water, Tipping & Weather Guide',
+  description: 'Complete travel essentials for 50+ countries. Check power plug types, tap water safety, tipping customs, and month-by-month weather before your trip.',
   keywords: [
     'travel essentials',
     'travel preparation',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     'country travel info',
   ],
   openGraph: {
-    title: 'Travel Essentials: Plug, Sip & Tip Guide | Miles Go Round',
-    description: 'Instant travel essentials for 50+ countries. Check power plug types, tap water safety, and tipping customs in seconds.',
+    title: 'Travel Essentials: Your Complete Country Guide | Miles Go Round',
+    description: 'Complete travel essentials for 50+ countries. Power plugs, water safety, tipping customs, and weather insights in seconds.',
     url: `${siteUrl}/travel-essentials/`,
     type: 'website',
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Essentials: Plug, Sip & Tip Guide',
-    description: 'Instant travel essentials for 50+ countries. Check power plug types, tap water safety, and tipping customs.',
+    title: 'Travel Essentials: Your Complete Country Guide',
+    description: 'Complete travel essentials for 50+ countries. Power plugs, water safety, tipping customs, and weather insights.',
     images: ['/images/content/cover_1.jpg'],
   },
   alternates: {
@@ -104,8 +104,8 @@ export default function TravelEssentialsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
-            name: 'Travel Essentials: Plug, Sip & Tip Guide',
-            description: 'Instant travel essentials checker for power plugs, tap water safety, and tipping customs across 50+ countries',
+            name: 'Travel Essentials: Your Complete Country Guide',
+            description: 'Complete travel essentials checker for power plugs, tap water safety, tipping customs, and weather across 50+ countries',
             url: `${siteUrl}/travel-essentials/`,
             applicationCategory: 'TravelApplication',
             operatingSystem: 'Any',
@@ -119,6 +119,8 @@ export default function TravelEssentialsPage() {
               'Voltage and frequency details',
               'Tap water safety information',
               'Tipping customs and etiquette',
+              'Month-by-month weather insights',
+              'Regional weather variations',
               'Coverage for 50+ countries',
             ],
           }),
@@ -137,13 +139,10 @@ export default function TravelEssentialsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
-                Plug, Sip & Tip
+                Your Essential Travel Companion
               </h1>
               <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
-                Get instant answers to the three questions every traveler asks:
-                <span className="block mt-2 font-semibold text-white">
-                  Can I charge my phone? Can I drink the water? Do I tip?
-                </span>
+                Everything you need to know before you go: power plugs, water safety, tipping customs, and month-by-month weather insights for 50+ countries.
               </p>
             </div>
           </div>
